@@ -1,0 +1,234 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+.icon-thongso {
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-style: normal;
+}
+
+.icon-thongso.icon-thongso-21:before,
+.icon-thongso.icon-bo-vi-xu-ly:before {
+    content: "\f2db";
+}
+
+.icon-thongso.icon-thongso-49:before,
+.icon-thongso.icon-kich-thuoc-man-hinh-laptop:before {
+    content: "\f108";
+}
+
+.icon-thongso.icon-thongso-80:before,
+.icon-thongso.icon-card-do-hoa-laptop:before {
+    content: "";
+    background: url(https://anphat.com.vn/media/lib/17-05-2023/graphics-card-icon.png);
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 22px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-size: 100%;
+}
+
+.icon-thongso.icon-thongso-253:before,
+.icon-thongso.icon-bo-nho-trong:before,
+.icon-thongso.icon-dung-luong-bo-nho:before {
+    content: "\f538";
+}
+
+.icon-thongso.icon-thongso-48:before,
+.icon-thongso.icon-dung-luong-o-cung-laptop:before {
+    content: "\f0a0";
+}
+
+.icon-thongso.icon-thongso-81:before {
+    content: "\f17a";
+    font: normal normal normal 14px/1 FontAwesome;
+}
+
+.icon-thongso.icon-thongso-82:before {
+    content: "\f577";
+}
+
+.icon-thongso.icon-thongso-84:before {
+    content: "\f5cd";
+}
+
+.icon-thongso.icon-thongso-83:before {
+    content: "\f53f";
+}
+
+.icon-thongso.icon-thongso-370:before {
+    content: "\f0a6";
+    font: normal normal normal 14px/1 FontAwesome;
+}
+
+.icon-thongso.icon-toc-do-cpu:before {
+    content: "\f0e4";
+    font: normal normal normal 14px/1 FontAwesome;
+}
+
+.icon-thongso.icon-loai-man-hinh {
+    background: url(https://anphat.com.vn/media/lib/03-07-2023/loaimanhinh.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 17px;
+    height: 17px;
+}
+
+.icon-thongso.icon-do-phan-giai {
+    background: url(https://anphat.com.vn/media/lib/03-07-2023/do-phan-giai.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 17px;
+    height: 17px;
+}
+
+.icon-thongso.icon-chuan-ket-noi-vga {
+    background: url(https://anphat.com.vn/media/lib/28-06-2023/1360_1687936901_cngktni.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 17px;
+    height: 17px;
+}
+
+.icon-thongso.icon-Tan-so-quet {
+    background: url(https://anphat.com.vn/media/lib/28-06-2023/1360_1687936901_tnsqut.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 17px;
+    height: 17px;
+}
+
+.icon-thongso.icon-tam-nen {
+    background: url(https://anphat.com.vn/media/lib/28-06-2023/1360_1687936901_tmnn.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 17px;
+    height: 17px;
+}
+
+.icon-thongso.icon-chuan-giao-tiep {
+    background: url(https://anphat.com.vn/media/lib/21-07-2023/chuan-giao-tiep.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 17px;
+    height: 17px;
+}
+
+.icon-thongso.icon-do-nhay-dpi {
+    background: url(https://anphat.com.vn/media/lib/21-07-2023/do-nhay-dpi.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 17px;
+    height: 17px;
+}
+
+.icon-thongso.icon-loai-phim-bam {
+    background: url(https://anphat.com.vn/media/lib/21-07-2023/loai-phim-bam.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 17px;
+    height: 17px;
+}
+
+.icon-thongso.icon-kich-thuoc-man-hinh {
+    background: url(https://anphat.com.vn/media/lib/08-11-2023/icon_screen.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 17px;
+    height: 17px;
+}
+
+.thongso .item {
+    position: relative;
+    cursor: help;
+    margin-bottom: 8px;
+}
+
+.thongso .item:before {
+    content: attr(data-info);
+    position: absolute;
+    z-index: 2;
+    bottom: calc(100% + 5px);
+    left: 20%;
+    background: #333;
+    padding: 3px 5px;
+    border-radius: 4px;
+    white-space: nowrap;
+    color: #cecece;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.thongso .item:after {
+    content: "";
+    position: absolute;
+    bottom: calc(100% - 5px);
+    left: 20%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.thongso .item:hover:after,
+.thongso .item:hover:before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.thongso .item .item-icon {
+    width: 20px;
+    margin-right: 5px;
+    color: #464646;
+}
+
+.product-list-2020 .thongso .item,
+.product-list-container .thongso .item {
+    margin-right: 10px;
+}
+
+.product-list-2020 .thongso .txt,
+.product-list-container .thongso .txt {
+    font-size: 11px;
+    margin-top: 1px;
+}
+
+.product-promo .item {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+.p-item .box-config {
+    background: #f8f9fa;
+    border-radius: 6px;
+}
+
+.p-item .box-config .product-spec-group {
+    padding: 9px 10px;
+}
+
+.p-item .box-config .product-promo {
+    padding: 10px;
+}

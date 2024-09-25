@@ -1,0 +1,181 @@
+/*== Bg buffee ==*/
+
+.p-icon-holder * {
+    background-size: 100% 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center -8px;
+}
+
+.p-icon-holder .p-icon-buffet-249K-min {
+    background-image: url(../images/buffet-249K-min.png);
+    background-position: center;
+}
+
+.p-icon-holder .p-icon-buffet-339K-min {
+    background-image: url(../images/buffet-339K-min.png);
+    background-position: center;
+}
+
+.p-icon-holder .p-icon-buffet-399K-min {
+    background-image: url(../images/buffet-399K-min.png)
+}
+
+.p-icon-holder .p-icon-buffet-499K-min {
+    background-image: url(../images/buffet-499K-min.png)
+}
+
+.p-icon-holder .p-icon-buffet-599K-min {
+    background-image: url(../images/buffet-599K-min.png)
+}
+
+.p-icon-holder .p-icon-buffet-749K-min {
+    background-image: url(../images/buffet-749K-min.png)
+}
+
+.p-icon-holder .p-icon-buffet-899K-min {
+    background-image: url(../images/buffet-899K-min.png)
+}
+
+.p-icon-holder .p-icon-buffet-1499K-min {
+    background-image: url(../images/buffet-1499K-min.png)
+}
+
+.p-icon-holder .p-icon-buffet-1699K-min {
+    background-image: url(../images/buffet-1699K-min.png)
+}
+
+.p-icon-holder .p-icon-buffet-1899K-min {
+    background-image: url(../images/buffet-1899K-min.png)
+}
+
+.p-icon-holder .p-icon-buffet-1999K-min {
+    background-image: url(../images/buffet-1999K-min.png)
+}
+
+.p-icon-holder .p-icon-buffet-2699K-min {
+    background-image: url(../images/buffet-2699K-min.png)
+}
+
+.p-icon-holder .p-icon-buffet-7490K-min {
+    background-image: url(../images/buffet-7490K-min.png)
+}
+
+.p-icon-holder .p-icon-buffet-9999k-min {
+    background-image: url(https://www.anphatpc.com.vn/template/2024/images/buffet-9999K-min.png);
+    background-position: center -8px;
+}
+
+.p-icon-holder .p-icon-buffet-11990K-min {
+    background-image: url(../images/buffet-11990K-min.png)
+}
+
+.p-icon-holder .p-icon-buffet-12490K-min {
+    background-image: url(../images/buffet-12490K-min.png)
+}
+
+.p-icon-holder .p-icon-buffet-12990K-min {
+    background-image: url(../images/buffet-12990K-min.png)
+}
+
+.p-icon-holder .p-icon-buffet-13490K-min {
+    background-image: url(../images/buffet-13490K-min.png)
+}
+
+.p-icon-holder .p-icon-buffet-14990K-min {
+    background-image: url(../images/buffet-14990K-min.png)
+}
+
+.p-icon-holder .p-icon-buffet-15590K-min {
+    background-image: url(../images/buffet-15590K-min.png)
+}
+
+.p-icon-holder .p-icon-buffet-16590K-min {
+    background-image: url(../images/buffet-16590K-min.png)
+}
+
+.p-icon-holder .p-icon-buffet-16690K-min {
+    background-image: url(../images/buffet-16690K-min.png)
+}
+
+.p-icon-holder .p-icon-buffet-17290K-min {
+    background-image: url(../images/buffet-17290K-min.png)
+}
+
+.p-icon-holder .p-icon-buffet-17690K-min {
+    background-image: url(../images/buffet-17690K-min.png)
+}
+
+.p-icon-holder .p-icon-buffet-17790K-min {
+    background-image: url(../images/buffet-17790K-min.png)
+}
+
+.p-icon-holder .p-icon-buffet-18990K-min {
+    background-image: url(../images/buffet-18990K-min.png)
+}
+
+.p-icon-holder .p-icon-buffet-19990K-min {
+    background-image: url(../images/buffet-19990K-min.png)
+}
+
+.p-icon-holder .p-icon-buffet-20590K-min {
+    background-image: url(../images/buffet-20590K-min.png)
+}
+
+.p-icon-holder .p-icon-buffet-25990K-min {
+    background-image: url(../images/buffet-25990K-min.png)
+}
+
+.p-icon-holder .p-icon-buffet-26590K-min {
+    background-image: url(../images/buffet-26590K-min.png)
+}
+
+.p-icon-holder .p-icon-buffet-26990K-min {
+    background-image: url(../images/buffet-26990K-min.png)
+}
+
+.p-icon-holder .p-icon-buffet-38990K-min {
+    background-image: url(../images/buffet-38990K-min.png)
+}
+
+.p-icon-holder .p-icon-buffet-44490K-min {
+    background-image: url(../images/buffet-44490K-min.png)
+}
+
+/*== Bg buffee ==*/
+
+.p-icon-holder .p-icon-flash-sale,
+.p-icon-holder .p-icon-giam-soc,
+.p-icon-holder .p-icon-giam-soc-cuoi-tuan,
+.p-icon-holder .p-icon-voucher-500 {
+    background-size: contain;
+    height: 20px;
+    inset: unset
+}
+
+.p-icon-holder .p-icon-flash-sale {
+    top: 0;
+    left: 0
+}
+
+.p-icon-holder .p-icon-giam-soc {
+    inset: 0;
+    height: 100%
+}
+
+.p-icon-holder .p-icon-giam-soc-cuoi-tuan,
+.p-icon-holder .p-icon-voucher-500 {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-position: left !important
+}
+
+.p-icon-holder .p-icon-voucher-500 {
+    background-image: url(https://www.anphatpc.com.vn/template/anphat_2020v2/images/icon-voucher-500k.png);
+    background-position: right !important
+}

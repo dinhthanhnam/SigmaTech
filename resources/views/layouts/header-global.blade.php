@@ -1,0 +1,1 @@
+<div class="header-global-block" style="display: none; height: 75px"></div>
