@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('flash-sale')
+@section('content')
  flash sale
 
 @endsection

@@ -1,16 +1,33 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\LaptopsController;
+
+use App\Http\Controllers\UserController;
+use App\Http\Middleware\AuthAdmin;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 
 Auth::routes();
 
+Route::middleware(['auth']) ->group(function () {
+    Route::get('/', [UserController::class,'index'])->name('home.index');
+});
+Route::middleware(['auth', AuthAdmin::class]) ->group(function () {
+    Route::get('admin', [AdminController::class,'index'])->name('admin.index');
+});
+
+
 Route::get('/', [HomeController::class, 'index'])->name('home.index');
-Route::get('laptops', [LaptopsController::class, 'laptops']) ->name('categories.laptops');
-Route::get('gaming-laptops', [LaptopsController::class, 'gaminglaptops']) ->name('categories.gaming-laptops');
+
+Route::get('gaming-laptops', function () {
+    return view('categories.gaming-laptops');
+}) ->name('categories.gaming-laptops');
+Route::get('laptops', function () {
+    return view('categories.laptops');
+}) ->name('categories.laptops');
+
 
 Route::get('shipping-policy', function () {
     return view('pages.service-policy.shipping-policy');
@@ -26,8 +43,8 @@ Route::get('laptop-outlet', function () {
 }) ->name('pages.laptop-outlet');
 
 Route::get('login', function () {
-    return view('pages.login');
-}) ->name('pages.login');
-Route::get('signup', function () {
-    return view('pages.signup');
-}) ->name('pages.signup');
+    return view('login');
+}) ->name('login');
+Route::get('register', function () {
+    return view('register');
+}) ->name('register');

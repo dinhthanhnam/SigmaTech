@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('laptop-outlet')
+@section('content')
 laptop-outlet
 
 @endsection

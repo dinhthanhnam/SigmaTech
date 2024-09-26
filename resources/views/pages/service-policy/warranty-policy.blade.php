@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('warranty-policy')
+@section('content')
     <div class="container">
         <div id="breadcrumb">
             <ol class="ul clearfix" itemscope="" itemtype="http://schema.org/BreadcrumbList">

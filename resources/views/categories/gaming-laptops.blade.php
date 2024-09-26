@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('gaming-laptops')
+@section('content')
 <section class="product-page">
     <div class="container">
         <div id="breadcrumb">

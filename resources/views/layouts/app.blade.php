@@ -34,25 +34,7 @@
     @include('layouts.header-global')
 
     <main>
-        @if (Request::is('/')) 
-            @yield('content')
-        @elseif (Request::is('laptops')) 
-            @yield('laptops')
-        @elseif (Request::is('gaming-laptops'))
-            @yield('gaming-laptops')
-        @elseif (Request::is('shipping-policy'))
-            @yield('shipping-policy')
-        @elseif (Request::is('warranty-policy'))
-            @yield('warranty-policy')
-        @elseif (Request::is('flash-sale'))
-            @yield('flash-sale')
-        @elseif (Request::is('laptop-outlet'))
-            @yield('laptop-outlet')
-        @elseif (Request::is('login'))
-            @yield('login')
-        @elseif (Request::is('signup'))
-            @yield('signup')
-        @endif
+        @yield('content')
     </main>
 
     <footer class="bg-white">

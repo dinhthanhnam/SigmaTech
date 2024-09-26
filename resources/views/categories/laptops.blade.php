@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('laptops')
+@section('content')
     <p>Laptop gaming</p>
 @endsection
 
