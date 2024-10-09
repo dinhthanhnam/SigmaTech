@@ -937,10 +937,25 @@ header .header-banner .close-banner {
     right: -6px;
 }
 
-.header-icon-right .item {
+/* .header-icon-right .item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+} */
+
+/* .header-icon-right .item img {
+    text-align: center;
+} */
+
+.header-icon-right .item {
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center;     /* Căn giữa theo chiều dọc */
+}
+
+.header-icon-right .item img {
+    max-width: 100%; /* Để ảnh không vượt quá kích thước của item */
+    height: auto;    /* Đảm bảo tỷ lệ ảnh không bị méo */
 }
 
 .header-menu {

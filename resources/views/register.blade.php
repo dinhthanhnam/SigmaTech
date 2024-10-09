@@ -12,50 +12,51 @@
         <li class="breadcrumb-item active" aria-current="page">Đăng ký</li>
       </ol>
     </div>
-
     <div class="bg-white customer-page">
-      <form method="post" action="{{ route('login') }}" enctype="multipart/form-data" onsubmit="return check_field();"
-        data-gtm-form-interact-id="0">
+      <form method="post" action="{{ route('register') }}">
         <fieldset style="border: none;" class="shadow cor">
           <div class="bgg_in_spm"></div>
           <table width="100%" id="register">
             <tbody>
               <tr>
                 <td valign="top">
-
                   <table cellpadding="4" cellspacing="0" id="tb_register" style="width: 100%;">
                     <tbody>
                       <tr>
                         <td width="150px">Địa chỉ Email</td>
                         <td>
-                          <input type="text" name="info[email]" id="email" class="boxInput" size="20"
-                            value="" onkeyup="check_user_email(this.value)" data-gtm-form-interact-field-id="0"><b
-                            style="color: #ff0000;">*</b>
-                          <span id="check_user">(Comment) Handle lai cai nay(check email)</span>
+                          <input type="text" name="email" id="email" class="boxInput" size="20">
+                          <b style="color: #ff0000;">*</b> 
                         </td>
                       </tr>
                       <tr>
                         <td>Mật khẩu</td>
-                        <td><input type="password" name="info[password]" id="password" class="boxInput" size="20"
-                            data-gtm-form-interact-field-id="1">
-                          <b style="color: #ff0000;">*</b> <span class="explain"></span>
+                        <td>
+                          <input type="password" name="password" id="password" class="boxInput" size="20">
+                          <b style="color: #ff0000;">*</b> 
+                          <span class="explain"></span>
                         </td>
                       </tr>
                       <tr>
                         <td>Nhập lại mật khẩu</td>
-                        <td><input type="password" name="password1" id="password1" class="boxInput" size="20"><b
-                            style="color: #ff0000;">*</b> <span class="explain"></span></td>
+                        <td>
+                          <input type="password" name="password1" id="password1" class="boxInput" size="20">
+                          <b style="color: #ff0000;">*</b>
+                          <span class="explain"></span>
+                        </td>
                       </tr>
                       <tr>
                         <td>Họ và tên</td>
-                        <td><input type="text" name="info[name]" id="full_name" class="boxInput" size="40"
-                            value=""><b style="color: #ff0000;">*</b></td>
+                        <td>
+                          <input type="text" name="name" id="name" class="boxInput" size="40">
+                          <b style="color: #ff0000;">*</b>
+                        </td>
                       </tr>
                       <tr>
                         <td>Giới tính</td>
                         <td>
-                          <input type="radio" checked="checked" name="info[gender]" value="male">Nam <input
-                            type="radio" name="info[gender]" value="female">Nữ
+                          <input type="radio" checked="checked" name="gender" value="1">Nam 
+                          <input type="radio" name="gender" value="0">Nữ
                         </td>
                       </tr>
                       <tr>
@@ -194,35 +195,29 @@
                       </tr>
                       <tr>
                         <td>Địa chỉ nhận hàng</td>
-                        <td><input type="text" name="info[address]" id="address" class="boxInput" size="50"
-                            value=""></td>
-                      </tr>
-
-                      <tr>
-                        <td>Điện thoại di động</td>
-                        <td><input type="text" name="info[mobile]" id="mobile" class="boxInput" size="40"
-                            value=""></td>
-                      </tr>
-
-                      <tr>
-                        <td></td>
                         <td>
-                          (*) Thông tin bắt buộc
-
+                          <input type="text" name="address" id="address" class="boxInput" size="50">
                         </td>
                       </tr>
-
                       <tr>
-                        <td></td>
+                        <td>Điện thoại di động</td>
                         <td>
-                          <input type="hidden" name="return_url" value="https://www.anphatpc.com.vn/dang-ky">
+                          <input type="text" name="phonenumber" id="phonenumber" class="boxInput" size="40">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          (*) Thông tin bắt buộc
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
                           <input type="submit" value="Đăng ký" class="btn_red">
                         </td>
                       </tr>
                     </tbody>
                   </table>
                 </td>
-
               </tr>
             </tbody>
           </table>

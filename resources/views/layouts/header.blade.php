@@ -34,7 +34,7 @@
       <div class="header-icon-right d-flex align-items-center justify-content-between">
         <div class="item clearfix">
           <a href="#" title="Mua hàng online" class="header-icon-phone d-flex" style="align-items:center;">
-            <img src="{{ asset('assets/img/header-icon-right/phone.png') }}" class="mr-1" />
+            <img src="{{ asset('assets/img/header-icon-right/phone.png') }}" class="mr-1" alt="support"/>
             <p class="icon-text m-0" style="line-height: 1.2;">
               <b><span class="text-15 d-block">1900 0323</span></b>
               <span class="text-15 d-block">0862 136 488</span> </b>
@@ -45,14 +45,14 @@
 
         <div class="item clearfix">
           <a href="#" title="Xây dựng máy tính" class="d-flex" style="align-items:center;">
-            <img src="{{ asset('assets/img/header-icon-right/buildpc.png') }}" class="mr-1 my-1" />
+            <img src="{{ asset('assets/img/header-icon-right/buildpc.png') }}" class="mr-1 my-1" alt="buildpc" />
             <p class="icon-text m-0 text-12">Xây dựng<br>cấu hình PC</p>
           </a>
         </div>
 
         @if (Auth::guest())
           <div class="item clearfix">
-            <img src="{{ asset('assets/img/header-icon-right/user.png') }}" class="mr-1 my-1" />
+            <img src="{{ asset('assets/img/header-icon-right/user.png') }}" class="mr-1 my-1" alt="account" />
             <div class="icon-text m-0 text-14">
               <a href="{{ route('register') }}" class="d-block"> Đăng ký </a>
               <a href="{{ route('login') }}" class="d-block"> Đăng nhập </a>
@@ -79,7 +79,7 @@
 
         <div class="item clearfix">
           <a href="#" class="d-block position-relative" title="Giỏ hàng của bạn">
-            <img src="{{ asset('assets/img/header-icon-right/cart.png') }}" class="my-2" />
+            <img src="{{ asset('assets/img/header-icon-right/cart.png') }}" class="my-2" alt="cart" />
             {{-- <span class="js-cart-count cart-count"> 0</span> --}}
           </a>
         </div>

@@ -11,6 +11,12 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
+Route::get('login', function () {
+  return view('login');
+})->name('login');
+Route::get('register', function () {
+  return view('register');
+})->name('register');
 Route::post('logout', [LoginController::class, 'logout'])->name('logout');
 
 Route::middleware(['auth'])->group(function () {
@@ -43,13 +49,6 @@ Route::get('flash-sale', function () {
 Route::get('laptop-outlet', function () {
   return view('pages.laptop-outlet');
 })->name('pages.laptop-outlet');
-
-Route::get('login', function () {
-  return view('login');
-})->name('login');
-Route::get('register', function () {
-  return view('register');
-})->name('register');
 Route::get('account', function () {
   return view('useraccount');
 })->name('useraccount');
