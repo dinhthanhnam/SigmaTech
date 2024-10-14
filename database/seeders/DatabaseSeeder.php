@@ -19,9 +19,12 @@ class DatabaseSeeder extends Seeder
             'utype' => 'ADM',
         ]);
         \App\Models\User::factory()->create([
-            'name' => 'user',
-            'password' => 'user',
-            'email' => 'user@example.com',
+            'name' => 'user1',
+            'password' => 'user1',
+            'email' => 'user1@example.com',
+            'gender' => 1,
+            'address'=> 'Hà Nội, Âu Cơ Tây Hồ',
+            'phone' => '01231231414',
         ]);
     }
 }

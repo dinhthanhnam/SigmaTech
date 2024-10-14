@@ -7,6 +7,9 @@ use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Http\Request;
 
 class RegisterController extends Controller
 {
@@ -48,13 +51,17 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
+        Log::info('Validator called with data:', $data);
+
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'phone' => ['nullable', 'string', 'max:20', 'unique:users'],
+            'gender' => ['nullable', 'string', 'in:0,1'],
+            'address' => ['nullable', 'string', 'max:1000'],
         ]);
     }
-
     /**
      * Create a new user instance after a valid registration.
      *
@@ -63,10 +70,17 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        // $fulladdress = ($data['province'] ?? '') . ',' . ($data['address'] ?? '');
+        Log::info('Creating user with data:', $data);
+
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'phone' => $data['phone'],
+            'gender' => $data['gender'],
+            'address' => $data['address'],
+            'utype' => 'USR',
         ]);
     }
 }
