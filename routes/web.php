@@ -29,7 +29,24 @@ Route::get('gaming-laptops', function () {
 Route::get('laptops', function () {
   return view('categories.laptops');
 })->name('categories.laptops');
-
+Route::get('gaming-gears', function () {
+  return view('categories.gaming-gears');
+})->name('categories.gaming-gears');
+Route::get('monitors', function () {
+  return view('categories.monitors');
+})->name('categories.monitors');
+Route::get('pc-parts', function () {
+  return view('categories.pc-parts');
+})->name('categories.pc-parts');
+Route::get('media-devices', function () {
+  return view('categories.media-devices');
+})->name('categories.media-devices');
+Route::get('coolings', function () {
+  return view('categories.coolings');
+})->name('categories.coolings');
+Route::get('accessories', function () {
+  return view('categories.accessories');
+})->name('categories.accessories');
 
 Route::get('shipping-policy', function () {
   return view('pages.service-policy.shipping-policy');

@@ -858,7 +858,7 @@
 
             </div>
             <div class="item bg-white" data-id="1253">
-              <a href="#" class="pro-cate-1">
+              <a href="{{ route('categories.pc-parts') }}" class="pro-cate-1">
                 <span class="cat-thumb-item" style="width: 35px;text-align: center">
                   <img src="{{ asset('assets/img/cat/cat_cf48adbcc24dd52850830b617fdce703.png') }}"
                     alt="Linh Kiện Máy Tính" />
@@ -1560,7 +1560,7 @@
               </div>
             </div>
             <div class="item bg-white" data-id="1052">
-              <a href="/man-hinh-may-tinh.html-1" class="pro-cate-1">
+              <a href="{{ route('categories.monitors') }}" class="pro-cate-1">
                 <span class="cat-thumb-item" style="width: 35px;text-align: center">
                   <img src="{{ asset('assets/img/cat/cat_095cb4be732b3d094b1ad78b0577a33a.png') }}"
                     alt="Màn Hình Máy Tính" />
@@ -2177,7 +2177,7 @@
               </div>
             </div>
             <div class="item bg-white" data-id="1255">
-              <a href="/gaming-gear.html" class="pro-cate-1">
+              <a href="{{route('categories.gaming-gears') }}" class="pro-cate-1">
                 <span class="cat-thumb-item" style="width: 35px;text-align: center">
                   <img src="{{ asset('assets/img/cat/cat_8a7100a2bf10de1685a042557ef4ee77.png') }}"
                     alt="Bàn phím, Chuột - Gaming Gear" />
@@ -2553,7 +2553,7 @@
               </div>
             </div>
             <div class="item bg-white" data-id="393">
-              <a href="/thiet-bi-luu-tru_dm393.html" class="pro-cate-1">
+              <a href="{{ route ('categories.media-devices')}}" class="pro-cate-1">
                 <span class="cat-thumb-item" style="width: 35px;text-align: center">
                   <img src="{{ asset('assets/img/cat/cat_f9fc468337e44b7e6b994b32dc8b8d44.png') }}"
                     alt="Loa, Tai Nghe, Webcam, Tivi" />
@@ -2794,7 +2794,7 @@
               </div>
             </div>
             <div class="item bg-white" data-id="397">
-              <a href="/cooling-tan-nhiet_dm397.html" class="pro-cate-1">
+              <a href="{{route ('categories.coolings')}}" class="pro-cate-1">
                 <span class="cat-thumb-item" style="width: 35px;text-align: center">
                   <img src="{{ asset('assets/img/cat/cat_30c65344cf0043629e4907d5c2120af3.png') }}"
                     alt="Cooling, Tản nhiệt" />
@@ -3191,7 +3191,7 @@
               </div>
             </div>
             <div class="item bg-white" data-id="2112">
-              <a href="/phu-kien-laptop-pc-khac.html" class="pro-cate-1">
+              <a href="{{route ('categories.accessories')}}" class="pro-cate-1">
                 <span class="cat-thumb-item" style="width: 35px;text-align: center">
                   <img src="{{ asset('assets/img/cat/cat_5804bb2ce092a894cf86a82c17affb54.png') }}"
                     alt="Phụ Kiện Laptop, PC, Khác" />

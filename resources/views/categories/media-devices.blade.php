@@ -17,8 +17,8 @@
                 
               
                 <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-                  <a href="/cooling-tan-nhiet_dm397.html" itemprop="item" class="nopad-l">
-                    <h1 itemprop="name">Cooling, Tản nhiệt</h1>
+                  <a href="/thiet-bi-luu-tru_dm393.html" itemprop="item" class="nopad-l">
+                    <h1 itemprop="name">Loa, Tai Nghe, Webcam, Tivi</h1>
                   </a>
                   <meta itemprop="position" content="2">
                 </li>
@@ -26,54 +26,19 @@
         </div>
       
         
-        <div class="custom-nav owl-carousel owl-theme mb-3 owl-loaded owl-drag" id="js-banner-category">
-            
-            
-            
-            
-            
-            
-            
-        <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1610px, 0px, 0px); transition: 0.25s; width: 5635px;"><div class="owl-item cloned" style="width: 795px; margin-right: 10px;"><div class="item">
-                <a href="/ad.php?id=3253" target="_blank" rel="nofollow"><img border="0" src="https://anphat.com.vn/media/banner/17_Augeea858b0446d60772d7a14a18352dd2d.jpg" width="798" height="232" alt=""></a>
-            </div></div><div class="owl-item cloned" style="width: 795px; margin-right: 10px;"><div class="item">
-                <a href="/ad.php?id=3257" target="_blank" rel="nofollow"><img border="0" src="https://anphat.com.vn/media/banner/19_Augcc41e27e4af523ec7aac52f9b5d7f1a9.png" width="798" height="232" alt=""></a>
-            </div></div><div class="owl-item active" style="width: 795px; margin-right: 10px;"><div class="item">
-                <a href="/ad.php?id=3252" target="_blank" rel="nofollow"><img border="0" src="https://anphat.com.vn/media/banner/17_Aug437e943c2e89d02f0c2c1a5175b1dd1d.jpg" width="798" height="232" alt="banner danh mục tản nhiệt - NZXT"></a>
-            </div></div><div class="owl-item active" style="width: 795px; margin-right: 10px;"><div class="item">
-                <a href="/ad.php?id=3253" target="_blank" rel="nofollow"><img border="0" src="https://anphat.com.vn/media/banner/17_Augeea858b0446d60772d7a14a18352dd2d.jpg" width="798" height="232" alt=""></a>
-            </div></div><div class="owl-item" style="width: 795px; margin-right: 10px;"><div class="item">
-                <a href="/ad.php?id=3257" target="_blank" rel="nofollow"><img border="0" src="https://anphat.com.vn/media/banner/19_Augcc41e27e4af523ec7aac52f9b5d7f1a9.png" width="798" height="232" alt=""></a>
-            </div></div><div class="owl-item cloned" style="width: 795px; margin-right: 10px;"><div class="item">
-                <a href="/ad.php?id=3252" target="_blank" rel="nofollow"><img border="0" src="https://anphat.com.vn/media/banner/17_Aug437e943c2e89d02f0c2c1a5175b1dd1d.jpg" width="798" height="232" alt="banner danh mục tản nhiệt - NZXT"></a>
-            </div></div><div class="owl-item cloned" style="width: 795px; margin-right: 10px;"><div class="item">
-                <a href="/ad.php?id=3253" target="_blank" rel="nofollow"><img border="0" src="https://anphat.com.vn/media/banner/17_Augeea858b0446d60772d7a14a18352dd2d.jpg" width="798" height="232" alt=""></a>
-            </div></div></div></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><i class="fa fa-angle-left"></i></button><button type="button" role="presentation" class="owl-next"><i class="fa fa-angle-right"></i></button></div><div class="owl-dots disabled"></div><div class="owl-thumbs"></div></div>
-        
 
         
       
        
             <div class="product-cat-child-group mb-3">
-                 <!---thay số là id danh mục sản phẩm-->
-<a href="/tan-nhiet-khi-aircooling_dm1392.html">                        
-      <i class="image lazy" data-bg="url(https://anphat.com.vn/media/product/250_47072_t___n_nhi___t_kh___cpu_jonsbo_cr_1400_evo_argb__black__3_.jpg)" data-was-processed="true" style="background-image: url('https://anphat.com.vn/media/product/250_47072_t___n_nhi___t_kh___cpu_jonsbo_cr_1400_evo_argb__black__3_.jpg');"></i>
-      <span class="title">Tản nhiệt khí</span>
-    </a>
-<a href="/bo-tan-nhiet-nuoc-all-in-one_dm1390.html">                        
-      <i class="image lazy" data-bg="url(https://anphat.com.vn/media/product/250_45847_t___n_nhi___t_n_____c_jonsbo_tg_360_black_argb.jpg)" data-was-processed="true" style="background-image: url('https://anphat.com.vn/media/product/250_45847_t___n_nhi___t_n_____c_jonsbo_tg_360_black_argb.jpg');"></i>
-      <span class="title">Tản nhiệt nước</span>
-    </a>
-<!---ket thuc danh muc COOLING, TẢN NHIỆT --->
-
-<!---laptop asus--->
-
-
+                
 
             </div>
        
          <!--- 
           <div class="product-cat-child-group mb-3">
+              
+              
               
               
               
@@ -97,423 +62,320 @@
                 <div class="tab-sub-title" id="js-tab-sub-list">
                     
                     
-                    <a href="javascript:void(0)" data-id="1388" 
-                    >Tản nước - Watercooling</a>
+                    <a href="javascript:void(0)" data-id="2530" 
+                    >Phân Loại Loa</a>
                     
                     
-                    <a href="javascript:void(0)" data-id="1390" 
-                    >Tản nhiệt nước All in One</a>
+                    <a href="javascript:void(0)" data-id="2536" 
+                    >Kiểu Loa</a>
                     
                     
-                    <a href="javascript:void(0)" data-id="1392" 
-                    >Tản nhiệt khí - Aircooling</a>
+                    <a href="javascript:void(0)" data-id="2534" 
+                    >Loa theo hãng</a>
                     
                     
-                    <a href="javascript:void(0)" data-id="1394" 
-                    >Linh kiện độ mod Case</a>
+                    <a href="javascript:void(0)" data-id="1181" 
+                    >Webcam</a>
                     
                     
-                    <a href="javascript:void(0)" data-id="1519" 
-                    >Quạt tản nhiệt</a>
+                    <a href="javascript:void(0)" data-id="402" 
+                    >TB nghe nhìn</a>
                     
                     
-                    <a href="javascript:void(0)" data-id="2819" 
-                    >Keo Tản Nhiệt</a>
+                    <a href="javascript:void(0)" data-id="1264" 
+                    >Tivi Led - Smart Tivi - Tivi LCD</a>
+                    
+                    
+                    <a href="javascript:void(0)" data-id="1180" 
+                    >Tai nghe</a>
                     
                 </div>
 
                 
                 
-                <div class="list-sub-2" id="js-cat-1388" >
+                <div class="list-sub-2" id="js-cat-2530" >
                     
-                    <a href="/bo-tan-nhiet-nuoc-custom_dm1389.html">
+                    <a href="/loa-may-tinh_dm1042.html">
                         <span class="img">
-                            <img src="https://anphat.com.vn/media/category/cb_6b6cd63284af4d5a54a188a45f526ad2.jpg" alt="Bộ tản nước Custom" class="fit-img"/>
+                            <img src="https://anphat.com.vn" alt="Loa vi tính" class="fit-img"/>
                         </span>
-                        <span class='name '>Bộ tản nước Custom</span>
+                        <span class='name '>Loa vi tính</span>
                     </a>
                     
-                    <a href="/tan-nhiet-nuoc-ekwb-made-in-eu_dm1520.html">
+                    <a href="/loa-vi-tinh-tich-hop-bluetooth.html">
                         <span class="img">
-                            <img src="https://anphat.com.vn/media/category/cb_918852fa7c4689de7d032984b437ce4f.png" alt="Tản nhiệt nước EKWB" class="fit-img"/>
+                            <img src="https://anphat.com.vn" alt="Loa vi tính tích hợp Bluetooth" class="fit-img"/>
                         </span>
-                        <span class='name '>Tản nhiệt nước EKWB</span>
+                        <span class='name '>Loa vi tính tích hợp Bluetooth</span>
                     </a>
                     
-                    <a href="/tan-nhiet-nuoc-barrow_dm1521.html">
+                    <a href="/loa-di-dong-bluetooth.html">
                         <span class="img">
-                            <img src="https://anphat.com.vn/media/category/cb_c96d0099b93400cb0df79e5282c4a462.png" alt="Tản nhiệt nước Barrow" class="fit-img"/>
+                            <img src="https://anphat.com.vn" alt="Loa di động bluetooth" class="fit-img"/>
                         </span>
-                        <span class='name '>Tản nhiệt nước Barrow</span>
+                        <span class='name '>Loa di động bluetooth</span>
                     </a>
                     
-                    <a href="/tan-nhiet-nuoc-bykski_dm1522.html">
+                    <a href="/loa-hoi-nghi_dm2273.html">
                         <span class="img">
-                            <img src="https://anphat.com.vn/media/category/cb_7aa3b745788d55ca954658f5822e8745.jpg" alt="Tản nhiệt nước Bykski" class="fit-img"/>
+                            <img src="https://anphat.com.vn" alt="Loa hội nghị" class="fit-img"/>
                         </span>
-                        <span class='name '>Tản nhiệt nước Bykski</span>
+                        <span class='name '>Loa hội nghị</span>
                     </a>
                     
-                    <a href="/tan-nhiet-nuoc-cac-hang_dm1540.html">
+                    <a href="/loa-tro-giang.html">
                         <span class="img">
-                            <img src="https://anphat.com.vn/media/category/cb_d7e7e8caf601cd92c78a378c726c1529.jpg" alt="Tản nhiệt nước các hãng" class="fit-img"/>
+                            <img src="https://anphat.com.vn" alt="Loa trợ giảng" class="fit-img"/>
                         </span>
-                        <span class='name '>Tản nhiệt nước các hãng</span>
+                        <span class='name '>Loa trợ giảng</span>
                     </a>
                     
-                </div>
-                
-                
-                <div class="list-sub-2" id="js-cat-1390" >
-                    
-                    <a href="/tan-nhiet-nuoc-asus_dm1878.html">
+                    <a href="/loa-keo-karaoke.html">
                         <span class="img">
-                            <img src="https://anphat.com.vn/media/category/cb_354a1588f4ec61125043ecd65404ef50.png" alt="Tản nhiệt nước Asus" class="fit-img"/>
+                            <img src="https://anphat.com.vn" alt="Loa kéo Karaoke" class="fit-img"/>
                         </span>
-                        <span class='name '>Tản nhiệt nước Asus</span>
-                    </a>
-                    
-                    <a href="/tan-nhiet-nuoc-gigabyte_dm1911.html">
-                        <span class="img">
-                            <img src="https://anphat.com.vn" alt="Tản nước Gigabyte" class="fit-img"/>
-                        </span>
-                        <span class='name '>Tản nước Gigabyte</span>
-                    </a>
-                    
-                    <a href="/tan-nhiet-nuoc-msi_dm1912.html">
-                        <span class="img">
-                            <img src="https://anphat.com.vn" alt="Tản nhiệt nước MSI" class="fit-img"/>
-                        </span>
-                        <span class='name '>Tản nhiệt nước MSI</span>
-                    </a>
-                    
-                    <a href="/tan-nhiet-nuoc-corsair_dm1523.html">
-                        <span class="img">
-                            <img src="https://anphat.com.vn/media/category/cb_9983781564ee6634a62ebf8966cc9ff7.png" alt="Tản nước Corsair" class="fit-img"/>
-                        </span>
-                        <span class='name '>Tản nước Corsair</span>
-                    </a>
-                    
-                    <a href="/tan-nhiet-nuoc-nzxt_dm1524.html">
-                        <span class="img">
-                            <img src="https://anphat.com.vn/media/category/cb_f17e6edcd67e31d392031fc78e8867c4.png" alt="Tản nhiệt nước NZXT" class="fit-img"/>
-                        </span>
-                        <span class='name '>Tản nhiệt nước NZXT</span>
-                    </a>
-                    
-                    <a href="/tan-nhiet-nuoc-deepcool_dm1525.html">
-                        <span class="img">
-                            <img src="https://anphat.com.vn/media/category/cb_36cd6fc01b6e3a705cc67e30d04f385f.jpg" alt="Tản nhiệt nước DeepCool" class="fit-img"/>
-                        </span>
-                        <span class='name '>Tản nhiệt nước DeepCool</span>
-                    </a>
-                    
-                    <a href="/tan-nhiet-nuoc-id-cooling_dm1526.html">
-                        <span class="img">
-                            <img src="https://anphat.com.vn/media/category/cb_022279e0d6c2460a3d089a531cd1ff30.png" alt="Tản nhiệt nước ID-Cooling" class="fit-img"/>
-                        </span>
-                        <span class='name '>Tản nhiệt nước ID-Cooling</span>
-                    </a>
-                    
-                    <a href="/tan-nhiet-nuoc-coolermaster_dm1527.html">
-                        <span class="img">
-                            <img src="https://anphat.com.vn/media/category/cb_c9848b2332217aea2695634f22c26470.png" alt="Tản nước CoolerMaster" class="fit-img"/>
-                        </span>
-                        <span class='name '>Tản nước CoolerMaster</span>
-                    </a>
-                    
-                    <a href="/tan-nhiet-nuoc-xigmatek_dm1601.html">
-                        <span class="img">
-                            <img src="https://anphat.com.vn" alt="Tản nhiệt nước Xigmatek" class="fit-img"/>
-                        </span>
-                        <span class='name '>Tản nhiệt nước Xigmatek</span>
-                    </a>
-                    
-                    <a href="/tan-nhiet-nuoc-thermaltake_dm1729.html">
-                        <span class="img">
-                            <img src="https://anphat.com.vn/media/category/cb_f0acbc8499aed7cc1178f8d92f77102c.jpg" alt="Tản nước Thermaltake" class="fit-img"/>
-                        </span>
-                        <span class='name '>Tản nước Thermaltake</span>
-                    </a>
-                    
-                    <a href="/tan-nhiet-nuoc-sama.html">
-                        <span class="img">
-                            <img src="https://anphat.com.vn" alt="Tản nhiệt nước SAMA" class="fit-img"/>
-                        </span>
-                        <span class='name '>Tản nhiệt nước SAMA</span>
-                    </a>
-                    
-                    <a href="/tan-nhiet-nuoc-lian-li.html">
-                        <span class="img">
-                            <img src="https://anphat.com.vn" alt="Tản nhiệt nước Lian Li" class="fit-img"/>
-                        </span>
-                        <span class='name '>Tản nhiệt nước Lian Li</span>
-                    </a>
-                    
-                    <a href="/tan-nhiet-nuoc-thermalright_dm2350.html">
-                        <span class="img">
-                            <img src="https://anphat.com.vn" alt="Tản nước Thermalright" class="fit-img"/>
-                        </span>
-                        <span class='name '>Tản nước Thermalright</span>
-                    </a>
-                    
-                    <a href="/tan-nhiet-nuoc-jonsbo.html">
-                        <span class="img">
-                            <img src="https://anphat.com.vn" alt="Tản nhiệt nước JONSBO" class="fit-img"/>
-                        </span>
-                        <span class='name '>Tản nhiệt nước JONSBO</span>
-                    </a>
-                    
-                    <a href="/tan-nhiet-nuoc-segotep.html">
-                        <span class="img">
-                            <img src="https://anphat.com.vn" alt="Tản nhiệt nước Segotep" class="fit-img"/>
-                        </span>
-                        <span class='name '>Tản nhiệt nước Segotep</span>
-                    </a>
-                    
-                    <a href="/tan-nhiet-nuoc-cac-hang_dm1528.html">
-                        <span class="img">
-                            <img src="https://anphat.com.vn/media/category/cb_fcd2d9da3ad1cdd13b1d684c816dc645.jpg" alt="Tản nhiệt nước các hãng" class="fit-img"/>
-                        </span>
-                        <span class='name '>Tản nhiệt nước các hãng</span>
+                        <span class='name '>Loa kéo Karaoke</span>
                     </a>
                     
                 </div>
                 
                 
-                <div class="list-sub-2" id="js-cat-1392" >
+                <div class="list-sub-2" id="js-cat-2536" >
                     
-                    <a href="/tan-nhiet-khi-id-cooling_dm1530.html">
+                    <a href="/loa-20.html">
                         <span class="img">
-                            <img src="https://anphat.com.vn/media/category/cb_0cf3dbd4c3ef42e61cabffddf188c709.png" alt="Tản nhiệt khí ID-Cooling" class="fit-img"/>
+                            <img src="https://anphat.com.vn" alt="Loa 2.0" class="fit-img"/>
                         </span>
-                        <span class='name '>Tản nhiệt khí ID-Cooling</span>
+                        <span class='name '>Loa 2.0</span>
                     </a>
                     
-                    <a href="/tan-nhiet-khi-coolermaster_dm1531.html">
+                    <a href="/loa-21.html">
                         <span class="img">
-                            <img src="https://anphat.com.vn/media/category/cb_2b1121e94870c9332bc7abc00e1e2f3b.png" alt="Tản khí CoolerMaster" class="fit-img"/>
+                            <img src="https://anphat.com.vn" alt="Loa 2.1" class="fit-img"/>
                         </span>
-                        <span class='name '>Tản khí CoolerMaster</span>
+                        <span class='name '>Loa 2.1</span>
                     </a>
                     
-                    <a href="/tan-nhiet-khi-deepcool_dm1529.html">
+                    <a href="/loa-41.html">
                         <span class="img">
-                            <img src="https://anphat.com.vn/media/category/cb_e2cdef8f52a2eac52a7caaa4a44beaae.jpg" alt="Tản nhiệt khí DeepCool" class="fit-img"/>
+                            <img src="https://anphat.com.vn" alt="Loa 4.1" class="fit-img"/>
                         </span>
-                        <span class='name '>Tản nhiệt khí DeepCool</span>
+                        <span class='name '>Loa 4.1</span>
                     </a>
                     
-                    <a href="/tan-nhiet-khi-gamemax_dm1766.html">
+                    <a href="/loa-51.html">
                         <span class="img">
-                            <img src="https://anphat.com.vn" alt="Tản nhiệt khí Gamemax" class="fit-img"/>
+                            <img src="https://anphat.com.vn" alt="Loa 5.1" class="fit-img"/>
                         </span>
-                        <span class='name '>Tản nhiệt khí Gamemax</span>
+                        <span class='name '>Loa 5.1</span>
                     </a>
                     
-                    <a href="/tan-nhiet-khi-noctua_dm1881.html">
+                    <a href="/loa-71.html">
                         <span class="img">
-                            <img src="https://anphat.com.vn" alt="Tản nhiệt khí Noctua" class="fit-img"/>
+                            <img src="https://anphat.com.vn" alt="Loa 7.1" class="fit-img"/>
                         </span>
-                        <span class='name '>Tản nhiệt khí Noctua</span>
+                        <span class='name '>Loa 7.1</span>
                     </a>
                     
-                    <a href="/tan-khi-thermalright_dm1882.html">
+                    <a href="/soundbar.html">
                         <span class="img">
-                            <img src="https://anphat.com.vn" alt="Tản khí Thermalright" class="fit-img"/>
+                            <img src="https://anphat.com.vn" alt="Soundbar" class="fit-img"/>
                         </span>
-                        <span class='name '>Tản khí Thermalright</span>
-                    </a>
-                    
-                    <a href="/tan-nhiet-khi-jonsbo.html">
-                        <span class="img">
-                            <img src="https://anphat.com.vn" alt="Tản nhiệt khí JONSBO" class="fit-img"/>
-                        </span>
-                        <span class='name '>Tản nhiệt khí JONSBO</span>
-                    </a>
-                    
-                    <a href="/tan-nhiet-khi-segotep.html">
-                        <span class="img">
-                            <img src="https://anphat.com.vn" alt="Tản nhiệt khí Segotep" class="fit-img"/>
-                        </span>
-                        <span class='name '>Tản nhiệt khí Segotep</span>
-                    </a>
-                    
-                    <a href="/tan-nhiet-khi-xigmatek.html">
-                        <span class="img">
-                            <img src="https://anphat.com.vn" alt="Tản nhiệt khí Xigmatek" class="fit-img"/>
-                        </span>
-                        <span class='name '>Tản nhiệt khí Xigmatek</span>
-                    </a>
-                    
-                    <a href="/tan-nhiet-khi-cac-hang_dm1532.html">
-                        <span class="img">
-                            <img src="https://anphat.com.vn/media/category/cb_f7aa9e3058397bf9aaa7ef48d1b8e406.jpg" alt="Tản nhiệt khí các hãng" class="fit-img"/>
-                        </span>
-                        <span class='name '>Tản nhiệt khí các hãng</span>
+                        <span class='name '>Soundbar</span>
                     </a>
                     
                 </div>
                 
                 
-                <div class="list-sub-2" id="js-cat-1394" >
+                <div class="list-sub-2" id="js-cat-2534" >
                     
-                    <a href="/den-led-rgb_dm1536.html">
+                    <a href="/loa-logitech_dm1803.html">
                         <span class="img">
-                            <img src="https://anphat.com.vn/media/category/cb_51b70f6829561336c49fe23f085c8726.jpg" alt="Đèn LED RGB" class="fit-img"/>
+                            <img src="https://anphat.com.vn" alt="Loa LOGITECH" class="fit-img"/>
                         </span>
-                        <span class='name '>Đèn LED RGB</span>
+                        <span class='name '>Loa LOGITECH</span>
                     </a>
                     
-                    <a href="/cap-nguon-noi-dai-boc-luoi_dm1537.html">
+                    <a href="/loa-microlab_dm1805.html">
                         <span class="img">
-                            <img src="https://anphat.com.vn/media/category/cb_df8bbd105ea68f37754fb6b6cb750e6f.jpg" alt="Cáp nguồn bọc lưới" class="fit-img"/>
+                            <img src="https://anphat.com.vn" alt="Loa MICROLAB" class="fit-img"/>
                         </span>
-                        <span class='name '>Cáp nguồn bọc lưới</span>
+                        <span class='name '>Loa MICROLAB</span>
                     </a>
                     
-                    <a href="/gia-do-vga_dm1538.html">
+                    <a href="/loa-edifier.html">
                         <span class="img">
-                            <img src="https://anphat.com.vn/media/category/cb_1ae37058e02ae5d122eed2b4e92bf557.jpg" alt="Giá đỡ VGA" class="fit-img"/>
+                            <img src="https://anphat.com.vn" alt="Loa EDIFIER" class="fit-img"/>
                         </span>
-                        <span class='name '>Giá đỡ VGA</span>
+                        <span class='name '>Loa EDIFIER</span>
                     </a>
                     
-                    <a href="/phu-kien-do-mod-khac_dm1539.html">
+                    <a href="/loa-creative_dm1806.html">
                         <span class="img">
-                            <img src="https://anphat.com.vn/media/category/cb_bf7b26eb483a2906af8f6b51095498c8.jpg" alt="Phụ kiện độ mod khác" class="fit-img"/>
+                            <img src="https://anphat.com.vn" alt="Loa CREATIVE" class="fit-img"/>
                         </span>
-                        <span class='name '>Phụ kiện độ mod khác</span>
+                        <span class='name '>Loa CREATIVE</span>
                     </a>
                     
-                </div>
-                
-                
-                <div class="list-sub-2" id="js-cat-1519" >
-                    
-                    <a href="/quat-asus_dm1870.html">
+                    <a href="/loa-klipsch.html">
                         <span class="img">
-                            <img src="https://anphat.com.vn" alt="Quạt Asus" class="fit-img"/>
+                            <img src="https://anphat.com.vn" alt="loa KLIPSCH" class="fit-img"/>
                         </span>
-                        <span class='name '>Quạt Asus</span>
+                        <span class='name '>loa KLIPSCH</span>
                     </a>
                     
-                    <a href="/quat-tan-nhiet-nzxt_dm1534.html">
+                    <a href="/loa-marshall.html">
                         <span class="img">
-                            <img src="https://anphat.com.vn/media/category/cb_d32f3b19e3c2a080e873ddeb3ba3c299.png" alt="Quạt NZXT" class="fit-img"/>
+                            <img src="https://anphat.com.vn" alt="Loa Marshall" class="fit-img"/>
                         </span>
-                        <span class='name '>Quạt NZXT</span>
+                        <span class='name '>Loa Marshall</span>
                     </a>
                     
-                    <a href="/quat-tan-nhiet-corsair_dm1533.html">
+                    <a href="/loa-jbl.html">
                         <span class="img">
-                            <img src="https://anphat.com.vn/media/category/cb_142b029255666374ea4b282b502d572c.png" alt="Quạt Corsair" class="fit-img"/>
+                            <img src="https://anphat.com.vn" alt="Loa JBL" class="fit-img"/>
                         </span>
-                        <span class='name '>Quạt Corsair</span>
+                        <span class='name '>Loa JBL</span>
                     </a>
                     
-                    <a href="/quat-tan-nhiet-thermaltake_dm1730.html">
+                    <a href="/loa-audioengine.html">
                         <span class="img">
-                            <img src="https://anphat.com.vn/media/category/cb_40f40cb4aa40506f09a6769bf8112626.jpg" alt="Quạt Thermaltake" class="fit-img"/>
+                            <img src="https://anphat.com.vn" alt="Loa Audioengine" class="fit-img"/>
                         </span>
-                        <span class='name '>Quạt Thermaltake</span>
+                        <span class='name '>Loa Audioengine</span>
                     </a>
                     
-                    <a href="/quat-tan-nhiet-cooler-master_dm1746.html">
+                    <a href="/loa-soundmax_dm1804.html">
                         <span class="img">
-                            <img src="https://anphat.com.vn" alt="Quạt Cooler Master" class="fit-img"/>
+                            <img src="https://anphat.com.vn" alt="Loa SoundMax" class="fit-img"/>
                         </span>
-                        <span class='name '>Quạt Cooler Master</span>
+                        <span class='name '>Loa SoundMax</span>
                     </a>
                     
-                    <a href="/quat-tan-nhiet-deepcool_dm1764.html">
+                    <a href="/loa-hang-khac_dm1807.html">
                         <span class="img">
-                            <img src="https://anphat.com.vn" alt="Quạt tản nhiệt Deepcool" class="fit-img"/>
+                            <img src="https://anphat.com.vn" alt="Loa hãng khác" class="fit-img"/>
                         </span>
-                        <span class='name '>Quạt tản nhiệt Deepcool</span>
+                        <span class='name '>Loa hãng khác</span>
                     </a>
                     
-                    <a href="/quat-xigmatek_dm1765.html">
+                    <a href="/loa-soundmax.html">
                         <span class="img">
-                            <img src="https://anphat.com.vn/media/category/cb_12020a0b29c1493b7b9ffc0c22d9d11c.png" alt="Quạt Xigmatek" class="fit-img"/>
+                            <img src="https://anphat.com.vn" alt="Loa SOUNDMAX" class="fit-img"/>
                         </span>
-                        <span class='name '>Quạt Xigmatek</span>
-                    </a>
-                    
-                    <a href="/quat-jonsbo.html">
-                        <span class="img">
-                            <img src="https://anphat.com.vn" alt="Quạt JONSBO" class="fit-img"/>
-                        </span>
-                        <span class='name '>Quạt JONSBO</span>
-                    </a>
-                    
-                    <a href="/quat-lian-li.html">
-                        <span class="img">
-                            <img src="https://anphat.com.vn" alt="Quạt Lian Li" class="fit-img"/>
-                        </span>
-                        <span class='name '>Quạt Lian Li</span>
-                    </a>
-                    
-                    <a href="/quat-id-cooling.html">
-                        <span class="img">
-                            <img src="https://anphat.com.vn" alt="Quạt ID Cooling" class="fit-img"/>
-                        </span>
-                        <span class='name '>Quạt ID Cooling</span>
-                    </a>
-                    
-                    <a href="/quat-tan-nhiet-cac-hang_dm1535.html">
-                        <span class="img">
-                            <img src="https://anphat.com.vn/media/category/cb_e6e78edba45ebcf01e82004be139cc58.jpg" alt="Quạt các hãng" class="fit-img"/>
-                        </span>
-                        <span class='name '>Quạt các hãng</span>
+                        <span class='name '>Loa SOUNDMAX</span>
                     </a>
                     
                 </div>
                 
                 
-                <div class="list-sub-2" id="js-cat-2819" >
+                <div class="list-sub-2" id="js-cat-1181" >
                     
-                    <a href="/keo-coolermaster.html">
+                    <a href="/webcam-logitech_dm2226.html">
                         <span class="img">
-                            <img src="https://anphat.com.vn" alt="Keo CoolerMaster" class="fit-img"/>
+                            <img src="https://anphat.com.vn" alt="Webcam Logitech" class="fit-img"/>
                         </span>
-                        <span class='name '>Keo CoolerMaster</span>
+                        <span class='name '>Webcam Logitech</span>
                     </a>
                     
-                    <a href="/keo-noctua.html">
+                    <a href="/webcam-asus_dm2221.html">
                         <span class="img">
-                            <img src="https://anphat.com.vn" alt="Keo Noctua" class="fit-img"/>
+                            <img src="https://anphat.com.vn" alt="Webcam Asus" class="fit-img"/>
                         </span>
-                        <span class='name '>Keo Noctua</span>
+                        <span class='name '>Webcam Asus</span>
                     </a>
                     
-                    <a href="/keo-arctic.html">
+                    <a href="/webcam-thronmax_dm2228.html">
                         <span class="img">
-                            <img src="https://anphat.com.vn" alt="Keo Arctic" class="fit-img"/>
+                            <img src="https://anphat.com.vn" alt="Webcam Thronmax" class="fit-img"/>
                         </span>
-                        <span class='name '>Keo Arctic</span>
+                        <span class='name '>Webcam Thronmax</span>
                     </a>
                     
-                    <a href="/keo-corsair.html">
+                    <a href="/webcam-hikvsion_dm2225.html">
                         <span class="img">
-                            <img src="https://anphat.com.vn" alt="Keo Corsair" class="fit-img"/>
+                            <img src="https://anphat.com.vn" alt="Webcam Hikvsion" class="fit-img"/>
                         </span>
-                        <span class='name '>Keo Corsair</span>
+                        <span class='name '>Webcam Hikvsion</span>
                     </a>
                     
-                    <a href="/keo-thermal-grizzly.html">
+                    <a href="/webcam-rapoo_dm2238.html">
                         <span class="img">
-                            <img src="https://anphat.com.vn" alt="Keo Thermal Grizzly" class="fit-img"/>
+                            <img src="https://anphat.com.vn" alt="Webcam Rapoo" class="fit-img"/>
                         </span>
-                        <span class='name '>Keo Thermal Grizzly</span>
+                        <span class='name '>Webcam Rapoo</span>
                     </a>
                     
-                    <a href="/keo-thermalright.html">
+                    <a href="/webcam-dahua_dm2222.html">
                         <span class="img">
-                            <img src="https://anphat.com.vn" alt="Keo Thermalright" class="fit-img"/>
+                            <img src="https://anphat.com.vn" alt="Webcam Dahua" class="fit-img"/>
                         </span>
-                        <span class='name '>Keo Thermalright</span>
+                        <span class='name '>Webcam Dahua</span>
                     </a>
+                    
+                    <a href="/webcam-genius_dm2223.html">
+                        <span class="img">
+                            <img src="https://anphat.com.vn" alt="Webcam Genius" class="fit-img"/>
+                        </span>
+                        <span class='name '>Webcam Genius</span>
+                    </a>
+                    
+                    <a href="/webcam-e-dra_dm2224.html">
+                        <span class="img">
+                            <img src="https://anphat.com.vn" alt="Webcam E-Dra" class="fit-img"/>
+                        </span>
+                        <span class='name '>Webcam E-Dra</span>
+                    </a>
+                    
+                    <a href="/webcam-razer_dm2227.html">
+                        <span class="img">
+                            <img src="https://anphat.com.vn" alt="Webcam Razer" class="fit-img"/>
+                        </span>
+                        <span class='name '>Webcam Razer</span>
+                    </a>
+                    
+                </div>
+                
+                
+                <div class="list-sub-2" id="js-cat-402" >
+                    
+                </div>
+                
+                
+                <div class="list-sub-2" id="js-cat-1264" >
+                    
+                    <a href="/sony_dm1299.html">
+                        <span class="img">
+                            <img src="https://anphat.com.vn/media/category/cb_17a7b5fa21056656a84a1e24e2007d3a.jpg" alt="Sony" class="fit-img"/>
+                        </span>
+                        <span class='name '>Sony</span>
+                    </a>
+                    
+                    <a href="/samsung_dm1300.html">
+                        <span class="img">
+                            <img src="https://anphat.com.vn/media/category/cb_c8b577b8b6435067d3a446f945871059.jpg" alt="Samsung" class="fit-img"/>
+                        </span>
+                        <span class='name '>Samsung</span>
+                    </a>
+                    
+                    <a href="/lg_dm1301.html">
+                        <span class="img">
+                            <img src="https://anphat.com.vn/media/category/cb_6569fef7aa3a18a97cbdada2f4d032ee.jpg" alt="LG" class="fit-img"/>
+                        </span>
+                        <span class='name '>LG</span>
+                    </a>
+                    
+                    <a href="/panasonic_dm1302.html">
+                        <span class="img">
+                            <img src="https://anphat.com.vn/media/category/cb_66f929d89928c93108c6e839b8a2031c.jpg" alt="Panasonic" class="fit-img"/>
+                        </span>
+                        <span class='name '>Panasonic</span>
+                    </a>
+                    
+                </div>
+                
+                
+                <div class="list-sub-2" id="js-cat-1180" >
                     
                 </div>
                 
@@ -571,11 +433,53 @@
 
     
 
+    
 
+    
 
     
 
     
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
 
     
 
@@ -615,104 +519,242 @@
                         <div class="filter-item-list js-filter-item" data-type="brand">
                             <!--  -->
                              <!-- 1 -->                            
-                            <a href="javascript:void(0)" class="filter-title js-filter-title  image" title="Asus" data-check="0" data-filter_code="brand" data-value="3" style="text-transform: capitalize">
-                                 <span class="lazy" data-bg="url(/media/brand/asus.jpg)"></span>
+                            <a href="javascript:void(0)" class="filter-title js-filter-title  image" title="Sony" data-check="0" data-filter_code="brand" data-value="7" style="text-transform: capitalize">
+                                 <span class="lazy" data-bg="url(/media/brand/sony.jpg)"></span>
                                 
                             </a>
 
                              <!-- 2 -->                            
-                            <a href="javascript:void(0)" class="filter-title js-filter-title  " title="Arctic" data-check="0" data-filter_code="brand" data-value="236" style="text-transform: capitalize">
-                                 Arctic
+                            <a href="javascript:void(0)" class="filter-title js-filter-title  image" title="Samsung" data-check="0" data-filter_code="brand" data-value="8" style="text-transform: capitalize">
+                                 <span class="lazy" data-bg="url(/media/brand/samsung.jpg)"></span>
                                 
                             </a>
 
                              <!-- 3 -->                            
+                            <a href="javascript:void(0)" class="filter-title js-filter-title  image" title="LG" data-check="0" data-filter_code="brand" data-value="83" style="text-transform: capitalize">
+                                 <span class="lazy" data-bg="url(/media/brand/lg.jpg)"></span>
+                                
+                            </a>
+
+                             <!-- 4 -->                            
+                            <a href="javascript:void(0)" class="filter-title js-filter-title  " title="Blaupunkt" data-check="0" data-filter_code="brand" data-value="471" style="text-transform: capitalize">
+                                 Blaupunkt
+                                
+                            </a>
+
+                             <!-- 5 -->                            
+                            <a href="javascript:void(0)" class="filter-title js-filter-title  image" title="Canon" data-check="0" data-filter_code="brand" data-value="12" style="text-transform: capitalize">
+                                 <span class="lazy" data-bg="url(/media/brand/canon.jpg)"></span>
+                                
+                            </a>
+
+                             <!-- 6 -->                            
                             <a href="javascript:void(0)" class="filter-title js-filter-title  image" title="Coolermaster" data-check="0" data-filter_code="brand" data-value="96" style="text-transform: capitalize">
                                  <span class="lazy" data-bg="url(/media/brand/coolermaster.jpg)"></span>
                                 
                             </a>
 
-                             <!-- 4 -->                            
-                            <a href="javascript:void(0)" class="filter-title js-filter-title  image" title="Corsair" data-check="0" data-filter_code="brand" data-value="138" style="text-transform: capitalize">
-                                 <span class="lazy" data-bg="url(/media/brand/corsair.png)"></span>
-                                
-                            </a>
-
-                             <!-- 5 -->                            
-                            <a href="javascript:void(0)" class="filter-title js-filter-title  image" title="DeepCool" data-check="0" data-filter_code="brand" data-value="194" style="text-transform: capitalize">
-                                 <span class="lazy" data-bg="url(/media/brand/deepcool.jpg)"></span>
-                                
-                            </a>
-
-                             <!-- 6 -->                            
-                            <a href="javascript:void(0)" class="filter-title js-filter-title  image" title="Gigabyte" data-check="0" data-filter_code="brand" data-value="53" style="text-transform: capitalize">
-                                 <span class="lazy" data-bg="url(/media/brand/gigabyte.jpg)"></span>
-                                
-                            </a>
-
                              <!-- 7 -->                            
-                            <a href="javascript:void(0)" class="filter-title js-filter-title  " title="HYTE" data-check="0" data-filter_code="brand" data-value="462" style="text-transform: capitalize">
-                                 HYTE
+                            <a href="javascript:void(0)" class="filter-title js-filter-title  image" title="Delux" data-check="0" data-filter_code="brand" data-value="38" style="text-transform: capitalize">
+                                 <span class="lazy" data-bg="url(/media/brand/delux.jpg)"></span>
                                 
                             </a>
 
                              <!-- 8 -->                            
-                            <a href="javascript:void(0)" class="filter-title js-filter-title  image" title="ID-Cooling" data-check="0" data-filter_code="brand" data-value="183" style="text-transform: capitalize">
-                                 <span class="lazy" data-bg="url(/media/brand/idcooling.jpg)"></span>
+                            <a href="javascript:void(0)" class="filter-title js-filter-title  " title="Divoom" data-check="0" data-filter_code="brand" data-value="472" style="text-transform: capitalize">
+                                 Divoom
                                 
                             </a>
 
                              <!-- 9 -->                            
-                            <a href="javascript:void(0)" class="filter-title js-filter-title  " title="Jonsbo" data-check="0" data-filter_code="brand" data-value="337" style="text-transform: capitalize">
-                                 Jonsbo
+                            <a href="javascript:void(0)" class="filter-title js-filter-title  image" title="E-Blue" data-check="0" data-filter_code="brand" data-value="121" style="text-transform: capitalize">
+                                 <span class="lazy" data-bg="url(/media/brand/eblue.png)"></span>
                                 
                             </a>
 
                              <!-- 10 -->                            
-                            <a href="javascript:void(0)" class="filter-title js-filter-title  " title="KENOO" data-check="0" data-filter_code="brand" data-value="329" style="text-transform: capitalize">
-                                 KENOO
+                            <a href="javascript:void(0)" class="filter-title js-filter-title  " title="E-Dra" data-check="0" data-filter_code="brand" data-value="299" style="text-transform: capitalize">
+                                 E-Dra
                                 
                             </a>
 
                              <!-- 11 -->                            
-                            <a href="javascript:void(0)" class="filter-title js-filter-title  " title="LIANLI" data-check="0" data-filter_code="brand" data-value="268" style="text-transform: capitalize">
-                                 LIANLI
+                            <a href="javascript:void(0)" class="filter-title js-filter-title  " title="Edifier" data-check="0" data-filter_code="brand" data-value="467" style="text-transform: capitalize">
+                                 Edifier
                                 
                             </a>
 
                              <!-- 12 -->                            
-                            <a href="javascript:void(0)" class="filter-title js-filter-title  image" title="MSI" data-check="0" data-filter_code="brand" data-value="104" style="text-transform: capitalize">
-                                 <span class="lazy" data-bg="url(/media/brand/msi.jpg)"></span>
+                            <a href="javascript:void(0)" class="filter-title js-filter-title  " title="Elgato" data-check="0" data-filter_code="brand" data-value="311" style="text-transform: capitalize">
+                                 Elgato
                                 
                             </a>
 
                              <!-- 13 -->                            
-                            <a href="javascript:void(0)" class="filter-title js-filter-title  " title="NOCTUA" data-check="0" data-filter_code="brand" data-value="325" style="text-transform: capitalize">
-                                 NOCTUA
+                            <a href="javascript:void(0)" class="filter-title js-filter-title  image" title="Fenda" data-check="0" data-filter_code="brand" data-value="22" style="text-transform: capitalize">
+                                 <span class="lazy" data-bg="url(/media/brand/fenda.jpg)"></span>
                                 
                             </a>
 
                              <!-- 14 -->                            
+                            <a href="javascript:void(0)" class="filter-title js-filter-title  image" title="Fuhlen" data-check="0" data-filter_code="brand" data-value="94" style="text-transform: capitalize">
+                                 <span class="lazy" data-bg="url(/media/brand/fuhlen.jpg)"></span>
+                                
+                            </a>
+
+                             <!-- 15 -->                            
+                            <a href="javascript:void(0)" class="filter-title js-filter-title  " title="Hohem" data-check="0" data-filter_code="brand" data-value="465" style="text-transform: capitalize">
+                                 Hohem
+                                
+                            </a>
+
+                             <!-- 16 -->                            
+                            <a href="javascript:void(0)" class="filter-title js-filter-title  " title="HyperX" data-check="0" data-filter_code="brand" data-value="343" style="text-transform: capitalize">
+                                 HyperX
+                                
+                            </a>
+
+                             <!-- 17 -->                            
+                            <a href="javascript:void(0)" class="filter-title js-filter-title  image" title="Jabra" data-check="0" data-filter_code="brand" data-value="176" style="text-transform: capitalize">
+                                 <span class="lazy" data-bg="url(/media/brand/jabra.png)"></span>
+                                
+                            </a>
+
+                             <!-- 18 -->                            
+                            <a href="javascript:void(0)" class="filter-title js-filter-title  " title="JBL" data-check="0" data-filter_code="brand" data-value="308" style="text-transform: capitalize">
+                                 JBL
+                                
+                            </a>
+
+                             <!-- 19 -->                            
+                            <a href="javascript:void(0)" class="filter-title js-filter-title  image" title="Kingmax" data-check="0" data-filter_code="brand" data-value="43" style="text-transform: capitalize">
+                                 <span class="lazy" data-bg="url(/media/brand/kingmax.jpg)"></span>
+                                
+                            </a>
+
+                             <!-- 20 -->                            
+                            <a href="javascript:void(0)" class="filter-title js-filter-title  image" title="Kingston" data-check="0" data-filter_code="brand" data-value="44" style="text-transform: capitalize">
+                                 <span class="lazy" data-bg="url(/media/brand/kingston.jpg)"></span>
+                                
+                            </a>
+
+                             <!-- 21 -->                            
+                            <a href="javascript:void(0)" class="filter-title js-filter-title  image" title="Logitech" data-check="0" data-filter_code="brand" data-value="27" style="text-transform: capitalize">
+                                 <span class="lazy" data-bg="url(/media/brand/logitech.jpg)"></span>
+                                
+                            </a>
+
+                             <!-- 22 -->                            
+                            <a href="javascript:void(0)" class="filter-title js-filter-title  image" title="Microlab" data-check="0" data-filter_code="brand" data-value="21" style="text-transform: capitalize">
+                                 <span class="lazy" data-bg="url(/media/brand/microlab.jpg)"></span>
+                                
+                            </a>
+
+                             <!-- 23 -->                            
                             <a href="javascript:void(0)" class="filter-title js-filter-title  image" title="NZXT" data-check="0" data-filter_code="brand" data-value="178" style="text-transform: capitalize">
                                  <span class="lazy" data-bg="url(/media/brand/nzxt.png)"></span>
                                 
                             </a>
 
-                             <!-- 15 -->                            
-                            <a href="javascript:void(0)" class="filter-title js-filter-title  image" title="Segotep" data-check="0" data-filter_code="brand" data-value="169" style="text-transform: capitalize">
-                                 <span class="lazy" data-bg="url(/media/brand/segotep.jpg)"></span>
+                             <!-- 24 -->                            
+                            <a href="javascript:void(0)" class="filter-title js-filter-title  " title="Poly" data-check="0" data-filter_code="brand" data-value="469" style="text-transform: capitalize">
+                                 Poly
                                 
                             </a>
 
-                             <!-- 16 -->                            
-                            <a href="javascript:void(0)" class="filter-title js-filter-title  image" title="Thermaltake" data-check="0" data-filter_code="brand" data-value="74" style="text-transform: capitalize">
-                                 <span class="lazy" data-bg="url(/media/brand/thermaltake.jpg)"></span>
+                             <!-- 25 -->                            
+                            <a href="javascript:void(0)" class="filter-title js-filter-title  " title="Qinlian" data-check="0" data-filter_code="brand" data-value="212" style="text-transform: capitalize">
+                                 Qinlian
                                 
                             </a>
 
-                             <!-- 17 -->                            
-                            <a href="javascript:void(0)" class="filter-title js-filter-title  image" title="Xigmatek" data-check="0" data-filter_code="brand" data-value="165" style="text-transform: capitalize">
-                                 <span class="lazy" data-bg="url(/media/brand/xigmatek.jpg)"></span>
+                             <!-- 26 -->                            
+                            <a href="javascript:void(0)" class="filter-title js-filter-title  image" title="Rapoo" data-check="0" data-filter_code="brand" data-value="92" style="text-transform: capitalize">
+                                 <span class="lazy" data-bg="url(/media/brand/rapoo.jpeg)"></span>
+                                
+                            </a>
+
+                             <!-- 27 -->                            
+                            <a href="javascript:void(0)" class="filter-title js-filter-title  image" title="Razer" data-check="0" data-filter_code="brand" data-value="142" style="text-transform: capitalize">
+                                 <span class="lazy" data-bg="url(/media/brand/razer.png)"></span>
+                                
+                            </a>
+
+                             <!-- 28 -->                            
+                            <a href="javascript:void(0)" class="filter-title js-filter-title  image" title="Sades" data-check="0" data-filter_code="brand" data-value="161" style="text-transform: capitalize">
+                                 <span class="lazy" data-bg="url(/media/brand/sades.png)"></span>
+                                
+                            </a>
+
+                             <!-- 29 -->                            
+                            <a href="javascript:void(0)" class="filter-title js-filter-title  image" title="SanDisk" data-check="0" data-filter_code="brand" data-value="163" style="text-transform: capitalize">
+                                 <span class="lazy" data-bg="url(/media/brand/sandisk.jpg)"></span>
+                                
+                            </a>
+
+                             <!-- 30 -->                            
+                            <a href="javascript:void(0)" class="filter-title js-filter-title  " title="Saramonic" data-check="0" data-filter_code="brand" data-value="464" style="text-transform: capitalize">
+                                 Saramonic
+                                
+                            </a>
+
+                             <!-- 31 -->                            
+                            <a href="javascript:void(0)" class="filter-title js-filter-title  image" title="Seagate" data-check="0" data-filter_code="brand" data-value="1" style="text-transform: capitalize">
+                                 <span class="lazy" data-bg="url(/media/brand/seagate.jpg)"></span>
+                                
+                            </a>
+
+                             <!-- 32 -->                            
+                            <a href="javascript:void(0)" class="filter-title js-filter-title  image" title="Sonic" data-check="0" data-filter_code="brand" data-value="182" style="text-transform: capitalize">
+                                 <span class="lazy" data-bg="url(/media/brand/sonic.gif)"></span>
+                                
+                            </a>
+
+                             <!-- 33 -->                            
+                            <a href="javascript:void(0)" class="filter-title js-filter-title  image" title="Soundmax" data-check="0" data-filter_code="brand" data-value="23" style="text-transform: capitalize">
+                                 <span class="lazy" data-bg="url(/media/brand/soundmax.png)"></span>
+                                
+                            </a>
+
+                             <!-- 34 -->                            
+                            <a href="javascript:void(0)" class="filter-title js-filter-title  image" title="Toshiba" data-check="0" data-filter_code="brand" data-value="2" style="text-transform: capitalize">
+                                 <span class="lazy" data-bg="url(/media/brand/toshiba.jpg)"></span>
+                                
+                            </a>
+
+                             <!-- 35 -->                            
+                            <a href="javascript:void(0)" class="filter-title js-filter-title  " title="Wacom" data-check="0" data-filter_code="brand" data-value="287" style="text-transform: capitalize">
+                                 Wacom
+                                
+                            </a>
+
+                             <!-- 36 -->                            
+                            <a href="javascript:void(0)" class="filter-title js-filter-title  " title="Wacom Cintiq" data-check="0" data-filter_code="brand" data-value="266" style="text-transform: capitalize">
+                                 Wacom Cintiq
+                                
+                            </a>
+
+                             <!-- 37 -->                            
+                            <a href="javascript:void(0)" class="filter-title js-filter-title  image" title="Western Digital" data-check="0" data-filter_code="brand" data-value="13" style="text-transform: capitalize">
+                                 <span class="lazy" data-bg="url(/media/brand/westerndigital.jpg)"></span>
+                                
+                            </a>
+
+                             <!-- 38 -->                            
+                            <a href="javascript:void(0)" class="filter-title js-filter-title  image" title="Xiberia" data-check="0" data-filter_code="brand" data-value="211" style="text-transform: capitalize">
+                                 <span class="lazy" data-bg="url(/media/brand/xiberia.png)"></span>
+                                
+                            </a>
+
+                             <!-- 39 -->                            
+                            <a href="javascript:void(0)" class="filter-title js-filter-title  " title="Yealink" data-check="0" data-filter_code="brand" data-value="363" style="text-transform: capitalize">
+                                 Yealink
+                                
+                            </a>
+
+                             <!-- 40 -->                            
+                            <a href="javascript:void(0)" class="filter-title js-filter-title  " title="Zidli" data-check="0" data-filter_code="brand" data-value="249" style="text-transform: capitalize">
+                                 Zidli
                                 
                             </a>
 
@@ -732,25 +774,21 @@
         
                         <div class="d-flex flex-wrap js-filter-item" data-type="price">        
                             
-                            <a href="javascript:void(0)" class="filter-title js-filter-title " data-filter_code="price" data-value="min=0&amp;max=100000"> Dưới 100 ngàn </a>
+                            <a href="javascript:void(0)" class="filter-title js-filter-title " data-filter_code="price" data-value="min=0&amp;max=1000000"> Dưới 1 triệu </a>
                             
-                            <a href="javascript:void(0)" class="filter-title js-filter-title " data-filter_code="price" data-value="min=100000&amp;max=200000"> 100 ngàn - 200 ngàn </a>
+                            <a href="javascript:void(0)" class="filter-title js-filter-title " data-filter_code="price" data-value="min=1000000&amp;max=3000000"> 1 triệu - 3 triệu </a>
                             
-                            <a href="javascript:void(0)" class="filter-title js-filter-title " data-filter_code="price" data-value="min=200000&amp;max=300000"> 200 ngàn - 300 ngàn </a>
+                            <a href="javascript:void(0)" class="filter-title js-filter-title " data-filter_code="price" data-value="min=3000000&amp;max=5000000"> 3 triệu - 5 triệu </a>
                             
-                            <a href="javascript:void(0)" class="filter-title js-filter-title " data-filter_code="price" data-value="min=300000&amp;max=500000"> 300 ngàn - 500 ngàn </a>
+                            <a href="javascript:void(0)" class="filter-title js-filter-title " data-filter_code="price" data-value="min=5000000&amp;max=7000000"> 5 triệu - 7 triệu </a>
                             
-                            <a href="javascript:void(0)" class="filter-title js-filter-title " data-filter_code="price" data-value="min=500000&amp;max=800000"> 500 ngàn - 800 ngàn </a>
+                            <a href="javascript:void(0)" class="filter-title js-filter-title " data-filter_code="price" data-value="min=7000000&amp;max=9000000"> 7 triệu - 9 triệu </a>
                             
-                            <a href="javascript:void(0)" class="filter-title js-filter-title " data-filter_code="price" data-value="min=800000&amp;max=1000000"> 800 ngàn - 1 triệu </a>
+                            <a href="javascript:void(0)" class="filter-title js-filter-title " data-filter_code="price" data-value="min=9000000&amp;max=11000000"> 9 triệu - 11 triệu </a>
                             
-                            <a href="javascript:void(0)" class="filter-title js-filter-title " data-filter_code="price" data-value="min=1000000&amp;max=1200000"> 1 triệu - 1.2 triệu </a>
+                            <a href="javascript:void(0)" class="filter-title js-filter-title " data-filter_code="price" data-value="min=11000000&amp;max=15000000"> 11 triệu - 15 triệu </a>
                             
-                            <a href="javascript:void(0)" class="filter-title js-filter-title " data-filter_code="price" data-value="min=1200000&amp;max=1500000"> 1.2 triệu - 1.5 triệu </a>
-                            
-                            <a href="javascript:void(0)" class="filter-title js-filter-title " data-filter_code="price" data-value="min=1500000&amp;max=2000000"> 1.5 triệu - 2 triệu </a>
-                            
-                            <a href="javascript:void(0)" class="filter-title js-filter-title " data-filter_code="price" data-value="min=2000000&amp;max=0"> Trên 2 triệu </a>
+                            <a href="javascript:void(0)" class="filter-title js-filter-title " data-filter_code="price" data-value="min=15000000&amp;max=0"> Trên 15 triệu </a>
                             
                         </div>
                         
@@ -761,16 +799,16 @@
                                 <div class="range-progress js-range-progress"></div>
         
                                 <div class="range-input js-range-input">
-                                    <input id="js-range-min-1" max="2000000" type="range" value="0">
+                                    <input id="js-range-min-1" max="15000000" type="range" value="0">
                                     
-                                    <input id="js-range-max-1" max="2000000" type="range" value="2000000">
+                                    <input id="js-range-max-1" max="15000000" type="range" value="15000000">
                                 </div>
                             </div>
                             
                             <div class="range-text js-range-text">
                                 <div> 0 đ</div>
         
-                                <div> 2.000.000 đ</div>
+                                <div> 15.000.000 đ</div>
                             </div>
                         </div>-->
                     </div>
@@ -783,7 +821,7 @@
                 <div class="filter-group-bottom">
                     <a href="javascript:void(0)" onclick="BuildFilterUrl.clearFilter.call(this, '')"> Bỏ chọn </a>
                     
-                    <a href="/cooling-tan-nhiet_dm397.html" class="js-open-url"> Xem <span class="js-show-total">255</span> kết quả  </a>
+                    <a href="/thiet-bi-luu-tru_dm393.html" class="js-open-url"> Xem <span class="js-show-total">351</span> kết quả  </a>
                 </div>
             </div>
         </div>
@@ -795,14 +833,32 @@
             <div class="filter-content-group">
                 <div class="filter-group-middle js-filter-group">
                                         
-                    <a href="javascript:void(0)" class="image filter-title js-filter-title " title="Asus" data-check="0" data-filter_code="brand" data-value="3">
-                         <span class="lazy" data-bg="url(/media/brand/asus.jpg)"></span>
+                    <a href="javascript:void(0)" class="image filter-title js-filter-title " title="Sony" data-check="0" data-filter_code="brand" data-value="7">
+                         <span class="lazy" data-bg="url(/media/brand/sony.jpg)"></span>
                         
                     </a>
 
                                         
-                    <a href="javascript:void(0)" class=" filter-title js-filter-title " title="Arctic" data-check="0" data-filter_code="brand" data-value="236">
-                         Arctic
+                    <a href="javascript:void(0)" class="image filter-title js-filter-title " title="Samsung" data-check="0" data-filter_code="brand" data-value="8">
+                         <span class="lazy" data-bg="url(/media/brand/samsung.jpg)"></span>
+                        
+                    </a>
+
+                                        
+                    <a href="javascript:void(0)" class="image filter-title js-filter-title " title="LG" data-check="0" data-filter_code="brand" data-value="83">
+                         <span class="lazy" data-bg="url(/media/brand/lg.jpg)"></span>
+                        
+                    </a>
+
+                                        
+                    <a href="javascript:void(0)" class=" filter-title js-filter-title " title="Blaupunkt" data-check="0" data-filter_code="brand" data-value="471">
+                         Blaupunkt
+                        
+                    </a>
+
+                                        
+                    <a href="javascript:void(0)" class="image filter-title js-filter-title " title="Canon" data-check="0" data-filter_code="brand" data-value="12">
+                         <span class="lazy" data-bg="url(/media/brand/canon.jpg)"></span>
                         
                     </a>
 
@@ -813,62 +869,98 @@
                     </a>
 
                                         
-                    <a href="javascript:void(0)" class="image filter-title js-filter-title " title="Corsair" data-check="0" data-filter_code="brand" data-value="138">
-                         <span class="lazy" data-bg="url(/media/brand/corsair.png)"></span>
+                    <a href="javascript:void(0)" class="image filter-title js-filter-title " title="Delux" data-check="0" data-filter_code="brand" data-value="38">
+                         <span class="lazy" data-bg="url(/media/brand/delux.jpg)"></span>
                         
                     </a>
 
                                         
-                    <a href="javascript:void(0)" class="image filter-title js-filter-title " title="DeepCool" data-check="0" data-filter_code="brand" data-value="194">
-                         <span class="lazy" data-bg="url(/media/brand/deepcool.jpg)"></span>
+                    <a href="javascript:void(0)" class=" filter-title js-filter-title " title="Divoom" data-check="0" data-filter_code="brand" data-value="472">
+                         Divoom
                         
                     </a>
 
                                         
-                    <a href="javascript:void(0)" class="image filter-title js-filter-title " title="Gigabyte" data-check="0" data-filter_code="brand" data-value="53">
-                         <span class="lazy" data-bg="url(/media/brand/gigabyte.jpg)"></span>
+                    <a href="javascript:void(0)" class="image filter-title js-filter-title " title="E-Blue" data-check="0" data-filter_code="brand" data-value="121">
+                         <span class="lazy" data-bg="url(/media/brand/eblue.png)"></span>
                         
                     </a>
 
                                         
-                    <a href="javascript:void(0)" class=" filter-title js-filter-title " title="HYTE" data-check="0" data-filter_code="brand" data-value="462">
-                         HYTE
+                    <a href="javascript:void(0)" class=" filter-title js-filter-title " title="E-Dra" data-check="0" data-filter_code="brand" data-value="299">
+                         E-Dra
                         
                     </a>
 
                                         
-                    <a href="javascript:void(0)" class="image filter-title js-filter-title " title="ID-Cooling" data-check="0" data-filter_code="brand" data-value="183">
-                         <span class="lazy" data-bg="url(/media/brand/idcooling.jpg)"></span>
+                    <a href="javascript:void(0)" class=" filter-title js-filter-title " title="Edifier" data-check="0" data-filter_code="brand" data-value="467">
+                         Edifier
                         
                     </a>
 
                                         
-                    <a href="javascript:void(0)" class=" filter-title js-filter-title " title="Jonsbo" data-check="0" data-filter_code="brand" data-value="337">
-                         Jonsbo
+                    <a href="javascript:void(0)" class=" filter-title js-filter-title " title="Elgato" data-check="0" data-filter_code="brand" data-value="311">
+                         Elgato
                         
                     </a>
 
                                         
-                    <a href="javascript:void(0)" class=" filter-title js-filter-title " title="KENOO" data-check="0" data-filter_code="brand" data-value="329">
-                         KENOO
+                    <a href="javascript:void(0)" class="image filter-title js-filter-title " title="Fenda" data-check="0" data-filter_code="brand" data-value="22">
+                         <span class="lazy" data-bg="url(/media/brand/fenda.jpg)"></span>
                         
                     </a>
 
                                         
-                    <a href="javascript:void(0)" class=" filter-title js-filter-title " title="LIANLI" data-check="0" data-filter_code="brand" data-value="268">
-                         LIANLI
+                    <a href="javascript:void(0)" class="image filter-title js-filter-title " title="Fuhlen" data-check="0" data-filter_code="brand" data-value="94">
+                         <span class="lazy" data-bg="url(/media/brand/fuhlen.jpg)"></span>
                         
                     </a>
 
                                         
-                    <a href="javascript:void(0)" class="image filter-title js-filter-title " title="MSI" data-check="0" data-filter_code="brand" data-value="104">
-                         <span class="lazy" data-bg="url(/media/brand/msi.jpg)"></span>
+                    <a href="javascript:void(0)" class=" filter-title js-filter-title " title="Hohem" data-check="0" data-filter_code="brand" data-value="465">
+                         Hohem
                         
                     </a>
 
                                         
-                    <a href="javascript:void(0)" class=" filter-title js-filter-title " title="NOCTUA" data-check="0" data-filter_code="brand" data-value="325">
-                         NOCTUA
+                    <a href="javascript:void(0)" class=" filter-title js-filter-title " title="HyperX" data-check="0" data-filter_code="brand" data-value="343">
+                         HyperX
+                        
+                    </a>
+
+                                        
+                    <a href="javascript:void(0)" class="image filter-title js-filter-title " title="Jabra" data-check="0" data-filter_code="brand" data-value="176">
+                         <span class="lazy" data-bg="url(/media/brand/jabra.png)"></span>
+                        
+                    </a>
+
+                                        
+                    <a href="javascript:void(0)" class=" filter-title js-filter-title " title="JBL" data-check="0" data-filter_code="brand" data-value="308">
+                         JBL
+                        
+                    </a>
+
+                                        
+                    <a href="javascript:void(0)" class="image filter-title js-filter-title " title="Kingmax" data-check="0" data-filter_code="brand" data-value="43">
+                         <span class="lazy" data-bg="url(/media/brand/kingmax.jpg)"></span>
+                        
+                    </a>
+
+                                        
+                    <a href="javascript:void(0)" class="image filter-title js-filter-title " title="Kingston" data-check="0" data-filter_code="brand" data-value="44">
+                         <span class="lazy" data-bg="url(/media/brand/kingston.jpg)"></span>
+                        
+                    </a>
+
+                                        
+                    <a href="javascript:void(0)" class="image filter-title js-filter-title " title="Logitech" data-check="0" data-filter_code="brand" data-value="27">
+                         <span class="lazy" data-bg="url(/media/brand/logitech.jpg)"></span>
+                        
+                    </a>
+
+                                        
+                    <a href="javascript:void(0)" class="image filter-title js-filter-title " title="Microlab" data-check="0" data-filter_code="brand" data-value="21">
+                         <span class="lazy" data-bg="url(/media/brand/microlab.jpg)"></span>
                         
                     </a>
 
@@ -879,20 +971,104 @@
                     </a>
 
                                         
-                    <a href="javascript:void(0)" class="image filter-title js-filter-title " title="Segotep" data-check="0" data-filter_code="brand" data-value="169">
-                         <span class="lazy" data-bg="url(/media/brand/segotep.jpg)"></span>
+                    <a href="javascript:void(0)" class=" filter-title js-filter-title " title="Poly" data-check="0" data-filter_code="brand" data-value="469">
+                         Poly
                         
                     </a>
 
                                         
-                    <a href="javascript:void(0)" class="image filter-title js-filter-title " title="Thermaltake" data-check="0" data-filter_code="brand" data-value="74">
-                         <span class="lazy" data-bg="url(/media/brand/thermaltake.jpg)"></span>
+                    <a href="javascript:void(0)" class=" filter-title js-filter-title " title="Qinlian" data-check="0" data-filter_code="brand" data-value="212">
+                         Qinlian
                         
                     </a>
 
                                         
-                    <a href="javascript:void(0)" class="image filter-title js-filter-title " title="Xigmatek" data-check="0" data-filter_code="brand" data-value="165">
-                         <span class="lazy" data-bg="url(/media/brand/xigmatek.jpg)"></span>
+                    <a href="javascript:void(0)" class="image filter-title js-filter-title " title="Rapoo" data-check="0" data-filter_code="brand" data-value="92">
+                         <span class="lazy" data-bg="url(/media/brand/rapoo.jpeg)"></span>
+                        
+                    </a>
+
+                                        
+                    <a href="javascript:void(0)" class="image filter-title js-filter-title " title="Razer" data-check="0" data-filter_code="brand" data-value="142">
+                         <span class="lazy" data-bg="url(/media/brand/razer.png)"></span>
+                        
+                    </a>
+
+                                        
+                    <a href="javascript:void(0)" class="image filter-title js-filter-title " title="Sades" data-check="0" data-filter_code="brand" data-value="161">
+                         <span class="lazy" data-bg="url(/media/brand/sades.png)"></span>
+                        
+                    </a>
+
+                                        
+                    <a href="javascript:void(0)" class="image filter-title js-filter-title " title="SanDisk" data-check="0" data-filter_code="brand" data-value="163">
+                         <span class="lazy" data-bg="url(/media/brand/sandisk.jpg)"></span>
+                        
+                    </a>
+
+                                        
+                    <a href="javascript:void(0)" class=" filter-title js-filter-title " title="Saramonic" data-check="0" data-filter_code="brand" data-value="464">
+                         Saramonic
+                        
+                    </a>
+
+                                        
+                    <a href="javascript:void(0)" class="image filter-title js-filter-title " title="Seagate" data-check="0" data-filter_code="brand" data-value="1">
+                         <span class="lazy" data-bg="url(/media/brand/seagate.jpg)"></span>
+                        
+                    </a>
+
+                                        
+                    <a href="javascript:void(0)" class="image filter-title js-filter-title " title="Sonic" data-check="0" data-filter_code="brand" data-value="182">
+                         <span class="lazy" data-bg="url(/media/brand/sonic.gif)"></span>
+                        
+                    </a>
+
+                                        
+                    <a href="javascript:void(0)" class="image filter-title js-filter-title " title="Soundmax" data-check="0" data-filter_code="brand" data-value="23">
+                         <span class="lazy" data-bg="url(/media/brand/soundmax.png)"></span>
+                        
+                    </a>
+
+                                        
+                    <a href="javascript:void(0)" class="image filter-title js-filter-title " title="Toshiba" data-check="0" data-filter_code="brand" data-value="2">
+                         <span class="lazy" data-bg="url(/media/brand/toshiba.jpg)"></span>
+                        
+                    </a>
+
+                                        
+                    <a href="javascript:void(0)" class=" filter-title js-filter-title " title="Wacom" data-check="0" data-filter_code="brand" data-value="287">
+                         Wacom
+                        
+                    </a>
+
+                                        
+                    <a href="javascript:void(0)" class=" filter-title js-filter-title " title="Wacom Cintiq" data-check="0" data-filter_code="brand" data-value="266">
+                         Wacom Cintiq
+                        
+                    </a>
+
+                                        
+                    <a href="javascript:void(0)" class="image filter-title js-filter-title " title="Western Digital" data-check="0" data-filter_code="brand" data-value="13">
+                         <span class="lazy" data-bg="url(/media/brand/westerndigital.jpg)"></span>
+                        
+                    </a>
+
+                                        
+                    <a href="javascript:void(0)" class="image filter-title js-filter-title " title="Xiberia" data-check="0" data-filter_code="brand" data-value="211">
+                         <span class="lazy" data-bg="url(/media/brand/xiberia.png)"></span>
+                        
+                    </a>
+
+                                        
+                    <a href="javascript:void(0)" class=" filter-title js-filter-title " title="Yealink" data-check="0" data-filter_code="brand" data-value="363">
+                         Yealink
+                        
+                    </a>
+
+                                        
+                    <a href="javascript:void(0)" class=" filter-title js-filter-title " title="Zidli" data-check="0" data-filter_code="brand" data-value="249">
+                         Zidli
                         
                     </a>
 
@@ -901,7 +1077,7 @@
     
                 <div class="filter-group-bottom">
                     <a href="javascript:void(0)" onclick="BuildFilterUrl.clearFilter.call(this, 'brand')"> Bỏ chọn </a>
-                    <a href="/cooling-tan-nhiet_dm397.html" class="js-open-url"> Xem <span class="js-show-total">255</span> kết quả  </a>
+                    <a href="/thiet-bi-luu-tru_dm393.html" class="js-open-url"> Xem <span class="js-show-total">351</span> kết quả  </a>
                 </div>
     
             </div>
@@ -916,25 +1092,21 @@
     
                 <div class="filter-group-middle js-filter-group">
                     
-                    <a href="javascript:void(0)" class="filter-title js-filter-title " data-filter_code="price" data-value="min=0&amp;max=100000"> Dưới 100 ngàn </a>
+                    <a href="javascript:void(0)" class="filter-title js-filter-title " data-filter_code="price" data-value="min=0&amp;max=1000000"> Dưới 1 triệu </a>
                     
-                    <a href="javascript:void(0)" class="filter-title js-filter-title " data-filter_code="price" data-value="min=100000&amp;max=200000"> 100 ngàn - 200 ngàn </a>
+                    <a href="javascript:void(0)" class="filter-title js-filter-title " data-filter_code="price" data-value="min=1000000&amp;max=3000000"> 1 triệu - 3 triệu </a>
                     
-                    <a href="javascript:void(0)" class="filter-title js-filter-title " data-filter_code="price" data-value="min=200000&amp;max=300000"> 200 ngàn - 300 ngàn </a>
+                    <a href="javascript:void(0)" class="filter-title js-filter-title " data-filter_code="price" data-value="min=3000000&amp;max=5000000"> 3 triệu - 5 triệu </a>
                     
-                    <a href="javascript:void(0)" class="filter-title js-filter-title " data-filter_code="price" data-value="min=300000&amp;max=500000"> 300 ngàn - 500 ngàn </a>
+                    <a href="javascript:void(0)" class="filter-title js-filter-title " data-filter_code="price" data-value="min=5000000&amp;max=7000000"> 5 triệu - 7 triệu </a>
                     
-                    <a href="javascript:void(0)" class="filter-title js-filter-title " data-filter_code="price" data-value="min=500000&amp;max=800000"> 500 ngàn - 800 ngàn </a>
+                    <a href="javascript:void(0)" class="filter-title js-filter-title " data-filter_code="price" data-value="min=7000000&amp;max=9000000"> 7 triệu - 9 triệu </a>
                     
-                    <a href="javascript:void(0)" class="filter-title js-filter-title " data-filter_code="price" data-value="min=800000&amp;max=1000000"> 800 ngàn - 1 triệu </a>
+                    <a href="javascript:void(0)" class="filter-title js-filter-title " data-filter_code="price" data-value="min=9000000&amp;max=11000000"> 9 triệu - 11 triệu </a>
                     
-                    <a href="javascript:void(0)" class="filter-title js-filter-title " data-filter_code="price" data-value="min=1000000&amp;max=1200000"> 1 triệu - 1.2 triệu </a>
+                    <a href="javascript:void(0)" class="filter-title js-filter-title " data-filter_code="price" data-value="min=11000000&amp;max=15000000"> 11 triệu - 15 triệu </a>
                     
-                    <a href="javascript:void(0)" class="filter-title js-filter-title " data-filter_code="price" data-value="min=1200000&amp;max=1500000"> 1.2 triệu - 1.5 triệu </a>
-                    
-                    <a href="javascript:void(0)" class="filter-title js-filter-title " data-filter_code="price" data-value="min=1500000&amp;max=2000000"> 1.5 triệu - 2 triệu </a>
-                    
-                    <a href="javascript:void(0)" class="filter-title js-filter-title " data-filter_code="price" data-value="min=2000000&amp;max=0"> Trên 2 triệu </a>
+                    <a href="javascript:void(0)" class="filter-title js-filter-title " data-filter_code="price" data-value="min=15000000&amp;max=0"> Trên 15 triệu </a>
                     
 
                     <!--<p class="range-title"> Hoặc chọn mức giá phù hợp </p>
@@ -944,23 +1116,23 @@
                             <div class="range-progress js-range-progress-1"></div>
     
                             <div class="range-input js-range-input">
-                                <input id="js-range-min-2" max="2000000" type="range" value="0">
+                                <input id="js-range-min-2" max="15000000" type="range" value="0">
                                 
-                                <input id="js-range-max-2" max="2000000" type="range" value="2000000">
+                                <input id="js-range-max-2" max="15000000" type="range" value="15000000">
                             </div>
                         </div>
                         
                         <div class="range-text js-range-text">
                             <div> 0 đ</div>
     
-                            <div> 2.000.000 đ</div>
+                            <div> 15.000.000 đ</div>
                         </div>
                     </div>-->
                 </div>
     
                 <div class="filter-group-bottom">
                     <a href="javascript:void(0)" onclick="BuildFilterUrl.clearFilter.call(this, 'p')"> Bỏ chọn </a>
-                    <a href="/cooling-tan-nhiet_dm397.html" class="js-open-url"> Xem <span class="js-show-total">255</span> kết quả  </a>
+                    <a href="/thiet-bi-luu-tru_dm393.html" class="js-open-url"> Xem <span class="js-show-total">351</span> kết quả  </a>
                 </div>
     
             </div>
@@ -978,7 +1150,7 @@
             
             <div class="sort-container d-flex align-items-center justify-content-between flex-wrap">
                 <div class="d-flex align-items-center">
-                    <b style="font-size:16px;margin-right: 20px"> 255 Cooling, Tản nhiệt </b>
+                    <b style="font-size:16px;margin-right: 20px"> 351 Loa, Tai Nghe, Webcam, Tivi </b>
 
                     <div class="sort-by-group">
                         <select onchange="location.href = this.value">
@@ -992,21 +1164,21 @@
                             
                             
                             
-                            <option value="https://www.anphatpc.com.vn/cooling-tan-nhiet_dm397.html?sort=view"> Lượt xem </option>
+                            <option value="https://www.anphatpc.com.vn/thiet-bi-luu-tru_dm393.html?sort=view"> Lượt xem </option>
                             
                             
                             
-                            <option value="https://www.anphatpc.com.vn/cooling-tan-nhiet_dm397.html?sort=rating"> Đánh giá </option>
+                            <option value="https://www.anphatpc.com.vn/thiet-bi-luu-tru_dm393.html?sort=rating"> Đánh giá </option>
                             
                             
                             
-                            <option value="https://www.anphatpc.com.vn/cooling-tan-nhiet_dm397.html?sort=name"> Tên A-&gt;Z </option>
+                            <option value="https://www.anphatpc.com.vn/thiet-bi-luu-tru_dm393.html?sort=name"> Tên A-&gt;Z </option>
                             
                             
                         </select>
 
                         
-                        <a href="https://www.anphatpc.com.vn/cooling-tan-nhiet_dm397.html?other_filter=in-stock">
+                        <a href="https://www.anphatpc.com.vn/thiet-bi-luu-tru_dm393.html?other_filter=in-stock">
                             <i class="mb-icons icon-in-stock"></i> 
                             <span> Còn hàng </span>
                         </a>
@@ -1014,7 +1186,7 @@
 
                         
                         
-                        <a href="https://www.anphatpc.com.vn/cooling-tan-nhiet_dm397.html?sort=new">
+                        <a href="https://www.anphatpc.com.vn/thiet-bi-luu-tru_dm393.html?sort=new">
                             <i class="mb-icons icon-new"></i> 
                             
                             <span> Mới nhất </span>
@@ -1022,7 +1194,7 @@
                         
                         
                         
-                        <a href="https://www.anphatpc.com.vn/cooling-tan-nhiet_dm397.html?sort=price-asc">
+                        <a href="https://www.anphatpc.com.vn/thiet-bi-luu-tru_dm393.html?sort=price-asc">
                             <i class="mb-icons icon-increase"></i> 
                             
                             <span> Giá tăng dần </span>
@@ -1030,7 +1202,7 @@
                         
                         
                         
-                        <a href="https://www.anphatpc.com.vn/cooling-tan-nhiet_dm397.html?sort=price-desc">
+                        <a href="https://www.anphatpc.com.vn/thiet-bi-luu-tru_dm393.html?sort=price-desc">
                             <i class="mb-icons icon-decrease"></i>
                             
                             <span> Giá giảm dần </span>
@@ -1061,28 +1233,28 @@
             
             <div class="p-list-container d-flex flex-wrap">
                 
-                    <div class="p-item  js-p-item summary-loaded" data-id="49528">
-    <a href="/tan-nhiet-nuoc-cooler-master-masterliquid-360-atmos-argb-white.html" class="p-img">
+                    <div class="p-item  js-p-item summary-loaded" data-id="39291">
+    <a href="/tai-nghe-logitech-g435-lightspeed-wireless-black-neon-yellow_id39291.html" class="p-img">
         
-        <img data-src="https://anphat.com.vn/media/product/250_49528_t___n_nhi___t_n_____c_cooler_master_masterliquid_360_atmos_argb_white__1_.jpg" alt="Tản Nhiệt Nước Cooler Master MasterLiquid 360 Atmos ARGB White" class="fit-img lazy loaded" src="https://anphat.com.vn/media/product/250_49528_t___n_nhi___t_n_____c_cooler_master_masterliquid_360_atmos_argb_white__1_.jpg" data-was-processed="true">
+        <img data-src="https://anphat.com.vn/media/product/250_39291_logitech_g435_black_neon_yellow.png" alt="Tai nghe Logitech G435 LightSpeed Wireless Black Neon Yellow" class="fit-img lazy loaded" src="https://anphat.com.vn/media/product/250_39291_logitech_g435_black_neon_yellow.png" data-was-processed="true">
         
       
         
 
                 
       
-        <span class="p-icon-holder js-icon-49528"><!-- // icon promotion --></span>
+        <span class="p-icon-holder js-icon-39291"><!-- // icon promotion --></span>
     </a>
   
     <div class="p-text">
        
         
-        <a href="/tan-nhiet-nuoc-cooler-master-masterliquid-360-atmos-argb-white.html" class="p-name"> <h3>Tản Nhiệt Nước Cooler Master MasterLiquid 360 Atmos ARGB White</h3> </a>
-        <span class="p-sku" style="font-size: 12px;">Mã SP: TNNU1074 </span>
+        <a href="/tai-nghe-logitech-g435-lightspeed-wireless-black-neon-yellow_id39291.html" class="p-name"> <h3>Tai nghe Logitech G435 LightSpeed Wireless Black Neon Yellow</h3> </a>
+        <span class="p-sku" style="font-size: 12px;">Mã SP: TNLG0058 </span>
         
       
         <div class="d-flex align-items">
-            <i class="icon-star star-0"></i>(0)
+            <i class="icon-star star-5"></i>(2)
         </div>
 
 
@@ -1090,12 +1262,12 @@
         <div class="price-container" style="height:auto;">
             
             
-            <del class="p-old-price"> 3.650.000 đ </del>
-            <span class="p-discount"> -13% </span>
+            <del class="p-old-price"> 1.799.000 đ </del>
+            <span class="p-discount"> -26% </span>
             
 
             <span class="p-price">
-                3.199.000 đ
+                1.349.000 đ
                 
             </span>
          
@@ -1132,7 +1304,7 @@
         
         
         <div class="box-config">
-            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-49528 checked"></div></div>
+            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-39291 checked"></div></div>
             
         </div>
 
@@ -1140,7 +1312,7 @@
       
         <div class="d-flex align-items-center justify-content-between">
             <div class="d-flex align-items-center justify-content-between ">
-                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-49528" onclick="CompareProduct.compare_addProduct(49528)" data-id="49528">So sánh</a>
+                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-39291" onclick="CompareProduct.compare_addProduct(39291)" data-id="39291">So sánh</a>
 
                 
                     <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
@@ -1148,14 +1320,14 @@
             </div>
 
             
-            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('49528', 'Tản Nhiệt Nước Cooler Master MasterLiquid 360 Atmos ARGB White', 3199000)"></a>
+            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('39291', 'Tai nghe Logitech G435 LightSpeed Wireless Black Neon Yellow', 1349000)"></a>
             
         </div>
     </div>
 
     
     <div class="p-tooltip">
-        <p class="tooltip-title"> Tản Nhiệt Nước Cooler Master MasterLiquid 360 Atmos ARGB White </p>
+        <p class="tooltip-title"> Tai nghe Logitech G435 LightSpeed Wireless Black Neon Yellow </p>
 
         <div class="tooltip-content">
             
@@ -1165,27 +1337,40 @@
             <div class="tooltip-summary" style="white-space: unset">
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Intel® LGA 1700 / 1200 / 1151 / 1150 / 1155 / 1156 socket
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Tai nghe Logitech G435 LightSpeed Wireless Black Neon Yellow
  </span>
                 
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>AMD® AM5 / AM4
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>
  </span>
                 
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Kích thước Radiator : 394 x 119.6 x 27.2 mm / 15.5 x 4.7 x 1.1 inch
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Trọng lượng siêu nhẹ, chỉ 165 gram
  </span>
                 
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Kích thước Pump : 84.9 x 81 x 53.15 mm / 3.3 x 3.2 x 2.1 inch
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Màng loa 40mm thế hệ mới cho âm thanh tuyệt vời
  </span>
                 
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>LED:ARGB </span>
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Hỗ trợ 2 kết nối không dây: LightSpeed và Bluetooth
+ </span>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
                 
                 
             </div>
@@ -1196,14 +1381,14 @@
                 
                 <span>
                     Giá niêm yết:
-                    <del class="p-old-price" style="display: inline-block;"> 3.650.000 đ </del>
+                    <del class="p-old-price" style="display: inline-block;"> 1.799.000 đ </del>
                 </span>
-                <span class="p-discount"> -13% </span>
+                <span class="p-discount"> -26% </span>
                 
 
                 <p class="p-price" style="margin: 0;">
                     <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
-                    3.199.000 đ
+                    1.349.000 đ
                     
                 </p>
               
@@ -1241,24 +1426,24 @@
 </div>
 
                 
-                    <div class="p-item  js-p-item summary-loaded" data-id="45543">
-    <a href="/tan-nhiet-nuoc-cooler-master-masterliquid-240l-core-argb.html" class="p-img">
+                    <div class="p-item  js-p-item summary-loaded" data-id="45248">
+    <a href="/tai-nghe-hyperx-cloud-earbuds-ii-black.html" class="p-img">
         
-        <img data-src="https://anphat.com.vn/media/product/250_45543_t___n_nhi___t_n_____c_cooler_master_masterliquid_240l_core_argb.jpg" alt="Tản nhiệt nước Cooler Master MASTERLIQUID 240L CORE ARGB" class="fit-img lazy loaded" src="https://anphat.com.vn/media/product/250_45543_t___n_nhi___t_n_____c_cooler_master_masterliquid_240l_core_argb.jpg" data-was-processed="true">
+        <img data-src="https://anphat.com.vn/media/product/250_45248_hyperx_cloud_earbuds_ii_black__1_.jpg" alt="Tai nghe HyperX Cloud Earbuds II Black" class="fit-img lazy loaded" src="https://anphat.com.vn/media/product/250_45248_hyperx_cloud_earbuds_ii_black__1_.jpg" data-was-processed="true">
         
       
         
 
                 
       
-        <span class="p-icon-holder js-icon-45543"><!-- // icon promotion --></span>
+        <span class="p-icon-holder js-icon-45248"><!-- // icon promotion --></span>
     </a>
   
     <div class="p-text">
        
         
-        <a href="/tan-nhiet-nuoc-cooler-master-masterliquid-240l-core-argb.html" class="p-name"> <h3>Tản nhiệt nước Cooler Master MASTERLIQUID 240L CORE ARGB</h3> </a>
-        <span class="p-sku" style="font-size: 12px;">Mã SP: TNNU0959 </span>
+        <a href="/tai-nghe-hyperx-cloud-earbuds-ii-black.html" class="p-name"> <h3>Tai nghe HyperX Cloud Earbuds II Black</h3> </a>
+        <span class="p-sku" style="font-size: 12px;">Mã SP: TNKT0042 </span>
         
       
         <div class="d-flex align-items">
@@ -1270,12 +1455,593 @@
         <div class="price-container" style="height:auto;">
             
             
-            <del class="p-old-price"> 1.990.000 đ </del>
-            <span class="p-discount"> -21% </span>
+            <del class="p-old-price"> 1.299.000 đ </del>
+            <span class="p-discount"> -32% </span>
             
 
             <span class="p-price">
-                1.590.000 đ
+                889.000 đ
+                
+            </span>
+         
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Giá HS - SV: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+            </div>
+            
+         
+
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+            </div>
+            
+        </div>
+      
+      
+        
+        
+        
+        <div class="box-config">
+            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-45248 checked"></div></div>
+            
+        </div>
+
+        
+      
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center justify-content-between ">
+                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-45248" onclick="CompareProduct.compare_addProduct(45248)" data-id="45248">So sánh</a>
+
+                
+                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
+                
+            </div>
+
+            
+            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('45248', 'Tai nghe HyperX Cloud Earbuds II Black', 889000)"></a>
+            
+        </div>
+    </div>
+
+    
+    <div class="p-tooltip">
+        <p class="tooltip-title"> Tai nghe HyperX Cloud Earbuds II Black </p>
+
+        <div class="tooltip-content">
+            
+
+            
+            
+            <div class="tooltip-summary" style="white-space: unset">
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Tai nghe HyperX Cloud Earbuds II Black
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Phiên bản mới sửa dụng củ loa 14mm mới nhất
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Chất lượng âm thanh được nâng cấp
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Jack 3.5mm chữ L phù hợp hơn
+ </span>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </div>
+            
+              
+            <div class="position-relative">
+                
+                
+                <span>
+                    Giá niêm yết:
+                    <del class="p-old-price" style="display: inline-block;"> 1.299.000 đ </del>
+                </span>
+                <span class="p-discount"> -32% </span>
+                
+
+                <p class="p-price" style="margin: 0;">
+                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
+                    889.000 đ
+                    
+                </p>
+              
+                
+                
+
+                
+                
+         
+                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Giá HS - SV: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+                </div>
+         
+
+                
+                
+
+                
+                
+         
+                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+                </div>
+           
+
+                <!------>
+
+                <!---->
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+                
+                    <div class="p-item  js-p-item summary-loaded" data-id="29960">
+    <a href="/tai-nghe-fuhlen-h200_id29960.html" class="p-img">
+        
+        <img data-src="https://anphat.com.vn/media/product/250_29960_fuhlen_h200s__1_.jpg" alt="Tai nghe Fuhlen H200S 7.1" class="fit-img lazy loaded" src="https://anphat.com.vn/media/product/250_29960_fuhlen_h200s__1_.jpg" data-was-processed="true">
+        
+      
+        
+
+                
+      
+        <span class="p-icon-holder js-icon-29960"><!-- // icon promotion --></span>
+    </a>
+  
+    <div class="p-text">
+       
+        
+        <a href="/tai-nghe-fuhlen-h200_id29960.html" class="p-name"> <h3>Tai nghe Fuhlen H200S 7.1</h3> </a>
+        <span class="p-sku" style="font-size: 12px;">Mã SP: TNFL0003 </span>
+        
+      
+        <div class="d-flex align-items">
+            <i class="icon-star star-5"></i>(11)
+        </div>
+
+
+        
+        <div class="price-container" style="height:auto;">
+            
+            
+            <del class="p-old-price"> 399.000 đ </del>
+            <span class="p-discount"> -26% </span>
+            
+
+            <span class="p-price">
+                299.000 đ
+                
+            </span>
+         
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Giá HS - SV: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+            </div>
+            
+         
+
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+            </div>
+            
+        </div>
+      
+      
+        
+        
+        
+        <div class="box-config">
+            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-29960 checked">
+                            <div class="item d-flex align-items" data-info="Chuẩn giao tiếp">
+                                <div class="item-icon">
+                                    <i class="icon-thongso icon-chuan-giao-tiep"></i>
+                                </div>
+                                <div class="txt">USB</div>
+                            </div>
+                        
+                            <div class="item d-flex align-items" data-info="Loại phím bấm">
+                                <div class="item-icon">
+                                    <i class="icon-thongso icon-loai-phim-bam"></i>
+                                </div>
+                                <div class="txt">Fuhlen Optical</div>
+                            </div>
+                        </div></div>
+            
+        </div>
+
+        
+      
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center justify-content-between ">
+                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-29960" onclick="CompareProduct.compare_addProduct(29960)" data-id="29960">So sánh</a>
+
+                
+                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
+                
+            </div>
+
+            
+            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('29960', 'Tai nghe Fuhlen H200S 7.1', 299000)"></a>
+            
+        </div>
+    </div>
+
+    
+    <div class="p-tooltip">
+        <p class="tooltip-title"> Tai nghe Fuhlen H200S 7.1 </p>
+
+        <div class="tooltip-content">
+            
+
+            
+            
+            <div class="tooltip-summary" style="white-space: unset">
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Tai nghe Fuhlen H200S
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>- Thiết kế Over-ear mạnh mẽ, cứng cáp với khung kim loại chắc chắn
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>- Ốp tai lớn và ôm sát, cách âm tốt , micro nhạy bén &amp; lọc tạp âm
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>- Màu đen sang trọng và lịch lãm
+ </span>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </div>
+            
+              
+            <div class="position-relative">
+                
+                
+                <span>
+                    Giá niêm yết:
+                    <del class="p-old-price" style="display: inline-block;"> 399.000 đ </del>
+                </span>
+                <span class="p-discount"> -26% </span>
+                
+
+                <p class="p-price" style="margin: 0;">
+                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
+                    299.000 đ
+                    
+                </p>
+              
+                
+                
+
+                
+                
+         
+                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Giá HS - SV: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+                </div>
+         
+
+                
+                
+
+                
+                
+         
+                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+                </div>
+           
+
+                <!------>
+
+                <!---->
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+                
+                    <div class="p-item  js-p-item summary-loaded" data-id="38749">
+    <a href="/tai-nghe-logitech-g335-black_id38749.html" class="p-img">
+        
+        <img data-src="https://anphat.com.vn/media/product/250_38749_logitech_g335_black__1_.jpg" alt="Tai nghe Logitech G335 Black" class="fit-img lazy loaded" src="https://anphat.com.vn/media/product/250_38749_logitech_g335_black__1_.jpg" data-was-processed="true">
+        
+      
+        
+
+                
+      
+        <span class="p-icon-holder js-icon-38749"><!-- // icon promotion --></span>
+    </a>
+  
+    <div class="p-text">
+       
+        
+        <a href="/tai-nghe-logitech-g335-black_id38749.html" class="p-name"> <h3>Tai nghe Logitech G335 Black</h3> </a>
+        <span class="p-sku" style="font-size: 12px;">Mã SP: TNKT0031 </span>
+        
+      
+        <div class="d-flex align-items">
+            <i class="icon-star star-0"></i>(0)
+        </div>
+
+
+        
+        <div class="price-container" style="height:auto;">
+            
+            
+            <del class="p-old-price"> 1.499.000 đ </del>
+            <span class="p-discount"> -27% </span>
+            
+
+            <span class="p-price">
+                1.099.000 đ
+                
+            </span>
+         
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-showroom d-none" data-from-date="22-07-2023" data-from-minute="00:00" data-to-date="22-07-2023" data-to-minute="11:00">
+                <b>Giá HS - SV: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">799.000 đ</p>
+            </div>
+            
+         
+
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+            </div>
+            
+        </div>
+      
+      
+        
+        
+        
+        <div class="box-config">
+            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-38749 checked"></div></div>
+            
+        </div>
+
+        
+      
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center justify-content-between ">
+                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-38749" onclick="CompareProduct.compare_addProduct(38749)" data-id="38749">So sánh</a>
+
+                
+                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
+                
+            </div>
+
+            
+            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('38749', 'Tai nghe Logitech G335 Black', 1099000)"></a>
+            
+        </div>
+    </div>
+
+    
+    <div class="p-tooltip">
+        <p class="tooltip-title"> Tai nghe Logitech G335 Black </p>
+
+        <div class="tooltip-content">
+            
+
+            
+            
+            <div class="tooltip-summary" style="white-space: unset">
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Tai nghe Logitech G335 Black
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Trọng lượng siêu nhẹ, chỉ 240 gram
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Màng loa 40mm thế hệ mới nhất
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Độ nhạy tần số: 20 Hz-20 KHz
+ </span>
+                
+                
+                
+                
+                
+                
+            </div>
+            
+              
+            <div class="position-relative">
+                
+                
+                <span>
+                    Giá niêm yết:
+                    <del class="p-old-price" style="display: inline-block;"> 1.499.000 đ </del>
+                </span>
+                <span class="p-discount"> -27% </span>
+                
+
+                <p class="p-price" style="margin: 0;">
+                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
+                    1.099.000 đ
+                    
+                </p>
+              
+                
+                
+
+                
+                
+         
+                <div class="p-price-showroom d-none" data-from-date="22-07-2023" data-from-minute="00:00" data-to-date="22-07-2023" data-to-minute="11:00">
+                    <b>Giá HS - SV: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">799.000 đ</p>
+                </div>
+         
+
+                
+                
+
+                
+                
+         
+                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+                </div>
+           
+
+                <!------>
+
+                <!---->
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+                
+                    <div class="p-item  js-p-item summary-loaded" data-id="44574">
+    <a href="/tai-nghe-razer-kraken-v3-x-usb.html" class="p-img">
+        
+        <img data-src="https://anphat.com.vn/media/product/250_44574_razer_kraken_v3_x_usb__1_.jpg" alt="Tai nghe Razer Kraken V3 X USB" class="fit-img lazy loaded" src="https://anphat.com.vn/media/product/250_44574_razer_kraken_v3_x_usb__1_.jpg" data-was-processed="true">
+        
+      
+        
+
+                
+      
+        <span class="p-icon-holder js-icon-44574"><!-- // icon promotion --></span>
+    </a>
+  
+    <div class="p-text">
+       
+        
+        <a href="/tai-nghe-razer-kraken-v3-x-usb.html" class="p-name"> <h3>Tai nghe Razer Kraken V3 X USB</h3> </a>
+        <span class="p-sku" style="font-size: 12px;">Mã SP: TNRZ0084 </span>
+        
+      
+        <div class="d-flex align-items">
+            <i class="icon-star star-0"></i>(0)
+        </div>
+
+
+        
+        <div class="price-container" style="height:auto;">
+            
+            
+            <del class="p-old-price"> 1.900.000 đ </del>
+            <span class="p-discount"> -54% </span>
+            
+
+            <span class="p-price">
+                889.000 đ
                 
             </span>
          
@@ -1312,7 +2078,7 @@
         
         
         <div class="box-config">
-            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-45543 checked"></div></div>
+            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-44574 checked"></div></div>
             
         </div>
 
@@ -1320,7 +2086,7 @@
       
         <div class="d-flex align-items-center justify-content-between">
             <div class="d-flex align-items-center justify-content-between ">
-                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-45543" onclick="CompareProduct.compare_addProduct(45543)" data-id="45543">So sánh</a>
+                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-44574" onclick="CompareProduct.compare_addProduct(44574)" data-id="44574">So sánh</a>
 
                 
                     <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
@@ -1328,14 +2094,14 @@
             </div>
 
             
-            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('45543', 'Tản nhiệt nước Cooler Master MASTERLIQUID 240L CORE ARGB', 1590000)"></a>
+            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('44574', 'Tai nghe Razer Kraken V3 X USB', 889000)"></a>
             
         </div>
     </div>
 
     
     <div class="p-tooltip">
-        <p class="tooltip-title"> Tản nhiệt nước Cooler Master MASTERLIQUID 240L CORE ARGB </p>
+        <p class="tooltip-title"> Tai nghe Razer Kraken V3 X USB </p>
 
         <div class="tooltip-content">
             
@@ -1345,22 +2111,42 @@
             <div class="tooltip-summary" style="white-space: unset">
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Kích thước bộ tản nhiệt: 277 x 119.6 x 27.2 mm / 360
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Tai nghe Razer Kraken V3 X USB
  </span>
                 
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Kích thước bơm: 81 x 76 x 47 mm
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>
  </span>
                 
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>CPU Socket: LGA1700, LGA1200, LGA1151, LGA1150, LGA1155, LGA1156, AM5, AM4, AM3, AM3+, AM2+, AM2, FM2
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Phiên bản hỗ trợ 7.1 giá tốt
  </span>
                 
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Vật liệu: Nhôm </span>
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Tần số đáp ứng 12Hz - 28kHz
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Kết nối USB thông dụng
+ </span>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
                 
                 
             </div>
@@ -1371,14 +2157,14 @@
                 
                 <span>
                     Giá niêm yết:
-                    <del class="p-old-price" style="display: inline-block;"> 1.990.000 đ </del>
+                    <del class="p-old-price" style="display: inline-block;"> 1.900.000 đ </del>
                 </span>
-                <span class="p-discount"> -21% </span>
+                <span class="p-discount"> -54% </span>
                 
 
                 <p class="p-price" style="margin: 0;">
                     <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
-                    1.590.000 đ
+                    889.000 đ
                     
                 </p>
               
@@ -1416,24 +2202,24 @@
 </div>
 
                 
-                    <div class="p-item  js-p-item summary-loaded" data-id="49465">
-    <a href="/fan-case-lian-li-tl120-lcd-triple-pack-with-controller-white-bo-3-fan-man-hinh-lcd.html" class="p-img">
+                    <div class="p-item  js-p-item summary-loaded" data-id="49966">
+    <a href="/loa-edifier-m60-bluetooth-classic-oak.html" class="p-img">
         
-        <img data-src="https://anphat.com.vn/media/product/250_49465_12tllcd3w_1_1413871caa0a76754817199984203879_640_0.jpg" alt="Fan Case Lian Li TL120 LCD Triple pack with controller White (Bộ 3 Fan, Màn Hình LCD)" class="fit-img lazy loaded" src="https://anphat.com.vn/media/product/250_49465_12tllcd3w_1_1413871caa0a76754817199984203879_640_0.jpg" data-was-processed="true">
+        <img data-src="https://anphat.com.vn/media/product/250_49966_m60_oak.jpg" alt="Loa Edifier M60 Bluetooth Classic Oak" class="fit-img lazy loaded" src="https://anphat.com.vn/media/product/250_49966_m60_oak.jpg" data-was-processed="true">
         
       
         
 
                 
       
-        <span class="p-icon-holder js-icon-49465"><!-- // icon promotion --></span>
+        <span class="p-icon-holder js-icon-49966"><!-- // icon promotion --></span>
     </a>
   
     <div class="p-text">
        
         
-        <a href="/fan-case-lian-li-tl120-lcd-triple-pack-with-controller-white-bo-3-fan-man-hinh-lcd.html" class="p-name"> <h3>Fan Case Lian Li TL120 LCD Triple pack with controller White (Bộ 3 Fan, Màn Hình LCD)</h3> </a>
-        <span class="p-sku" style="font-size: 12px;">Mã SP: FANC0005 </span>
+        <a href="/loa-edifier-m60-bluetooth-classic-oak.html" class="p-name"> <h3>Loa Edifier M60 Bluetooth Classic Oak</h3> </a>
+        <span class="p-sku" style="font-size: 12px;">Mã SP: LOED0014 </span>
         
       
         <div class="d-flex align-items">
@@ -1445,12 +2231,12 @@
         <div class="price-container" style="height:auto;">
             
             
-            <del class="p-old-price"> 4.100.000 đ </del>
-            <span class="p-discount"> -3% </span>
+            <del class="p-old-price"> 3.999.000 đ </del>
+            <span class="p-discount"> -16% </span>
             
 
             <span class="p-price">
-                3.989.000 đ
+                3.389.000 đ
                 
             </span>
          
@@ -1485,9 +2271,11 @@
       
         
         
+        <div class="p-special-container"> 1 khuyến mại </div>
+        
         
         <div class="box-config">
-            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-49465 checked"></div></div>
+            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-49966 checked"></div></div>
             
         </div>
 
@@ -1495,7 +2283,7 @@
       
         <div class="d-flex align-items-center justify-content-between">
             <div class="d-flex align-items-center justify-content-between ">
-                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-49465" onclick="CompareProduct.compare_addProduct(49465)" data-id="49465">So sánh</a>
+                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-49966" onclick="CompareProduct.compare_addProduct(49966)" data-id="49966">So sánh</a>
 
                 
                     <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
@@ -1503,1344 +2291,43 @@
             </div>
 
             
-            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('49465', 'Fan Case Lian Li TL120 LCD Triple pack with controller White (Bộ 3 Fan, Màn Hình LCD)', 3989000)"></a>
+            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('49966', 'Loa Edifier M60 Bluetooth Classic Oak', 3389000)"></a>
             
         </div>
     </div>
 
     
     <div class="p-tooltip">
-        <p class="tooltip-title"> Fan Case Lian Li TL120 LCD Triple pack with controller White (Bộ 3 Fan, Màn Hình LCD) </p>
+        <p class="tooltip-title"> Loa Edifier M60 Bluetooth Classic Oak </p>
 
         <div class="tooltip-content">
             
+            <div class="tooltip-specialOffer">
+                <div class="spec-title"> <span class="title-text"> KHUYẾN MÃI</span> </div>
 
-            
-            
-            <div class="tooltip-summary" style="white-space: unset">
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Màn hình LCD 1.6” độ phân giải 400×400.
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Hỗ trợ các tệp GIF, MP4, JPG và PNG.
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Thích hợp làm vỏ PC với khả năng tối ưu hóa luồng không khí và tiếng ồn.
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Đi kèm với hình ảnh động xuyên suốt độc quyền của Lian Li thông qua L-Connect 3.
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Vòng bi FDB mang lại sự ổn định, độ bền và tuổi thọ cao.
- </span>
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-            </div>
-            
-              
-            <div class="position-relative">
-                
-                
-                <span>
-                    Giá niêm yết:
-                    <del class="p-old-price" style="display: inline-block;"> 4.100.000 đ </del>
-                </span>
-                <span class="p-discount"> -3% </span>
-                
-
-                <p class="p-price" style="margin: 0;">
-                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
-                    3.989.000 đ
+                <ul class="ul">
                     
-                </p>
-              
-                
-                
-
-                
-                
-         
-                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Giá HS - SV: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-         
-
-                
-                
-
-                
-                
-         
-                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-           
-
-                <!------>
-
-                <!---->
-            </div>
-        </div>
-    </div>
-    
-</div>
-
-                
-                    <div class="p-item  js-p-item summary-loaded" data-id="43450">
-    <a href="/quat-may-tinh-lian-li-uni-fan-sl-infinity-120-triple-white-bo-3-fan-kem-hub.html" class="p-img">
-        
-        <img data-src="https://anphat.com.vn/media/product/250_43450_qu___t_m__y_t__nh_lian_li_uni_fan_sl_infinity_120_triple_white__4_.jpg" alt="Quạt Máy Tính Lian Li UNI Fan SL Infinity 120 Triple White ( Bộ 3 Fan Kèm Hub)" class="fit-img lazy loaded" src="https://anphat.com.vn/media/product/250_43450_qu___t_m__y_t__nh_lian_li_uni_fan_sl_infinity_120_triple_white__4_.jpg" data-was-processed="true">
-        
-      
-        
-
-                
-      
-        <span class="p-icon-holder js-icon-43450"><!-- // icon promotion --></span>
-    </a>
-  
-    <div class="p-text">
-       
-        
-        <a href="/quat-may-tinh-lian-li-uni-fan-sl-infinity-120-triple-white-bo-3-fan-kem-hub.html" class="p-name"> <h3>Quạt Máy Tính Lian Li UNI Fan SL Infinity 120 Triple White ( Bộ 3 Fan Kèm Hub)</h3> </a>
-        <span class="p-sku" style="font-size: 12px;">Mã SP: TNCP0908 </span>
-        
-      
-        <div class="d-flex align-items">
-            <i class="icon-star star-0"></i>(0)
-        </div>
-
-
-        
-        <div class="price-container" style="height:auto;">
-            
-            
-            <del class="p-old-price"> 2.800.000 đ </del>
-            <span class="p-discount"> -15% </span>
-            
-
-            <span class="p-price">
-                2.389.000 đ
-                
-            </span>
-         
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Giá HS - SV: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-         
-
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-        </div>
-      
-      
-        
-        
-        
-        <div class="box-config">
-            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-43450 checked"></div></div>
-            
-        </div>
-
-        
-      
-        <div class="d-flex align-items-center justify-content-between">
-            <div class="d-flex align-items-center justify-content-between ">
-                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-43450" onclick="CompareProduct.compare_addProduct(43450)" data-id="43450">So sánh</a>
-
-                
-                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
-                
-            </div>
-
-            
-            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('43450', 'Quạt Máy Tính Lian Li UNI Fan SL Infinity 120 Triple White ( Bộ 3 Fan Kèm Hub)', 2389000)"></a>
-            
-        </div>
-    </div>
-
-    
-    <div class="p-tooltip">
-        <p class="tooltip-title"> Quạt Máy Tính Lian Li UNI Fan SL Infinity 120 Triple White ( Bộ 3 Fan Kèm Hub) </p>
-
-        <div class="tooltip-content">
-            
-
-            
-            
-            <div class="tooltip-summary" style="white-space: unset">
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Hoạt động êm ái hơn
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Cải thiện thêm luồng gió của quạt
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Hiệu ứng led nổi bật với hơn 40 bóng led
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Mặt quạt vô cực nổi bật ở trung tâm quạt
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Kết nối chắc chắn, ghép nối không dây dễ dàng
- </span>
-                
-                
-                
-                
-                
-                
-                
-                
-            </div>
-            
-              
-            <div class="position-relative">
-                
-                
-                <span>
-                    Giá niêm yết:
-                    <del class="p-old-price" style="display: inline-block;"> 2.800.000 đ </del>
-                </span>
-                <span class="p-discount"> -15% </span>
-                
-
-                <p class="p-price" style="margin: 0;">
-                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
-                    2.389.000 đ
                     
-                </p>
-              
-                
-                
-
-                
-                
-         
-                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Giá HS - SV: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-         
-
-                
-                
-
-                
-                
-         
-                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-           
-
-                <!------>
-
-                <!---->
-            </div>
-        </div>
-    </div>
-    
-</div>
-
-                
-                    <div class="p-item  js-p-item summary-loaded" data-id="43449">
-    <a href="/quat-may-tinh-lian-li-uni-fan-sl-infinity-120-triple-black-bo-3-fan-kem-hub.html" class="p-img">
-        
-        <img data-src="https://anphat.com.vn/media/product/250_43449_qu___t_m__y_t__nh_lian_li_uni_fan_sl_infinity_120_triple_black___b____3_fan_k__m_hub___1_.jpg" alt="Quạt Máy Tính Lian Li UNI Fan SL Infinity 120 Triple Black ( Bộ 3 Fan Kèm Hub)" class="fit-img lazy loaded" src="https://anphat.com.vn/media/product/250_43449_qu___t_m__y_t__nh_lian_li_uni_fan_sl_infinity_120_triple_black___b____3_fan_k__m_hub___1_.jpg" data-was-processed="true">
-        
-      
-        
-
-                
-      
-        <span class="p-icon-holder js-icon-43449"><!-- // icon promotion --></span>
-    </a>
-  
-    <div class="p-text">
-       
-        
-        <a href="/quat-may-tinh-lian-li-uni-fan-sl-infinity-120-triple-black-bo-3-fan-kem-hub.html" class="p-name"> <h3>Quạt Máy Tính Lian Li UNI Fan SL Infinity 120 Triple Black ( Bộ 3 Fan Kèm Hub)</h3> </a>
-        <span class="p-sku" style="font-size: 12px;">Mã SP: TNCP0907 </span>
-        
-      
-        <div class="d-flex align-items">
-            <i class="icon-star star-0"></i>(0)
-        </div>
-
-
-        
-        <div class="price-container" style="height:auto;">
-            
-            
-            <del class="p-old-price"> 2.800.000 đ </del>
-            <span class="p-discount"> -15% </span>
-            
-
-            <span class="p-price">
-                2.389.000 đ
-                
-            </span>
-         
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Giá HS - SV: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-         
-
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-        </div>
-      
-      
-        
-        
-        
-        <div class="box-config">
-            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-43449 checked">
-                            <div class="item d-flex align-items" data-info="">
-                                <div class="item-icon">
-                                    <i class="icon-thongso icon-tan_nhiet_cpu"></i>
-                                </div>
-                                <div class="txt">Quạt làm mát</div>
-                            </div>
-                        </div></div>
-            
-        </div>
-
-        
-      
-        <div class="d-flex align-items-center justify-content-between">
-            <div class="d-flex align-items-center justify-content-between ">
-                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-43449" onclick="CompareProduct.compare_addProduct(43449)" data-id="43449">So sánh</a>
-
-                
-                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
-                
-            </div>
-
-            
-            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('43449', 'Quạt Máy Tính Lian Li UNI Fan SL Infinity 120 Triple Black ( Bộ 3 Fan Kèm Hub)', 2389000)"></a>
-            
-        </div>
-    </div>
-
-    
-    <div class="p-tooltip">
-        <p class="tooltip-title"> Quạt Máy Tính Lian Li UNI Fan SL Infinity 120 Triple Black ( Bộ 3 Fan Kèm Hub) </p>
-
-        <div class="tooltip-content">
-            
-
-            
-            
-            <div class="tooltip-summary" style="white-space: unset">
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Hoạt động êm ái hơn
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Cải thiện thêm luồng gió của quạt
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Hiệu ứng led nổi bật với hơn 40 bóng led
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Mặt quạt vô cực nổi bật ở trung tâm quạt
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Kết nối chắc chắn, ghép nối không dây dễ dàng
- </span>
-                
-                
-                
-                
-                
-                
-                
-                
-            </div>
-            
-              
-            <div class="position-relative">
-                
-                
-                <span>
-                    Giá niêm yết:
-                    <del class="p-old-price" style="display: inline-block;"> 2.800.000 đ </del>
-                </span>
-                <span class="p-discount"> -15% </span>
-                
-
-                <p class="p-price" style="margin: 0;">
-                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
-                    2.389.000 đ
+                  
+                    <!---                  
                     
-                </p>
-              
-                
-                
-
-                
-                
-         
-                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Giá HS - SV: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-         
-
-                
-                
-
-                
-                
-         
-                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-           
-
-                <!------>
-
-                <!---->
-            </div>
-        </div>
-    </div>
-    
-</div>
-
-                
-                    <div class="p-item  js-p-item summary-loaded" data-id="49443">
-    <a href="/tan-nhiet-nuoc-lian-li-hydroshift-lcd-360tl-fan-white.html" class="p-img">
-        
-        <img data-src="https://anphat.com.vn/media/product/250_49443_t___n_nhi___t_n_____c_lian_li_hydroshift_lcd_360tl_fan_white.jpg" alt="Tản Nhiệt Nước Lian Li  HydroShift LCD 360TL fan White" class="fit-img lazy loaded" src="https://anphat.com.vn/media/product/250_49443_t___n_nhi___t_n_____c_lian_li_hydroshift_lcd_360tl_fan_white.jpg" data-was-processed="true">
-        
-      
-        
-
-                
-      
-        <span class="p-icon-holder js-icon-49443"><!-- // icon promotion --></span>
-    </a>
-  
-    <div class="p-text">
-       
-        
-        <a href="/tan-nhiet-nuoc-lian-li-hydroshift-lcd-360tl-fan-white.html" class="p-name"> <h3>Tản Nhiệt Nước Lian Li  HydroShift LCD 360TL fan White</h3> </a>
-        <span class="p-sku" style="font-size: 12px;">Mã SP: TNNU1056 </span>
-        
-      
-        <div class="d-flex align-items">
-            <i class="icon-star star-0"></i>(0)
-        </div>
-
-
-        
-        <div class="price-container" style="height:auto;">
-            
-            
-            <del class="p-old-price"> 7.500.000 đ </del>
-            <span class="p-discount"> -5% </span>
-            
-
-            <span class="p-price">
-                7.169.000 đ
-                
-            </span>
-         
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Giá HS - SV: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-         
-
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-        </div>
-      
-      
-        
-        
-        
-        <div class="box-config">
-            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-49443 checked"></div></div>
-            
-        </div>
-
-        
-      
-        <div class="d-flex align-items-center justify-content-between">
-            <div class="d-flex align-items-center justify-content-between ">
-                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-49443" onclick="CompareProduct.compare_addProduct(49443)" data-id="49443">So sánh</a>
-
-                
-                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
-                
-            </div>
-
-            
-            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('49443', 'Tản Nhiệt Nước Lian Li  HydroShift LCD 360TL fan White', 7169000)"></a>
-            
-        </div>
-    </div>
-
-    
-    <div class="p-tooltip">
-        <p class="tooltip-title"> Tản Nhiệt Nước Lian Li  HydroShift LCD 360TL fan White </p>
-
-        <div class="tooltip-content">
-            
-
-            
-            
-            <div class="tooltip-summary" style="white-space: unset">
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>LOẠI TẢN: 360mm
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>TỐC ĐỘ BƠM: 3800 RPM (Max.)
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>MÀN HÌNH/ ĐỘ PHÂN GIẢI/ ĐỘ SÁNG: 2.88” IPS / 480 × 480 pixels / 500 nits
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>KÍCH THƯỚC TẢN RAD: 403 x 124.5 x 31mm
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>KÍCH THƯỚC BLOCK: 73.2 × 73.2 × 58.6 mm
- </span>
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-            </div>
-            
-              
-            <div class="position-relative">
-                
-                
-                <span>
-                    Giá niêm yết:
-                    <del class="p-old-price" style="display: inline-block;"> 7.500.000 đ </del>
-                </span>
-                <span class="p-discount"> -5% </span>
-                
-
-                <p class="p-price" style="margin: 0;">
-                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
-                    7.169.000 đ
                     
-                </p>
-              
-                
-                
-
-                
-                
-         
-                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Giá HS - SV: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-         
-
-                
-                
-
-                
-                
-         
-                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-           
-
-                <!------>
-
-                <!---->
-            </div>
-        </div>
-    </div>
-    
-</div>
-
-                
-                    <div class="p-item  js-p-item summary-loaded" data-id="49445">
-    <a href="/tan-nhiet-nuoc-lian-li-hydroshift-lcd-360rgb-fan-white.html" class="p-img">
-        
-        <img data-src="https://anphat.com.vn/media/product/250_49445_" alt="Tản Nhiệt Nước Lian Li HydroShift LCD 360RGB fan White" class="fit-img lazy loaded" src="https://anphat.com.vn/media/product/250_49445_" data-was-processed="true">
-        
-      
-        
-
-                
-      
-        <span class="p-icon-holder js-icon-49445"><!-- // icon promotion --></span>
-    </a>
-  
-    <div class="p-text">
-       
-        
-        <a href="/tan-nhiet-nuoc-lian-li-hydroshift-lcd-360rgb-fan-white.html" class="p-name"> <h3>Tản Nhiệt Nước Lian Li HydroShift LCD 360RGB fan White</h3> </a>
-        <span class="p-sku" style="font-size: 12px;">Mã SP: TNNU1058 </span>
-        
-      
-        <div class="d-flex align-items">
-            <i class="icon-star star-0"></i>(0)
-        </div>
-
-
-        
-        <div class="price-container" style="height:auto;">
-            
-            
-            <del class="p-old-price"> 5.600.000 đ </del>
-            <span class="p-discount"> -6% </span>
-            
-
-            <span class="p-price">
-                5.299.000 đ
-                
-            </span>
-         
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Giá HS - SV: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-         
-
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-        </div>
-      
-      
-        
-        
-        
-        <div class="box-config">
-            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-49445 checked"></div></div>
-            
-        </div>
-
-        
-      
-        <div class="d-flex align-items-center justify-content-between">
-            <div class="d-flex align-items-center justify-content-between ">
-                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-49445" onclick="CompareProduct.compare_addProduct(49445)" data-id="49445">So sánh</a>
-
-                
-                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
-                
-            </div>
-
-            
-            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('49445', 'Tản Nhiệt Nước Lian Li HydroShift LCD 360RGB fan White', 5299000)"></a>
-            
-        </div>
-    </div>
-
-    
-    <div class="p-tooltip">
-        <p class="tooltip-title"> Tản Nhiệt Nước Lian Li HydroShift LCD 360RGB fan White </p>
-
-        <div class="tooltip-content">
-            
-
-            
-            
-            <div class="tooltip-summary" style="white-space: unset">
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>LOẠI TẢN: 360mm
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>TỐC ĐỘ BƠM: 3800 RPM (Max.)
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>MÀN HÌNH/ ĐỘ PHÂN GIẢI/ ĐỘ SÁNG: 2.88” IPS / 480 × 480 pixels / 500 nits
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>KÍCH THƯỚC TẢN RAD: 403 x 124.5 x 31mm
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>KÍCH THƯỚC BLOCK: 73.2 × 73.2 × 58.6 mm
- </span>
-                
-                
-                
-                
-                
-                
-                
-                
-            </div>
-            
-              
-            <div class="position-relative">
-                
-                
-                <span>
-                    Giá niêm yết:
-                    <del class="p-old-price" style="display: inline-block;"> 5.600.000 đ </del>
-                </span>
-                <span class="p-discount"> -6% </span>
-                
-
-                <p class="p-price" style="margin: 0;">
-                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
-                    5.299.000 đ
                     
-                </p>
-              
-                
-                
-
-                
-                
-         
-                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Giá HS - SV: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-         
-
-                
-                
-
-                
-                
-         
-                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-           
-
-                <!------>
-
-                <!---->
-            </div>
-        </div>
-    </div>
-    
-</div>
-
-                
-                    <div class="p-item  js-p-item summary-loaded" data-id="49444">
-    <a href="/tan-nhiet-nuoc-lian-li-hydroshift-lcd-360rgb-fan-black.html" class="p-img">
-        
-        <img data-src="https://anphat.com.vn/media/product/250_49444_t___n_nhi___t_n_____c_lian_li_hydroshift_lcd_360rgb_fan_blackvv.jpg" alt="Tản Nhiệt Nước Lian Li HydroShift LCD 360RGB fan Black" class="fit-img lazy loaded" src="https://anphat.com.vn/media/product/250_49444_t___n_nhi___t_n_____c_lian_li_hydroshift_lcd_360rgb_fan_blackvv.jpg" data-was-processed="true">
-        
-      
-        
-
-                
-      
-        <span class="p-icon-holder js-icon-49444"><!-- // icon promotion --></span>
-    </a>
-  
-    <div class="p-text">
-       
-        
-        <a href="/tan-nhiet-nuoc-lian-li-hydroshift-lcd-360rgb-fan-black.html" class="p-name"> <h3>Tản Nhiệt Nước Lian Li HydroShift LCD 360RGB fan Black</h3> </a>
-        <span class="p-sku" style="font-size: 12px;">Mã SP: TNNU1057 </span>
-        
-      
-        <div class="d-flex align-items">
-            <i class="icon-star star-0"></i>(0)
-        </div>
-
-
-        
-        <div class="price-container" style="height:auto;">
-            
-            
-            <del class="p-old-price"> 5.600.000 đ </del>
-            <span class="p-discount"> -6% </span>
-            
-
-            <span class="p-price">
-                5.299.000 đ
-                
-            </span>
-         
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Giá HS - SV: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-         
-
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-        </div>
-      
-      
-        
-        
-        
-        <div class="box-config">
-            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-49444 checked"></div></div>
-            
-        </div>
-
-        
-      
-        <div class="d-flex align-items-center justify-content-between">
-            <div class="d-flex align-items-center justify-content-between ">
-                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-49444" onclick="CompareProduct.compare_addProduct(49444)" data-id="49444">So sánh</a>
-
-                
-                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
-                
-            </div>
-
-            
-            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('49444', 'Tản Nhiệt Nước Lian Li HydroShift LCD 360RGB fan Black', 5299000)"></a>
-            
-        </div>
-    </div>
-
-    
-    <div class="p-tooltip">
-        <p class="tooltip-title"> Tản Nhiệt Nước Lian Li HydroShift LCD 360RGB fan Black </p>
-
-        <div class="tooltip-content">
-            
-
-            
-            
-            <div class="tooltip-summary" style="white-space: unset">
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>LOẠI TẢN: 360mm
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>TỐC ĐỘ BƠM: 3800 RPM (Max.)
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>MÀN HÌNH/ ĐỘ PHÂN GIẢI/ ĐỘ SÁNG: 2.88” IPS / 480 × 480 pixels / 500 nits
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>KÍCH THƯỚC TẢN RAD: 403 x 124.5 x 31mm
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>KÍCH THƯỚC BLOCK: 73.2 × 73.2 × 58.6 mm
- </span>
-                
-                
-                
-                
-                
-                
-                
-                
-            </div>
-            
-              
-            <div class="position-relative">
-                
-                
-                <span>
-                    Giá niêm yết:
-                    <del class="p-old-price" style="display: inline-block;"> 5.600.000 đ </del>
-                </span>
-                <span class="p-discount"> -6% </span>
-                
-
-                <p class="p-price" style="margin: 0;">
-                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
-                    5.299.000 đ
+                    <li>
+                        <span class="text" style="white-space: pre-line;">Tặng thẻ điện thoại 500.000 VNĐ hoặc giảm giá trực tiếp 500.000 VNĐ</span>
+                    </li>
                     
-                </p>
-              
-                
-                
+                    --->
 
-                
-                
-         
-                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Giá HS - SV: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-         
-
-                
-                
-
-                
-                
-         
-                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-           
-
-                <!------>
-
-                <!---->
-            </div>
-        </div>
-    </div>
-    
-</div>
-
-                
-                    <div class="p-item  js-p-item summary-loaded" data-id="49453">
-    <a href="/tan-nhiet-nuoc-lian-li-hydroshift-lcd-360s-non-rgb-fan-black.html" class="p-img">
-        
-        <img data-src="https://anphat.com.vn/media/product/250_49453_t___n_nhi___t_n_____c_lian_li_hydroshift_lcd_360s_non_rgb_fan_black.jpg" alt="Tản Nhiệt Nước Lian Li HydroShift LCD 360S non RGB fan Black" class="fit-img lazy loaded" src="https://anphat.com.vn/media/product/250_49453_t___n_nhi___t_n_____c_lian_li_hydroshift_lcd_360s_non_rgb_fan_black.jpg" data-was-processed="true">
-        
-      
-        
-
-                
-      
-        <span class="p-icon-holder js-icon-49453"><!-- // icon promotion --></span>
-    </a>
-  
-    <div class="p-text">
-       
-        
-        <a href="/tan-nhiet-nuoc-lian-li-hydroshift-lcd-360s-non-rgb-fan-black.html" class="p-name"> <h3>Tản Nhiệt Nước Lian Li HydroShift LCD 360S non RGB fan Black</h3> </a>
-        <span class="p-sku" style="font-size: 12px;">Mã SP: TNNU1059 </span>
-        
-      
-        <div class="d-flex align-items">
-            <i class="icon-star star-0"></i>(0)
-        </div>
-
-
-        
-        <div class="price-container" style="height:auto;">
-            
-            
-            <del class="p-old-price"> 5.200.000 đ </del>
-            <span class="p-discount"> -6% </span>
-            
-
-            <span class="p-price">
-                4.899.000 đ
-                
-            </span>
-         
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Giá HS - SV: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-         
-
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-        </div>
-      
-      
-        
-        
-        
-        <div class="box-config">
-            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-49453 checked"></div></div>
-            
-        </div>
-
-        
-      
-        <div class="d-flex align-items-center justify-content-between">
-            <div class="d-flex align-items-center justify-content-between ">
-                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-49453" onclick="CompareProduct.compare_addProduct(49453)" data-id="49453">So sánh</a>
-
-                
-                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
-                
-            </div>
-
-            
-            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('49453', 'Tản Nhiệt Nước Lian Li HydroShift LCD 360S non RGB fan Black', 4899000)"></a>
-            
-        </div>
-    </div>
-
-    
-    <div class="p-tooltip">
-        <p class="tooltip-title"> Tản Nhiệt Nước Lian Li HydroShift LCD 360S non RGB fan Black </p>
-
-        <div class="tooltip-content">
-            
-
-            
-            
-            <div class="tooltip-summary" style="white-space: unset">
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>LOẠI TẢN: 360mm
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>TỐC ĐỘ BƠM: 3800 RPM (Max.)
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>MÀN HÌNH/ ĐỘ PHÂN GIẢI/ ĐỘ SÁNG: 2.88” IPS / 480 × 480 pixels / 500 nits
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>KÍCH THƯỚC TẢN RAD: 403 x 124.5 x 27mm
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>KÍCH THƯỚC BLOCK: 72 × 72 × 59 mm
- </span>
-                
-                
-                
-                
-                
-                
-                
-                
-            </div>
-            
-              
-            <div class="position-relative">
-                
-                
-                <span>
-                    Giá niêm yết:
-                    <del class="p-old-price" style="display: inline-block;"> 5.200.000 đ </del>
-                </span>
-                <span class="p-discount"> -6% </span>
-                
-
-                <p class="p-price" style="margin: 0;">
-                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
-                    4.899.000 đ
+                                        
+                     <!--0-->
+                    <li>
+                        <span class="text"> Tặng thẻ điện thoại 500.000 VNĐ hoặc giảm giá trực tiếp 500.000 VNĐ </span>
+                    </li>
                     
-                </p>
-              
-                
-                
-
-                
-                
-         
-                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Giá HS - SV: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-         
-
-                
-                
-
-                
-                
-         
-                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-           
-
-                <!------>
-
-                <!---->
+                    <li style="padding-left: 30px;font-size: 20px;"></li><li>
+                </li></ul>
             </div>
-        </div>
-    </div>
-    
-</div>
-
-                
-                    <div class="p-item  js-p-item summary-loaded" data-id="49454">
-    <a href="/tan-nhiet-nuoc-lian-li-hydroshift-lcd-360s-non-rgb-fan-white.html" class="p-img">
-        
-        <img data-src="https://anphat.com.vn/media/product/250_49454_t___n_nhi___t_n_____c_lian_li_hydroshift_lcd_360s_non_rgb_fan_white.jpg" alt="Tản Nhiệt Nước Lian Li HydroShift LCD 360S non RGB fan White" class="fit-img lazy loaded" src="https://anphat.com.vn/media/product/250_49454_t___n_nhi___t_n_____c_lian_li_hydroshift_lcd_360s_non_rgb_fan_white.jpg" data-was-processed="true">
-        
-      
-        
-
-                
-      
-        <span class="p-icon-holder js-icon-49454"><!-- // icon promotion --></span>
-    </a>
-  
-    <div class="p-text">
-       
-        
-        <a href="/tan-nhiet-nuoc-lian-li-hydroshift-lcd-360s-non-rgb-fan-white.html" class="p-name"> <h3>Tản Nhiệt Nước Lian Li HydroShift LCD 360S non RGB fan White</h3> </a>
-        <span class="p-sku" style="font-size: 12px;">Mã SP: TNNU1060 </span>
-        
-      
-        <div class="d-flex align-items">
-            <i class="icon-star star-0"></i>(0)
-        </div>
-
-
-        
-        <div class="price-container" style="height:auto;">
-            
-            
-            <del class="p-old-price"> 5.200.000 đ </del>
-            <span class="p-discount"> -6% </span>
-            
-
-            <span class="p-price">
-                4.899.000 đ
-                
-            </span>
-         
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Giá HS - SV: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-         
-
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-        </div>
-      
-      
-        
-        
-        
-        <div class="box-config">
-            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-49454 checked"></div></div>
-            
-        </div>
-
-        
-      
-        <div class="d-flex align-items-center justify-content-between">
-            <div class="d-flex align-items-center justify-content-between ">
-                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-49454" onclick="CompareProduct.compare_addProduct(49454)" data-id="49454">So sánh</a>
-
-                
-                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
-                
-            </div>
-
-            
-            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('49454', 'Tản Nhiệt Nước Lian Li HydroShift LCD 360S non RGB fan White', 4899000)"></a>
-            
-        </div>
-    </div>
-
-    
-    <div class="p-tooltip">
-        <p class="tooltip-title"> Tản Nhiệt Nước Lian Li HydroShift LCD 360S non RGB fan White </p>
-
-        <div class="tooltip-content">
             
 
             
@@ -2848,603 +2335,27 @@
             <div class="tooltip-summary" style="white-space: unset">
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>LOẠI TẢN: 360mm
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Loa Edifier M60 Bluetooth Classic Oak
  </span>
                 
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>TỐC ĐỘ BƠM: 3800 RPM (Max.)
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>
  </span>
                 
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>MÀN HÌNH/ ĐỘ PHÂN GIẢI/ ĐỘ SÁNG: 2.88” IPS / 480 × 480 pixels / 500 nits
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Phiên bản nâng cấp từ EDIFIER MR4 với chất âm vượt trội hơn, có Bluetooth và nhỏ gọn
  </span>
                 
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>KÍCH THƯỚC TẢN RAD: 403 x 124.5 x 27mm
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Công suất đầu ra mạnh mẽ: 66W RMS
  </span>
                 
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>KÍCH THƯỚC BLOCK: 72 × 72 × 59 mm
- </span>
-                
-                
-                
-                
-                
-                
-                
-                
-            </div>
-            
-              
-            <div class="position-relative">
-                
-                
-                <span>
-                    Giá niêm yết:
-                    <del class="p-old-price" style="display: inline-block;"> 5.200.000 đ </del>
-                </span>
-                <span class="p-discount"> -6% </span>
-                
-
-                <p class="p-price" style="margin: 0;">
-                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
-                    4.899.000 đ
-                    
-                </p>
-              
-                
-                
-
-                
-                
-         
-                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Giá HS - SV: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-         
-
-                
-                
-
-                
-                
-         
-                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-           
-
-                <!------>
-
-                <!---->
-            </div>
-        </div>
-    </div>
-    
-</div>
-
-                
-                    <div class="p-item  js-p-item summary-loaded" data-id="46698">
-    <a href="/bo-3-quat-jonsbo-zh-120w-white-infinity-3in1-ghep-noi-khong-day.html" class="p-img">
-        
-        <img data-src="https://anphat.com.vn/media/product/250_46698_b____3_qu___t_jonsbo_zh_120w_white_infinity_2.jpg" alt="Bộ 3 Quạt JONSBO ZH-120W White infinity (3in1, Ghép nối không dây)" class="fit-img lazy loaded" src="https://anphat.com.vn/media/product/250_46698_b____3_qu___t_jonsbo_zh_120w_white_infinity_2.jpg" data-was-processed="true">
-        
-      
-        
-
-                
-      
-        <span class="p-icon-holder js-icon-46698"><!-- // icon promotion --></span>
-    </a>
-  
-    <div class="p-text">
-       
-        
-        <a href="/bo-3-quat-jonsbo-zh-120w-white-infinity-3in1-ghep-noi-khong-day.html" class="p-name"> <h3>Bộ 3 Quạt JONSBO ZH-120W White infinity (3in1, Ghép nối không dây)</h3> </a>
-        <span class="p-sku" style="font-size: 12px;">Mã SP: FAJB0008 </span>
-        
-      
-        <div class="d-flex align-items">
-            <i class="icon-star star-0"></i>(0)
-        </div>
-
-
-        
-        <div class="price-container" style="height:auto;">
-            
-
-            <span class="p-price">
-                399.000 đ
-                
-            </span>
-         
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Giá HS - SV: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-         
-
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-        </div>
-      
-      
-        
-        
-        
-        <div class="box-config">
-            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-46698 checked">
-                            <div class="item d-flex align-items" data-info="">
-                                <div class="item-icon">
-                                    <i class="icon-thongso icon-tan_nhiet_cpu"></i>
-                                </div>
-                                <div class="txt">Quạt làm mát</div>
-                            </div>
-                        </div></div>
-            
-        </div>
-
-        
-      
-        <div class="d-flex align-items-center justify-content-between">
-            <div class="d-flex align-items-center justify-content-between ">
-                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-46698" onclick="CompareProduct.compare_addProduct(46698)" data-id="46698">So sánh</a>
-
-                
-                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
-                
-            </div>
-
-            
-            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('46698', 'Bộ 3 Quạt JONSBO ZH-120W White infinity (3in1, Ghép nối không dây)', 399000)"></a>
-            
-        </div>
-    </div>
-
-    
-    <div class="p-tooltip">
-        <p class="tooltip-title"> Bộ 3 Quạt JONSBO ZH-120W White infinity (3in1, Ghép nối không dây) </p>
-
-        <div class="tooltip-content">
-            
-
-            
-            
-            <div class="tooltip-summary" style="white-space: unset">
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Kích thước: 120mm*120mm*25mm
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Tốc độ: 500-1500rpm(±10%)
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Lưu lượng gió: 20.1-60.45 CFM
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Độ ồn: 23.8-29.3 dB(A)
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Điện áp: FAN DC 12V / LED 5V
- </span>
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-            </div>
-            
-              
-            <div class="position-relative">
-                
-
-                <p class="p-price" style="margin: 0;">
-                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
-                    399.000 đ
-                    
-                </p>
-              
-                
-                
-
-                
-                
-         
-                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Giá HS - SV: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-         
-
-                
-                
-
-                
-                
-         
-                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-           
-
-                <!------>
-
-                <!---->
-            </div>
-        </div>
-    </div>
-    
-</div>
-
-                
-                    <div class="p-item  js-p-item summary-loaded" data-id="46700">
-    <a href="/bo-3-quat-jonsbo-zh-120wr-white-infinity-reverse-3in1-canh-dao-chieu-ghep-noi-khong-day.html" class="p-img">
-        
-        <img data-src="https://anphat.com.vn/media/product/250_46700_b____3_qu___t_jonsbo_zh_120wr_white_infinity_3.jpg" alt="Bộ 3 Quạt JONSBO ZH-120WR White infinity REVERSE  (3in1, Cánh đảo chiều,Ghép nối không dây)" class="fit-img lazy loaded" src="https://anphat.com.vn/media/product/250_46700_b____3_qu___t_jonsbo_zh_120wr_white_infinity_3.jpg" data-was-processed="true">
-        
-      
-        
-
-                
-      
-        <span class="p-icon-holder js-icon-46700"><!-- // icon promotion --></span>
-    </a>
-  
-    <div class="p-text">
-       
-        
-        <a href="/bo-3-quat-jonsbo-zh-120wr-white-infinity-reverse-3in1-canh-dao-chieu-ghep-noi-khong-day.html" class="p-name"> <h3>Bộ 3 Quạt JONSBO ZH-120WR White infinity REVERSE  (3in1, Cánh đảo chiều,Ghép nối không dây)</h3> </a>
-        <span class="p-sku" style="font-size: 12px;">Mã SP: FAJB0010 </span>
-        
-      
-        <div class="d-flex align-items">
-            <i class="icon-star star-0"></i>(0)
-        </div>
-
-
-        
-        <div class="price-container" style="height:auto;">
-            
-            
-            <del class="p-old-price"> 800.000 đ </del>
-            <span class="p-discount"> -51% </span>
-            
-
-            <span class="p-price">
-                399.000 đ
-                
-            </span>
-         
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Giá HS - SV: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-         
-
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-        </div>
-      
-      
-        
-        
-        
-        <div class="box-config">
-            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-46700 checked">
-                            <div class="item d-flex align-items" data-info="">
-                                <div class="item-icon">
-                                    <i class="icon-thongso icon-tan_nhiet_cpu"></i>
-                                </div>
-                                <div class="txt">Quạt làm mát</div>
-                            </div>
-                        </div></div>
-            
-        </div>
-
-        
-      
-        <div class="d-flex align-items-center justify-content-between">
-            <div class="d-flex align-items-center justify-content-between ">
-                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-46700" onclick="CompareProduct.compare_addProduct(46700)" data-id="46700">So sánh</a>
-
-                
-                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
-                
-            </div>
-
-            
-            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('46700', 'Bộ 3 Quạt JONSBO ZH-120WR White infinity REVERSE  (3in1, Cánh đảo chiều,Ghép nối không dây)', 399000)"></a>
-            
-        </div>
-    </div>
-
-    
-    <div class="p-tooltip">
-        <p class="tooltip-title"> Bộ 3 Quạt JONSBO ZH-120WR White infinity REVERSE  (3in1, Cánh đảo chiều,Ghép nối không dây) </p>
-
-        <div class="tooltip-content">
-            
-
-            
-            
-            <div class="tooltip-summary" style="white-space: unset">
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Kích thước: 120mm*120mm*25mm
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Tốc độ: 500-1500rpm(±10%）
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Lưu lượng gió: 20.1-60.7 CFM
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Độ ồn: 23.8-36.8 dB(A)
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Điện áp: FAN DC12V / LED 5V
- </span>
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-            </div>
-            
-              
-            <div class="position-relative">
-                
-                
-                <span>
-                    Giá niêm yết:
-                    <del class="p-old-price" style="display: inline-block;"> 800.000 đ </del>
-                </span>
-                <span class="p-discount"> -51% </span>
-                
-
-                <p class="p-price" style="margin: 0;">
-                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
-                    399.000 đ
-                    
-                </p>
-              
-                
-                
-
-                
-                
-         
-                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Giá HS - SV: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-         
-
-                
-                
-
-                
-                
-         
-                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-           
-
-                <!------>
-
-                <!---->
-            </div>
-        </div>
-    </div>
-    
-</div>
-
-                
-                    <div class="p-item  js-p-item summary-loaded" data-id="45856">
-    <a href="/bo-3-quat-jonsbo-zg-120w-white-3-in-1.html" class="p-img">
-        
-        <img data-src="https://anphat.com.vn/media/product/250_45856_b____3_qu___t_jonsbo_zg_120w_white__8_.jpg" alt="Bộ 3 Quạt JONSBO ZG-120W WHITE (3 in 1) (Ghép nối không dây)" class="fit-img lazy">
-        
-      
-        
-
-                
-      
-        <span class="p-icon-holder js-icon-45856"><!-- // icon promotion --></span>
-    </a>
-  
-    <div class="p-text">
-       
-        
-        <a href="/bo-3-quat-jonsbo-zg-120w-white-3-in-1.html" class="p-name"> <h3>Bộ 3 Quạt JONSBO ZG-120W WHITE (3 in 1) (Ghép nối không dây)</h3> </a>
-        <span class="p-sku" style="font-size: 12px;">Mã SP: TNCP0968 </span>
-        
-      
-        <div class="d-flex align-items">
-            <i class="icon-star star-0"></i>(0)
-        </div>
-
-
-        
-        <div class="price-container" style="height:auto;">
-            
-            
-            <del class="p-old-price"> 800.000 đ </del>
-            <span class="p-discount"> -51% </span>
-            
-
-            <span class="p-price">
-                399.000 đ
-                
-            </span>
-         
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Giá HS - SV: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-         
-
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-        </div>
-      
-      
-        
-        
-        
-        <div class="box-config">
-            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-45856 checked"></div></div>
-            
-        </div>
-
-        
-      
-        <div class="d-flex align-items-center justify-content-between">
-            <div class="d-flex align-items-center justify-content-between ">
-                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-45856" onclick="CompareProduct.compare_addProduct(45856)" data-id="45856">So sánh</a>
-
-                
-                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
-                
-            </div>
-
-            
-            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('45856', 'Bộ 3 Quạt JONSBO ZG-120W WHITE (3 in 1) (Ghép nối không dây)', 399000)"></a>
-            
-        </div>
-    </div>
-
-    
-    <div class="p-tooltip">
-        <p class="tooltip-title"> Bộ 3 Quạt JONSBO ZG-120W WHITE (3 in 1) (Ghép nối không dây) </p>
-
-        <div class="tooltip-content">
-            
-
-            
-            
-            <div class="tooltip-summary" style="white-space: unset">
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Kích thước: 120mm*120mm*25mm
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Tốc độ: 500-1500rpm(±10%)
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Lưu lượng gió: 20.1-60.45CFM
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Độ ồn: 23.8-29.3dBA
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Điện áp: 12V / LED 5V
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Loa Tweeter vòm lụa 1 inch và loa trung – thấp màng nhôm dài 3 inch
  </span>
                 
                 
@@ -3472,14 +2383,14 @@
                 
                 <span>
                     Giá niêm yết:
-                    <del class="p-old-price" style="display: inline-block;"> 800.000 đ </del>
+                    <del class="p-old-price" style="display: inline-block;"> 3.999.000 đ </del>
                 </span>
-                <span class="p-discount"> -51% </span>
+                <span class="p-discount"> -16% </span>
                 
 
                 <p class="p-price" style="margin: 0;">
                     <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
-                    399.000 đ
+                    3.389.000 đ
                     
                 </p>
               
@@ -3517,24 +2428,24 @@
 </div>
 
                 
-                    <div class="p-item  js-p-item summary-loaded" data-id="45571">
-    <a href="/tan-nhiet-cooler-master-hyper-620s-argb.html" class="p-img">
+                    <div class="p-item  js-p-item summary-loaded" data-id="49861">
+    <a href="/loa-edifier-mr3-2.0-bluetooth-white.html" class="p-img">
         
-        <img data-src="https://anphat.com.vn/media/product/250_45571_t___n_nhi___t_cooler_master_hyper_620s_argb.jpg" alt="Tản nhiệt Cooler Master HYPER 620S ARGB" class="fit-img lazy">
+        <img data-src="https://anphat.com.vn/media/product/250_49861_mr3_w.jpg" alt="Loa Edifier MR3 2.0 Bluetooth White" class="fit-img lazy loaded" src="https://anphat.com.vn/media/product/250_49861_mr3_w.jpg" data-was-processed="true">
         
       
         
 
                 
       
-        <span class="p-icon-holder js-icon-45571"><!-- // icon promotion --></span>
+        <span class="p-icon-holder js-icon-49861"><!-- // icon promotion --></span>
     </a>
   
     <div class="p-text">
        
         
-        <a href="/tan-nhiet-cooler-master-hyper-620s-argb.html" class="p-name"> <h3>Tản nhiệt Cooler Master HYPER 620S ARGB</h3> </a>
-        <span class="p-sku" style="font-size: 12px;">Mã SP: TNCP0930 </span>
+        <a href="/loa-edifier-mr3-2.0-bluetooth-white.html" class="p-name"> <h3>Loa Edifier MR3 2.0 Bluetooth White</h3> </a>
+        <span class="p-sku" style="font-size: 12px;">Mã SP: LOED0010 </span>
         
       
         <div class="d-flex align-items">
@@ -3546,12 +2457,666 @@
         <div class="price-container" style="height:auto;">
             
             
-            <del class="p-old-price"> 1.200.000 đ </del>
-            <span class="p-discount"> -34% </span>
+            <del class="p-old-price"> 2.399.000 đ </del>
+            <span class="p-discount"> -19% </span>
             
 
             <span class="p-price">
-                799.000 đ
+                1.949.000 đ
+                
+            </span>
+         
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Giá HS - SV: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+            </div>
+            
+         
+
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+            </div>
+            
+        </div>
+      
+      
+        
+        
+        <div class="p-special-container"> 1 khuyến mại </div>
+        
+        
+        <div class="box-config">
+            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-49861 checked"></div></div>
+            
+        </div>
+
+        
+      
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center justify-content-between ">
+                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-49861" onclick="CompareProduct.compare_addProduct(49861)" data-id="49861">So sánh</a>
+
+                
+                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
+                
+            </div>
+
+            
+            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('49861', 'Loa Edifier MR3 2.0 Bluetooth White', 1949000)"></a>
+            
+        </div>
+    </div>
+
+    
+    <div class="p-tooltip">
+        <p class="tooltip-title"> Loa Edifier MR3 2.0 Bluetooth White </p>
+
+        <div class="tooltip-content">
+            
+            <div class="tooltip-specialOffer">
+                <div class="spec-title"> <span class="title-text"> KHUYẾN MÃI</span> </div>
+
+                <ul class="ul">
+                    
+                    
+                  
+                    <!---                  
+                    
+                    
+                    
+                    <li>
+                        <span class="text" style="white-space: pre-line;">Tặng thẻ điện thoại 100.000 VNĐ hoặc giảm giá trực tiếp 100.000 VNĐ</span>
+                    </li>
+                    
+                    --->
+
+                                        
+                     <!--0-->
+                    <li>
+                        <span class="text"> Tặng thẻ điện thoại 100.000 VNĐ hoặc giảm giá trực tiếp 100.000 VNĐ </span>
+                    </li>
+                    
+                    <li style="padding-left: 30px;font-size: 20px;"></li><li>
+                </li></ul>
+            </div>
+            
+
+            
+            
+            <div class="tooltip-summary" style="white-space: unset">
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Loa Edifier MR3 2.0 Bluetooth White
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Hỗ trợ kết nối Bluetooth tiện dụng
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Tần số đáp ứng từ 52Hz tới 40kHz để tái tạo âm thanh trung thực nhất
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Vòm loa Tweeter có rãnh mang lại tần số cao phẳng hơn và mở rộng hơn, giúp tái tạo âm thanh rõ ràng và chính xác hơn, đồng thời đảm bảo chất lượng âm thanh nhất quán trên khu vực nghe rộng hơn
+ </span>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </div>
+            
+              
+            <div class="position-relative">
+                
+                
+                <span>
+                    Giá niêm yết:
+                    <del class="p-old-price" style="display: inline-block;"> 2.399.000 đ </del>
+                </span>
+                <span class="p-discount"> -19% </span>
+                
+
+                <p class="p-price" style="margin: 0;">
+                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
+                    1.949.000 đ
+                    
+                </p>
+              
+                
+                
+
+                
+                
+         
+                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Giá HS - SV: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+                </div>
+         
+
+                
+                
+
+                
+                
+         
+                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+                </div>
+           
+
+                <!------>
+
+                <!---->
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+                
+                    <div class="p-item  js-p-item summary-loaded" data-id="45017">
+    <a href="/loa-edifier-mr4-2.0-white.html" class="p-img">
+        
+        <img data-src="https://anphat.com.vn/media/product/250_45017_mr4_w.jpg" alt="Loa Edifier MR4 2.0 White" class="fit-img lazy loaded" src="https://anphat.com.vn/media/product/250_45017_mr4_w.jpg" data-was-processed="true">
+        
+      
+        
+
+                
+      
+        <span class="p-icon-holder js-icon-45017"><!-- // icon promotion --></span>
+    </a>
+  
+    <div class="p-text">
+       
+        
+        <a href="/loa-edifier-mr4-2.0-white.html" class="p-name"> <h3>Loa Edifier MR4 2.0 White</h3> </a>
+        <span class="p-sku" style="font-size: 12px;">Mã SP: LOKH0225 </span>
+        
+      
+        <div class="d-flex align-items">
+            <i class="icon-star star-0"></i>(0)
+        </div>
+
+
+        
+        <div class="price-container" style="height:auto;">
+            
+            
+            <del class="p-old-price"> 2.199.000 đ </del>
+            <span class="p-discount"> -19% </span>
+            
+
+            <span class="p-price">
+                1.789.000 đ
+                
+            </span>
+         
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Giá HS - SV: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+            </div>
+            
+         
+
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+            </div>
+            
+        </div>
+      
+      
+        
+        
+        <div class="p-special-container"> 1 khuyến mại </div>
+        
+        
+        <div class="box-config">
+            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-45017 checked"></div></div>
+            
+        </div>
+
+        
+      
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center justify-content-between ">
+                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-45017" onclick="CompareProduct.compare_addProduct(45017)" data-id="45017">So sánh</a>
+
+                
+                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
+                
+            </div>
+
+            
+            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('45017', 'Loa Edifier MR4 2.0 White', 1789000)"></a>
+            
+        </div>
+    </div>
+
+    
+    <div class="p-tooltip">
+        <p class="tooltip-title"> Loa Edifier MR4 2.0 White </p>
+
+        <div class="tooltip-content">
+            
+            <div class="tooltip-specialOffer">
+                <div class="spec-title"> <span class="title-text"> KHUYẾN MÃI</span> </div>
+
+                <ul class="ul">
+                    
+                    
+                  
+                    <!---                  
+                    
+                    
+                    
+                    <li>
+                        <span class="text" style="white-space: pre-line;">Tặng thẻ điện thoại 100.000 VNĐ hoặc giảm giá trực tiếp 100.000 VNĐ</span>
+                    </li>
+                    
+                    --->
+
+                                        
+                     <!--0-->
+                    <li>
+                        <span class="text"> Tặng thẻ điện thoại 100.000 VNĐ hoặc giảm giá trực tiếp 100.000 VNĐ </span>
+                    </li>
+                    
+                    <li style="padding-left: 30px;font-size: 20px;"></li><li>
+                </li></ul>
+            </div>
+            
+
+            
+            
+            <div class="tooltip-summary" style="white-space: unset">
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Loa Edifier MR4 2.0 White
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Loa kiểm âm chuyên nghiệp, được thiết kế cho mục đích kiểm âm
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Driver bass 4-inch và tweeter 1-inch cho âm thanh sạch và trung thực
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Thân vỏ gỗ cho sự ổn định và triệt tiêu âm cộng hưởng không mong muốn
+ </span>
+                
+                
+                
+                
+                
+                
+                
+                
+            </div>
+            
+              
+            <div class="position-relative">
+                
+                
+                <span>
+                    Giá niêm yết:
+                    <del class="p-old-price" style="display: inline-block;"> 2.199.000 đ </del>
+                </span>
+                <span class="p-discount"> -19% </span>
+                
+
+                <p class="p-price" style="margin: 0;">
+                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
+                    1.789.000 đ
+                    
+                </p>
+              
+                
+                
+
+                
+                
+         
+                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Giá HS - SV: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+                </div>
+         
+
+                
+                
+
+                
+                
+         
+                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+                </div>
+           
+
+                <!------>
+
+                <!---->
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+                
+                    <div class="p-item  js-p-item summary-loaded" data-id="45024">
+    <a href="/loa-edifier-mr4-2.0-black.html" class="p-img">
+        
+        <img data-src="https://anphat.com.vn/media/product/250_45024_mr4_black.jpg" alt="Loa Edifier MR4 2.0 Black" class="fit-img lazy loaded" src="https://anphat.com.vn/media/product/250_45024_mr4_black.jpg" data-was-processed="true">
+        
+      
+        
+
+                
+      
+        <span class="p-icon-holder js-icon-45024"><!-- // icon promotion --></span>
+    </a>
+  
+    <div class="p-text">
+       
+        
+        <a href="/loa-edifier-mr4-2.0-black.html" class="p-name"> <h3>Loa Edifier MR4 2.0 Black</h3> </a>
+        <span class="p-sku" style="font-size: 12px;">Mã SP: LOKH0226 </span>
+        
+      
+        <div class="d-flex align-items">
+            <i class="icon-star star-0"></i>(0)
+        </div>
+
+
+        
+        <div class="price-container" style="height:auto;">
+            
+            
+            <del class="p-old-price"> 2.199.000 đ </del>
+            <span class="p-discount"> -19% </span>
+            
+
+            <span class="p-price">
+                1.789.000 đ
+                
+            </span>
+         
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Giá HS - SV: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+            </div>
+            
+         
+
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+            </div>
+            
+        </div>
+      
+      
+        
+        
+        <div class="p-special-container"> 1 khuyến mại </div>
+        
+        
+        <div class="box-config">
+            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-45024 checked"></div></div>
+            
+        </div>
+
+        
+      
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center justify-content-between ">
+                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-45024" onclick="CompareProduct.compare_addProduct(45024)" data-id="45024">So sánh</a>
+
+                
+                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
+                
+            </div>
+
+            
+            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('45024', 'Loa Edifier MR4 2.0 Black', 1789000)"></a>
+            
+        </div>
+    </div>
+
+    
+    <div class="p-tooltip">
+        <p class="tooltip-title"> Loa Edifier MR4 2.0 Black </p>
+
+        <div class="tooltip-content">
+            
+            <div class="tooltip-specialOffer">
+                <div class="spec-title"> <span class="title-text"> KHUYẾN MÃI</span> </div>
+
+                <ul class="ul">
+                    
+                    
+                  
+                    <!---                  
+                    
+                    
+                    
+                    <li>
+                        <span class="text" style="white-space: pre-line;">Tặng thẻ điện thoại 100.000 VNĐ hoặc giảm giá trực tiếp 100.000 VNĐ</span>
+                    </li>
+                    
+                    --->
+
+                                        
+                     <!--0-->
+                    <li>
+                        <span class="text"> Tặng thẻ điện thoại 100.000 VNĐ hoặc giảm giá trực tiếp 100.000 VNĐ </span>
+                    </li>
+                    
+                    <li style="padding-left: 30px;font-size: 20px;"></li><li>
+                </li></ul>
+            </div>
+            
+
+            
+            
+            <div class="tooltip-summary" style="white-space: unset">
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Loa Edifier MR4 2.0 Black
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Loa kiểm âm chuyên nghiệp, được thiết kế cho mục đích kiểm âm
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Driver bass 4-inch và tweeter 1-inch cho âm thanh sạch và trung thực
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Thân vỏ gỗ cho sự ổn định và triệt tiêu âm cộng hưởng không mong muốn
+ </span>
+                
+                
+                
+                
+                
+                
+                
+                
+            </div>
+            
+              
+            <div class="position-relative">
+                
+                
+                <span>
+                    Giá niêm yết:
+                    <del class="p-old-price" style="display: inline-block;"> 2.199.000 đ </del>
+                </span>
+                <span class="p-discount"> -19% </span>
+                
+
+                <p class="p-price" style="margin: 0;">
+                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
+                    1.789.000 đ
+                    
+                </p>
+              
+                
+                
+
+                
+                
+         
+                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Giá HS - SV: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+                </div>
+         
+
+                
+                
+
+                
+                
+         
+                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+                </div>
+           
+
+                <!------>
+
+                <!---->
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+                
+                    <div class="p-item  js-p-item summary-loaded" data-id="43218">
+    <a href="/loa-may-tinh-razer-leviathan-v2-x.html" class="p-img">
+        
+        <img data-src="https://anphat.com.vn/media/product/250_43218_razer_leviathan_v2_x__1_.jpg" alt="Loa máy tính Razer Leviathan V2 X" class="fit-img lazy loaded" src="https://anphat.com.vn/media/product/250_43218_razer_leviathan_v2_x__1_.jpg" data-was-processed="true">
+        
+      
+        
+
+                
+      
+        <span class="p-icon-holder js-icon-43218"><!-- // icon promotion --></span>
+    </a>
+  
+    <div class="p-text">
+       
+        
+        <a href="/loa-may-tinh-razer-leviathan-v2-x.html" class="p-name"> <h3>Loa máy tính Razer Leviathan V2 X</h3> </a>
+        <span class="p-sku" style="font-size: 12px;">Mã SP: LORZ0008 </span>
+        
+      
+        <div class="d-flex align-items">
+            <i class="icon-star star-0"></i>(0)
+        </div>
+
+
+        
+        <div class="price-container" style="height:auto;">
+            
+            
+            <del class="p-old-price"> 2.999.000 đ </del>
+            <span class="p-discount"> -18% </span>
+            
+
+            <span class="p-price">
+                2.489.000 đ
                 
             </span>
          
@@ -3588,7 +3153,7 @@
         
         
         <div class="box-config">
-            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-45571 checked"></div></div>
+            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-43218 checked"></div></div>
             
         </div>
 
@@ -3596,7 +3161,7 @@
       
         <div class="d-flex align-items-center justify-content-between">
             <div class="d-flex align-items-center justify-content-between ">
-                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-45571" onclick="CompareProduct.compare_addProduct(45571)" data-id="45571">So sánh</a>
+                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-43218" onclick="CompareProduct.compare_addProduct(43218)" data-id="43218">So sánh</a>
 
                 
                     <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
@@ -3604,14 +3169,14 @@
             </div>
 
             
-            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('45571', 'Tản nhiệt Cooler Master HYPER 620S ARGB', 799000)"></a>
+            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('43218', 'Loa máy tính Razer Leviathan V2 X', 2489000)"></a>
             
         </div>
     </div>
 
     
     <div class="p-tooltip">
-        <p class="tooltip-title"> Tản nhiệt Cooler Master HYPER 620S ARGB </p>
+        <p class="tooltip-title"> Loa máy tính Razer Leviathan V2 X </p>
 
         <div class="tooltip-content">
             
@@ -3621,28 +3186,30 @@
             <div class="tooltip-summary" style="white-space: unset">
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>CPU SOCKET : LGA1700, LGA1200, LGA1151, LGA1150, LGA1155, LGA1156, AM5, AM4
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Loa máy tính Razer Leviathan V2 X
  </span>
                 
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>KÍCH THƯỚC HEAT SINK (D X R X C) : 125 x 137 x 154.9 mm
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>
  </span>
                 
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>VẬT LIỆU HEAT SINK : 6 Ống đồng, Lá nhôm
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Âm thanh động, độ trung thực cao nhờ công nghệ loa toàn dải
  </span>
                 
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>KÍCH THƯỚC QUẠT (D X R X C) : 120 x 120 x 25mm
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Chiều dài chỉ 400 mm – gọn nhất trong các dòng Leviathan V2
  </span>
                 
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>SỐ LƯỢNG QUẠT : 2
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Kết nối liền mạch từ PC đến điện thoại di động qua Bluetooth 5.0
  </span>
+                
+                
                 
                 
                 
@@ -3659,14 +3226,14 @@
                 
                 <span>
                     Giá niêm yết:
-                    <del class="p-old-price" style="display: inline-block;"> 1.200.000 đ </del>
+                    <del class="p-old-price" style="display: inline-block;"> 2.999.000 đ </del>
                 </span>
-                <span class="p-discount"> -34% </span>
+                <span class="p-discount"> -18% </span>
                 
 
                 <p class="p-price" style="margin: 0;">
                     <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
-                    799.000 đ
+                    2.489.000 đ
                     
                 </p>
               
@@ -3704,24 +3271,24 @@
 </div>
 
                 
-                    <div class="p-item  js-p-item summary-loaded" data-id="49338">
-    <a href="/tan-nhiet-cpu-id-cooling-se-206-xt-argb.html" class="p-img">
+                    <div class="p-item  js-p-item summary-loaded" data-id="16642">
+    <a href="/loa-may-tinh-razer-leviathan_id16642.html" class="p-img">
         
-        <img data-src="https://anphat.com.vn/media/product/250_49338_t___n_nhi___t_cpu_id_cooling_se_206_xt_argb__2_.jpg" alt="TẢN NHIỆT CPU ID-COOLING SE-206-XT ARGB" class="fit-img lazy">
+        <img data-src="https://anphat.com.vn/media/product/250_16642_razer_leviathan_v2__1_.jpg" alt="Loa máy tính Razer Leviathan V2" class="fit-img lazy loaded" src="https://anphat.com.vn/media/product/250_16642_razer_leviathan_v2__1_.jpg" data-was-processed="true">
         
       
         
 
                 
       
-        <span class="p-icon-holder js-icon-49338"><!-- // icon promotion --></span>
+        <span class="p-icon-holder js-icon-16642"><!-- // icon promotion --></span>
     </a>
   
     <div class="p-text">
        
         
-        <a href="/tan-nhiet-cpu-id-cooling-se-206-xt-argb.html" class="p-name"> <h3>TẢN NHIỆT CPU ID-COOLING SE-206-XT ARGB</h3> </a>
-        <span class="p-sku" style="font-size: 12px;">Mã SP: TNCP1007 </span>
+        <a href="/loa-may-tinh-razer-leviathan_id16642.html" class="p-name"> <h3>Loa máy tính Razer Leviathan V2</h3> </a>
+        <span class="p-sku" style="font-size: 12px;">Mã SP: LORZ0007 </span>
         
       
         <div class="d-flex align-items">
@@ -3733,12 +3300,203 @@
         <div class="price-container" style="height:auto;">
             
             
-            <del class="p-old-price"> 850.000 đ </del>
-            <span class="p-discount"> -6% </span>
+            <del class="p-old-price"> 6.999.000 đ </del>
+            <span class="p-discount"> -29% </span>
             
 
             <span class="p-price">
-                799.000 đ
+                4.989.000 đ
+                
+            </span>
+         
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Giá HS - SV: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;"> đ</p>
+            </div>
+            
+         
+
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;"> đ</p>
+            </div>
+            
+        </div>
+      
+      
+        
+        
+        
+        <div class="box-config">
+            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-16642 checked"></div></div>
+            
+        </div>
+
+        
+      
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center justify-content-between ">
+                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-16642" onclick="CompareProduct.compare_addProduct(16642)" data-id="16642">So sánh</a>
+
+                
+                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
+                
+            </div>
+
+            
+            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('16642', 'Loa máy tính Razer Leviathan V2', 4989000)"></a>
+            
+        </div>
+    </div>
+
+    
+    <div class="p-tooltip">
+        <p class="tooltip-title"> Loa máy tính Razer Leviathan V2 </p>
+
+        <div class="tooltip-content">
+            
+
+            
+            
+            <div class="tooltip-summary" style="white-space: unset">
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Loa máy tính Razer Leviathan V2
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Loa máy tính cao cấp mới
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Razer Chroma ™ RGB (18 vùng)
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>THX Spatial Audio (PC dựa trên Synapse 3)
+ </span>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </div>
+            
+              
+            <div class="position-relative">
+                
+                
+                <span>
+                    Giá niêm yết:
+                    <del class="p-old-price" style="display: inline-block;"> 6.999.000 đ </del>
+                </span>
+                <span class="p-discount"> -29% </span>
+                
+
+                <p class="p-price" style="margin: 0;">
+                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
+                    4.989.000 đ
+                    
+                </p>
+              
+                
+                
+
+                
+                
+         
+                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Giá HS - SV: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;"> đ</p>
+                </div>
+         
+
+                
+                
+
+                
+                
+         
+                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;"> đ</p>
+                </div>
+           
+
+                <!------>
+
+                <!---->
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+                
+                    <div class="p-item  js-p-item summary-loaded" data-id="38686">
+    <a href="/tai-nghe-razer-barracuda-x_id38686.html" class="p-img">
+        
+        <img data-src="https://anphat.com.vn/media/product/250_38686_razer_barracuda_x_2022__1_.jpg" alt="Tai nghe Razer Barracuda X Wireless 2022" class="fit-img lazy loaded" src="https://anphat.com.vn/media/product/250_38686_razer_barracuda_x_2022__1_.jpg" data-was-processed="true">
+        
+      
+        
+
+                
+      
+        <span class="p-icon-holder js-icon-38686"><!-- // icon promotion --></span>
+    </a>
+  
+    <div class="p-text">
+       
+        
+        <a href="/tai-nghe-razer-barracuda-x_id38686.html" class="p-name"> <h3>Tai nghe Razer Barracuda X Wireless 2022</h3> </a>
+        <span class="p-sku" style="font-size: 12px;">Mã SP: TNRZ0085 </span>
+        
+      
+        <div class="d-flex align-items">
+            <i class="icon-star star-5"></i>(2)
+        </div>
+
+
+        
+        <div class="price-container" style="height:auto;">
+            
+            
+            <del class="p-old-price"> 2.599.000 đ </del>
+            <span class="p-discount"> -24% </span>
+            
+
+            <span class="p-price">
+                1.989.000 đ
                 
             </span>
          
@@ -3775,7 +3533,7 @@
         
         
         <div class="box-config">
-            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-49338 checked"></div></div>
+            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-38686 checked"></div></div>
             
         </div>
 
@@ -3783,7 +3541,7 @@
       
         <div class="d-flex align-items-center justify-content-between">
             <div class="d-flex align-items-center justify-content-between ">
-                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-49338" onclick="CompareProduct.compare_addProduct(49338)" data-id="49338">So sánh</a>
+                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-38686" onclick="CompareProduct.compare_addProduct(38686)" data-id="38686">So sánh</a>
 
                 
                     <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
@@ -3791,14 +3549,14 @@
             </div>
 
             
-            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('49338', 'TẢN NHIỆT CPU ID-COOLING SE-206-XT ARGB', 799000)"></a>
+            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('38686', 'Tai nghe Razer Barracuda X Wireless 2022', 1989000)"></a>
             
         </div>
     </div>
 
     
     <div class="p-tooltip">
-        <p class="tooltip-title"> TẢN NHIỆT CPU ID-COOLING SE-206-XT ARGB </p>
+        <p class="tooltip-title"> Tai nghe Razer Barracuda X Wireless 2022 </p>
 
         <div class="tooltip-content">
             
@@ -3808,28 +3566,30 @@
             <div class="tooltip-summary" style="white-space: unset">
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Hỗ trợ full socket các dòng CPU của Intel và AMD
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Tai nghe Razer Barracuda X Wireless 2022
  </span>
                 
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>TDP vượt trội lên đến 250W
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>
  </span>
                 
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Nâng cấp diện tích tản cao và to hơn, có top cover thiết kế phay xước chắc chắn
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Kết nối 3 chế độ: Wireless 2,4Ghz (USB TypeC), Bluetooth 5.2 và có dây qua jack 3.5mm
  </span>
                 
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Tối đa hỗ trợ 3 fan ( 2 fan đi kèm )
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Củ loa 40mm Razer Triforce cho âm thanh tuyệt vời
  </span>
                 
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Tối ưu hóa cho ram cao đến 50mm
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Trọng lượng chỉ 250 gram
  </span>
+                
+                
                 
                 
                 
@@ -3846,14 +3606,14 @@
                 
                 <span>
                     Giá niêm yết:
-                    <del class="p-old-price" style="display: inline-block;"> 850.000 đ </del>
+                    <del class="p-old-price" style="display: inline-block;"> 2.599.000 đ </del>
                 </span>
-                <span class="p-discount"> -6% </span>
+                <span class="p-discount"> -24% </span>
                 
 
                 <p class="p-price" style="margin: 0;">
                     <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
-                    799.000 đ
+                    1.989.000 đ
                     
                 </p>
               
@@ -3891,24 +3651,24 @@
 </div>
 
                 
-                    <div class="p-item  js-p-item summary-loaded" data-id="48559">
-    <a href="/bo-tan-nhiet-khi-cpu-id-cooling-frozn-a410-dk-2-fan-hef.html" class="p-img">
+                    <div class="p-item  js-p-item summary-loaded" data-id="48772">
+    <a href="/tai-nghe-e-dra-eh495w-wireless-black.html" class="p-img">
         
-        <img data-src="https://anphat.com.vn/media/product/250_48559_b____t___n_nhi___t_kh___cpu_id_cooling_frozn_a410_dk__2_fan_hef___2_.jpg" alt="BỘ TẢN NHIỆT KHÍ CPU ID-COOLING FROZN A410 DK (2 fan HEF)" class="fit-img lazy">
+        <img data-src="https://anphat.com.vn/media/product/250_48772_e_dra_eh495w__1_.jpg" alt="Tai nghe E-Dra EH495W Wireless Black" class="fit-img lazy loaded" src="https://anphat.com.vn/media/product/250_48772_e_dra_eh495w__1_.jpg" data-was-processed="true">
         
       
         
 
                 
       
-        <span class="p-icon-holder js-icon-48559"><!-- // icon promotion --></span>
+        <span class="p-icon-holder js-icon-48772"><!-- // icon promotion --></span>
     </a>
   
     <div class="p-text">
        
         
-        <a href="/bo-tan-nhiet-khi-cpu-id-cooling-frozn-a410-dk-2-fan-hef.html" class="p-name"> <h3>BỘ TẢN NHIỆT KHÍ CPU ID-COOLING FROZN A410 DK (2 fan HEF)</h3> </a>
-        <span class="p-sku" style="font-size: 12px;">Mã SP: TNCP1003 </span>
+        <a href="/tai-nghe-e-dra-eh495w-wireless-black.html" class="p-name"> <h3>Tai nghe E-Dra EH495W Wireless Black</h3> </a>
+        <span class="p-sku" style="font-size: 12px;">Mã SP: TNED0013 </span>
         
       
         <div class="d-flex align-items">
@@ -3920,8 +3680,2056 @@
         <div class="price-container" style="height:auto;">
             
             
-            <del class="p-old-price"> 800.000 đ </del>
-            <span class="p-discount"> -13% </span>
+            <del class="p-old-price"> 699.000 đ </del>
+            <span class="p-discount"> -22% </span>
+            
+
+            <span class="p-price">
+                549.000 đ
+                
+            </span>
+         
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Giá HS - SV: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+            </div>
+            
+         
+
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+            </div>
+            
+        </div>
+      
+      
+        
+        
+        
+        <div class="box-config">
+            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-48772 checked"></div></div>
+            
+        </div>
+
+        
+      
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center justify-content-between ">
+                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-48772" onclick="CompareProduct.compare_addProduct(48772)" data-id="48772">So sánh</a>
+
+                
+                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
+                
+            </div>
+
+            
+            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('48772', 'Tai nghe E-Dra EH495W Wireless Black', 549000)"></a>
+            
+        </div>
+    </div>
+
+    
+    <div class="p-tooltip">
+        <p class="tooltip-title"> Tai nghe E-Dra EH495W Wireless Black </p>
+
+        <div class="tooltip-content">
+            
+
+            
+            
+            <div class="tooltip-summary" style="white-space: unset">
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Tai nghe E-Dra EH495W Wireless Black
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>2 chế độ kết nối: Không dây 2.4 Ghz (có đầu nhận USB), Bluetooth 5.3
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Phạm vi hoạt động không dây: 10m
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Pin sạc cua dây USB đi kèm (chỉ dùng để sạc)
+ </span>
+                
+                
+                
+                
+                
+                
+                
+                
+            </div>
+            
+              
+            <div class="position-relative">
+                
+                
+                <span>
+                    Giá niêm yết:
+                    <del class="p-old-price" style="display: inline-block;"> 699.000 đ </del>
+                </span>
+                <span class="p-discount"> -22% </span>
+                
+
+                <p class="p-price" style="margin: 0;">
+                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
+                    549.000 đ
+                    
+                </p>
+              
+                
+                
+
+                
+                
+         
+                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Giá HS - SV: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+                </div>
+         
+
+                
+                
+
+                
+                
+         
+                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+                </div>
+           
+
+                <!------>
+
+                <!---->
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+                
+                    <div class="p-item  js-p-item summary-loaded" data-id="31393">
+    <a href="/camera-hoi-nghi-truyen-hinh-logitech-conferencecam-group_id31393.html" class="p-img">
+        
+        <img data-src="https://anphat.com.vn/media/product/250_31393_conferencecam_group.png" alt="Camera hội nghị truyền hình Logitech ConferenceCam Group (960-001054)" class="fit-img lazy loaded" src="https://anphat.com.vn/media/product/250_31393_conferencecam_group.png" data-was-processed="true">
+        
+      
+        
+
+                
+      
+        <span class="p-icon-holder js-icon-31393"><!-- // icon promotion --></span>
+    </a>
+  
+    <div class="p-text">
+       
+        
+        <a href="/camera-hoi-nghi-truyen-hinh-logitech-conferencecam-group_id31393.html" class="p-name"> <h3>Camera hội nghị truyền hình Logitech ConferenceCam Group (960-001054)</h3> </a>
+        <span class="p-sku" style="font-size: 12px;">Mã SP: WCLG0013 </span>
+        
+      
+        <div class="d-flex align-items">
+            <i class="icon-star star-5"></i>(1)
+        </div>
+
+
+        
+        <div class="price-container" style="height:auto;">
+            
+            
+            <del class="p-old-price"> 29.999.000 đ </del>
+            <span class="p-discount"> -18% </span>
+            
+
+            <span class="p-price">
+                24.889.000 đ
+                
+            </span>
+         
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Giá HS - SV: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;"> đ</p>
+            </div>
+            
+         
+
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;"> đ</p>
+            </div>
+            
+        </div>
+      
+      
+        
+        
+        
+        <div class="box-config">
+            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-31393 checked"></div></div>
+            
+        </div>
+
+        
+      
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center justify-content-between ">
+                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-31393" onclick="CompareProduct.compare_addProduct(31393)" data-id="31393">So sánh</a>
+
+                
+                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
+                
+            </div>
+
+            
+            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('31393', 'Camera hội nghị truyền hình Logitech ConferenceCam Group (960-001054)', 24889000)"></a>
+            
+        </div>
+    </div>
+
+    
+    <div class="p-tooltip">
+        <p class="tooltip-title"> Camera hội nghị truyền hình Logitech ConferenceCam Group (960-001054) </p>
+
+        <div class="tooltip-content">
+            
+
+            
+            
+            <div class="tooltip-summary" style="white-space: unset">
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Camera hội nghị truyền hình Logitech ConferenceCam Group (960-001054)
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>- Giải pháp hội nghị truyền hình vừa túi tiền cho các phòng họp lên tới 14 người ( có thể lên tới 20 người khi dùng cùng mic mở rộng )
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>- Thấy mọi chi tiết với video HD và khả năng thu phóng 10 lần
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>- CAMERA :Lấy nét tự động, quét ngang +/- 90° , Nghiêng +35° / -45 , Trường ngắm: Chéo: 90° , ngang: 82,1° , dọc: 52,2°
+ </span>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </div>
+            
+              
+            <div class="position-relative">
+                
+                
+                <span>
+                    Giá niêm yết:
+                    <del class="p-old-price" style="display: inline-block;"> 29.999.000 đ </del>
+                </span>
+                <span class="p-discount"> -18% </span>
+                
+
+                <p class="p-price" style="margin: 0;">
+                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
+                    24.889.000 đ
+                    
+                </p>
+              
+                
+                
+
+                
+                
+         
+                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Giá HS - SV: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;"> đ</p>
+                </div>
+         
+
+                
+                
+
+                
+                
+         
+                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;"> đ</p>
+                </div>
+           
+
+                <!------>
+
+                <!---->
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+                
+                    <div class="p-item  js-p-item summary-loaded" data-id="49725">
+    <a href="/microphone-elgato-wave-neo-10mai9901.html" class="p-img">
+        
+        <img data-src="https://anphat.com.vn/media/product/250_49725_elgato_wave_neo__1_.jpg" alt="Microphone Elgato Wave Neo 10MAI9901" class="fit-img lazy loaded" src="https://anphat.com.vn/media/product/250_49725_elgato_wave_neo__1_.jpg" data-was-processed="true">
+        
+      
+        
+
+                
+      
+        <span class="p-icon-holder js-icon-49725"><!-- // icon promotion --></span>
+    </a>
+  
+    <div class="p-text">
+       
+        
+        <a href="/microphone-elgato-wave-neo-10mai9901.html" class="p-name"> <h3>Microphone Elgato Wave Neo 10MAI9901</h3> </a>
+        <span class="p-sku" style="font-size: 12px;">Mã SP: PKEL0040 </span>
+        
+      
+        <div class="d-flex align-items">
+            <i class="icon-star star-0"></i>(0)
+        </div>
+
+
+        
+        <div class="price-container" style="height:auto;">
+            
+            
+            <del class="p-old-price"> 2.999.000 đ </del>
+            <span class="p-discount"> -26% </span>
+            
+
+            <span class="p-price">
+                2.249.000 đ
+                
+            </span>
+         
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Giá HS - SV: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+            </div>
+            
+         
+
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+            </div>
+            
+        </div>
+      
+      
+        
+        
+        
+        <div class="box-config">
+            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-49725 checked"></div></div>
+            
+        </div>
+
+        
+      
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center justify-content-between ">
+                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-49725" onclick="CompareProduct.compare_addProduct(49725)" data-id="49725">So sánh</a>
+
+                
+                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
+                
+            </div>
+
+            
+            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('49725', 'Microphone Elgato Wave Neo 10MAI9901', 2249000)"></a>
+            
+        </div>
+    </div>
+
+    
+    <div class="p-tooltip">
+        <p class="tooltip-title"> Microphone Elgato Wave Neo 10MAI9901 </p>
+
+        <div class="tooltip-content">
+            
+
+            
+            
+            <div class="tooltip-summary" style="white-space: unset">
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Microphone Elgato Wave Neo 10MAI9901
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Model: 10MAI9901
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Loại Microphone: Condenser
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Polar Pattern: Cardioid
+ </span>
+                
+                
+                
+                
+                
+                
+                
+                
+            </div>
+            
+              
+            <div class="position-relative">
+                
+                
+                <span>
+                    Giá niêm yết:
+                    <del class="p-old-price" style="display: inline-block;"> 2.999.000 đ </del>
+                </span>
+                <span class="p-discount"> -26% </span>
+                
+
+                <p class="p-price" style="margin: 0;">
+                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
+                    2.249.000 đ
+                    
+                </p>
+              
+                
+                
+
+                
+                
+         
+                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Giá HS - SV: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+                </div>
+         
+
+                
+                
+
+                
+                
+         
+                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+                </div>
+           
+
+                <!------>
+
+                <!---->
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+                
+                    <div class="p-item  js-p-item summary-loaded" data-id="41058">
+    <a href="/microphone-elgato-wave-3.html" class="p-img">
+        
+        <img data-src="https://anphat.com.vn/media/product/250_41058_55856_elgato_wave_3__4_.jpg" alt="Microphone Elgato Wave 3 10MAB9901" class="fit-img lazy loaded" src="https://anphat.com.vn/media/product/250_41058_55856_elgato_wave_3__4_.jpg" data-was-processed="true">
+        
+      
+        
+
+                
+      
+        <span class="p-icon-holder js-icon-41058"><!-- // icon promotion --></span>
+    </a>
+  
+    <div class="p-text">
+       
+        
+        <a href="/microphone-elgato-wave-3.html" class="p-name"> <h3>Microphone Elgato Wave 3 10MAB9901</h3> </a>
+        <span class="p-sku" style="font-size: 12px;">Mã SP: PKEL0017 </span>
+        
+      
+        <div class="d-flex align-items">
+            <i class="icon-star star-0"></i>(0)
+        </div>
+
+
+        
+        <div class="price-container" style="height:auto;">
+            
+            
+            <del class="p-old-price"> 4.499.000 đ </del>
+            <span class="p-discount"> -23% </span>
+            
+
+            <span class="p-price">
+                3.499.000 đ
+                
+            </span>
+         
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Giá HS - SV: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+            </div>
+            
+         
+
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+            </div>
+            
+        </div>
+      
+      
+        
+        
+        
+        <div class="box-config">
+            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-41058 checked"></div></div>
+            
+        </div>
+
+        
+      
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center justify-content-between ">
+                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-41058" onclick="CompareProduct.compare_addProduct(41058)" data-id="41058">So sánh</a>
+
+                
+                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
+                
+            </div>
+
+            
+            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('41058', 'Microphone Elgato Wave 3 10MAB9901', 3499000)"></a>
+            
+        </div>
+    </div>
+
+    
+    <div class="p-tooltip">
+        <p class="tooltip-title"> Microphone Elgato Wave 3 10MAB9901 </p>
+
+        <div class="tooltip-content">
+            
+
+            
+            
+            <div class="tooltip-summary" style="white-space: unset">
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Microphone Elgato Wave 3 10MAB9901
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Chuẩn giao tiếp	USB 3.0
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Kích thước	153 x 66 x 40 mm
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Trọng lượng	Mic &amp; U-Mount 280 g
+ </span>
+                
+                
+                
+                
+                
+                
+            </div>
+            
+              
+            <div class="position-relative">
+                
+                
+                <span>
+                    Giá niêm yết:
+                    <del class="p-old-price" style="display: inline-block;"> 4.499.000 đ </del>
+                </span>
+                <span class="p-discount"> -23% </span>
+                
+
+                <p class="p-price" style="margin: 0;">
+                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
+                    3.499.000 đ
+                    
+                </p>
+              
+                
+                
+
+                
+                
+         
+                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Giá HS - SV: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+                </div>
+         
+
+                
+                
+
+                
+                
+         
+                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+                </div>
+           
+
+                <!------>
+
+                <!---->
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+                
+                    <div class="p-item  js-p-item summary-loaded" data-id="49724">
+    <a href="/microphone-elgato-wave-3-white-10mab9911.html" class="p-img">
+        
+        <img data-src="https://anphat.com.vn/media/product/250_49724_elgato_wave_3_white__1_.jpg" alt="Microphone Elgato Wave 3 White 10MAB9911" class="fit-img lazy loaded" src="https://anphat.com.vn/media/product/250_49724_elgato_wave_3_white__1_.jpg" data-was-processed="true">
+        
+      
+        
+
+                
+      
+        <span class="p-icon-holder js-icon-49724"><!-- // icon promotion --></span>
+    </a>
+  
+    <div class="p-text">
+       
+        
+        <a href="/microphone-elgato-wave-3-white-10mab9911.html" class="p-name"> <h3>Microphone Elgato Wave 3 White 10MAB9911</h3> </a>
+        <span class="p-sku" style="font-size: 12px;">Mã SP: PKEL0039 </span>
+        
+      
+        <div class="d-flex align-items">
+            <i class="icon-star star-0"></i>(0)
+        </div>
+
+
+        
+        <div class="price-container" style="height:auto;">
+            
+            
+            <del class="p-old-price"> 4.499.000 đ </del>
+            <span class="p-discount"> -23% </span>
+            
+
+            <span class="p-price">
+                3.499.000 đ
+                
+            </span>
+         
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Giá HS - SV: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+            </div>
+            
+         
+
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+            </div>
+            
+        </div>
+      
+      
+        
+        
+        
+        <div class="box-config">
+            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-49724 checked"></div></div>
+            
+        </div>
+
+        
+      
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center justify-content-between ">
+                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-49724" onclick="CompareProduct.compare_addProduct(49724)" data-id="49724">So sánh</a>
+
+                
+                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
+                
+            </div>
+
+            
+            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('49724', 'Microphone Elgato Wave 3 White 10MAB9911', 3499000)"></a>
+            
+        </div>
+    </div>
+
+    
+    <div class="p-tooltip">
+        <p class="tooltip-title"> Microphone Elgato Wave 3 White 10MAB9911 </p>
+
+        <div class="tooltip-content">
+            
+
+            
+            
+            <div class="tooltip-summary" style="white-space: unset">
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Microphone Elgato Wave 3 White 10MAB9911
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Chuẩn giao tiếp	USB 3.0
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Kích thước	153 x 66 x 40 mm
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Trọng lượng	Mic &amp; U-Mount 280 g
+ </span>
+                
+                
+                
+                
+                
+                
+            </div>
+            
+              
+            <div class="position-relative">
+                
+                
+                <span>
+                    Giá niêm yết:
+                    <del class="p-old-price" style="display: inline-block;"> 4.499.000 đ </del>
+                </span>
+                <span class="p-discount"> -23% </span>
+                
+
+                <p class="p-price" style="margin: 0;">
+                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
+                    3.499.000 đ
+                    
+                </p>
+              
+                
+                
+
+                
+                
+         
+                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Giá HS - SV: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+                </div>
+         
+
+                
+                
+
+                
+                
+         
+                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+                </div>
+           
+
+                <!------>
+
+                <!---->
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+                
+                    <div class="p-item  js-p-item summary-loaded" data-id="49202">
+    <a href="/bang-ve-wacom-one-s-pen-tablet-ctc4110wlw0c.html" class="p-img">
+        
+        <img data-src="https://anphat.com.vn/media/product/250_49202_b___ng_v____wacom_one_s__pen_tablet_ctc4110wlw0c___1_.jpg" alt="Bảng vẽ Wacom One S, Pen Tablet CTC4110WLW0C" class="fit-img lazy loaded" src="https://anphat.com.vn/media/product/250_49202_b___ng_v____wacom_one_s__pen_tablet_ctc4110wlw0c___1_.jpg" data-was-processed="true">
+        
+      
+        
+
+                
+      
+        <span class="p-icon-holder js-icon-49202"><!-- // icon promotion --></span>
+    </a>
+  
+    <div class="p-text">
+       
+        
+        <a href="/bang-ve-wacom-one-s-pen-tablet-ctc4110wlw0c.html" class="p-name"> <h3>Bảng vẽ Wacom One S, Pen Tablet CTC4110WLW0C</h3> </a>
+        <span class="p-sku" style="font-size: 12px;">Mã SP: BVWC0056 </span>
+        
+      
+        <div class="d-flex align-items">
+            <i class="icon-star star-0"></i>(0)
+        </div>
+
+
+        
+        <div class="price-container" style="height:auto;">
+            
+
+            <span class="p-price">
+                2.390.000 đ
+                
+            </span>
+         
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Giá HS - SV: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+            </div>
+            
+         
+
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+            </div>
+            
+        </div>
+      
+      
+        
+        
+        
+        <div class="box-config">
+            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-49202 checked"></div></div>
+            
+        </div>
+
+        
+      
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center justify-content-between ">
+                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-49202" onclick="CompareProduct.compare_addProduct(49202)" data-id="49202">So sánh</a>
+
+                
+                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
+                
+            </div>
+
+            
+            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('49202', 'Bảng vẽ Wacom One S, Pen Tablet CTC4110WLW0C', 2390000)"></a>
+            
+        </div>
+    </div>
+
+    
+    <div class="p-tooltip">
+        <p class="tooltip-title"> Bảng vẽ Wacom One S, Pen Tablet CTC4110WLW0C </p>
+
+        <div class="tooltip-content">
+            
+
+            
+            
+            <div class="tooltip-summary" style="white-space: unset">
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Vùng hoạt động Small: 152 x 95 mm (6.0 x 3.7 in)
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Màu bảng vẽ Đen
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>ExpressKeys: Không
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Độ phân giải bảng vẽ Độ phản hồi: 2540 lpi 133 pps
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Cảm ứng chạm đa điểm: Không
+ </span>
+                
+                
+                
+                
+            </div>
+            
+              
+            <div class="position-relative">
+                
+
+                <p class="p-price" style="margin: 0;">
+                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
+                    2.390.000 đ
+                    
+                </p>
+              
+                
+                
+
+                
+                
+         
+                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Giá HS - SV: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+                </div>
+         
+
+                
+                
+
+                
+                
+         
+                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+                </div>
+           
+
+                <!------>
+
+                <!---->
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+                
+                    <div class="p-item  js-p-item summary-loaded" data-id="40215">
+    <a href="/tai-nghe-logitech-g435-lightspeed-wireless-blue-raspberry_id40215.html" class="p-img">
+        
+        <img data-src="https://anphat.com.vn/media/product/250_40215_logitech_g435_blue_raspberry__1_.png" alt="Tai nghe Logitech G435 LightSpeed Wireless Blue Raspberry" class="fit-img lazy">
+        
+      
+        
+
+                
+      
+        <span class="p-icon-holder js-icon-40215"><!-- // icon promotion --></span>
+    </a>
+  
+    <div class="p-text">
+       
+        
+        <a href="/tai-nghe-logitech-g435-lightspeed-wireless-blue-raspberry_id40215.html" class="p-name"> <h3>Tai nghe Logitech G435 LightSpeed Wireless Blue Raspberry</h3> </a>
+        <span class="p-sku" style="font-size: 12px;">Mã SP: TNLG0056 </span>
+        
+      
+        <div class="d-flex align-items">
+            <i class="icon-star star-0"></i>(0)
+        </div>
+
+
+        
+        <div class="price-container" style="height:auto;">
+            
+            
+            <del class="p-old-price"> 1.799.000 đ </del>
+            <span class="p-discount"> -26% </span>
+            
+
+            <span class="p-price">
+                1.349.000 đ
+                
+            </span>
+         
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Giá HS - SV: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+            </div>
+            
+         
+
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+            </div>
+            
+        </div>
+      
+      
+        
+        
+        
+        <div class="box-config">
+            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-40215 checked"></div></div>
+            
+        </div>
+
+        
+      
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center justify-content-between ">
+                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-40215" onclick="CompareProduct.compare_addProduct(40215)" data-id="40215">So sánh</a>
+
+                
+                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
+                
+            </div>
+
+            
+            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('40215', 'Tai nghe Logitech G435 LightSpeed Wireless Blue Raspberry', 1349000)"></a>
+            
+        </div>
+    </div>
+
+    
+    <div class="p-tooltip">
+        <p class="tooltip-title"> Tai nghe Logitech G435 LightSpeed Wireless Blue Raspberry </p>
+
+        <div class="tooltip-content">
+            
+
+            
+            
+            <div class="tooltip-summary" style="white-space: unset">
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Tai nghe Logitech G435 LightSpeed Wireless Blue Raspberry
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Trọng lượng siêu nhẹ, chỉ 165 gram
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Màng loa 40mm thế hệ mới cho âm thanh tuyệt vời
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Hỗ trợ 2 kết nối không dây: LightSpeed và Bluetooth
+ </span>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </div>
+            
+              
+            <div class="position-relative">
+                
+                
+                <span>
+                    Giá niêm yết:
+                    <del class="p-old-price" style="display: inline-block;"> 1.799.000 đ </del>
+                </span>
+                <span class="p-discount"> -26% </span>
+                
+
+                <p class="p-price" style="margin: 0;">
+                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
+                    1.349.000 đ
+                    
+                </p>
+              
+                
+                
+
+                
+                
+         
+                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Giá HS - SV: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+                </div>
+         
+
+                
+                
+
+                
+                
+         
+                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+                </div>
+           
+
+                <!------>
+
+                <!---->
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+                
+                    <div class="p-item  js-p-item summary-loaded" data-id="40214">
+    <a href="/tai-nghe-logitech-g435-lightspeed-wireless-off-white-lilac_id40214.html" class="p-img">
+        
+        <img data-src="https://anphat.com.vn/media/product/250_40214_logitech_g435_lightspeed_wireless_off_white_lilac_anphatcomputer_1.jpg" alt="Tai nghe Logitech G435 LightSpeed Wireless Off-White Lilac" class="fit-img lazy">
+        
+      
+        
+
+                
+      
+        <span class="p-icon-holder js-icon-40214"><!-- // icon promotion --></span>
+    </a>
+  
+    <div class="p-text">
+       
+        
+        <a href="/tai-nghe-logitech-g435-lightspeed-wireless-off-white-lilac_id40214.html" class="p-name"> <h3>Tai nghe Logitech G435 LightSpeed Wireless Off-White Lilac</h3> </a>
+        <span class="p-sku" style="font-size: 12px;">Mã SP: TNLG0057 </span>
+        
+      
+        <div class="d-flex align-items">
+            <i class="icon-star star-0"></i>(0)
+        </div>
+
+
+        
+        <div class="price-container" style="height:auto;">
+            
+            
+            <del class="p-old-price"> 1.799.000 đ </del>
+            <span class="p-discount"> -26% </span>
+            
+
+            <span class="p-price">
+                1.349.000 đ
+                
+            </span>
+         
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Giá HS - SV: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+            </div>
+            
+         
+
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+            </div>
+            
+        </div>
+      
+      
+        
+        
+        
+        <div class="box-config">
+            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-40214 checked"></div></div>
+            
+        </div>
+
+        
+      
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center justify-content-between ">
+                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-40214" onclick="CompareProduct.compare_addProduct(40214)" data-id="40214">So sánh</a>
+
+                
+                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
+                
+            </div>
+
+            
+            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('40214', 'Tai nghe Logitech G435 LightSpeed Wireless Off-White Lilac', 1349000)"></a>
+            
+        </div>
+    </div>
+
+    
+    <div class="p-tooltip">
+        <p class="tooltip-title"> Tai nghe Logitech G435 LightSpeed Wireless Off-White Lilac </p>
+
+        <div class="tooltip-content">
+            
+
+            
+            
+            <div class="tooltip-summary" style="white-space: unset">
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Tai nghe Logitech G435 LightSpeed Wireless Off-White Lilac
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Trọng lượng siêu nhẹ, chỉ 165 gram
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Màng loa 40mm thế hệ mới cho âm thanh tuyệt vời
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Hỗ trợ 2 kết nối không dây: LightSpeed và Bluetooth
+ </span>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </div>
+            
+              
+            <div class="position-relative">
+                
+                
+                <span>
+                    Giá niêm yết:
+                    <del class="p-old-price" style="display: inline-block;"> 1.799.000 đ </del>
+                </span>
+                <span class="p-discount"> -26% </span>
+                
+
+                <p class="p-price" style="margin: 0;">
+                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
+                    1.349.000 đ
+                    
+                </p>
+              
+                
+                
+
+                
+                
+         
+                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Giá HS - SV: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+                </div>
+         
+
+                
+                
+
+                
+                
+         
+                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+                </div>
+           
+
+                <!------>
+
+                <!---->
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+                
+                    <div class="p-item  js-p-item summary-loaded" data-id="45025">
+    <a href="/loa-edifier-qd35-bluetooth-white.html" class="p-img">
+        
+        <img data-src="https://anphat.com.vn/media/product/250_45025_edifier_qd35_bluetooth_white__2_.jpg" alt="Loa Edifier QD35 Bluetooth White" class="fit-img lazy">
+        
+      
+        
+
+                
+      
+        <span class="p-icon-holder js-icon-45025"><!-- // icon promotion --></span>
+    </a>
+  
+    <div class="p-text">
+       
+        
+        <a href="/loa-edifier-qd35-bluetooth-white.html" class="p-name"> <h3>Loa Edifier QD35 Bluetooth White</h3> </a>
+        <span class="p-sku" style="font-size: 12px;">Mã SP: LOKH0227 </span>
+        
+      
+        <div class="d-flex align-items">
+            <i class="icon-star star-0"></i>(0)
+        </div>
+
+
+        
+        <div class="price-container" style="height:auto;">
+            
+            
+            <del class="p-old-price"> 4.299.000 đ </del>
+            <span class="p-discount"> -42% </span>
+            
+
+            <span class="p-price">
+                2.499.000 đ
+                
+            </span>
+         
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Giá HS - SV: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+            </div>
+            
+         
+
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+            </div>
+            
+        </div>
+      
+      
+        
+        
+        
+        <div class="box-config">
+            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-45025 checked"></div></div>
+            
+        </div>
+
+        
+      
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center justify-content-between ">
+                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-45025" onclick="CompareProduct.compare_addProduct(45025)" data-id="45025">So sánh</a>
+
+                
+                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
+                
+            </div>
+
+            
+            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('45025', 'Loa Edifier QD35 Bluetooth White', 2499000)"></a>
+            
+        </div>
+    </div>
+
+    
+    <div class="p-tooltip">
+        <p class="tooltip-title"> Loa Edifier QD35 Bluetooth White </p>
+
+        <div class="tooltip-content">
+            
+
+            
+            
+            <div class="tooltip-summary" style="white-space: unset">
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Loa Edifier QD35 Bluetooth White
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Loa công nghệ cao, kết nối Bluetooth, AUX (3.5mm) và USB
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Hi-Res Audio &amp; Hi-Res Wireless
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Tinh chỉnh EQ
+ </span>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </div>
+            
+              
+            <div class="position-relative">
+                
+                
+                <span>
+                    Giá niêm yết:
+                    <del class="p-old-price" style="display: inline-block;"> 4.299.000 đ </del>
+                </span>
+                <span class="p-discount"> -42% </span>
+                
+
+                <p class="p-price" style="margin: 0;">
+                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
+                    2.499.000 đ
+                    
+                </p>
+              
+                
+                
+
+                
+                
+         
+                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Giá HS - SV: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+                </div>
+         
+
+                
+                
+
+                
+                
+         
+                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+                </div>
+           
+
+                <!------>
+
+                <!---->
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+                
+                    <div class="p-item  js-p-item summary-loaded" data-id="30573">
+    <a href="/webcam-logitech-brio-ultra-hd-pro_id30573.html" class="p-img">
+        
+        <img data-src="https://anphat.com.vn/media/product/250_30573_webcam_logitech_brio_ultra_hd_pro_1.png" alt="Webcam Logitech BRIO Ultra HD Pro Ultra HD 4K 960-001105" class="fit-img lazy">
+        
+      
+        
+
+                
+      
+        <span class="p-icon-holder js-icon-30573"><!-- // icon promotion --></span>
+    </a>
+  
+    <div class="p-text">
+       
+        
+        <a href="/webcam-logitech-brio-ultra-hd-pro_id30573.html" class="p-name"> <h3>Webcam Logitech BRIO Ultra HD Pro Ultra HD 4K 960-001105</h3> </a>
+        <span class="p-sku" style="font-size: 12px;">Mã SP: WCLG0017 </span>
+        
+      
+        <div class="d-flex align-items">
+            <i class="icon-star star-0"></i>(0)
+        </div>
+
+
+        
+        <div class="price-container" style="height:auto;">
+            
+            
+            <del class="p-old-price"> 5.499.000 đ </del>
+            <span class="p-discount"> -24% </span>
+            
+
+            <span class="p-price">
+                4.199.000 đ
+                
+            </span>
+         
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Giá HS - SV: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+            </div>
+            
+         
+
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+            </div>
+            
+        </div>
+      
+      
+        
+        
+        
+        <div class="box-config">
+            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-30573 checked"></div></div>
+            
+        </div>
+
+        
+      
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center justify-content-between ">
+                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-30573" onclick="CompareProduct.compare_addProduct(30573)" data-id="30573">So sánh</a>
+
+                
+                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
+                
+            </div>
+
+            
+            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('30573', 'Webcam Logitech BRIO Ultra HD Pro Ultra HD 4K 960-001105', 4199000)"></a>
+            
+        </div>
+    </div>
+
+    
+    <div class="p-tooltip">
+        <p class="tooltip-title"> Webcam Logitech BRIO Ultra HD Pro Ultra HD 4K 960-001105 </p>
+
+        <div class="tooltip-content">
+            
+
+            
+            
+            <div class="tooltip-summary" style="white-space: unset">
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Logitech Brio là webcam kinh doanh tốt nhất và tiên tiến nhất của chúng tôi. Được trang bị các công nghệ tiên tiến, Brio nâng tầm cho khả năng cộng tác video HD siêu nét 4K.
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>RightLight 3 và công nghệ dải động cao (HDR) tự động điều chỉnh để giúp bạn trông chuyên nghiệp trong mọi môi trường ánh sáng, bao gồm ánh sáng yếu, ánh sáng mặt trời trực tiếp hoặc điều kiện ánh sáng có độ tương phản cao.
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Brio được chứng nhận dành cho doanh nghiệp và với cảm biến quang học và hồng ngoại tích hợp, hỗ trợ Windows Hello. </span>
+                
+                
+            </div>
+            
+              
+            <div class="position-relative">
+                
+                
+                <span>
+                    Giá niêm yết:
+                    <del class="p-old-price" style="display: inline-block;"> 5.499.000 đ </del>
+                </span>
+                <span class="p-discount"> -24% </span>
+                
+
+                <p class="p-price" style="margin: 0;">
+                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
+                    4.199.000 đ
+                    
+                </p>
+              
+                
+                
+
+                
+                
+         
+                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Giá HS - SV: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+                </div>
+         
+
+                
+                
+
+                
+                
+         
+                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+                </div>
+           
+
+                <!------>
+
+                <!---->
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+                
+                    <div class="p-item  js-p-item summary-loaded" data-id="49394">
+    <a href="/tai-nghe-co-day-rapoo-h120.html" class="p-img">
+        
+        <img data-src="https://anphat.com.vn/media/product/250_49394_" alt="Tai nghe có dây Rapoo H120" class="fit-img lazy">
+        
+      
+        
+
+                
+      
+        <span class="p-icon-holder js-icon-49394"><!-- // icon promotion --></span>
+    </a>
+  
+    <div class="p-text">
+       
+        
+        <a href="/tai-nghe-co-day-rapoo-h120.html" class="p-name"> <h3>Tai nghe có dây Rapoo H120</h3> </a>
+        <span class="p-sku" style="font-size: 12px;">Mã SP: TNRP0011 </span>
+        
+      
+        <div class="d-flex align-items">
+            <i class="icon-star star-0"></i>(0)
+        </div>
+
+
+        
+        <div class="price-container" style="height:auto;">
+            
+            
+            <del class="p-old-price"> 349.000 đ </del>
+            <span class="p-discount"> -21% </span>
+            
+
+            <span class="p-price">
+                279.000 đ
+                
+            </span>
+         
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Giá HS - SV: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+            </div>
+            
+         
+
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+            </div>
+            
+        </div>
+      
+      
+        
+        
+        
+        <div class="box-config">
+            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-49394 checked"></div></div>
+            
+        </div>
+
+        
+      
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center justify-content-between ">
+                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-49394" onclick="CompareProduct.compare_addProduct(49394)" data-id="49394">So sánh</a>
+
+                
+                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
+                
+            </div>
+
+            
+            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('49394', 'Tai nghe có dây Rapoo H120', 279000)"></a>
+            
+        </div>
+    </div>
+
+    
+    <div class="p-tooltip">
+        <p class="tooltip-title"> Tai nghe có dây Rapoo H120 </p>
+
+        <div class="tooltip-content">
+            
+
+            
+            
+            <div class="tooltip-summary" style="white-space: unset">
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Tai nghe có dây Rapoo H120
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Kết nối: USB
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Micro giảm tiếng ồn
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Có thể xoay, điều chỉnh âm lượng, tắt tiếng micrô, thiết kế gọn nhẹ, thoải mái khi đeo. </span>
+                
+                
+            </div>
+            
+              
+            <div class="position-relative">
+                
+                
+                <span>
+                    Giá niêm yết:
+                    <del class="p-old-price" style="display: inline-block;"> 349.000 đ </del>
+                </span>
+                <span class="p-discount"> -21% </span>
+                
+
+                <p class="p-price" style="margin: 0;">
+                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
+                    279.000 đ
+                    
+                </p>
+              
+                
+                
+
+                
+                
+         
+                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Giá HS - SV: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+                </div>
+         
+
+                
+                
+
+                
+                
+         
+                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+                </div>
+           
+
+                <!------>
+
+                <!---->
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+                
+                    <div class="p-item  js-p-item summary-loaded" data-id="49238">
+    <a href="/loa-soundmax-a827-2.0.html" class="p-img">
+        
+        <img data-src="https://anphat.com.vn/media/product/250_49238_loa_soundmax_a827_2_0__2_.jpg" alt="Loa SOUNDMAX A827 2.0" class="fit-img lazy">
+        
+      
+        
+
+                
+      
+        <span class="p-icon-holder js-icon-49238"><!-- // icon promotion --></span>
+    </a>
+  
+    <div class="p-text">
+       
+        
+        <a href="/loa-soundmax-a827-2.0.html" class="p-name"> <h3>Loa SOUNDMAX A827 2.0</h3> </a>
+        <span class="p-sku" style="font-size: 12px;">Mã SP: LOSM0063 </span>
+        
+      
+        <div class="d-flex align-items">
+            <i class="icon-star star-0"></i>(0)
+        </div>
+
+
+        
+        <div class="price-container" style="height:auto;">
+            
+            
+            <del class="p-old-price"> 899.000 đ </del>
+            <span class="p-discount"> -23% </span>
             
 
             <span class="p-price">
@@ -3962,7 +5770,7 @@
         
         
         <div class="box-config">
-            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-48559 checked"></div></div>
+            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-49238 checked"></div></div>
             
         </div>
 
@@ -3970,7 +5778,7 @@
       
         <div class="d-flex align-items-center justify-content-between">
             <div class="d-flex align-items-center justify-content-between ">
-                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-48559" onclick="CompareProduct.compare_addProduct(48559)" data-id="48559">So sánh</a>
+                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-49238" onclick="CompareProduct.compare_addProduct(49238)" data-id="49238">So sánh</a>
 
                 
                     <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
@@ -3978,14 +5786,14 @@
             </div>
 
             
-            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('48559', 'BỘ TẢN NHIỆT KHÍ CPU ID-COOLING FROZN A410 DK (2 fan HEF)', 699000)"></a>
+            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('49238', 'Loa SOUNDMAX A827 2.0', 699000)"></a>
             
         </div>
     </div>
 
     
     <div class="p-tooltip">
-        <p class="tooltip-title"> BỘ TẢN NHIỆT KHÍ CPU ID-COOLING FROZN A410 DK (2 fan HEF) </p>
+        <p class="tooltip-title"> Loa SOUNDMAX A827 2.0 </p>
 
         <div class="tooltip-content">
             
@@ -3995,30 +5803,27 @@
             <div class="tooltip-summary" style="white-space: unset">
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Hỗ trợ socket: Intel LGA1851/1700/1200/1151/1150/1155/1156/ AMD AM4, AM5
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>ĐIỀU KHIỂN ÂM LƯỢNG,BASS, TREBLE.   
  </span>
                 
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>TDP  : 230W
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>1 SUBWOOFER, 2 LOA VỆ TINH STEREO, THẺ SD tích hợp, USB SLOT
  </span>
                 
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Kích thước tản : 120×98×152mm (L×W×H)
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>CHỨC NĂNG BLUETOOTH 5.0 
  </span>
                 
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Kích thước quạt: 120×120×25mm 
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>ĐIỀU KHIỂN TỪ XA
  </span>
                 
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Tốc độ quạt: 500±200 ~ 2000±10% RPM
- </span>
-                
-                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>CÔNG SUẤT 20W RMS. </span>
                 
                 
             </div>
@@ -4029,9 +5834,9 @@
                 
                 <span>
                     Giá niêm yết:
-                    <del class="p-old-price" style="display: inline-block;"> 800.000 đ </del>
+                    <del class="p-old-price" style="display: inline-block;"> 899.000 đ </del>
                 </span>
-                <span class="p-discount"> -13% </span>
+                <span class="p-discount"> -23% </span>
                 
 
                 <p class="p-price" style="margin: 0;">
@@ -4074,24 +5879,24 @@
 </div>
 
                 
-                    <div class="p-item  js-p-item summary-loaded" data-id="50155">
-    <a href="/tan-nhiet-nuoc-jonsbo-tf2-360sc-wn-white-khong-fan.html" class="p-img">
+                    <div class="p-item  js-p-item summary-loaded" data-id="48168">
+    <a href="/webcam-logitech-mx-brio-4k-ultra-hd-than-chi-960-001548.html" class="p-img">
         
-        <img data-src="https://anphat.com.vn/media/product/250_50155_202432519262.jpg" alt="TẢN NHIỆT NƯỚC JONSBO TF2-360SC (WN) White, Không Fan" class="fit-img lazy">
+        <img data-src="https://anphat.com.vn/media/product/250_48168_logitech_mx_brio_4k_than_chi__3_.jpg" alt="Webcam Logitech MX BRIO 4K Ultra HD Than chì - 960-001548" class="fit-img lazy">
         
       
         
 
                 
       
-        <span class="p-icon-holder js-icon-50155"><!-- // icon promotion --></span>
+        <span class="p-icon-holder js-icon-48168"><!-- // icon promotion --></span>
     </a>
   
     <div class="p-text">
        
         
-        <a href="/tan-nhiet-nuoc-jonsbo-tf2-360sc-wn-white-khong-fan.html" class="p-name"> <h3>TẢN NHIỆT NƯỚC JONSBO TF2-360SC (WN) White, Không Fan</h3> </a>
-        <span class="p-sku" style="font-size: 12px;">Mã SP: TNNU1090 </span>
+        <a href="/webcam-logitech-mx-brio-4k-ultra-hd-than-chi-960-001548.html" class="p-name"> <h3>Webcam Logitech MX BRIO 4K Ultra HD Than chì - 960-001548</h3> </a>
+        <span class="p-sku" style="font-size: 12px;">Mã SP: WCLG0037 </span>
         
       
         <div class="d-flex align-items">
@@ -4103,12 +5908,12 @@
         <div class="price-container" style="height:auto;">
             
             
-            <del class="p-old-price"> 3.200.000 đ </del>
-            <span class="p-discount"> -10% </span>
+            <del class="p-old-price"> 5.090.000 đ </del>
+            <span class="p-discount"> -15% </span>
             
 
             <span class="p-price">
-                2.899.000 đ
+                4.349.000 đ
                 
             </span>
          
@@ -4143,11 +5948,9 @@
       
         
         
-        <div class="p-special-container"> 1 khuyến mại </div>
-        
         
         <div class="box-config">
-            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-50155 checked"></div></div>
+            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-48168 checked"></div></div>
             
         </div>
 
@@ -4155,7 +5958,7 @@
       
         <div class="d-flex align-items-center justify-content-between">
             <div class="d-flex align-items-center justify-content-between ">
-                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-50155" onclick="CompareProduct.compare_addProduct(50155)" data-id="50155">So sánh</a>
+                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-48168" onclick="CompareProduct.compare_addProduct(48168)" data-id="48168">So sánh</a>
 
                 
                     <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
@@ -4163,43 +5966,16 @@
             </div>
 
             
-            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('50155', 'TẢN NHIỆT NƯỚC JONSBO TF2-360SC (WN) White, Không Fan', 2899000)"></a>
+            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('48168', 'Webcam Logitech MX BRIO 4K Ultra HD Than chì - 960-001548', 4349000)"></a>
             
         </div>
     </div>
 
     
     <div class="p-tooltip">
-        <p class="tooltip-title"> TẢN NHIỆT NƯỚC JONSBO TF2-360SC (WN) White, Không Fan </p>
+        <p class="tooltip-title"> Webcam Logitech MX BRIO 4K Ultra HD Than chì - 960-001548 </p>
 
         <div class="tooltip-content">
-            
-            <div class="tooltip-specialOffer">
-                <div class="spec-title"> <span class="title-text"> KHUYẾN MÃI</span> </div>
-
-                <ul class="ul">
-                    
-                    
-                  
-                    <!---                  
-                    
-                    
-                    
-                    <li>
-                        <span class="text" style="white-space: pre-line;">Giảm 100.000đ khi mua cùng bộ fan JONSBO</span>
-                    </li>
-                    
-                    --->
-
-                                        
-                     <!--0-->
-                    <li>
-                        <span class="text"> Giảm 100.000đ khi mua cùng bộ fan JONSBO </span>
-                    </li>
-                    
-                    <li style="padding-left: 30px;font-size: 20px;"></li><li>
-                </li></ul>
-            </div>
             
 
             
@@ -4207,7 +5983,7 @@
             <div class="tooltip-summary" style="white-space: unset">
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Kích thước màn hình: 2,1  inch
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Webcam Logitech MX BRIO 4K Ultra HD Than chì - 960-001548
  </span>
                 
                 
@@ -4217,7 +5993,212 @@
                 
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Độ phân giải màn hình: 480*480
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Nhiều độ phân giải
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>4K/30fps (3840x2160 pixel)
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>1080p/60fps (1920x1080 pixel)
+ </span>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </div>
+            
+              
+            <div class="position-relative">
+                
+                
+                <span>
+                    Giá niêm yết:
+                    <del class="p-old-price" style="display: inline-block;"> 5.090.000 đ </del>
+                </span>
+                <span class="p-discount"> -15% </span>
+                
+
+                <p class="p-price" style="margin: 0;">
+                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
+                    4.349.000 đ
+                    
+                </p>
+              
+                
+                
+
+                
+                
+         
+                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Giá HS - SV: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+                </div>
+         
+
+                
+                
+
+                
+                
+         
+                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+                </div>
+           
+
+                <!------>
+
+                <!---->
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+                
+                    <div class="p-item  js-p-item summary-loaded" data-id="45402">
+    <a href="/tai-nghe-hyperx-cloud-iii-red.html" class="p-img">
+        
+        <img data-src="https://anphat.com.vn/media/product/250_45402_hyperx_cloud_iii_red__1_.jpg" alt="Tai nghe HyperX Cloud III Red" class="fit-img lazy">
+        
+      
+        
+
+                
+      
+        <span class="p-icon-holder js-icon-45402"><!-- // icon promotion --></span>
+    </a>
+  
+    <div class="p-text">
+       
+        
+        <a href="/tai-nghe-hyperx-cloud-iii-red.html" class="p-name"> <h3>Tai nghe HyperX Cloud III Red</h3> </a>
+        <span class="p-sku" style="font-size: 12px;">Mã SP: TNKT0045 </span>
+        
+      
+        <div class="d-flex align-items">
+            <i class="icon-star star-0"></i>(0)
+        </div>
+
+
+        
+        <div class="price-container" style="height:auto;">
+            
+            
+            <del class="p-old-price"> 2.799.000 đ </del>
+            <span class="p-discount"> -20% </span>
+            
+
+            <span class="p-price">
+                2.249.000 đ
+                
+            </span>
+         
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Giá HS - SV: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+            </div>
+            
+         
+
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+            </div>
+            
+        </div>
+      
+      
+        
+        
+        
+        <div class="box-config">
+            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-45402 checked"></div></div>
+            
+        </div>
+
+        
+      
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center justify-content-between ">
+                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-45402" onclick="CompareProduct.compare_addProduct(45402)" data-id="45402">So sánh</a>
+
+                
+                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
+                
+            </div>
+
+            
+            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('45402', 'Tai nghe HyperX Cloud III Red', 2249000)"></a>
+            
+        </div>
+    </div>
+
+    
+    <div class="p-tooltip">
+        <p class="tooltip-title"> Tai nghe HyperX Cloud III Red </p>
+
+        <div class="tooltip-content">
+            
+
+            
+            
+            <div class="tooltip-summary" style="white-space: unset">
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Tai nghe HyperX Cloud III Red
  </span>
                 
                 
@@ -4227,16 +6208,18 @@
                 
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Độ sáng màn hình: 600NITS(MAX)
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Phiên bản mới nhất, nâng cấp từ huyền thoại Cloud II
  </span>
                 
                 
                 
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Sử dụng của loa 53mm mới nhất, cho âm thanh tuyệt vời
+ </span>
                 
                 
                 
-                
-                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Hỗ trợ âm thanh vòm DTS® Headphone:X® Spatial Audio thông qua USB Soundcard đi kèm
+ </span>
                 
                 
                 
@@ -4265,14 +6248,14 @@
                 
                 <span>
                     Giá niêm yết:
-                    <del class="p-old-price" style="display: inline-block;"> 3.200.000 đ </del>
+                    <del class="p-old-price" style="display: inline-block;"> 2.799.000 đ </del>
                 </span>
-                <span class="p-discount"> -10% </span>
+                <span class="p-discount"> -20% </span>
                 
 
                 <p class="p-price" style="margin: 0;">
                     <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
-                    2.899.000 đ
+                    2.249.000 đ
                     
                 </p>
               
@@ -4310,24 +6293,24 @@
 </div>
 
                 
-                    <div class="p-item  js-p-item summary-loaded" data-id="50154">
-    <a href="/tan-nhiet-nuoc-jonsbo-tf2-360sc-bn-black-khong-fan.html" class="p-img">
+                    <div class="p-item  js-p-item summary-loaded" data-id="45388">
+    <a href="/tai-nghe-hyperx-cloud-iii-black.html" class="p-img">
         
-        <img data-src="https://anphat.com.vn/media/product/250_50154_202432543159.jpg" alt="TẢN NHIỆT NƯỚC JONSBO TF2-360SC (BN) Black, Không Fan" class="fit-img lazy">
+        <img data-src="https://anphat.com.vn/media/product/250_45388_hyperx_cloud_iii_black__1_.jpg" alt="Tai nghe HyperX Cloud III Black" class="fit-img lazy">
         
       
         
 
                 
       
-        <span class="p-icon-holder js-icon-50154"><!-- // icon promotion --></span>
+        <span class="p-icon-holder js-icon-45388"><!-- // icon promotion --></span>
     </a>
   
     <div class="p-text">
        
         
-        <a href="/tan-nhiet-nuoc-jonsbo-tf2-360sc-bn-black-khong-fan.html" class="p-name"> <h3>TẢN NHIỆT NƯỚC JONSBO TF2-360SC (BN) Black, Không Fan</h3> </a>
-        <span class="p-sku" style="font-size: 12px;">Mã SP: TNNU1089 </span>
+        <a href="/tai-nghe-hyperx-cloud-iii-black.html" class="p-name"> <h3>Tai nghe HyperX Cloud III Black</h3> </a>
+        <span class="p-sku" style="font-size: 12px;">Mã SP: TNKT0044 </span>
         
       
         <div class="d-flex align-items">
@@ -4339,12 +6322,12 @@
         <div class="price-container" style="height:auto;">
             
             
-            <del class="p-old-price"> 3.200.000 đ </del>
-            <span class="p-discount"> -10% </span>
+            <del class="p-old-price"> 2.799.000 đ </del>
+            <span class="p-discount"> -20% </span>
             
 
             <span class="p-price">
-                2.899.000 đ
+                2.249.000 đ
                 
             </span>
          
@@ -4379,18 +6362,9 @@
       
         
         
-        <div class="p-special-container"> 1 khuyến mại </div>
-        
         
         <div class="box-config">
-            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-50154 checked">
-                            <div class="item d-flex align-items" data-info="">
-                                <div class="item-icon">
-                                    <i class="icon-thongso icon-tan_nhiet_cpu"></i>
-                                </div>
-                                <div class="txt">Tản nhiệt nước CPU</div>
-                            </div>
-                        </div></div>
+            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-45388 checked"></div></div>
             
         </div>
 
@@ -4398,7 +6372,7 @@
       
         <div class="d-flex align-items-center justify-content-between">
             <div class="d-flex align-items-center justify-content-between ">
-                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-50154" onclick="CompareProduct.compare_addProduct(50154)" data-id="50154">So sánh</a>
+                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-45388" onclick="CompareProduct.compare_addProduct(45388)" data-id="45388">So sánh</a>
 
                 
                     <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
@@ -4406,43 +6380,16 @@
             </div>
 
             
-            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('50154', 'TẢN NHIỆT NƯỚC JONSBO TF2-360SC (BN) Black, Không Fan', 2899000)"></a>
+            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('45388', 'Tai nghe HyperX Cloud III Black', 2249000)"></a>
             
         </div>
     </div>
 
     
     <div class="p-tooltip">
-        <p class="tooltip-title"> TẢN NHIỆT NƯỚC JONSBO TF2-360SC (BN) Black, Không Fan </p>
+        <p class="tooltip-title"> Tai nghe HyperX Cloud III Black </p>
 
         <div class="tooltip-content">
-            
-            <div class="tooltip-specialOffer">
-                <div class="spec-title"> <span class="title-text"> KHUYẾN MÃI</span> </div>
-
-                <ul class="ul">
-                    
-                    
-                  
-                    <!---                  
-                    
-                    
-                    
-                    <li>
-                        <span class="text" style="white-space: pre-line;">Giảm 100.000đ khi mua cùng bộ fan JONSBO</span>
-                    </li>
-                    
-                    --->
-
-                                        
-                     <!--0-->
-                    <li>
-                        <span class="text"> Giảm 100.000đ khi mua cùng bộ fan JONSBO </span>
-                    </li>
-                    
-                    <li style="padding-left: 30px;font-size: 20px;"></li><li>
-                </li></ul>
-            </div>
             
 
             
@@ -4450,7 +6397,7 @@
             <div class="tooltip-summary" style="white-space: unset">
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Kích thước màn hình: 2,1  inch
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Tai nghe HyperX Cloud III Black
  </span>
                 
                 
@@ -4460,7 +6407,196 @@
                 
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Độ phân giải màn hình: 480*480
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Phiên bản mới nhất, nâng cấp từ huyền thoại Cloud II
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Sử dụng của loa 53mm mới nhất, cho âm thanh tuyệt vời
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Hỗ trợ âm thanh vòm DTS® Headphone:X® Spatial Audio thông qua USB Soundcard đi kèm
+ </span>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </div>
+            
+              
+            <div class="position-relative">
+                
+                
+                <span>
+                    Giá niêm yết:
+                    <del class="p-old-price" style="display: inline-block;"> 2.799.000 đ </del>
+                </span>
+                <span class="p-discount"> -20% </span>
+                
+
+                <p class="p-price" style="margin: 0;">
+                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
+                    2.249.000 đ
+                    
+                </p>
+              
+                
+                
+
+                
+                
+         
+                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Giá HS - SV: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+                </div>
+         
+
+                
+                
+
+                
+                
+         
+                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+                </div>
+           
+
+                <!------>
+
+                <!---->
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+                
+                    <div class="p-item  js-p-item summary-loaded" data-id="31006">
+    <a href="/micro-kingston-hyperx-quadcast_id31006.html" class="p-img">
+        
+        <img data-src="https://anphat.com.vn/media/product/250_31006_hyperx_quadcast.jpg" alt="Micro HyperX QuadCast" class="fit-img lazy">
+        
+      
+        
+
+                
+      
+        <span class="p-icon-holder js-icon-31006"><!-- // icon promotion --></span>
+    </a>
+  
+    <div class="p-text">
+       
+        
+        <a href="/micro-kingston-hyperx-quadcast_id31006.html" class="p-name"> <h3>Micro HyperX QuadCast</h3> </a>
+        <span class="p-sku" style="font-size: 12px;">Mã SP: TNKT0020 </span>
+        
+      
+        <div class="d-flex align-items">
+            <i class="icon-star star-5"></i>(2)
+        </div>
+
+
+        
+        <div class="price-container" style="height:auto;">
+            
+            
+            <del class="p-old-price"> 3.799.000 đ </del>
+            <span class="p-discount"> -22% </span>
+            
+
+            <span class="p-price">
+                2.989.000 đ
+                
+            </span>
+         
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Giá HS - SV: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+            </div>
+            
+         
+
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+            </div>
+            
+        </div>
+      
+      
+        
+        
+        
+        <div class="box-config">
+            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-31006 checked"></div></div>
+            
+        </div>
+
+        
+      
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center justify-content-between ">
+                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-31006" onclick="CompareProduct.compare_addProduct(31006)" data-id="31006">So sánh</a>
+
+                
+                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
+                
+            </div>
+
+            
+            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('31006', 'Micro HyperX QuadCast', 2989000)"></a>
+            
+        </div>
+    </div>
+
+    
+    <div class="p-tooltip">
+        <p class="tooltip-title"> Micro HyperX QuadCast </p>
+
+        <div class="tooltip-content">
+            
+
+            
+            
+            <div class="tooltip-summary" style="white-space: unset">
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Micro HyperX QuadCast
  </span>
                 
                 
@@ -4470,966 +6606,17 @@
                 
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Độ sáng màn hình: 600NITS(MAX)
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Micro thu âm chuyên nghiệp của HyperX
  </span>
                 
                 
                 
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-            </div>
-            
-              
-            <div class="position-relative">
-                
-                
-                <span>
-                    Giá niêm yết:
-                    <del class="p-old-price" style="display: inline-block;"> 3.200.000 đ </del>
-                </span>
-                <span class="p-discount"> -10% </span>
-                
-
-                <p class="p-price" style="margin: 0;">
-                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
-                    2.899.000 đ
-                    
-                </p>
-              
-                
-                
-
-                
-                
-         
-                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Giá HS - SV: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-         
-
-                
-                
-
-                
-                
-         
-                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-           
-
-                <!------>
-
-                <!---->
-            </div>
-        </div>
-    </div>
-    
-</div>
-
-                
-                    <div class="p-item  js-p-item summary-loaded" data-id="49404">
-    <a href="/fan-case-xigmatek-infinity-artic-reverse-120mm-en44595-rgb-fixed.html" class="p-img">
-        
-        <img data-src="https://anphat.com.vn/media/product/250_49404_fan_case_xigmatek_infinity_artic_reverse_120mm__en44595___2_.jpg" alt="Fan Case XIGMATEK INFINITY ARTIC Reverse 120mm (EN44595) - RGB FIXED" class="fit-img lazy">
-        
-      
-        
-
-                
-      
-        <span class="p-icon-holder js-icon-49404"><!-- // icon promotion --></span>
-    </a>
-  
-    <div class="p-text">
-       
-        
-        <a href="/fan-case-xigmatek-infinity-artic-reverse-120mm-en44595-rgb-fixed.html" class="p-name"> <h3>Fan Case XIGMATEK INFINITY ARTIC Reverse 120mm (EN44595) - RGB FIXED</h3> </a>
-        <span class="p-sku" style="font-size: 12px;">Mã SP: CAXG0213 </span>
-        
-      
-        <div class="d-flex align-items">
-            <i class="icon-star star-0"></i>(0)
-        </div>
-
-
-        
-        <div class="price-container" style="height:auto;">
-            
-            
-            <del class="p-old-price"> 100.000 đ </del>
-            <span class="p-discount"> -11% </span>
-            
-
-            <span class="p-price">
-                89.000 đ
-                
-            </span>
-         
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Giá HS - SV: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-         
-
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-        </div>
-      
-      
-        
-        
-        
-        <div class="box-config">
-            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-49404 checked"></div></div>
-            
-        </div>
-
-        
-      
-        <div class="d-flex align-items-center justify-content-between">
-            <div class="d-flex align-items-center justify-content-between ">
-                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-49404" onclick="CompareProduct.compare_addProduct(49404)" data-id="49404">So sánh</a>
-
-                
-                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
-                
-            </div>
-
-            
-            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('49404', 'Fan Case XIGMATEK INFINITY ARTIC Reverse 120mm (EN44595) - RGB FIXED', 89000)"></a>
-            
-        </div>
-    </div>
-
-    
-    <div class="p-tooltip">
-        <p class="tooltip-title"> Fan Case XIGMATEK INFINITY ARTIC Reverse 120mm (EN44595) - RGB FIXED </p>
-
-        <div class="tooltip-content">
-            
-
-            
-            
-            <div class="tooltip-summary" style="white-space: unset">
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Kích thước fan : 120x120x25mm
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Chuyên dùng cho Streamer
  </span>
                 
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Led color : fixed RGB
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Tốc độ : 1200 RPM (+/- 10% RPM)
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Điện áp fan : 12v - 0.18A - 2.16W
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Điện áp led : 5v - 0.10A - 5W
- </span>
-                
-                
-                
-                
-                
-                
-            </div>
-            
-              
-            <div class="position-relative">
-                
-                
-                <span>
-                    Giá niêm yết:
-                    <del class="p-old-price" style="display: inline-block;"> 100.000 đ </del>
-                </span>
-                <span class="p-discount"> -11% </span>
-                
-
-                <p class="p-price" style="margin: 0;">
-                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
-                    89.000 đ
-                    
-                </p>
-              
-                
-                
-
-                
-                
-         
-                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Giá HS - SV: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-         
-
-                
-                
-
-                
-                
-         
-                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-           
-
-                <!------>
-
-                <!---->
-            </div>
-        </div>
-    </div>
-    
-</div>
-
-                
-                    <div class="p-item  js-p-item summary-loaded" data-id="49402">
-    <a href="/fan-case-xigmatek-infinity-artic-120mm-en44571-rgb-fixed.html" class="p-img">
-        
-        <img data-src="https://anphat.com.vn/media/product/250_49402_32323.jpg" alt="Fan Case XIGMATEK INFINITY ARTIC 120mm (EN44571) - RGB FIXED" class="fit-img lazy">
-        
-      
-        
-
-                
-      
-        <span class="p-icon-holder js-icon-49402"><!-- // icon promotion --></span>
-    </a>
-  
-    <div class="p-text">
-       
-        
-        <a href="/fan-case-xigmatek-infinity-artic-120mm-en44571-rgb-fixed.html" class="p-name"> <h3>Fan Case XIGMATEK INFINITY ARTIC 120mm (EN44571) - RGB FIXED</h3> </a>
-        <span class="p-sku" style="font-size: 12px;">Mã SP: CAXG0211 </span>
-        
-      
-        <div class="d-flex align-items">
-            <i class="icon-star star-0"></i>(0)
-        </div>
-
-
-        
-        <div class="price-container" style="height:auto;">
-            
-            
-            <del class="p-old-price"> 100.000 đ </del>
-            <span class="p-discount"> -11% </span>
-            
-
-            <span class="p-price">
-                89.000 đ
-                
-            </span>
-         
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Giá HS - SV: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-         
-
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-        </div>
-      
-      
-        
-        
-        
-        <div class="box-config">
-            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-49402 checked"></div></div>
-            
-        </div>
-
-        
-      
-        <div class="d-flex align-items-center justify-content-between">
-            <div class="d-flex align-items-center justify-content-between ">
-                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-49402" onclick="CompareProduct.compare_addProduct(49402)" data-id="49402">So sánh</a>
-
-                
-                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
-                
-            </div>
-
-            
-            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('49402', 'Fan Case XIGMATEK INFINITY ARTIC 120mm (EN44571) - RGB FIXED', 89000)"></a>
-            
-        </div>
-    </div>
-
-    
-    <div class="p-tooltip">
-        <p class="tooltip-title"> Fan Case XIGMATEK INFINITY ARTIC 120mm (EN44571) - RGB FIXED </p>
-
-        <div class="tooltip-content">
-            
-
-            
-            
-            <div class="tooltip-summary" style="white-space: unset">
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Kích thước fan : 120x120x25mm
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Led color : fixed RGB
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Tốc độ : 1200 RPM (+/- 10% RPM)
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Điện áp fan : 12v - 0.18A - 2.16W
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Điện áp led : 5v - 0.10A - 5W
- </span>
-                
-                
-                
-                
-                
-                
-            </div>
-            
-              
-            <div class="position-relative">
-                
-                
-                <span>
-                    Giá niêm yết:
-                    <del class="p-old-price" style="display: inline-block;"> 100.000 đ </del>
-                </span>
-                <span class="p-discount"> -11% </span>
-                
-
-                <p class="p-price" style="margin: 0;">
-                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
-                    89.000 đ
-                    
-                </p>
-              
-                
-                
-
-                
-                
-         
-                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Giá HS - SV: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-         
-
-                
-                
-
-                
-                
-         
-                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-           
-
-                <!------>
-
-                <!---->
-            </div>
-        </div>
-    </div>
-    
-</div>
-
-                
-                    <div class="p-item  js-p-item summary-loaded" data-id="49401">
-    <a href="/fan-case-xigmatek-infinity-120mm-en44564-rgb-fixed.html" class="p-img">
-        
-        <img data-src="https://anphat.com.vn/media/product/250_49401_120_if.jpg" alt="Fan Case XIGMATEK INFINITY 120mm (EN44564) - RGB FIXED" class="fit-img lazy">
-        
-      
-        
-
-                
-      
-        <span class="p-icon-holder js-icon-49401"><!-- // icon promotion --></span>
-    </a>
-  
-    <div class="p-text">
-       
-        
-        <a href="/fan-case-xigmatek-infinity-120mm-en44564-rgb-fixed.html" class="p-name"> <h3>Fan Case XIGMATEK INFINITY 120mm (EN44564) - RGB FIXED</h3> </a>
-        <span class="p-sku" style="font-size: 12px;">Mã SP: CAXG0210 </span>
-        
-      
-        <div class="d-flex align-items">
-            <i class="icon-star star-0"></i>(0)
-        </div>
-
-
-        
-        <div class="price-container" style="height:auto;">
-            
-            
-            <del class="p-old-price"> 100.000 đ </del>
-            <span class="p-discount"> -11% </span>
-            
-
-            <span class="p-price">
-                89.000 đ
-                
-            </span>
-         
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Giá HS - SV: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-         
-
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-        </div>
-      
-      
-        
-        
-        
-        <div class="box-config">
-            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-49401 checked"></div></div>
-            
-        </div>
-
-        
-      
-        <div class="d-flex align-items-center justify-content-between">
-            <div class="d-flex align-items-center justify-content-between ">
-                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-49401" onclick="CompareProduct.compare_addProduct(49401)" data-id="49401">So sánh</a>
-
-                
-                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
-                
-            </div>
-
-            
-            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('49401', 'Fan Case XIGMATEK INFINITY 120mm (EN44564) - RGB FIXED', 89000)"></a>
-            
-        </div>
-    </div>
-
-    
-    <div class="p-tooltip">
-        <p class="tooltip-title"> Fan Case XIGMATEK INFINITY 120mm (EN44564) - RGB FIXED </p>
-
-        <div class="tooltip-content">
-            
-
-            
-            
-            <div class="tooltip-summary" style="white-space: unset">
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Kích thước fan : 120x120x25mm
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Led color : fixed RGB
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Tốc độ : 1200 RPM (+/- 10% RPM)
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Điện áp fan : 12v - 0.18A - 2.16W
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Điện áp led : 5v - 0.10A - 5W
- </span>
-                
-                
-                
-                
-                
-                
-            </div>
-            
-              
-            <div class="position-relative">
-                
-                
-                <span>
-                    Giá niêm yết:
-                    <del class="p-old-price" style="display: inline-block;"> 100.000 đ </del>
-                </span>
-                <span class="p-discount"> -11% </span>
-                
-
-                <p class="p-price" style="margin: 0;">
-                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
-                    89.000 đ
-                    
-                </p>
-              
-                
-                
-
-                
-                
-         
-                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Giá HS - SV: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-         
-
-                
-                
-
-                
-                
-         
-                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-           
-
-                <!------>
-
-                <!---->
-            </div>
-        </div>
-    </div>
-    
-</div>
-
-                
-                    <div class="p-item  js-p-item summary-loaded" data-id="50279">
-    <a href="/quat-tan-nhiet-cho-case-kenoo-esport-rgb-inf1-black.html" class="p-img">
-        
-        <img data-src="https://anphat.com.vn/media/product/250_50279_z5896114588603_0ca1a9e0990211f59325e46f4747aebf.jpg" alt="Quạt tản nhiệt cho case KENOO ESPORT RGB INF1 Black" class="fit-img lazy">
-        
-      
-        
-
-                
-      
-        <span class="p-icon-holder js-icon-50279"><!-- // icon promotion --></span>
-    </a>
-  
-    <div class="p-text">
-       
-        
-        <a href="/quat-tan-nhiet-cho-case-kenoo-esport-rgb-inf1-black.html" class="p-name"> <h3>Quạt tản nhiệt cho case KENOO ESPORT RGB INF1 Black</h3> </a>
-        <span class="p-sku" style="font-size: 12px;">Mã SP: FANC0024 </span>
-        
-      
-        <div class="d-flex align-items">
-            <i class="icon-star star-0"></i>(0)
-        </div>
-
-
-        
-        <div class="price-container" style="height:auto;">
-            
-            
-            <del class="p-old-price"> 100.000 đ </del>
-            <span class="p-discount"> -21% </span>
-            
-
-            <span class="p-price">
-                79.000 đ
-                
-            </span>
-         
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Giá HS - SV: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-         
-
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-        </div>
-      
-      
-        
-        
-        
-        <div class="box-config">
-            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-50279 checked">
-                            <div class="item d-flex align-items" data-info="">
-                                <div class="item-icon">
-                                    <i class="icon-thongso icon-tan_nhiet_cpu"></i>
-                                </div>
-                                <div class="txt">Quạt làm mát</div>
-                            </div>
-                        </div></div>
-            
-        </div>
-
-        
-      
-        <div class="d-flex align-items-center justify-content-between">
-            <div class="d-flex align-items-center justify-content-between ">
-                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-50279" onclick="CompareProduct.compare_addProduct(50279)" data-id="50279">So sánh</a>
-
-                
-                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
-                
-            </div>
-
-            
-            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('50279', 'Quạt tản nhiệt cho case KENOO ESPORT RGB INF1 Black', 79000)"></a>
-            
-        </div>
-    </div>
-
-    
-    <div class="p-tooltip">
-        <p class="tooltip-title"> Quạt tản nhiệt cho case KENOO ESPORT RGB INF1 Black </p>
-
-        <div class="tooltip-content">
-            
-
-            
-            
-            <div class="tooltip-summary" style="white-space: unset">
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Tốc độ quạt	1200±10%RPM
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Lưu lượng gió	42.12 CFM
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Độ ồn	20.5dB(A) or less
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Đầu cấp nguồn quạt	4 Pin - 5V
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>LED :	Fixed RGB LED - Center with 10LED  Two side with 16LED
- </span>
-                
-                
-                
-                
-            </div>
-            
-              
-            <div class="position-relative">
-                
-                
-                <span>
-                    Giá niêm yết:
-                    <del class="p-old-price" style="display: inline-block;"> 100.000 đ </del>
-                </span>
-                <span class="p-discount"> -21% </span>
-                
-
-                <p class="p-price" style="margin: 0;">
-                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
-                    79.000 đ
-                    
-                </p>
-              
-                
-                
-
-                
-                
-         
-                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Giá HS - SV: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-         
-
-                
-                
-
-                
-                
-         
-                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-           
-
-                <!------>
-
-                <!---->
-            </div>
-        </div>
-    </div>
-    
-</div>
-
-                
-                    <div class="p-item  js-p-item summary-loaded" data-id="50276">
-    <a href="/tan-nhiet-cpu-kenoo-esport-c1000-led-rgb.html" class="p-img">
-        
-        <img data-src="https://anphat.com.vn/media/product/250_50276_z5896026374860_54180c297ef94007438e07146fff871f.jpg" alt="Tản Nhiệt CPU KENOO ESPORT C1000 - Led RGB" class="fit-img lazy">
-        
-      
-        
-
-                
-      
-        <span class="p-icon-holder js-icon-50276"><!-- // icon promotion --></span>
-    </a>
-  
-    <div class="p-text">
-       
-        
-        <a href="/tan-nhiet-cpu-kenoo-esport-c1000-led-rgb.html" class="p-name"> <h3>Tản Nhiệt CPU KENOO ESPORT C1000 - Led RGB</h3> </a>
-        <span class="p-sku" style="font-size: 12px;">Mã SP: TNCP1017 </span>
-        
-      
-        <div class="d-flex align-items">
-            <i class="icon-star star-0"></i>(0)
-        </div>
-
-
-        
-        <div class="price-container" style="height:auto;">
-            
-            
-            <del class="p-old-price"> 500.000 đ </del>
-            <span class="p-discount"> -25% </span>
-            
-
-            <span class="p-price">
-                379.000 đ
-                
-            </span>
-         
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Giá HS - SV: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-         
-
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-        </div>
-      
-      
-        
-        
-        
-        <div class="box-config">
-            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-50276 checked">
-                            <div class="item d-flex align-items" data-info="">
-                                <div class="item-icon">
-                                    <i class="icon-thongso icon-tan_nhiet_cpu"></i>
-                                </div>
-                                <div class="txt">Tản nhiệt khí CPU</div>
-                            </div>
-                        </div></div>
-            
-        </div>
-
-        
-      
-        <div class="d-flex align-items-center justify-content-between">
-            <div class="d-flex align-items-center justify-content-between ">
-                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-50276" onclick="CompareProduct.compare_addProduct(50276)" data-id="50276">So sánh</a>
-
-                
-                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
-                
-            </div>
-
-            
-            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('50276', 'Tản Nhiệt CPU KENOO ESPORT C1000 - Led RGB', 379000)"></a>
-            
-        </div>
-    </div>
-
-    
-    <div class="p-tooltip">
-        <p class="tooltip-title"> Tản Nhiệt CPU KENOO ESPORT C1000 - Led RGB </p>
-
-        <div class="tooltip-content">
-            
-
-            
-            
-            <div class="tooltip-summary" style="white-space: unset">
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Kích thước&nbsp;: 120mm(L)*68mm(W)*153mm(H)
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Kích thước của quạt&nbsp;: 120mm x 120mm x 25mm
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Số lượng ống dẫn nhiệt&nbsp;: 4 Ống dẫn nhiệt 6mm, lá tản nhiệt bằng nhôm
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Điện áp&nbsp;: 12V / Đầu nối : PWM 4PIN
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Tốc độ quạt : 800-1800RPM ± 10%&nbsp;
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Bắt tiếng siêu nhạy
  </span>
                 
                 
@@ -5449,14 +6636,14 @@
                 
                 <span>
                     Giá niêm yết:
-                    <del class="p-old-price" style="display: inline-block;"> 500.000 đ </del>
+                    <del class="p-old-price" style="display: inline-block;"> 3.799.000 đ </del>
                 </span>
-                <span class="p-discount"> -25% </span>
+                <span class="p-discount"> -22% </span>
                 
 
                 <p class="p-price" style="margin: 0;">
                     <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
-                    379.000 đ
+                    2.989.000 đ
                     
                 </p>
               
@@ -5494,28 +6681,28 @@
 </div>
 
                 
-                    <div class="p-item  js-p-item summary-loaded" data-id="49466">
-    <a href="/fan-case-lian-li-tl120-lcd-reverse-bladetriple-pack-with-controller-white-bo-3-fan-man-hinh-lcd-dao-chieu.html" class="p-img">
+                    <div class="p-item  js-p-item summary-loaded" data-id="35133">
+    <a href="/micro-kingston-hyperx-solocast_id35133.html" class="p-img">
         
-        <img data-src="https://anphat.com.vn/media/product/250_49466_12tllcd3w_1_1413871caa0a76754817199984203879_640_0.jpg" alt="Fan Case Lian Li TL120 LCD reverse bladeTriple pack with controller White ( Bộ 3 Fan, Màn Hình LCD, Đảo Chiều)" class="fit-img lazy">
+        <img data-src="https://anphat.com.vn/media/product/250_35133_hyperx_solocast__1_.jpg" alt="Micro HyperX SoloCast" class="fit-img lazy">
         
       
         
 
                 
       
-        <span class="p-icon-holder js-icon-49466"><!-- // icon promotion --></span>
+        <span class="p-icon-holder js-icon-35133"><!-- // icon promotion --></span>
     </a>
   
     <div class="p-text">
        
         
-        <a href="/fan-case-lian-li-tl120-lcd-reverse-bladetriple-pack-with-controller-white-bo-3-fan-man-hinh-lcd-dao-chieu.html" class="p-name"> <h3>Fan Case Lian Li TL120 LCD reverse bladeTriple pack with controller White ( Bộ 3 Fan, Màn Hình LCD, Đảo Chiều)</h3> </a>
-        <span class="p-sku" style="font-size: 12px;">Mã SP: FANC0006 </span>
+        <a href="/micro-kingston-hyperx-solocast_id35133.html" class="p-name"> <h3>Micro HyperX SoloCast</h3> </a>
+        <span class="p-sku" style="font-size: 12px;">Mã SP: TBKH0353 </span>
         
       
         <div class="d-flex align-items">
-            <i class="icon-star star-0"></i>(0)
+            <i class="icon-star star-5"></i>(3)
         </div>
 
 
@@ -5523,12 +6710,12 @@
         <div class="price-container" style="height:auto;">
             
             
-            <del class="p-old-price"> 4.100.000 đ </del>
-            <span class="p-discount"> -8% </span>
+            <del class="p-old-price"> 1.799.000 đ </del>
+            <span class="p-discount"> -23% </span>
             
 
             <span class="p-price">
-                3.799.000 đ
+                1.389.000 đ
                 
             </span>
          
@@ -5565,7 +6752,7 @@
         
         
         <div class="box-config">
-            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-49466 checked"></div></div>
+            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-35133 checked"></div></div>
             
         </div>
 
@@ -5573,7 +6760,7 @@
       
         <div class="d-flex align-items-center justify-content-between">
             <div class="d-flex align-items-center justify-content-between ">
-                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-49466" onclick="CompareProduct.compare_addProduct(49466)" data-id="49466">So sánh</a>
+                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-35133" onclick="CompareProduct.compare_addProduct(35133)" data-id="35133">So sánh</a>
 
                 
                     <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
@@ -5581,14 +6768,14 @@
             </div>
 
             
-            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('49466', 'Fan Case Lian Li TL120 LCD reverse bladeTriple pack with controller White ( Bộ 3 Fan, Màn Hình LCD, Đảo Chiều)', 3799000)"></a>
+            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('35133', 'Micro HyperX SoloCast', 1389000)"></a>
             
         </div>
     </div>
 
     
     <div class="p-tooltip">
-        <p class="tooltip-title"> Fan Case Lian Li TL120 LCD reverse bladeTriple pack with controller White ( Bộ 3 Fan, Màn Hình LCD, Đảo Chiều) </p>
+        <p class="tooltip-title"> Micro HyperX SoloCast </p>
 
         <div class="tooltip-content">
             
@@ -5598,32 +6785,215 @@
             <div class="tooltip-summary" style="white-space: unset">
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Màn hình LCD 1,6” có độ phân giải 400×400.
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Micro HyperX SoloCast
  </span>
                 
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Hỗ trợ các tệp GIF, MP4, JPG và PNG.
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>
  </span>
                 
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Thích hợp làm vỏ máy tính với khả năng tối ưu luồng khí và tiếng ồn.
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Tính năng
  </span>
                 
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Đi kèm với hình ảnh động độc quyền của Lian Li thông qua L-Connect 3.
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Ghi âm cắm và chạy
  </span>
                 
                 
                 
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Vòng bi FDB mang lại sự ổn định, độ bền và tuổi thọ cao.
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Cảm biến chạm để tắt tiếng với đèn báo trạng thái LED
  </span>
                 
                 
                 
                 
+                
+                
+                
+                
+            </div>
+            
+              
+            <div class="position-relative">
+                
+                
+                <span>
+                    Giá niêm yết:
+                    <del class="p-old-price" style="display: inline-block;"> 1.799.000 đ </del>
+                </span>
+                <span class="p-discount"> -23% </span>
+                
+
+                <p class="p-price" style="margin: 0;">
+                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
+                    1.389.000 đ
+                    
+                </p>
+              
+                
+                
+
+                
+                
+         
+                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Giá HS - SV: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+                </div>
+         
+
+                
+                
+
+                
+                
+         
+                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+                </div>
+           
+
+                <!------>
+
+                <!---->
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+                
+                    <div class="p-item  js-p-item summary-loaded" data-id="47005">
+    <a href="/tai-nghe-hyperx-cloud-iii-wireless.html" class="p-img">
+        
+        <img data-src="https://anphat.com.vn/media/product/250_47005_hyperx_cloud_iii_wireless__1_.jpg" alt="Tai nghe HyperX Cloud III Wireless Black Red" class="fit-img lazy">
+        
+      
+        
+
+                
+      
+        <span class="p-icon-holder js-icon-47005"><!-- // icon promotion --></span>
+    </a>
+  
+    <div class="p-text">
+       
+        
+        <a href="/tai-nghe-hyperx-cloud-iii-wireless.html" class="p-name"> <h3>Tai nghe HyperX Cloud III Wireless Black Red</h3> </a>
+        <span class="p-sku" style="font-size: 12px;">Mã SP: TNKT0047 </span>
+        
+      
+        <div class="d-flex align-items">
+            <i class="icon-star star-0"></i>(0)
+        </div>
+
+
+        
+        <div class="price-container" style="height:auto;">
+            
+            
+            <del class="p-old-price"> 4.599.000 đ </del>
+            <span class="p-discount"> -22% </span>
+            
+
+            <span class="p-price">
+                3.589.000 đ
+                
+            </span>
+         
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Giá HS - SV: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+            </div>
+            
+         
+
+            
+            
+
+            
+            
+         
+            
+            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
+                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
+                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
+            </div>
+            
+        </div>
+      
+      
+        
+        
+        
+        <div class="box-config">
+            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-47005 checked"></div></div>
+            
+        </div>
+
+        
+      
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center justify-content-between ">
+                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-47005" onclick="CompareProduct.compare_addProduct(47005)" data-id="47005">So sánh</a>
+
+                
+                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
+                
+            </div>
+
+            
+            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('47005', 'Tai nghe HyperX Cloud III Wireless Black Red', 3589000)"></a>
+            
+        </div>
+    </div>
+
+    
+    <div class="p-tooltip">
+        <p class="tooltip-title"> Tai nghe HyperX Cloud III Wireless Black Red </p>
+
+        <div class="tooltip-content">
+            
+
+            
+            
+            <div class="tooltip-summary" style="white-space: unset">
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Tai nghe HyperX Cloud III Wireless Black Red
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Phiên bản tai nghe không dây 2,4Ghz mới nhất
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Sử dụng củ loa 53mm cao cấp nhất
+ </span>
+                
+                
+                
+                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Tần số đáp ứng siêu rộng 10 - 21000Hz
+ </span>
                 
                 
                 
@@ -5642,1091 +7012,14 @@
                 
                 <span>
                     Giá niêm yết:
-                    <del class="p-old-price" style="display: inline-block;"> 4.100.000 đ </del>
+                    <del class="p-old-price" style="display: inline-block;"> 4.599.000 đ </del>
                 </span>
-                <span class="p-discount"> -8% </span>
+                <span class="p-discount"> -22% </span>
                 
 
                 <p class="p-price" style="margin: 0;">
                     <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
-                    3.799.000 đ
-                    
-                </p>
-              
-                
-                
-
-                
-                
-         
-                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Giá HS - SV: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-         
-
-                
-                
-
-                
-                
-         
-                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-           
-
-                <!------>
-
-                <!---->
-            </div>
-        </div>
-    </div>
-    
-</div>
-
-                
-                    <div class="p-item  js-p-item summary-loaded" data-id="50221">
-    <a href="/tan-nhiet-khi-deepcool-assassin-iv-wh-mau-trang.html" class="p-img">
-        
-        <img data-src="https://anphat.com.vn/media/product/250_50221_t___n_nhi___t_kh___deepcool_assassin_iv_wh__3_.jpg" alt="Tản Nhiệt Khí Deepcool ASSASSIN IV WH ( Màu Trắng)" class="fit-img lazy">
-        
-      
-        
-
-                
-      
-        <span class="p-icon-holder js-icon-50221"><!-- // icon promotion --></span>
-    </a>
-  
-    <div class="p-text">
-       
-        
-        <a href="/tan-nhiet-khi-deepcool-assassin-iv-wh-mau-trang.html" class="p-name"> <h3>Tản Nhiệt Khí Deepcool ASSASSIN IV WH ( Màu Trắng)</h3> </a>
-        <span class="p-sku" style="font-size: 12px;">Mã SP: TNCP1010 </span>
-        
-      
-        <div class="d-flex align-items">
-            <i class="icon-star star-0"></i>(0)
-        </div>
-
-
-        
-        <div class="price-container" style="height:auto;">
-            
-
-            <span class="p-price">
-                2.699.000 đ
-                
-            </span>
-         
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Giá HS - SV: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-         
-
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-        </div>
-      
-      
-        
-        
-        
-        <div class="box-config">
-            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-50221 checked"></div></div>
-            
-        </div>
-
-        
-      
-        <div class="d-flex align-items-center justify-content-between">
-            <div class="d-flex align-items-center justify-content-between ">
-                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-50221" onclick="CompareProduct.compare_addProduct(50221)" data-id="50221">So sánh</a>
-
-                
-                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
-                
-            </div>
-
-            
-            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('50221', 'Tản Nhiệt Khí Deepcool ASSASSIN IV WH ( Màu Trắng)', 2699000)"></a>
-            
-        </div>
-    </div>
-
-    
-    <div class="p-tooltip">
-        <p class="tooltip-title"> Tản Nhiệt Khí Deepcool ASSASSIN IV WH ( Màu Trắng) </p>
-
-        <div class="tooltip-content">
-            
-
-            
-            
-            <div class="tooltip-summary" style="white-space: unset">
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Socket hỗ trợ : LGA2066/2011-v3/2011/1700/1200/1151/1150/1155/AM5/AM4
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Kích thước: 144×147×164 mm(L×W×H)
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Fan Speed: 500~1800 RPM±10% / 500~1700 RPM±10%
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Fan Airflow: 61.25 CFM / 58.06 CFM
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Bearing Type: Fluid Dynamic Bearing </span>
-                
-                
-            </div>
-            
-              
-            <div class="position-relative">
-                
-
-                <p class="p-price" style="margin: 0;">
-                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
-                    2.699.000 đ
-                    
-                </p>
-              
-                
-                
-
-                
-                
-         
-                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Giá HS - SV: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-         
-
-                
-                
-
-                
-                
-         
-                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-           
-
-                <!------>
-
-                <!---->
-            </div>
-        </div>
-    </div>
-    
-</div>
-
-                
-                    <div class="p-item  js-p-item summary-loaded" data-id="50222">
-    <a href="/tan-nhiet-khi-deepcool-assassin-iv-mau-den.html" class="p-img">
-        
-        <img data-src="https://anphat.com.vn/media/product/250_50222_03.webp" alt="Tản Nhiệt Khí Deepcool ASSASSIN IV (Màu Đen)" class="fit-img lazy">
-        
-      
-        
-
-                
-      
-        <span class="p-icon-holder js-icon-50222"><!-- // icon promotion --></span>
-    </a>
-  
-    <div class="p-text">
-       
-        
-        <a href="/tan-nhiet-khi-deepcool-assassin-iv-mau-den.html" class="p-name"> <h3>Tản Nhiệt Khí Deepcool ASSASSIN IV (Màu Đen)</h3> </a>
-        <span class="p-sku" style="font-size: 12px;">Mã SP: TNCP1011 </span>
-        
-      
-        <div class="d-flex align-items">
-            <i class="icon-star star-0"></i>(0)
-        </div>
-
-
-        
-        <div class="price-container" style="height:auto;">
-            
-
-            <span class="p-price">
-                2.699.000 đ
-                
-            </span>
-         
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Giá HS - SV: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-         
-
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-        </div>
-      
-      
-        
-        
-        
-        <div class="box-config">
-            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-50222 checked"></div></div>
-            
-        </div>
-
-        
-      
-        <div class="d-flex align-items-center justify-content-between">
-            <div class="d-flex align-items-center justify-content-between ">
-                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-50222" onclick="CompareProduct.compare_addProduct(50222)" data-id="50222">So sánh</a>
-
-                
-                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
-                
-            </div>
-
-            
-            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('50222', 'Tản Nhiệt Khí Deepcool ASSASSIN IV (Màu Đen)', 2699000)"></a>
-            
-        </div>
-    </div>
-
-    
-    <div class="p-tooltip">
-        <p class="tooltip-title"> Tản Nhiệt Khí Deepcool ASSASSIN IV (Màu Đen) </p>
-
-        <div class="tooltip-content">
-            
-
-            
-            
-            <div class="tooltip-summary" style="white-space: unset">
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Socket hỗ trợ : LGA2066/2011-v3/2011/1700/1200/1151/1150/1155/AM5/AM4
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Kích thước: 144×147×164 mm(L×W×H)
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Fan Speed: 500~1800 RPM±10% / 500~1700 RPM±10%
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Fan Airflow: 61.25 CFM / 58.06 CFM
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Bearing Type: Fluid Dynamic Bearing </span>
-                
-                
-            </div>
-            
-              
-            <div class="position-relative">
-                
-
-                <p class="p-price" style="margin: 0;">
-                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
-                    2.699.000 đ
-                    
-                </p>
-              
-                
-                
-
-                
-                
-         
-                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Giá HS - SV: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-         
-
-                
-                
-
-                
-                
-         
-                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-           
-
-                <!------>
-
-                <!---->
-            </div>
-        </div>
-    </div>
-    
-</div>
-
-                
-                    <div class="p-item  js-p-item summary-loaded" data-id="50215">
-    <a href="/tan-nhiet-nuoc-deepcool-mystique-360-wh-mau-trang-man-hinh-hien-thi.html" class="p-img">
-        
-        <img data-src="https://anphat.com.vn/media/product/250_50215_tan_nhiet_nuoc_aio_deepcool_mystique_360_wh_01.webp" alt="Tản Nhiệt Nước Deepcool MYSTIQUE 360 WH (Màu Trắng, Màn Hình Hiển Thị)" class="fit-img lazy">
-        
-      
-        
-
-                
-      
-        <span class="p-icon-holder js-icon-50215"><!-- // icon promotion --></span>
-    </a>
-  
-    <div class="p-text">
-       
-        
-        <a href="/tan-nhiet-nuoc-deepcool-mystique-360-wh-mau-trang-man-hinh-hien-thi.html" class="p-name"> <h3>Tản Nhiệt Nước Deepcool MYSTIQUE 360 WH (Màu Trắng, Màn Hình Hiển Thị)</h3> </a>
-        <span class="p-sku" style="font-size: 12px;">Mã SP: TNNU1092 </span>
-        
-      
-        <div class="d-flex align-items">
-            <i class="icon-star star-0"></i>(0)
-        </div>
-
-
-        
-        <div class="price-container" style="height:auto;">
-            
-            
-            <del class="p-old-price"> 4.200.000 đ </del>
-            <span class="p-discount"> -5% </span>
-            
-
-            <span class="p-price">
-                3.990.000 đ
-                
-            </span>
-         
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Giá HS - SV: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-         
-
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-        </div>
-      
-      
-        
-        
-        
-        <div class="box-config">
-            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-50215 checked"></div></div>
-            
-        </div>
-
-        
-      
-        <div class="d-flex align-items-center justify-content-between">
-            <div class="d-flex align-items-center justify-content-between ">
-                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-50215" onclick="CompareProduct.compare_addProduct(50215)" data-id="50215">So sánh</a>
-
-                
-                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
-                
-            </div>
-
-            
-            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('50215', 'Tản Nhiệt Nước Deepcool MYSTIQUE 360 WH (Màu Trắng, Màn Hình Hiển Thị)', 3990000)"></a>
-            
-        </div>
-    </div>
-
-    
-    <div class="p-tooltip">
-        <p class="tooltip-title"> Tản Nhiệt Nước Deepcool MYSTIQUE 360 WH (Màu Trắng, Màn Hình Hiển Thị) </p>
-
-        <div class="tooltip-content">
-            
-
-            
-            
-            <div class="tooltip-summary" style="white-space: unset">
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Loại tản nhiệt: Tản nhiệt nước AIO
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Kích thước tản nhiệt nước: 360mm
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Số lượng Fan: 3 ( 12cm)
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Thiết bị tương thích: Intel: LGA1700 / 1200 / 115x, AMD: AM5 / AM4
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Màn hình LCD 2.8″ tùy chỉnh
- </span>
-                
-                
-                
-                
-            </div>
-            
-              
-            <div class="position-relative">
-                
-                
-                <span>
-                    Giá niêm yết:
-                    <del class="p-old-price" style="display: inline-block;"> 4.200.000 đ </del>
-                </span>
-                <span class="p-discount"> -5% </span>
-                
-
-                <p class="p-price" style="margin: 0;">
-                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
-                    3.990.000 đ
-                    
-                </p>
-              
-                
-                
-
-                
-                
-         
-                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Giá HS - SV: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-         
-
-                
-                
-
-                
-                
-         
-                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-           
-
-                <!------>
-
-                <!---->
-            </div>
-        </div>
-    </div>
-    
-</div>
-
-                
-                    <div class="p-item  js-p-item summary-loaded" data-id="48938">
-    <a href="/keo-tan-nhiet-cooler-master-mastergel-pro-v2-hang-gia-soc.html" class="p-img">
-        
-        <img data-src="https://anphat.com.vn/media/product/250_48938_" alt="Keo Tản nhiệt Cooler Master Mastergel Pro v2 (Hàng giá sốc)" class="fit-img lazy">
-        
-      
-        
-
-                
-      
-        <span class="p-icon-holder js-icon-48938"><!-- // icon promotion --></span>
-    </a>
-  
-    <div class="p-text">
-       
-        
-        <a href="/keo-tan-nhiet-cooler-master-mastergel-pro-v2-hang-gia-soc.html" class="p-name"> <h3>Keo Tản nhiệt Cooler Master Mastergel Pro v2 (Hàng giá sốc)</h3> </a>
-        <span class="p-sku" style="font-size: 12px;">Mã SP: KEMT0005TL </span>
-        
-      
-        <div class="d-flex align-items">
-            <i class="icon-star star-0"></i>(0)
-        </div>
-
-
-        
-        <div class="price-container" style="height:auto;">
-            
-            
-            <del class="p-old-price"> 159.000 đ </del>
-            <span class="p-discount"> -76% </span>
-            
-
-            <span class="p-price">
-                39.000 đ
-                
-            </span>
-         
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Giá HS - SV: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-         
-
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-        </div>
-      
-      
-        
-        
-        
-        <div class="box-config">
-            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-48938 checked"></div></div>
-            
-        </div>
-
-        
-      
-        <div class="d-flex align-items-center justify-content-between">
-            <div class="d-flex align-items-center justify-content-between ">
-                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-48938" onclick="CompareProduct.compare_addProduct(48938)" data-id="48938">So sánh</a>
-
-                
-                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
-                
-            </div>
-
-            
-            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('48938', 'Keo Tản nhiệt Cooler Master Mastergel Pro v2 (Hàng giá sốc)', 39000)"></a>
-            
-        </div>
-    </div>
-
-    
-    <div class="p-tooltip">
-        <p class="tooltip-title"> Keo Tản nhiệt Cooler Master Mastergel Pro v2 (Hàng giá sốc) </p>
-
-        <div class="tooltip-content">
-            
-
-            
-            
-            <div class="tooltip-summary" style="white-space: unset">
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>MÃ SẢN PHẨM : MGY-ZOSG-N15M-R3
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>MÀU SẮC : Xám
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>DẪN NHIỆT : 9 (W/m-k)
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>TRỌNG LƯỢNG RIÊNG : 2.6 (g/cm3) (25°C)
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>DUNG TÍCH: 1.5ml
- </span>
-                
-                
-                
-                
-            </div>
-            
-              
-            <div class="position-relative">
-                
-                
-                <span>
-                    Giá niêm yết:
-                    <del class="p-old-price" style="display: inline-block;"> 159.000 đ </del>
-                </span>
-                <span class="p-discount"> -76% </span>
-                
-
-                <p class="p-price" style="margin: 0;">
-                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
-                    39.000 đ
-                    
-                </p>
-              
-                
-                
-
-                
-                
-         
-                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Giá HS - SV: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-         
-
-                
-                
-
-                
-                
-         
-                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-           
-
-                <!------>
-
-                <!---->
-            </div>
-        </div>
-    </div>
-    
-</div>
-
-                
-                    <div class="p-item  js-p-item summary-loaded" data-id="50162">
-    <a href="/tan-nhiet-nuoc-cpu-cooler-master-ml360l-argb-v2-gia-soc.html" class="p-img">
-        
-        <img data-src="https://anphat.com.vn/media/product/250_50162_" alt="Tản nhiệt nước CPU Cooler master ML360L ARGB V2-Giá Sốc" class="fit-img lazy">
-        
-      
-        
-
-                
-      
-        <span class="p-icon-holder js-icon-50162"><!-- // icon promotion --></span>
-    </a>
-  
-    <div class="p-text">
-       
-        
-        <a href="/tan-nhiet-nuoc-cpu-cooler-master-ml360l-argb-v2-gia-soc.html" class="p-name"> <h3>Tản nhiệt nước CPU Cooler master ML360L ARGB V2-Giá Sốc</h3> </a>
-        <span class="p-sku" style="font-size: 12px;">Mã SP: TNNU0770TL </span>
-        
-      
-        <div class="d-flex align-items">
-            <i class="icon-star star-0"></i>(0)
-        </div>
-
-
-        
-        <div class="price-container" style="height:auto;">
-            
-            
-            <del class="p-old-price"> 2.990.000 đ </del>
-            <span class="p-discount"> -37% </span>
-            
-
-            <span class="p-price">
-                1.899.000 đ
-                
-            </span>
-         
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Giá HS - SV: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-         
-
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-        </div>
-      
-      
-        
-        
-        
-        <div class="box-config">
-            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-50162 checked"></div></div>
-            
-        </div>
-
-        
-      
-        <div class="d-flex align-items-center justify-content-between">
-            <div class="d-flex align-items-center justify-content-between ">
-                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-50162" onclick="CompareProduct.compare_addProduct(50162)" data-id="50162">So sánh</a>
-
-                
-                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
-                
-            </div>
-
-            
-            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('50162', 'Tản nhiệt nước CPU Cooler master ML360L ARGB V2-Giá Sốc', 1899000)"></a>
-            
-        </div>
-    </div>
-
-    
-    <div class="p-tooltip">
-        <p class="tooltip-title"> Tản nhiệt nước CPU Cooler master ML360L ARGB V2-Giá Sốc </p>
-
-        <div class="tooltip-content">
-            
-
-            
-            
-            <div class="tooltip-summary" style="white-space: unset">
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Intel® LGA 2066 / 2011-v3 / 2011 / 1151 / 1150 / 1155 / 1156 / 1366 / 775 socket/ 1200/ 1700* ( phiên bản mới)
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>AMD® AM4 / AM3+ / AM3 / AM2+ / AM2 / FM2+ / FM2 / FM1 socket
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Kích thước Radiator : 394 x 119 x 27.2mm (15.5 x 4.7 x 1.1")
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Kích thước Pump : 79.9 x 76 x 47.1 mm (3.2 x 3.0 x 1.9")
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>LED ARGB </span>
-                
-                
-            </div>
-            
-              
-            <div class="position-relative">
-                
-                
-                <span>
-                    Giá niêm yết:
-                    <del class="p-old-price" style="display: inline-block;"> 2.990.000 đ </del>
-                </span>
-                <span class="p-discount"> -37% </span>
-                
-
-                <p class="p-price" style="margin: 0;">
-                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
-                    1.899.000 đ
-                    
-                </p>
-              
-                
-                
-
-                
-                
-         
-                <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Giá HS - SV: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-         
-
-                
-                
-
-                
-                
-         
-                <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                    <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                    <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-                </div>
-           
-
-                <!------>
-
-                <!---->
-            </div>
-        </div>
-    </div>
-    
-</div>
-
-                
-                    <div class="p-item  js-p-item summary-loaded" data-id="44220">
-    <a href="/tan-nhiet-nuoc-cpu-deepcool-lt720-black-high-perfotmance-3-fan-12cm.html" class="p-img">
-        
-        <img data-src="https://anphat.com.vn/media/product/250_44220_t___n_nhi___t_n_____c_cpu_deepcool_lt720_black_high___perfotmance.jpg" alt="Tản Nhiệt Nước CPU Deepcool LT720 Black High - Perfotmance (3 fan 12cm)" class="fit-img lazy">
-        
-      
-        
-
-                
-      
-        <span class="p-icon-holder js-icon-44220"><!-- // icon promotion --></span>
-    </a>
-  
-    <div class="p-text">
-       
-        
-        <a href="/tan-nhiet-nuoc-cpu-deepcool-lt720-black-high-perfotmance-3-fan-12cm.html" class="p-name"> <h3>Tản Nhiệt Nước CPU Deepcool LT720 Black High - Perfotmance (3 fan 12cm)</h3> </a>
-        <span class="p-sku" style="font-size: 12px;">Mã SP: TNNU0911 </span>
-        
-      
-        <div class="d-flex align-items">
-            <i class="icon-star star-0"></i>(0)
-        </div>
-
-
-        
-        <div class="price-container" style="height:auto;">
-            
-            
-            <del class="p-old-price"> 3.100.000 đ </del>
-            <span class="p-discount"> -13% </span>
-            
-
-            <span class="p-price">
-                2.699.000 đ
-                
-            </span>
-         
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-showroom d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Giá HS - SV: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-         
-
-            
-            
-
-            
-            
-         
-            
-            <div class="p-price-combo d-none" data-from-date="" data-from-minute="00:00" data-to-date="" data-to-minute="00:00">
-                <b>Ưu Đãi Cho Doanh Nghiệp: </b>
-                <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">0 đ</p>
-            </div>
-            
-        </div>
-      
-      
-        
-        
-        
-        <div class="box-config">
-            <div class="product-spec-group font-300"><div class="thongso d-flex flex-wrap js-thongsosanpham-44220 checked"></div></div>
-            
-        </div>
-
-        
-      
-        <div class="d-flex align-items-center justify-content-between">
-            <div class="d-flex align-items-center justify-content-between ">
-                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-44220" onclick="CompareProduct.compare_addProduct(44220)" data-id="44220">So sánh</a>
-
-                
-                    <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
-                
-            </div>
-
-            
-            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('44220', 'Tản Nhiệt Nước CPU Deepcool LT720 Black High - Perfotmance (3 fan 12cm)', 2699000)"></a>
-            
-        </div>
-    </div>
-
-    
-    <div class="p-tooltip">
-        <p class="tooltip-title"> Tản Nhiệt Nước CPU Deepcool LT720 Black High - Perfotmance (3 fan 12cm) </p>
-
-        <div class="tooltip-content">
-            
-
-            
-            
-            <div class="tooltip-summary" style="white-space: unset">
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Socket hỗ trợ: LGA2066/2011-v3/2011/1700/1200/1151/1150/1155/sTRX4/sTR4/AM5/AM4
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Kích thước Raid: 402×120×27 mm, Aluminum
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Kích thước bơm: 94×80×68 mm
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Tốc độ bơm: 3100 RPM±10%
- </span>
-                
-                
-                
-                <span class="item d-block"> <i class="fa fa-check-circle" style="color: #ff9900;margin-right: 5px;"></i>Kích thước quạt: 120×120×25 mm
- </span>
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-            </div>
-            
-              
-            <div class="position-relative">
-                
-                
-                <span>
-                    Giá niêm yết:
-                    <del class="p-old-price" style="display: inline-block;"> 3.100.000 đ </del>
-                </span>
-                <span class="p-discount"> -13% </span>
-                
-
-                <p class="p-price" style="margin: 0;">
-                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
-                    2.699.000 đ
+                    3.589.000 đ
                     
                 </p>
               
@@ -6770,42 +7063,42 @@
             <!-- paging -->
             <div class="paging">
                 
-                <a href="/cooling-tan-nhiet_dm397.html" class="current">
+                <a href="/thiet-bi-luu-tru_dm393.html" class="current">
                     1
                     
                 </a>
                 
-                <a href="/cooling-tan-nhiet_dm397.html?page=2">
+                <a href="/thiet-bi-luu-tru_dm393.html?page=2">
                     2
                     
                 </a>
                 
-                <a href="/cooling-tan-nhiet_dm397.html?page=3">
+                <a href="/thiet-bi-luu-tru_dm393.html?page=3">
                     3
                     
                 </a>
                 
-                <a href="/cooling-tan-nhiet_dm397.html?page=4">
+                <a href="/thiet-bi-luu-tru_dm393.html?page=4">
                     4
                     
                 </a>
                 
-                <a href="/cooling-tan-nhiet_dm397.html?page=5">
+                <a href="/thiet-bi-luu-tru_dm393.html?page=5">
                     5
                     
                 </a>
                 
-                <a href="/cooling-tan-nhiet_dm397.html?page=6">
+                <a href="/thiet-bi-luu-tru_dm393.html?page=6">
                     6
                     
                 </a>
                 
-                <a href="/cooling-tan-nhiet_dm397.html?page=7">
+                <a href="/thiet-bi-luu-tru_dm393.html?page=7">
                     7
                     
                 </a>
                 
-                <a href="/cooling-tan-nhiet_dm397.html?page=2">
+                <a href="/thiet-bi-luu-tru_dm393.html?page=2">
                      <i class="fa fa-angle-right"></i>
                     
                 </a>
@@ -6815,71 +7108,6 @@
           
             
 
-            <!-- tin liên quan -->
-            <div class="p-cat-article-container">
-                <div class="title d-flex align-items-center justify-content-between">
-                    <p class="font-weight-bold m-0 text-24"> BÀI VIẾT LIÊN QUAN </p>
-                    <a href="/tin-tuc" class="blue font-weight-lighter"> <i>XEM TẤT CẢ</i>  <i class="fa fa-angle-double-right"></i></a>
-                </div>
-
-                <div class="p-cate-news">
-                    
-                    
-                    <div class="item clearfix">
-                        <a href="/corsair-ra-mat-bo-dung-cu-lam-mat-tuy-chinh-hydro-x-series-icue_idtin6582.html" class="art-img">
-                            <img src="https://anphat.com.vn/media/news/6582_6j6rcyvxw15fp4yr.jpg" alt="Corsair ra mắt bộ dụng cụ làm mát tùy chỉnh Hydro X series iCUE " class="fit-img">
-                        </a>
-
-                        <div class="art-text">
-                            <a href="/corsair-ra-mat-bo-dung-cu-lam-mat-tuy-chinh-hydro-x-series-icue_idtin6582.html" class="d-block art-title"> Corsair ra mắt bộ dụng cụ làm mát tùy chỉnh Hydro X series iCUE  </a>
-
-                            <div class="art-info-container">
-                                <span class="art-time"> 05-08-2020, 4:42 pm </span>
-                                <span class="art-comment"> 0 </span>
-                                <span class="art-visit"> 2028 </span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                    
-                    <div class="item clearfix">
-                        <a href="/noctua-cong-bo-lo-trinh-san-xuat-quat-tan-nhiet-nf-a12x25-mau-den-thay-vi-mau-nau-truyen-thong_idtin6551.html" class="art-img">
-                            <img src="https://anphat.com.vn/media/news/6551_noctua1.jpg" alt="Noctua công bố lộ trình sản xuất quạt tản nhiệt NF-A12x25 màu đen thay vì màu nâu truyền thống" class="fit-img">
-                        </a>
-
-                        <div class="art-text">
-                            <a href="/noctua-cong-bo-lo-trinh-san-xuat-quat-tan-nhiet-nf-a12x25-mau-den-thay-vi-mau-nau-truyen-thong_idtin6551.html" class="d-block art-title"> Noctua công bố lộ trình sản xuất quạt tản nhiệt NF-A12x25 màu đen thay vì màu nâu truyền thống </a>
-
-                            <div class="art-info-container">
-                                <span class="art-time"> 31-07-2020, 10:51 am </span>
-                                <span class="art-comment"> 0 </span>
-                                <span class="art-visit"> 2172 </span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                    
-                    <div class="item clearfix">
-                        <a href="/alphacool-ra-mat-radiator-tan-nhiet-nuoc-sieu-to-ho-tro-toi-9-quat_idtin6221.html" class="art-img">
-                            <img src="https://anphat.com.vn/media/news/6221_1018089_06_1080x675.jpg" alt="Alphacool ra mắt radiator tản nhiệt nước siêu to hỗ trợ tới 9 quạt" class="fit-img">
-                        </a>
-
-                        <div class="art-text">
-                            <a href="/alphacool-ra-mat-radiator-tan-nhiet-nuoc-sieu-to-ho-tro-toi-9-quat_idtin6221.html" class="d-block art-title"> Alphacool ra mắt radiator tản nhiệt nước siêu to hỗ trợ tới 9 quạt </a>
-
-                            <div class="art-info-container">
-                                <span class="art-time"> 23-06-2020, 9:33 am </span>
-                                <span class="art-comment"> 0 </span>
-                                <span class="art-visit"> 1524 </span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                </div>
-            </div>
             
         </div>
 

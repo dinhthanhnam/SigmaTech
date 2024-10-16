@@ -3447,3 +3447,101 @@
 </section>
 @endsection
 
+@push('scripts')
+  <script>
+    // Đóng filter-item hiện tại khi click ra ngoài và giữ trạng thái của filter-title
+    document.addEventListener('click', function(e) {
+      const currentFilterItem = document.querySelector('.js-filter-item.current');
+
+      // Nếu click không nằm trong một filter item
+      if (!e.target.closest('.js-filter-item') && currentFilterItem) {
+        currentFilterItem.classList.remove('current'); // Xóa class 'current'
+      }
+    });
+
+    // Xử lý click vào các filter item
+    document.querySelectorAll('.js-filter-item').forEach(filterItem => {
+      filterItem.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation(); // Ngăn sự kiện truyền lên body
+
+        // Toggle class 'current' cho filter-item hiện tại
+        const isCurrent = this.classList.toggle('current');
+
+        // Nếu có filter khác đang là 'current', bỏ class 'current' của filter đó
+        document.querySelectorAll('.js-filter-item').forEach(item => {
+          if (item !== this && item.classList.contains('current')) {
+            item.classList.remove('current');
+          }
+        });
+
+        // Kiểm tra nếu có ít nhất một js-filter-title được chọn
+        const selectedTitles = this.querySelectorAll('.js-filter-title.selected');
+        if (selectedTitles.length > 0) {
+          this.classList.add(
+            'selected'); // Thêm class 'selected' nếu có ít nhất một title được chọn
+        } else {
+          this.classList.remove(
+            'selected'); // Xóa class 'selected' nếu không có title nào được chọn
+        }
+      });
+    });
+
+    // Xử lý click vào các filter title
+    document.querySelectorAll('.js-filter-title').forEach(filterTitle => {
+      filterTitle.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation(); // Ngăn sự kiện truyền lên filter item
+
+        const parentFilterItem = this.closest('.js-filter-item');
+        const dataType = parentFilterItem.getAttribute('data-type');
+
+        if (dataType === 'price') {
+          // Nếu là loại price, chỉ cho phép chọn một
+          parentFilterItem.querySelectorAll('.js-filter-title.selected').forEach(title => {
+            title.classList.remove('selected'); // Bỏ chọn tất cả
+          });
+          this.classList.add('selected'); // Chọn item hiện tại
+        } else {
+          // Cho phép chọn nhiều item
+          this.classList.toggle('selected'); // Toggle class 'selected'
+        }
+
+        // Kiểm tra nếu có ít nhất một js-filter-title được chọn
+        const selectedTitles = parentFilterItem.querySelectorAll('.js-filter-title.selected');
+        if (selectedTitles.length > 0) {
+          parentFilterItem.classList.add(
+            'selected'); // Thêm class 'selected' nếu có ít nhất một title được chọn
+        } else {
+          parentFilterItem.classList.remove(
+            'selected'); // Xóa class 'selected' nếu không có title nào được chọn
+        }
+      });
+    });
+  </script>
+  <script>
+    var optionProductCarousel = {
+      items: 5,
+      margin: 10,
+      loop: true,
+      autoplayHoverPause: true,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplaySpeed: 1500,
+      dots: false,
+      lazyLoad: true,
+      nav: true,
+      navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+      responsive: {
+        1200: {
+          items: 5,
+        },
+        1600: {
+          items: 6,
+        }
+      }
+    }
+    $("#js-collection-related-holder").owlCarousel(optionProductCarousel);
+  </script>
+@endpush
+
