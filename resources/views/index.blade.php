@@ -134,10 +134,10 @@
         <div class="box-title-container">
           <h2 class="box-title"> top sản phẩm bán chạy </h2>
           <div class="child-title">
-            <a href="https://www.anphatpc.com.vn/pcap-gaming.html"> Laptop gaming </a>
-            <a href="https://www.anphatpc.com.vn/gaming-laptop.html"> Laptop văn phòng </a>
-            <a href="https://www.anphatpc.com.vn/man-hinh-may-tinh.html-1"> màn hình máy tính </a>
-            <a href="https://www.anphatpc.com.vn/man-hinh-may-tinh-chuyen-gaming_dm1694.html"> màn hình gaming</a>
+            <a href="{{ route('categories.gaming-laptops')}}"> Laptop gaming </a>
+            <a href="{{ route('categories.laptops')}}"> Laptop văn phòng </a>
+            <a href="{{ route('categories.monitors')}}"> màn hình máy tính </a>
+            <a href="{{ route('categories.gaming-gears')}}"> bàn phím, chuột</a>
           </div>
         </div>
         <div class="p-container" style="min-height: 850px">
