@@ -166,10 +166,10 @@
         <div class="box-title-container">
           <h2 class="box-title"> Laptop văn phòng </h2>
           <div class="child-title">
-            <a href="/laptop-asus_dm1058.html">ACER</a>
-            <a href="/laptop-lenovo_dm1059.html">ASUS</a>
-            <a href="/laptop-dell_dm1012.html">DELL</a>
-            <a href="/laptop-acer_dm1060.html">LENOVO</a>
+            <a href="https://www.anphatpc.com.vn/pcap-gaming.html">ACER</a>
+            <a href="https://www.anphatpc.com.vn/pcap-gaming.html">ASUS</a>
+            <a href="https://www.anphatpc.com.vn/pcap-gaming.html">DELL</a>
+            <a href="https://www.anphatpc.com.vn/pcap-gaming.html">LENOVO</a>
           </div>
         </div>
         <div class="p-container custom-nav owl-carousel owl-theme" id="js-collection-850" data-id="850">
@@ -180,7 +180,7 @@
           @include('partials.simple-p-item')
           @include('partials.simple-p-item')
         </div>
-        <a href="#" class="view-cate"> XEM TẤT CẢ <i class="fa fa-angle-double-right"></i></a>
+        <a href="{{route ('categories.laptops')}}" class="view-cate"> XEM TẤT CẢ <i class="fa fa-angle-double-right"></i></a>
       </div>
 
       <!-- Linh kiện máy tính -->
@@ -207,7 +207,7 @@
           @include('partials.simple-p-item')
           @include('partials.simple-p-item')
         </div>
-        <a href="/linh-kien-may-tinh.html" class="view-cate"> XEM TẤT CẢ <i class="fa fa-angle-double-right"></i>
+        <a href="{{route ('categories.pc-parts')}}" class="view-cate"> XEM TẤT CẢ <i class="fa fa-angle-double-right"></i>
         </a>
       </div>
 
@@ -226,7 +226,7 @@
           @include('partials.simple-p-item')
           @include('partials.simple-p-item')
         </div>
-        <a href="/man-hinh-may-tinh.html-1" class="view-cate"> XEM TẤT CẢ <i class="fa fa-angle-double-right"></i>
+        <a href="{{route ('categories.monitors')}}" class="view-cate"> XEM TẤT CẢ <i class="fa fa-angle-double-right"></i>
         </a>
       </div>
 
@@ -247,7 +247,7 @@
           @include('partials.simple-p-item')
           @include('partials.simple-p-item')
         </div>
-        <a href="/gaming-gear.html" class="view-cate"> XEM TẤT CẢ <i class="fa fa-angle-double-right"></i> </a>
+        <a href="{{route ('categories.gaming-gears')}}" class="view-cate"> XEM TẤT CẢ <i class="fa fa-angle-double-right"></i> </a>
       </div>
 
       <!-- Cooling, Tản nhiệt  -->
@@ -267,7 +267,7 @@
           @include('partials.simple-p-item')
           @include('partials.simple-p-item')
         </div>
-        <a href="/cooling-tan-nhiet_dm397.html" class="view-cate"> XEM TẤT CẢ <i class="fa fa-angle-double-right"></i>
+        <a href="coolings" class="view-cate"> XEM TẤT CẢ <i class="fa fa-angle-double-right"></i>
         </a>
       </div>
     </div>
@@ -286,4 +286,30 @@
       });
     });
   </script>
+  <!-- jQuery (necessary for Owl Carousel) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+  $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: true,
+          dots: true, 
+          responsive: {
+              0: {
+                  items: 1
+              },
+              600: {
+                  items: 2
+              },
+              1000: {
+                  items: 6
+              }
+              
+          }
+      });
+  });
+</script>
 @endpush
