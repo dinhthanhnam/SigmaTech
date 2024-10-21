@@ -69,11 +69,8 @@
         <hr class="mx-3">
         <ul>
           <li> Kinh doanh online: 1900.0323 phím 1 </li>
-          <li> Kinh doanh miền Bắc: 1900.0323 phím 2</li>
-          <li> Kinh doanh miền Nam: 1900.0323 phím 3</li>
-          <li> Kinh Doanh Doanh nghiệp, Dự án: 1900.0323 phím 4 </li>
-          <li> Kỹ thuật - bảo hành miền Bắc: 1900.0323 phím 5 </li>
-          <li> Kỹ thuật - bảo hành miền Nam: 1900.0323 phím 6 </li>
+          <li> Kinh Doanh Doanh nghiệp, Dự án: 1900.0323 phím 2 </li>
+          <li> Kỹ thuật - bảo hành: 1900.0323 phím 3 </li>
           <li> Chăm sóc khách hàng: 1900.0323 phím 0 </li>
           <li> Góp ý - khiếu nại: 0904.316.386 </li>
           <li class="email">Email: cskh@sigmatech.com.vn </li>
@@ -92,12 +89,12 @@
     <div class="row">
       <div class="col-4 ">
         <div class="item">
-          <p class="title"><span class="number">1</span> AN PHÁT Thái Hà - HN </p>
+          <p class="title"><span class="number">1</span> SIGMATECH Chùa Bộc - HN </p>
           <ul class="ul">
             <li>
               <i class="fa fa-map-marker"></i>
               <span>
-                49 Thái Hà - Q.Đống Đa - Hà Nội <a href="https://goo.gl/maps/fQkzMmh1gkNbNVEC9" target="blank"
+                12 Chùa Bộc - Q.Đống Đa - Hà Nội <a href="https://maps.app.goo.gl/Dgs2LZ3hb2CVMduo7" target="blank"
                   class="d-block">[ Xem đường đi ]</a>
               </span>
             </li>
@@ -131,12 +128,12 @@
       </div>
       <div class="col-4 ">
         <div class="item">
-          <p class="title"><span class="number">2</span> AN PHÁT Lý Thường Kiệt - QUẬN 10 - HCM </p>
+          <p class="title"><span class="number">2</span> SIGMATECH Ngô Gia Tự - Tiền An - Bắc Ninh </p>
           <ul class="ul">
             <li>
               <i class="fa fa-map-marker"></i>
               <span>
-                Địa chỉ: 158 - 160 Lý Thường Kiệt - P.14 - Q.10 - HCM <a href="https://goo.gl/maps/MX79gaPrydnFiFCW6"
+                Địa chỉ: 331 Ngô Gia Tự - P. Tiền An - Bắc Ninh <a href="https://maps.app.goo.gl/rqgYf48dxT6yg6fk6"
                   target="blank" class="d-block">[ Xem đường đi ]</a>
               </span>
             </li>
@@ -174,7 +171,7 @@
             <li>
               <i class="fa fa-map-marker"></i>
               <span>
-                Địa chỉ: Tầng 5 - 63 Trần Thái Tông - Q.Cầu Giấy - Hà Nội<a href="https://goo.gl/maps/D61akuw6EQ3PFcHu8"
+                Địa chỉ: 12 Chùa Bộc - Q.Đống Đa - Hà Nội<a href="https://maps.app.goo.gl/Dgs2LZ3hb2CVMduo7"
                   target="blank" class="d-block">[ Xem đường đi ]</a>
               </span>
             </li>
@@ -199,7 +196,7 @@
           </ul>
         </div>
       </div>
-      <div class="col-4 ">
+      {{-- <div class="col-4 ">
         <div class="item">
           <p class="title"><span class="number">4</span> AN PHÁT Lê Thanh Nghị - HN </p>
           <ul class="ul">
@@ -546,12 +543,14 @@
             </li>
           </ul>
         </div>
-      </div>
+      </div> --}}
     </div>
   </div>
 </div>
 <div style="background: #edeef2;padding: 10px 0;">
   <div class="container text-12 font-weight-light">
     Đinh thành Nam, nhớ sửa cái này sau
+    <br>
+    NghiaThe, sửa r nha
   </div>
 </div>
