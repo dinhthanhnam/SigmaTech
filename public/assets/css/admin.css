@@ -1,0 +1,84 @@
+.admin-menu {
+  padding-top: 5px;
+  width: 15%;
+  height: auto;
+  background-color: #f8f9fa;
+  border-right: 2px solid #dee2e6;
+}
+
+.main-content {
+  padding-top: 5px;
+  width: 85%;
+  height: 100% !important;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+}
+
+.admin-menu .menu-dropdown-item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #dee2e6;
+  display: flex; /* Để icon và title nằm cạnh nhau */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  height: 100%; /* Để chiếm toàn bộ chiều cao của menu item */
+  width: 100%; /* Để chiếm toàn bộ chiều rộng của menu item */
+  transition: background-color 0.3s; /* Hiệu ứng chuyển đổi khi hover */
+  position: relative;
+}
+
+.menu-dropdown-item:hover {
+  background-color: #546ce8 !important; /* Thêm !important để ghi đè */
+  color: white !important; /* Màu chữ khi hover (nếu cần) */
+}
+
+.admin-menu .menu-item .menu-dropdown-item .admin-thumb-icon {
+  position: relative;
+  margin-left: 15px;
+  font-size: 15px;
+  display: flex; /* Đảm bảo icon được căn giữa */
+  align-items: center; /* Căn giữa icon theo chiều dọc */
+  color: black;
+}
+
+.admin-menu .menu-item .menu-dropdown-item .title {
+  font-size: 14px;
+}
+
+.dropdown-content {
+  display: none; /* Ẩn mặc định */
+    margin-top: 5px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 0;
+  text-decoration: none;
+  display: block;
+  font-size: 13px;
+}
+
+.dropdown-content a:hover {
+  color: white;
+  text-decoration: none;
+  display: block;
+  background-color: #546ce8; /* Màu nền giống như nút */
+  border: 1px solid #dee2e6;
+}
+
+.dropdown-content.show {
+  display: block; /* Hiển thị khi cần thiết */
+}
+
+.toggle-icon {
+  transition: transform 0.3s ease; 
+  margin-left:auto;
+  margin-right: 8px;
+  font-size: 12px;
+}
+
+.rotate {
+  transform: rotate(-90deg); /* Xoay 180 độ */
+}
