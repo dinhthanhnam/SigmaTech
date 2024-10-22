@@ -17,7 +17,9 @@
     <link rel="stylesheet" href="{{ asset('assets/css/web_pc_2020.css') }}" type="text/css"/> 
     <link rel="stylesheet" href="{{ asset('assets/css/lib.css') }}" type="text/css"/> 
     <link rel="stylesheet" href="{{ asset('assets/css/icon_marketing.css') }}" type="text/css"/> 
-    <link rel="stylesheet" href="{{ asset('assets/css/iconthongso.css') }}" type="text/css"/> 
+    <link rel="stylesheet" href="{{ asset('assets/css/iconthongso.css') }}" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"> 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
