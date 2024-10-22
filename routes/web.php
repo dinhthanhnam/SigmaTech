@@ -63,3 +63,8 @@ Route::get('laptop-outlet', function () {
 Route::get('account', function () {
   return view('useraccount');
 })->name('useraccount');
+
+//admin view
+Route::get('admin/new-product', function () {
+  return view('admin.pages.new-product');
+})->name('new-product');
