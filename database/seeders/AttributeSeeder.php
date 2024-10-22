@@ -14,32 +14,48 @@ class AttributeSeeder extends Seeder
     public function run(): void
     {
         DB::table('attributes')->insert([
-            //Attribute dùng chung cho nhiều loại
+            //Attribute dùng chung cho nhiều loại (Laptop, CPU, GPU)
             ['name' => 'Brand', 'data_type' => 'string'],
             ['name' => 'Model', 'data_type' => 'string'],
             //laptop_attribute
             
-            ['name' => 'Loại laptop', 'data_type' => 'string'],
-            ['name' => 'Vi xử lý', 'data_type' => 'string'],
-            ['name' => 'Card đồ hoạ', 'data_type' => 'string'],
-            ['name' => 'Màn hình máy tính', 'data_type' => 'string'],
-            ['name' => 'Dung lượng RAM', 'data_type' => 'string'],
-            ['name' => 'Dung lượng Pin', 'data_type' => 'string'],
-            ['name' => 'Ổ cứng', 'data_type' => 'string'],
-            ['name' => 'Câng nặng', 'data_type' => 'string'],
-            ['name' => 'Tính năng', 'data_type' => 'string'],
-            ['name' => 'Màu sắc', 'data_type' => 'string'],
-            ['name' => 'OS', 'data_type' => 'string'],
+            ['name' => '[Laptop] Loại laptop', 'data_type' => 'string'],
+            ['name' => '[Laptop] Vi xử lý', 'data_type' => 'string'],
+            ['name' => '[Laptop] Card đồ hoạ', 'data_type' => 'string'],
+            ['name' => '[Laptop] Màn hình', 'data_type' => 'string'],
+            ['name' => '[Laptop] Dung lượng RAM', 'data_type' => 'string'],
+            ['name' => '[Laptop] Dung lượng Pin', 'data_type' => 'string'],
+            ['name' => '[Laptop] Ổ cứng', 'data_type' => 'string'],
+            ['name' => '[Laptop] Câng nặng', 'data_type' => 'string'],
+            ['name' => '[Laptop] Tính năng', 'data_type' => 'string'],
+            ['name' => '[Laptop] Màu sắc', 'data_type' => 'string'],
+            ['name' => '[Laptop] OS', 'data_type' => 'string'],
 
             //CPU_attribute
-            ['name' => 'Core', 'data_type' => 'integer'],
-            ['name' => 'ECore', 'data_type' => 'integer'],
-            ['name' => 'PCore', 'data_type' => 'integer'],
-            ['name' => 'Thread', 'data_type' => 'integer'],
-            ['name' => 'BaseSpeed', 'data_type' => 'string'],
-            ['name' => 'MaxSpeed', 'data_type' => 'string'],
-            ['name' => 'Cache', 'data_type' => 'string'],
+            ['name' => '[CPU] Socket', 'data_type' => 'integer'],
+            ['name' => '[CPU] Tốc độ cơ bản', 'data_type' => 'integer'],
+            ['name' => '[CPU] Tốc độ tối đa', 'data_type' => 'integer'],
+            ['name' => '[CPU] Nhân CPU', 'data_type' => 'integer'],
+            ['name' => '[CPU] Luồng CPU', 'data_type' => 'integer'],
+            ['name' => '[CPU] Số P-core', 'data_type' => 'string'],
+            ['name' => '[CPU] Số E-core', 'data_type' => 'string'],
+            ['name' => '[CPU] Bộ nhớ hỗ trợ', 'data_type' => 'string'],
+            ['name' => '[CPU] Số kênh bộ nhớ tối đa', 'data_type' => 'string'],
+            ['name' => '[CPU] Điện áp tiêu thụ tối đa', 'data_type' => 'string'],
+            ['name' => '[CPU] Tính năng', 'data_type' => 'string'],
+            
             // GPU_attribute
+            ['name' => '[GPU] Bộ nhớ', 'data_type' => 'string'],
+            ['name' => '[GPU] Core Clock', 'data_type' => 'string'],
+            ['name' => '[GPU] Lõi', 'data_type' => 'string'],
+            ['name' => '[GPU] Clock bộ nhớ', 'data_type' => 'string'],
+            ['name' => '[GPU] Giao diện bộ nhớ', 'data_type' => 'string'],
+            ['name' => '[GPU] Độ phân giải', 'data_type' => 'string'],
+            ['name' => '[GPU] Kết nối', 'data_type' => 'string'],
+            ['name' => '[GPU] Kích thước', 'data_type' => 'string'],
+            ['name' => '[GPU] PSU đề nghị', 'data_type' => 'string'],
+            ['name' => '[GPU] Power Connectors', 'data_type' => 'string'],
+            ['name' => '[GPU] Hỗ trợ SLI', 'data_type' => 'string'],
         ]);
     }
 }
