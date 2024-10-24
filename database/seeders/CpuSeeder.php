@@ -15,7 +15,7 @@ class CpuSeeder extends Seeder
     public function run(): void
     {
         DB::table('cpus')->insert([
-            ['name' => 'Intel Core i7-13650HX', 'type' => 0],
+            ['name' => 'CPU Intel Core i5 14400F', 'category_id' => 3]
         ]);
     }
 }

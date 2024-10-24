@@ -7,7 +7,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Middleware\AuthAdmin;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\LaptopController;
 
 Auth::routes();
 
@@ -68,3 +68,6 @@ Route::get('account', function () {
 Route::get('admin/new-product', function () {
   return view('admin.pages.new-product');
 })->name('new-product');
+
+//single laptop
+Route::get('/laptop/{id}', [LaptopController::class, 'show'])->name('laptop.show');

@@ -29,16 +29,14 @@ class DatabaseSeeder extends Seeder
             'address'=> 'Hà Nội, Âu Cơ Tây Hồ',
             'phone' => '01231231414',
         ]);
-        //seed category, vì nó là khoá ngoại cho các sản phẩm như laptop, abc 
         $this->call(CategorySeeder::class);
-        // seed attribute trước vì nó có phục vụ cho CPU
+        // seed attribute trước vì nó có phục vụ cho mọi loại hàng
         $this->call(AttributeSeeder::class);
-        //CPU seed
+        //CPU seed riêng biệt (CPU rời, lắp case)
         $this->call(CpuSeeder::class);
         $this->call(CpuAttributeSeeder::class);
-        //sau khi seed CPU, seed đến laptop
+        //Laptop seed riêng biệt(sau khi seed xong sẽ có đủ thông tin cho 1 laptop cụ thể)
         $this->call(LaptopSeeder::class);
-        //
         $this->call(LaptopAttributeSeeder::class);
     }
 }

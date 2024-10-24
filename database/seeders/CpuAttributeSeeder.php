@@ -14,10 +14,7 @@ class CpuAttributeSeeder extends Seeder
     public function run(): void
     {
         DB::table('cpu_attribute')->insert([
-            ['cpu_id' => 1, 'attribute_id' => 14, 'value' => 14],
-            ['cpu_id' => 1, 'attribute_id' => 17, 'value' => 20],
-            ['cpu_id' => 1, 'attribute_id' => 19, 'value' => 'upto 4.90 GHz']
-            
+            ['cpu_id' => 1, 'attribute_id' => 27, 'value' => 'Intel LGA1700']
         ]);
     }
 }
