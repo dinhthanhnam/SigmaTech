@@ -8,6 +8,7 @@ use Database\Seeders\CpuTableSeeder;
 use Database\Seeders\AttributeSeeder;
 use Database\Seeders\LaptopSeeder;
 use Database\Seeders\LaptopAttributeSeeder;
+use App\Models\User;
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -15,13 +16,13 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        \App\Models\User::factory()->create([
+        User::factory()->create([
             'name' => 'admin',
             'password' => 'admin',
             'email' => 'admin@example.com',
             'utype' => 'ADM',
         ]);
-        \App\Models\User::factory()->create([
+        User::factory()->create([
             'name' => 'user1',
             'password' => 'user1',
             'email' => 'user1@example.com',
@@ -32,11 +33,11 @@ class DatabaseSeeder extends Seeder
         $this->call(CategorySeeder::class);
         // seed attribute trước vì nó có phục vụ cho mọi loại hàng
         $this->call(AttributeSeeder::class);
+
         //CPU seed riêng biệt (CPU rời, lắp case)
         $this->call(CpuSeeder::class);
-        $this->call(CpuAttributeSeeder::class);
+
         //Laptop seed riêng biệt(sau khi seed xong sẽ có đủ thông tin cho 1 laptop cụ thể)
         $this->call(LaptopSeeder::class);
-        $this->call(LaptopAttributeSeeder::class);
     }
 }
