@@ -70,4 +70,4 @@ Route::get('admin/new-product', function () {
 })->name('new-product');
 
 //single laptop
-Route::get('/laptop/{id}', [LaptopController::class, 'show'])->name('laptop.show');
+Route::get('laptops/{id}', [LaptopController::class, 'show'])->name('laptop.show');
