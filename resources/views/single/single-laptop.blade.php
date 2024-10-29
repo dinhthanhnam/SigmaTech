@@ -697,19 +697,11 @@
                             <b class="d-block text-18 font-500"> ĐẶT MUA NGAY </b>
                             <span class="text-12 d-block"> Nhanh chóng, thuận tiện </span>
                         </a>
-                        <form action="{{ route('cart.add') }}" method="POST" class="d-inline">
-                            @csrf
-                            <input type="hidden" name="product_id" value="{{ $laptop->id }}">
-                            <input type="hidden" name="product_type" value="laptop">
-                            <!-- Thêm trường loại sản phẩm -->
-                            <input type="hidden" name="category_id" value="{{ $laptop->category_id }}">
-                            <input type="hidden" name="product_name" value="{{ $laptop->name }}">
-                            <input type="hidden" name="quantity" value="1" min="1">
-                            <button type="submit" class="btn-addCart blue order-1 js-addCart">
-                                <b class="d-block text-18 font-500">THÊM VÀO GIỎ HÀNG</b>
-                                <span class="text-12 d-block">Mua tiếp sản phẩm khác</span>
-                            </button>
-                        </form>
+                        <a href="javascript:void(0)" class="btn-addCart blue order-1 js-addCart"
+                            onclick="addConfigToShoppingCart(49891,0,1);showCartSummary('.js-cart-count');">
+                            <b class="d-block text-18 font-500"> CHO VÀO GIỎ </b>
+                            <span class="text-12 d-block"> Mua tiếp sản phẩm khác </span>
+                        </a>
                         <!-- End Button Mua hàng -->
                         <!-- Button trả góp -->
                         <a href="javascript:void(0)" class="btn-payinstall order-0 js-buy-tragop"
