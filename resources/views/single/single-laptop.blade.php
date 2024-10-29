@@ -1,9 +1,12 @@
 @extends('layouts.app')
 @php
   $laptop_id = $laptop->id;
-  $type = $laptop->attributes->firstWhere('name', '[Laptop] Loại laptop')->pivot->value;
-  $brand = $laptop->attributes->firstWhere('name', 'Brand')->pivot->value;
-  $model = $laptop->attributes->firstWhere('name', 'Model')->pivot->value;
+  $type = $laptop->attributes->firstWhere('name', '[Laptop] Loại laptop')->pivot->value ?? 'N/A';
+  $price = $laptop->attributes->firstWhere('name', 'Price')->pivot->value ?? 'N/A';
+  $dealprice = $laptop->attributes->firstWhere('name', 'Deal Price')->pivot->value ?? 'N/A';
+  $rating = $laptop->attributes->firstWhere('name', 'Rating')->pivot->value ?? 'N/A';
+  $brand = $laptop->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
+  $model = $laptop->attributes->firstWhere('name', 'Model')->pivot->value ?? 'N/A';
   $cpu = $laptop->attributes->firstWhere('name', '[Laptop] Vi xử lý')?->pivot->value ?? 'N/A';
   $cpu_core = $laptop->attributes->firstWhere('name', '[Laptop] Số nhân')?->pivot->value ?? 'N/A';
   $cpu_thread = $laptop->attributes->firstWhere('name', '[Laptop] Số luồng')?->pivot->value ?? 'N/A';
@@ -114,7 +117,7 @@
               <span class="name"> Hình sản phẩm </span>
             </a>
             <a href="javascript:void(0)" class="blue text-center" data-fancybox="" data-src="#pro-spec">
-              <img src="/template/2024/images/icon-thongso.png" alt=""
+              <img src="{{ asset('assets/img/sprites/icon-thongso.png') }}" alt=""
                 style="width: 50px;height: 50px;border: 1px solid #eee;padding: 5px 10px;">
               <span style="font-weight: bold;color: #000">Thông số kỹ thuật</span>
             </a>
@@ -122,10 +125,7 @@
 
           <div class="product-spec-group mb-4 font-300">
 
-            <h2 class="title" style="font-size: 20px;text-align: center;font-weight: 700;margin-bottom: 10px;">THÔNG SỐ
-              KỸ
-              THUẬT</h2>
-
+            <h2 class="title" style="font-size: 20px;text-align: center;font-weight: 700;margin-bottom: 10px;">THÔNG SỐ KỸ THUẬT</h2>
             <div class="item-content position-relative">
               <table style="width: 100.0%;" border="1" width="100%">
                 <tbody>
@@ -679,30 +679,6 @@
 
 
           </div>
-          <div class="d-flex align-items-center justify-content-center">
-            <div class="fb-like fb_iframe_widget" style="height: 19px;margin-right: 10px;"
-              data-href="https://www.anphatpc.com.vn/laptop-asus-rog-strix-g16-g614ji-n4125w.html" data-width=""
-              data-layout="button" data-action="like" data-size="small" data-share="false" fb-xfbml-state="rendered"
-              fb-iframe-plugin-query="action=like&amp;app_id=173939288101609&amp;container_width=0&amp;href=https%3A%2F%2Fwww.anphatpc.com.vn%2Flaptop-asus-rog-strix-g16-g614ji-n4125w.html&amp;layout=button&amp;locale=en_US&amp;sdk=joey&amp;share=false&amp;size=small&amp;width=">
-              <span style="vertical-align: bottom; width: 60px; height: 28px;"><iframe name="f34f2127d9be68a11"
-                  width="1000px" height="1000px" data-testid="fb:like Facebook Social Plugin"
-                  title="fb:like Facebook Social Plugin" frameborder="0" allowtransparency="true"
-                  allowfullscreen="true" scrolling="no" allow="encrypted-media"
-                  src="https://www.facebook.com/v11.0/plugins/like.php?action=like&amp;app_id=173939288101609&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Dfaa26945ce4b80acf%26domain%3Dwww.anphatpc.com.vn%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.anphatpc.com.vn%252Ffb9a71947d161d45f%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fwww.anphatpc.com.vn%2Flaptop-asus-rog-strix-g16-g614ji-n4125w.html&amp;layout=button&amp;locale=en_US&amp;sdk=joey&amp;share=false&amp;size=small&amp;width="
-                  style="border: none; visibility: visible; width: 60px; height: 28px;" class=""></iframe></span>
-            </div>
-            <div class="fb-share-button fb_iframe_widget"
-              data-href="https://www.anphatpc.com.vn/laptop-asus-rog-strix-g16-g614ji-n4125w.html" data-layout="button"
-              data-size="small" fb-xfbml-state="rendered"
-              fb-iframe-plugin-query="app_id=173939288101609&amp;container_width=46&amp;href=https%3A%2F%2Fwww.anphatpc.com.vn%2Flaptop-asus-rog-strix-g16-g614ji-n4125w.html&amp;layout=button&amp;locale=en_US&amp;sdk=joey&amp;size=small">
-              <span style="vertical-align: bottom; width: 67px; height: 20px;"><iframe name="f15a49e9790890ee9"
-                  width="1000px" height="1000px" data-testid="fb:share_button Facebook Social Plugin"
-                  title="fb:share_button Facebook Social Plugin" frameborder="0" allowtransparency="true"
-                  allowfullscreen="true" scrolling="no" allow="encrypted-media"
-                  src="https://www.facebook.com/v11.0/plugins/share_button.php?app_id=173939288101609&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Dfec0efcbcb01dfa30%26domain%3Dwww.anphatpc.com.vn%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.anphatpc.com.vn%252Ffb9a71947d161d45f%26relation%3Dparent.parent&amp;container_width=46&amp;href=https%3A%2F%2Fwww.anphatpc.com.vn%2Flaptop-asus-rog-strix-g16-g614ji-n4125w.html&amp;layout=button&amp;locale=en_US&amp;sdk=joey&amp;size=small"
-                  style="border: none; visibility: visible; width: 67px; height: 20px;" class=""></iframe></span>
-            </div>
-          </div>
         </div>
 
         <!-- pro-info-center -->
@@ -784,14 +760,14 @@
                 <tr>
                   <td width="160px" class="font-500"> Giá niêm yết: </td>
                   <td>
-                    <del style="color: #888888;" class="font-500"> 54.990.000 đ </del>
+                    <del style="color: #888888;" class="font-500"> {{ $price }} đ </del>
                   </td>
                 </tr>
                 <tr>
                   <td width="160px" class="font-500"> Giá khuyến mại: </td>
                   <td>
                     <b style="color: #ce0707" class="text-18 js-pro-total-price" data-price="42990000">
-                      42.990.000 đ
+                      {{ $dealprice }} đ
                     </b>
                     <span style="color: #888888;" class="text-12">
                       [Giá đã có VAT]
@@ -827,7 +803,7 @@
           </div>
           {{-- Khuyến mại - @Đinh Nam Nhớ làm --}}
           <div class="pro-special-offer-container">
-            <div class="spec-title d-flex align-items-center justify-content-between">
+            {{-- <div class="spec-title d-flex align-items-center justify-content-between">
               <div class="spec-price font-weight-bold">
                 KHUYẾN MẠI
               </div>
@@ -852,7 +828,7 @@
               <li>
                 <span class="text" style="white-space: pre-line;">✦ Túi chống sốc (TUNB0007,TUNB0001)</span>
               </li>
-            </ul>
+            </ul> --}}
           </div>
           <br>
           <!-- button -->
@@ -1757,4 +1733,137 @@
     });
   </script>
 
+@endpush
+
+@push('scripts')
+  <script>
+
+    $(function() {
+   
+        $("#js-viewmore-summary").click(function(){
+          $('.pro-info-summary .item.hide').toggleClass("d-block");
+          if($(this).text()=='Xem thêm >') {
+            $(this).text('< Thu gọn');
+          } else {
+              $(this).text('Xem thêm >');
+          }
+        });
+  
+        // 12/2021 thêm chức năng
+        checkContentHeight(650);
+  
+        // kiểm tra hiển thị giá appay theo thời gian
+        
+        checkAllPriceDisplay();
+  
+        getListPhone('');
+
+        searchDanhSachDangKy();
+
+        calculateAddOnSelected(); // addon
+
+        // 10-2020 -====- Đổi tab sản phẩm
+        changeProductTab();
+
+        calculatorVoucher();
+
+        save_product_view_history('48568');
+
+        $(".js-product-carousel").owlCarousel(optionProductCarousel);
+        
+        $('#js-tab-1').owlCarousel({
+            items:5,
+            margin:10,
+            loop:true,
+            autoplayHoverPause:false,
+            autoplay:true,
+            autoplayTimeout: 3000,
+            autoplaySpeed: 1500,
+            dots:false,
+            lazyLoad: true,
+            nav:true,
+            navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+            responsive:{
+                1200:{
+                    items:5,
+                },
+                1600:{
+                    items:6,
+                }
+            }
+        })
+  
+        // Tab san pham
+        $(".js-tab-title:first-child").addClass("active");
+        $(".product-tab-item:first-child").addClass("active");
+        // End Tab san pham
+
+        $('.js-items-variant').owlCarousel({
+            items: 3,
+            loop: false,
+            margin:8,
+            autoplay: false,
+            autoplayTimeout: 3000,
+            nav: true,
+            navText:['<i class="fa fa-chevron-left"></i>','<i class="fa fa-chevron-right"></i>'],
+            lazyLoad: true,
+            dots: false,
+                responsive:{
+                1200:{
+                    items:3,
+                },
+                1600:{
+                    items:4,
+                }
+            }
+        });
+
+        $('.image-title-item').on('click',function() {
+            var src = $(this).attr('data-img');
+            var html = `<img src="`+src+`" alt="image" />`;
+            $("#js-box-anh").html(html)
+        })
+
+        $(window).scroll(function(){
+            loadArtRelatedProduct();
+        });
+        // End 10-2020
+
+        $('#img_thumb li').click(function(){
+              $(this).addClass('current').siblings().removeClass('current');
+            return false;
+        });
+
+        // Review - Comment
+        $("#btn-open-rating-form").click(function(){
+            $("#rating-content").focus();
+            var top = $("#rating-content").offset().top;
+            $("#review-bottom .rowr").show();
+            $('html,body').animate({scrollTop:top-150},500);
+
+            return false;
+        });
+
+        $("#review-bottom #rating-content").click(function(){
+            $(".rowr").show();
+            return false;
+        });
+
+        $('body').click(function (e) {
+            var targ = $(".rating-form");
+            if (!targ.is(e.target) && targ.has(e.target).length === 0) {
+                $(".rowr").fadeOut(300);
+            }
+        });
+
+        $(".comment-form textarea").focus(function(){
+            $(this).parent().find(".form-input").show();
+        });
+
+
+        // End Review - Comment
+        
+        
+    });
+  </script>
 @endpush
