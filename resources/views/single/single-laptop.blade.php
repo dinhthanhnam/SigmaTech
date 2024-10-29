@@ -1,6 +1,10 @@
 @extends('layouts.app')
 @php
     $laptop_id = $laptop->id;
+<<<<<<< HEAD
+=======
+    $name = $laptop->name;
+>>>>>>> 30124982a380ea3fdf2ceebef69632b7993c4e06
     $type = $laptop->attributes->firstWhere('name', '[Laptop] Loại laptop')->pivot->value ?? 'N/A';
     $price = $laptop->attributes->firstWhere('name', 'Price')->pivot->value ?? 'N/A';
     $dealprice = $laptop->attributes->firstWhere('name', 'Deal Price')->pivot->value ?? 'N/A';
@@ -33,6 +37,11 @@
     $os = $laptop->attributes->firstWhere('name', '[Laptop] OS')?->pivot->value ?? 'N/A';
 
     $color = $laptop->attributes->firstWhere('name', '[Laptop] Màu sắc')?->pivot->value ?? 'N/A';
+<<<<<<< HEAD
+=======
+
+    $camera = $laptop->attributes->firstWhere('name', '[Laptop] Camera')?->pivot->value ?? 'N/A';
+>>>>>>> 30124982a380ea3fdf2ceebef69632b7993c4e06
 
 @endphp
 @section('content')
@@ -127,7 +136,10 @@
                     </div>
 
                     <div class="product-spec-group mb-4 font-300">
+<<<<<<< HEAD
 
+=======
+>>>>>>> 30124982a380ea3fdf2ceebef69632b7993c4e06
                         <h2 class="title" style="font-size: 20px;text-align: center;font-weight: 700;margin-bottom: 10px;">
                             THÔNG SỐ KỸ THUẬT</h2>
                         <div class="item-content position-relative">
@@ -135,6 +147,7 @@
                                 <tbody>
                                     <tr>
                                         <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+<<<<<<< HEAD
                                             <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><strong><span
                                                             style="line-height: 115%; color: black;">Hãng sản
                                                             xuất</span></strong></span></p>
@@ -144,20 +157,55 @@
                                                     style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><strong><a
                                                             href="https://www.anphatpc.com.vn/laptop-asus_dm1058.html">Laptop
                                                             Asus</a></strong></span>
+=======
+                                            <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
+                                                    <strong>
+                                                        <span style="line-height: 115%; color: black;">
+                                                            Hãng sản xuất
+                                                        </span>
+                                                    </strong>
+                                                </span>
+                                            </p>
+                                        </td>
+                                        <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
+                                            <p style="text-align: center;">
+                                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
+                                                    <strong>
+                                                        <a href="https://www.anphatpc.com.vn/laptop-asus_dm1058.html">
+                                                            {{ $brand }}
+                                                        </a>
+                                                    </strong>
+                                                </span>
+>>>>>>> 30124982a380ea3fdf2ceebef69632b7993c4e06
                                             </p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+<<<<<<< HEAD
                                             <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><strong><span
                                                             style="line-height: 115%; color: black;">Tên sản phẩm&nbsp;
                                                             &nbsp;</span></strong></span>
+=======
+                                            <p>
+                                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
+                                                    <strong>
+                                                        <span style="line-height: 115%; color: black;">Tên sản phẩm&nbsp;
+                                                            &nbsp;
+                                                        </span>
+                                                    </strong>
+                                                </span>
+>>>>>>> 30124982a380ea3fdf2ceebef69632b7993c4e06
                                             </p>
                                         </td>
                                         <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
                                             <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a
                                                     href="https://www.anphatpc.com.vn/laptop-asus-rog-strix-g16-g614ji-n4125w.html"
+<<<<<<< HEAD
                                                     target="_blank">Laptop Asus ROG Strix G16 G614JI-N4125W</a></span>
+=======
+                                                    target="_blank">{{ $name }}</a></span>
+>>>>>>> 30124982a380ea3fdf2ceebef69632b7993c4e06
                                         </td>
                                     </tr>
                                     <tr>
@@ -169,6 +217,7 @@
                                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                                             <p style="text-align: center;"><span
                                                     style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a
+<<<<<<< HEAD
                                                         href="https://www.anphatpc.com.vn/may-tinh-xach-tay-laptop.html"><strong><span
                                                                 style="line-height: 115%;">Laptop</span></strong></a><strong><span
                                                             style="line-height: 115%; color: black;">&nbsp;|&nbsp;<a
@@ -182,6 +231,16 @@
                                                                 target="_blank">Laptop
                                                                 cho lập trình viên</a>&nbsp;</span></strong><span
                                                         style="line-height: 115%; color: black;"><br></span></span></p>
+=======
+                                                        href="#"></a><strong><span
+                                                            style="line-height: 115%; color: black;">
+                                                            <a href="#" target="_blank">Laptop {{$type}}
+                                                              </a>
+                                                            </span>
+                                                          </strong>
+                                                          </span>
+                                                        </p>
+>>>>>>> 30124982a380ea3fdf2ceebef69632b7993c4e06
                                         </td>
                                     </tr>
                                     <tr>
@@ -202,9 +261,13 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                                             <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
+<<<<<<< HEAD
                                                     style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">Intel®
                                                     Core™
                                                     i7-13650HX&nbsp;Processor</span></p>
+=======
+                                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{$cpu}}</span></p>
+>>>>>>> 30124982a380ea3fdf2ceebef69632b7993c4e06
                                         </td>
                                     </tr>
                                     <tr>
@@ -216,7 +279,11 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                                             <p style="text-align: center;"><span
+<<<<<<< HEAD
                                                     style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">14</span>
+=======
+                                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{$cpu_core}}</span>
+>>>>>>> 30124982a380ea3fdf2ceebef69632b7993c4e06
                                             </p>
                                         </td>
                                     </tr>
@@ -229,7 +296,11 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                                             <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
+<<<<<<< HEAD
                                                     style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">20</span>
+=======
+                                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{$cpu_thread}}</span>
+>>>>>>> 30124982a380ea3fdf2ceebef69632b7993c4e06
                                             </p>
                                         </td>
                                     </tr>
@@ -242,8 +313,12 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                                             <p style="text-align: center;"><span
+<<<<<<< HEAD
                                                     style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">upto
                                                     4.90 GHz</span></p>
+=======
+                                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{$cpu_clock}}</span></p>
+>>>>>>> 30124982a380ea3fdf2ceebef69632b7993c4e06
                                         </td>
                                     </tr>
                                     <tr>
@@ -255,8 +330,12 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                                             <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
+<<<<<<< HEAD
                                                     style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">24
                                                     MB</span></p>
+=======
+                                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{$cpu_cache}}</span></p>
+>>>>>>> 30124982a380ea3fdf2ceebef69632b7993c4e06
                                         </td>
                                     </tr>
                                     <tr>
@@ -276,7 +355,11 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                                             <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
+<<<<<<< HEAD
                                                     style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">16GB&nbsp;</span>
+=======
+                                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{$ram}}&nbsp;</span>
+>>>>>>> 30124982a380ea3fdf2ceebef69632b7993c4e06
                                             </p>
                                         </td>
                                     </tr>
@@ -289,7 +372,11 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                                             <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
+<<<<<<< HEAD
                                                     style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">DDR5</span>
+=======
+                                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{$ram_type}}</span>
+>>>>>>> 30124982a380ea3fdf2ceebef69632b7993c4e06
                                             </p>
                                         </td>
                                     </tr>
@@ -302,7 +389,11 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                                             <p style="text-align: center;"><span
+<<<<<<< HEAD
                                                     style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">4800Mhz</span>
+=======
+                                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{$ram_bus}}</span>
+>>>>>>> 30124982a380ea3fdf2ceebef69632b7993c4e06
                                             </p>
                                         </td>
                                     </tr>
@@ -481,6 +572,7 @@
                                         </td>
                                     </tr>
                                     <tr>
+<<<<<<< HEAD
                                         <td style="width: 806.65pt; padding: .75pt .75pt .75pt .75pt;" colspan="2"
                                             width="1076">
                                             <p style="margin: 0cm; margin-bottom: .0001pt;"><span
@@ -618,6 +710,8 @@
                                         </td>
                                     </tr>
                                     <tr>
+=======
+>>>>>>> 30124982a380ea3fdf2ceebef69632b7993c4e06
                                         <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
                                             <p style="margin: 0cm; margin-bottom: .0001pt;"><span
                                                     style="font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">Camera</span>
@@ -625,6 +719,7 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                                             <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
+<<<<<<< HEAD
                                                     style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">720P
                                                     HD camera</span></p>
                                         </td>
@@ -653,6 +748,9 @@
                                                     style="font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">2
                                                     Loa</span>
                                             </p>
+=======
+                                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{$camera}}</span></p>
+>>>>>>> 30124982a380ea3fdf2ceebef69632b7993c4e06
                                         </td>
                                     </tr>
                                     <tr>
@@ -663,6 +761,7 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                                             <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
+<<<<<<< HEAD
                                                     style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">4-cell,
                                                     90WHrs</span></p>
                                         </td>
@@ -678,6 +777,9 @@
                                                     style="font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">Đi
                                                     kèm</span>
                                             </p>
+=======
+                                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{$pin}}</span></p>
+>>>>>>> 30124982a380ea3fdf2ceebef69632b7993c4e06
                                         </td>
                                     </tr>
                                     <tr>
@@ -689,6 +791,7 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                                             <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
+<<<<<<< HEAD
                                                     style="font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">Windows
                                                     11
                                                     Home</span></p>
@@ -706,6 +809,9 @@
                                                     style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">35.4
                                                     x 26.4 x 2.26 ~ 3.04
                                                     cm</span></p>
+=======
+                                                    style="font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">{{$os}}</span></p>
+>>>>>>> 30124982a380ea3fdf2ceebef69632b7993c4e06
                                         </td>
                                     </tr>
                                     <tr>
@@ -716,8 +822,12 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                                             <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
+<<<<<<< HEAD
                                                     style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">2.50
                                                     Kg</span></p>
+=======
+                                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{$weight}}</span></p>
+>>>>>>> 30124982a380ea3fdf2ceebef69632b7993c4e06
                                         </td>
                                     </tr>
                                     <tr>
@@ -728,6 +838,7 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                                             <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
+<<<<<<< HEAD
                                                     style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">Eclipse
                                                     Gray</span></p>
                                         </td>
@@ -742,12 +853,16 @@
                                             <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
                                                     style="font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">Trung
                                                     Quốc</span></p>
+=======
+                                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{$color}}</span></p>
+>>>>>>> 30124982a380ea3fdf2ceebef69632b7993c4e06
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
 
+<<<<<<< HEAD
 
                         <a href="javascript:void(0)" class="blue item-button" data-fancybox="" data-src="#pro-spec"> XEM
                             THÊM
@@ -755,12 +870,19 @@
                             SỐ <i class="fa fa-angle-double-down"></i></a>
 
 
+=======
+                        <a href="javascript:void(0)" class="blue item-button" data-fancybox="" data-src="#pro-spec"> XEM THÊM THÔNG SỐ <i class="fa fa-angle-double-down"></i></a>
+>>>>>>> 30124982a380ea3fdf2ceebef69632b7993c4e06
                     </div>
                 </div>
 
                 <!-- pro-info-center -->
                 <div class="pro-info-center">
+<<<<<<< HEAD
                     <h1 class="pro-name js-product-name"> {{ $laptop->name }}
+=======
+                    <h1 class="pro-name js-product-name"> {{ $name }}
+>>>>>>> 30124982a380ea3fdf2ceebef69632b7993c4e06
                         ( {{ $cpu }}
                         | {{ $gpu }}
                         | {{ $mon_size }}
@@ -818,9 +940,13 @@
                             <i class="fa fa-check-circle"></i>Cân nặng: {{ $weight }}
                         </span>
                         <!--7-->
+<<<<<<< HEAD
                         {{-- <span class="item hide d-block">
             <i class="fa fa-check-circle"></i>Tính năng: Đèn nền bàn phím Led RGB
           </span> --}}
+=======
+                        
+>>>>>>> 30124982a380ea3fdf2ceebef69632b7993c4e06
                         <!--8-->
                         <span class="item hide d-block">
                             <i class="fa fa-check-circle"></i>Màu sắc: {{ $color }}
@@ -886,6 +1012,7 @@
                     </div>
                     {{-- Khuyến mại - @Đinh Nam Nhớ làm --}}
                     <div class="pro-special-offer-container">
+<<<<<<< HEAD
                         {{-- <div class="spec-title d-flex align-items-center justify-content-between">
               <div class="spec-price font-weight-bold">
                 KHUYẾN MẠI
@@ -912,6 +1039,9 @@
                 <span class="text" style="white-space: pre-line;">✦ Túi chống sốc (TUNB0007,TUNB0001)</span>
               </li>
             </ul> --}}
+=======
+                        
+>>>>>>> 30124982a380ea3fdf2ceebef69632b7993c4e06
                     </div>
                     <br>
                     <!-- button -->
@@ -924,7 +1054,11 @@
                         </a>
                         <a href="javascript:void(0)" class="btn-addCart blue order-1 js-addCart"
                             onclick="addConfigToShoppingCart(49891,0,1);showCartSummary('.js-cart-count');">
+<<<<<<< HEAD
                             <b class="d-block text-18 font-500"> THÊM VÀO GIỎ HÀNG </b>
+=======
+                            <b class="d-block text-18 font-500"> CHO VÀO GIỎ </b>
+>>>>>>> 30124982a380ea3fdf2ceebef69632b7993c4e06
                             <span class="text-12 d-block"> Mua tiếp sản phẩm khác </span>
                         </a>
                         <!-- End Button Mua hàng -->
@@ -1033,6 +1167,7 @@
             </div>
         </div>
         <div style="display: none;" id="pro-spec">
+<<<<<<< HEAD
             <table style="width: 100.0%;" border="1" width="100%">
                 <tbody>
                     <tr>
@@ -1618,6 +1753,420 @@
                     </tr>
                 </tbody>
             </table>
+=======
+          <table style="width: 100.0%;" border="1" width="100%">
+            <tbody>
+                <tr>
+                    <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                        <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
+                                <strong>
+                                    <span style="line-height: 115%; color: black;">
+                                        Hãng sản xuất
+                                    </span>
+                                </strong>
+                            </span>
+                        </p>
+                    </td>
+                    <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
+                        <p style="text-align: center;">
+                            <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
+                                <strong>
+                                    <a href="https://www.anphatpc.com.vn/laptop-asus_dm1058.html">
+                                        {{ $brand }}
+                                    </a>
+                                </strong>
+                            </span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                        <p>
+                            <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
+                                <strong>
+                                    <span style="line-height: 115%; color: black;">Tên sản phẩm&nbsp;
+                                        &nbsp;
+                                    </span>
+                                </strong>
+                            </span>
+                        </p>
+                    </td>
+                    <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
+                        <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a
+                                href="https://www.anphatpc.com.vn/laptop-asus-rog-strix-g16-g614ji-n4125w.html"
+                                target="_blank">{{ $name }}</a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                        <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><strong><span
+                                        style="line-height: 115%; color: black;">Dòng
+                                        Laptop</span></strong></span></p>
+                    </td>
+                    <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
+                        <p style="text-align: center;"><span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a
+                                    href="#"></a><strong><span
+                                        style="line-height: 115%; color: black;">
+                                        <a href="#" target="_blank">Laptop {{$type}}
+                                          </a>
+                                        </span>
+                                      </strong>
+                                      </span>
+                                    </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" colspan="2"
+                        width="303">
+                        <p style="margin: 0cm; margin-bottom: .0001pt;"><span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><strong><span
+                                        style="color: black;">Bộ vi xử lý</span></strong><span
+                                    style="color: black;">&nbsp;</span></span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                        <p style="margin: 0cm; margin-bottom: .0001pt;"><span
+                                style="font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">Công
+                                nghệ
+                                CPU</span></p>
+                    </td>
+                    <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
+                        <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{$cpu}}</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                        <p style="margin: 0cm; margin-bottom: .0001pt;"><span
+                                style="font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">Số
+                                nhân</span>
+                        </p>
+                    </td>
+                    <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
+                        <p style="text-align: center;"><span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{$cpu_core}}</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                        <p style="margin: 0cm; margin-bottom: .0001pt;"><span
+                                style="font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">Số
+                                luồng</span>
+                        </p>
+                    </td>
+                    <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
+                        <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{$cpu_thread}}</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                        <p style="margin: 0cm; margin-bottom: .0001pt;"><span
+                                style="font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">Tốc
+                                độ tối
+                                đa</span></p>
+                    </td>
+                    <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
+                        <p style="text-align: center;"><span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{$cpu_clock}}</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                        <p style="margin: 0cm; margin-bottom: .0001pt;"><span
+                                style="font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">Bộ
+                                nhớ
+                                đệm</span></p>
+                    </td>
+                    <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
+                        <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{$cpu_cache}}</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 806.65pt; padding: .75pt .75pt .75pt .75pt;" colspan="2"
+                        width="1076">
+                        <p style="margin: 0cm; margin-bottom: .0001pt;"><span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><strong><span
+                                        style="color: black;">Bộ nhớ trong (RAM)</span></strong></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                        <p style="margin: 0cm; margin-bottom: .0001pt;"><span
+                                style="font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">RAM</span>
+                        </p>
+                    </td>
+                    <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
+                        <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{$ram}}&nbsp;</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                        <p style="margin: 0cm; margin-bottom: .0001pt;"><span
+                                style="font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">Loại
+                                RAM</span>
+                        </p>
+                    </td>
+                    <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
+                        <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{$ram_type}}</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                        <p style="margin: 0cm; margin-bottom: .0001pt;"><span
+                                style="font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">Tốc
+                                độ Bus
+                                RAM</span></p>
+                    </td>
+                    <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
+                        <p style="text-align: center;"><span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{$ram_bus}}</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                        <p style="margin: 0cm; margin-bottom: .0001pt;"><span
+                                style="font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">Số
+                                khe
+                                cắm</span></p>
+                    </td>
+                    <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
+                        <p style="text-align: center;"><span
+                                style="line-height: 115%; font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">2
+                                khe (đã sử dụng 1)</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                        <p style="margin: 0cm; margin-bottom: .0001pt;"><span
+                                style="font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">Hỗ
+                                trợ RAM
+                                tối
+                                đa</span></p>
+                    </td>
+                    <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
+                        <p style="text-align: center;"><span
+                                style="line-height: 115%; font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">&nbsp;Nâng
+                                cấp&nbsp;tối đa 32GB</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 806.65pt; padding: .75pt .75pt .75pt .75pt;" colspan="2"
+                        width="1076">
+                        <p style="margin: 0cm; margin-bottom: .0001pt;"><span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><strong><span
+                                        style="color: black;">Ổ cứng&nbsp;</span></strong></span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                        <p style="margin: 0cm; margin-bottom: .0001pt;"><span
+                                style="font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">Dung
+                                lượng</span></p>
+                    </td>
+                    <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
+                        <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><strong>512GB
+                                    SSD</strong>&nbsp;PCIe® 4.0 NVMe™ M.2</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                        <p style="margin: 0cm; margin-bottom: .0001pt;"><span
+                                style="font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">Tốc
+                                độ vòng
+                                quay</span></p>
+                    </td>
+                    <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
+                        <p style="margin: 0cm; margin-bottom: .0001pt;"><span
+                                style="font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">&nbsp;</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                        <p style="margin: 0cm; margin-bottom: .0001pt;"><span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><strong><span
+                                        style="color: black;">Khe cắm SSD mở
+                                        rộng</span></strong></span></p>
+                    </td>
+                    <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
+                        <p style="margin: 0cm 0cm 0.0001pt; text-align: center;"><span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">2
+                                slots SSD PCIe (Đã sử
+                                dụng
+                                1)</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                        <p style="margin: 0cm; margin-bottom: .0001pt;"><span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><strong><span
+                                        style="color: black;">Ổ đĩa quang
+                                        (ODD)&nbsp;</span></strong></span></p>
+                    </td>
+                    <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
+                        <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
+                                style="font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">Không
+                                có</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 806.65pt; padding: .75pt .75pt .75pt .75pt;" colspan="2"
+                        width="1076">
+                        <p style="margin: 0cm; margin-bottom: .0001pt;"><span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><strong><span
+                                        style="color: black;">Màn hình</span></strong></span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                        <p style="margin: 0cm; margin-bottom: .0001pt;"><span
+                                style="font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">Kích
+                                thước
+                                màn
+                                hình</span></p>
+                    </td>
+                    <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
+                        <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">16-inch</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                        <p style="margin: 0cm; margin-bottom: .0001pt;"><span
+                                style="font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">Độ
+                                phân
+                                giải</span></p>
+                    </td>
+                    <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
+                        <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">QHD+
+                                (2560 x 1600,
+                                WQXGA)</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                        <p style="margin: 0cm; margin-bottom: .0001pt;"><span
+                                style="font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">Tần
+                                số
+                                quét</span></p>
+                    </td>
+                    <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
+                        <p style="text-align: center;"><span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">240Hz</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                        <p style="margin: 0cm; margin-bottom: .0001pt;"><span
+                                style="font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">Công
+                                nghệ màn
+                                hình</span></p>
+                    </td>
+                    <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
+                        <p style="text-align: center;"><span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">16:10,
+                                3ms IPS-level, 500
+                                nits, 100% DCI-P3, anti-glare display</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 806.65pt; padding: .75pt .75pt .75pt .75pt;" colspan="2"
+                        width="1076">
+                        <p style="margin: 0cm; margin-bottom: .0001pt;"><span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><strong><span
+                                        style="color: black;">Đồ Họa (VGA)&nbsp;</span></strong></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                        <p style="margin: 0cm; margin-bottom: .0001pt;"><span
+                                style="font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">Card
+                                màn
+                                hình</span></p>
+                    </td>
+                    <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
+                        <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">&nbsp;NVIDIA
+                                GeForce&nbsp;RTX&nbsp;4070&nbsp;8GB GDDR6</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                        <p style="margin: 0cm; margin-bottom: .0001pt;"><span
+                                style="font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">Camera</span>
+                        </p>
+                    </td>
+                    <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
+                        <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{$camera}}</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                        <p style="margin: 0cm; margin-bottom: .0001pt;"><span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><strong><span
+                                        style="color: black;">Kiểu Pin</span></strong></span></p>
+                    </td>
+                    <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
+                        <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{$pin}}</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                        <p style="margin: 0cm; margin-bottom: .0001pt;"><span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><strong><span
+                                        style="color: black;">Hệ điều hành&nbsp;(bản quyền) đi
+                                        kèm&nbsp;</span></strong></span></p>
+                    </td>
+                    <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
+                        <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
+                                style="font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">{{$os}}</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                        <p style="margin: 0cm; margin-bottom: .0001pt;"><span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><strong><span
+                                        style="color: black;">Trọng Lượng</span></strong></span></p>
+                    </td>
+                    <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
+                        <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{$weight}}</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                        <p style="margin: 0cm; margin-bottom: .0001pt;"><span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><strong><span
+                                        style="color: black;">Màu sắc</span></strong></span></p>
+                    </td>
+                    <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
+                        <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{$color}}</span></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+>>>>>>> 30124982a380ea3fdf2ceebef69632b7993c4e06
         </div>
 
     </section>
