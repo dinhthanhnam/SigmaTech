@@ -697,7 +697,6 @@
                             <b class="d-block text-18 font-500"> ĐẶT MUA NGAY </b>
                             <span class="text-12 d-block"> Nhanh chóng, thuận tiện </span>
                         </a>
-
                         <form action="{{ route('cart.add') }}" method="POST" class="d-inline">
                             @csrf
                             <input type="hidden" name="product_id" value="{{ $laptop->id }}">
@@ -711,11 +710,10 @@
                                 <span class="text-12 d-block">Mua tiếp sản phẩm khác</span>
                             </button>
                         </form>
-
-
                         <!-- End Button Mua hàng -->
                         <!-- Button trả góp -->
-                        <a href="javascript:void(0)" class="btn-payinstall order-0 js-buy-tragop">
+                        <a href="javascript:void(0)" class="btn-payinstall order-0 js-buy-tragop"
+                            onclick="addConfigToShoppingCart(49891,0,1,'payinstall');">
                             <b class="d-block text-18 font-500"> MUA TRẢ GÓP </b>
                             <span class="text-12 d-block"> Thẻ tín dụng, Visa, Master </span>
                         </a>
