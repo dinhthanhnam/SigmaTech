@@ -13,7 +13,7 @@ class LaptopController extends Controller
         $laptop = Laptop::with('attributes')->findOrFail($id);
 
         // Trả về view hoặc dữ liệu JSON, ở đây trả về view cho ví dụ
-        return view('single-laptop', compact('laptop'));
+        return view('single.single-laptop', compact('laptop'));
     }
 }
 

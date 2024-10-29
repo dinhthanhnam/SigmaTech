@@ -61,8 +61,8 @@ Route::get('laptop-outlet', function () {
   return view('pages.laptop-outlet');
 })->name('pages.laptop-outlet');
 Route::get('account', function () {
-  return view('useraccount');
-})->name('useraccount');
+  return view('user-account');
+})->name('user-account');
 
 //admin view
 Route::get('admin/new-product', function () {
@@ -70,4 +70,4 @@ Route::get('admin/new-product', function () {
 })->name('new-product');
 
 //single laptop
-Route::get('/laptop/{id}', [LaptopController::class, 'show'])->name('laptop.show');
+Route::get('laptops/{id}', [LaptopController::class, 'show'])->name('laptop.show');

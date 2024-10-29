@@ -17,7 +17,9 @@ class AttributeSeeder extends Seeder
             //Attribute dùng chung cho nhiều loại (Laptop, CPU, GPU)
             ['name' => 'Brand', 'data_type' => 'string'],
             ['name' => 'Model', 'data_type' => 'string'],
-
+            ['name' => 'Price', 'data_type' => 'integer'],
+            ['name' => 'Deal Price', 'data_type' => 'integer'],
+            ['name' => 'Rating', 'data_type' => 'float'],
             //laptop_attribute
             
             ['name' => '[Laptop] Loại laptop', 'data_type' => 'string'],
