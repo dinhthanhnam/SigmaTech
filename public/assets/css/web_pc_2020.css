@@ -4682,27 +4682,122 @@ fieldset.shadow.cor {
     padding: 20px;
 }
 
-.boxInput,
-input[name="register_captcha"] {
-    width: 300px;
-    height: 30px;
-    border: solid 1px #ddd;
-    padding-left: 5px;
-    margin-right: 10px;
-    border-radius: 5px;
-    margin-top: 10px;
+.customer-page .form-group {
+    margin-bottom: 15px;
 }
 
-input[name="register_captcha"] {}
+.customer-page label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 540;
+    font-size: 16px;
+    color: #333;
+}
+.customer-page .form-group input{
+    flex: 0.5;
+    padding: 10px; 
+    border: 1px solid #546ce8;
+    border-radius: 5px;
+}
+
+.customer-page .form-group .gender-options {
+    display: flex;
+    gap: 15px; 
+    align-items: center; 
+}
+
+.customer-page .form-group .gender-options label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+.customer-page .form-group .gender-options input {
+    margin-right: 5px;
+}
+
+.customer-page .text-center button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #546ce8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.customer-page .text-center button:hover {
+    background-color: #4457b1;
+}
+
+.login-form {
+    padding: 20px;
+}
+
+.login-form .form-group {
+    margin-bottom: 15px;
+}
+
+.login-form label {
+    font-weight: 500;
+    color: #333;
+}
+
+.login-form .btn-primary {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #546ce8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.login-form .btn-primary:hover {
+    background-color: #4457b1;
+}
+
+.forgot-password {
+    color: #546ce8;
+    font-size: 14px;
+    text-decoration: none;
+    float: right;
+
+}
+
+.social-login {
+    width: 100%;
+    max-width: 200px;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+.register-info {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    margin-top: 20px;
+}
+
+.register-info .blue {
+    font-weight: bold;
+    color: #546ce8;
+    text-decoration: none;
+}
+
+.register-info .blue:hover {
+    text-decoration: underline;
+}
 
 .customer-page input.btn_red {
     padding: 0 25px;
-    line-height: 30px;
+    line-height: 40px;
     white-space: nowrap;
     text-decoration: none;
-    text-shadow: 1px 1px 2px #666;
     border: 0;
-    font-size: 14px;
+    font-size: 16px;
     display: inline-block;
     background: #db0006;
     color: #fff;
