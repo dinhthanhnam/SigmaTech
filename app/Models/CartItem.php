@@ -8,7 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class CartItem extends Model
 {
     use HasFactory;
-
-    protected $table = 'cart_items';
-    protected $fillable = ['user_id', 'product_type', 'product_id', 'quantity', 'price']; 
+    protected $fillable = [
+        'user_id',
+        'product_type', // cpu, gpu, laptop, monitor
+        'product_id',
+        'name',
+        'category_id',
+        'quantity',
+    ];
 }

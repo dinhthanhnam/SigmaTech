@@ -13,14 +13,13 @@ return new class extends Migration
     {
         Schema::create('cart_items', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('user_id');
-            $table->string('product_type');
-            $table->unsignedBigInteger('product_id'); 
-            $table->integer('quantity')->default(1);
-            $table->decimal('price', 10, 2);
+            $table->foreignId('user_id')->constrained()->onDelete('cascade'); // Khóa ngoại đến bảng users
+            $table->string('product_type'); // Loại sản phẩm (cpu, gpu, laptop, monitor)
+            $table->unsignedBigInteger('product_id'); // ID của sản phẩm trong bảng tương ứng
+            $table->string('name'); // Tên sản phẩm
+            $table->unsignedBigInteger('category_id'); // ID danh mục sản phẩm
+            $table->integer('quantity')->default(1); // Số lượng sản phẩm
             $table->timestamps();
-        
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
         
     }

@@ -1,7 +1,9 @@
 @extends('layouts.app')
+
 @push('styles')
     <link rel="stylesheet" href="{{ asset('assets/css/cart.css') }}">
 @endpush
+
 @section('content')
     <div class="container">
         <div aria-label="breadcrumb">
@@ -15,7 +17,7 @@
             </ol>
         </div>
 
-        <div class="cart-page bg-white p-4 ">
+        <div class="cart-page bg-white p-4">
             <h3 class="text-center mb-4">Giỏ hàng của bạn</h3>
 
             @if (isset($cartItems) && count($cartItems) === 0)
@@ -40,7 +42,7 @@
                             @php $itemTotal = $item->price * $item->quantity; @endphp
                             <tr>
                                 <td><img src="{{ $item->image }}" alt="{{ $item->name }}" style="width: 60px;"></td>
-                                <td>{{ $item->name }}</td>
+                                <td>{{ $item->product_name }}</td>
                                 <td>{{ $item->quantity }}</td>
                                 <td>{{ number_format($item->price, 0, ',', '.') }} đ</td>
                                 <td>{{ number_format($itemTotal, 0, ',', '.') }} đ</td>
@@ -52,7 +54,7 @@
 
                 <div class="d-flex justify-content-between align-items-center mt-4">
                     <h5>Tổng tiền: <span class="text-danger">{{ number_format($totalPrice, 0, ',', '.') }} đ</span></h5>
-                    <a href="{{ route('checkout') }}" class="btn btn-success">Đặt hàng ngay</a>
+                    <a href="" class="btn btn-success">Đặt hàng ngay</a>
                 </div>
             @endif
         </div>

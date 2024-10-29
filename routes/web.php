@@ -76,3 +76,5 @@ Route::get('laptops/{type}/{brand}/{id}', [LaptopController::class, 'show'])->na
 
 //cart
 Route::get('/cart', [CartController::class, 'index'])->name('cart');
+Route::post('/cart/add', [CartController::class, 'add'])->name('cart.add');
+
