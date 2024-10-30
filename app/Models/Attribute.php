@@ -20,4 +20,9 @@ class Attribute extends Model
         return $this->belongsToMany(Laptop::class, 'laptop_attribute')
                     ->withPivot('value'); // Lấy cả cột value từ bảng trung gian
     }
+    public function cpus()
+    {
+        return $this->belongsToMany(CPU::class, 'cpu_attribute')
+                    ->withPivot('value'); // Lấy cả cột value từ bảng trung gian
+    }
 }

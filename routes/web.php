@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\CPUController;
 use App\Http\Controllers\UserController;
 use App\Http\Middleware\AuthAdmin;
 use Illuminate\Support\Facades\Auth;
@@ -71,3 +72,6 @@ Route::get('admin/new-product', function () {
 
 //single laptop
 Route::get('laptops/{type}/{brand}/{id}', [LaptopController::class, 'show'])->name('laptop.show');
+
+//single cpu
+Route::get('cpus/{brand}/{id}', [CPUController::class, 'show'])->name('cpu.show');
