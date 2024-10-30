@@ -4,16 +4,36 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Laptop;
+use App\Models\CPU;
+
 use App\Models\CartItem;
 
 
 class CartController extends Controller
 {
-    public function index()
+    public function show()
     {
         $userId = auth()->id(); // Lấy ID người dùng đã đăng nhập
         $cartItems = CartItem::where('user_id', $userId)->get(); // Lấy các sản phẩm trong giỏ hàng của người dùng
+        foreach ($cartItems as $item) {
+            switch( $item->product_type) {
+                case 'laptop':
+                    $laptop = Laptop::where('id', $item->product_id)
+                    ->with('attributes')
+                    ->first();
+                $item->dealprice = $laptop->attributes->where('name', 'Deal Price')->first()->pivot->value;  // Gán giá cho cart item
+                $item->price = $laptop->attributes->where('name', 'Price')->first()->pivot->value; 
+                break;
+                case 'cpu':
+                    $cpu = CPU::where('id', $item->product_id)
+                    ->with('attributes')
+                    ->first();
+                $item->dealprice = $cpu->attributes->where('name', 'Deal Price')->first()->pivot->value;  // Gán giá cho cart item
+                $item->price = $cpu->attributes->where('name', 'Price')->first()->pivot->value; 
+                break;
 
+            }
+        }
         return view('cart', compact('cartItems')); 
     }
 
@@ -25,16 +45,14 @@ class CartController extends Controller
         $userId = auth()->id(); // ID người dùng đã đăng nhập
         $quantity = $request->quantity; // Số lượng mặc định là 1
         $productName = $request->product_name; // Lấy tên sản phẩm từ request
-        $categoryId = $request->category_id; // Lấy category_id từ request
-
         // Khai báo biến sản phẩm
         $product = null;
 
         // Tìm sản phẩm tương ứng từ bảng tương ứng
         switch ($productType) {
-            // case 'cpu':
-            //     $product = Cpu::findOrFail($productId);
-            //     break;
+            case 'cpu':
+                $product = Cpu::findOrFail($productId);
+                break;
             // case 'gpu':
             //     $product = Gpu::findOrFail($productId);
             //     break;
@@ -67,7 +85,6 @@ class CartController extends Controller
                 'product_type' => $productType,
                 'quantity' => $quantity,
                 'name' => $productName, // Lưu tên sản phẩm
-                'category_id' => $categoryId, // Lưu category_id
             ]);
         }
 

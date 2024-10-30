@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Attribute;
-use App\Models\CPU;
+use App\Models\Cpu;
 use App\Models\CPUAttribute;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -27,7 +27,7 @@ class CpuSeeder extends Seeder
                 ['name' => 'Price', 'value' => '5030000'],
                 ['name' => 'Deal Price', 'value' => '4290000'],
                 ['name' => 'Rating', 'value' => '5'],
-                ['name' => '[CPU] Socket', 'value' => '1700'],
+                ['name' => '[CPU] Socket', 'value' => 'LGA1700'],
                 ['name' => '[CPU] Tốc độ cơ bản', 'value' => '2500'],
                 ['name' => '[CPU] Tốc độ tối đa', 'value' => '4600'], 
                 ['name' => '[CPU] Nhân CPU', 'value' => '6'],
@@ -45,7 +45,7 @@ class CpuSeeder extends Seeder
             ]    
         ];
         foreach ($cpus as $cpuData) {
-            $cpu = CPU::create([
+            $cpu = Cpu::create([
                 'name' => $cpuData['name'],
                 'category_id' => $cpuData['category_id'],
             ]);

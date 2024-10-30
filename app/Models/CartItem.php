@@ -10,10 +10,9 @@ class CartItem extends Model
     use HasFactory;
     protected $fillable = [
         'user_id',
-        'product_type', // cpu, gpu, laptop, monitor
+        'product_type', 
         'product_id',
         'name',
-        'category_id',
         'quantity',
     ];
 }

@@ -47,10 +47,10 @@
                             </div>
                             <!-- Giá sản phẩm -->
                             <div class="item-price ">
-                                <span class="text-danger fw-bold me-2">{{ number_format($item->price, 0, ',', '.') }}
+                                <span class="text-danger fw-bold me-2">{{ number_format($item->dealprice, 0, ',', '.') }}
                                     đ</span>
                                 <div>
-                                    <del class="text-muted">{{ number_format($item->original_price, 0, ',', '.') }} đ</del>
+                                    <del class="text-muted">{{ number_format($item->price, 0, ',', '.') }} đ</del>
 
                                 </div>
                                 <div class="item-quantity d-flex">

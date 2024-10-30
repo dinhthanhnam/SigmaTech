@@ -328,7 +328,8 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                                             <p style="text-align: center;"><span
-                                                    style="line-height: 115%; font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;"> {{ $ram_slots }}</span></p>
+                                                    style="line-height: 115%; font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">
+                                                    {{ $ram_slots }}</span></p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -341,7 +342,8 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                                             <p style="text-align: center;"><span
-                                                    style="line-height: 115%; font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">{{$ram_max}}</span></p>
+                                                    style="line-height: 115%; font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">{{ $ram_max }}</span>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -360,7 +362,8 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                                             <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
-                                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $ssd }}</span></p>
+                                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $ssd }}</span>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -372,7 +375,8 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                                             <p style="margin: 0cm 0cm 0.0001pt; text-align: center;"><span
-                                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{$ssd_slots}}</span></p>
+                                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $ssd_slots }}</span>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -406,7 +410,8 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                                             <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
-                                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{$mon_res}}</span></p>
+                                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $mon_res }}</span>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -431,7 +436,8 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                                             <p style="text-align: center;"><span
-                                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $mon_fea }}</span></p>
+                                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $mon_fea }}</span>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -452,7 +458,8 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                                             <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
-                                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{$gpu}}</span></p>
+                                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $gpu }}</span>
+                                            </p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -604,7 +611,8 @@
                                 <tr>
                                     <td width="160px" class="font-500"> Giá niêm yết: </td>
                                     <td>
-                                        <del style="color: #888888;" class="font-500"> {{ $price }} đ </del>
+                                        <del style="color: #888888;" class="font-500">
+                                            {{ number_format($price, 0, ',', '.') }} đ </del>
                                     </td>
                                 </tr>
                                 <tr>
@@ -612,7 +620,7 @@
                                     <td>
                                         <b style="color: #ce0707" class="text-18 js-pro-total-price"
                                             data-price="42990000">
-                                            {{ $dealprice }} đ
+                                            {{ number_format($dealprice, 0, ',', '.') }} đ
                                         </b>
                                         <span style="color: #888888;" class="text-12">
                                             [Giá đã có VAT]
@@ -670,10 +678,9 @@
 
                         <form id="addCartForm" action="{{ route('cart.add') }}" method="POST" style="display: none;">
                             @csrf
-                            <input type="hidden" name="product_id" value="{{ $laptop->id }}">
+                            <input type="hidden" name="product_id" value="{{ $laptop_id }}">
                             <input type="hidden" name="product_type" value="laptop">
-                            <input type="hidden" name="category_id" value="{{ $laptop->category_id }}">
-                            <input type="hidden" name="product_name" value="{{ $laptop->name }}">
+                            <input type="hidden" name="product_name" value="{{ $name }}">
                             <input type="hidden" name="quantity" value="1" min="1">
                         </form>
 
@@ -833,8 +840,7 @@
                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                             <p style="text-align: center;"><span
                                     style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a
-                                        href="#"></a><strong><span
-                                            style="line-height: 115%; color: black;">
+                                        href="#"></a><strong><span style="line-height: 115%; color: black;">
                                             <a href="#" target="_blank">Laptop {{ $type }}
                                             </a>
                                         </span>
@@ -844,8 +850,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" colspan="2"
-                            width="303">
+                        <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" colspan="2" width="303">
                             <p style="margin: 0cm; margin-bottom: .0001pt;"><span
                                     style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><strong><span
                                             style="color: black;">Bộ vi xử lý</span></strong><span
@@ -918,8 +923,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td style="width: 806.65pt; padding: .75pt .75pt .75pt .75pt;" colspan="2"
-                            width="1076">
+                        <td style="width: 806.65pt; padding: .75pt .75pt .75pt .75pt;" colspan="2" width="1076">
                             <p style="margin: 0cm; margin-bottom: .0001pt;"><span
                                     style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><strong><span
                                             style="color: black;">Bộ nhớ trong (RAM)</span></strong></span>
@@ -973,7 +977,8 @@
                         </td>
                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                             <p style="text-align: center;"><span
-                                    style="line-height: 115%; font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;"> {{ $ram_slots }}</span></p>
+                                    style="line-height: 115%; font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">
+                                    {{ $ram_slots }}</span></p>
                         </td>
                     </tr>
                     <tr>
@@ -986,12 +991,12 @@
                         </td>
                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                             <p style="text-align: center;"><span
-                                    style="line-height: 115%; font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">{{$ram_max}}</span></p>
+                                    style="line-height: 115%; font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">{{ $ram_max }}</span>
+                            </p>
                         </td>
                     </tr>
                     <tr>
-                        <td style="width: 806.65pt; padding: .75pt .75pt .75pt .75pt;" colspan="2"
-                            width="1076">
+                        <td style="width: 806.65pt; padding: .75pt .75pt .75pt .75pt;" colspan="2" width="1076">
                             <p style="margin: 0cm; margin-bottom: .0001pt;"><span
                                     style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><strong><span
                                             style="color: black;">Ổ cứng&nbsp;</span></strong></span></p>
@@ -1005,7 +1010,8 @@
                         </td>
                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                             <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
-                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $ssd }}</span></p>
+                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $ssd }}</span>
+                            </p>
                         </td>
                     </tr>
                     <tr>
@@ -1017,12 +1023,12 @@
                         </td>
                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                             <p style="margin: 0cm 0cm 0.0001pt; text-align: center;"><span
-                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{$ssd_slots}}</span></p>
+                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $ssd_slots }}</span>
+                            </p>
                         </td>
                     </tr>
                     <tr>
-                        <td style="width: 806.65pt; padding: .75pt .75pt .75pt .75pt;" colspan="2"
-                            width="1076">
+                        <td style="width: 806.65pt; padding: .75pt .75pt .75pt .75pt;" colspan="2" width="1076">
                             <p style="margin: 0cm; margin-bottom: .0001pt;"><span
                                     style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><strong><span
                                             style="color: black;">Màn hình</span></strong></span></p>
@@ -1051,7 +1057,8 @@
                         </td>
                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                             <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
-                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{$mon_res}}</span></p>
+                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $mon_res }}</span>
+                            </p>
                         </td>
                     </tr>
                     <tr>
@@ -1076,12 +1083,12 @@
                         </td>
                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                             <p style="text-align: center;"><span
-                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $mon_fea }}</span></p>
+                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $mon_fea }}</span>
+                            </p>
                         </td>
                     </tr>
                     <tr>
-                        <td style="width: 806.65pt; padding: .75pt .75pt .75pt .75pt;" colspan="2"
-                            width="1076">
+                        <td style="width: 806.65pt; padding: .75pt .75pt .75pt .75pt;" colspan="2" width="1076">
                             <p style="margin: 0cm; margin-bottom: .0001pt;"><span
                                     style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><strong><span
                                             style="color: black;">Đồ Họa (VGA)&nbsp;</span></strong></span>
@@ -1097,7 +1104,8 @@
                         </td>
                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                             <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
-                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{$gpu}}</span></p>
+                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $gpu }}</span>
+                            </p>
                         </td>
                     </tr>
                     <tr>

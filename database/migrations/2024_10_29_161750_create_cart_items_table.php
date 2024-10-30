@@ -17,7 +17,6 @@ return new class extends Migration
             $table->string('product_type'); // Loại sản phẩm (cpu, gpu, laptop, monitor)
             $table->unsignedBigInteger('product_id'); // ID của sản phẩm trong bảng tương ứng
             $table->string('name'); // Tên sản phẩm
-            $table->unsignedBigInteger('category_id'); // ID danh mục sản phẩm
             $table->integer('quantity')->default(1); // Số lượng sản phẩm
             $table->timestamps();
         });

@@ -76,6 +76,7 @@
     font-weight: bold; 
 }
 .item-quantity {
+    padding-top: 20px;
     display: flex; 
     align-items: center; 
 }
