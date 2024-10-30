@@ -47,8 +47,7 @@
 
                 <div class="register-info">
                     <p><strong>Bạn chưa là thành viên?</strong> Đăng ký là thành viên để hưởng nhiều lợi ích và đặt mua
-                        hàng
-                        dễ dàng hơn.</p>
+                        hàng dễ dàng hơn.</p>
                     <a href="{{ route('register') }}" class="btn btn-link blue">Đăng ký tài khoản</a>
                 </div>
             </form>

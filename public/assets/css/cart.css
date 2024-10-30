@@ -1,0 +1,108 @@
+.cart-page {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+}
+.cart-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 0;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.delete-btn {
+    padding: 0 0 0 50px;
+    font-size: 14px;
+    color: gray;
+}
+.item-image img {
+    width: 100%;
+    height: auto;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-name h5 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+.item-price {
+    font-size: 1rem;
+    padding-top: 30px;
+    text-align: right;
+}
+
+.item-quantity {
+    margin-top: 8px;
+}
+
+.total-price-section {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+.total-label {
+    font-weight: bold;
+}
+
+.total-amount {
+    font-weight: bold;
+    color: red;
+}
+.custom-order-btn {
+    font-size: 1.3rem;
+    padding: 5px;
+    background-color: #c90000; 
+    border: none; 
+    border-radius: 8px; 
+    transition: background-color 0.3s ease; 
+}
+
+.custom-order-btn:hover {
+    background-color: #8b0202; 
+}
+
+.custom-order-btn .btn {
+    color: white; 
+    font-weight: bold; 
+}
+.item-quantity {
+    display: flex; 
+    align-items: center; 
+}
+
+.qty-btn {
+    border: 1px solid #ccc; 
+    padding: 5px 10px;
+    background-color: #f8f8f8; 
+    cursor: pointer; 
+}
+
+.quantity-input {
+    border: 0.5px solid #ccc; 
+    padding: 5px; 
+    text-align: center; 
+}
+
+.qtyplus {
+    border-radius: 5px 0 0 5px;
+    background-color: white;
+}
+.qtyminus{
+    border-radius: 0 5px 5px 0;
+    background-color: white;
+}
+
+.quantity-input {
+    width: 50px;
+}
+

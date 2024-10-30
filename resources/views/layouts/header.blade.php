@@ -86,11 +86,13 @@
                 @endif
 
                 <div class="item clearfix">
-                    <a href="#" class="d-block position-relative" title="Giỏ hàng của bạn" id="cart-icon">
-                        <img src="{{ asset('assets/img/header-icon-right/cart.png') }}" class="my-2"
-                            alt="cart" />
+                    <a href="{{ Auth::check() ? route('cart') : route('login') }}" 
+                       class="d-block position-relative" 
+                       title="Giỏ hàng của bạn" id="cart-icon">
+                        <img src="{{ asset('assets/img/header-icon-right/cart.png') }}" class="my-2" alt="cart" />
                     </a>
                 </div>
+                
 
             </div>
             <!-- mennu -->

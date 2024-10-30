@@ -16,6 +16,9 @@ class LaptopController extends Controller
         $laptopBrand = optional($laptop->attributes->where('name', 'Brand')->first())->pivot->value;
         $laptopType = optional($laptop->attributes->where('name', '[Laptop] Loại laptop')->first())->pivot->value;
 
+        $categoryId = optional($laptop->category_id); 
+        $name = optional($laptop->name); 
+
         // Kiểm tra xem các thông tin brand và type từ URL có khớp với dữ liệu của laptop không
         if ($laptopBrand !== $brand || $laptopType !== $type) {
             abort(404); // Không tìm thấy nếu thông tin không khớp
@@ -24,5 +27,6 @@ class LaptopController extends Controller
         // Trả về view cùng với các dữ liệu cần thiết
         return view('single.single-laptop', compact('laptopType', 'laptopBrand', 'laptop'));
     }
+    
 }
 
