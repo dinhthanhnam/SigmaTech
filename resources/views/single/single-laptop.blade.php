@@ -24,8 +24,11 @@
     $ram = $laptop->attributes->firstWhere('name', '[Laptop] Dung lượng RAM')?->pivot->value ?? 'N/A';
     $ram_type = $laptop->attributes->firstWhere('name', '[Laptop] Loại RAM')?->pivot->value ?? 'N/A';
     $ram_bus = $laptop->attributes->firstWhere('name', '[Laptop] Bus RAM')?->pivot->value ?? 'N/A';
+    $ram_slots = $laptop->attributes->firstWhere('name', '[Laptop] Số khe cắm RAM')?->pivot->value ?? 'N/A';
+    $ram_max = $laptop->attributes->firstWhere('name', '[Laptop] Hỗ trợ RAM tối đa')?->pivot->value ?? 'N/A';
 
     $ssd = $laptop->attributes->firstWhere('name', '[Laptop] Ổ cứng')?->pivot->value ?? 'N/A';
+    $ssd_slots = $laptop->attributes->firstWhere('name', '[Laptop] Số khe ổ cứng')?->pivot->value ?? 'N/A';
 
     $pin = $laptop->attributes->firstWhere('name', '[Laptop] Pin')?->pivot->value ?? 'N/A';
 
@@ -325,8 +328,7 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                                             <p style="text-align: center;"><span
-                                                    style="line-height: 115%; font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">2
-                                                    khe (đã sử dụng 1)</span></p>
+                                                    style="line-height: 115%; font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;"> {{ $ram_slots }}</span></p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -339,8 +341,7 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                                             <p style="text-align: center;"><span
-                                                    style="line-height: 115%; font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">&nbsp;Nâng
-                                                    cấp&nbsp;tối đa 32GB</span></p>
+                                                    style="line-height: 115%; font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">{{$ram_max}}</span></p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -359,21 +360,7 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                                             <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
-                                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><strong>512GB
-                                                        SSD</strong>&nbsp;PCIe® 4.0 NVMe™ M.2</span></p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
-                                            <p style="margin: 0cm; margin-bottom: .0001pt;"><span
-                                                    style="font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">Tốc
-                                                    độ vòng
-                                                    quay</span></p>
-                                        </td>
-                                        <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
-                                            <p style="margin: 0cm; margin-bottom: .0001pt;"><span
-                                                    style="font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">&nbsp;</span>
-                                            </p>
+                                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $ssd }}</span></p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -385,24 +372,7 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                                             <p style="margin: 0cm 0cm 0.0001pt; text-align: center;"><span
-                                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">2
-                                                    slots SSD PCIe (Đã sử
-                                                    dụng
-                                                    1)</span></p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
-                                            <p style="margin: 0cm; margin-bottom: .0001pt;"><span
-                                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><strong><span
-                                                            style="color: black;">Ổ đĩa quang
-                                                            (ODD)&nbsp;</span></strong></span></p>
-                                        </td>
-                                        <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
-                                            <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
-                                                    style="font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">Không
-                                                    có</span>
-                                            </p>
+                                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{$ssd_slots}}</span></p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -423,7 +393,7 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                                             <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
-                                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">16-inch</span>
+                                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $mon_size }}</span>
                                             </p>
                                         </td>
                                     </tr>
@@ -436,9 +406,7 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                                             <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
-                                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">QHD+
-                                                    (2560 x 1600,
-                                                    WQXGA)</span></p>
+                                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{$mon_res}}</span></p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -450,7 +418,7 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                                             <p style="text-align: center;"><span
-                                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">240Hz</span>
+                                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $mon_refreshrate }}</span>
                                             </p>
                                         </td>
                                     </tr>
@@ -463,9 +431,7 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                                             <p style="text-align: center;"><span
-                                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">16:10,
-                                                    3ms IPS-level, 500
-                                                    nits, 100% DCI-P3, anti-glare display</span></p>
+                                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $mon_fea }}</span></p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -486,14 +452,13 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                                             <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
-                                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">&nbsp;NVIDIA
-                                                    GeForce&nbsp;RTX&nbsp;4070&nbsp;8GB GDDR6</span></p>
+                                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{$gpu}}</span></p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
                                             <p style="margin: 0cm; margin-bottom: .0001pt;"><span
-                                                    style="font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">Camera</span>
+                                                    style="font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;"><strong>Camera</strong></span>
                                             </p>
                                         </td>
                                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
@@ -868,7 +833,8 @@
                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                             <p style="text-align: center;"><span
                                     style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a
-                                        href="#"></a><strong><span style="line-height: 115%; color: black;">
+                                        href="#"></a><strong><span
+                                            style="line-height: 115%; color: black;">
                                             <a href="#" target="_blank">Laptop {{ $type }}
                                             </a>
                                         </span>
@@ -878,7 +844,8 @@
                         </td>
                     </tr>
                     <tr>
-                        <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" colspan="2" width="303">
+                        <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" colspan="2"
+                            width="303">
                             <p style="margin: 0cm; margin-bottom: .0001pt;"><span
                                     style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><strong><span
                                             style="color: black;">Bộ vi xử lý</span></strong><span
@@ -951,7 +918,8 @@
                         </td>
                     </tr>
                     <tr>
-                        <td style="width: 806.65pt; padding: .75pt .75pt .75pt .75pt;" colspan="2" width="1076">
+                        <td style="width: 806.65pt; padding: .75pt .75pt .75pt .75pt;" colspan="2"
+                            width="1076">
                             <p style="margin: 0cm; margin-bottom: .0001pt;"><span
                                     style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><strong><span
                                             style="color: black;">Bộ nhớ trong (RAM)</span></strong></span>
@@ -1005,8 +973,7 @@
                         </td>
                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                             <p style="text-align: center;"><span
-                                    style="line-height: 115%; font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">2
-                                    khe (đã sử dụng 1)</span></p>
+                                    style="line-height: 115%; font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;"> {{ $ram_slots }}</span></p>
                         </td>
                     </tr>
                     <tr>
@@ -1019,12 +986,12 @@
                         </td>
                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                             <p style="text-align: center;"><span
-                                    style="line-height: 115%; font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">&nbsp;Nâng
-                                    cấp&nbsp;tối đa 32GB</span></p>
+                                    style="line-height: 115%; font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">{{$ram_max}}</span></p>
                         </td>
                     </tr>
                     <tr>
-                        <td style="width: 806.65pt; padding: .75pt .75pt .75pt .75pt;" colspan="2" width="1076">
+                        <td style="width: 806.65pt; padding: .75pt .75pt .75pt .75pt;" colspan="2"
+                            width="1076">
                             <p style="margin: 0cm; margin-bottom: .0001pt;"><span
                                     style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><strong><span
                                             style="color: black;">Ổ cứng&nbsp;</span></strong></span></p>
@@ -1038,21 +1005,7 @@
                         </td>
                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                             <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
-                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><strong>512GB
-                                        SSD</strong>&nbsp;PCIe® 4.0 NVMe™ M.2</span></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
-                            <p style="margin: 0cm; margin-bottom: .0001pt;"><span
-                                    style="font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">Tốc
-                                    độ vòng
-                                    quay</span></p>
-                        </td>
-                        <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
-                            <p style="margin: 0cm; margin-bottom: .0001pt;"><span
-                                    style="font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">&nbsp;</span>
-                            </p>
+                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $ssd }}</span></p>
                         </td>
                     </tr>
                     <tr>
@@ -1064,28 +1017,12 @@
                         </td>
                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                             <p style="margin: 0cm 0cm 0.0001pt; text-align: center;"><span
-                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">2
-                                    slots SSD PCIe (Đã sử
-                                    dụng
-                                    1)</span></p>
+                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{$ssd_slots}}</span></p>
                         </td>
                     </tr>
                     <tr>
-                        <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
-                            <p style="margin: 0cm; margin-bottom: .0001pt;"><span
-                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><strong><span
-                                            style="color: black;">Ổ đĩa quang
-                                            (ODD)&nbsp;</span></strong></span></p>
-                        </td>
-                        <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
-                            <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
-                                    style="font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">Không
-                                    có</span>
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="width: 806.65pt; padding: .75pt .75pt .75pt .75pt;" colspan="2" width="1076">
+                        <td style="width: 806.65pt; padding: .75pt .75pt .75pt .75pt;" colspan="2"
+                            width="1076">
                             <p style="margin: 0cm; margin-bottom: .0001pt;"><span
                                     style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><strong><span
                                             style="color: black;">Màn hình</span></strong></span></p>
@@ -1101,7 +1038,7 @@
                         </td>
                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                             <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
-                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">16-inch</span>
+                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $mon_size }}</span>
                             </p>
                         </td>
                     </tr>
@@ -1114,9 +1051,7 @@
                         </td>
                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                             <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
-                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">QHD+
-                                    (2560 x 1600,
-                                    WQXGA)</span></p>
+                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{$mon_res}}</span></p>
                         </td>
                     </tr>
                     <tr>
@@ -1128,7 +1063,7 @@
                         </td>
                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                             <p style="text-align: center;"><span
-                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">240Hz</span>
+                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $mon_refreshrate }}</span>
                             </p>
                         </td>
                     </tr>
@@ -1141,13 +1076,12 @@
                         </td>
                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                             <p style="text-align: center;"><span
-                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">16:10,
-                                    3ms IPS-level, 500
-                                    nits, 100% DCI-P3, anti-glare display</span></p>
+                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $mon_fea }}</span></p>
                         </td>
                     </tr>
                     <tr>
-                        <td style="width: 806.65pt; padding: .75pt .75pt .75pt .75pt;" colspan="2" width="1076">
+                        <td style="width: 806.65pt; padding: .75pt .75pt .75pt .75pt;" colspan="2"
+                            width="1076">
                             <p style="margin: 0cm; margin-bottom: .0001pt;"><span
                                     style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><strong><span
                                             style="color: black;">Đồ Họa (VGA)&nbsp;</span></strong></span>
@@ -1163,14 +1097,13 @@
                         </td>
                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
                             <p style="margin: 0cm; margin-bottom: .0001pt; text-align: center;"><span
-                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">&nbsp;NVIDIA
-                                    GeForce&nbsp;RTX&nbsp;4070&nbsp;8GB GDDR6</span></p>
+                                    style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{$gpu}}</span></p>
                         </td>
                     </tr>
                     <tr>
                         <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
                             <p style="margin: 0cm; margin-bottom: .0001pt;"><span
-                                    style="font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;">Camera</span>
+                                    style="font-family: arial, helvetica, sans-serif; color: black; font-size: 10pt;"><strong>Camera</strong></span>
                             </p>
                         </td>
                         <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
