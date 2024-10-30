@@ -18,7 +18,7 @@ class CPUAttribute extends Model
     // Quan hệ với Laptop 
     public function cpu()
     {
-        return $this->belongsTo(CPU::class);
+        return $this->belongsTo(Cpu::class);
     }
     // Quan hệ với Attribute
     public function attribute()
