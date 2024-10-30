@@ -698,9 +698,9 @@
                             <span class="text-12 d-block"> Nhanh chóng, thuận tiện </span>
                         </a>
                         <a href="javascript:void(0)" class="btn-addCart blue order-1 js-addCart"
-                            onclick="document.getElementById('addCartForm').submit();">
-                            <b class="d-block text-18 font-500">THÊM VÀO GIỎ HÀNG</b>
-                            <span class="text-12 d-block">Mua tiếp sản phẩm khác</span>
+                            onclick="addConfigToShoppingCart(49891,0,1);showCartSummary('.js-cart-count');">
+                            <b class="d-block text-18 font-500"> CHO VÀO GIỎ </b>
+                            <span class="text-12 d-block"> Mua tiếp sản phẩm khác </span>
                         </a>
 
                         <form id="addCartForm" action="{{ route('cart.add') }}" method="POST" style="display: none;">
@@ -712,8 +712,7 @@
                             <input type="hidden" name="quantity" value="1" min="1">
                         </form>
 
-                        <!-- End Button Mua hàng -->
-                        <!-- Button trả góp -->
+                        >>>>>>>>> Temporary merge branch 2
                         <a href="javascript:void(0)" class="btn-payinstall order-0 js-buy-tragop"
                             onclick="addConfigToShoppingCart(49891,0,1,'payinstall');">
                             <b class="d-block text-18 font-500"> MUA TRẢ GÓP </b>
