@@ -77,8 +77,10 @@ Route::get('laptops/{type}/{brand}/{id}', [LaptopController::class, 'show'])->na
 
 
 //cart
-Route::get('/cart', [CartController::class, 'index'])->name('cart');
+Route::get('/cart', [CartController::class, 'show'])->name('cart');
 Route::post('/cart/add', [CartController::class, 'add'])->name('cart.add');
+Route::patch('/cart/{product_type}/{product_id}', [CartController::class, 'update'])->name('cart.update');
+Route::delete('/cart/{product_type}/{product_id}', [CartController::class, 'remove'])->name('cart.remove');
 
 
 //single cpu

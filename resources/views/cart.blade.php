@@ -29,11 +29,15 @@
                 <div class="cart-items">
                     @php $totalPrice = 0; @endphp
                     @foreach ($cartItems as $item)
-                        <section class="cart-item d-flex p-3 border-bottom">
-                            <div class="item-image" style="width: 150px;">
-                                <img src="https://anphat.com.vn/media/product/75_49891_laptop_asus_rog_strix_g16_g614ji_n4125w__2_.jpg"
-                                    alt="{{ $item->name }}">
-                                <button class="btn mt-2 delete-btn" onclick="removeItem({{ $item->id }})">
+                        @php
+                            $itemTotal = $item->dealprice * $item->quantity;
+                            $totalPrice += $itemTotal;
+                        @endphp
+                        <section class="cart-item d-flex p-3 border-none">
+                            <div class="item-image" style="width: 130px;">
+                                <img src="{{ asset($item->image) }}" alt="{{ $item->name }}">
+                                <button class="btn mt-2 delete-btn"
+                                    onclick="remove('{{ $item->product_type }}', {{ $item->product_id }})">
                                     <i class="fa fa-trash"></i> Xóa
                                 </button>
                             </div>
@@ -47,19 +51,22 @@
                             </div>
                             <!-- Giá sản phẩm -->
                             <div class="item-price ">
-                                <span class="text-danger fw-bold me-2">{{ number_format($item->price, 0, ',', '.') }}
+                                <span class="text-danger fw-bold me-2">{{ number_format($item->dealprice, 0, ',', '.') }}
                                     đ</span>
                                 <div>
-                                    <del class="text-muted">{{ number_format($item->original_price, 0, ',', '.') }} đ</del>
+                                    <del class="text-muted">{{ number_format($item->price, 0, ',', '.') }} đ</del>
 
                                 </div>
                                 <div class="item-quantity d-flex">
-                                    <button class="qtyplus qty-btn"
-                                        onclick="decreaseQuantity({{ $item->id }})">-</button>
-                                    <input type="text" class="form text-center quantity-input" style="width: 50px;"
-                                        value="{{ $item->quantity }}" readonly>
                                     <button class="qtyminus qty-btn"
-                                        onclick="increaseQuantity({{ $item->id }})">+</button>
+                                        onclick="update('{{ $item->product_type }}', {{ $item->product_id }}, {{ $item->quantity - 1 }})"
+                                        {{ $item->quantity <= 1 ? 'disabled' : '' }}
+                                        data-id="{{ $item->product_id }}">-</button>
+                                    <input type="text" class="form text-center quantity-input" style="width: 50px;"
+                                        value="{{ $item->quantity }}" readonly data-id="{{ $item->product_id }}">
+                                    <button class="qtyplus qty-btn"
+                                        onclick="update('{{ $item->product_type }}', {{ $item->product_id }}, {{ $item->quantity + 1 }})"
+                                        data-id="{{ $item->product_id }}">+</button>
                                 </div>
 
                             </div>
@@ -79,3 +86,58 @@
         </div>
     </div>
 @endsection
+
+@push('scripts')
+    <script>
+        function update(productType, productId, newQuantity) {
+            if (newQuantity < 1) {
+                alert("Số lượng không thể nhỏ hơn 1");
+                return;
+            }
+
+            fetch(`/cart/${productType}/${productId}`, {
+                    method: 'PATCH',
+                    headers: {
+                        'X-CSRF-TOKEN': '{{ csrf_token() }}',
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        quantity: newQuantity
+                    })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        const quantityInput = document.querySelector(`input.quantity-input[data-id="${productId}"]`);
+                        quantityInput.value = newQuantity;
+                        const minusButton = document.querySelector(`button.qtyplus[data-id="${productId}"]`);
+                        minusButton.disabled = newQuantity <= 1;
+                        location.reload();
+                    } else {
+                        alert(data.error);
+                    }
+                })
+                .catch(error => console.error('Lỗi:', error));
+        }
+
+        function remove(productType, productId) {
+            if (confirm('Bạn có chắc chắn muốn xóa sản phẩm này khỏi giỏ hàng?')) {
+                fetch(`/cart/${productType}/${productId}`, {
+                        method: 'DELETE',
+                        headers: {
+                            'X-CSRF-TOKEN': '{{ csrf_token() }}'
+                        }
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            location.reload(); // Tải lại trang để cập nhật giỏ hàng
+                        } else {
+                            alert(data.error);
+                        }
+                    })
+                    .catch(error => console.error('Lỗi:', error));
+            }
+        }
+    </script>
+@endpush

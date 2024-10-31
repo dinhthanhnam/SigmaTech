@@ -4,16 +4,38 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Laptop;
+use App\Models\CPU;
+
 use App\Models\CartItem;
 
 
 class CartController extends Controller
 {
-    public function index()
+    public function show()
     {
         $userId = auth()->id(); // Lấy ID người dùng đã đăng nhập
         $cartItems = CartItem::where('user_id', $userId)->get(); // Lấy các sản phẩm trong giỏ hàng của người dùng
+        foreach ($cartItems as $item) {
+            switch( $item->product_type) {
+                case 'laptop':
+                    $laptop = Laptop::where('id', $item->product_id)
+                    ->with('attributes')
+                    ->first();
+                $item->dealprice = $laptop->attributes->where('name', 'Deal Price')->first()->pivot->value;  // Gán giá cho cart item
+                $item->price = $laptop->attributes->where('name', 'Price')->first()->pivot->value; 
+                $item->image = $laptop->attributes->where('name', 'Image1')->first()->pivot->value; 
+                break;
+                case 'cpu':
+                    $cpu = CPU::where('id', $item->product_id)
+                    ->with('attributes')
+                    ->first();
+                $item->dealprice = $cpu->attributes->where('name', 'Deal Price')->first()->pivot->value;  // Gán giá cho cart item
+                $item->price = $cpu->attributes->where('name', 'Price')->first()->pivot->value; 
+                $item->image = $cpu->attributes->where('name', 'Image1')->first()->pivot->value; 
+                break;
 
+            }
+        }
         return view('cart', compact('cartItems')); 
     }
 
@@ -25,16 +47,14 @@ class CartController extends Controller
         $userId = auth()->id(); // ID người dùng đã đăng nhập
         $quantity = $request->quantity; // Số lượng mặc định là 1
         $productName = $request->product_name; // Lấy tên sản phẩm từ request
-        $categoryId = $request->category_id; // Lấy category_id từ request
-
         // Khai báo biến sản phẩm
         $product = null;
 
         // Tìm sản phẩm tương ứng từ bảng tương ứng
         switch ($productType) {
-            // case 'cpu':
-            //     $product = Cpu::findOrFail($productId);
-            //     break;
+            case 'cpu':
+                $product = Cpu::findOrFail($productId);
+                break;
             // case 'gpu':
             //     $product = Gpu::findOrFail($productId);
             //     break;
@@ -67,11 +87,43 @@ class CartController extends Controller
                 'product_type' => $productType,
                 'quantity' => $quantity,
                 'name' => $productName, // Lưu tên sản phẩm
-                'category_id' => $categoryId, // Lưu category_id
             ]);
         }
 
         return redirect()->back()->with('success', 'Sản phẩm đã được thêm vào giỏ hàng!');
+    }
+    public function update(Request $request, $product_type, $product_id)
+    {
+        // Tìm sản phẩm dựa trên product_type, product_id, và user_id
+        $cartItem = CartItem::where('product_type', $product_type)
+                            ->where('product_id', $product_id)
+                            ->where('user_id', auth()->id())
+                            ->first();
+    
+        if ($cartItem) {
+            $cartItem->quantity = $request->quantity;
+            $cartItem->save();
+    
+            return response()->json(['success' => 'Số lượng đã được cập nhật']);
+        }
+    
+        return response()->json(['error' => 'Không tìm thấy sản phẩm trong giỏ hàng'], 404);
+    }
+    
+    public function remove($product_type, $product_id)
+    {
+        // Tìm sản phẩm trong giỏ hàng dựa trên product_type và product_id
+        $cartItem = CartItem::where('product_type', $product_type)
+                            ->where('product_id', $product_id)
+                            ->where('user_id', auth()->id()) // Xác định người dùng nếu cần
+                            ->first();
+
+        if ($cartItem) {
+            $cartItem->delete();
+            return response()->json(['success' => 'Sản phẩm đã được xóa khỏi giỏ hàng']);
+        }
+
+        return response()->json(['error' => 'Không tìm thấy sản phẩm trong giỏ hàng'], 404);
     }
 
 
