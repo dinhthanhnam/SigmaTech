@@ -63,53 +63,7 @@
             <div class="bg-white product-info-container">
                 <!-- pro images-left -->
                 <div class="pro-image-gallery">
-                    <div class="box-anh-sp" id="js-box-anh">
-                        <div class="owl-carousel owl-2019 custom-nav owl-loaded owl-drag" id="list-image-slider">
-                            <div class="owl-stage-outer">
-                                <div class="owl-stage"
-                                    style="transform: translate3d(-1950px, 0px, 0px); transition: all; width: 2730px;">
-                                    <div class="owl-item" style="width: 380px; margin-right: 10px;">
-                                        <div class="item" style="text-align:center"><img
-                                                src="https://anphat.com.vn/media/product/49891_laptop_asus_rog_strix_g16_g614ji_n4125w__2_.jpg">
-                                        </div>
-                                    </div>
-                                    <div class="owl-item" style="width: 380px; margin-right: 10px;">
-                                        <div class="item" style="text-align:center"><img
-                                                src="https://anphat.com.vn/media/product/49891_44497_1256nm__10_.jpg">
-                                        </div>
-                                    </div>
-                                    <div class="owl-item" style="width: 380px; margin-right: 10px;">
-                                        <div class="item" style="text-align:center"><img
-                                                src="https://anphat.com.vn/media/product/49891_44497_1256nm__9_.jpg"> </div>
-                                    </div>
-                                    <div class="owl-item" style="width: 380px; margin-right: 10px;">
-                                        <div class="item" style="text-align:center"><img
-                                                src="https://anphat.com.vn/media/product/49891_44497_1256nm__8_.jpg"> </div>
-                                    </div>
-                                    <div class="owl-item" style="width: 380px; margin-right: 10px;">
-                                        <div class="item" style="text-align:center"><img
-                                                src="https://anphat.com.vn/media/product/49891_44497_1256nm__7_.jpg"> </div>
-                                    </div>
-                                    <div class="owl-item active" style="width: 380px; margin-right: 10px;">
-                                        <div class="item" style="text-align:center"><img
-                                                src="https://anphat.com.vn/media/product/49891_laptop_asus_rog_strix_g16_g614ji_n4125w__1_.jpg">
-                                        </div>
-                                    </div>
-                                    <div class="owl-item" style="width: 380px; margin-right: 10px;">
-                                        <div class="item" style="text-align:center"><img
-                                                src="https://anphat.com.vn/media/product/49891_laptop_asus_rog_strix_g16_g614ji_n4125w__3_.jpg">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><i
-                                        class="fa fa-chevron-left"></i></button><button type="button" role="presentation"
-                                    class="owl-next"><i class="fa fa-chevron-right"></i></button></div>
-                            <div class="owl-dots disabled"></div>
-                            <div class="owl-thumbs"></div>
-                        </div>
-                    </div>
-
+                    <div class="box-anh-sp" id="js-box-anh"></div>
                     <a href="javascript:void(0)" class="box-gallery d-block text-center blue text-12" id="box-open-gallery"
                         onclick="openBoxGallery(this);" data-id="anh_sp">
                         <i class="fa fa-search-plus"></i>
@@ -1179,19 +1133,19 @@
     <script>
         const listImage = {
             anh_sp: [{
-                    image: `https://anphat.com.vn/media/product/47463_laptop_lenovo_legion_pro_5_16irx9_83df0047vn__intel_core_i9_14900hx__4_.jpg`
+                    image: `{{ asset($laptop->attributes->firstWhere('name', 'Image1')->pivot->value ?? 'N/A') }}`
                 },
 
                 {
-                    image: `https://anphat.com.vn/media/product/47463_laptop_lenovo_legion_pro_5_16irx9_83df0047vn__intel_core_i9_14900hx__1_.jpg`
+                    image: `{{ asset($laptop->attributes->firstWhere('name', 'Image2')->pivot->value ?? 'N/A') }}`
                 },
 
                 {
-                    image: `https://anphat.com.vn/media/product/47463_laptop_lenovo_legion_pro_5_16irx9_83df0047vn__intel_core_i9_14900hx__3_.jpg`
+                    image: `{{ asset($laptop->attributes->firstWhere('name', 'Image3')->pivot->value ?? 'N/A') }}`
                 },
 
                 {
-                    image: `https://anphat.com.vn/media/product/47463_laptop_lenovo_legion_pro_5_16irx9_83df0047vn__intel_core_i9_14900hx__2_.jpg`
+                    image: `{{ asset($laptop->attributes->firstWhere('name', 'Image4')->pivot->value ?? 'N/A') }}`
                 },
 
             ],

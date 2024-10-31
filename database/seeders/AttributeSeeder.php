@@ -20,6 +20,14 @@ class AttributeSeeder extends Seeder
             ['name' => 'Price', 'data_type' => 'integer'],
             ['name' => 'Deal Price', 'data_type' => 'integer'],
             ['name' => 'Rating', 'data_type' => 'float'],
+            //Ảnh sản phẩm
+            ['name' => 'Thumbnail', 'data_type' => 'string'],
+            ['name' => 'Image1', 'data_type' => 'string'],
+            ['name' => 'Image2', 'data_type' => 'string'],
+            ['name' => 'Image3', 'data_type' => 'string'],
+            ['name' => 'Image4', 'data_type' => 'string'],
+            ['name' => 'Image5', 'data_type' => 'string'],
+
             //laptop_attribute
             
             ['name' => '[Laptop] Loại laptop', 'data_type' => 'string'],
