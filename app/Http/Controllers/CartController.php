@@ -23,6 +23,7 @@ class CartController extends Controller
                     ->first();
                 $item->dealprice = $laptop->attributes->where('name', 'Deal Price')->first()->pivot->value;  // Gán giá cho cart item
                 $item->price = $laptop->attributes->where('name', 'Price')->first()->pivot->value; 
+                $item->image = $laptop->attributes->where('name', 'Image1')->first()->pivot->value; 
                 break;
                 case 'cpu':
                     $cpu = CPU::where('id', $item->product_id)
@@ -30,6 +31,7 @@ class CartController extends Controller
                     ->first();
                 $item->dealprice = $cpu->attributes->where('name', 'Deal Price')->first()->pivot->value;  // Gán giá cho cart item
                 $item->price = $cpu->attributes->where('name', 'Price')->first()->pivot->value; 
+                $item->image = $cpu->attributes->where('name', 'Image1')->first()->pivot->value; 
                 break;
 
             }
@@ -89,6 +91,39 @@ class CartController extends Controller
         }
 
         return redirect()->back()->with('success', 'Sản phẩm đã được thêm vào giỏ hàng!');
+    }
+    public function update(Request $request, $product_type, $product_id)
+    {
+        // Tìm sản phẩm dựa trên product_type, product_id, và user_id
+        $cartItem = CartItem::where('product_type', $product_type)
+                            ->where('product_id', $product_id)
+                            ->where('user_id', auth()->id())
+                            ->first();
+    
+        if ($cartItem) {
+            $cartItem->quantity = $request->quantity;
+            $cartItem->save();
+    
+            return response()->json(['success' => 'Số lượng đã được cập nhật']);
+        }
+    
+        return response()->json(['error' => 'Không tìm thấy sản phẩm trong giỏ hàng'], 404);
+    }
+    
+    public function remove($product_type, $product_id)
+    {
+        // Tìm sản phẩm trong giỏ hàng dựa trên product_type và product_id
+        $cartItem = CartItem::where('product_type', $product_type)
+                            ->where('product_id', $product_id)
+                            ->where('user_id', auth()->id()) // Xác định người dùng nếu cần
+                            ->first();
+
+        if ($cartItem) {
+            $cartItem->delete();
+            return response()->json(['success' => 'Sản phẩm đã được xóa khỏi giỏ hàng']);
+        }
+
+        return response()->json(['error' => 'Không tìm thấy sản phẩm trong giỏ hàng'], 404);
     }
 
 

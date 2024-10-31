@@ -1,19 +1,12 @@
 .cart-page {
     max-width: 800px;
     margin: auto;
-    padding: 20px;
     background: #fff;
     border-radius: 8px;
 }
-.cart-item {
-    display: flex;
-    align-items: flex-start;
-    padding: 10px 0;
-    border-bottom: 1px solid #e9e9e9;
-}
 
 .delete-btn {
-    padding: 0 0 0 50px;
+    padding: 0 0 0 40px;
     font-size: 14px;
     color: gray;
 }
@@ -31,17 +24,13 @@
     margin: 0;
     font-size: 1.1rem;
     font-weight: bold;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 .item-price {
     font-size: 1rem;
-    padding-top: 30px;
+    padding-top: 20px;
     text-align: right;
-}
-
-.item-quantity {
-    margin-top: 8px;
 }
 
 .total-price-section {
@@ -76,7 +65,7 @@
     font-weight: bold; 
 }
 .item-quantity {
-    padding-top: 20px;
+    padding-top: 30px;
     display: flex; 
     align-items: center; 
 }
@@ -95,11 +84,11 @@
 }
 
 .qtyplus {
-    border-radius: 5px 0 0 5px;
+    border-radius: 0 5px 5px 0;
     background-color: white;
 }
 .qtyminus{
-    border-radius: 0 5px 5px 0;
+    border-radius: 5px 0 0 5px;
     background-color: white;
 }
 
