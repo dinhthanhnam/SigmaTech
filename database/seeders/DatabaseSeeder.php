@@ -39,5 +39,7 @@ class DatabaseSeeder extends Seeder
 
         //Laptop seed riêng biệt(sau khi seed xong sẽ có đủ thông tin cho 1 laptop cụ thể)
         $this->call(LaptopSeeder::class);
+
+        $this->call(GpuSeeder::class);
     }
 }
