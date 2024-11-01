@@ -6,6 +6,7 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\CPUController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\GpuController;
 use App\Http\Middleware\AuthAdmin;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -84,5 +85,10 @@ Route::delete('/cart/{product_type}/{product_id}', [CartController::class, 'remo
 
 
 //single cpu
-Route::get('cpus/{brand}/{id}', [CPUController::class, 'show'])->name('cpu.show');
+Route::get('cpu/{brand}/{id}', [CpuController::class, 'show'])->name('cpu.show');
+
+//single gpu
+Route::get('gpu/{brand}/{id}', [GpuController::class, 'show'])->name('gpu.show');
+
+Route::get('/', [LaptopController::class, 'index'])->name('home.index');
 

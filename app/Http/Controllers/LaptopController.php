@@ -23,6 +23,14 @@ class LaptopController extends Controller
         // Trả về view cùng với các dữ liệu cần thiết
         return view('single.single-laptop', compact('laptopType', 'laptopBrand', 'laptop'));
     }
+    public function index()
+{
+    // Lấy tất cả các laptop cùng với các thuộc tính của chúng
+    $laptops = Laptop::with('attributes')->get();
+
+    // Trả về view trang chủ với danh sách laptop
+    return view('index', compact('laptops'));
+}
     
 }
 

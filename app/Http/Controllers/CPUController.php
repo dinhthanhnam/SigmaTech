@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Cpu;
 
-class CPUController extends Controller
+class CpuController extends Controller
 {
     public function show($brand, $id)
     {
