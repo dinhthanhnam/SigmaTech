@@ -25,7 +25,7 @@ Route::middleware(['auth', AuthAdmin::class])->group(function () {
 
 Route::get('/', [HomeController::class, 'index'])->name('home.index');
 
-Route::get('/', [LaptopController::class, 'index'])->name('laptops.pull');
+Route::get('/', [LaptopController::class, 'index'])->name('home.index');
 
 Route::get('laptops/Gaming', [LaptopController::class, 'showGamingLaptops'])
   ->name('gaming-laptops.show');

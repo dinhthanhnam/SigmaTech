@@ -23,7 +23,6 @@
         </div>
         <!-- Thêm sản phẩm được mua nhiều nhất vào đây-->
         <div class="p-container d-flex flex-wrap justify-content-between">
-          @dd($cpus)
           @foreach($cpus as $product)
             @include('partials.detailed-p-item', ['product' => $product])
           @endforeach  
