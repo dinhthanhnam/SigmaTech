@@ -65,8 +65,8 @@ class LaptopSeeder extends Seeder
                 'attributes' => [
                     ['name' => 'Brand', 'value' => 'Asus'],
                     ['name' => 'Model', 'value' => 'NBAS1394'],
-                    ['name' => 'Price', 'value' => '54990000'],
-                    ['name' => 'Deal Price', 'value' => '42990000'],
+                    ['name' => 'Price', 'value' => '69990000'],
+                    ['name' => 'Deal Price', 'value' => '52990000'],
                     ['name' => 'Rating', 'value' => '5'],
                     ['name' => '[Laptop] Loại laptop', 'value' => 'Gaming'],
                     ['name' => '[Laptop] Vi xử lý', 'value' => 'Intel Core i7-13650HX'],
