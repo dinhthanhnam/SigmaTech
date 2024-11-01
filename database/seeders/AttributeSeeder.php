@@ -22,6 +22,7 @@ class AttributeSeeder extends Seeder
             ['name' => 'Rating', 'data_type' => 'float'],
             //Ảnh sản phẩm
             ['name' => 'Thumbnail', 'data_type' => 'string'],
+            ['name' => 'Thumbnail Small', 'data_type' => 'string'],
             ['name' => 'Image1', 'data_type' => 'string'],
             ['name' => 'Image2', 'data_type' => 'string'],
             ['name' => 'Image3', 'data_type' => 'string'],

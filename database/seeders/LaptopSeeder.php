@@ -27,6 +27,7 @@ class LaptopSeeder extends Seeder
                     ['name' => 'Deal Price', 'value' => '42990000'],
                     ['name' => 'Rating', 'value' => '5'],
                     ['name' => 'Thumbnail', 'value' => '/assets/img/products/laptops/gaming/1/Thumb.jpg'],
+                    ['name' => 'Thumbnail Small', 'value' => '/assets/img/products/laptops/gaming/1/Thumb_small.jpg'],
                     ['name' => 'Image1', 'value' => '/assets/img/products/laptops/gaming/1/Image1.jpg'],
                     ['name' => 'Image2', 'value' => '/assets/img/products/laptops/gaming/1/Image2.jpg'],
                     ['name' => 'Image3', 'value' => '/assets/img/products/laptops/gaming/1/Image3.jpg'],
