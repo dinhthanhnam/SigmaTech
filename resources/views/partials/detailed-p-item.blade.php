@@ -8,65 +8,44 @@
     $brand = $laptop->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
     $model = $laptop->attributes->firstWhere('name', 'Model')->pivot->value ?? 'N/A';
     $cpu = $laptop->attributes->firstWhere('name', '[Laptop] Vi xử lý')?->pivot->value ?? 'N/A';
-    $cpu_core = $laptop->attributes->firstWhere('name', '[Laptop] Số nhân')?->pivot->value ?? 'N/A';
-    $cpu_thread = $laptop->attributes->firstWhere('name', '[Laptop] Số luồng')?->pivot->value ?? 'N/A';
-    $cpu_clock = $laptop->attributes->firstWhere('name', '[Laptop] Tốc độ tối đa')?->pivot->value ?? 'N/A';
-    $cpu_cache = $laptop->attributes->firstWhere('name', '[Laptop] Bộ nhớ đệm')?->pivot->value ?? 'N/A';
-
+    $ssd_capacity = $laptop->attributes->firstWhere('name', '[Laptop] Dung lượng ổ cứng')?->pivot->value ?? 'N/A';
     $gpu = $laptop->attributes->firstWhere('name', '[Laptop] Card đồ hoạ')?->pivot->value ?? 'N/A';
     $mon_size = $laptop->attributes->firstWhere('name', '[Laptop] Kích thước màn hình')?->pivot->value ?? 'N/A';
     $mon_res = $laptop->attributes->firstWhere('name', '[Laptop] Độ phân giải')?->pivot->value ?? 'N/A';
-    $mon_refreshrate = $laptop->attributes->firstWhere('name', '[Laptop] Tần số quét')?->pivot->value ?? 'N/A';
-    $mon_fea = $laptop->attributes->firstWhere('name', '[Laptop] Công nghệ màn hình')?->pivot->value ?? 'N/A';
-    $color = $laptop->attributes->firstWhere('name', '[Laptop] Màu sắc')?->pivot->value ?? 'N/A';
 
     $ram = $laptop->attributes->firstWhere('name', '[Laptop] Dung lượng RAM')?->pivot->value ?? 'N/A';
-    $ram_type = $laptop->attributes->firstWhere('name', '[Laptop] Loại RAM')?->pivot->value ?? 'N/A';
-    $ram_bus = $laptop->attributes->firstWhere('name', '[Laptop] Bus RAM')?->pivot->value ?? 'N/A';
-    $ram_slots = $laptop->attributes->firstWhere('name', '[Laptop] Số khe cắm RAM')?->pivot->value ?? 'N/A';
-    $ram_max = $laptop->attributes->firstWhere('name', '[Laptop] Hỗ trợ RAM tối đa')?->pivot->value ?? 'N/A';
 
     $ssd = $laptop->attributes->firstWhere('name', '[Laptop] Ổ cứng')?->pivot->value ?? 'N/A';
-    $ssd_capacity = $laptop->attributes->firstWhere('name', '[Laptop] Dung lượng ổ cứng')?->pivot->value ?? 'N/A';
-    $ssd_slots = $laptop->attributes->firstWhere('name', '[Laptop] Số khe ổ cứng')?->pivot->value ?? 'N/A';
-
-    $pin = $laptop->attributes->firstWhere('name', '[Laptop] Pin')?->pivot->value ?? 'N/A';
-
-    $weight = $laptop->attributes->firstWhere('name', '[Laptop] Cân nặng')?->pivot->value ?? 'N/A';
 
     $os = $laptop->attributes->firstWhere('name', '[Laptop] OS')?->pivot->value ?? 'N/A';
-
-    $color = $laptop->attributes->firstWhere('name', '[Laptop] Màu sắc')?->pivot->value ?? 'N/A';
-
-    $camera = $laptop->attributes->firstWhere('name', '[Laptop] Camera')?->pivot->value ?? 'N/A';
 
 @endphp
 
 <div class="p-item js-p-item summary-loaded" data-id="49710">
-    <a href="/laptop-asus-gaming-rog-zephyrus-g16-ga605wi-qr090ws.html" class="p-img">
-        <img src="https://anphat.com.vn/media/product/250_49710_laptop_asus_gaming_rog_zephyrus_g16_ga605wi_qr090ws__amd_ryzen_ai_9_hx_37.jpg"
-            alt="Laptop Asus Gaming ROG Zephyrus G16 GA605WI-QR090WS (AMD Ryzen AI 9 HX 370 | RTX 4070 8GB | 16 inch WQXGA OLED | 32 GB | 1 TB | Win 11)"
+    <a href="/laptops/{{$type}}/{{$brand}}/{{$laptop_id}}" class="p-img">
+        <img src="{{ $laptop->attributes->firstWhere('name', 'Thumbnail')?->pivot->value ?? 'N/A' }}"
+            alt="{{$name}} ({{$cpu}} | {{$gpu}} | {{$mon_size}} {{$mon_res}} | {{$ram}} | {{$ssd_capacity}} | {{$os}})"
             class="fit-img">
         <span class="p-icon-holder js-icon-49710"><!-- // icon promotion --></span>
     </a>
 
     <div class="p-text">
         <span class="p-sku" style="font-size: 12px;">Mã SP: {{$model}}</span>
-        <a href="#" class="p-name">
-            <h3>{{$laptop->id}} ({{$cpu}} | {{$gpu}} | {{$mon_size}} {{$mon_res}} | {{$ram}} | {{$ssd_capacity}} | {{$os}})</h3>
+        <a href="/laptops/{{$type}}/{{$brand}}/{{$laptop_id}}" class="p-name">
+            <h3>{{$name}} ({{$cpu}} | {{$gpu}} | {{$mon_size}} {{$mon_res}} | {{$ram}} | {{$ssd_capacity}} | {{$os}})</h3>
         </a>
 
         <div class="price-container">
             <del class="p-old-price"> </del>
 
-            <span class="p-price"> {{ $price }} </span>
+            <span class="p-price"> {{ number_format($dealprice, 0, ',', '.') }} </span>
         </div>
 
         <div class="p-special-container">3 khuyến mại</div>
 
         <div class="box-config">
             <div class="product-spec-group font-300">
-                <div class="thongso d-flex flex-wrap js-thongsosanpham-49710 checked">
+                <div class="thongso d-flex flex-wrap">
                     <div class="item d-flex align-items" data-info="CPU">
                         <div class="item-icon">
                             <i class="icon-thongso icon-bo-vi-xu-ly"></i>
@@ -92,9 +71,8 @@
                         <div class="item-icon">
                             <i class="icon-thongso icon-dung-luong-o-cung-laptop"></i>
                         </div>
-                        <div class="txt">{{ $ssd_capacity }}</div>
+                        <div class="txt">{{ $ssd }}</div>
                     </div>
-
                     <div class="item d-flex align-items" data-info="Bộ nhớ trong">
                         <div class="item-icon">
                             <i class="icon-thongso icon-bo-nho-trong"></i>
@@ -117,32 +95,27 @@
                 <div class="content d-flex align-items">
                     <div class="item active">
                         <div class="icon-promo"> <img
-                                src="https://www.anphatpc.com.vn/media/marketing/promo_15d608aee7549de20124715432213768.jpg"
+                                src="{{ asset('assets/img/promo/promo_15d608aee7549de20124715432213768.jpg') }}"
                                 alt="Tặng ngay gói Bảo hành mở rộng"> </div>
                     </div>
 
                     <div class="item">
                         <div class="icon-promo"> <img
-                                src="https://www.anphatpc.com.vn/media/marketing/promo_958b22c753b16542820be4a2f030e8f3.jpg"
+                                src="{{ asset('assets/img/promo/promo_958b22c753b16542820be4a2f030e8f3.jpg') }}"
                                 alt="Nhận ngay lót chuột ROG Sheath Electro Punk trị giá 1.190.000đ "> </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="d-flex align-items-centet justify-content-between">
-            <div class="d-flex align-items-center justify-content-between
-                
-                ">
+            <div class="d-flex align-items-center justify-content-between">
                 <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-49710"
                     onclick="CompareProduct.compare_addProduct(49710)" data-id="49710">So sánh</a>
-
                 <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
             </div>
-
             <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart"
                 onclick="addProduct('49710', 'Laptop Asus Gaming ROG Zephyrus G16 GA605WI-QR090WS (AMD Ryzen AI 9 HX 370 | RTX 4070 8GB | 16 inch WQXGA OLED | 32 GB | 1 TB | Win 11)', '81990000')"></a>
         </div>
-
     </div>
     {{-- <div class="p-tooltip">
         <p class="tooltip-title"> Laptop Asus Gaming ROG Zephyrus G16 GA605WI-QR090WS (AMD Ryzen AI 9 HX 370 | RTX 4070

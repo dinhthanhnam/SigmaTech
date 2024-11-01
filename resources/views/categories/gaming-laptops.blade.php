@@ -2,22 +2,18 @@
 @section('content')
   <section class="product-page">
     <div class="container">
-      <div id="breadcrumb">
-        <ol class="ul clearfix" itemscope="" itemtype="http://schema.org/BreadcrumbList">
-          <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-            <a href="/" itemprop="item" class="nopad-l">
-              <span itemprop="name"><span style="font-size: 0px">Home</span><i class="fa fa-home"></i></span>
+      <div aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="{{ route('home.index') }}">
+              <i class="fa fa-home"></i> Trang chủ
             </a>
-            <meta itemprop="position" content="1">
           </li>
-          <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-            <a href="{{ route('categories.gaming-laptops') }}" itemprop="item" class="nopad-l">
-              <h1 itemprop="name">Laptop Gaming - Đồ Họa</h1>
-            </a>
-            <meta itemprop="position" content="2">
+          <li class="breadcrumb-item active" aria-current="page">
+            <a href="{{ url('/laptops/Gaming') }}">Laptop Gaming </a>
           </li>
         </ol>
-      </div>
+    </div>
       <div class="product-collection-related-container">
         <div class="group-title">
           <h2 class="title">Laptop Gaming Được Mua Nhiều Nhất 2024</h2>
@@ -25,7 +21,7 @@
         <!-- Thêm sản phẩm được mua nhiều nhất vào đây-->
         <div class="p-container d-flex flex-wrap justify-content-between">
           @foreach($gamingLaptops as $laptop)
-            @include('partials.detailed-p-item', ['laptop' => $laptop])
+            @include('partials.detailed-p-item', ['product' => $laptop])
           @endforeach  
         <div class="filter-height" style="display: none;"></div>
         <div class="filter-container">
@@ -902,32 +898,32 @@
           </div>
         </div>
         <!-- paging -->
-        {{-- <div class="paging">
-                <a href="/gaming-laptop.html" class="current">
-                    1
-                </a>
-                <a href="/gaming-laptop.html?page=2">
-                    2
-                </a>
-                <a href="/gaming-laptop.html?page=3">
-                    3
-                </a>
-                <a href="/gaming-laptop.html?page=4">
-                    4
-                </a>
-                <a href="/gaming-laptop.html?page=5">
-                    5
-                </a>
-                <a href="/gaming-laptop.html?page=6">
-                    6
-                </a>
-                <a href="/gaming-laptop.html?page=7">
-                    7
-                </a>
-                <a href="/gaming-laptop.html?page=2">
-                     <i class="fa fa-angle-right"></i>
-                </a>
-            </div> --}}
+        <div class="paging mx-auto">
+          <a href="/gaming-laptop.html" class="current">
+              1
+          </a>
+          <a href="/gaming-laptop.html?page=2">
+              2
+          </a>
+          <a href="/gaming-laptop.html?page=3">
+              3
+          </a>
+          <a href="/gaming-laptop.html?page=4">
+              4
+          </a>
+          <a href="/gaming-laptop.html?page=5">
+              5
+          </a>
+          <a href="/gaming-laptop.html?page=6">
+              6
+          </a>
+          <a href="/gaming-laptop.html?page=7">
+              7
+          </a>
+          <a href="/gaming-laptop.html?page=2">
+                <i class="fa fa-angle-right"></i>
+          </a>
+        </div>
       </div>
   </section>
 @endsection

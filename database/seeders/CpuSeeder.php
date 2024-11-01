@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\Attribute;
 use App\Models\Cpu;
-use App\Models\CPUAttribute;
+use App\Models\CpuAttribute;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
@@ -52,7 +52,7 @@ class CpuSeeder extends Seeder
         
             foreach ($cpuData['attributes'] as $attr) {
                 $attribute = Attribute::firstOrCreate(['name' => $attr['name']]);
-                CPUAttribute::create([
+                CpuAttribute::create([
                     'cpu_id' => $cpu->id,
                     'attribute_id' => $attribute->id,
                     'value' => $attr['value'],

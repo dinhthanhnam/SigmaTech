@@ -33,7 +33,7 @@
 
     </div>
 
-    <div class="p-tooltip">
+    {{-- <div class="p-tooltip">
         <p class="tooltip-title"> Laptop Apple Macbook Air 13.3 inch MGN63SA/A Space Grey ( Apple M1) </p>
 
         <div class="tooltip-content">
@@ -67,5 +67,5 @@
                 </p>
             </div>
         </div>
-    </div>
+    </div> --}}
 </div>

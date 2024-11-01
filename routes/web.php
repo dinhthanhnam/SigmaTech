@@ -26,9 +26,9 @@ Route::middleware(['auth', AuthAdmin::class])->group(function () {
 
 Route::get('/', [HomeController::class, 'index'])->name('home.index');
 
-Route::get('laptops/gaming', [LaptopController::class, 'showGamingLaptops'])
+Route::get('laptops/Gaming', [LaptopController::class, 'showGamingLaptops'])
   ->name('categories.gaming-laptops');
-Route::get('laptops/office', [LaptopController::class, 'showOfficeLaptops'])
+Route::get('laptops/Office', [LaptopController::class, 'showOfficeLaptops'])
   ->name('categories.office-laptops');
 Route::get('gaming-gears', function () {
   return view('categories.gaming-gears');
@@ -87,6 +87,3 @@ Route::get('cpu/{brand}/{id}', [CpuController::class, 'show'])->name('cpu.show')
 
 //single gpu
 Route::get('gpu/{brand}/{id}', [GpuController::class, 'show'])->name('gpu.show');
-
-Route::get('/', [LaptopController::class, 'index'])->name('home.index');
-

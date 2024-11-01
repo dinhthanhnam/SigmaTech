@@ -173,14 +173,7 @@
           </div>
         </div>
         <div class="p-container custom-nav owl-carousel owl-theme" id="js-collection-850" data-id="850">
-          @foreach($laptops as $product)
-            @include('partials.simple-p-item-sample', ['product' => $product])
-          @endforeach
-          {{-- @include('partials.simple-p-item')
-          @include('partials.simple-p-item')
-          @include('partials.simple-p-item')
-          @include('partials.simple-p-item')
-          @include('partials.simple-p-item') --}}
+
         </div>
         <a href="{{route ('categories.office-laptops')}}" class="view-cate"> XEM TẤT CẢ <i class="fa fa-angle-double-right"></i></a>
       </div>

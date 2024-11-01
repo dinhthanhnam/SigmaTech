@@ -24,5 +24,12 @@ class CpuController extends Controller
         // Trả về view cùng với các dữ liệu cần thiết
         return view('single.single-cpu', compact('cpuBrand', 'cpu'));
     }
+    public function showCpus()
+    {
+        $gamingLaptops = Cpu::all();
+        
+        return view('categories.pc-part', compact('cpus'));
+    }
+
 }
 
