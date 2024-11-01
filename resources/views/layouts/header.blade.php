@@ -362,7 +362,7 @@
                             </div>
                         </div>
                         <div class="item bg-white" data-id="395">
-                            <a href="{{ route('categories.laptops') }}" class="pro-cate-1">
+                            <a href="{{ route('categories.office-laptops') }}" class="pro-cate-1">
                                 <span class="cat-thumb-item" style="width: 35px;text-align: center">
                                     <img src="{{ asset('assets/img/cat/cat_b706c0f50035bddb63ca6e91efef7703.png') }}"
                                         alt="Laptop - Tablet - Mobile" />

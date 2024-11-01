@@ -25,12 +25,10 @@ Route::middleware(['auth', AuthAdmin::class])->group(function () {
 
 Route::get('/', [HomeController::class, 'index'])->name('home.index');
 
-Route::get('gaming-laptops', function () {
-  return view('categories.gaming-laptops');
-})->name('categories.gaming-laptops');
-Route::get('laptops', function () {
-  return view('categories.laptops');
-})->name('categories.laptops');
+Route::get('laptops/gaming', [LaptopController::class, 'showGamingLaptops'])
+  ->name('categories.gaming-laptops');
+Route::get('laptops/office', [LaptopController::class, 'showOfficeLaptops'])
+  ->name('categories.office-laptops');
 Route::get('gaming-gears', function () {
   return view('categories.gaming-gears');
 })->name('categories.gaming-gears');

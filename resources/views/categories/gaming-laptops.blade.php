@@ -24,113 +24,9 @@
         </div>
         <!-- Thêm sản phẩm được mua nhiều nhất vào đây-->
         <div class="p-container d-flex flex-wrap justify-content-between">
-          @include('partials.detailed-p-item')
-          @include('partials.detailed-p-item')
-          @include('partials.detailed-p-item')
-          @include('partials.detailed-p-item')
-          @include('partials.detailed-p-item')
-          @include('partials.detailed-p-item')
-        </div>
-        {{-- <div class="owl-stage-outer bg-white">
-                <div class="owl-item" style="width: 255px; margin-right: 10px;"><div class="p-item js-p-item summary-loaded" data-id="47470">
-                    <a href="#" class="p-img">
-                        <img src="https://anphat.com.vn/media/product/250_47470_laptop_acer_gaming_nitro_v_anv15_51_58an_nh_qnasv_001.jpg" alt="Laptop Acer" class="fit-img">
-                        <span class="p-icon-holder js-icon-47470"><span class="p-icon-buffet-9999K-min" style="background-image: url( {{ asset('assets/img/sprites/buffet-9999K-min.png') }} )"></span></span>
-                    </a>
-                    <div class="p-text">
-                        <span class="p-sku" style="font-size: 12px;">Mã SP: NBAC0415</span>
-                        <a href="#" class="p-name"> <h3>Laptop Acer Gaming Nitro V ANV15-51-58AN NH.QNASV.001 (Intel Core i5-13420H |RTX 2050 4GB GDDR6 | 8GB | 512GB | 15.6 inch FHD | Win 11 | Obsidian Black)</h3> </a>
-                        <div class="price-container">
-                            <del class="p-old-price"> 21.490.000 đ </del>
-                            <span class="p-discount"> -12% </span>
-                            <span class="p-price"> 18.990.000 đ </span>
-                        </div>
-                        <div class="p-price-showroom d-flex align-items">
-                            <b>Giá HS - SV: </b>
-                            <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">18.790.000 đ</p>
-                        </div>
-                        <div class="p-special-container">4 khuyến mại</div>
-                        <div class="box-config">
-                        <div class="product-spec-group font-300">
-                            <div class="thongso flex-wrap js-thongsosanpham-47470 checked">
-                                <div class="item d-flex align-items" data-info="CPU">
-                                    <div class="item-icon"> 
-                                        <i class="icon-thongso icon-bo-vi-xu-ly"></i> 
-                                    </div>
-                                    <div class="txt">Core i5 13420H</div>
-                                </div>
-                                <div class="item d-flex align-items" data-info="Kích thước màn hình">
-                                    <div class="item-icon">
-                                        <i class="icon-thongso icon-kich-thuoc-man-hinh-laptop"></i>
-                                    </div>
-                                    <div class="txt">15.6 inch</div>
-                                </div>
-                                <div class="item d-flex align-items" data-info="Card đồ họa (VGA)">
-                                    <div class="item-icon">
-                                        <i class="icon-thongso icon-card-do-hoa-laptop"></i>
-                                    </div>
-                                    <div class="txt">Geforce RTX 2050</div>
-                                </div>
-                                <div class="item d-flex align-items" data-info="Dung lượng ổ cứng">
-                                    <div class="item-icon">
-                                        <i class="icon-thongso icon-dung-luong-o-cung-laptop"></i>
-                                    </div>
-                                    <div class="txt">512GB</div>
-                                </div>
-                                <div class="item d-flex align-items" data-info="Bộ nhớ trong">
-                                    <div class="item-icon">
-                                        <i class="icon-thongso icon-bo-nho-trong"></i>
-                                    </div>
-                                    <div class="txt">8GB</div>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-                    </div>
-                        <div class="d-flex align-items-center justify-content-between">
-                            <div class="d-flex align-items-center justify-content-between">
-                                <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-47470" onclick="CompareProduct.compare_addProduct(47470)" data-id="47470">So sánh</a>
-                                <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
-                            </div>
-                            <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart" onclick="addProduct('47470', 'Laptop Acer Gaming Nitro V ANV15-51-58AN NH.QNASV.001 (Intel Core i5-13420H |RTX 2050 4GB GDDR6 | 8GB | 512GB |  15.6 inch FHD | Win 11 | Obsidian Black)', '18990000')"></a>
-                        </div>
-                    </div>
-                        <!-- Tooltips không hoạt động, trong css display = none, cần js để cho nó hoạt động, tạm thời cứ để đấy -->
-                        <div class="p-tooltip">
-                            <p class="tooltip-title"> Laptop Acer Gaming Nitro V ANV15-51-58AN NH.QNASV.001 (Intel Core i5-13420H |RTX 2050 4GB GDDR6 | 8GB | 512GB |  15.6 inch FHD | Win 11 | Obsidian Black) </p>
-                            <div class="tooltip-content">
-                                <div class="tooltip-specialOffer"> <div class="spec-title">
-                                    <span class="title-text"> KHUYẾN MÃI</span>
-                                </div>
-                                <ul class="ul">
-                                    <li> <span class="text">🎁  <font size="3pt"> <font color="" crimson""=""><b>Bộ quà tặng bao gồm:</b></font></font></span></li>
-                                    <li> <span class="text">✦ Balo Gaming Predator Acer SUV trị giá 1.700.000đ (TUNB0061)</span></li>
-                                    <li> <span class="text">✦ Túi chống sốc (TUNB0007,TUNB0001) </span></li></ul></div>  <div class="tooltip-summary"><span class="item"><i class="fa fa-check-circle"></i>CPU: Intel Core i5-13420H (up to 4.60 GHz, 8 nhân, 12 luồng, 12MB)</span>
-                                    <span class="item"><i class="fa fa-check-circle"></i>VGA: NVIDIA GeForce RTX 2050 with 4 GB of dedicated GDDR6 VRAM</span>
-                                    <span class="item"><i class="fa fa-check-circle"></i>Màn hình: 15.6 inch FHD (1920 x 1080) IPS 144Hz SlimBezel, 45% NTSC, Acer ComfyView</span>
-                                    <span class="item"><i class="fa fa-check-circle"></i>RAM: 8GB DDR5 5200MHz (2 khe, tối đa 64GB)</span>
-                                    <span class="item"><i class="fa fa-check-circle"></i>Ổ cứng: 512GB, PCIe, NVMe SSD (nâng cấp tối đa 4TB SSD) </span>
-                                </div>
-                                <div class="position-relative">
-                                    <span>
-                                        Giá niêm yết:
-                                        <del class="p-old-price" style="display: inline-block;"> 21.490.000 đ </del>
-                                    </span>
-                                    <span class="p-discount"> -12% </span>
-                                    <p class="p-price" style="margin: 0;">
-                                        <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
-                                        <span class="tooltip-price-text">18.990.000 đ</span>
-                                    </p>
-                                    <div class="p-price-showroom d-flex align-items">
-                                        <b>Giá HS - SV: </b> 
-                                        <p style="margin: 0 0 0 10px;color: red;font-weight: bold;">18.790.000 đ</p>
-                                    </div> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> --}}
+          @foreach($gamingLaptops as $laptop)
+            @include('partials.detailed-p-item', ['laptop' => $laptop])
+          @endforeach  
         <div class="filter-height" style="display: none;"></div>
         <div class="filter-container">
           <p class="filter-group-title"> BỘ LỌC </p>
@@ -1003,12 +899,6 @@
               id="js-filter-note"></span>
           </div>
           <div class="p-list-container d-flex flex-wrap">
-            @include('partials.detailed-p-item')
-            @include('partials.detailed-p-item')
-            @include('partials.detailed-p-item')
-            @include('partials.detailed-p-item')
-            @include('partials.detailed-p-item')
-            @include('partials.detailed-p-item')
           </div>
         </div>
         <!-- paging -->

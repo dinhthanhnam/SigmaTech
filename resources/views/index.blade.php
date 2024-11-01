@@ -135,7 +135,7 @@
           <h2 class="box-title"> top sản phẩm bán chạy </h2>
           <div class="child-title">
             <a href="{{ route('categories.gaming-laptops')}}"> Laptop gaming </a>
-            <a href="{{ route('categories.laptops')}}"> Laptop văn phòng </a>
+            <a href="{{ route('categories.office-laptops')}}"> Laptop văn phòng </a>
             <a href="{{ route('categories.monitors')}}"> màn hình máy tính </a>
             <a href="{{ route('categories.gaming-gears')}}"> bàn phím, chuột</a>
           </div>
@@ -180,7 +180,7 @@
           @include('partials.simple-p-item')
           @include('partials.simple-p-item')
         </div>
-        <a href="{{route ('categories.laptops')}}" class="view-cate"> XEM TẤT CẢ <i class="fa fa-angle-double-right"></i></a>
+        <a href="{{route ('categories.office-laptops')}}" class="view-cate"> XEM TẤT CẢ <i class="fa fa-angle-double-right"></i></a>
       </div>
 
       <!-- Linh kiện máy tính -->

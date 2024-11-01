@@ -1,3 +1,47 @@
+@php
+    $laptop_id = $laptop->id;
+    $name = $laptop->name;
+    $type = $laptop->attributes->firstWhere('name', '[Laptop] Loại laptop')->pivot->value ?? 'N/A';
+    $price = $laptop->attributes->firstWhere('name', 'Price')->pivot->value ?? 'N/A';
+    $dealprice = $laptop->attributes->firstWhere('name', 'Deal Price')->pivot->value ?? 'N/A';
+    $rating = $laptop->attributes->firstWhere('name', 'Rating')->pivot->value ?? 'N/A';
+    $brand = $laptop->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
+    $model = $laptop->attributes->firstWhere('name', 'Model')->pivot->value ?? 'N/A';
+    $cpu = $laptop->attributes->firstWhere('name', '[Laptop] Vi xử lý')?->pivot->value ?? 'N/A';
+    $cpu_core = $laptop->attributes->firstWhere('name', '[Laptop] Số nhân')?->pivot->value ?? 'N/A';
+    $cpu_thread = $laptop->attributes->firstWhere('name', '[Laptop] Số luồng')?->pivot->value ?? 'N/A';
+    $cpu_clock = $laptop->attributes->firstWhere('name', '[Laptop] Tốc độ tối đa')?->pivot->value ?? 'N/A';
+    $cpu_cache = $laptop->attributes->firstWhere('name', '[Laptop] Bộ nhớ đệm')?->pivot->value ?? 'N/A';
+
+    $gpu = $laptop->attributes->firstWhere('name', '[Laptop] Card đồ hoạ')?->pivot->value ?? 'N/A';
+    $mon_size = $laptop->attributes->firstWhere('name', '[Laptop] Kích thước màn hình')?->pivot->value ?? 'N/A';
+    $mon_res = $laptop->attributes->firstWhere('name', '[Laptop] Độ phân giải')?->pivot->value ?? 'N/A';
+    $mon_refreshrate = $laptop->attributes->firstWhere('name', '[Laptop] Tần số quét')?->pivot->value ?? 'N/A';
+    $mon_fea = $laptop->attributes->firstWhere('name', '[Laptop] Công nghệ màn hình')?->pivot->value ?? 'N/A';
+    $color = $laptop->attributes->firstWhere('name', '[Laptop] Màu sắc')?->pivot->value ?? 'N/A';
+
+    $ram = $laptop->attributes->firstWhere('name', '[Laptop] Dung lượng RAM')?->pivot->value ?? 'N/A';
+    $ram_type = $laptop->attributes->firstWhere('name', '[Laptop] Loại RAM')?->pivot->value ?? 'N/A';
+    $ram_bus = $laptop->attributes->firstWhere('name', '[Laptop] Bus RAM')?->pivot->value ?? 'N/A';
+    $ram_slots = $laptop->attributes->firstWhere('name', '[Laptop] Số khe cắm RAM')?->pivot->value ?? 'N/A';
+    $ram_max = $laptop->attributes->firstWhere('name', '[Laptop] Hỗ trợ RAM tối đa')?->pivot->value ?? 'N/A';
+
+    $ssd = $laptop->attributes->firstWhere('name', '[Laptop] Ổ cứng')?->pivot->value ?? 'N/A';
+    $ssd_capacity = $laptop->attributes->firstWhere('name', '[Laptop] Dung lượng ổ cứng')?->pivot->value ?? 'N/A';
+    $ssd_slots = $laptop->attributes->firstWhere('name', '[Laptop] Số khe ổ cứng')?->pivot->value ?? 'N/A';
+
+    $pin = $laptop->attributes->firstWhere('name', '[Laptop] Pin')?->pivot->value ?? 'N/A';
+
+    $weight = $laptop->attributes->firstWhere('name', '[Laptop] Cân nặng')?->pivot->value ?? 'N/A';
+
+    $os = $laptop->attributes->firstWhere('name', '[Laptop] OS')?->pivot->value ?? 'N/A';
+
+    $color = $laptop->attributes->firstWhere('name', '[Laptop] Màu sắc')?->pivot->value ?? 'N/A';
+
+    $camera = $laptop->attributes->firstWhere('name', '[Laptop] Camera')?->pivot->value ?? 'N/A';
+
+@endphp
+
 <div class="p-item js-p-item summary-loaded" data-id="49710">
     <a href="/laptop-asus-gaming-rog-zephyrus-g16-ga605wi-qr090ws.html" class="p-img">
         <img src="https://anphat.com.vn/media/product/250_49710_laptop_asus_gaming_rog_zephyrus_g16_ga605wi_qr090ws__amd_ryzen_ai_9_hx_37.jpg"
@@ -7,16 +51,15 @@
     </a>
 
     <div class="p-text">
-        <span class="p-sku" style="font-size: 12px;">Mã SP: NBAS1389</span>
-        <a href="/laptop-asus-gaming-rog-zephyrus-g16-ga605wi-qr090ws.html" class="p-name">
-            <h3>Laptop Asus Gaming ROG Zephyrus G16 GA605WI-QR090WS (AMD Ryzen AI 9 HX 370 | RTX 4070 8GB | 16 inch
-                WQXGA OLED | 32 GB | 1 TB | Win 11)</h3>
+        <span class="p-sku" style="font-size: 12px;">Mã SP: {{$model}}</span>
+        <a href="#" class="p-name">
+            <h3>{{$laptop->id}} ({{$cpu}} | {{$gpu}} | {{$mon_size}} {{$mon_res}} | {{$ram}} | {{$ssd_capacity}} | {{$os}})</h3>
         </a>
 
         <div class="price-container">
             <del class="p-old-price"> </del>
 
-            <span class="p-price"> 81.990.000 đ </span>
+            <span class="p-price"> {{ $price }} </span>
         </div>
 
         <div class="p-special-container">3 khuyến mại</div>
@@ -28,35 +71,35 @@
                         <div class="item-icon">
                             <i class="icon-thongso icon-bo-vi-xu-ly"></i>
                         </div>
-                        <div class="txt">185H AMD Ryzen AI 9 HX 370</div>
+                        <div class="txt">{{ $cpu }}</div>
                     </div>
 
                     <div class="item d-flex align-items" data-info="Kích thước màn hình">
                         <div class="item-icon">
                             <i class="icon-thongso icon-kich-thuoc-man-hinh-laptop"></i>
                         </div>
-                        <div class="txt">16 inch WQXGA 240Hz OLED</div>
+                        <div class="txt">{{ $mon_size }}</div>
                     </div>
 
                     <div class="item d-flex align-items" data-info="Card đồ họa (VGA)">
                         <div class="item-icon">
                             <i class="icon-thongso icon-card-do-hoa-laptop"></i>
                         </div>
-                        <div class="txt">RTX 4070 8GB</div>
+                        <div class="txt">{{ $gpu }}</div>
                     </div>
 
                     <div class="item d-flex align-items" data-info="Dung lượng ổ cứng">
                         <div class="item-icon">
                             <i class="icon-thongso icon-dung-luong-o-cung-laptop"></i>
                         </div>
-                        <div class="txt">1 TB</div>
+                        <div class="txt">{{ $ssd_capacity }}</div>
                     </div>
 
                     <div class="item d-flex align-items" data-info="Bộ nhớ trong">
                         <div class="item-icon">
                             <i class="icon-thongso icon-bo-nho-trong"></i>
                         </div>
-                        <div class="txt">32GB</div>
+                        <div class="txt">{{ $ram }}</div>
                     </div>
                 </div>
             </div>
@@ -101,7 +144,7 @@
         </div>
 
     </div>
-    <div class="p-tooltip">
+    {{-- <div class="p-tooltip">
         <p class="tooltip-title"> Laptop Asus Gaming ROG Zephyrus G16 GA605WI-QR090WS (AMD Ryzen AI 9 HX 370 | RTX 4070
             8GB | 16 inch WQXGA OLED | 32 GB | 1 TB | Win 11) </p>
 
@@ -149,5 +192,5 @@
                 </p>
             </div>
         </div>
-    </div>
+    </div> --}}
 </div>
