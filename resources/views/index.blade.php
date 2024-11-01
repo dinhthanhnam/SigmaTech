@@ -115,11 +115,7 @@
         <div class="deal-product-holder">
           <!-- // Deal nổi bật đang diễn ra  + sắp chạy trong ngày-->
           <div class="product-deal-list d-flex flex-wrap justify-content-between active" id="js-active-group">
-            @include('partials.deal-p-item')
-            @include('partials.deal-p-item')
-            @include('partials.deal-p-item')
-            @include('partials.deal-p-item')
-            @include('partials.deal-p-item')
+
           </div>
           <div class="product-deal-list" id="js-inactive-group"> </div>
         </div>
@@ -142,20 +138,10 @@
         </div>
         <div class="p-container" style="min-height: 850px">
           <div class="d-flex flex-wrap">
-            @include('partials.simple-p-item')
-            @include('partials.simple-p-item')
-            @include('partials.simple-p-item')
-            @include('partials.simple-p-item')
-            @include('partials.simple-p-item')
-            @include('partials.simple-p-item')
+
           </div>
           <div class="d-flex flex-wrap" id="js-bestsale-collection-2">
-            @include('partials.simple-p-item')
-            @include('partials.simple-p-item')
-            @include('partials.simple-p-item')
-            @include('partials.simple-p-item')
-            @include('partials.simple-p-item')
-            @include('partials.simple-p-item')
+
           </div>
           <a href="#" class="view-all"> xem tất cả sản phẩm </a>
         </div>
@@ -173,9 +159,11 @@
           </div>
         </div>
         <div class="p-container custom-nav owl-carousel owl-theme" id="js-collection-850" data-id="850">
-
+          @foreach ($laptops as $laptop)
+            @include('partials.simple-p-item', ['product' => $laptop])
+          @endforeach
         </div>
-        <a href="{{route ('categories.office-laptops')}}" class="view-cate"> XEM TẤT CẢ <i class="fa fa-angle-double-right"></i></a>
+        <a href="{{route ('office-laptops.show')}}" class="view-cate"> XEM TẤT CẢ <i class="fa fa-angle-double-right"></i></a>
       </div>
 
       <!-- Linh kiện máy tính -->
@@ -195,12 +183,7 @@
           </div>
         </div>
         <div class="p-container custom-nav owl-carousel owl-theme" id="js-collection-848" data-id="848">
-          @include('partials.simple-p-item')
-          @include('partials.simple-p-item')
-          @include('partials.simple-p-item')
-          @include('partials.simple-p-item')
-          @include('partials.simple-p-item')
-          @include('partials.simple-p-item')
+
         </div>
         <a href="{{route ('categories.pc-parts')}}" class="view-cate"> XEM TẤT CẢ <i class="fa fa-angle-double-right"></i>
         </a>
@@ -214,12 +197,7 @@
           </div>
         </div>
         <div class="p-container custom-nav owl-carousel owl-theme" id="js-collection-849" data-id="849">
-          @include('partials.simple-p-item')
-          @include('partials.simple-p-item')
-          @include('partials.simple-p-item')
-          @include('partials.simple-p-item')
-          @include('partials.simple-p-item')
-          @include('partials.simple-p-item')
+
         </div>
         <a href="{{route ('categories.monitors')}}" class="view-cate"> XEM TẤT CẢ <i class="fa fa-angle-double-right"></i>
         </a>
@@ -235,12 +213,7 @@
           </div>
         </div>
         <div class="p-container custom-nav owl-carousel owl-theme" id="js-holder-1255" data-id="1255">
-          @include('partials.simple-p-item')
-          @include('partials.simple-p-item')
-          @include('partials.simple-p-item')
-          @include('partials.simple-p-item')
-          @include('partials.simple-p-item')
-          @include('partials.simple-p-item')
+
         </div>
         <a href="{{route ('categories.gaming-gears')}}" class="view-cate"> XEM TẤT CẢ <i class="fa fa-angle-double-right"></i> </a>
       </div>
@@ -255,12 +228,7 @@
           </div>
         </div>
         <div class="p-container custom-nav owl-carousel owl-theme" id="js-holder-397" data-id="397">
-          @include('partials.simple-p-item')
-          @include('partials.simple-p-item')
-          @include('partials.simple-p-item')
-          @include('partials.simple-p-item')
-          @include('partials.simple-p-item')
-          @include('partials.simple-p-item')
+
         </div>
         <a href="coolings" class="view-cate"> XEM TẤT CẢ <i class="fa fa-angle-double-right"></i>
         </a>

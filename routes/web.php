@@ -22,7 +22,10 @@ Route::middleware(['auth'])->group(function () {
 Route::middleware(['auth', AuthAdmin::class])->group(function () {
   Route::get('admin', [AdminController::class, 'index'])->name('admin.index');
 });
+
 Route::get('/', [HomeController::class, 'index'])->name('home.index');
+
+Route::get('/', [LaptopController::class, 'index'])->name('laptops.pull');
 
 Route::get('laptops/Gaming', [LaptopController::class, 'showGamingLaptops'])
   ->name('gaming-laptops.show');
@@ -30,7 +33,7 @@ Route::get('laptops/Gaming', [LaptopController::class, 'showGamingLaptops'])
 Route::get('laptops/Office', [LaptopController::class, 'showOfficeLaptops'])
   ->name('office-laptops.show');
 
-  Route::get('cpus', [CpuController::class, 'showCpus'])
+Route::get('cpus', [CpuController::class, 'showCpus'])
   ->name('cpus.show');
 
 Route::get('gaming-gears', function () {

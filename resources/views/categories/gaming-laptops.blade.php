@@ -23,9 +23,9 @@
         </div>
         <!-- Thêm sản phẩm được mua nhiều nhất vào đây-->
         <div class="p-container d-flex flex-wrap justify-content-between">
-          @foreach($gamingLaptops as $product)
-            @include('partials.detailed-p-item', ['product' => $product])
-          @endforeach  
+          @foreach($gamingLaptops as $laptop)
+            @include('partials.detailed-p-item', ['product' => $laptop])
+          @endforeach
         <div class="filter-height" style="display: none;"></div>
         <div class="filter-container">
           <p class="filter-group-title"> BỘ LỌC </p>
