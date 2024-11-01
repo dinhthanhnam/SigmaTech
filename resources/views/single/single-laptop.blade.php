@@ -692,26 +692,13 @@
                         <p class="title">Trợ giúp</p>
                         <div class="static-info">
                             <ul class="ul" style="line-height:25px;">
-                                <li> <i class="fa fa-check"></i> <a
-                                        href="https://www.anphatpc.com.vn/tin-khuyen-mai/huong-dan-dat-hang-flash-sale_idtin5339.html"
-                                        target="blank">Hướng dẫn đặt hàng Flash Sale</a> </li>
-                                <li> <i class="fa fa-check"></i> <a
-                                        href="https://www.anphatpc.com.vn/huong-dan-dat-hang.html" target="blank">Hướng
-                                        dẫn mua hàng</a> </li>
-                                <li> <i class="fa fa-check"></i> <a
-                                        href="https://www.anphatpc.com.vn/trung-tam-bao-hanh.html" target="blank">Chính
-                                        sách bảo hành đổi trả</a> </li>
-                                <li> <i class="fa fa-check"></i> <a href="https://www.anphatpc.com.vn/mua-tra-gop.html"
-                                        target="blank">Chính sách mua trả góp</a> </li>
-                                <li> <i class="fa fa-check"></i> <a href="https://www.anphatpc.com.vn/giao-hang.html"
-                                        target="blank">Chính sách giao hàng</a> </li>
-                                <li> <i class="fa fa-check"></i> <a
-                                        href="https://www.anphatpc.com.vn/chinh-sach-bao-hanh-tan-nha.html"
-                                        target="blank">Chính sách bảo hành tận nhà</a> </li>
-                                <li> <i class="fa fa-check"></i> <a
-                                        href="https://www.anphatpc.com.vn/phong-du-an-va-khach-hang-doanh-nghiep.html"
-                                        target="blank">Hỗ trợ
-                                        khách hàng dự án, doanh nghiệp </a> </li>
+                                <li> <i class="fa fa-check"></i> <a href="#">Hướng dẫn đặt hàng Flash Sale</a> </li>
+                                <li> <i class="fa fa-check"></i> <a href="#">Hướng dẫn mua hàng</a> </li>
+                                <li> <i class="fa fa-check"></i> <a href=" {{ route('pages.warranty-policy') }}">Chính sách bảo hành đổi trả</a> </li>
+                                <li> <i class="fa fa-check"></i> <a href="3">Chính sách mua trả góp</a> </li>
+                                <li> <i class="fa fa-check"></i> <a href="{{ route('pages.shipping-policy') }}">Chính sách giao hàng</a> </li>
+                                <li> <i class="fa fa-check"></i> <a href="#">Chính sách bảo hành tận nhà</a> </li>
+                                <li> <i class="fa fa-check"></i> <a href="#">Hỗ trợ khách hàng dự án, doanh nghiệp </a> </li>
                             </ul>
                         </div>
                     </div>
