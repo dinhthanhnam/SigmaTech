@@ -855,27 +855,27 @@
               <div class="sort-by-group">
                 <select onchange="location.href = this.value">
                   <option value="" class="js-select-path"> Sắp xếp theo </option>
-                  <option value="https://www.anphatpc.com.vn/gaming-laptop.html?sort=view"> Lượt xem
+                  <option value="javascript:void(0)"> Lượt xem
                   </option>
-                  <option value="https://www.anphatpc.com.vn/gaming-laptop.html?sort=rating"> Đánh giá
+                  <option value="javascript:void(0)"> Đánh giá
                   </option>
-                  <option value="https://www.anphatpc.com.vn/gaming-laptop.html?sort=name"> Tên A-&gt;Z
+                  <option value="javascript:void(0)"> Tên A-&gt;Z
                   </option>
                 </select>
-                <a href="https://www.anphatpc.com.vn/gaming-laptop.html?sort=price-desc&amp;other_filter=in-stock">
+                <a href="javascript:void(0)">
                   <i class="mb-icons icon-in-stock"></i>
                   <span> Còn hàng </span>
                 </a>
-                <a href="https://www.anphatpc.com.vn/gaming-laptop.html?sort=new">
+                <a href="javascript:void(0)">
                   <i class="mb-icons icon-new"></i>
 
                   <span> Mới nhất </span>
                 </a>
-                <a href="https://www.anphatpc.com.vn/gaming-laptop.html?sort=price-asc">
+                <a href="javascript:void(0)">
                   <i class="mb-icons icon-increase"></i>
                   <span> Giá tăng dần </span>
                 </a>
-                <a href="https://www.anphatpc.com.vn/gaming-laptop.html?sort=price-desc" class="current">
+                <a href="javascript:void(0)" class="current">
                   <i class="mb-icons icon-decrease"></i>
                   <span> Giá giảm dần </span>
                 </a>
@@ -897,33 +897,33 @@
           <div class="p-list-container d-flex flex-wrap">
           </div>
         </div>
-        <!-- paging -->
-        <div class="paging mx-auto">
-          <a href="/gaming-laptop.html" class="current">
-              1
-          </a>
-          <a href="/gaming-laptop.html?page=2">
-              2
-          </a>
-          <a href="/gaming-laptop.html?page=3">
-              3
-          </a>
-          <a href="/gaming-laptop.html?page=4">
-              4
-          </a>
-          <a href="/gaming-laptop.html?page=5">
-              5
-          </a>
-          <a href="/gaming-laptop.html?page=6">
-              6
-          </a>
-          <a href="/gaming-laptop.html?page=7">
-              7
-          </a>
-          <a href="/gaming-laptop.html?page=2">
-                <i class="fa fa-angle-right"></i>
-          </a>
-        </div>
+      </div>
+      <!-- paging -->
+      <div class="paging bg-white mx-auto">
+        <a href="/gaming-laptop.html" class="current">
+            1
+        </a>
+        <a href="/gaming-laptop.html?page=2">
+            2
+        </a>
+        <a href="/gaming-laptop.html?page=3">
+            3
+        </a>
+        <a href="/gaming-laptop.html?page=4">
+            4
+        </a>
+        <a href="/gaming-laptop.html?page=5">
+            5
+        </a>
+        <a href="/gaming-laptop.html?page=6">
+            6
+        </a>
+        <a href="/gaming-laptop.html?page=7">
+            7
+        </a>
+        <a href="/gaming-laptop.html?page=2">
+              <i class="fa fa-angle-right"></i>
+        </a>
       </div>
   </section>
 @endsection
