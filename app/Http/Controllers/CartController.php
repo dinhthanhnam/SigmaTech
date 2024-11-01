@@ -126,5 +126,12 @@ class CartController extends Controller
         return response()->json(['error' => 'Không tìm thấy sản phẩm trong giỏ hàng'], 404);
     }
 
+    public function cartCount()
+    {
+        $cartItemCount = CartItem::where('user_id', auth()->id())->distinct('product_id')->count();
+
+        return response()->json(['cartItemCount' => $cartItemCount]);
+    }
+
 
 }

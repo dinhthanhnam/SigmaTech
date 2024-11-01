@@ -81,6 +81,7 @@ Route::get('/cart', [CartController::class, 'show'])->name('cart');
 Route::post('/cart/add', [CartController::class, 'add'])->name('cart.add');
 Route::patch('/cart/{product_type}/{product_id}', [CartController::class, 'update'])->name('cart.update');
 Route::delete('/cart/{product_type}/{product_id}', [CartController::class, 'remove'])->name('cart.remove');
+Route::get('/cart/count', [CartController::class, 'cartCount'])->name('cart.count');
 
 
 //single cpu

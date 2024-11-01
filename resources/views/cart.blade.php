@@ -112,7 +112,7 @@
                         quantityInput.value = newQuantity;
                         const minusButton = document.querySelector(`button.qtyplus[data-id="${productId}"]`);
                         minusButton.disabled = newQuantity <= 1;
-                        location.reload();
+                        //location.reload();
                     } else {
                         alert(data.error);
                     }

@@ -86,13 +86,15 @@
                 @endif
 
                 <div class="item clearfix">
-                    <a href="{{ Auth::check() ? route('cart') : route('login') }}" 
-                       class="d-block position-relative" 
-                       title="Giỏ hàng của bạn" id="cart-icon">
-                        <img src="{{ asset('assets/img/header-icon-right/cart.png') }}" class="my-2" alt="cart" />
+                    <a href="{{ Auth::check() ? route('cart') : route('login') }}" class="d-block position-relative"
+                        title="Giỏ hàng của bạn" id="cart-icon">
+                        <img src="{{ asset('assets/img/header-icon-right/cart.png') }}" class="my-2"
+                            alt="cart" />
+                        <span id="cart-count" class="badge badge-danger position-absolute" style="top: 0; right: 0;">
+                            0
+                        </span>
                     </a>
                 </div>
-                
 
             </div>
             <!-- mennu -->
@@ -4031,3 +4033,18 @@
         </div>
     </div>
 </div>
+@push('scripts')
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetchCartCount();
+        });
+
+        function fetchCartCount() {
+            fetch('{{ route('cart.count') }}')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('cart-count').innerText = data.cartItemCount;
+                });
+        }
+    </script>
+@endpush
