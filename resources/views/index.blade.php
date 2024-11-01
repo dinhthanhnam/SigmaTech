@@ -134,8 +134,8 @@
         <div class="box-title-container">
           <h2 class="box-title"> top sản phẩm bán chạy </h2>
           <div class="child-title">
-            <a href="{{ route('categories.gaming-laptops')}}"> Laptop gaming </a>
-            <a href="{{ route('categories.office-laptops')}}"> Laptop văn phòng </a>
+            <a href="{{ route('gaming-laptops.show')}}"> Laptop gaming </a>
+            <a href="{{ route('office-laptops.show')}}"> Laptop văn phòng </a>
             <a href="{{ route('categories.monitors')}}"> màn hình máy tính </a>
             <a href="{{ route('categories.gaming-gears')}}"> bàn phím, chuột</a>
           </div>
