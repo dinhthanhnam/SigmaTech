@@ -10,20 +10,21 @@
             </a>
           </li>
           <li class="breadcrumb-item" aria-current="page">
-            <a href="{{ url('/laptops/Gaming') }}">Laptop </a>
+            <a href="{{ url('/Pc-part') }}"> Linh kiện </a>
           </li>
           <li class="breadcrumb-item active" aria-current="page">
-            <a href="{{ url('/laptops/Gaming') }}">Gaming </a>
+            <a href="{{ url('/Pc-part') }}"> Cpu </a>
           </li>
         </ol>
     </div>
       <div class="product-collection-related-container">
         <div class="group-title">
-          <h2 class="title">Laptop Gaming Được Mua Nhiều Nhất 2024</h2>
+          <h2 class="title">CPU Được Mua Nhiều Nhất 2024</h2>
         </div>
         <!-- Thêm sản phẩm được mua nhiều nhất vào đây-->
         <div class="p-container d-flex flex-wrap justify-content-between">
-          @foreach($gamingLaptops as $product)
+          @dd($cpus)
+          @foreach($cpus as $product)
             @include('partials.detailed-p-item', ['product' => $product])
           @endforeach  
         <div class="filter-height" style="display: none;"></div>

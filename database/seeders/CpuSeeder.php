@@ -27,6 +27,7 @@ class CpuSeeder extends Seeder
                 ['name' => 'Price', 'value' => '5030000'],
                 ['name' => 'Deal Price', 'value' => '4290000'],
                 ['name' => 'Rating', 'value' => '5'],
+                ['name' => 'Loại linh kiện', 'value' => 'CPU'],
                 ['name' => '[CPU] Socket', 'value' => 'LGA1700'],
                 ['name' => '[CPU] Tốc độ cơ bản', 'value' => '2500'],
                 ['name' => '[CPU] Tốc độ tối đa', 'value' => '4600'], 

@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\Cpu;
 
 class CpuController extends Controller
@@ -26,9 +25,11 @@ class CpuController extends Controller
     }
     public function showCpus()
     {
-        $gamingLaptops = Cpu::all();
-        
-        return view('categories.pc-part', compact('cpus'));
+        $cpus = Cpu::whereHas('attributes', function ($query) {
+            $query->where('name', 'Loại linh kiện')
+                  ->where('value', 'CPU');
+        })->with('attributes')->get();
+        return view('categories.cpus', compact('cpus'));
     }
 
 }

@@ -22,14 +22,17 @@ Route::middleware(['auth'])->group(function () {
 Route::middleware(['auth', AuthAdmin::class])->group(function () {
   Route::get('admin', [AdminController::class, 'index'])->name('admin.index');
 });
-
-
 Route::get('/', [HomeController::class, 'index'])->name('home.index');
 
 Route::get('laptops/Gaming', [LaptopController::class, 'showGamingLaptops'])
-  ->name('categories.gaming-laptops');
+  ->name('gaming-laptops.show');
+
 Route::get('laptops/Office', [LaptopController::class, 'showOfficeLaptops'])
-  ->name('categories.office-laptops');
+  ->name('office-laptops.show');
+
+  Route::get('cpus', [CpuController::class, 'showCpus'])
+  ->name('cpus.show');
+
 Route::get('gaming-gears', function () {
   return view('categories.gaming-gears');
 })->name('categories.gaming-gears');
