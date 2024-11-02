@@ -46,13 +46,6 @@
                     </span>
                     <a href="#orders">Đổi mật khẩu</a>
                 </li>
-                <li>
-                    <span class="menu-icon">
-                        <i class="fas fa-sign-out-alt"></i>
-                    </span>
-                    <a href="#"
-                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Đăng xuất</a>
-                </li>
             </ul>
 
         </div>
@@ -111,10 +104,6 @@
             <section id="saved-products" style="display: none;">
                 <h2>Sản phẩm đang lưu</h2>
                 <p>Không có sản phẩm nào đang lưu.</p>
-            </section>
-            <section id="logout" style="display: none;">
-                <h2>Đăng xuất</h2>
-                <p>Bạn đã đăng xuất thành công.</p>
             </section>
         </div>
 

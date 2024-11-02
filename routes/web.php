@@ -11,6 +11,9 @@ use App\Http\Middleware\AuthAdmin;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LaptopController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\ProductController;
+
 
 Auth::routes();
 
@@ -75,17 +78,21 @@ Route::get('account', function () {
 Route::get('admin/new-product', function () {
   return view('admin.pages.new-product');
 })->name('new-product');
+Route::get('/admin/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
+Route::get('/admin/product', [ProductController::class, 'index'])->name('admin.product');
+// Route::get('/products', [ProductController::class, 'index'])->name('products.index');
+// Route::get('/orders', [OrderController::class, 'index'])->name('orders.index');
 
 //single laptop
 Route::get('laptops/{type}/{brand}/{id}', [LaptopController::class, 'show'])->name('laptop.show');
-
-
 
 //cart
 Route::get('/cart', [CartController::class, 'show'])->name('cart');
 Route::post('/cart/add', [CartController::class, 'add'])->name('cart.add');
 Route::patch('/cart/{product_type}/{product_id}', [CartController::class, 'update'])->name('cart.update');
 Route::delete('/cart/{product_type}/{product_id}', [CartController::class, 'remove'])->name('cart.remove');
+Route::patch('/cart/update-bulk', [CartController::class, 'updateBulkQuantity'])->name('cart.updateBulkQuantity');
+Route::get('/cart/count', [CartController::class, 'cartCount'])->name('cart.count');
 
 
 //single cpu
