@@ -28,6 +28,7 @@
           @endforeach
         
       </div>
+      
       <div class="filter-height" style="display: none;"></div>
       <div class="filter-container">
         <p class="filter-group-title"> BỘ LỌC </p>
@@ -898,7 +899,7 @@
             style="display: block;width: 100%;text-align: right;margin-top: 10px;color: #f00;font-weight: 600;display: none;"
             id="js-filter-note"></span>
         </div>
-        <div class="p-list-container d-flex flex-wrap justify-content-between">
+        <div class="p-list-container d-flex flex-wrap">
           @foreach($gamingLaptops as $laptop)
             @include('partials.detailed-p-item', ['product' => $laptop])
           @endforeach

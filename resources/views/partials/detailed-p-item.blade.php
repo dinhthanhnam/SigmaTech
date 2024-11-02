@@ -27,12 +27,12 @@
       $discountPercentage = round((1 - $dealprice / $price) * 100);
   }
 @endphp
-<div class="p-item js-p-item summary-loaded" data-id="49710">
+<div class="p-item" data-id="49710">
   <a href="/laptops/{{ $type }}/{{ $brand }}/{{ $product_id }}" class="p-img">
     <img src="{{ $product->attributes->firstWhere('name', 'Thumbnail')?->pivot->value ?? 'N/A' }}"
       alt="{{ $name }} ({{ $laptop_cpu }} | {{ $laptop_gpu }} | {{ $laptop_mon_size }} {{ $laptop_mon_res }} | {{ $laptop_ram }} | {{ $laptop_ssd_capacity }} | {{ $laptop_os }})"
       class="fit-img">
-    <span class="p-icon-holder js-icon-49710"><!-- // icon promotion --></span>
+    <span class="p-icon-holder"><!-- // icon promotion --></span>
   </a>
 
   <div class="p-text">
@@ -92,7 +92,7 @@
     <div class="box-config">
       <div class="product-promo" style="padding-top: 0">
         <div class="content d-flex align-items">
-          <div class="item active">
+          <div class="item">
             <div class="icon-promo"> <img
                 src="{{ asset('assets/img/promo/promo_15d608aee7549de20124715432213768.jpg') }}"
                 alt="Tặng ngay gói Bảo hành mở rộng"> </div>
