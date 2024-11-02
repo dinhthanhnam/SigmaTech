@@ -110,6 +110,21 @@ class CartController extends Controller
         return response()->json(['error' => 'Không tìm thấy sản phẩm trong giỏ hàng'], 404);
     }
     
+    public function updateBulkQuantity(Request $request)
+    {
+        $items = $request->items;
+        
+        foreach ($items as $key => $quantity) {
+            list($product_type, $product_id) = explode('_', $key);
+            CartItem::where('product_type', $product_type)
+                    ->where('product_id', $product_id)
+                    ->where('user_id', auth()->id())
+                    ->update(['quantity' => $quantity]);
+        }
+
+        return response()->json(['success' => 'Số lượng đã được cập nhật']);
+    }
+
     public function remove($product_type, $product_id)
     {
         // Tìm sản phẩm trong giỏ hàng dựa trên product_type và product_id
@@ -124,6 +139,13 @@ class CartController extends Controller
         }
 
         return response()->json(['error' => 'Không tìm thấy sản phẩm trong giỏ hàng'], 404);
+    }
+
+    public function cartCount()
+    {
+        $cartItemCount = CartItem::where('user_id', auth()->id())->distinct('product_id')->count();
+
+        return response()->json(['cartItemCount' => $cartItemCount]);
     }
 
 
