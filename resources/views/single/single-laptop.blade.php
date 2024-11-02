@@ -74,7 +74,7 @@
                         <a href="javascript:void(0)" onclick="openBoxGallery(this);" data-id="anh_sp"
                             data-name="Hình sản phẩm" class="js-img-type current">
                             <span class="img">
-                                <img src="{{$laptop->attributes->firstWhere('name', 'Thumbnail Small')->pivot->value}}"
+                                <img src="{{$laptop->attributes->firstWhere('name', 'Thumbnail Small')->pivot->value ?? 'N/A'}}"
                                     alt="Hình sản phẩm" class="fit-img">
                             </span>
                             <span class="name"> Hình sản phẩm </span>

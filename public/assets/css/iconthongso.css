@@ -19,7 +19,7 @@
 .icon-thongso.icon-thongso-80:before,
 .icon-thongso.icon-card-do-hoa-laptop:before {
     content: "";
-    background: url(https://anphat.com.vn/media/lib/17-05-2023/graphics-card-icon.png);
+    background: url(/assets/img/sprites/laptop-specs/graphics-card-icon.png);
     background-repeat: no-repeat;
     width: 18px;
     height: 22px;
@@ -203,7 +203,7 @@
 
 .product-list-2020 .thongso .txt,
 .product-list-container .thongso .txt {
-    font-size: 11px;
+    font-size: 1px;
     margin-top: 1px;
 }
 

@@ -11,12 +11,6 @@
                     </a>  
                     <meta itemprop="position" content="1">
                 </li>
-
-                
-                
-                  
-                
-              
                 <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
                   <a href="/may-tinh-xach-tay-laptop.html" itemprop="item" class="nopad-l">
                     <h1 itemprop="name">Laptop - Tablet - Mobile</h1>
