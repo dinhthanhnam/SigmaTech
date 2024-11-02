@@ -25,6 +25,10 @@
     font-size: 1.1rem;
     font-weight: bold;
     padding-top: 20px;
+    max-width: 420px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
 }
 
 .item-price {
