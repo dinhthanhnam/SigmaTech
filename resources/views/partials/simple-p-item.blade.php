@@ -53,7 +53,7 @@
     <div class="box-config">
       <div class="product-promo" style="padding-top: 0">
         <div class="content d-flex align-items">
-          <div class="item active">
+          <div class="item">
             <div class="icon-promo"> <img
                 src="{{ asset('assets/img/promo/promo_15d608aee7549de20124715432213768.jpg') }}"
                 alt="Tặng ngay gói Bảo hành mở rộng"> </div>
@@ -67,14 +67,11 @@
         </div>
       </div>
     </div>
-    <div class="d-flex align-items-centet justify-content-between">
-      <div class="d-flex align-items-center justify-content-between">
-        <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-49710"
-          onclick="CompareProduct.compare_addProduct(49710)" data-id="49710">So sánh</a>
-        <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
-      </div>
+    <div class="d-flex justify-content-between">
+      <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
       <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart"
-        onclick="addProduct('49710', 'Laptop Asus Gaming ROG Zephyrus G16 GA605WI-QR090WS (AMD Ryzen AI 9 HX 370 | RTX 4070 8GB | 16 inch WQXGA OLED | 32 GB | 1 TB | Win 11)', '81990000')"></a>
+        onclick="addProduct()">
+      </a>
     </div>
   </div>
   {{-- <div class="p-tooltip">
