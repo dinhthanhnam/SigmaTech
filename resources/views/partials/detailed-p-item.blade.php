@@ -12,11 +12,11 @@
   //biến riêng, cho laptop
   $laptop_cpu = $product->attributes->firstWhere('name', '[Laptop] Vi xử lý')?->pivot->value ?? 'N/A';
   $laptop_ssd_capacity = $product->attributes->firstWhere('name', '[Laptop] Dung lượng ổ cứng')?->pivot->value ?? 'N/A';
+  $laptop_ssd = $product->attributes->firstWhere('name', '[Laptop] Ổ cứng')?->pivot->value ?? 'N/A';
   $laptop_gpu = $product->attributes->firstWhere('name', '[Laptop] Card đồ hoạ')?->pivot->value ?? 'N/A';
   $laptop_mon_size = $product->attributes->firstWhere('name', '[Laptop] Kích thước màn hình')?->pivot->value ?? 'N/A';
   $laptop_mon_res = $product->attributes->firstWhere('name', '[Laptop] Độ phân giải')?->pivot->value ?? 'N/A';
   $laptop_ram = $product->attributes->firstWhere('name', '[Laptop] Dung lượng RAM')?->pivot->value ?? 'N/A';
-  $laptop_ssd = $product->attributes->firstWhere('name', '[Laptop] Ổ cứng')?->pivot->value ?? 'N/A';
   $laptop_os = $product->attributes->firstWhere('name', '[Laptop] OS')?->pivot->value ?? 'N/A';
   //biến riêng, cho linh kiện
 @endphp
@@ -78,7 +78,7 @@
             <div class="item-icon">
               <i class="icon-thongso icon-dung-luong-o-cung-laptop"></i>
             </div>
-            <div class="txt">{{ $laptop_ssd }}</div>
+            <div class="txt">{{ $laptop_ssd_capacity }}</div>
           </div>
           <div class="item d-flex align-items">
             <div class="item-icon">
@@ -106,14 +106,11 @@
         </div>
       </div>
     </div>
-    <div class="d-flex align-items-centet justify-content-between">
-      <div class="d-flex align-items-center justify-content-between">
-        <a href="javascript:void(0)" class="p-conpare js-p-compare" id="js-pd-item-49710"
-          onclick="CompareProduct.compare_addProduct(49710)" data-id="49710">So sánh</a>
-        <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
-      </div>
+    <div class="d-flex justify-content-between">
+      <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
       <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart"
-        onclick="addProduct('49710', 'Laptop Asus Gaming ROG Zephyrus G16 GA605WI-QR090WS (AMD Ryzen AI 9 HX 370 | RTX 4070 8GB | 16 inch WQXGA OLED | 32 GB | 1 TB | Win 11)', '81990000')"></a>
+        onclick="addProduct()">
+      </a>
     </div>
   </div>
   {{-- <div class="p-tooltip">

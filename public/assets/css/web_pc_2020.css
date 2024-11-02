@@ -8506,6 +8506,7 @@ span.ping {
 }
 
 .product-collection-related-container .p-container .p-item {
+    flex-direction: column;
     width: calc(100%/6 - 4px);
     padding-left: 10px;
     padding-right: 10px;
@@ -10115,4 +10116,11 @@ span.ping {
     margin-bottom: 20px
 }
 /* new */
+
+.thongso {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 
