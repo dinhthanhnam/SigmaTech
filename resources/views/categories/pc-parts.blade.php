@@ -10,12 +10,6 @@
                     </a>  
                     <meta itemprop="position" content="1">
                 </li>
-
-                
-                
-                  
-                
-              
                 <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
                   <a href="/linh-kien-may-tinh.html" itemprop="item" class="nopad-l">
                     <h1 itemprop="name">Linh Kiện Máy Tính</h1>

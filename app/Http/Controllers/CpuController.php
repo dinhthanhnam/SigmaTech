@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\Cpu;
 
-class CPUController extends Controller
+class CpuController extends Controller
 {
     public function show($brand, $id)
     {
@@ -24,5 +23,14 @@ class CPUController extends Controller
         // Trả về view cùng với các dữ liệu cần thiết
         return view('single.single-cpu', compact('cpuBrand', 'cpu'));
     }
+    public function showCpus()
+    {
+        $cpus = Cpu::whereHas('attributes', function ($query) {
+            $query->where('name', 'Loại linh kiện')
+                  ->where('value', 'CPU');
+        })->with('attributes')->get();
+        return view('categories.cpus', compact('cpus'));
+    }
+
 }
 

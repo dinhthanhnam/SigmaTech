@@ -105,7 +105,7 @@
                     </a>
                     <div class="header-menu-holder">
                         <div class="item bg-white" data-id="1614">
-                            <a href="{{ route('categories.gaming-laptops') }}" class="pro-cate-1">
+                            <a href="{{ route('gaming-laptops.show') }}" class="pro-cate-1">
                                 <span class="cat-thumb-item" style="width: 35px;text-align: center">
                                     <img src="{{ asset('assets/img/cat/cat_3dcc022e961d90ea6b636f367e5e5f9d.png') }}"
                                         alt="Laptop Gaming - Đồ Họa" />
@@ -364,7 +364,7 @@
                             </div>
                         </div>
                         <div class="item bg-white" data-id="395">
-                            <a href="{{ route('categories.laptops') }}" class="pro-cate-1">
+                            <a href="{{ route('office-laptops.show') }}" class="pro-cate-1">
                                 <span class="cat-thumb-item" style="width: 35px;text-align: center">
                                     <img src="{{ asset('assets/img/cat/cat_b706c0f50035bddb63ca6e91efef7703.png') }}"
                                         alt="Laptop - Tablet - Mobile" />

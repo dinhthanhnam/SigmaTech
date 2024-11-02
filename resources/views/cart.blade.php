@@ -58,17 +58,21 @@
 
                                 </div>
                                 <div class="item-quantity d-flex">
-                                    <button class="qtyminus qty-btn"
-                                        onclick="update('{{ $item->product_type }}', {{ $item->product_id }}, {{ $item->quantity - 1 }})"
-                                        {{ $item->quantity <= 1 ? 'disabled' : '' }}
-                                        data-id="{{ $item->product_id }}">-</button>
-                                    <input type="text" class="form text-center quantity-input" style="width: 50px;"
-                                        value="{{ $item->quantity }}" readonly data-id="{{ $item->product_id }}">
-                                    <button class="qtyplus qty-btn"
-                                        onclick="update('{{ $item->product_type }}', {{ $item->product_id }}, {{ $item->quantity + 1 }})"
-                                        data-id="{{ $item->product_id }}">+</button>
+                                    <div class="item-quantity d-flex">
+                                        <button class="qtyminus qty-btn"
+                                            onclick="updateQuantity('{{ $item->product_type }}', {{ $item->product_id }}, -1)"
+                                            {{ $item->quantity <= 1 ? 'disabled' : '' }}
+                                            data-type="{{ $item->product_type }}"
+                                            data-id="{{ $item->product_id }}">-</button>
+                                        <input type="text" class="form text-center quantity-input" style="width: 50px;"
+                                            value="{{ $item->quantity }}" readonly data-type="{{ $item->product_type }}"
+                                            data-id="{{ $item->product_id }}">
+                                        <button class="qtyplus qty-btn"
+                                            onclick="updateQuantity('{{ $item->product_type }}', {{ $item->product_id }}, 1)"
+                                            data-type="{{ $item->product_type }}"
+                                            data-id="{{ $item->product_id }}">+</button>
+                                    </div>
                                 </div>
-
                             </div>
                         </section>
                     @endforeach
@@ -77,7 +81,8 @@
                 {{-- Total Price and Order Button --}}
                 <div class="total-price-section d-flex justify-content-between align-items-center mt-4">
                     <h5 class="total-label">Tổng tiền:</h5>
-                    <h5 class="total-amount text-danger">{{ number_format($totalPrice, 0, ',', '.') }} đ</h5>
+                    <h5 id="total-amount" class="total-amount text-danger">{{ number_format($totalPrice, 0, ',', '.') }} đ
+                    </h5>
                 </div>
                 <div class = "custom-order-btn">
                     <a href="#" class="btn w-100">ĐẶT HÀNG NGAY</a>
@@ -89,36 +94,83 @@
 
 @push('scripts')
     <script>
-        function update(productType, productId, newQuantity) {
+        function updateQuantity(productType, productId, adjustment) {
+            // Lấy ô input số lượng dựa trên cả productType và productId
+            const quantityInput = document.querySelector(
+                `input.quantity-input[data-type="${productType}"][data-id="${productId}"]`
+            );
+
+            // Lấy số lượng hiện tại và tính toán số lượng mới
+            let currentQuantity = parseInt(quantityInput.value);
+            let newQuantity = currentQuantity + adjustment;
+
+            // Kiểm tra nếu số lượng mới hợp lệ
             if (newQuantity < 1) {
                 alert("Số lượng không thể nhỏ hơn 1");
                 return;
             }
 
-            fetch(`/cart/${productType}/${productId}`, {
-                    method: 'PATCH',
-                    headers: {
-                        'X-CSRF-TOKEN': '{{ csrf_token() }}',
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        quantity: newQuantity
-                    })
-                })
-                .then(response => response.json())
-                .then(data => {
-                    if (data.success) {
-                        const quantityInput = document.querySelector(`input.quantity-input[data-id="${productId}"]`);
-                        quantityInput.value = newQuantity;
-                        const minusButton = document.querySelector(`button.qtyplus[data-id="${productId}"]`);
-                        minusButton.disabled = newQuantity <= 1;
-                        //location.reload();
-                    } else {
-                        alert(data.error);
-                    }
-                })
-                .catch(error => console.error('Lỗi:', error));
+            // Cập nhật giá trị số lượng mới vào ô input
+            quantityInput.value = newQuantity;
+
+
+            const minusButton = document.querySelector(
+                `button.qtyminus[data-type="${productType}"][data-id="${productId}"]`
+            );
+            minusButton.disabled = newQuantity <= 1;
+
+            let cartChanges = JSON.parse(localStorage.getItem('cartChanges')) || {};
+            cartChanges[`${productType}_${productId}`] = newQuantity;
+            localStorage.setItem('cartChanges', JSON.stringify(cartChanges));
+            updateTotalPrice();
         }
+
+        function updateTotalPrice() {
+            let totalPrice = 0;
+
+            // Lặp qua tất cả các sản phẩm trong giỏ hàng
+            document.querySelectorAll('.cart-item').forEach(item => {
+                const dealPrice = parseFloat(item.querySelector('.item-price .text-danger').innerText.replace(/\./g,
+                    '').replace(' đ', ''));
+                const quantity = parseInt(item.querySelector('input.quantity-input').value);
+                totalPrice += dealPrice * quantity;
+            });
+
+            // Cập nhật giá trị tổng tiền trong HTML
+            document.getElementById('total-amount').innerText = numberWithCommas(totalPrice) + ' đ';
+
+            // Cập nhật giá trị data-total-price
+            document.getElementById('total-price-section').setAttribute('data-total-price', totalPrice);
+        }
+
+        function numberWithCommas(x) {
+            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+        }
+        window.addEventListener('beforeunload', function() {
+            const cartChanges = JSON.parse(localStorage.getItem('cartChanges'));
+
+            if (cartChanges) {
+                // Gửi yêu cầu AJAX cập nhật số lượng trong database
+                fetch('/cart/update-bulk', {
+                        method: 'PATCH',
+                        headers: {
+                            'X-CSRF-TOKEN': '{{ csrf_token() }}',
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            items: cartChanges
+                        })
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            // Xóa các thay đổi khỏi localStorage sau khi đã cập nhật thành công
+                            localStorage.removeItem('cartChanges');
+                        }
+                    })
+                    .catch(error => console.error('Lỗi:', error));
+            }
+        });
 
         function remove(productType, productId) {
             if (confirm('Bạn có chắc chắn muốn xóa sản phẩm này khỏi giỏ hàng?')) {
