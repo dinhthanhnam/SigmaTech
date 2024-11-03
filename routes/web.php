@@ -32,6 +32,9 @@ Route::get('laptops/Gaming', [LaptopController::class, 'showGamingLaptops'])
 Route::get('laptops/Office', [LaptopController::class, 'showOfficeLaptops'])
   ->name('office-laptops.show');
 
+Route::get('flash-sale', [SaleController::class, 'showFlashSale'])
+  ->name('flash-sale');
+
 Route::get('cpus', [CpuController::class, 'showCpus'])
   ->name('cpus.show');
 
@@ -60,9 +63,6 @@ Route::get('shipping-policy', function () {
 Route::get('warranty-policy', function () {
   return view('pages.service-policy.warranty-policy');
 })->name('pages.warranty-policy');
-Route::get('flash-sale', function () {
-  return view('pages.flash-sale');
-})->name('pages.flash-sale');
 Route::get('laptop-outlet', function () {
   return view('pages.laptop-outlet');
 })->name('pages.laptop-outlet');

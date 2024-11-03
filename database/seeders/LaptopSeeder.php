@@ -25,6 +25,7 @@ class LaptopSeeder extends Seeder
                     ['name' => 'Model', 'value' => 'NBAS1394'],
                     ['name' => 'Price', 'value' => '54990000'],
                     ['name' => 'Deal Price', 'value' => '42990000'],
+                    ['name' => 'Sale Price', 'value' => '40990000'],
                     ['name' => 'Rating', 'value' => '5'],
                     ['name' => 'Thumbnail', 'value' => '/assets/img/products/laptops/gaming/1/Thumb.jpg'],
                     ['name' => 'Thumbnail Small', 'value' => '/assets/img/products/laptops/gaming/1/Thumb_small.jpg'],

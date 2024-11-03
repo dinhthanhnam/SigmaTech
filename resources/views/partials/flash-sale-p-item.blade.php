@@ -4,6 +4,7 @@
   $category_id = $product->category_id;
   $name = $product->name;
   $price = $product->attributes->firstWhere('name', 'Price')->pivot->value ?? 'N/A';
+  $saleprice = $product->attributes->firstWhere('name', 'Sale Price')->pivot->value ?? 'N/A';
   $dealprice = $product->attributes->firstWhere('name', 'Deal Price')->pivot->value ?? 'N/A';
   $rating = $product->attributes->firstWhere('name', 'Rating')->pivot->value ?? 'N/A';
   $brand = $product->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
@@ -23,10 +24,17 @@
   
   //biến riêng, cho linh kiện
 @endphp
+@php
+  $discountPercentage = 0;
+
+  if (isset($dealprice)) {
+      $discountPercentage = round((1 - $dealprice / $price) * 100);
+  }
+@endphp
 <div class="deal-item">
-  <a href="/laptop-acer-aspire-lite-al14-51m-36mh_nx.ktvsv.001.html" class="p-img" target="_blank">
-    <img src="https://anphat.com.vn/media/product/49837_laptop_acer_aspire_lite_al14_51m_36mh_nx_ktvsv_001__2_.jpg"
-      alt="Laptop Acer Aspire Lite AL14-51M-36MH_NX.KTVSV.001 (Intel Core i3-1215U | 8GB | 256GB | Intel UHD | 14 inch WUXGA | Win 11 | Bạc)">
+  <a href="/laptops/{{$laptop_type}}/{{$brand}}/{{$product_id}}" class="p-name" target="_blank">
+    <img src="{{ $product->attributes->firstWhere('name', 'Thumbnail')?->pivot->value ?? 'N/A' }}" class="mx-auto"
+      alt="{{ $name }} ({{ $laptop_cpu}} | {{ $laptop_ram }} | {{ $laptop_ssd_capacity}} | {{ $laptop_gpu }} | {{ $laptop_mon_size }} | {{ $laptop_os }} | {{$laptop_color}})">
   </a>
   <div class="p-text">
     @if ($product->attributes->firstWhere('name', '[Laptop] Loại laptop')->value)
@@ -36,9 +44,9 @@
       </a>
     @endif
     <div class="p-price-group">
-      <span class="p-price">8.990.000<u>đ</u></span>
-      <span class="p-discount">-6%</span>
-      <p class="p-old-price">9.490.000<u>đ</u></p>
+      <span class="p-price">{{ number_format($saleprice, 0, ',', '.') }}<u>đ</u></span>
+      <span class="p-discount">{{ $discountPercentage }} %</span>
+      <p class="p-old-price">{{ number_format($price, 0, ',', '.') }}<u>đ</u></p>
     </div>
 
     <div class="p-status-group">

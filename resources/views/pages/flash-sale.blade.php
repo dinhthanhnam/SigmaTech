@@ -20,9 +20,9 @@
       <div class="product-deal-holder active" id="js-active-group">
         <!-- // Deal đang diễn ra -->
         <div class="d-flex flex-wrap" id="js-deal-runing-holder" style="width: 100%">
-          @for ($i = 0; $i < 10; $i++)
-            @include('partials.flash-sale-p-item')
-          @endfor
+          @foreach($flashSaleItems as $item)
+            @include('partials.flash-sale-p-item', ['product' => $item])
+          @endforeach
         </div>
       </div>
     </div>

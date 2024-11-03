@@ -22,7 +22,7 @@ class LaptopController extends Controller
         // Trả về view cùng với các dữ liệu cần thiết
         return view('single.single-laptop', compact('laptopType', 'laptopBrand', 'laptop'));
     }
-    public function showGaminglaptops()
+    public function showGamingLaptops()
     {
         $gamingLaptops = Laptop::whereHas('attributes', function ($query) {
             $query->where('name', '[Laptop] Loại laptop')

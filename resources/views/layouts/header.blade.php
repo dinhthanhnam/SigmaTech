@@ -3914,7 +3914,7 @@
                 <div
                     class="menu-text-right d-flex align-items-center justify-content-between font-weight-light text-13">
                     <a href="#" target="_blank" class="header-history"> Sản phẩm bạn đã xem </a>
-                    <a href="{{ route('pages.flash-sale') }}"> <img
+                    <a href="{{ route('flash-sale') }}"> <img
                             src="{{ asset('assets/img/header-menu-icon/flash.png') }}" class="mr-1" /> Flash sale
                     </a>
                     <div class="header-support-container" style="line-height: 38px;">

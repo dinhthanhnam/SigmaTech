@@ -114,15 +114,15 @@
         <div class="deal-product-holder">
           <!-- // Deal nổi bật đang diễn ra -->
           <div class="product-deal-list d-flex flex-wrap justify-content-between active" id="js-active-group">
-            {{-- @foreach($flashSaleItems as $item)
+            @foreach($flashSaleItems as $item)
               @include('partials.flash-sale-p-item', ['product' => $item])
-            @endforeach --}}
+            @endforeach
           </div>
           {{-- <div class="product-deal-list" id="js-inactive-group"> </div> --}}
         </div>
 
         <div class="home-deal-btn">
-          <a href="{{ route('pages.flash-sale') }}">Xem thêm</a>
+          <a href="{{ route('flash-sale') }}">Xem thêm</a>
         </div>
       </div>
 
