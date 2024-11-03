@@ -9,7 +9,9 @@
   $rating = $product->attributes->firstWhere('name', 'Rating')->pivot->value ?? 'N/A';
   $brand = $product->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
   $model = $product->attributes->firstWhere('name', 'Model')->pivot->value ?? 'N/A';
-  
+
+  $pcpart_type = $product->attributes->firstWhere('name', 'Loại linh kiện')->pivot->value ?? 'N/A';
+
   //biến riêng, cho laptop
   $laptop_type = $product->attributes->firstWhere('name', '[Laptop] Loại laptop')->pivot->value ?? 'N/A';
   $laptop_cpu = $product->attributes->firstWhere('name', '[Laptop] Vi xử lý')?->pivot->value ?? 'N/A';
@@ -34,15 +36,20 @@
 <div class="deal-item">
   <a href="/laptops/{{$laptop_type}}/{{$brand}}/{{$product_id}}" class="p-name" target="_blank">
     <img src="{{ $product->attributes->firstWhere('name', 'Thumbnail')?->pivot->value ?? 'N/A' }}" class="mx-auto" target="_blank"
-      alt="{{ $name }} ({{ $laptop_cpu}} | {{ $laptop_ram }} | {{ $laptop_ssd_capacity}} | {{ $laptop_gpu }} | {{ $laptop_mon_size }} | {{ $laptop_os }} | {{$laptop_color}})">
+      alt="{{ $name }}">
   </a>
   <div class="p-text">
-    @if ($product->attributes->firstWhere('name', '[Laptop] Loại laptop')->value)
+    @if ($laptop_type != 'N/A')
       <a href="/laptops/{{$laptop_type}}/{{$brand}}/{{$product_id}}" class="p-name" target="_blank"
-        title="{{ $name }} ({{ $laptop_cpu}} | {{ $laptop_ram }} | {{ $laptop_ssd_capacity}} | {{ $laptop_gpu }} | {{ $laptop_mon_size }} | {{ $laptop_os }} | {{$laptop_color}})">
-          {{ $name }} ({{ $laptop_cpu}} | {{ $laptop_ram }} | {{ $laptop_ssd_capacity}} | {{ $laptop_gpu }} | {{ $laptop_mon_size }} | {{ $laptop_os }} | {{$laptop_color}})
+        title="{{ $name }}">
+        {{ $name }} ({{ $laptop_cpu}} | {{ $laptop_ram }} | {{ $laptop_ssd_capacity}} | {{ $laptop_gpu }} | {{ $laptop_mon_size }} | {{ $laptop_os }} | {{$laptop_color}})
+      </a>
+    @elseif ($pcpart_type != 'N/A')
+      <a href="/pcparts/{{$pcpart_type}}/{{$brand}}/{{$product_id}}" class="p-name" target="_blank">
+        {{ $name }}
       </a>
     @endif
+
     <div class="p-price-group">
       <span class="p-price">{{ number_format($saleprice, 0, ',', '.') }}<u>đ</u></span>
       <span class="p-discount">{{ $discountPercentage }} %</span>
