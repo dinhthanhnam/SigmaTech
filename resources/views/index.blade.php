@@ -78,16 +78,16 @@
           </div>
         </div>
 
-        <div class="clearfix"></div>
+        <div class="clearfix">
           <a href="#" target='_blank' rel='nofollow'><img
-                  src="{{ asset('assets/img/banner/01_Jul9ae198dee31c9df7259fb87d5b57c4b9.png') }}"
-                  alt="" width="437" height="180" /></a>
+            src="{{ asset('assets/img/banner/01_Jul9ae198dee31c9df7259fb87d5b57c4b9.png') }}"
+            alt="" width="437" height="180" /></a>
           <a href="#" target='_blank' rel='nofollow'><img
-                  src="{{ asset('assets/img/banner/01_Jul0603d458859790fb1099a51b8e815e70.png') }}"
-                  alt="" width="437" height="180" /></a>
+            src="{{ asset('assets/img/banner/01_Jul0603d458859790fb1099a51b8e815e70.png') }}"
+            alt="" width="437" height="180" /></a>
           <a href="#" target='_blank' rel='nofollow'><img
-                    src="{{ asset('assets/img/banner/01_Julefdd70592ce2091c05ca2ff057403636.png') }}"
-                    alt="" width="437" height="180" /></a>
+              src="{{ asset('assets/img/banner/01_Julefdd70592ce2091c05ca2ff057403636.png') }}"
+              alt="" width="437" height="180" /></a>
         </div>
       </div>
 
