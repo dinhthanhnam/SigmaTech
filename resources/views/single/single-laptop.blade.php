@@ -4,6 +4,7 @@
     $name = $laptop->name;
     $type = $laptop->attributes->firstWhere('name', '[Laptop] Loại laptop')->pivot->value ?? 'N/A';
     $price = $laptop->attributes->firstWhere('name', 'Price')->pivot->value ?? 'N/A';
+    $saleprice = $laptop->attributes->firstWhere('name', 'Sale Price')->pivot->value ?? 'N/A';
     $dealprice = $laptop->attributes->firstWhere('name', 'Deal Price')->pivot->value ?? 'N/A';
     $rating = $laptop->attributes->firstWhere('name', 'Rating')->pivot->value ?? 'N/A';
     $brand = $laptop->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
@@ -52,11 +53,11 @@
                         </a>
                     </li>
                     <li class="breadcrumb-item" aria-current="page">
-                        <a href="{{ url('/laptops/' . $type) }}">Laptop {{ $type }} </a>
+                        <a href="/laptops/{{$type}}">Laptop {{ $type }} </a>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
                         <a
-                            href="{{ url('/laptops/' . $type . '/' . $brand) }}">{{ $laptop->attributes->firstWhere('id', '1')->pivot->value }}</a>
+                            href="/laptops/{{$type}}/{{$brand}}}">{{$brand}}</a>
                     </li>
                 </ol>
             </div>
@@ -545,9 +546,6 @@
                         <span class="item hide d-block">
                             <i class="fa fa-check-circle"></i>Cân nặng: {{ $weight }}
                         </span>
-                        <!--7-->
-
-                        <!--8-->
                         <span class="item hide d-block">
                             <i class="fa fa-check-circle"></i>Màu sắc: {{ $color }}
                         </span>
@@ -556,12 +554,18 @@
                             <i class="fa fa-check-circle"></i>OS: {{ $os }}
                         </span>
                     </div>
-
                     <p><a href="javascript:void(0)" id="js-viewmore-summary" class="red">&lt; Thu gọn</a></p>
+                    
+                    <div class="deal-count-container text-12 font-300 text-right" id="js-deal-container">Kết thúc sau
+                        <span class="js-hour"> 00 </span> 
+                        <span class="js-minute"> 00 </span> 
+                        <span class="js-seconds"> 00 </span>
+                    </div>
                     <div class="pro_info-price-container">
                         <div class="spec-count" id="js-promotion-price-countdown"> <!-- js countdown --></div>
                         <table>
                             <tbody>
+
                                 <tr>
                                     <td width="160px" class="font-500"> Giá niêm yết: </td>
                                     <td>
@@ -581,6 +585,20 @@
                                         </span>
                                     </td>
                                 </tr>
+                                @if ($saleprice != 'N/A')
+                                    <tr>
+                                        <td width="160px" class="font-500"> GIÁ SỐC: </td>
+                                        <td>
+                                            <b style="color: #ce0707" class="text-18 js-pro-total-price"
+                                                data-price="42990000">
+                                                {{ number_format($saleprice, 0, ',', '.') }} đ
+                                            </b>
+                                            <span style="color: #888888;" class="text-12">
+                                                [Giá đã có VAT]
+                                            </span>
+                                        </td>
+                                    </tr>
+                                @endif
                                 <tr>
                                     <td></td>
                                     <td>
@@ -603,28 +621,16 @@
                             Bảo hành: 24 tháng (Pin 12 Tháng) Quốc Tế, Đổi mới trong 15 ngày
                         </b>
                     </div>
-
-                    <!-- Cấu hình -->
-                    <div class="pro-variant-container">
-                        <div class="variant-item" id="new-config-holder">
-                            <div class="list items-variant items-variant-noSlider d-flex flex-wrap">
-                            </div>
-                        </div>
-                    </div>
-                    {{-- Khuyến mại - @Đinh Nam Nhớ làm --}}
-                    <div class="pro-special-offer-container">
-
-                    </div>
                     <br>
                     <!-- button -->
                     <div class="pro-button-container d-flex flex-wrap text-center justify-content-between">
                         <!-- Button Mua hàng -->
-                        <a href="javascript:void(0)" class="w-100 btn-buyNow js-buy-now"
+                        <a href="javascript:void(0)" class="w-49 btn-buyNow js-buy-now"
                             onclick="addConfigToShoppingCart(49891,0,1,'/cart')">
                             <b class="d-block text-18 font-500"> ĐẶT MUA NGAY </b>
                             <span class="text-12 d-block"> Nhanh chóng, thuận tiện </span>
                         </a>
-                        <a href="javascript:void(0)" class="btn-addCart blue order-1 js-addCart"
+                        <a href="javascript:void(0)" class="w-49 btn-addCart blue order-1 js-addCart"
                             onclick="document.getElementById('addCartForm').submit();">
                             <b class="d-block text-18 font-500">THÊM VÀO GIỎ HÀNG</b>
                             <span class="text-12 d-block">Mua tiếp sản phẩm khác</span>
@@ -638,12 +644,6 @@
                             <input type="hidden" name="quantity" value="1" min="1">
                         </form>
 
-                        <a href="javascript:void(0)" class="btn-payinstall order-0 js-buy-tragop"
-                            onclick="addConfigToShoppingCart(49891,0,1,'payinstall');">
-                            <b class="d-block text-18 font-500"> MUA TRẢ GÓP </b>
-                            <span class="text-12 d-block"> Thẻ tín dụng, Visa, Master </span>
-                        </a>
-                        <!-- End Button trả góp -->
                     </div>
                     <p class="blue icon-payment-container">
                         <b>Chấp nhận thanh toán:</b>
@@ -1132,7 +1132,6 @@
 
 @push('scripts')
     <script>
-
         const listImage = {
             anh_sp: 
             [
@@ -1196,19 +1195,6 @@
             $('#list-image-slider').owlCarousel(owlOptions)
         }
     </script>
-
-    <script>
-        $("#js-viewmore-summary").click(function() {
-            $('.pro-info-summary .item.hide').toggleClass("d-block");
-            if ($(this).text() == 'Xem thêm >') {
-                $(this).text('< Thu gọn');
-            } else {
-                $(this).text('Xem thêm >');
-            }
-        });
-    </script>
-
-
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script>
         // Khởi tạo Fancybox với các tùy chọn tùy chỉnh (không bắt buộc)
@@ -1243,7 +1229,6 @@
     </script>
     <script>
         $(function() {
-
             $("#js-viewmore-summary").click(function() {
                 $('.pro-info-summary .item.hide').toggleClass("d-block");
                 if ($(this).text() == 'Xem thêm >') {
@@ -1309,5 +1294,33 @@
             })
         });
     </script>
+    {{-- countdown --}}
+    <script>
+        // Xác định thời gian kết thúc (thời gian đích) - ví dụ là 1 giờ từ thời gian hiện tại
+        const endTime = new Date().getTime() + 3600000; // 1 giờ = 3600000 milliseconds
+    
+        // Cập nhật đồng hồ đếm ngược mỗi giây
+        const countdown = setInterval(function() {
+            const now = new Date().getTime();
+            const timeLeft = endTime - now;
+    
+            // Tính giờ, phút và giây từ timeLeft
+            const hours = Math.floor((timeLeft / (1000 * 60 * 60)) % 24);
+            const minutes = Math.floor((timeLeft / (1000 * 60)) % 60);
+            const seconds = Math.floor((timeLeft / 1000) % 60);
+    
+            // Hiển thị kết quả trong các phần tử tương ứng
+            document.querySelector('.js-hour').innerText = String(hours).padStart(2, '0');
+            document.querySelector('.js-minute').innerText = String(minutes).padStart(2, '0');
+            document.querySelector('.js-seconds').innerText = String(seconds).padStart(2, '0');
+    
+            // Nếu thời gian kết thúc, dừng bộ đếm ngược
+            if (timeLeft < 0) {
+                clearInterval(countdown);
+                document.querySelector('#js-deal-container').innerText = "Đã kết thúc";
+            }
+        }, 1000); // Cập nhật mỗi giây (1000 milliseconds)
+    </script>
+    
 @endpush
 

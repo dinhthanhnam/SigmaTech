@@ -13,20 +13,11 @@
                 <div class="tile">
                     <div class="tile-body">
                         <div class="row element-button">
-                            <div class="col-sm-2">
-                                <a class="btn btn-info btn-sm" id="btn-laptop">
-                                    <i class="fas fa-laptop"></i> Laptop
-                                </a>
-                            </div>
-                            <div class="col-sm-2">
-                                <a class="btn btn-info btn-sm" id="btn-linh-kien">
-                                    <i class="fas fa-gear"></i> Linh kiện
-                                </a>
-                            </div>
+
                         </div>
                         <div class="row">
                             <div class="col-md-12 text-right"> <!-- Thêm text-right để căn phải -->
-                                <a class="btn btn-info btn-sm" href="form-add-san-pham.html" title="Thêm">
+                                <a class="btn btn-info btn-sm" href="{{ route('admin.new-product') }}" title="Thêm">
                                     <i class="fas fa-plus"></i> Tạo mới sản phẩm
                                 </a>
                             </div>
@@ -35,30 +26,45 @@
                             <thead>
                                 <tr>
                                     <th width="10"><input type="checkbox" id="all"></th>
-                                    <th>ID</th>
-                                    <th>Name</th>
-                                    <th>Image</th>
-                                    <th>Brand</th>
-                                    <th>Mẫu</th>
-                                    <th>Price</th>
-                                    <th>Deal Price</th>
-                                    <th>Loại laptop</th>
-                                    <th>Vi xử lý</th>
-                                    <th>Số nhân</th>
-                                    <th>Số luồng</th>
-                                    <th>Tốc độ tối đa</th>
-                                    <th>Bộ nhớ đệm</th>
-                                    <th>Card đồ họa</th>
-                                    <th>Kích thước màn hình</th>
-                                    <th>Độ phân giải</th>
-                                    <th>Tần số quét</th>
-                                    <th>Công nghệ màn hình</th>
-                                    <th>Dung lượng RAM</th>
-                                    <th></th>
+                                    <th width="10">ID</th>
+                                    <th width="180">Name</th>
+                                    <th width="150">Image</th>
+                                    <th width="30">Brand</th>
+                                    <th width="30">Model</th>
+                                    <th width="120">Price</th>
+                                    <th width="110">Deal Price</th>
+                                    <th>Chức năng</th>
+                                    <!-- Thêm các cột khác nếu cần -->
                                 </tr>
                             </thead>
                             <tbody id="product-list">
-                                <!-- Dữ liệu sản phẩm sẽ được hiển thị ở đây -->
+                                @foreach ($products as $product)
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>{{ $product->id }}</td>
+                                        <td>{{ $product->name }}</td>
+                                        <td><img src="{{ $product->attributes->firstWhere('name', 'Image1')->pivot->value ?? 'N/A' }}"
+                                                alt="{{ $product->name }}" width="100"></td>
+                                        <td>{{ $product->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A' }}
+                                        </td>
+                                        <td>{{ $product->attributes->firstWhere('name', 'Model')->pivot->value ?? 'N/A' }}
+                                        </td>
+                                        <td>{{ number_format($product->attributes->firstWhere('name', 'Price')->pivot->value ?? 'N/A', 0, ',', '.') }}
+                                            đ
+                                        </td>
+                                        <td>{{ number_format($product->attributes->firstWhere('name', 'Deal Price')->pivot->value ?? 'N/A', 0, ',', '.') }}
+                                            đ
+                                        </td>
+                                        <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa"
+                                                onclick="myFunction(this)"><i class="fas fa-trash-alt"></i>
+                                            </button>
+                                            <button class="btn btn-primary btn-sm edit" type="button" title="Sửa"
+                                                id="show-emp" data-toggle="modal" data-target="#ModalUP"><i
+                                                    class="fas fa-edit"></i></button>
+
+                                        </td>
+                                    </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
@@ -66,51 +72,73 @@
             </div>
         </div>
     </main>
+    <div class="modal fade" id="ModalUP" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static"
+        data-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
 
-@section('scripts')
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Hàm để cập nhật bảng sản phẩm
-            function loadProducts(category) {
-                fetch(`/api/products?category=${category}`)
-                    .then(response => response.json())
-                    .then(data => {
-                        const productList = document.getElementById('product-list');
-                        productList.innerHTML = ''; // Xóa nội dung hiện tại
-
-                        // Thêm dữ liệu sản phẩm vào bảng
-                        data.forEach(product => {
-                            const row = document.createElement('tr');
-                            row.innerHTML = `
-                                <td><input type="checkbox"></td>
-                                <td>${product.code}</td>
-                                <td>${product.name}</td>
-                                <td><img src="${product.image}" alt="${product.name}" width="50"></td>
-                                <td>${product.quantity}</td>
-                                <td>${product.status}</td>
-                                <td>${product.price}</td>
-                                <td>${product.category}</td>
-                                <td><!-- Thêm chức năng tại đây --></td>
-                            `;
-                            productList.appendChild(row);
-                        });
-                    })
-                    .catch(error => console.error('Error loading products:', error));
-            }
-
-            // Tải dữ liệu mặc định
-            loadProducts('all');
-
-            // Sự kiện cho nút Laptop
-            document.getElementById('btn-laptop').addEventListener('click', function() {
-                loadProducts('laptop');
-            });
-
-            // Sự kiện cho nút Linh kiện
-            document.getElementById('btn-linh-kien').addEventListener('click', function() {
-                loadProducts('linh-kien');
-            });
-        });
-    </script>
-@endsection
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="form-group  col-md-12">
+                            <span class="thong-tin-thanh-toan">
+                                <h5>Chỉnh sửa thông tin sản phẩm cơ bản</h5>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label class="control-label">Mã sản phẩm </label>
+                            <input class="form-control" type="number" value="71309005">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label class="control-label">Tên sản phẩm</label>
+                            <input class="form-control" type="text" required value="Bàn ăn gỗ Theresa">
+                        </div>
+                        <div class="form-group  col-md-6">
+                            <label class="control-label">Số lượng</label>
+                            <input class="form-control" type="number" required value="20">
+                        </div>
+                        <div class="form-group col-md-6 ">
+                            <label for="exampleSelect1" class="control-label">Tình trạng sản phẩm</label>
+                            <select class="form-control" id="exampleSelect1">
+                                <option>Còn hàng</option>
+                                <option>Hết hàng</option>
+                                <option>Đang nhập hàng</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label class="control-label">Giá bán</label>
+                            <input class="form-control" type="text" value="5.600.000">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="exampleSelect1" class="control-label">Danh mục</label>
+                            <select class="form-control" id="exampleSelect1">
+                                <option>Bàn ăn</option>
+                                <option>Bàn thông minh</option>
+                                <option>Tủ</option>
+                                <option>Ghế gỗ</option>
+                                <option>Ghế sắt</option>
+                                <option>Giường người lớn</option>
+                                <option>Giường trẻ em</option>
+                                <option>Bàn trang điểm</option>
+                                <option>Giá đỡ</option>
+                            </select>
+                        </div>
+                    </div>
+                    <BR>
+                    <a href="#" style="    float: right;
+    font-weight: 600;
+    color: #ea0000;">Chỉnh sửa sản phẩm
+                        nâng cao</a>
+                    <BR>
+                    <BR>
+                    <button class="btn btn-save" type="button">Lưu lại</button>
+                    <a class="btn btn-cancel" data-dismiss="modal" href="#">Hủy bỏ</a>
+                    <BR>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection

@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="app-title">
-                    <ul class="app-breadcrumb ">
+                    <ul class="app-breadcrumb breadcrumb">
                         <li class="breadcrumb-item"><a href="#"><b>Dashboard</b></a></li>
                     </ul>
                     <div id="clock"></div>

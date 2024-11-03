@@ -8,8 +8,6 @@
     <meta http-equiv="content-language" content="vi" />
     <title>SigmaTech CMS</title>
     <link rel="stylesheet" href="{{ asset('assets/css/admin.css') }}" type="text/css" />
-    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.css') }}" type="text/css" />
-    <link rel="stylesheet" href="{{ asset('assets/css/web_pc_2020.css') }}" type="text/css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <!-- or -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -112,7 +110,7 @@
                                     .innerHTML;
 
                                 contentArea.innerHTML =
-                                newContent; // Chèn nội dung vào content-area
+                                    newContent; // Chèn nội dung vào content-area
                             })
                             .catch(error => {
                                 console.error('Lỗi khi tải nội dung:', error);
