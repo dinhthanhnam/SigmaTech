@@ -11,6 +11,7 @@ use App\Http\Middleware\AuthAdmin;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LaptopController;
+use App\Http\Controllers\SaleController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ProductController;
 
@@ -28,35 +29,36 @@ Route::middleware(['auth', AuthAdmin::class])->group(function () {
 
 Route::get('/', [HomeController::class, 'index'])->name('home.index');
 
-Route::get('/', [LaptopController::class, 'index'])->name('home.index');
-
 Route::get('laptops/Gaming', [LaptopController::class, 'showGamingLaptops'])
   ->name('gaming-laptops.show');
 
 Route::get('laptops/Office', [LaptopController::class, 'showOfficeLaptops'])
   ->name('office-laptops.show');
 
-Route::get('cpus', [CpuController::class, 'showCpus'])
+Route::get('flash-sale', [SaleController::class, 'showFlashSale'])
+  ->name('flash-sale');
+
+Route::get('pc-parts/cpu', [CpuController::class, 'showCpus'])
   ->name('cpus.show');
 
 Route::get('gaming-gears', function () {
   return view('categories.gaming-gears');
-})->name('categories.gaming-gears');
+})->name('gaming-gears.show');
 Route::get('monitors', function () {
   return view('categories.monitors');
-})->name('categories.monitors');
+})->name('monitors.show');
 Route::get('pc-parts', function () {
   return view('categories.pc-parts');
-})->name('categories.pc-parts');
+})->name('pc-parts.show');
 Route::get('media-devices', function () {
   return view('categories.media-devices');
-})->name('categories.media-devices');
+})->name('media-devices.show');
 Route::get('coolings', function () {
   return view('categories.coolings');
-})->name('categories.coolings');
+})->name('coolings.show');
 Route::get('accessories', function () {
   return view('categories.accessories');
-})->name('categories.accessories');
+})->name('accessories.show');
 
 Route::get('shipping-policy', function () {
   return view('pages.service-policy.shipping-policy');
@@ -64,9 +66,6 @@ Route::get('shipping-policy', function () {
 Route::get('warranty-policy', function () {
   return view('pages.service-policy.warranty-policy');
 })->name('pages.warranty-policy');
-Route::get('flash-sale', function () {
-  return view('pages.flash-sale');
-})->name('pages.flash-sale');
 Route::get('laptop-outlet', function () {
   return view('pages.laptop-outlet');
 })->name('pages.laptop-outlet');
@@ -96,7 +95,11 @@ Route::get('/cart/count', [CartController::class, 'cartCount'])->name('cart.coun
 
 
 //single cpu
-Route::get('cpu/{brand}/{id}', [CpuController::class, 'show'])->name('cpu.show');
+Route::get('pc-parts/{pcpart_type}/{brand}/{id}', [CpuController::class, 'show'])->name('cpu.show');
 
 //single gpu
 Route::get('gpu/{brand}/{id}', [GpuController::class, 'show'])->name('gpu.show');
+
+//filter
+Route::get('/laptops/filter/{brand}', [LaptopController::class, 'showLaptopsByBrand'])->name('laptop.filter');
+

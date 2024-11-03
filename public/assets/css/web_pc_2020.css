@@ -2482,6 +2482,7 @@ header .header-banner .close-banner {
 }
 
 .p-list-container {
+    gap: 4px; 
     border-top: 1px solid #edeef2;
     position: relative;
     margin-right: -2px;
@@ -2815,7 +2816,7 @@ header .header-banner .close-banner {
 }
 
 .deal-count-container {
-    background: url("../images/deal-bg.png") no-repeat;
+    background: url("../img/deal/deal-bg.png") no-repeat;
     background-size: cover;
     color: #fff;
     padding: 11px 5px 11px 0;
@@ -7972,7 +7973,7 @@ span.ping {
     border-radius: 10px;
     padding: 14px 14px 6px 14px;
     margin: 0 14px 14px 0;
-    width: calc(100% / 4 - 11px);
+    width: calc(100% / 4 - 14px);
     text-align: center;
     transition: .2s all
 }
@@ -7981,43 +7982,44 @@ span.ping {
     box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.1)
 }
 
-.product-deal-holder.active .deal-item:nth-child(1),
+/* .product-deal-holder.active .deal-item:nth-child(1),
 .product-deal-holder.active .deal-item:nth-child(2) {
     width: calc(100% / 2 - 7px);
     text-align: left;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     background: #3D52BF;
     border-radius: 22px;
     padding: 10px;
-}
+} */
 
-.product-deal-holder.active .deal-item:nth-child(1) .p-img,
+/* .product-deal-holder.active .deal-item:nth-child(1) .p-img,
 .product-deal-holder.active .deal-item:nth-child(2) .p-img {
     margin: 0;
     width: 43.3%;
     border-radius: 22px 0 0 22px;
     background: #fff;
     padding: 15px 22px 15px 15px
-}
+} */
 
-.product-deal-holder.active .deal-item:nth-child(1) .p-text,
+/* .product-deal-holder.active .deal-item:nth-child(1) .p-text,
 .product-deal-holder.active .deal-item:nth-child(2) .p-text {
     width: calc(100% - 43.3%);
     border-radius: 0 22px 22px 0;
     padding: 12px 22px 12px 0;
     overflow: hidden;
     background: #fff
-}
+} */
 
-.product-deal-holder.active .deal-item:nth-child(1) .p-img img,
+/* .product-deal-holder.active .deal-item:nth-child(1) .p-img img,
 .product-deal-holder.active .deal-item:nth-child(2) .p-img img {
     position: unset;
     display: block;
     margin: auto
-}
+} */
 
-.product-deal-holder.active .deal-item:nth-child(1) .p-price-group,
+/* .product-deal-holder.active .deal-item:nth-child(1) .p-price-group,
 .product-deal-holder.active .deal-item:nth-child(2) .p-price-group {
     justify-content: left
 }
@@ -8031,16 +8033,16 @@ span.ping {
 .product-deal-holder.active .deal-item:nth-child(2) .deal-icon-hot {
     bottom: 15px;
     right: 15px
-}
+} */
 
-.product-deal-holder.active .deal-item:nth-child(2n+4),
+/* .product-deal-holder.active .deal-item:nth-child(2n+4),
 .product-deal-holder.active .deal-item:nth-child(2) {
     margin-right: 0
 }
 
 .product-deal-holder.active .deal-item:nth-child(4n+4) {
     margin-right: 14px
-}
+} */
 
 .deal-item .p-img {
     display: block;
@@ -8150,7 +8152,7 @@ span.ping {
     content: '';
     width: 25px;
     height: 30px;
-    background: url(https://www.anphatpc.com.vn/template/anphat_2020v2/images/icon_order_status_deal.png) no-repeat;
+    background: url(../img/sprites/icon_order_status_deal.png) no-repeat;
     background-size: 100% 100%;
     position: absolute;
     bottom: 0;
@@ -8406,7 +8408,7 @@ span.ping {
     box-shadow: unset !important
 }
 
-.product-deal-holder.active .deal-item:nth-child(1) .p-img,
+/* .product-deal-holder.active .deal-item:nth-child(1) .p-img,
 .product-deal-holder.active .deal-item:nth-child(2) .p-img,
 .product-deal-holder.active .deal-item:nth-child(1) .p-text,
 .product-deal-holder.active .deal-item:nth-child(2) .p-text {
@@ -8436,7 +8438,7 @@ span.ping {
 .product-deal-holder.active .deal-item:nth-child(1) .p-price-group,
 .product-deal-holder.active .deal-item:nth-child(2) .p-price-group {
     justify-content: center;
-}
+} */
 
 .line-clamp-2 {
     text-overflow: ellipsis;
@@ -10134,5 +10136,6 @@ span.ping {
     flex-direction: column;
     height: 100%;
 }
+
 
 

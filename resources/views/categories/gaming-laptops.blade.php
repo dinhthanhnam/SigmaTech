@@ -16,19 +16,24 @@
             <a href="{{ url('/laptops/Gaming') }}">Gaming </a>
           </li>
         </ol>
-    </div>
+      </div>
+      
       <div class="product-collection-related-container">
         <div class="group-title">
           <h2 class="title">Laptop Gaming Được Mua Nhiều Nhất 2024</h2>
         </div>
         <!-- Thêm sản phẩm được mua nhiều nhất vào đây-->
-        <div class="p-container d-flex flex-wrap justify-content-between">
+      </div>
+      <div class="bg-white js-box-container" style="min-height: 400px" data-id="395-850">
+        <div class="p-container custom-nav owl-carousel owl-theme" >
           @foreach($gamingLaptops as $laptop)
             @include('partials.detailed-p-item', ['product' => $laptop])
           @endforeach
-        
+        </div>
       </div>
-      <div class="filter-height" style="display: none;"></div>
+        
+      <div class="product-collection-related-container">
+        <div class="filter-height" style="display: none;"></div>
       <div class="filter-container">
         <p class="filter-group-title"> BỘ LỌC </p>
         <div class="filter-list-container">
@@ -37,26 +42,25 @@
             <div class="filter-content-group">
               <div class="filter-group-middle">
                 <a href="#" class="image filter-title js-filter-title" title="Acer" data-check="0"
-                  data-filter_code="brand" data-value="1">
+                  data-filter_code="brand" data-value="acer">
                   <span style="background-image: url('{{ asset('assets/img/brand/acer.jpg') }}');"></span>
                 </a>
                 <a href="#" class="image filter-title js-filter-title" title="Asus" data-check="0"
-                  data-filter_code="brand" data-value="2">
+                  data-filter_code="brand" data-value="asus">
                   <span style="background-image: url('{{ asset('assets/img/brand/asus.jpg') }}');"></span>
                 </a>
                 <a href="#" class="image filter-title js-filter-title" title="Dell" data-check="0"
-                  data-filter_code="brand" data-value="3">
+                  data-filter_code="brand" data-value="levono">
                   <span style="background-image: url('{{ asset('assets/img/brand/lenovo.jpg') }}');"></span>
                 </a>
                 <a href="#" class="image filter-title js-filter-title" title="Lenovo" data-check="0"
-                  data-filter_code="brand" data-value="4">
+                  data-filter_code="brand" data-value="dell">
                   <span style="background-image: url('{{ asset('assets/img/brand/dell.jpg') }}');"></span>
                 </a>
               </div>
               <div class="filter-group-bottom">
                 <a href="#" onclick=""> Bỏ chọn </a>
-                <a href="/gaming-laptop.html" class=""> Xem <span class="js-show-total">381</span>
-                  kết quả </a>
+                <a href="#" class="js-open-url"> Xem kết quả </a>
               </div>
             </div>
           </div>
@@ -673,28 +677,6 @@
             </div>
           </div>
 
-          <div class="filter-item js-filter-item" data-type="attribute">
-            <a href="#" class="filter-name "> Nhận dạng vân tay </a>
-
-            <div class="filter-content-group">
-
-              <div class="filter-group-middle ">
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="326">
-                  Có </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="327">
-                  Không </a>
-
-              </div>
-
-              <div class="filter-group-bottom">
-                <a href="#" onclick="BuildFilterUrl.clearFilter.call(this, '')"> Bỏ chọn </a>
-                <a href="/gaming-laptop.html" class="js-open-url"> Xem <span class="js-show-total">381</span> kết quả
-                </a>
-              </div>
-            </div>
-          </div>
 
           <div class="filter-item js-filter-item" data-type="attribute">
             <a href="#" class="filter-name "> Trọng lượng </a>
@@ -807,48 +789,9 @@
             </div>
           </div>
 
-          <div class="filter-item js-filter-item" data-type="attribute">
-            <a href="#" class="filter-name "> Màn hình cảm ứng </a>
 
-            <div class="filter-content-group">
 
-              <div class="filter-group-middle ">
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="2657">
-                  Có </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="2658">
-                  Không </a>
-
-              </div>
-
-              <div class="filter-group-bottom">
-                <a href="#" onclick="BuildFilterUrl.clearFilter.call(this, '')"> Bỏ chọn </a>
-                <a href="/gaming-laptop.html" class="js-open-url"> Xem <span class="js-show-total">381</span> kết quả
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="filter-item js-filter-item" data-type="attribute">
-            <a href="#" class="filter-name "> Phân loại </a>
-
-            <div class="filter-content-group">
-
-              <div class="filter-group-middle ">
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3722">
-                  Laptop Giá Sốc </a>
-
-              </div>
-
-              <div class="filter-group-bottom">
-                <a href="#" onclick="BuildFilterUrl.clearFilter.call(this, '')"> Bỏ chọn </a>
-                <a href="/gaming-laptop.html" class="js-open-url"> Xem <span class="js-show-total">381</span> kết
-                  quả </a>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
 
@@ -898,7 +841,7 @@
             style="display: block;width: 100%;text-align: right;margin-top: 10px;color: #f00;font-weight: 600;display: none;"
             id="js-filter-note"></span>
         </div>
-        <div class="p-list-container d-flex flex-wrap justify-content-between">
+        <div class="p-list-container d-flex flex-wrap">
           @foreach($gamingLaptops as $laptop)
             @include('partials.detailed-p-item', ['product' => $laptop])
           @endforeach
@@ -931,6 +874,7 @@
               <i class="fa fa-angle-right"></i>
         </a>
       </div>
+      
   </section>
 @endsection
 
@@ -1006,28 +950,61 @@
       });
     });
   </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script>
-    var optionProductCarousel = {
-      items: 5,
-      margin: 10,
-      loop: true,
-      autoplayHoverPause: true,
-      autoplay: true,
-      autoplayTimeout: 3000,
-      autoplaySpeed: 1500,
-      dots: false,
-      lazyLoad: true,
-      nav: true,
-      navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-      responsive: {
-        1200: {
-          items: 5,
-        },
-        1600: {
-          items: 6,
+    $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: true, 
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 5
+                }
+                
+            }
+        });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    let selectedBrand = '';
+
+    // Thêm sự kiện click vào từng tùy chọn brand
+    document.querySelectorAll('.js-filter-title').forEach(function (element) {
+        element.addEventListener('click', function (e) {
+            e.preventDefault();
+            
+            // Lấy giá trị brand từ thuộc tính data-value
+            selectedBrand = element.getAttribute('data-value');
+            
+            // Bỏ chọn các brand khác
+            document.querySelectorAll('.js-filter-title').forEach(el => el.classList.remove('selected'));
+            
+            // Đánh dấu brand này là đã chọn
+            element.classList.add('selected');
+        });
+    });
+
+    // Xử lý khi click vào "Xem kết quả"
+    document.querySelector('.js-open-url').addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        if (selectedBrand) {
+            // Chuyển hướng đến route có brand đã chọn
+            window.location.href = `/laptops/filter/${selectedBrand}`;
+        } else {
+            alert('Vui lòng chọn một hãng để xem kết quả.');
         }
-      }
-    }
-    $("#js-collection-related-holder").owlCarousel(optionProductCarousel);
+      });
+    });
   </script>
 @endpush
