@@ -2816,7 +2816,7 @@ header .header-banner .close-banner {
 }
 
 .deal-count-container {
-    background: url("../images/deal-bg.png") no-repeat;
+    background: url("../img/deal/deal-bg.png") no-repeat;
     background-size: cover;
     color: #fff;
     padding: 11px 5px 11px 0;

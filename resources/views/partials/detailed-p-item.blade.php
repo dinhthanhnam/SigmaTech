@@ -5,6 +5,7 @@
   $name = $product->name;
   $type = $product->attributes->firstWhere('name', '[Laptop] Loại laptop')->pivot->value ?? 'N/A';
   $price = $product->attributes->firstWhere('name', 'Price')->pivot->value ?? 'N/A';
+  $saleprice = $product->attributes->firstWhere('name', 'Sale Price')->pivot->value ?? 'N/A';
   $dealprice = $product->attributes->firstWhere('name', 'Deal Price')->pivot->value ?? 'N/A';
   $rating = $product->attributes->firstWhere('name', 'Rating')->pivot->value ?? 'N/A';
   $brand = $product->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
@@ -21,12 +22,15 @@
   //biến riêng, cho linh kiện
 @endphp
 @php
-  $discountPercentage = 0;
+    $discountPercentage = 0;
 
-  if (isset($dealprice)) {
-      $discountPercentage = round((1 - $dealprice / $price) * 100);
-  }
+    if ($saleprice != 'N/A') {
+        $discountPercentage = round((1 - $saleprice / $price) * 100);
+    } else {
+        $discountPercentage = round((1 - $dealprice / $price) * 100);
+    }
 @endphp
+
 <div class="p-item" data-id="49710">
   <a href="/laptops/{{ $type }}/{{ $brand }}/{{ $product_id }}" class="p-img">
     <img src="{{ $product->attributes->firstWhere('name', 'Thumbnail')?->pivot->value ?? 'N/A' }}"
@@ -45,7 +49,11 @@
     <div class="price-container">
       <del class="p-old-price"> {{ number_format($price, 0, ',', '.') }} đ </del>
       <span class="p-discount"> {{ $discountPercentage }} % </span>
-      <span class="p-price"> {{ number_format($dealprice, 0, ',', '.') }} đ </span>
+      @if ($saleprice != 'N/A')
+        <span class="p-price"> {{ number_format($saleprice, 0, ',', '.') }} đ </span>
+      @else
+        <span class="p-price"> {{ number_format($dealprice, 0, ',', '.') }} đ </span>
+      @endif
     </div>
 
     <div class="p-special-container">? khuyến mại</div>

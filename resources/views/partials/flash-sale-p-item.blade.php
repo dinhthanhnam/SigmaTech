@@ -33,7 +33,7 @@
 @endphp
 <div class="deal-item">
   <a href="/laptops/{{$laptop_type}}/{{$brand}}/{{$product_id}}" class="p-name" target="_blank">
-    <img src="{{ $product->attributes->firstWhere('name', 'Thumbnail')?->pivot->value ?? 'N/A' }}" class="mx-auto"
+    <img src="{{ $product->attributes->firstWhere('name', 'Thumbnail')?->pivot->value ?? 'N/A' }}" class="mx-auto" target="_blank"
       alt="{{ $name }} ({{ $laptop_cpu}} | {{ $laptop_ram }} | {{ $laptop_ssd_capacity}} | {{ $laptop_gpu }} | {{ $laptop_mon_size }} | {{ $laptop_os }} | {{$laptop_color}})">
   </a>
   <div class="p-text">
@@ -66,7 +66,7 @@
       onclick="addProduct(49837, 'Laptop Acer Aspire Lite AL14-51M-36MH_NX.KTVSV.001 (Intel Core i3-1215U | 8GB | 256GB | Intel UHD | 14 inch WUXGA | Win 11 | Bạc)', '8990000')">MUA
       GIÁ SỐC</a>
 
-    <a href="/laptop-acer-aspire-lite-al14-51m-36mh_nx.ktvsv.001.html" class="p-link" target="_blank">Xem sản
+    <a href="/laptops/{{$laptop_type}}/{{$brand}}/{{$product_id}}" class="p-link" target="_blank">Xem sản
       phẩm</a>
   </div>
 </div>
