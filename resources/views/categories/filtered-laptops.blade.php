@@ -1,3 +1,4 @@
+
 @extends('layouts.app')
 @section('content')
   <section class="product-page">
@@ -15,6 +16,9 @@
           <li class="breadcrumb-item active" aria-current="page">
             <a href="{{ url('/laptops/Gaming') }}">Gaming </a>
           </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            <a href="{{ url('/laptops/Gaming') }}">  </a>
+          </li>
         </ol>
       </div>
       
@@ -26,7 +30,7 @@
       </div>
       <div class="bg-white js-box-container" style="min-height: 400px" data-id="395-850">
         <div class="p-container custom-nav owl-carousel owl-theme" >
-          @foreach($gamingLaptops as $laptop)
+          @foreach($laptops as $laptop)
             @include('partials.detailed-p-item', ['product' => $laptop])
           @endforeach
         </div>
@@ -42,25 +46,26 @@
             <div class="filter-content-group">
               <div class="filter-group-middle">
                 <a href="#" class="image filter-title js-filter-title" title="Acer" data-check="0"
-                  data-filter_code="brand" data-value="acer">
+                  data-filter_code="brand" data-value="1">
                   <span style="background-image: url('{{ asset('assets/img/brand/acer.jpg') }}');"></span>
                 </a>
                 <a href="#" class="image filter-title js-filter-title" title="Asus" data-check="0"
-                  data-filter_code="brand" data-value="asus">
+                  data-filter_code="brand" data-value="2">
                   <span style="background-image: url('{{ asset('assets/img/brand/asus.jpg') }}');"></span>
                 </a>
                 <a href="#" class="image filter-title js-filter-title" title="Dell" data-check="0"
-                  data-filter_code="brand" data-value="levono">
+                  data-filter_code="brand" data-value="3">
                   <span style="background-image: url('{{ asset('assets/img/brand/lenovo.jpg') }}');"></span>
                 </a>
                 <a href="#" class="image filter-title js-filter-title" title="Lenovo" data-check="0"
-                  data-filter_code="brand" data-value="dell">
+                  data-filter_code="brand" data-value="4">
                   <span style="background-image: url('{{ asset('assets/img/brand/dell.jpg') }}');"></span>
                 </a>
               </div>
               <div class="filter-group-bottom">
                 <a href="#" onclick=""> Bỏ chọn </a>
-                <a href="#" class="js-open-url"> Xem kết quả </a>
+                <a href="/gaming-laptop.html" class=""> Xem <span class="js-show-total">381</span>
+                  kết quả </a>
               </div>
             </div>
           </div>
@@ -842,7 +847,7 @@
             id="js-filter-note"></span>
         </div>
         <div class="p-list-container d-flex flex-wrap">
-          @foreach($gamingLaptops as $laptop)
+          @foreach($laptops as $laptop)
             @include('partials.detailed-p-item', ['product' => $laptop])
           @endforeach
         </div>

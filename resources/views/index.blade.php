@@ -159,7 +159,7 @@
             <a href="https://www.anphatpc.com.vn/pcap-gaming.html">LENOVO</a>
           </div>
         </div>
-        <div class="p-container custom-nav owl-carousel owl-theme" id="js-collection-850" data-id="850">
+        <div class="p-container custom-nav owl-carousel owl-theme" >
           @foreach ($laptops as $laptop)
             @include('partials.simple-p-item', ['product' => $laptop])
           @endforeach
@@ -250,9 +250,7 @@
       });
     });
   </script>
-  <!-- jQuery (necessary for Owl Carousel) -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<!-- Owl Carousel JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script>
   $(document).ready(function(){

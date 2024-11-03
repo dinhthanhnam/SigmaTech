@@ -94,3 +94,7 @@ Route::get('cpu/{brand}/{id}', [CpuController::class, 'show'])->name('cpu.show')
 
 //single gpu
 Route::get('gpu/{brand}/{id}', [GpuController::class, 'show'])->name('gpu.show');
+
+//filter
+Route::get('/laptops/filter/{brand}', [LaptopController::class, 'showLaptopsByBrand'])->name('laptop.filter');
+

@@ -41,5 +41,15 @@ class LaptopController extends Controller
         
         return view('categories.office-laptops', compact('officeLaptops'));
     }
+
+    public function showLaptopsByBrand($brand)
+{
+    $laptops = Laptop::whereHas('attributes', function ($query) use ($brand) {
+        $query->where('name', 'Brand')
+              ->where('value', $brand);
+    })->with('attributes')->get();
+    
+    return view('categories.filtered-laptops', compact('laptops'));
+}
 }
 
