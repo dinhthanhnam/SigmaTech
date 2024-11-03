@@ -3,13 +3,15 @@
   $product_id = $product->id;
   $category_id = $product->category_id;
   $name = $product->name;
-  $type = $product->attributes->firstWhere('name', '[Laptop] Loại laptop')->pivot->value ?? 'N/A';
+  
   $price = $product->attributes->firstWhere('name', 'Price')->pivot->value ?? 'N/A';
   $dealprice = $product->attributes->firstWhere('name', 'Deal Price')->pivot->value ?? 'N/A';
   $rating = $product->attributes->firstWhere('name', 'Rating')->pivot->value ?? 'N/A';
   $brand = $product->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
   $model = $product->attributes->firstWhere('name', 'Model')->pivot->value ?? 'N/A';
+  $pcpart_type = $product->attributes->firstWhere('name', 'Loại linh kiện')->pivot->value ?? 'N/A';
   //biến riêng, cho laptop
+  $laptop_type = $product->attributes->firstWhere('name', '[Laptop] Loại laptop')->pivot->value ?? 'N/A';
   $laptop_cpu = $product->attributes->firstWhere('name', '[Laptop] Vi xử lý')?->pivot->value ?? 'N/A';
   $laptop_ssd_capacity = $product->attributes->firstWhere('name', '[Laptop] Dung lượng ổ cứng')?->pivot->value ?? 'N/A';
   $laptop_gpu = $product->attributes->firstWhere('name', '[Laptop] Card đồ hoạ')?->pivot->value ?? 'N/A';
@@ -27,21 +29,34 @@
       $discountPercentage = round((1 - $dealprice / $price) * 100);
   }
 @endphp
-<div class="p-item js-p-item summary-loaded" data-id="49710">
-  <a href="/laptops/{{ $type }}/{{ $brand }}/{{ $product_id }}" class="p-img">
-    <img src="{{ $product->attributes->firstWhere('name', 'Thumbnail')?->pivot->value ?? 'N/A' }}"
-      alt="{{ $name }} ({{ $laptop_cpu }} | {{ $laptop_gpu }} | {{ $laptop_mon_size }} {{ $laptop_mon_res }} | {{ $laptop_ram }} | {{ $laptop_ssd_capacity }} | {{ $laptop_os }})"
-      class="fit-img">
-    <span class="p-icon-holder js-icon-49710"><!-- // icon promotion --></span>
-  </a>
-
+<div class="p-item js-p-item summary-loaded">
+  @if($laptop_type != 'N/A')
+    <a href="/laptops/{{ $laptop_type }}/{{ $brand }}/{{ $product_id }}" class="p-img">
+      <img src="{{ $product->attributes->firstWhere('name', 'Thumbnail')?->pivot->value ?? 'N/A' }}"
+        alt="{{ $name }} "
+        class="fit-img">
+      <span class="p-icon-holder"><!-- // icon promotion --></span>
+    </a>
+  @elseif($pcpart_type != 'N/A')
+    <a href="/pc-parts/{{ $pcpart_type }}/{{ $brand }}/{{ $product_id }}" class="p-img">
+      <img src="{{ $product->attributes->firstWhere('name', 'Thumbnail')?->pivot->value ?? 'N/A' }}"
+        alt="{{ $name }} "
+        class="fit-img">
+      <span class="p-icon-holder"><!-- // icon promotion --></span>
+    </a>
+  @endif
   <div class="p-text">
     <span class="p-sku" style="font-size: 12px;">Mã SP: {{ $model }}</span>
-    <a href="/laptops/{{ $type }}/{{ $brand }}/{{ $product_id }}" class="p-name">
-      <h3>{{ $name }} ({{ $laptop_cpu }} | {{ $laptop_gpu }} | {{ $laptop_mon_size }}
-        {{ $laptop_mon_res }} | {{ $laptop_ram }} | {{ $laptop_ssd_capacity }} | {{ $laptop_os }})</h3>
-    </a>
-
+    @if ($laptop_type != 'N/A')
+      <a href="/laptops/{{ $laptop_type }}/{{ $brand }}/{{ $product_id }}" class="p-name">
+        <h3>{{ $name }}</h3>
+      </a>
+    @elseif($pcpart_type != 'N/A')
+      <a href="/pc-parts/{{ $pcpart_type }}/{{ $brand }}/{{ $product_id }}" class="p-name">
+        <h3>{{ $name }}</h3>
+      </a>
+    @endif
+    
     <div class="price-container">
       <del class="p-old-price"> {{ number_format($price, 0, ',', '.') }} đ </del>
       <span class="p-discount"> {{ $discountPercentage }} % </span>

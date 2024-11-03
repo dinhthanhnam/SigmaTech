@@ -849,8 +849,6 @@
       </div>
       <!-- paging -->
       <div class="paging bg-white mx-auto">
-      </div>
-      
         <a href="/gaming-laptop.html" class="current">
             1
         </a>
@@ -875,6 +873,7 @@
         <a href="/gaming-laptop.html?page=2">
               <i class="fa fa-angle-right"></i>
         </a>
+      </div>
       
   </section>
 @endsection

@@ -9,7 +9,21 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $laptops = Laptop::with('attributes')->get();
+
+        $gamingLaptops = Laptop::whereHas('attributes', function ($query) {
+            $query->where('name', '[Laptop] Loại laptop')
+                  ->where('value', 'Gaming');
+        })->with('attributes')->get();
+
+        $officeLaptops = Laptop::whereHas('attributes', function ($query) {
+            $query->where('name', '[Laptop] Loại laptop')
+                  ->where('value', 'Office');
+        })->with('attributes')->get();
+
+        $cpus = Cpu::whereHas('attributes', function ($query) {
+            $query->where('name', 'Loại linh kiện')
+                  ->where('value', 'CPU');
+        })->with('attributes')->get();
 
         $laptopsSale = Laptop::whereHas('attributes', function ($query) {
             $query->where('name', 'Sale Price')
@@ -24,6 +38,7 @@ class HomeController extends Controller
         $flashSaleItems = $laptopsSale->merge($cpusSale);
 
 
-        return view('index', compact('laptops', 'flashSaleItems'));
+        return view('index', compact( 'flashSaleItems', 'gamingLaptops', 'officeLaptops', 'cpus'));
     }
+
 }

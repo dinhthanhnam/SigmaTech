@@ -4,7 +4,6 @@
   $category_id = $product->category_id;
   $name = $product->name;
   $price = $product->attributes->firstWhere('name', 'Price')->pivot->value ?? 'N/A';
-  $saleprice = $product->attributes->firstWhere('name', 'Sale Price')->pivot->value ?? 'N/A';
   $dealprice = $product->attributes->firstWhere('name', 'Deal Price')->pivot->value ?? 'N/A';
   $rating = $product->attributes->firstWhere('name', 'Rating')->pivot->value ?? 'N/A';
   $brand = $product->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
@@ -24,7 +23,12 @@
   $laptop_os = $product->attributes->firstWhere('name', '[Laptop] OS')?->pivot->value ?? 'N/A';
   $laptop_color = $product->attributes->firstWhere('name', '[Laptop] Màu sắc')->pivot->value ?? 'N/A';
   
-  //biến riêng, cho linh kiện
+  //flash sale
+  $saleprice = $product->attributes->firstWhere('name', 'Sale Price')->pivot->value;
+  $sale_start_date = $product->attributes->firstWhere('name', 'Sale Start Date')->pivot->value;
+  $sale_end_date = $product->attributes->firstWhere('name', 'Sale End Date')->pivot->value;
+  $sale_end_time = strtotime($sale_end_date . ' 00:00:00') - (7 * 3600);
+
 @endphp
 @php
   $discountPercentage = 0;
@@ -46,7 +50,7 @@
       </a>
     @elseif ($pcpart_type != 'N/A')
       <a href="/pcparts/{{$pcpart_type}}/{{$brand}}/{{$product_id}}" class="p-name" target="_blank">
-        {{ $name }}
+        <b>{{ $name }} </b>
       </a>
     @endif
 
@@ -61,19 +65,39 @@
       <span class="p-deal-line" style="width: 100%"></span>
     </div>
 
-    <div class="p-deal-countdown js-deal-time-holder" data-time="30-09-2024, 11:30 pm" data-type="active">
-      <span style="margin-right: 3px">Kết thúc sau </span>
-      <b>05 <span>Ngày</span> </b> :
-      <b>09</b> :
-      <b>48</b> :
-      <b>34</b>
+    <div class="p-deal-countdown js-deal-time-holder">Kết thúc sau
+      <span class="js-hour"> 00 </span> 
+      <span class="js-minute"> 00 </span> 
+      <span class="js-seconds"> 00 </span>
     </div>
 
     <a href="javascript:void(0)" class="p-btn-buy"
-      onclick="addProduct(49837, 'Laptop Acer Aspire Lite AL14-51M-36MH_NX.KTVSV.001 (Intel Core i3-1215U | 8GB | 256GB | Intel UHD | 14 inch WUXGA | Win 11 | Bạc)', '8990000')">MUA
-      GIÁ SỐC</a>
+      onclick="addProduct(49837, '')">MUA GIÁ SỐC</a>
 
-    <a href="/laptops/{{$laptop_type}}/{{$brand}}/{{$product_id}}" class="p-link" target="_blank">Xem sản
-      phẩm</a>
+    <a href="/laptops/{{$laptop_type}}/{{$brand}}/{{$product_id}}" class="p-link" target="_blank">Xem sản phẩm</a>
   </div>
 </div>
+@push('scripts')
+  <script>
+    const endTime = {{ $sale_end_time }} * 1000;
+
+    const countdown = setInterval(function() {
+        const now = new Date().getTime();
+        const timeLeft = endTime - now;
+
+        // Tính giờ, phút và giây từ timeLeft
+        const totalHours = Math.floor(timeLeft / (1000 * 60 * 60));
+        const totalMinutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        const totalSeconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+        document.querySelector('.js-hour').innerText = String(totalHours).padStart(2, '0');
+        document.querySelector('.js-minute').innerText = String(totalMinutes).padStart(2, '0');
+        document.querySelector('.js-seconds').innerText = String(totalSeconds).padStart(2, '0');
+
+        if (timeLeft < 0) {
+            clearInterval(countdown);
+            document.querySelector('#js-deal-time-holder').innerText = "Đã kết thúc";
+        }
+    }, 1000);
+  </script>
+@endpush

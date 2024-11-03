@@ -127,14 +127,14 @@
       </div>
 
       <!-- product_bestsale -->
-      <div class="home-pro-hot box-pro-container bg-white pb-2" id="js-bestsale-container">
+      {{-- <div class="home-pro-hot box-pro-container bg-white pb-2" id="js-bestsale-container">
         <div class="box-title-container">
           <h2 class="box-title"> top sản phẩm bán chạy </h2>
           <div class="child-title">
             <a href="{{ route('gaming-laptops.show')}}"> Laptop gaming </a>
             <a href="{{ route('office-laptops.show')}}"> Laptop văn phòng </a>
-            <a href="{{ route('categories.monitors')}}"> màn hình máy tính </a>
-            <a href="{{ route('categories.gaming-gears')}}"> bàn phím, chuột</a>
+            <a href="{{ route('monitors.show')}}"> màn hình máy tính </a>
+            <a href="{{ route('gaming-gears.show')}}"> bàn phím, chuột</a>
           </div>
         </div>
         <div class="p-container" style="min-height: 850px">
@@ -146,7 +146,7 @@
           </div>
           <a href="#" class="view-all"> xem tất cả sản phẩm </a>
         </div>
-      </div>
+      </div> --}}
 
       <!-- Laptop văn phòng -->
       <div class="box-pro-container bg-white js-box-container" style="min-height: 400px" data-id="395-850">
@@ -160,8 +160,8 @@
           </div>
         </div>
         <div class="p-container custom-nav owl-carousel owl-theme" >
-          @foreach ($laptops as $laptop)
-            @include('partials.simple-p-item', ['product' => $laptop])
+          @foreach ($officeLaptops as $product)
+            @include('partials.simple-p-item', ['product' => $product])
           @endforeach
         </div>
         <a href="{{route ('office-laptops.show')}}" class="view-cate"> XEM TẤT CẢ <i class="fa fa-angle-double-right"></i></a>
@@ -183,10 +183,12 @@
             <a href="/nguon-dien-may-tinh-psu.html">Nguồn</a>
           </div>
         </div>
-        <div class="p-container custom-nav owl-carousel owl-theme" id="js-collection-848" data-id="848">
-
+        <div class="p-container custom-nav owl-carousel owl-theme">
+          @foreach ($cpus as $product)
+            @include('partials.simple-p-item', ['product' => $product])
+          @endforeach
         </div>
-        <a href="{{route ('categories.pc-parts')}}" class="view-cate"> XEM TẤT CẢ <i class="fa fa-angle-double-right"></i>
+        <a href="{{route ('pc-parts.show')}}" class="view-cate"> XEM TẤT CẢ <i class="fa fa-angle-double-right"></i>
         </a>
       </div>
 
@@ -200,7 +202,7 @@
         <div class="p-container custom-nav owl-carousel owl-theme" id="js-collection-849" data-id="849">
 
         </div>
-        <a href="{{route ('categories.monitors')}}" class="view-cate"> XEM TẤT CẢ <i class="fa fa-angle-double-right"></i>
+        <a href="{{route ('monitors.show')}}" class="view-cate"> XEM TẤT CẢ <i class="fa fa-angle-double-right"></i>
         </a>
       </div>
 
@@ -216,7 +218,7 @@
         <div class="p-container custom-nav owl-carousel owl-theme" id="js-holder-1255" data-id="1255">
 
         </div>
-        <a href="{{route ('categories.gaming-gears')}}" class="view-cate"> XEM TẤT CẢ <i class="fa fa-angle-double-right"></i> </a>
+        <a href="{{route ('gaming-gears.show')}}" class="view-cate"> XEM TẤT CẢ <i class="fa fa-angle-double-right"></i> </a>
       </div>
 
       <!-- Cooling, Tản nhiệt  -->

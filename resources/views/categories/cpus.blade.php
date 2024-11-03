@@ -24,7 +24,7 @@
         <!-- Thêm sản phẩm được mua nhiều nhất vào đây-->
         <div class="p-container d-flex flex-wrap justify-content-between">
           @foreach($cpus as $product)
-            @include('partials.detailed-p-item', ['product' => $product])
+            @include('partials.simple-p-item', ['product' => $product])
           @endforeach  
         <div class="filter-height" style="display: none;"></div>
         <div class="filter-container">
