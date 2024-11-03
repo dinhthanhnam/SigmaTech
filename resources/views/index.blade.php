@@ -79,23 +79,21 @@
         </div>
 
         <div class="clearfix"></div>
-        {{-- <div class="banner-slider-bottom">
-                    <a href="#" target='_blank' rel='nofollow'><img
-                            src="{{ asset('assets/img/banner/01_Jul9ae198dee31c9df7259fb87d5b57c4b9.png') }}"
-                            alt="" width="437" height="180" /></a>
-                    <a href="#" target='_blank' rel='nofollow'><img
-                            src="{{ asset('assets/img/banner/01_Jul0603d458859790fb1099a51b8e815e70.png') }}"
-                            alt="" width="437" height="180" /></a>
-                    <a href="#" target='_blank' rel='nofollow'><img
-                            src="{{ asset('assets/img/banner/01_Julefdd70592ce2091c05ca2ff057403636.png') }}"
-                            alt="" width="437" height="180" /></a>
-                </div> --}}
+          <a href="#" target='_blank' rel='nofollow'><img
+                  src="{{ asset('assets/img/banner/01_Jul9ae198dee31c9df7259fb87d5b57c4b9.png') }}"
+                  alt="" width="437" height="180" /></a>
+          <a href="#" target='_blank' rel='nofollow'><img
+                  src="{{ asset('assets/img/banner/01_Jul0603d458859790fb1099a51b8e815e70.png') }}"
+                  alt="" width="437" height="180" /></a>
+          <a href="#" target='_blank' rel='nofollow'><img
+                    src="{{ asset('assets/img/banner/01_Julefdd70592ce2091c05ca2ff057403636.png') }}"
+                    alt="" width="437" height="180" /></a>
+        </div>
       </div>
 
       <div class="home-deal-container" id="js-home-deal-container">
         <div class="deal-title-group lazy">
-          {{-- data-bg="{{ asset('assets/img/deal/home-deal-bg-2023.png') }}">
-                    <i class="icon-clock lazy" data-bg="{{ asset('assets/img/deal/deal-clock.png') }}"></i> --}}
+          <i class="icon-clock lazy" data-bg="{{ asset('assets/img/deal/deal-clock.png') }}"></i>
           <p>FLASH SALE</p>
         </div>
         <img src="{{ asset('assets/img/deal/deal-moi-ngay---3001.jpg') }}" alt="Flash sale 8-8"
@@ -107,21 +105,24 @@
             <a href="javascript:void(0)" class="current js-current-date" data-from_time="19-09-2024"
               data-id="js-active-group">
               19/09/2024
+              <span>Đang diễn ra</span>
             </a>
           </div>
           <div class="countdown-time-group" id="js-deal-countdown-holder"> <!--//--></div>
         </div>
 
         <div class="deal-product-holder">
-          <!-- // Deal nổi bật đang diễn ra  + sắp chạy trong ngày-->
+          <!-- // Deal nổi bật đang diễn ra -->
           <div class="product-deal-list d-flex flex-wrap justify-content-between active" id="js-active-group">
-
+            {{-- @foreach($flashSaleItems as $item)
+              @include('partials.flash-sale-p-item', ['product' => $item])
+            @endforeach --}}
           </div>
-          <div class="product-deal-list" id="js-inactive-group"> </div>
+          {{-- <div class="product-deal-list" id="js-inactive-group"> </div> --}}
         </div>
 
         <div class="home-deal-btn">
-          <a href="/deal">Xem thêm</a>
+          <a href="{{ route('pages.flash-sale') }}">Xem thêm</a>
         </div>
       </div>
 

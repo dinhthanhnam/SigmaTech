@@ -7,15 +7,6 @@ use App\Models\Laptop;
 
 class LaptopController extends Controller
 {
-    public function index()
-    {
-        // Lấy tất cả các laptop cùng với các thuộc tính của chúng
-        $laptops = Laptop::with('attributes')->get();
-    
-        // Trả về view trang chủ với danh sách laptop
-        return view('index', compact('laptops'));
-    }
-
     public function show($type, $brand, $id)
     {
         // Lấy laptop theo id và kèm theo các thuộc tính của nó
