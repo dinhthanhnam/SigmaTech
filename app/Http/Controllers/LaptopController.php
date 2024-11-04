@@ -27,7 +27,7 @@ class LaptopController extends Controller
         $gamingLaptops = Laptop::whereHas('attributes', function ($query) {
             $query->where('name', '[Laptop] Loại laptop')
                   ->where('value', 'Gaming');
-        })->with('attributes')->get();
+        })->with('attributes')->paginate(12);
         
         return view('categories.gaming-laptops', compact('gamingLaptops'));
     }
