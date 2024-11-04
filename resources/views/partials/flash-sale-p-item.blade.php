@@ -33,23 +33,31 @@
 @php
   $discountPercentage = 0;
 
-  if (isset($dealprice)) {
-      $discountPercentage = round((1 - $dealprice / $price) * 100);
+  if (isset($saleprice)) {
+      $discountPercentage = round((1 - $saleprice / $price) * 100);
   }
 @endphp
 <div class="deal-item">
-  <a href="/laptops/{{$laptop_type}}/{{$brand}}/{{$product_id}}" class="p-name" target="_blank">
-    <img src="{{ $product->attributes->firstWhere('name', 'Thumbnail')?->pivot->value ?? 'N/A' }}" class="mx-auto" target="_blank"
-      alt="{{ $name }}">
-  </a>
+  @if ($laptop_type != 'N/A')
+    <a href="/laptops/{{$laptop_type}}/{{$brand}}/{{$product_id}}" class="p-name" target="_blank">
+      <img src="{{ $product->attributes->firstWhere('name', 'Thumbnail')?->pivot->value ?? 'N/A' }}" class="mx-auto" target="_blank"
+        alt="{{ $name }}">
+    </a>
+  @elseif ($pcpart_type != 'N/A')
+    <a href="/pc-parts/{{$pcpart_type}}/{{$brand}}/{{$product_id}}" class="p-name" target="_blank">
+      <img src="{{ $product->attributes->firstWhere('name', 'Thumbnail')?->pivot->value ?? 'N/A' }}" class="mx-auto" target="_blank"
+        alt="{{ $name }}">
+    </a>
+  @endif
+  
   <div class="p-text">
     @if ($laptop_type != 'N/A')
       <a href="/laptops/{{$laptop_type}}/{{$brand}}/{{$product_id}}" class="p-name" target="_blank"
         title="{{ $name }}">
-        {{ $name }} ({{ $laptop_cpu}} | {{ $laptop_ram }} | {{ $laptop_ssd_capacity}} | {{ $laptop_gpu }} | {{ $laptop_mon_size }} | {{ $laptop_os }} | {{$laptop_color}})
+        <b>{{ $name }} ({{ $laptop_cpu}} | {{ $laptop_ram }} | {{ $laptop_ssd_capacity}} | {{ $laptop_gpu }} | {{ $laptop_mon_size }} | {{ $laptop_os }} | {{$laptop_color}})</b>
       </a>
     @elseif ($pcpart_type != 'N/A')
-      <a href="/pcparts/{{$pcpart_type}}/{{$brand}}/{{$product_id}}" class="p-name" target="_blank">
+      <a href="/pc-parts/{{$pcpart_type}}/{{$brand}}/{{$product_id}}" class="p-name" target="_blank">
         <b>{{ $name }} </b>
       </a>
     @endif
@@ -65,9 +73,9 @@
       <span class="p-deal-line" style="width: 100%"></span>
     </div>
 
-    <div class="p-deal-countdown js-deal-time-holder">Kết thúc sau
-      <span class="js-hour"> 00 </span> 
-      <span class="js-minute"> 00 </span> 
+    <div class="p-deal-countdown js-deal-time-holder" sale-end-time="{{$sale_end_time}}">Kết thúc sau
+      <span class="js-hour"> 00 </span> <span>:</span>
+      <span class="js-minute"> 00 </span> <span>:</span>
       <span class="js-seconds"> 00 </span>
     </div>
 
@@ -77,27 +85,4 @@
     <a href="/laptops/{{$laptop_type}}/{{$brand}}/{{$product_id}}" class="p-link" target="_blank">Xem sản phẩm</a>
   </div>
 </div>
-@push('scripts')
-  <script>
-    const endTime = {{ $sale_end_time }} * 1000;
 
-    const countdown = setInterval(function() {
-        const now = new Date().getTime();
-        const timeLeft = endTime - now;
-
-        // Tính giờ, phút và giây từ timeLeft
-        const totalHours = Math.floor(timeLeft / (1000 * 60 * 60));
-        const totalMinutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-        const totalSeconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-
-        document.querySelector('.js-hour').innerText = String(totalHours).padStart(2, '0');
-        document.querySelector('.js-minute').innerText = String(totalMinutes).padStart(2, '0');
-        document.querySelector('.js-seconds').innerText = String(totalSeconds).padStart(2, '0');
-
-        if (timeLeft < 0) {
-            clearInterval(countdown);
-            document.querySelector('#js-deal-time-holder').innerText = "Đã kết thúc";
-        }
-    }, 1000);
-  </script>
-@endpush

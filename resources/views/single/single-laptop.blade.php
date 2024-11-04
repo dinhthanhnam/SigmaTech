@@ -4,7 +4,7 @@
     $name = $laptop->name;
     $type = $laptop->attributes->firstWhere('name', '[Laptop] Loại laptop')->pivot->value ?? 'N/A';
     $price = $laptop->attributes->firstWhere('name', 'Price')->pivot->value ?? 'N/A';
-    $saleprice = $laptop->attributes->firstWhere('name', 'Sale Price')->pivot->value ?? 'N/A';
+    
     $dealprice = $laptop->attributes->firstWhere('name', 'Deal Price')->pivot->value ?? 'N/A';
     $rating = $laptop->attributes->firstWhere('name', 'Rating')->pivot->value ?? 'N/A';
     $brand = $laptop->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
@@ -40,6 +40,11 @@
     $color = $laptop->attributes->firstWhere('name', '[Laptop] Màu sắc')?->pivot->value ?? 'N/A';
 
     $camera = $laptop->attributes->firstWhere('name', '[Laptop] Camera')?->pivot->value ?? 'N/A';
+
+    $saleprice = $laptop->attributes->firstWhere('name', 'Sale Price')->pivot->value ?? 'N/A';
+    $sale_start_date = $laptop->attributes->firstWhere('name', 'Sale Start Date')->pivot->value ?? 'N/A';
+    $sale_end_date = $laptop->attributes->firstWhere('name', 'Sale End Date')->pivot->value ?? 'N/A';
+    $sale_end_time = strtotime($sale_end_date . ' 00:00:00') - (7 * 3600);
 
 @endphp
 @section('content')
@@ -1297,7 +1302,7 @@
     {{-- countdown --}}
     <script>
         // Xác định thời gian kết thúc (thời gian đích) - ví dụ là 1 giờ từ thời gian hiện tại
-        const endTime = new Date().getTime() + 3600000; // 1 giờ = 3600000 milliseconds
+        const endTime = {{$sale_end_time}} * 1000; // 1 giờ = 3600000 milliseconds
     
         // Cập nhật đồng hồ đếm ngược mỗi giây
         const countdown = setInterval(function() {

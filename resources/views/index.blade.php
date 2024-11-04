@@ -80,14 +80,14 @@
 
         <div class="clearfix">
           <a href="#" target='_blank' rel='nofollow'><img
-            src="{{ asset('assets/img/banner/01_Jul9ae198dee31c9df7259fb87d5b57c4b9.png') }}"
-            alt="" width="437" height="180" /></a>
+              src="{{ asset('assets/img/banner/01_Jul9ae198dee31c9df7259fb87d5b57c4b9.png') }}" alt=""
+              width="437" height="180" /></a>
           <a href="#" target='_blank' rel='nofollow'><img
-            src="{{ asset('assets/img/banner/01_Jul0603d458859790fb1099a51b8e815e70.png') }}"
-            alt="" width="437" height="180" /></a>
+              src="{{ asset('assets/img/banner/01_Jul0603d458859790fb1099a51b8e815e70.png') }}" alt=""
+              width="437" height="180" /></a>
           <a href="#" target='_blank' rel='nofollow'><img
-              src="{{ asset('assets/img/banner/01_Julefdd70592ce2091c05ca2ff057403636.png') }}"
-              alt="" width="437" height="180" /></a>
+              src="{{ asset('assets/img/banner/01_Julefdd70592ce2091c05ca2ff057403636.png') }}" alt=""
+              width="437" height="180" /></a>
         </div>
       </div>
 
@@ -101,20 +101,18 @@
 
         <div class="deal-date-group">
           <div class="deal-date-list" id="js-deal-date-holder">
-
-            <a href="javascript:void(0)" class="current js-current-date" data-from_time="19-09-2024"
-              data-id="js-active-group">
-              19/09/2024
+            <a href="javascript:void(0)" class="current js-current-date" data-from_time="">
+              <!-- Ngày sẽ được gán vào đây -->
               <span>Đang diễn ra</span>
             </a>
           </div>
-          <div class="countdown-time-group" id="js-deal-countdown-holder"> <!--//--></div>
         </div>
+
 
         <div class="deal-product-holder">
           <!-- // Deal nổi bật đang diễn ra -->
           <div class="product-deal-list d-flex flex-wrap justify-content-between active" id="js-active-group">
-            @foreach($flashSaleItems as $item)
+            @foreach ($flashSaleItems as $item)
               @include('partials.flash-sale-p-item', ['product' => $item])
             @endforeach
           </div>
@@ -159,12 +157,13 @@
             <a href="https://www.anphatpc.com.vn/pcap-gaming.html">LENOVO</a>
           </div>
         </div>
-        <div class="p-container custom-nav owl-carousel owl-theme" >
+        <div class="p-container custom-nav owl-carousel owl-theme">
           @foreach ($officeLaptops as $product)
             @include('partials.simple-p-item', ['product' => $product])
           @endforeach
         </div>
-        <a href="{{route ('office-laptops.show')}}" class="view-cate"> XEM TẤT CẢ <i class="fa fa-angle-double-right"></i></a>
+        <a href="{{ route('office-laptops.show') }}" class="view-cate"> XEM TẤT CẢ <i
+            class="fa fa-angle-double-right"></i></a>
       </div>
 
       <!-- Linh kiện máy tính -->
@@ -188,7 +187,7 @@
             @include('partials.simple-p-item', ['product' => $product])
           @endforeach
         </div>
-        <a href="{{route ('pc-parts.show')}}" class="view-cate"> XEM TẤT CẢ <i class="fa fa-angle-double-right"></i>
+        <a href="{{ route('pc-parts.show') }}" class="view-cate"> XEM TẤT CẢ <i class="fa fa-angle-double-right"></i>
         </a>
       </div>
 
@@ -202,7 +201,7 @@
         <div class="p-container custom-nav owl-carousel owl-theme" id="js-collection-849" data-id="849">
 
         </div>
-        <a href="{{route ('monitors.show')}}" class="view-cate"> XEM TẤT CẢ <i class="fa fa-angle-double-right"></i>
+        <a href="{{ route('monitors.show') }}" class="view-cate"> XEM TẤT CẢ <i class="fa fa-angle-double-right"></i>
         </a>
       </div>
 
@@ -218,7 +217,8 @@
         <div class="p-container custom-nav owl-carousel owl-theme" id="js-holder-1255" data-id="1255">
 
         </div>
-        <a href="{{route ('gaming-gears.show')}}" class="view-cate"> XEM TẤT CẢ <i class="fa fa-angle-double-right"></i> </a>
+        <a href="{{ route('gaming-gears.show') }}" class="view-cate"> XEM TẤT CẢ <i
+            class="fa fa-angle-double-right"></i> </a>
       </div>
 
       <!-- Cooling, Tản nhiệt  -->
@@ -252,28 +252,81 @@
       });
     });
   </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script>
-  $(document).ready(function(){
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function() {
       $('.owl-carousel').owlCarousel({
-          loop: true,
-          margin: 10,
-          nav: true,
-          dots: true, 
-          responsive: {
-              0: {
-                  items: 1
-              },
-              600: {
-                  items: 2
-              },
-              1000: {
-                  items: 6
-              }
-              
+        loop: true,
+        margin: 10,
+        nav: true,
+        dots: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 2
+          },
+          1000: {
+            items: 6
           }
+
+        }
       });
-  });
-</script>
+    });
+  </script>
+@endpush
+
+@push('scripts')
+  <script>
+    // Lấy tất cả các thẻ có class .js-deal-time-holder
+    document.querySelectorAll('.js-deal-time-holder').forEach((element) => {
+      // Lấy thời gian kết thúc từ thuộc tính sale-end-time và chuyển đổi thành mili giây
+      const endTime = element.getAttribute('sale-end-time') * 1000;
+
+      // Thiết lập bộ đếm ngược cho từng thẻ
+      const countdown = setInterval(function() {
+        const now = new Date().getTime();
+        const timeLeft = endTime - now;
+
+        // Tính giờ, phút và giây từ timeLeft
+        const totalHours = Math.floor(timeLeft / (1000 * 60 * 60));
+        const totalMinutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        const totalSeconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+        // Cập nhật nội dung hiển thị cho từng thẻ
+        element.querySelector('.js-hour').innerText = String(totalHours).padStart(2, '0');
+        element.querySelector('.js-minute').innerText = String(totalMinutes).padStart(2, '0');
+        element.querySelector('.js-seconds').innerText = String(totalSeconds).padStart(2, '0');
+
+        // Kiểm tra khi hết thời gian
+        if (timeLeft < 0) {
+          clearInterval(countdown);
+          element.innerText = "Đã kết thúc";
+        }
+      }, 1000);
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Lấy ngày hiện tại
+      const today = new Date();
+
+      // Định dạng ngày thành dd/mm/yyyy cho nội dung hiển thị và dd-mm-yyyy cho data-from_time
+      const formattedDateDisplay = today.toLocaleDateString("en-GB"); // dd/mm/yyyy
+      const formattedDateAttribute = today.toLocaleDateString("en-GB").replace(/\//g, "-"); // dd-mm-yyyy
+
+      // Tìm phần tử đầu tiên có class .js-current-date và cập nhật ngày
+      const currentDateElement = document.querySelector(".js-current-date");
+      if (currentDateElement) {
+        // Gán giá trị ngày cho thuộc tính data-from_time
+        currentDateElement.setAttribute("data-from_time", formattedDateAttribute);
+
+        // Cập nhật nội dung hiển thị trong thẻ <a> với ngày hiện tại
+        currentDateElement.childNodes[0].nodeValue =
+        `${formattedDateDisplay} `; // Thêm khoảng trắng để không đè lên <span>
+      }
+    });
+  </script>
 @endpush
