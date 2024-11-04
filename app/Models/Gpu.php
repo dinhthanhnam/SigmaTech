@@ -15,4 +15,8 @@ class Gpu extends Model
         return $this->belongsToMany(Attribute::class, 'gpu_attribute')
                     ->withPivot('value'); // Lấy cả cột value từ bảng trung gian
     }
+    public function categories()
+    {
+        return $this->belongsTo(Category::class, 'category_id');
+    }
 }

@@ -15,4 +15,8 @@ class Laptop extends Model
         return $this->belongsToMany(Attribute::class, 'laptop_attribute')
                     ->withPivot('value'); // Lấy cả cột value từ bảng trung gian
     }
+    public function categories()
+    {
+        return $this->belongsTo(Category::class, 'category_id');
+    }
 }

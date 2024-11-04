@@ -53,11 +53,10 @@
                         </a>
                     </li>
                     <li class="breadcrumb-item" aria-current="page">
-                        <a href="/laptops/{{$type}}">Laptop {{ $type }} </a>
+                        <a href="/laptops/{{ $type }}">Laptop {{ $type }} </a>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
-                        <a
-                            href="/laptops/{{$type}}/{{$brand}}}">{{$brand}}</a>
+                        <a href="/laptops/{{ $type }}/{{ $brand }}}">{{ $brand }}</a>
                     </li>
                 </ol>
             </div>
@@ -75,7 +74,7 @@
                         <a href="javascript:void(0)" onclick="openBoxGallery(this);" data-id="anh_sp"
                             data-name="Hình sản phẩm" class="js-img-type current">
                             <span class="img">
-                                <img src="{{$laptop->attributes->firstWhere('name', 'Thumbnail Small')->pivot->value ?? 'N/A'}}"
+                                <img src="{{ $laptop->attributes->firstWhere('name', 'Thumbnail Small')->pivot->value ?? 'N/A' }}"
                                     alt="Hình sản phẩm" class="fit-img">
                             </span>
                             <span class="name"> Hình sản phẩm </span>
@@ -555,10 +554,10 @@
                         </span>
                     </div>
                     <p><a href="javascript:void(0)" id="js-viewmore-summary" class="red">&lt; Thu gọn</a></p>
-                    
+
                     <div class="deal-count-container text-12 font-300 text-right" id="js-deal-container">Kết thúc sau
-                        <span class="js-hour"> 00 </span> 
-                        <span class="js-minute"> 00 </span> 
+                        <span class="js-hour"> 00 </span>
+                        <span class="js-minute"> 00 </span>
                         <span class="js-seconds"> 00 </span>
                     </div>
                     <div class="pro_info-price-container">
@@ -694,11 +693,14 @@
                             <ul class="ul" style="line-height:25px;">
                                 <li> <i class="fa fa-check"></i> <a href="#">Hướng dẫn đặt hàng Flash Sale</a> </li>
                                 <li> <i class="fa fa-check"></i> <a href="#">Hướng dẫn mua hàng</a> </li>
-                                <li> <i class="fa fa-check"></i> <a href=" {{ route('pages.warranty-policy') }}">Chính sách bảo hành đổi trả</a> </li>
+                                <li> <i class="fa fa-check"></i> <a href=" {{ route('pages.warranty-policy') }}">Chính
+                                        sách bảo hành đổi trả</a> </li>
                                 <li> <i class="fa fa-check"></i> <a href="3">Chính sách mua trả góp</a> </li>
-                                <li> <i class="fa fa-check"></i> <a href="{{ route('pages.shipping-policy') }}">Chính sách giao hàng</a> </li>
+                                <li> <i class="fa fa-check"></i> <a href="{{ route('pages.shipping-policy') }}">Chính
+                                        sách giao hàng</a> </li>
                                 <li> <i class="fa fa-check"></i> <a href="#">Chính sách bảo hành tận nhà</a> </li>
-                                <li> <i class="fa fa-check"></i> <a href="#">Hỗ trợ khách hàng dự án, doanh nghiệp </a> </li>
+                                <li> <i class="fa fa-check"></i> <a href="#">Hỗ trợ khách hàng dự án, doanh nghiệp
+                                    </a> </li>
                             </ul>
                         </div>
                     </div>
@@ -1133,13 +1135,14 @@
 @push('scripts')
     <script>
         const listImage = {
-            anh_sp: 
-            [
+            anh_sp: [
                 @foreach ($images as $image)
-                    { image: `{{ $image }}` },
+                    {
+                        image: `{{ $image }}`
+                    },
                 @endforeach
             ]
-                
+
         };
 
         $(document).ready(function() {
@@ -1206,25 +1209,25 @@
         });
 
         function openBoxGallery(element) {
-        var imageId = element.getAttribute("data-id");
-        var images = listImage[imageId];
+            var imageId = element.getAttribute("data-id");
+            var images = listImage[imageId];
 
-        if (images && images.length > 0) {
-            var fancyboxImages = images.map(function(image) {
-                return {
-                    src: image.image,
-                    type: "image",
-                    opts: {
-                        caption: "Hình ảnh sản phẩm",
-                        thumb: image.image
-                    }
-                };
-            });
+            if (images && images.length > 0) {
+                var fancyboxImages = images.map(function(image) {
+                    return {
+                        src: image.image,
+                        type: "image",
+                        opts: {
+                            caption: "Hình ảnh sản phẩm",
+                            thumb: image.image
+                        }
+                    };
+                });
 
-            Fancybox.show(fancyboxImages);
-        } else {
-            console.warn("Không tìm thấy hình ảnh cho ID: " + imageId);
-        }
+                Fancybox.show(fancyboxImages);
+            } else {
+                console.warn("Không tìm thấy hình ảnh cho ID: " + imageId);
+            }
         }
     </script>
     <script>
@@ -1298,22 +1301,22 @@
     <script>
         // Xác định thời gian kết thúc (thời gian đích) - ví dụ là 1 giờ từ thời gian hiện tại
         const endTime = new Date().getTime() + 3600000; // 1 giờ = 3600000 milliseconds
-    
+
         // Cập nhật đồng hồ đếm ngược mỗi giây
         const countdown = setInterval(function() {
             const now = new Date().getTime();
             const timeLeft = endTime - now;
-    
+
             // Tính giờ, phút và giây từ timeLeft
             const hours = Math.floor((timeLeft / (1000 * 60 * 60)) % 24);
             const minutes = Math.floor((timeLeft / (1000 * 60)) % 60);
             const seconds = Math.floor((timeLeft / 1000) % 60);
-    
+
             // Hiển thị kết quả trong các phần tử tương ứng
             document.querySelector('.js-hour').innerText = String(hours).padStart(2, '0');
             document.querySelector('.js-minute').innerText = String(minutes).padStart(2, '0');
             document.querySelector('.js-seconds').innerText = String(seconds).padStart(2, '0');
-    
+
             // Nếu thời gian kết thúc, dừng bộ đếm ngược
             if (timeLeft < 0) {
                 clearInterval(countdown);
@@ -1321,6 +1324,4 @@
             }
         }, 1000); // Cập nhật mỗi giây (1000 milliseconds)
     </script>
-    
 @endpush
-

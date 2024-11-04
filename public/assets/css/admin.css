@@ -2027,6 +2027,8 @@ div.dataTables_wrapper div.dataTables_filter input {
 }
 
 .form-control::placeholder {
+  position: absolute;
+  right: 10px;
   color: #6c757d;
   opacity: 1;
 }
@@ -2664,16 +2666,15 @@ border: none !important;
           box-shadow: 0 0 0 0 rgba(40, 167, 69, 0.5);
 }
 
-.btn-info {
-  color: #FFF;
-  background-color: #17a2b8;
-  border-color: #17a2b8;
+.btn-info{
+  color: #000;
+  background-color: rgb(255, 212, 59);
+
 }
 
 .btn-info:hover {
-  color: #FFF;
-  background-color: #138496;
-  border-color: #117a8b;
+  color: #000;
+  background-color: rgb(201, 160, 14);
 }
 
 .btn-info:focus, .btn-info.focus {
@@ -2683,8 +2684,7 @@ border: none !important;
 
 .btn-info.disabled, .btn-info:disabled {
   color: #FFF;
-  background-color: #17a2b8;
-  border-color: #17a2b8;
+  background-color: rgb(248, 227, 149);
 }
 
 .btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active,
@@ -9557,7 +9557,7 @@ div.dataTables_wrapper div.dataTables_length select {
 }
 
 div.dataTables_wrapper div.dataTables_filter {
-  text-align: right;
+  text-align: left;
 }
 
 div.dataTables_wrapper div.dataTables_filter label {
@@ -13293,7 +13293,16 @@ a.fc-more:hover {
   position: relative;
   z-index: 1;
 }
-
+div.dataTables_wrapper div.dataTables_filter label {
+  font-weight: 600;
+  white-space: nowrap;
+  text-align: left;
+  background: white;
+  color: black;
+  padding: 10px;
+  border-radius: .357rem;
+  border: 1px solid #ddd;
+}
 .fc-time-grid {
   min-height: 100%;
   /* so if height setting is 'auto', .fc-bg stretches to fill height */
@@ -13709,9 +13718,14 @@ be a descendant of the grid when it is being dragged.
 }
 
 .app-nav__item {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 50px;
+  width: 50px;
   display: block;
+  margin-right: -10px;
   padding: 12px;
-  margin-top: -21px;
   line-height: 0px;
   color: rgb(0, 28, 64);
   background: rgb(255, 212, 59);
