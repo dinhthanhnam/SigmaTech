@@ -24,8 +24,8 @@
         </div>
         <!-- Thêm sản phẩm được mua nhiều nhất vào đây-->
       </div>
-      <div class="bg-white js-box-container" style="min-height: 400px" data-id="395-850">
-        <div class="p-container custom-nav owl-carousel owl-theme" >
+      <div class="p-container bg-white js-box-container" style="min-height: 400px" data-id="395-850">
+        <div class="container custom-nav owl-carousel owl-theme" >
           @foreach($gamingLaptops as $laptop)
             @include('partials.detailed-p-item', ['product' => $laptop])
           @endforeach
@@ -848,32 +848,32 @@
         </div>
       </div>
       <!-- paging -->
-      <div class="paging bg-white mx-auto">
-        <a href="/gaming-laptop.html" class="current">
-            1
-        </a>
-        <a href="/gaming-laptop.html?page=2">
-            2
-        </a>
-        <a href="/gaming-laptop.html?page=3">
-            3
-        </a>
-        <a href="/gaming-laptop.html?page=4">
-            4
-        </a>
-        <a href="/gaming-laptop.html?page=5">
-            5
-        </a>
-        <a href="/gaming-laptop.html?page=6">
-            6
-        </a>
-        <a href="/gaming-laptop.html?page=7">
-            7
-        </a>
-        <a href="/gaming-laptop.html?page=2">
-              <i class="fa fa-angle-right"></i>
-        </a>
-      </div>
+      <div class="paging">
+        @if ($gamingLaptops->onFirstPage())
+            <span class="current">1</span>
+        @else
+            <a href="{{ $gamingLaptops->url(1) }}">1</a>
+        @endif
+    
+        @for ($page = 2; $page <= $gamingLaptops->lastPage(); $page++)
+            @if ($page == $gamingLaptops->currentPage())
+                <span class="current">{{ $page }}</span>
+            @else
+                <a href="{{ $gamingLaptops->url($page) }}">{{ $page }}</a>
+            @endif
+        @endfor
+    
+        @if ($gamingLaptops->hasMorePages())
+            <a href="{{ $gamingLaptops->nextPageUrl() }}">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        @else
+            <span class="disabled">
+                <i class="fa fa-angle-right"></i>
+            </span>
+        @endif
+    </div>
+    
       
   </section>
 @endsection

@@ -12,6 +12,9 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LaptopController;
 use App\Http\Controllers\SaleController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\ProductController;
+
 
 Auth::routes();
 
@@ -74,11 +77,15 @@ Route::get('account', function () {
 Route::get('admin/new-product', function () {
   return view('admin.pages.new-product');
 })->name('new-product');
+Route::get('/admin/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
+Route::get('/admin/product', [ProductController::class, 'index'])->name('admin.product');
+Route::get('/admin/product', [ProductController::class, 'showAllProducts'])->name('admin.product');
+Route::get('/admin/new-product', [ProductController::class, 'showAddProduct'])->name('admin.new-product');
+
+// Route::get('/orders', [OrderController::class, 'index'])->name('orders.index');
 
 //single laptop
 Route::get('laptops/{type}/{brand}/{id}', [LaptopController::class, 'show'])->name('laptop.show');
-
-
 
 //cart
 Route::get('/cart', [CartController::class, 'show'])->name('cart');
