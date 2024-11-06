@@ -24,6 +24,9 @@ class LaptopSeeder extends Seeder
                     ['name' => 'Price', 'value' => '54990000'],
                     ['name' => 'Deal Price', 'value' => '42990000'],
                     ['name' => 'Rating', 'value' => '5'],
+                    ['name' => 'Sale Price', 'value' => '40990000'],
+                    ['name' => 'Sale Start Date', 'value' => '2024-11-04'],
+                    ['name' => 'Sale End Date', 'value' => '2024-11-07'],
                     ['name' => 'Thumbnail', 'value' => '/assets/img/products/laptops/gaming/1/Thumb.jpg'],
                     ['name' => 'Thumbnail Small', 'value' => '/assets/img/products/laptops/gaming/1/Thumb_small.jpg'],
                     ['name' => 'Image1', 'value' => '/assets/img/products/laptops/gaming/1/Image1.jpg'],
@@ -199,7 +202,7 @@ class LaptopSeeder extends Seeder
                     ['name' => '[Laptop] Loại laptop', 'value' => 'Gaming'],
                     ['name' => '[Laptop] Vi xử lý', 'value' => 'Intel Core i9-13900H'],
                     ['name' => '[Laptop] Số nhân', 'value' => '14'],
-                    ['name' => '[Laptop] Số luồng', ' value' => '20'],
+                    ['name' => '[Laptop] Số luồng', 'value' => '20'],
                     ['name' => '[Laptop] Tốc độ tối đa', 'value' => 'upto 5.4 GHz'],
                     ['name' => '[Laptop] Bộ nhớ đệm', 'value' => '24MB'],
                     ['name' => '[Laptop] Card đồ hoạ', 'value' => 'NVIDIA Geforce RTX 4060 8GB GDDR6'],
@@ -1007,15 +1010,11 @@ class LaptopSeeder extends Seeder
         
             foreach ($laptopData['attributes'] as $attr) {
                 $attribute = Attribute::firstOrCreate(['name' => $attr['name']]);
-                
-                if (isset($attr['value'])) {
-                    LaptopAttribute::create([
-                        'laptop_id' => $laptop->id,
-                        'attribute_id' => $attribute->id,
-                        'value' => $attr['value'],
-                    ]);
-                } else {
-                }
+                LaptopAttribute::create([
+                    'laptop_id' => $laptop->id,
+                    'attribute_id' => $attribute->id,
+                    'value' => $attr['value'],
+                ]);
             }
         }
     }
