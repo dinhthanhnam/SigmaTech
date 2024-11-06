@@ -89,168 +89,38 @@
               </div>
               <div class="filter-group-bottom">
                 <a href="#" onclick=""> Bỏ chọn </a>
-                <a href="#" class="js-open-url"> Xem <span class="js-show-total">381</span> kết
-                  quả </a>
+                <a href="#" class="js-open-url"> Xem kết quả </a>
               </div>
             </div>
           </div>
 
-          <div class="filter-item js-filter-item" data-type="attribute">
+          <div class="filter-item js-filter-item" data-type="cpu">
             <a href="#" class="filter-name "> Bộ vi xử lý </a>
 
             <div class="filter-content-group">
 
               <div class="filter-group-middle ">
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="322">
-                  Core i3 </a>
+                <a href="#" class="filter-title js-filter-title" data-filter_code="cpu" data-value="Intel Core i3-">
+                  Intel Core i3 </a>
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="156">
-                  Core i5 </a>
+                <a href="#" class="filter-title js-filter-title" data-filter_code="cpu" data-value="Intel Core i5-">
+                  Intel Core i5 </a>
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="157">
-                  Core i7 </a>
+                <a href="#" class="filter-title js-filter-title" data-filter_code="cpu" data-value="Intel Core i7-">
+                  Intel Core i7 </a>
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="2495">
-                  Core i9 </a>
+                <a href="#" class="filter-title js-filter-title" data-filter_code="cpu" data-value="Intel Core i9-">
+                  Intel Core i9 </a>
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="178">
-                  AMD </a>
+                <a href="#" class="filter-title js-filter-title" data-filter_code="cpu" data-value="AMD Ryzen 5">
+                  AMD Ryzen 5 </a>
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="2553">
-                  Ryzen 5 </a>
+                <a href="#" class="filter-title js-filter-title" data-filter_code="cpu" data-value="AMD Ryzen 7">
+                  AMD Ryzen 7 </a>
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="2554">
-                  Ryzen 7 </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="2920">
-                  Ryzen 9 </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3660">
-                  8845HS </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3583">
-                  Apple M3 Pro </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3757">
-                  8645HS </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3625">
-                  13420H </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3679">
-                  13500H </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3646">
-                  7535HS </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3751">
-                  8945HS </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3614">
-                  1235U </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3664">
-                  12450H </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3590">
-                  Apple M3 Max </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3641">
-                  1165G7 </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3760">
-                  AMD Ryzen AI 9 HX 370 </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3746">
-                  125H </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3626">
-                  13620H </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3707">
-                  8945H </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3609">
-                  13450HX </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3636">
-                  14650HX </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3752">
-                  155U </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3729">
-                  Intel Core 7 150U </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3615">
-                  1135G7 </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3665">
-                  12500H </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3596">
-                  Core Ultra 5 </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3643">
-                  12450HX </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3748">
-                  7735HS </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3627">
-                  13700H </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3708">
-                  185H </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3610">
-                  1360P </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3651">
-                  Core Ultra 9 </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3637">
-                  1315U </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3753">
-                  7435HS </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3740">
-                  13900H </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3617">
-                  1355U </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3598">
-                  Core Ultra 7 </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3644">
-                  5700U </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3629">
-                  14900HX </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3658">
-                  14700HX </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3582">
-                  Apple M3 </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3638">
-                  13650HX </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3618">
-                  11500H </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3671">
-                  1334U </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3645">
-                  155H </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3613">
-                  1335U </a>
+                <a href="#" class="filter-title js-filter-title" data-filter_code="cpu" data-value="AMD Ryzen 9">
+                  AMD Ryzen 9 </a>
 
               </div>
 
@@ -974,37 +844,56 @@
         });
     });
   </script>
+  
+  {{-- filter --}}
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-    let selectedBrand = '';
-
-    // Thêm sự kiện click vào từng tùy chọn brand
+    let selectedValue = '';
+    let selectedMin = null;
+    let selectedMax = null;
+    let selectedFilterType = ''; 
+    
     document.querySelectorAll('.js-filter-title').forEach(function (element) {
         element.addEventListener('click', function (e) {
             e.preventDefault();
-            
-            // Lấy giá trị brand từ thuộc tính data-value
-            selectedBrand = element.getAttribute('data-value');
-            
-            // Bỏ chọn các brand khác
-            document.querySelectorAll('.js-filter-title').forEach(el => el.classList.remove('selected'));
-            
-            // Đánh dấu brand này là đã chọn
+
+            selectedFilterType = element.getAttribute('data-filter_code');
+            const dataValue = element.getAttribute('data-value');
+
+            if (selectedFilterType === 'price') {
+                const params = new URLSearchParams(dataValue);
+                selectedMin = parseInt(params.get('min'), 10);
+                selectedMax = parseInt(params.get('max'), 10);
+                console.log("Selected Min:", selectedMin);
+                console.log("Selected Max:", selectedMax);
+                console.log("Selected:", selectedFilterType);
+            } else {
+                selectedValue = dataValue;
+            }
+            element.closest('.filter-content-group').querySelectorAll('.js-filter-title').forEach(el => el.classList.remove('selected'));
             element.classList.add('selected');
         });
     });
 
-    // Xử lý khi click vào "Xem kết quả"
-    document.querySelector('.js-open-url').addEventListener('click', function (e) {
-        e.preventDefault();
-        
-        if (selectedBrand) {
-            // Chuyển hướng đến route có brand đã chọn
-            window.location.href = `/laptops/filter/${selectedBrand}`;
-        } else {
-            alert('Vui lòng chọn một hãng để xem kết quả.');
-        }
-      });
+    // Xử lý khi click vào "Xem kết quả" cho bộ lọc
+    document.querySelectorAll('.js-open-url').forEach(function (element) {
+        element.addEventListener('click', function (e) {
+          e.preventDefault();
+
+            if (selectedFilterType === 'price' && selectedMin !== null && selectedMax !== null) {
+              console.log(`/laptops/filter?min=${encodeURIComponent(selectedMin)}&max=${encodeURIComponent(selectedMax)}`);
+              window.location.href = `/laptops/filter?min=${encodeURIComponent(selectedMin)}&max=${encodeURIComponent(selectedMax)}`;
+
+                  
+            } else  {
+                window.location.href = `/laptops/filter?${selectedFilterType}=${encodeURIComponent(selectedValue)}`;
+            }
+        });
     });
-  </script>
+  });
+
+</script>
+    
+  
 @endpush
+ 

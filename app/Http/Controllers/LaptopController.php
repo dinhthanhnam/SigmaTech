@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Laptop;
+use Psy\Readline\Hoa\Console;
 
 class LaptopController extends Controller
 {
@@ -42,14 +43,50 @@ class LaptopController extends Controller
         return view('categories.office-laptops', compact('officeLaptops'));
     }
 
-    public function showLaptopsByBrand($brand)
-{
-    $laptops = Laptop::whereHas('attributes', function ($query) use ($brand) {
-        $query->where('name', 'Brand')
-              ->where('value', $brand);
-    })->with('attributes')->get();
-    
-    return view('categories.filtered-laptops', compact('laptops'));
-}
+    public function filterLaptops(Request $request)
+    {
+        $filters = [
+            'brand' => $request->input('brand'),
+            'price_min' => $request->input('min'),
+            'price_max' => $request->input('max'),
+            'cpu' => $request->input('cpu'),
+        ];
+
+        $laptops = Laptop::query();
+
+        // Lọc theo brand
+        if (!empty($filters['brand'])) {
+            $laptops->whereHas('attributes', function ($query) use ($filters) {
+                $query->where('name', 'Brand')
+                    ->where('value', $filters['brand']);
+            });
+        }
+
+        // Lọc theo khoảng giá trong thuộc tính 'Price'
+        if (!empty($filters['price_min']) || !empty($filters['price_max'])) {
+            $minPrice = $filters['price_min'] ?? 0;
+            $maxPrice = $filters['price_max'] ?? PHP_INT_MAX;
+
+            $laptops->whereHas('attributes', function ($query) use ($minPrice, $maxPrice) {
+                $query->where('name', 'Price')
+                    ->whereBetween('value', [$minPrice, $maxPrice]);
+            });
+        }
+
+        if (!empty($filters['cpu'])) {
+            $laptops->whereHas('attributes', function ($query) use ($filters) {
+                $query->where('name', 'Cpu')
+                      ->where('value', 'like', $filters['cpu'] . '%'); 
+            });
+        }
+        
+        
+
+        // Phân trang kết quả và trả về view
+        $laptops = $laptops->with('attributes')->paginate(12);
+
+        return view('categories.filtered-laptops', compact('laptops'));
+    }
+
 }
 
