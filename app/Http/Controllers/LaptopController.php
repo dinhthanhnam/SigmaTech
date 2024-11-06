@@ -50,11 +50,17 @@ class LaptopController extends Controller
             'price_min' => $request->input('min'),
             'price_max' => $request->input('max'),
             'cpu' => $request->input('cpu'),
+            'screensize' => $request->input('screensize'),
+            'vga' => $request->input('vga'),
+            'ram' => $request->input('ram'),
+            'ssd' => $request->input('ssd'),
+            'os' => $request->input('os'),
+            'weight' => $request->input('weight'),
+            'color' => $request->input('color'),
         ];
 
         $laptops = Laptop::query();
-
-        // Lọc theo brand
+        
         if (!empty($filters['brand'])) {
             $laptops->whereHas('attributes', function ($query) use ($filters) {
                 $query->where('name', 'Brand')
@@ -62,7 +68,6 @@ class LaptopController extends Controller
             });
         }
 
-        // Lọc theo khoảng giá trong thuộc tính 'Price'
         if (!empty($filters['price_min']) || !empty($filters['price_max'])) {
             $minPrice = $filters['price_min'] ?? 0;
             $maxPrice = $filters['price_max'] ?? PHP_INT_MAX;
@@ -75,12 +80,59 @@ class LaptopController extends Controller
 
         if (!empty($filters['cpu'])) {
             $laptops->whereHas('attributes', function ($query) use ($filters) {
-                $query->where('name', 'Cpu')
-                      ->where('value', 'like', $filters['cpu'] . '%'); 
+                $query->where('name', '[Laptop] Vi xử lý')
+                      ->where('value', 'like', '%' . $filters['cpu'] . '%'); 
             });
         }
         
-        
+        if (!empty($filters['screensize'])) {
+            $laptops->whereHas('attributes', function ($query) use ($filters) {
+                $query->where('name', '[Laptop] Kích thước màn hình')
+                      ->where('value', 'like', '%' . $filters['screensize'] . '%'); 
+            });
+        }
+
+        if (!empty($filters['vga'])) {
+            $laptops->whereHas('attributes', function ($query) use ($filters) {
+                $query->where('name', '[Laptop] Card đồ hoạ')
+                      ->where('value', 'like', '%' . $filters['vga'] . '%'); 
+            });
+        }
+
+        if (!empty($filters['ram'])) {
+            $laptops->whereHas('attributes', function ($query) use ($filters) {
+                $query->where('name', '[Laptop] Dung lượng RAM')
+                      ->where('value', 'like', '%' . $filters['ram'] . '%'); 
+            });
+        }
+    
+        if (!empty($filters['ssd'])) {
+            $laptops->whereHas('attributes', function ($query) use ($filters) {
+                $query->where('name', '[Laptop] SSD')
+                      ->where('value', 'like', '%' . $filters['ssd'] . '%'); 
+            });
+        }
+    
+        if (!empty($filters['os'])) {
+            $laptops->whereHas('attributes', function ($query) use ($filters) {
+                $query->where('name', '[Laptop] OS')
+                      ->where('value', 'like', '%' . $filters['os'] . '%'); 
+            });
+        }
+    
+        if (!empty($filters['weight'])) {
+            $laptops->whereHas('attributes', function ($query) use ($filters) {
+                $query->where('name', '[Laptop] Trọng lượng')
+                      ->where('value', 'like', '%' . $filters['weight'] . '%'); 
+            });
+        }
+    
+        if (!empty($filters['color'])) {
+            $laptops->whereHas('attributes', function ($query) use ($filters) {
+                $query->where('name', '[Laptop] Màu sắc')
+                      ->where('value', 'like', '%' . $filters['color'] . '%'); 
+            });
+        }
 
         // Phân trang kết quả và trả về view
         $laptops = $laptops->with('attributes')->paginate(12);

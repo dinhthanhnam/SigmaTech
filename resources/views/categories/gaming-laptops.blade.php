@@ -101,16 +101,16 @@
 
               <div class="filter-group-middle ">
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="cpu" data-value="Intel Core i3-">
+                <a href="#" class="filter-title js-filter-title" data-filter_code="cpu" data-value="Intel Core i3">
                   Intel Core i3 </a>
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="cpu" data-value="Intel Core i5-">
+                <a href="#" class="filter-title js-filter-title" data-filter_code="cpu" data-value="Intel Core i5">
                   Intel Core i5 </a>
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="cpu" data-value="Intel Core i7-">
+                <a href="#" class="filter-title js-filter-title" data-filter_code="cpu" data-value="Intel Core i7">
                   Intel Core i7 </a>
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="cpu" data-value="Intel Core i9-">
+                <a href="#" class="filter-title js-filter-title" data-filter_code="cpu" data-value="Intel Core i9">
                   Intel Core i9 </a>
 
                 <a href="#" class="filter-title js-filter-title" data-filter_code="cpu" data-value="AMD Ryzen 5">
@@ -126,7 +126,7 @@
 
               <div class="filter-group-bottom">
                 <a href="#" onclick="BuildFilterUrl.clearFilter.call(this, '')"> Bỏ chọn </a>
-                <a href="/gaming-laptop.html" class="js-open-url"> Xem <span class="js-show-total">381</span> kết quả
+                <a href="/gaming-laptop.html" class="js-open-url"> Xem kết quả
                 </a>
               </div>
             </div>
@@ -139,128 +139,29 @@
 
               <div class="filter-group-middle ">
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="187">
-                  13.3 inch </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="2944">
-                  13.4 inch </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="182">
+                <a href="#" class="filter-title js-filter-title" data-filter_code="screensize" data-value="14.0 inch">
                   14.0 inch </a>
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3227">
-                  14.2 inch </a>
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3028">
+                <a href="#" class="filter-title js-filter-title" data-filter_code="screensize" data-value="14.5 inch">
                   14.5 inch </a>
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="183">
+                <a href="#" class="filter-title js-filter-title" data-filter_code="screensize" data-value="15.0 inch">
+                  15 inch </a>
+                
+                 <a href="#" class="filter-title js-filter-title" data-filter_code="screensize" data-value="15.6 inch">
                   15.6 inch </a>
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="2868">
+                <a href="#" class="filter-title js-filter-title" data-filter_code="screensize" data-value="16 inch">
                   16 inch </a>
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3014">
-                  16.1 inch </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="184">
-                  17.0 inch </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="1645">
-                  17.3 inch </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3423">
-                  16.2 inch </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3747">
-                  QHD+ </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3669">
-                  250Hz </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3630">
-                  WQXGA </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3655">
-                  OLED </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3608">
-                  60Hz </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3758">
-                  180Hz </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3670">
-                  1000 nits </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3631">
-                  240Hz </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3730">
-                  2.2K </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3656">
-                  2.8K </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3612">
-                  WUXGA </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3759">
-                  UHD+ </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3705">
-                  250 nits </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3639">
-                  165Hz </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3602">
-                  FHD </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3731">
-                  3.2K </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3661">
-                  45%NTSC </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3616">
-                  IPS </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3408">
-                  18 inch </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3781">
-                  WQUXGA </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3706">
-                  2.5K </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3642">
-                  FHD+ </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3606">
-                  144Hz </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3743">
-                  3K </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3666">
-                  2K </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3628">
-                  WQXGA+ </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3654">
-                  120Hz </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3607">
-                  100%sRGB </a>
+                
 
               </div>
 
               <div class="filter-group-bottom">
                 <a href="#" onclick="BuildFilterUrl.clearFilter.call(this, '')"> Bỏ chọn </a>
-                <a href="/gaming-laptop.html" class="js-open-url"> Xem <span class="js-show-total">381</span> kết quả
+                <a href="/gaming-laptop.html" class="js-open-url"> Xem kết quả
                 </a>
               </div>
             </div>
@@ -273,134 +174,30 @@
 
               <div class="filter-group-middle ">
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3013">
-                  Intel UHD Graphics </a>
+                <a href="#" class="filter-title js-filter-title" data-filter_code="vga" data-value="RTX 2050">
+                  NVIDIA GeForce RTX 2050 </a>
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3127">
-                  Iris Xe Graphics </a>
+                <a href="#" class="filter-title js-filter-title" data-filter_code="vga" data-value="RTX 3050">
+                  NVIDIA GeForce RTX 3050 </a>
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3199">
-                  GeForce MX570 </a>
+                <a href="#" class="filter-title js-filter-title" data-filter_code="vga" data-value="RTX 4050">
+                  NVIDIA GeForce RTX 4050 </a>
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3125">
-                  GTX 1650 </a>
+                <a href="#" class="filter-title js-filter-title" data-filter_code="vga" data-value="RTX 4060">
+                  NVIDIA GeForce RTX 4060 </a>
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3123">
-                  RTX 3050 </a>
+                <a href="#" class="filter-title js-filter-title" data-filter_code="vga" data-value="RTX 4070">
+                  NVIDIA GeForce RTX 4070 </a>
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3124">
-                  RTX 3050 Ti </a>
+                <a href="#" class="filter-title js-filter-title" data-filter_code="vga" data-value="RTX 4080">
+                  NVIDIA GeForce RTX 4080 </a>
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3213">
-                  RTX 3070Ti </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3262">
-                  RTX 3080 8GB </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3281">
-                  RTX 4070 </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3282">
-                  RTX 4080 </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3283">
-                  RTX 4090 </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3154">
-                  AMD Radeon </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="1778">
-                  AMD radeon HD </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3585">
-                  14 GPU </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="2719">
-                  6GB GDDR6 </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3597">
-                  Intel Arc Graphics </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3526">
-                  RX 7600S 8GB </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3428">
-                  RTX 4060 8GB </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3586">
-                  10 GPU </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="2720">
-                  8GB GDDR6 </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3620">
-                  Quadro T600 4GB GDDR6 </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="443">
-                  2GB </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3429">
-                  RTX 4070 8GB </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3764">
-                  RTX 500 Ada </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3587">
-                  18 GPU </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3673">
-                  RTX 4060 </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="1194">
-                  4GB </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3572">
-                  RTX 2000 Ada 8GB </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3344">
-                  Geforce RTX 2050 </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3288">
-                  AMD Radeon 660M </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3780">
-                  RTX 1000 Ada </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3588">
-                  30 GPU </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3513">
-                  RTX A500 4GB </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3698">
-                  Intel Arc A530M 4GB GDDR6 </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3573">
-                  RTX A1000 6GB </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3411">
-                  Quadro T550 4GB </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="2416">
-                  16GB </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3594">
-                  40 GPU </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3427">
-                  RTX 4050 6GB </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3015">
-                  4GB GDDR6 </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3733">
-                  Intel Graphics </a>
 
               </div>
 
               <div class="filter-group-bottom">
                 <a href="#" onclick="BuildFilterUrl.clearFilter.call(this, '')"> Bỏ chọn </a>
-                <a href="/gaming-laptop.html" class="js-open-url"> Xem <span class="js-show-total">381</span> kết quả
+                <a href="/gaming-laptop.html" class="js-open-url"> Xem kết quả
                 </a>
               </div>
             </div>
@@ -413,44 +210,26 @@
 
               <div class="filter-group-middle ">
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="1257">
+                <a href="#" class="filter-title js-filter-title" data-filter_code="ram" data-value="8GB">
                   8GB </a>
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="1550">
-                  12GB </a>
+                
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="1283">
+                <a href="#" class="filter-title js-filter-title" data-filter_code="ram" data-value="16GB">
                   16GB </a>
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="2374">
-                  24GB </a>
+                
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="1702">
+                <a href="#" class="filter-title js-filter-title" data-filter_code="ram" data-value="32GB">
                   32GB </a>
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="2315">
-                  64GB </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="2841">
-                  128GB </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3595">
-                  48 GB </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3776">
-                  96GB </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3584">
-                  18GB </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3589">
-                  36 GB </a>
+      
 
               </div>
 
               <div class="filter-group-bottom">
                 <a href="#" onclick="BuildFilterUrl.clearFilter.call(this, '')"> Bỏ chọn </a>
-                <a href="/gaming-laptop.html" class="js-open-url"> Xem <span class="js-show-total">381</span> kết quả
+                <a href="/gaming-laptop.html" class="js-open-url"> Xem kết quả
                 </a>
               </div>
             </div>
@@ -463,38 +242,18 @@
 
               <div class="filter-group-middle ">
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3552">
-                  1TB </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="769"> 2
-                  TB </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="175"> 1
-                  TB </a>
+                
 
                 <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3549">
                   512GB </a>
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3550">
-                  256GB </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="859">
-                  256GB SSD </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="2437">
-                  1TB SSD </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="1675">
-                  512GB SSD </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3432">
-                  4 TB </a>
+              
 
               </div>
 
               <div class="filter-group-bottom">
                 <a href="#" onclick="BuildFilterUrl.clearFilter.call(this, '')"> Bỏ chọn </a>
-                <a href="/gaming-laptop.html" class="js-open-url"> Xem <span class="js-show-total">381</span> kết quả
+                <a href="/gaming-laptop.html" class="js-open-url"> Xem kết quả
                 </a>
               </div>
             </div>
@@ -507,41 +266,19 @@
 
               <div class="filter-group-middle ">
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="2021">
+                <a href="#" class="filter-title js-filter-title" data-filter_code="os" data-value="Windows 10">
                   Windows 10 </a>
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="325">
-                  Mac OS </a>
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3091">
+                <a href="#" class="filter-title js-filter-title" data-filter_code="os" data-value="Windows 11">
                   Windows 11 </a>
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3653">
-                  Windows 11 Home </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="2250">
-                  Ubuntu </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3212">
-                  Non-OS </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3254">
-                  Windows 11 Pro </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="2562">
-                  FreeDos </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3274">
-                  OFFICE HOME </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3619">
-                  Windows 10 Pro </a>
 
               </div>
 
               <div class="filter-group-bottom">
                 <a href="#" onclick="BuildFilterUrl.clearFilter.call(this, '')"> Bỏ chọn </a>
-                <a href="/gaming-laptop.html" class="js-open-url"> Xem <span class="js-show-total">381</span> kết quả
+                <a href="/gaming-laptop.html" class="js-open-url"> Xem kết quả
                 </a>
               </div>
             </div>
@@ -571,7 +308,7 @@
 
               <div class="filter-group-bottom">
                 <a href="#" onclick="BuildFilterUrl.clearFilter.call(this, '')"> Bỏ chọn </a>
-                <a href="/gaming-laptop.html" class="js-open-url"> Xem <span class="js-show-total">381</span> kết quả
+                <a href="/gaming-laptop.html" class="js-open-url"> Xem kết quả
                 </a>
               </div>
             </div>
@@ -584,44 +321,23 @@
 
               <div class="filter-group-middle ">
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3659">
-                  Cosmos Gray </a>
+                <a href="#" class="filter-title js-filter-title" data-filter_code="color" data-value="Eclipse Gray">
+                  Eclipse Gray </a>
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="330">
-                  Vàng </a>
+                <a href="#" class="filter-title js-filter-title" data-filter_code="color" data-value="Obsidian black">
+                  Obsidian black </a>
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="331">
-                  Bạc </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3558">
-                  Jaeger Gray </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="332">
-                  Trắng </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3559">
-                  Sunshiny Gold </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="328">
-                  Xanh </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3501">
-                  Grey </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="333">
-                  Đen </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="3581">
-                  Iron Grey </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="1195">
+                <a href="#" class="filter-title js-filter-title" data-filter_code="color" data-value="Xám">
                   Xám </a>
+
+                <a href="#" class="filter-title js-filter-title" data-filter_code="color" data-value="Đen">
+                  Đen </a>
 
               </div>
 
               <div class="filter-group-bottom">
                 <a href="#" onclick="BuildFilterUrl.clearFilter.call(this, '')"> Bỏ chọn </a>
-                <a href="/gaming-laptop.html" class="js-open-url"> Xem <span class="js-show-total">381</span> kết quả
+                <a href="/gaming-laptop.html" class="js-open-url"> Xem kết quả
                 </a>
               </div>
             </div>
@@ -634,20 +350,11 @@
 
               <div class="filter-group-middle ">
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="2663">
-                  8GB </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="2639">
-                  256GB </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="2643">
+                
+                <a href="#" class="filter-title js-filter-title" data-filter_code="ssd" data-value="512GB">
                   512GB </a>
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="2642">
-                  1TB </a>
-
-                <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="2821">
-                  2TB </a>
+          
 
               </div>
 
