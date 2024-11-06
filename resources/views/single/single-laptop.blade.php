@@ -44,7 +44,7 @@
     $saleprice = $laptop->attributes->firstWhere('name', 'Sale Price')->pivot->value ?? 'N/A';
     $sale_start_date = $laptop->attributes->firstWhere('name', 'Sale Start Date')->pivot->value ?? 'N/A';
     $sale_end_date = $laptop->attributes->firstWhere('name', 'Sale End Date')->pivot->value ?? 'N/A';
-    $sale_end_time = strtotime($sale_end_date . ' 00:00:00') - (7 * 3600);
+    $sale_end_time = strtotime($sale_end_date . ' 00:00:00');
 
 @endphp
 @section('content')
@@ -560,12 +560,13 @@
                         </span>
                     </div>
                     <p><a href="javascript:void(0)" id="js-viewmore-summary" class="red">&lt; Thu gọn</a></p>
-                    
-                    <div class="deal-count-container text-12 font-300 text-right" id="js-deal-container">Kết thúc sau
-                        <span class="js-hour"> 00 </span> 
-                        <span class="js-minute"> 00 </span> 
-                        <span class="js-seconds"> 00 </span>
-                    </div>
+                    @if ($saleprice != 'N/A' && now()->lessThan(Carbon\Carbon::parse($sale_end_date)))
+                        <div class="deal-count-container text-12 font-300 text-right" id="js-deal-container">Kết thúc sau
+                            <span class="js-hour"> 00 </span> 
+                            <span class="js-minute"> 00 </span> 
+                            <span class="js-seconds"> 00 </span>
+                        </div>
+                    @endif
                     <div class="pro_info-price-container">
                         <div class="spec-count" id="js-promotion-price-countdown"> <!-- js countdown --></div>
                         <table>
@@ -590,7 +591,8 @@
                                         </span>
                                     </td>
                                 </tr>
-                                @if ($saleprice != 'N/A')
+                                
+                                @if ($saleprice != 'N/A' && now()->lessThan(Carbon\Carbon::parse($sale_end_date)))
                                     <tr>
                                         <td width="160px" class="font-500"> GIÁ SỐC: </td>
                                         <td>
