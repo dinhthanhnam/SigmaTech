@@ -50,7 +50,7 @@
                   <span style="background-image: url('{{ asset('assets/img/brand/asus.jpg') }}');"></span>
                 </a>
                 <a href="#" class="image filter-title js-filter-title" title="Dell" data-check="0"
-                  data-filter_code="brand" data-value="levono">
+                  data-filter_code="brand" data-value="lenovo">
                   <span style="background-image: url('{{ asset('assets/img/brand/lenovo.jpg') }}');"></span>
                 </a>
                 <a href="#" class="image filter-title js-filter-title" title="Lenovo" data-check="0"
@@ -85,7 +85,7 @@
                 <a href="#" class="filter-title js-filter-title" data-filter_code="price"
                   data-value="min=50000000&max=60000000"> 50 triệu - 60 triệu </a>
                 <a href="#" class="filter-title js-filter-title" data-filter_code="price"
-                  data-value="min=60000000&max=0"> Trên 60 triệu </a>
+                  data-value="min=60000000&max=1000000000000"> Trên 60 triệu </a>
               </div>
               <div class="filter-group-bottom">
                 <a href="#" onclick=""> Bỏ chọn </a>
@@ -139,7 +139,7 @@
 
               <div class="filter-group-middle ">
 
-                <a href="#" class="filter-title js-filter-title" data-filter_code="screensize" data-value="14.0 inch">
+                <a href="#" class="filter-title js-filter-title" data-filter_code="screensize" data-value="14">
                   14.0 inch </a>
 
 

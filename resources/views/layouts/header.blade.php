@@ -115,251 +115,367 @@
                             <div class="sub-menu  no-big-img">
                                 <div class="cat-child-holder" id="js-menu-container">
                                     <div class="cat-child-items">
-                                        <a href="#" class="cate-2" title="Laptop Gaming Acer"
-                                            id="">Laptop Gaming
-                                            Acer</a>
+                                        <a href="#" class="cate-2" title="Laptop Theo Hãng"
+                                            id="">Laptop Theo Hãng</a>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#" title="Laptop Gaming Aspire" id="">Laptop
-                                                    Gaming Aspire</a>
+                                                <a href="/laptop-asus_dm1058.html" title="Laptop Asus"
+                                                class="js-menu" data-filter_code="brand" data-value="asus">Laptop Asus</a>
+                                                <div class="cat-4-list">
+                                                    <a href="/laptop-asus-vivobook_dm1609.html" title="Asus Vivobook"
+                                                        id="js-menu-1609">Asus
+                                                        Vivobook</a>
+                                                    <a href="/laptop-asus-zenbook_dm1610.html" title="Asus Zenbook"
+                                                        id="js-menu-1610">Asus
+                                                        Zenbook</a>
+                                                    <a href="/laptop-asus-expertbook_dm1899.html"
+                                                        title="Asus ExpertBook" id="js-menu-1899">Asus ExpertBook</a>
+                                                    <a href="/laptop-asus-proart_dm1900.html" title="Asus ProArt"
+                                                        id="js-menu-1900">Asus
+                                                        ProArt</a>
+                                                </div>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#" title="Laptop Gaming Nitro" id="">Laptop
-                                                    Gaming Nitro</a>
+                                                <a href="#" title="Laptop Lenovo"
+                                                    class="js-menu" data-filter_code="brand" data-value="lenovo">Laptop
+                                                    Lenovo</a>
                                                 <div class="cat-4-list">
-                                                    <a href="/laptop-acer-nitro-5_dm1632.html"
-                                                        title="Acer Nitro 5 Gaming" id="js-menu-1632">Acer Nitro 5
+                                                    <a href="/laptop-lenovo-ideapad_dm1623.html"
+                                                        title="Lenovo IdeaPad" id="js-menu-1623">Lenovo IdeaPad</a>
+                                                    <a href="/laptop-lenovo-yoga_dm1624.html" title="Lenovo Yoga"
+                                                        id="js-menu-1624">Lenovo
+                                                        Yoga</a>
+                                                    <a href="/laptop-ideapad-gaming.html" title="Ideapad Gaming"
+                                                        id="js-menu-2476">Ideapad
                                                         Gaming</a>
-                                                    <a href="/nitro-phoenix.html" title="Laptop Acer Nitro Phoenix"
-                                                        id="js-menu-2731">Laptop
-                                                        Acer Nitro Phoenix</a>
-                                                    <a href="/laptop-acer-nitro-5-tiger.html"
-                                                        title="Laptop Acer Nitro 5 Tiger" id="js-menu-2437">Laptop
-                                                        Acer Nitro 5 Tiger</a>
+                                                    <a href="/laptop-lenovo-v-series.html" title="Lenovo V Series"
+                                                        id="js-menu-2475">Lenovo V
+                                                        Series</a>
+                                                    <a href="/laptop-lenovo-thinkbook_dm1762.html"
+                                                        title="Lenovo ThinkBook" id="js-menu-1762">Lenovo
+                                                        ThinkBook</a>
+                                                    <a href="/laptop-lenovo-thinkpad_dm1622.html"
+                                                        title="Lenovo ThinkPad" id="js-menu-1622">Lenovo ThinkPad</a>
+                                                    <a href="/laptop-thinkpad-mobile-workstation-thinkpad-p-series.html"
+                                                        title="ThinkPad Mobile Workstation - ThinkPad P Series"
+                                                        id="js-menu-2674">ThinkPad Mobile
+                                                        Workstation - ThinkPad P
+                                                        Series</a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptop-acer-predator-helios-neo.html"
-                                                    title="Laptop Gaming Predator" id="js-menu-2732">Laptop Gaming
-                                                    Predator</a>
-
-
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/laptop-acer-helios-neo-16.html"
-                                                    title="Laptop Acer Helios Neo 16" id="js-menu-2906">Laptop Acer
-                                                    Helios Neo 16</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="cat-child-items">
-                                        <a href="#" class="cate-2" title="Laptop Gaming Asus"
-                                            id="js-menu-1684">Laptop Gaming
-                                            Asus</a>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/asus-tuf-gaming-series_dm1821.html" title="Asus TUF Gaming"
-                                                    id="js-menu-1821">Asus
-                                                    TUF Gaming</a>
-
-
+                                                <a href="/laptop-dell_dm1012.html" title="Laptop Dell"
+                                                class="js-menu" data-filter_code="brand" data-value="dell">Laptop Dell</a>
                                                 <div class="cat-4-list">
-
-                                                    <a href="/laptop-asus-tuf-gaming-f15.html"
-                                                        title="Laptop Asus TUF Gaming F15" id="js-menu-2565">Laptop
-                                                        Asus TUF Gaming F15</a>
+                                                    <a href="/laptop-dell-inspiron_dm1618.html" title="Dell Inspiron"
+                                                        id="js-menu-1618">Dell
+                                                        Inspiron</a>
+                                                    <a href="/laptop-dell-vostro_dm1620.html" title="Dell Vostro"
+                                                        id="js-menu-1620">Dell
+                                                        Vostro</a>
+                                                    <a href="/laptop-dell-xps_dm1621.html" title="Dell XPS"
+                                                        id="js-menu-1621">Dell XPS</a>
+                                                    <a href="/laptop-dell-gaming-g-series.html"
+                                                        title="Dell Gaming G series" id="js-menu-2474">Dell Gaming G
+                                                        series</a>
+                                                    <a href="/latop-dell-alienware_dm2355.html" title="Dell Alienware"
+                                                        id="js-menu-2355">Dell
+                                                        Alienware</a>
+                                                    <a href="/laptop-dell-latitude_dm1619.html" title="Dell Latitude"
+                                                        id="js-menu-1619">Dell
+                                                        Latitude</a>
+                                                    <a href="/laptop-dell-precision-workstation_dm2289.html"
+                                                        title="Dell Workstation" id="js-menu-2289">Dell
+                                                        Workstation</a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/republic-of-gamers_dm1062.html" title="Asus ROG Series"
-                                                    id="js-menu-1062">Asus ROG
-                                                    Series</a>
+                                                <a href="/laptop-acer_dm1060.html" title="Laptop Acer"
+                                                class="js-menu" data-filter_code="brand" data-value="acer">Laptop Acer</a>
+                                                <div class="cat-4-list">
+                                                    <a href="/laptop-acer-aspire_dm1630.html" title="Acer Aspire"
+                                                        id="js-menu-1630">Acer
+                                                        Aspire</a>
+                                                    <a href="/laptop-acer-swift_dm1631.html" title="Acer Swift"
+                                                        id="js-menu-1631">Acer
+                                                        Swift</a>
+                                                    <a href="/laptop-acer-nitro-5_dm1787.html" title="Acer Nitro V"
+                                                        id="js-menu-1787">Acer
+                                                        Nitro V</a>
+                                                    <a href="/laptop-acer-predator_dm1634.html" title="Acer Predator"
+                                                        id="js-menu-1634">Acer
+                                                        Predator</a>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/asus-zephyrus-gaming_dm1822.html"
-                                                    title="Asus Zephyrus Gaming" id="js-menu-1822">Asus Zephyrus
-                                                    Gaming</a>
-                                            </div>
-                                        </div>
+                                        
                                     </div>
                                     <div class="cat-child-items">
-                                        <a href="#" class="cate-2" title="Laptop Gaming Lenovo"
-                                            id="js-menu-1901">Laptop Gaming
-                                            Lenovo</a>
+                                        <a href="#" class="cate-2" title="Laptop Theo Khoảng Giá"
+                                            id="js-menu-2386">Laptop Theo
+                                            Khoảng Giá</a>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptop-lenovo-legion_dm1625.html"
-                                                    title="Lenovo Legion Gaming" id="js-menu-1625">Lenovo Legion
-                                                    Gaming</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/lenovo-loq.html" title="Lenovo LOQ"
-                                                    id="js-menu-2736">Lenovo LOQ</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="cat-child-items">
-                                        <a href="#" class="cate-2" title="Laptop Gaming Dell"
-                                            id="js-menu-1672">Laptop Gaming
-                                            Dell</a>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/laptop-dell-gaming-g15.html" title="Laptop Dell Gaming G15"
-                                                    id="js-menu-2717">Laptop Dell Gaming G15</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/laptop-dell-gaming-g3-3500_dm1888.html"
-                                                    title="Laptop Dell Gaming G3 3500" id="js-menu-1888">Laptop Dell
-                                                    Gaming G3 3500</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/laptop-dell-gaming-g5_dm1889.html"
-                                                    title="Laptop Dell Gaming G5" id="js-menu-1889">Laptop Dell Gaming
-                                                    G5</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/laptop-dell-gaming-g7_dm1890.html"
-                                                    title="Laptop Dell Gaming G7" id="js-menu-1890">Laptop Dell Gaming
-                                                    G7</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="cat-child-items">
-                                        <a href="/laptop-theo-cau-hinh-vga.html" class="cate-2"
-                                            title="Laptop Theo Cấu Hình VGA" id="js-menu-2408">Laptop Theo Cấu Hình
-                                            VGA</a>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/laptop-gtx-1650.html" title="Laptop GTX 1650 / 1650Ti"
-                                                    id="js-menu-2414">Laptop GTX
-                                                    1650 / 1650Ti</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/laptop-vga-gtx-1660.html" title="Laptop GTX 1660"
-                                                    id="js-menu-2462">Laptop GTX
-                                                    1660</a>
+                                                <a href="#"
+                                                    title="Laptop Từ 10 - 15 Triệu" class="js-menu" data-filter_code="price"
+                                                    data-value="min=10000000&max=15000000">Laptop Từ 10 -
+                                                    15 Triệu</a>
 
 
                                             </div>
                                         </div>
+
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptop-rtx-2050.html" title="Laptop RTX 2050/2050Ti"
-                                                    id="js-menu-2415">Laptop RTX
-                                                    2050/2050Ti</a>
+                                                <a href="#"
+                                                    title="Laptop Từ 15 - 20 Triệu" class="js-menu" data-filter_code="price"
+                                                    data-value="min=15000000&max=20000000">Laptop Từ 15 -
+                                                    20 Triệu</a>
+
+
                                             </div>
                                         </div>
+
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptop-rtx-3050.html" title="Laptop RTX 3050 / 3050Ti"
-                                                    id="js-menu-2409">Laptop RTX
-                                                    3050 / 3050Ti</a>
+                                                <a href="#"
+                                                    title="Laptop Từ 20 - 25 Triệu" class="js-menu" data-filter_code="price"
+                                                    data-value="min=20000000&max=25000000">Laptop Từ 20 -
+                                                    25 Triệu</a>
+
+
                                             </div>
                                         </div>
+
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptop-rtx-3060.html" title="Laptop RTX 3060"
-                                                    id="js-menu-2410">Laptop RTX 3060</a>
+                                                <a href="#"
+                                                    title="Laptop Từ 25 - 30 Triệu" class="js-menu" data-filter_code="price"
+                                                    data-value="min=25000000&max=30000000">Laptop Từ 25 -
+                                                    30 Triệu</a>
+
+
                                             </div>
                                         </div>
+
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptop-rtx-3070.html" title="Laptop RTX 3070 / 3070Ti"
-                                                    id="js-menu-2411">Laptop RTX
-                                                    3070 / 3070Ti</a>
+                                                <a href="#"
+                                                    title="Laptop Từ 30 - 35 Triệu" class="js-menu" data-filter_code="price"
+                                                    data-value="min=30000000&max=35000000">Laptop Từ 30 -
+                                                    35 Triệu</a>
+
+
                                             </div>
                                         </div>
+
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptop-rtx-3080.html" title="Laptop RTX 3080 / 3080Ti"
-                                                    id="js-menu-2412">Laptop RTX
-                                                    3080 / 3080Ti</a>
+                                                <a href="#"
+                                                    title="Laptop Từ 35 - 40 Triệu" class="js-menu" data-filter_code="price"
+                                                    data-value="min=35000000&max=40000000">Laptop Từ 35 -
+                                                    40 Triệu</a>
+
+
                                             </div>
                                         </div>
+
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptop-rtx-4070.html" title="Laptop RTX 4070"
-                                                    id="js-menu-2696">Laptop RTX 4070</a>
+                                                <a href="#" title="Laptop Từ 40 - 60 Triệu"
+                                                class="js-menu" data-filter_code="price"
+                                                data-value="min=40000000&max=60000000">Laptop Từ 40 - 60 Triệu</a>
+
+
                                             </div>
                                         </div>
+
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptop-rtx-4080.html" title="Laptop RTX 4080"
-                                                    id="js-menu-2660">Laptop RTX 4080</a>
+                                                <a href="#" title="Laptop Trên 60 Triệu"
+                                                class="js-menu" data-filter_code="price"
+                                                data-value="min=60000000&max=150000000">Laptop
+                                                    Trên 60 Triệu</a>
+
+
                                             </div>
                                         </div>
+
+                                    </div>
+
+                                    <div class="cat-child-items">
+                                        <a href="#" class="cate-2" title="Laptop Theo Cấu Hình CPU" id="js-menu-2377">Laptop Theo Cấu Hình CPU</a>
+                                    
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptop-rtx-4090.html" title="Laptop RTX 4090"
-                                                    id="js-menu-2663">Laptop RTX 4090</a>
+                                                <a href="#" class="js-menu" data-filter_code="cpu" data-value="Intel Core i3">Intel Core i3</a>
                                             </div>
                                         </div>
+                                    
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptop-rtx-4050.html" title="Laptop RTX 4050"
-                                                    id="js-menu-2694">Laptop RTX 4050</a>
+                                                <a href="#" class="js-menu" data-filter_code="cpu" data-value="Intel Core i5">Intel Core i5</a>
                                             </div>
                                         </div>
+                                    
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptop-rtx-4060.html" title="Laptop RTX 4060"
-                                                    id="js-menu-2695">Laptop RTX 4060</a>
+                                                <a href="#" class="js-menu" data-filter_code="cpu" data-value="Intel Core i7">Intel Core i7</a>
                                             </div>
                                         </div>
+                                    
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptop-amd-radeon-rx-5000m-series-all-5300m5500m.html"
-                                                    title="Laptop AMD RX 5000M Series" id="js-menu-2457">Laptop AMD RX
-                                                    5000M Series</a>
+                                                <a href="#" class="js-menu" data-filter_code="cpu" data-value="Intel Core i9">Intel Core i9</a>
                                             </div>
                                         </div>
+                                    
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptop-amd-radeon-rx-6000m-series-all-6300m6500m6600m.html"
-                                                    title="Laptop AMD RX 6000M Series" id="js-menu-2458">Laptop AMD RX
-                                                    6000M Series</a>
+                                                <a href="#" class="js-menu" data-filter_code="cpu" data-value="Ryzen 3">Ryzen 3</a>
                                             </div>
                                         </div>
+                                    
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptop-amd-radeon-rx-6000s-series-all-6000s-new.html"
-                                                    title="Laptop AMD RX 6000S Series" id="js-menu-2459">Laptop AMD RX
-                                                    6000S Series</a>
+                                                <a href="#" class="js-menu" data-filter_code="cpu" data-value="Ryzen 5">Ryzen 5</a>
                                             </div>
                                         </div>
+                                    
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/rtx-500-ada.html" title="RTX 500 Ada" id="js-menu-2962">RTX
-                                                    500 Ada</a>
+                                                <a href="#" class="js-menu" data-filter_code="cpu" data-value="Ryzen 7">Ryzen 7</a>
                                             </div>
                                         </div>
+                                    
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/rtx-a500.html" title="RTX A500" id="js-menu-2835">RTX
-                                                    A500</a>
+                                                <a href="#" class="js-menu" data-filter_code="cpu" data-value="Ryzen 9">Ryzen 9</a>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                    
+
+                                    <div class="cat-child-items">
+                                        <a href="" class="cate-2"
+                                            title="Laptop Theo Kích Thước Màn" id="js-menu-2398">Laptop Theo Kích
+                                            Thước Màn</a>
+
+
+                                        <div>
+                                            <div class="cat-child-last">
+                                                <a href="#"
+                                                    title="Laptop Khoảng 17 inch" class="js-menu" data-filter_code="screensize" data-value="17">Laptop Khoảng 17
+                                                    inch</a>
+
+
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div class="cat-child-last">
+                                                <a href="#"
+                                                    title="Laptop Khoảng 16 inch" class="js-menu" data-filter_code="screensize" data-value="16">Laptop Khoảng 16
+                                                    inch</a>
+
+
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div class="cat-child-last">
+                                                <a href="#"
+                                                    title="Laptop Khoảng 15 inch" class="js-menu" data-filter_code="screensize" data-value="15">Laptop Khoảng 15
+                                                    inch</a>
+
+
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div class="cat-child-last">
+                                                <a href="#"
+                                                    title="Laptop Khoảng 14 inch" class="js-menu" data-filter_code="screensize" data-value="14">Laptop Khoảng 14
+                                                    inch</a>
+
+
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div class="cat-child-last">
+                                                <a href="#"
+                                                    title="Laptop Khoảng 13 inch" class="js-menu" data-filter_code="screensize" data-value="13">Laptop Khoảng 13
+                                                    inch</a>
+
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="cat-child-items">
+                                        <a href="#" class="cate-2" id="js-menu-2378">
+                                            Laptop Theo VGA
+                                        </a>
+                                    
+                                        <div>
+                                            <div class="cat-child-last">
+                                                <a href="#" class="js-menu" data-filter_code="vga" data-value="RTX 2050" id="js-menu-1613">
+                                                    NVIDIA GeForce RTX 2050
+                                                </a>
+                                            </div>
+                                        </div>
+                                    
+                                        <div>
+                                            <div class="cat-child-last">
+                                                <a href="#" class="js-menu" data-filter_code="vga" data-value="RTX 3050" id="js-menu-1905">
+                                                    NVIDIA GeForce RTX 3050
+                                                </a>
+                                            </div>
+                                        </div>
+                                    
+                                        <div>
+                                            <div class="cat-child-last">
+                                                <a href="#" class="js-menu" data-filter_code="vga" data-value="RTX 4050" id="js-menu-1905">
+                                                    NVIDIA GeForce RTX 4050
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div class="cat-child-last">
+                                                <a href="#" class="js-menu" data-filter_code="vga" data-value="RTX 4060" id="js-menu-1905">
+                                                    NVIDIA GeForce RTX 4060
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div class="cat-child-last">
+                                                <a href="#" class="js-menu" data-filter_code="vga" data-value="RTX 4070" id="js-menu-1905">
+                                                    NVIDIA GeForce RTX 4070
+                                                </a>
+                                            </div>
+                                        </div>
+                                    
+                                        <div>
+                                            <div class="cat-child-last">
+                                                <a href="#" class="js-menu" data-filter_code="vga" data-value="RTX 4080" id="js-menu-1907">
+                                                    NVIDIA GeForce RTX 4080
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
+                                    
+
                                 </div>
                             </div>
                         </div>
@@ -4046,5 +4162,39 @@
                     document.getElementById('cart-count').innerText = data.cartItemCount;
                 });
         }
+    </script>
+    {{-- filter --}}
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        let selectedValue = '';
+        let selectedMin = null;
+        let selectedMax = null;
+        let selectedFilterType = ''; 
+        
+        document.querySelectorAll('.js-menu').forEach(function (element) {
+            element.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                selectedFilterType = element.getAttribute('data-filter_code');
+                const dataValue = element.getAttribute('data-value');
+
+                if (selectedFilterType === 'price') {
+                    const params = new URLSearchParams(dataValue);
+                    selectedMin = parseInt(params.get('min'), 10);
+                    selectedMax = parseInt(params.get('max'), 10);
+                    console.log("Selected Min:", selectedMin);
+                    console.log("Selected Max:", selectedMax);
+                    console.log("Selected:", selectedFilterType);
+                    console.log(`/laptops/filter?min=${encodeURIComponent(selectedMin)}&max=${encodeURIComponent(selectedMax)}`);
+                    window.location.href = `/laptops/filter?min=${encodeURIComponent(selectedMin)}&max=${encodeURIComponent(selectedMax)}`;
+                } else {
+                    selectedValue = dataValue;
+                    window.location.href = `/laptops/filter?${selectedFilterType}=${encodeURIComponent(selectedValue)}`;
+                }
+
+            });
+        });
+    });
+
     </script>
 @endpush
