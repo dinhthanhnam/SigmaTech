@@ -3882,6 +3882,73 @@
             });
         });
     });
+    </script>
+
+    {{-- Thanh tim kiem --}}
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('js-search');
+            const suggestionsContainer = document.querySelector('.autocomplete-suggestions');
+
+            searchInput.addEventListener('input', function() {
+                const query = searchInput.value;
+
+                // Xóa gợi ý nếu không có từ khóa
+                if (query.length < 2) {
+                    suggestionsContainer.innerHTML = '';
+                    suggestionsContainer.style.display = 'none';
+                    return;
+                }
+
+                // Gửi yêu cầu tới endpoint `/search-suggestions`
+                fetch(`/search-suggestions?query=${query}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        suggestionsContainer.innerHTML = ''; // Xóa nội dung cũ
+                        if (data.length === 0) {
+                            suggestionsContainer.style.display = 'none';
+                            return;
+                        }
+                        
+                        // Hiển thị gợi ý
+                        data.forEach(item => {
+                            const suggestion = document.createElement('div');
+                            const priceAttribute = item.attributes.find(attr => attr.name === 'Price');
+                            const price = item.attributes.find(attr => attr.name === 'Price') ? priceAttribute.pivot.value : 'N/A';
+                            suggestion.classList.add('suggestion-item');
+                            suggestion.innerHTML = `
+                                <div>${item.name}</div>
+                                <div>${price} VNĐ</div>
+                            `;
+                            suggestion.onclick = () => {
+                                window.location.href = item.link;
+                            };
+                            suggestionsContainer.appendChild(suggestion);
+                        });
+                        console.log(data);
+                        
+                        suggestionsContainer.style.display = 'block'; // Hiển thị container gợi ý
+                    })
+                    .catch(error => {
+                        console.error('Lỗi:', error);
+                    });
+            });
+
+            // Ẩn container gợi ý khi người dùng nhấp ra ngoài
+            document.addEventListener('click', function(event) {
+                if (!suggestionsContainer.contains(event.target) && event.target !== searchInput) {
+                    suggestionsContainer.style.display = 'none';
+                }
+            });
+
+            // Hiện lại container gợi ý khi người dùng nhấp vào ô tìm kiếm
+            searchInput.addEventListener('focus', function() {
+                if (suggestionsContainer.innerHTML !== '') {
+                    suggestionsContainer.style.display = 'block';
+                }
+            });
+        });
+
 
     </script>
 @endpush

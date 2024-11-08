@@ -103,8 +103,7 @@ Route::get('pc-parts/{pcpart_type}/{brand}/{id}', [CpuController::class, 'show']
 Route::get('gpu/{brand}/{id}', [GpuController::class, 'show'])->name('gpu.show');
 
 //filter
-// Route::get('/laptops/filter/brand={brand}', [LaptopController::class, 'showLaptopsByBrand'])->name('laptop.filter');
-// Route::get('/laptops/filter/price', [LaptopController::class, 'showLaptopsByPrice'])->name('laptop.filter');
 Route::get('/laptops/filter', [LaptopController::class, 'filterLaptops'])->name('laptop.filter');
 
-
+//Thanh tim kiem
+Route::get('/search-suggestions', [ProductController::class, 'getSuggestions']);
