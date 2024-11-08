@@ -3913,21 +3913,40 @@
                         // Hiển thị gợi ý
                         data.forEach(item => {
                             const suggestion = document.createElement('div');
+                            suggestion.classList.add('list');
+
+                            const link = document.createElement('a');
+                            link.href = item.link;
+
+                            const image = document.createElement('img');
+                            image.src = item.image; // đảm bảo item chứa thuộc tính `image` với URL hình ảnh
+
+                            const info = document.createElement('span');
+                            info.classList.add('info');
+
+                            const name = document.createElement('span');
+                            name.classList.add('name');
+                            name.textContent = item.name;
+
                             const priceAttribute = item.attributes.find(attr => attr.name === 'Price');
-                            const price = item.attributes.find(attr => attr.name === 'Price') ? priceAttribute.pivot.value : 'N/A';
-                            suggestion.classList.add('suggestion-item');
-                            suggestion.innerHTML = `
-                                <div>${item.name}</div>
-                                <div>${price} VNĐ</div>
-                            `;
-                            suggestion.onclick = () => {
-                                window.location.href = item.link;
-                            };
+                            const price = priceAttribute ? `${priceAttribute.pivot.value} VNĐ` : 'N/A';
+
+                            const priceSpan = document.createElement('span');
+                            priceSpan.classList.add('price');
+                            priceSpan.textContent = price;
+
+                            info.appendChild(name);
+                            info.appendChild(priceSpan);
+
+                            link.appendChild(image);
+                            link.appendChild(info);
+                            suggestion.appendChild(link);
+
                             suggestionsContainer.appendChild(suggestion);
                         });
                         console.log(data);
                         
-                        suggestionsContainer.style.display = 'block'; // Hiển thị container gợi ý
+                        suggestionsContainer.style.display = 'block';
                     })
                     .catch(error => {
                         console.error('Lỗi:', error);
