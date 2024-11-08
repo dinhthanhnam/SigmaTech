@@ -119,21 +119,8 @@
                                             id="">Laptop Theo Hãng</a>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptop-asus_dm1058.html" title="Laptop Asus"
+                                                <a href="#" title="Laptop Asus"
                                                 class="js-menu" data-filter_code="brand" data-value="asus">Laptop Asus</a>
-                                                <div class="cat-4-list">
-                                                    <a href="/laptop-asus-vivobook_dm1609.html" title="Asus Vivobook"
-                                                        id="js-menu-1609">Asus
-                                                        Vivobook</a>
-                                                    <a href="/laptop-asus-zenbook_dm1610.html" title="Asus Zenbook"
-                                                        id="js-menu-1610">Asus
-                                                        Zenbook</a>
-                                                    <a href="/laptop-asus-expertbook_dm1899.html"
-                                                        title="Asus ExpertBook" id="js-menu-1899">Asus ExpertBook</a>
-                                                    <a href="/laptop-asus-proart_dm1900.html" title="Asus ProArt"
-                                                        id="js-menu-1900">Asus
-                                                        ProArt</a>
-                                                </div>
                                             </div>
                                         </div>
                                         <div>
@@ -141,77 +128,18 @@
                                                 <a href="#" title="Laptop Lenovo"
                                                     class="js-menu" data-filter_code="brand" data-value="lenovo">Laptop
                                                     Lenovo</a>
-                                                <div class="cat-4-list">
-                                                    <a href="/laptop-lenovo-ideapad_dm1623.html"
-                                                        title="Lenovo IdeaPad" id="js-menu-1623">Lenovo IdeaPad</a>
-                                                    <a href="/laptop-lenovo-yoga_dm1624.html" title="Lenovo Yoga"
-                                                        id="js-menu-1624">Lenovo
-                                                        Yoga</a>
-                                                    <a href="/laptop-ideapad-gaming.html" title="Ideapad Gaming"
-                                                        id="js-menu-2476">Ideapad
-                                                        Gaming</a>
-                                                    <a href="/laptop-lenovo-v-series.html" title="Lenovo V Series"
-                                                        id="js-menu-2475">Lenovo V
-                                                        Series</a>
-                                                    <a href="/laptop-lenovo-thinkbook_dm1762.html"
-                                                        title="Lenovo ThinkBook" id="js-menu-1762">Lenovo
-                                                        ThinkBook</a>
-                                                    <a href="/laptop-lenovo-thinkpad_dm1622.html"
-                                                        title="Lenovo ThinkPad" id="js-menu-1622">Lenovo ThinkPad</a>
-                                                    <a href="/laptop-thinkpad-mobile-workstation-thinkpad-p-series.html"
-                                                        title="ThinkPad Mobile Workstation - ThinkPad P Series"
-                                                        id="js-menu-2674">ThinkPad Mobile
-                                                        Workstation - ThinkPad P
-                                                        Series</a>
-                                                </div>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptop-dell_dm1012.html" title="Laptop Dell"
+                                                <a href="#" title="Laptop Dell"
                                                 class="js-menu" data-filter_code="brand" data-value="dell">Laptop Dell</a>
-                                                <div class="cat-4-list">
-                                                    <a href="/laptop-dell-inspiron_dm1618.html" title="Dell Inspiron"
-                                                        id="js-menu-1618">Dell
-                                                        Inspiron</a>
-                                                    <a href="/laptop-dell-vostro_dm1620.html" title="Dell Vostro"
-                                                        id="js-menu-1620">Dell
-                                                        Vostro</a>
-                                                    <a href="/laptop-dell-xps_dm1621.html" title="Dell XPS"
-                                                        id="js-menu-1621">Dell XPS</a>
-                                                    <a href="/laptop-dell-gaming-g-series.html"
-                                                        title="Dell Gaming G series" id="js-menu-2474">Dell Gaming G
-                                                        series</a>
-                                                    <a href="/latop-dell-alienware_dm2355.html" title="Dell Alienware"
-                                                        id="js-menu-2355">Dell
-                                                        Alienware</a>
-                                                    <a href="/laptop-dell-latitude_dm1619.html" title="Dell Latitude"
-                                                        id="js-menu-1619">Dell
-                                                        Latitude</a>
-                                                    <a href="/laptop-dell-precision-workstation_dm2289.html"
-                                                        title="Dell Workstation" id="js-menu-2289">Dell
-                                                        Workstation</a>
-                                                </div>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptop-acer_dm1060.html" title="Laptop Acer"
+                                                <a href="#" title="Laptop Acer"
                                                 class="js-menu" data-filter_code="brand" data-value="acer">Laptop Acer</a>
-                                                <div class="cat-4-list">
-                                                    <a href="/laptop-acer-aspire_dm1630.html" title="Acer Aspire"
-                                                        id="js-menu-1630">Acer
-                                                        Aspire</a>
-                                                    <a href="/laptop-acer-swift_dm1631.html" title="Acer Swift"
-                                                        id="js-menu-1631">Acer
-                                                        Swift</a>
-                                                    <a href="/laptop-acer-nitro-5_dm1787.html" title="Acer Nitro V"
-                                                        id="js-menu-1787">Acer
-                                                        Nitro V</a>
-                                                    <a href="/laptop-acer-predator_dm1634.html" title="Acer Predator"
-                                                        id="js-menu-1634">Acer
-                                                        Predator</a>
-                                                </div>
                                             </div>
                                         </div>
                                         
@@ -364,7 +292,7 @@
                                     
 
                                     <div class="cat-child-items">
-                                        <a href="" class="cate-2"
+                                        <a href="#" class="cate-2"
                                             title="Laptop Theo Kích Thước Màn" id="js-menu-2398">Laptop Theo Kích
                                             Thước Màn</a>
 
@@ -494,252 +422,27 @@
                                             id="">Laptop Theo Hãng</a>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptop-asus_dm1058.html" title="Laptop Asus"
+                                                <a href="#" title="Laptop Asus"
                                                     id="js-menu-1058">Laptop Asus</a>
-                                                <div class="cat-4-list">
-                                                    <a href="/laptop-asus-vivobook_dm1609.html" title="Asus Vivobook"
-                                                        id="js-menu-1609">Asus
-                                                        Vivobook</a>
-                                                    <a href="/laptop-asus-zenbook_dm1610.html" title="Asus Zenbook"
-                                                        id="js-menu-1610">Asus
-                                                        Zenbook</a>
-                                                    <a href="/laptop-asus-expertbook_dm1899.html"
-                                                        title="Asus ExpertBook" id="js-menu-1899">Asus ExpertBook</a>
-                                                    <a href="/laptop-asus-proart_dm1900.html" title="Asus ProArt"
-                                                        id="js-menu-1900">Asus
-                                                        ProArt</a>
-                                                </div>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptop-lenovo_dm1059.html" title="Laptop Lenovo"
+                                                <a href="#" title="Laptop Lenovo"
                                                     id="js-menu-1059">Laptop
                                                     Lenovo</a>
-                                                <div class="cat-4-list">
-                                                    <a href="/laptop-lenovo-ideapad_dm1623.html"
-                                                        title="Lenovo IdeaPad" id="js-menu-1623">Lenovo IdeaPad</a>
-                                                    <a href="/laptop-lenovo-yoga_dm1624.html" title="Lenovo Yoga"
-                                                        id="js-menu-1624">Lenovo
-                                                        Yoga</a>
-                                                    <a href="/laptop-ideapad-gaming.html" title="Ideapad Gaming"
-                                                        id="js-menu-2476">Ideapad
-                                                        Gaming</a>
-                                                    <a href="/laptop-lenovo-v-series.html" title="Lenovo V Series"
-                                                        id="js-menu-2475">Lenovo V
-                                                        Series</a>
-                                                    <a href="/laptop-lenovo-thinkbook_dm1762.html"
-                                                        title="Lenovo ThinkBook" id="js-menu-1762">Lenovo
-                                                        ThinkBook</a>
-                                                    <a href="/laptop-lenovo-thinkpad_dm1622.html"
-                                                        title="Lenovo ThinkPad" id="js-menu-1622">Lenovo ThinkPad</a>
-                                                    <a href="/laptop-thinkpad-mobile-workstation-thinkpad-p-series.html"
-                                                        title="ThinkPad Mobile Workstation - ThinkPad P Series"
-                                                        id="js-menu-2674">ThinkPad Mobile
-                                                        Workstation - ThinkPad P
-                                                        Series</a>
-                                                </div>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptop-hp_dm1013.html" title="Laptop HP"
-                                                    id="js-menu-1013">Laptop HP</a>
-                                                <div class="cat-4-list">
-                                                    <a href="/laptop-hp-pho-thong.html" title="HP Phổ Thông"
-                                                        id="js-menu-2471">HP Phổ Thông</a>
-                                                    <a href="/laptop-hp-pavilion_dm1626.html" title="HP Pavilion"
-                                                        id="js-menu-1626">HP
-                                                        Pavilion</a>
-                                                    <a href="/laptop-hp-envy_dm1656.html" title="HP Envy / Spectre"
-                                                        id="js-menu-1656">HP Envy /
-                                                        Spectre</a>
-                                                    <a href="/laptop-hp-probook_dm1627.html" title="HP Probook"
-                                                        id="js-menu-1627">HP
-                                                        Probook</a>
-                                                    <a href="/laptop-hp-elitebook_dm1629.html" title="HP Elitebook"
-                                                        id="js-menu-1629">HP
-                                                        Elitebook</a>
-                                                    <a href="/laptop-gaming-hp.html" title="HP Victus"
-                                                        id="js-menu-2472">HP Victus</a>
-                                                    <a href="/laptop-hp-workstation.html" title="HP Workstation"
-                                                        id="js-menu-2473">HP
-                                                        Workstation</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/laptop-dell_dm1012.html" title="Laptop Dell"
+                                                <a href="#" title="Laptop Dell"
                                                     id="js-menu-1012">Laptop Dell</a>
-                                                <div class="cat-4-list">
-                                                    <a href="/laptop-dell-inspiron_dm1618.html" title="Dell Inspiron"
-                                                        id="js-menu-1618">Dell
-                                                        Inspiron</a>
-                                                    <a href="/laptop-dell-vostro_dm1620.html" title="Dell Vostro"
-                                                        id="js-menu-1620">Dell
-                                                        Vostro</a>
-                                                    <a href="/laptop-dell-xps_dm1621.html" title="Dell XPS"
-                                                        id="js-menu-1621">Dell XPS</a>
-                                                    <a href="/laptop-dell-gaming-g-series.html"
-                                                        title="Dell Gaming G series" id="js-menu-2474">Dell Gaming G
-                                                        series</a>
-                                                    <a href="/latop-dell-alienware_dm2355.html" title="Dell Alienware"
-                                                        id="js-menu-2355">Dell
-                                                        Alienware</a>
-                                                    <a href="/laptop-dell-latitude_dm1619.html" title="Dell Latitude"
-                                                        id="js-menu-1619">Dell
-                                                        Latitude</a>
-                                                    <a href="/laptop-dell-precision-workstation_dm2289.html"
-                                                        title="Dell Workstation" id="js-menu-2289">Dell
-                                                        Workstation</a>
-                                                </div>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptop-acer_dm1060.html" title="Laptop Acer"
+                                                <a href="#" title="Laptop Acer"
                                                     id="js-menu-1060">Laptop Acer</a>
-                                                <div class="cat-4-list">
-                                                    <a href="/laptop-acer-aspire_dm1630.html" title="Acer Aspire"
-                                                        id="js-menu-1630">Acer
-                                                        Aspire</a>
-                                                    <a href="/laptop-acer-swift_dm1631.html" title="Acer Swift"
-                                                        id="js-menu-1631">Acer
-                                                        Swift</a>
-                                                    <a href="/laptop-acer-nitro-5_dm1787.html" title="Acer Nitro V"
-                                                        id="js-menu-1787">Acer
-                                                        Nitro V</a>
-                                                    <a href="/laptop-acer-predator_dm1634.html" title="Acer Predator"
-                                                        id="js-menu-1634">Acer
-                                                        Predator</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/Laptop-msi_dm1065.html" title="Laptop MSI"
-                                                    id="js-menu-1065">Laptop MSI</a>
-                                                <div class="cat-4-list">
-                                                    <a href="/laptop-msi-modern.html" title="MSI Modern 14 - 15"
-                                                        id="js-menu-2477">MSI Modern
-                                                        14 - 15</a>
-                                                    <a href="/msi-prestige-series_dm1823.html" title="MSI Prestige"
-                                                        id="js-menu-1823">MSI
-                                                        Prestige</a>
-                                                    <a href="/laptop-msi-gf-series_dm1674.html" title="MSI Gaming GF"
-                                                        id="js-menu-1674">MSI
-                                                        Gaming GF</a>
-                                                    <a href="/msi-summit_dm1886.html" title="MSI Summit"
-                                                        id="js-menu-1886">MSI Summit</a>
-                                                    <a href="/msi-bravo-series_dm1825.html"
-                                                        title="MSI Alpha/Bravo Series" id="js-menu-1825">MSI
-                                                        Alpha/Bravo Series</a>
-                                                    <a href="/laptop-msi-ge-series_dm1668.html" title="MSI GE Series"
-                                                        id="js-menu-1668">MSI GE
-                                                        Series</a>
-                                                    <a href="/laptop-msi-gl-series_dm1671.html" title="MSI GL Series"
-                                                        id="js-menu-1671">MSI GL
-                                                        Series</a>
-                                                    <a href="/laptop-msi-gs-series_dm1669.html" title="MSI GS Series"
-                                                        id="js-menu-1669">MSI GS
-                                                        Series</a>
-                                                    <a href="/laptop-msi-gp-series_dm1670.html" title="MSI GP Series"
-                                                        id="js-menu-1670">MSI GP
-                                                        Series</a>
-                                                    <a href="/laptop-msi-gt-series.html" title="MSI GT Series"
-                                                        id="js-menu-2478">MSI GT
-                                                        Series</a>
-                                                    <a href="/laptop-msi-creator.html" title="MSI Creator"
-                                                        id="js-menu-2479">MSI Creator</a>
-                                                    <a href="/msi-cyborg.html" title="MSI Cyborg"
-                                                        id="js-menu-2708">MSI Cyborg</a>
-                                                    <a href="/msi-stealth-15-series_dm1913.html" title="MSI Stealth"
-                                                        id="js-menu-1913">MSI
-                                                        Stealth</a>
-                                                    <a href="/laptop-msi-workstation_dm2212.html"
-                                                        title="MSI Workstation" id="js-menu-2212">MSI
-                                                        Workstation</a>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/laptop-gigabyte_dm2267.html" title="Laptop Gigabyte"
-                                                    id="js-menu-2267">Laptop
-                                                    Gigabyte</a>
-
-
-                                                <div class="cat-4-list">
-
-                                                    <a href="/laptop-gigabyte-g5_dm2271.html"
-                                                        title="Laptop Gigabyte G5" id="js-menu-2271">Laptop Gigabyte
-                                                        G5</a>
-
-                                                    <a href="/laptop-gigabyte-g7_dm2272.html"
-                                                        title="Laptop Gigabyte G7" id="js-menu-2272">Laptop Gigabyte
-                                                        G7</a>
-
-                                                    <a href="/laptop-gigabyte-a5.html" title="Laptop Gigabyte A5"
-                                                        id="js-menu-2673">Laptop
-                                                        Gigabyte A5</a>
-
-                                                    <a href="/laptop-gigabyte-aero_dm2268.html"
-                                                        title="Laptop Gigabyte AERO" id="js-menu-2268">Laptop Gigabyte
-                                                        AERO</a>
-
-                                                    <a href="/laptop-gigabyte-aorus_dm2269.html"
-                                                        title="Laptop Gigabyte AORUS" id="js-menu-2269">Laptop
-                                                        Gigabyte AORUS</a>
-
-                                                    <a href="/laptop-gigabyte-u4.html" title="Laptop Gigabyte U4"
-                                                        id="js-menu-2521">Laptop
-                                                        Gigabyte U4</a>
-
-                                                    <a href="/laptop-gigabyte-g6.html" title="Laptop Gigabyte G6"
-                                                        id="js-menu-2801">Laptop
-                                                        Gigabyte G6</a>
-
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/laptop-may-tinh-xach-tay-lg_dm1480.html" title="Laptop LG"
-                                                    id="js-menu-1480">Laptop
-                                                    LG</a>
-
-
-                                                <div class="cat-4-list">
-
-                                                    <a href="/laptop-lg-gram-2024.html" title="Laptop LG Gram 2024"
-                                                        id="js-menu-2907">Laptop LG
-                                                        Gram 2024</a>
-
-                                                    <a href="/laptop-lg-gram-2023.html" title="Laptop LG Gram 2023"
-                                                        id="js-menu-2715">Laptop LG
-                                                        Gram 2023</a>
-
-                                                    <a href="/laptop-lg-gram-17-inch_dm1839.html"
-                                                        title="Laptop LG Gram 17 inch" id="js-menu-1839">Laptop LG
-                                                        Gram 17 inch</a>
-
-                                                    <a href="/laptop-lg-gram-16-inch_dm2230.html"
-                                                        title="Laptop LG Gram 16 inch" id="js-menu-2230">Laptop LG
-                                                        Gram 16 inch</a>
-
-                                                    <a href="/laptop-lg-gram-15-inch.html"
-                                                        title="Laptop LG Gram 15 inch" id="js-menu-2716">Laptop LG
-                                                        Gram 15 inch</a>
-
-                                                    <a href="/laptop-lg-gram-14-inch_dm1837.html"
-                                                        title="Laptop LG Gram 14 inch" id="js-menu-1837">Laptop LG
-                                                        Gram 14 inch</a>
-
-                                                </div>
-
                                             </div>
                                         </div>
                                     </div>
@@ -4044,10 +3747,6 @@
                                         1 - 024.35160888</a>
                                     <a href="https://zalo.me/0913.367.005" target="_blank" rel="nofollow">Hotline
                                         2 - 0913.367.005</a>
-                                    <a href="https://zalo.me/0981.335.989" target="_blank" rel="nofollow">Hotline
-                                        3 - 0966.45.45.03</a>
-                                    <a href="https://zalo.me/0981.335.989" target="_blank" rel="nofollow">Hotline
-                                        4 - 0931.678.056</a>
                                 </div>
                             </div>
                             <div class="col-item">
@@ -4060,12 +3759,6 @@
                                                 rel="nofollow">Hotline -
                                                 0918.557.006</a>
                                         </div>
-                                        <div class="support-box">
-                                            <p class="box-title">◆ 151 Lê Thanh Nghị</p>
-                                            <a href="https://zalo.me/0983.94.9987" target="_blank"
-                                                rel="nofollow">Hotline -
-                                                0983.94.9987</a>
-                                        </div>
                                     </div>
                                     <div class="item-right">
                                         <div class="support-box">
@@ -4074,17 +3767,11 @@
                                                 rel="nofollow">Hotline -
                                                 0862.136.488</a>
                                         </div>
-                                        <div class="support-box">
-                                            <p class="box-title">◆ Bắc Ninh</p>
-                                            <a href="https://zalo.me/0972.166.640" target="_blank"
-                                                rel="nofollow">Hotline -
-                                                0972.166.640</a>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-item">
+                            {{-- <div class="col-item">
                                 <p class="title">Khách hàng Showroom TP.HCM</p>
                                 <div class="support-list">
                                     <div class="item-left">
@@ -4104,9 +3791,9 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
 
-                            <div class="col-item">
+                            {{-- <div class="col-item">
                                 <p class="title">Khách hàng Doanh nghiệp - Dự án</p>
 
                                 <div class="support-list">
@@ -4132,7 +3819,7 @@
                                             0909.143.970</a>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                     <a href="{{ route('pages.laptop-outlet') }}"> <img

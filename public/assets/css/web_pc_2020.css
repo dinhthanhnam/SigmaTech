@@ -7415,7 +7415,7 @@ span.ping {
     margin: 0 auto;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.4);
     flex-wrap: wrap;
-    width: 1240px
+    width: 600px
 }
 
 .header-support-container:hover .global-support-container {
@@ -7437,19 +7437,18 @@ span.ping {
 
 .global-support-container .col-item {
     border-right: 1px dashed #fff;
-    width: calc(787px / 2)
 }
 
 .global-support-container .col-item:last-child {
     border-right: 0;
-    width: 263px
+    width: 400px
 }
 
 .global-support-container .col-item:first-child {
-    width: 190px
+    width: 200px
 }
 
-.global-support-container .col-item:last-child .support-box {
+/* .global-support-container .col-item:last-child .support-box {
     border: 0;
     width: 100%
 }
@@ -7457,7 +7456,7 @@ span.ping {
 .global-support-container .col-item:first-child .support-list {
     height: auto;
     padding: 10px
-}
+} */
 
 .global-support-container .col-item:last-child .support-list {
     height: auto;
