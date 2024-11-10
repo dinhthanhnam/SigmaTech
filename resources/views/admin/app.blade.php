@@ -28,17 +28,19 @@
             <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
             <div class="d-flex align-items-center justify-content-between w-100 header-main">
                 <a href="/" class="logo mx-auto">
-                    <img src="{{ asset('assets/img/sigmatech-yellow.png') }}" alt="SigmaTech Logo" class="logo-img" />
+                    <img src="{{ asset('assets/img/sigmatech-yellow.png') }}" alt="SigmaTech Logo" class="logo-img"
+                        style = "width: auto; height: 50px;" />
                 </a>
                 <div class="header-right d-flex align-items-center">
                     <div class="item clearfix px-2">
                         <a href="#" title="Thông báo" class="d-flex">
-                            <i class="fa-solid fa-bell fa-2x"></i>
+                            <i class="fa-solid fa-bell"></i>
                         </a>
                     </div>
-                    <li>
-                        <a class="app-nav__item" onclick="document.getElementById('logOut').submit();">
-                            <i class="fa-solid fa-right-from-bracket fa-2x"></i>
+                    <li style = "list-style: none;">
+                        <a class="app-nav__item d-flex align-items-center"
+                            onclick="document.getElementById('logOut').submit();">
+                            <i class="fa-solid fa-right-from-bracket "></i>
                         </a>
                     </li>
                 </div>
@@ -63,7 +65,7 @@
                     <li><a class="app-menu__item" href="{{ route('admin.dashboard') }}"><i
                                 class='app-menu__icon fa-solid fa-square-poll-vertical'></i><span
                                 class="app-menu__label">Dashboard</span></a></li>
-                    <li><a class="app-menu__item" href="{{ route('admin.product') }}"><i
+                    <li><a class="app-menu__item" href="{{ route('admin.show-product') }}"><i
                                 class='app-menu__icon fa-solid fa-table'></i><span class="app-menu__label">Quản lý sản
                                 phẩm</span></a></li>
                     <li><a class="app-menu__item" href="table-data-oder.html"><i
@@ -88,40 +90,6 @@
 
     @stack('scripts')
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const menuItems = document.querySelectorAll('.app-menu__item');
-            const contentArea = document.querySelector('.content-area');
-
-            menuItems.forEach(item => {
-                item.addEventListener('click', function(event) {
-                    event.preventDefault(); // Ngăn hành vi mặc định của thẻ <a>
-
-                    const url = this.getAttribute('href'); // Lấy URL từ thuộc tính href của thẻ <a>
-
-                    if (url && contentArea) {
-                        // Sử dụng Fetch API để tải nội dung của route
-                        fetch(url)
-                            .then(response => response.text()) // Chuyển đổi phản hồi thành văn bản
-                            .then(data => {
-                                // Tạo một div tạm để lấy nội dung của phần 'content' từ response
-                                const tempDiv = document.createElement('div');
-                                tempDiv.innerHTML = data;
-                                const newContent = tempDiv.querySelector('.content-area')
-                                    .innerHTML;
-
-                                contentArea.innerHTML =
-                                    newContent; // Chèn nội dung vào content-area
-                            })
-                            .catch(error => {
-                                console.error('Lỗi khi tải nội dung:', error);
-                                contentArea.innerHTML = 'Không thể tải nội dung';
-                            });
-                    }
-                });
-            });
-        });
-
-
         //Thời Gian
         function time() {
             var today = new Date();
@@ -150,8 +118,7 @@
                 mm = '0' + mm
             }
             today = day + ', ' + dd + '/' + mm + '/' + yyyy;
-            tmp = '<span class="date"> ' + today + ' - ' + nowTime +
-                '</span>';
+            tmp = '<span class="date"> ' + today + ' - ' + nowTime + '</span>';
             document.getElementById("clock").innerHTML = tmp;
             clocktime = setTimeout("time()", "1000", "Javascript");
 

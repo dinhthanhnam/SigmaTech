@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\AdminController;
+use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\CpuController;
@@ -12,8 +12,9 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LaptopController;
 use App\Http\Controllers\SaleController;
-use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\ProductController;
+use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\ProductController;
+
 
 
 Auth::routes();
@@ -74,15 +75,11 @@ Route::get('account', function () {
 })->name('user-account');
 
 //admin view
-Route::get('admin/new-product', function () {
-  return view('admin.pages.new-product');
-})->name('new-product');
 Route::get('/admin/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
-Route::get('/admin/product', [ProductController::class, 'index'])->name('admin.product');
-Route::get('/admin/product', [ProductController::class, 'showAllProducts'])->name('admin.product');
+Route::get('/admin/product', [ProductController::class, 'showAllProducts'])->name('admin.show-product');
 Route::get('/admin/new-product', [ProductController::class, 'showAddProduct'])->name('admin.new-product');
+Route::post('/admin/new-product', [ProductController::class, 'saveProduct'])->name('admin.save-product');
 
-// Route::get('/orders', [OrderController::class, 'index'])->name('orders.index');
 
 //single laptop
 Route::get('laptops/{type}/{brand}/{id}', [LaptopController::class, 'show'])->name('laptop.show');
@@ -106,4 +103,4 @@ Route::get('gpu/{brand}/{id}', [GpuController::class, 'show'])->name('gpu.show')
 Route::get('/laptops/filter', [LaptopController::class, 'filterLaptops'])->name('laptop.filter');
 
 //Thanh tim kiem
-Route::get('/search-suggestions', [ProductController::class, 'getSuggestions']);
+Route::get('/search-suggestions', [HomeController::class, 'getSuggestions']);

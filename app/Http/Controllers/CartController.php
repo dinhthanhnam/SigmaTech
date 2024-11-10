@@ -41,6 +41,9 @@ class CartController extends Controller
 
     public function add(Request $request)
     {
+        if (!auth()->check()) {
+            return redirect()->route('login')->with('message', 'Vui lòng đăng nhập để thêm sản phẩm vào giỏ hàng.');
+        }
         // Lấy thông tin từ request
         $productId = $request->product_id;
         $productType = $request->product_type; // Loại sản phẩm (cpu, gpu, laptop, monitor)
