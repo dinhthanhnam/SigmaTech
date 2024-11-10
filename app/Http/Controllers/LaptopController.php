@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Laptop;
+use Psy\Readline\Hoa\Console;
 
 class LaptopController extends Controller
 {
@@ -42,14 +43,102 @@ class LaptopController extends Controller
         return view('categories.office-laptops', compact('officeLaptops'));
     }
 
-    public function showLaptopsByBrand($brand)
-{
-    $laptops = Laptop::whereHas('attributes', function ($query) use ($brand) {
-        $query->where('name', 'Brand')
-              ->where('value', $brand);
-    })->with('attributes')->get();
+    public function filterLaptops(Request $request)
+    {
+        $filters = [
+            'brand' => $request->input('brand'),
+            'price_min' => $request->input('min'),
+            'price_max' => $request->input('max'),
+            'cpu' => $request->input('cpu'),
+            'screensize' => $request->input('screensize'),
+            'vga' => $request->input('vga'),
+            'ram' => $request->input('ram'),
+            'ssd' => $request->input('ssd'),
+            'os' => $request->input('os'),
+            'weight' => $request->input('weight'),
+            'color' => $request->input('color'),
+        ];
+
+        $laptops = Laptop::query();
+        
+        if (!empty($filters['brand'])) {
+            $laptops->whereHas('attributes', function ($query) use ($filters) {
+                $query->where('name', 'Brand')
+                    ->where('value', $filters['brand']);
+            });
+        }
+
+        if (!empty($filters['price_min']) || !empty($filters['price_max'])) {
+            $minPrice = $filters['price_min'] ?? 0;
+            $maxPrice = $filters['price_max'] ?? PHP_INT_MAX;
+
+            $laptops->whereHas('attributes', function ($query) use ($minPrice, $maxPrice) {
+                $query->where('name', 'Price')
+                    ->whereBetween('value', [$minPrice, $maxPrice]);
+            });
+        }
+
+        if (!empty($filters['cpu'])) {
+            $laptops->whereHas('attributes', function ($query) use ($filters) {
+                $query->where('name', '[Laptop] Vi xử lý')
+                      ->where('value', 'like', '%' . $filters['cpu'] . '%'); 
+            });
+        }
+        
+        if (!empty($filters['screensize'])) {
+            $laptops->whereHas('attributes', function ($query) use ($filters) {
+                $query->where('name', '[Laptop] Kích thước màn hình')
+                      ->where('value', 'like', '%' . $filters['screensize'] . '%'); 
+            });
+        }
+
+        if (!empty($filters['vga'])) {
+            $laptops->whereHas('attributes', function ($query) use ($filters) {
+                $query->where('name', '[Laptop] Card đồ hoạ')
+                      ->where('value', 'like', '%' . $filters['vga'] . '%'); 
+            });
+        }
+
+        if (!empty($filters['ram'])) {
+            $laptops->whereHas('attributes', function ($query) use ($filters) {
+                $query->where('name', '[Laptop] Dung lượng RAM')
+                      ->where('value', 'like', '%' . $filters['ram'] . '%'); 
+            });
+        }
     
-    return view('categories.filtered-laptops', compact('laptops'));
-}
+        if (!empty($filters['ssd'])) {
+            $laptops->whereHas('attributes', function ($query) use ($filters) {
+                $query->where('name', '[Laptop] SSD')
+                      ->where('value', 'like', '%' . $filters['ssd'] . '%'); 
+            });
+        }
+    
+        if (!empty($filters['os'])) {
+            $laptops->whereHas('attributes', function ($query) use ($filters) {
+                $query->where('name', '[Laptop] OS')
+                      ->where('value', 'like', '%' . $filters['os'] . '%'); 
+            });
+        }
+    
+        if (!empty($filters['weight'])) {
+            $laptops->whereHas('attributes', function ($query) use ($filters) {
+                $query->where('name', '[Laptop] Trọng lượng')
+                      ->where('value', 'like', '%' . $filters['weight'] . '%'); 
+            });
+        }
+    
+        if (!empty($filters['color'])) {
+            $laptops->whereHas('attributes', function ($query) use ($filters) {
+                $query->where('name', '[Laptop] Màu sắc')
+                      ->where('value', 'like', '%' . $filters['color'] . '%'); 
+            });
+        }
+
+        // Phân trang kết quả và trả về view
+        $laptops = $laptops->with('attributes')->paginate(12);
+
+        return view('categories.filtered-laptops', compact('laptops'));
+    }
+
 }
 
