@@ -42,6 +42,7 @@ class HomeController extends Controller
 
         return view('index', compact( 'flashSaleItems', 'gamingLaptops', 'officeLaptops', 'cpus'));
     }
+    
 
     public function getSuggestions(Request $request)
     {
