@@ -68,7 +68,7 @@
                     <li><a class="app-menu__item" href="{{ route('admin.show-product') }}"><i
                                 class='app-menu__icon fa-solid fa-table'></i><span class="app-menu__label">Quản lý sản
                                 phẩm</span></a></li>
-                    <li><a class="app-menu__item" href="table-data-oder.html"><i
+                    <li><a class="app-menu__item" href="{{ route('admin.show-order') }}"><i
                                 class='app-menu__icon fa-solid fa-cart-shopping'></i><span class="app-menu__label">Quản
                                 lý đơn hàng</span></a></li>
                     <li><a class="app-menu__item" href="table-data-banned.html"><i

@@ -14,6 +14,8 @@ use App\Http\Controllers\LaptopController;
 use App\Http\Controllers\SaleController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\Admin\OrderController;
+
 
 
 
@@ -79,6 +81,8 @@ Route::get('/admin/dashboard', [DashboardController::class, 'index'])->name('adm
 Route::get('/admin/product', [ProductController::class, 'showAllProducts'])->name('admin.show-product');
 Route::get('/admin/new-product', [ProductController::class, 'showAddProduct'])->name('admin.new-product');
 Route::post('/admin/new-product', [ProductController::class, 'saveProduct'])->name('admin.save-product');
+Route::get('/admin/order', [OrderController::class, 'showAllOrders'])->name('admin.show-order');
+
 
 
 //single laptop
