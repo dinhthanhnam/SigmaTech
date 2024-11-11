@@ -58,7 +58,7 @@
       // Thiết lập bộ đếm ngược cho từng thẻ
       const countdown = setInterval(function() {
         const now = new Date().getTime();
-        const timeLeft = endTime - now;
+        const timeLeft = endTime - (now - 25200000);
 
         // Tính giờ, phút và giây từ timeLeft
         const totalHours = Math.floor(timeLeft / (1000 * 60 * 60));
@@ -78,7 +78,7 @@
       }, 1000);
     });
   </script>
-  <script>
+  {{-- <script>
     document.addEventListener("DOMContentLoaded", function() {
       // Lấy ngày hiện tại
       const today = new Date();
@@ -98,5 +98,5 @@
           `${formattedDateDisplay} `; // Thêm khoảng trắng để không đè lên <span>
       }
     });
-  </script>
+  </script> --}}
 @endpush

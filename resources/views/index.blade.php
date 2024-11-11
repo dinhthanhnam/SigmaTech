@@ -288,7 +288,7 @@
       // Thiết lập bộ đếm ngược cho từng thẻ
       const countdown = setInterval(function() {
         const now = new Date().getTime();
-        const timeLeft = endTime - now;
+        const timeLeft = endTime - (now - 25200000);
 
         // Tính giờ, phút và giây từ timeLeft
         const totalHours = Math.floor(timeLeft / (1000 * 60 * 60));
@@ -306,27 +306,6 @@
           element.innerText = "Đã kết thúc";
         }
       }, 1000);
-    });
-  </script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      // Lấy ngày hiện tại
-      const today = new Date();
-
-      // Định dạng ngày thành dd/mm/yyyy cho nội dung hiển thị và dd-mm-yyyy cho data-from_time
-      const formattedDateDisplay = today.toLocaleDateString("en-GB"); // dd/mm/yyyy
-      const formattedDateAttribute = today.toLocaleDateString("en-GB").replace(/\//g, "-"); // dd-mm-yyyy
-
-      // Tìm phần tử đầu tiên có class .js-current-date và cập nhật ngày
-      const currentDateElement = document.querySelector(".js-current-date");
-      if (currentDateElement) {
-        // Gán giá trị ngày cho thuộc tính data-from_time
-        currentDateElement.setAttribute("data-from_time", formattedDateAttribute);
-
-        // Cập nhật nội dung hiển thị trong thẻ <a> với ngày hiện tại
-        currentDateElement.childNodes[0].nodeValue =
-        `${formattedDateDisplay} `; // Thêm khoảng trắng để không đè lên <span>
-      }
     });
   </script>
 @endpush
