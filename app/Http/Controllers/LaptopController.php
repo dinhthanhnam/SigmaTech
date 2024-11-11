@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Laptop;
+use PhpParser\Node\Expr\FuncCall;
 use Psy\Readline\Hoa\Console;
 
 class LaptopController extends Controller
@@ -30,7 +31,18 @@ class LaptopController extends Controller
                   ->where('value', 'Gaming');
         })->with('attributes')->paginate(12);
         
-        return view('categories.gaming-laptops', compact('gamingLaptops'));
+        $topGamingLaptops = Laptop::whereHas('attributes', function ($query) {
+            $query->where('name', '[Laptop] Loại laptop')
+                  ->where('value', 'Gaming');
+        })
+        ->whereHas('attributes', function ($query) {
+            $query->where('name', 'On Top')
+                  ->where('value', '1');
+        })
+        ->with('attributes')
+        ->get();
+        
+        return view('categories.gaming-laptops', compact('gamingLaptops', 'topGamingLaptops'));
     }
 
     public function showOfficeLaptops()
@@ -38,9 +50,19 @@ class LaptopController extends Controller
         $officeLaptops = Laptop::whereHas('attributes', function ($query) {
             $query->where('name', '[Laptop] Loại laptop')
                   ->where('value', 'Office');
-        })->with('attributes')->get();
+        })->with('attributes')->paginate(12);
         
-        return view('categories.office-laptops', compact('officeLaptops'));
+        $topOfficeLaptops = Laptop::whereHas('attributes', function ($query) {
+            $query->where('name', '[Laptop] Loại laptop')
+                  ->where('value', 'Office');
+        })
+        ->whereHas('attributes', function ($query) {
+            $query->where('name', 'On Top')
+                  ->where('value', '1');
+        })
+        ->with('attributes')
+        ->get();
+        return view('categories.office-laptops', compact('officeLaptops', 'topOfficeLaptops'));
     }
 
     public function filterLaptops(Request $request)

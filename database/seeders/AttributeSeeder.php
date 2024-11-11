@@ -18,6 +18,7 @@ class AttributeSeeder extends Seeder
             ['name' => 'Brand', 'data_type' => 'string'],
             ['name' => 'Model', 'data_type' => 'string'],
             ['name' => 'Price', 'data_type' => 'integer'],
+            ['name' => 'On Top', 'data_type' => 'integer'],
             ['name' => 'Deal Price', 'data_type' => 'integer'],
             ['name' => 'Sale Price', 'data_type' => 'integer'],
             ['name' => 'Sale Start Date', 'data_type' => 'datetime'],

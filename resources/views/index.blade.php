@@ -70,24 +70,24 @@
           </div>
           <div class="home-banner-right">
             <a href="#" target='_blank' rel='nofollow'><img
-                src="{{ asset('assets/img/banner/01_Jul89646a1bf29bc2857060630315ce42da.png') }}" alt=""
-                width="385" height="251" /></a>
+              src="{{ asset('assets/img/banner/01_Jul89646a1bf29bc2857060630315ce42da.png') }}" alt=""
+              width="385" height="251" /></a>
             <a href="#" target='_blank' rel='nofollow'><img
-                src="{{ asset('assets/img/banner/18_Sepd0e3021672aa5eab9ac35addb573e511.png') }}" alt=""
-                width="385" height="252" /></a>
+              src="{{ asset('assets/img/banner/18_Sepd0e3021672aa5eab9ac35addb573e511.png') }}" alt=""
+              width="385" height="252" /></a>
           </div>
         </div>
 
         <div class="clearfix">
           <a href="#" target='_blank' rel='nofollow'><img
-              src="{{ asset('assets/img/banner/01_Jul9ae198dee31c9df7259fb87d5b57c4b9.png') }}" alt=""
-              width="437" height="180" /></a>
+            src="{{ asset('assets/img/banner/01_Jul9ae198dee31c9df7259fb87d5b57c4b9.png') }}" alt=""
+            width="437" height="180" /></a>
           <a href="#" target='_blank' rel='nofollow'><img
-              src="{{ asset('assets/img/banner/01_Jul0603d458859790fb1099a51b8e815e70.png') }}" alt=""
-              width="437" height="180" /></a>
+            src="{{ asset('assets/img/banner/01_Jul0603d458859790fb1099a51b8e815e70.png') }}" alt=""
+            width="437" height="180" /></a>
           <a href="#" target='_blank' rel='nofollow'><img
-              src="{{ asset('assets/img/banner/01_Julefdd70592ce2091c05ca2ff057403636.png') }}" alt=""
-              width="437" height="180" /></a>
+            src="{{ asset('assets/img/banner/01_Julefdd70592ce2091c05ca2ff057403636.png') }}" alt=""
+            width="437" height="180" /></a>
         </div>
       </div>
 
@@ -124,28 +124,6 @@
         </div>
       </div>
 
-      <!-- product_bestsale -->
-      {{-- <div class="home-pro-hot box-pro-container bg-white pb-2" id="js-bestsale-container">
-        <div class="box-title-container">
-          <h2 class="box-title"> top sản phẩm bán chạy </h2>
-          <div class="child-title">
-            <a href="{{ route('gaming-laptops.show')}}"> Laptop gaming </a>
-            <a href="{{ route('office-laptops.show')}}"> Laptop văn phòng </a>
-            <a href="{{ route('monitors.show')}}"> màn hình máy tính </a>
-            <a href="{{ route('gaming-gears.show')}}"> bàn phím, chuột</a>
-          </div>
-        </div>
-        <div class="p-container" style="min-height: 850px">
-          <div class="d-flex flex-wrap">
-
-          </div>
-          <div class="d-flex flex-wrap" id="js-bestsale-collection-2">
-
-          </div>
-          <a href="#" class="view-all"> xem tất cả sản phẩm </a>
-        </div>
-      </div> --}}
-
       <!-- Laptop văn phòng -->
       <div class="box-pro-container bg-white js-box-container" style="min-height: 400px" data-id="395-850">
         <div class="box-title-container">
@@ -171,15 +149,14 @@
         <div class="box-title-container">
           <h2 class="box-title"> Linh Kiện Máy Tính </h2>
           <div class="child-title">
-
             <!---thay số là id danh mục sản phẩm-->
-            <a href="/cpu-desktop.html">CPU</a>
-            <a href="/bo-mach-chu.html">Mainboard</a>
-            <a href="/vga-card-man-hinh.html">VGA</a>
-            <a href="/bo-nho-trong.html">RAM</a>
-            <a href="/o-cung-ssd_dm1030.html">SSD</a>
-            <a href="/vo-may-tinh-case.html">Vỏ Case</a>
-            <a href="/nguon-dien-may-tinh-psu.html">Nguồn</a>
+            <a href="/pc-parts/cpu">CPU</a>
+            <a href="/pc-parts/mainboard">Mainboard</a>
+            <a href="/pc-parts/vga">VGA</a>
+            <a href="/pc-parts/ram">RAM</a>
+            <a href="/pc-parts/ssd">SSD</a>
+            <a href="/pc-parts/case">Vỏ Case</a>
+            <a href="/pc-parts/psu">Nguồn</a>
           </div>
         </div>
         <div class="p-container custom-nav owl-carousel owl-theme">
@@ -244,7 +221,7 @@
     $(document).ready(function() {
       $("#js-home-slider").owlCarousel({
         items: 1,
-        loop: true,
+        loop: false,
         autoplay: true,
         autoplayTimeout: 5000,
         nav: false,
@@ -257,7 +234,7 @@
   <script>
     $(document).ready(function() {
       $('.owl-carousel').owlCarousel({
-        loop: true,
+        loop: false,
         margin: 10,
         nav: true,
         dots: true,
@@ -288,7 +265,7 @@
       // Thiết lập bộ đếm ngược cho từng thẻ
       const countdown = setInterval(function() {
         const now = new Date().getTime();
-        const timeLeft = endTime - now;
+        const timeLeft = endTime - (now - 25200000);
 
         // Tính giờ, phút và giây từ timeLeft
         const totalHours = Math.floor(timeLeft / (1000 * 60 * 60));
@@ -306,27 +283,6 @@
           element.innerText = "Đã kết thúc";
         }
       }, 1000);
-    });
-  </script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      // Lấy ngày hiện tại
-      const today = new Date();
-
-      // Định dạng ngày thành dd/mm/yyyy cho nội dung hiển thị và dd-mm-yyyy cho data-from_time
-      const formattedDateDisplay = today.toLocaleDateString("en-GB"); // dd/mm/yyyy
-      const formattedDateAttribute = today.toLocaleDateString("en-GB").replace(/\//g, "-"); // dd-mm-yyyy
-
-      // Tìm phần tử đầu tiên có class .js-current-date và cập nhật ngày
-      const currentDateElement = document.querySelector(".js-current-date");
-      if (currentDateElement) {
-        // Gán giá trị ngày cho thuộc tính data-from_time
-        currentDateElement.setAttribute("data-from_time", formattedDateAttribute);
-
-        // Cập nhật nội dung hiển thị trong thẻ <a> với ngày hiện tại
-        currentDateElement.childNodes[0].nodeValue =
-        `${formattedDateDisplay} `; // Thêm khoảng trắng để không đè lên <span>
-      }
     });
   </script>
 @endpush
