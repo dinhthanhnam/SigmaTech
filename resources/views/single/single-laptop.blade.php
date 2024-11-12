@@ -651,10 +651,6 @@
                         </form>
 
                     </div>
-                    <p class="blue icon-payment-container">
-                        <b>Chấp nhận thanh toán:</b>
-                        <i class="icon icon-payment"></i>
-                    </p>
                 </div>
                 <div class="product-detail-info-right">
                     <!-- kho hàng -->
