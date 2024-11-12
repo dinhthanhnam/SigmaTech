@@ -15,7 +15,7 @@ use App\Http\Controllers\SaleController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\OrderController;
-
+use App\Http\Controllers\Admin\SaleController as AdminSaleController;
 
 
 
@@ -23,12 +23,9 @@ Auth::routes();
 
 Route::post('logout', [LoginController::class, 'logout'])->name('logout');
 
-Route::middleware(['auth'])->group(function () {
-  Route::get('/', [UserController::class, 'index'])->name('home.index');
-});
-Route::middleware(['auth', AuthAdmin::class])->group(function () {
-  Route::get('admin', [AdminController::class, 'index'])->name('admin.index');
-});
+// Route::middleware(['auth'])->group(function () {
+//   Route::get('/', [UserController::class, 'index'])->name('home.index');
+// });
 
 Route::get('/', [HomeController::class, 'index'])->name('home.index');
 
@@ -77,13 +74,15 @@ Route::get('account', function () {
 })->name('user-account');
 
 //admin view
-Route::get('/admin/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
-Route::get('/admin/product', [ProductController::class, 'showAllProducts'])->name('admin.show-product');
-Route::get('/admin/new-product', [ProductController::class, 'showAddProduct'])->name('admin.new-product');
-Route::post('/admin/new-product', [ProductController::class, 'saveProduct'])->name('admin.save-product');
-Route::get('/admin/order', [OrderController::class, 'showAllOrders'])->name('admin.show-order');
 
-
+Route::middleware(['auth', AuthAdmin::class])->prefix('admin')->group(function () {
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.index');
+    Route::get('/product', [ProductController::class, 'showAllProducts'])->name('admin.show-product');
+    Route::get('/new-product', [ProductController::class, 'showAddProduct'])->name('admin.new-product');
+    Route::post('/new-product', [ProductController::class, 'saveProduct'])->name('admin.save-product');
+    Route::get('/order', [OrderController::class, 'showAllOrders'])->name('admin.show-order');
+    Route::get('/sale', [AdminSaleController::class, 'index'])->name('admin.show-sale');
+});
 
 //single laptop
 Route::get('laptops/{type}/{brand}/{id}', [LaptopController::class, 'show'])->name('laptop.show');
