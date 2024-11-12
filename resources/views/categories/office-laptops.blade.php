@@ -9,17 +9,14 @@
               <i class="fa fa-home"></i> Trang chủ
             </a>
           </li>
-          <li class="breadcrumb-item" aria-current="page">
-            <a href="{{ url('/laptops/Office') }}">Laptop </a>
-          </li>
           <li class="breadcrumb-item active" aria-current="page">
-            <a href="{{ url('/laptops/Office') }}">Gaming </a>
+            <a href="{{ url('/laptops/Office') }}">Laptop văn phòng</a>
           </li>Office
         </ol>
       </div>
       <div class="product-collection-related-container">
         <div class="group-title">
-          <h2 class="title">Laptop Gaming Được Mua Nhiều Nhất 2024</h2>
+          <h2 class="title">Laptop Văn Phòng Được Mua Nhiều Nhất 2024</h2>
         </div>
       </div>
       <div class="p-container bg-white js-box-container" style="min-height: 400px" data-id="395-850">

@@ -9,11 +9,8 @@
               <i class="fa fa-home"></i> Trang chủ
             </a>
           </li>
-          <li class="breadcrumb-item" aria-current="page">
-            <a href="{{ url('/laptops/Gaming') }}">Laptop </a>
-          </li>
           <li class="breadcrumb-item active" aria-current="page">
-            <a href="{{ url('/laptops/Gaming') }}">Gaming </a>
+            <a href="{{ url('/laptops/Gaming') }}">Laptop Gaming </a>
           </li>
         </ol>
       </div>
