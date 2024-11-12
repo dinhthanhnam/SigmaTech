@@ -99,4 +99,87 @@
 .quantity-input {
     width: 50px;
 }
+.order-info {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    border-radius: 8px;
+    font-size: 16px;
+}
 
+.order-info h5{
+    padding-top: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    max-width: 420px;
+}
+.order-info h4 {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #cecece;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.order-info .form-label {
+    font-weight: 600;
+    color: #555;
+}
+
+.order-info .form-control {
+    flex: 0.5;
+    padding: 10px;
+    border: 1px solid #546ce8;
+    border-radius: 5px;
+
+}
+
+.order-info .form-select {
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.form-check-label{
+    margin-left: 4px;
+
+}
+.cart-summary h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.cart-summary .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: none;
+}
+
+.cart-summary .text-danger {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.cart-summary .fw-bold {
+    font-size: 1.1rem;
+}
+
+/* Button Styling */
+.order-info .btn {
+    font-size: 1.1rem;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.order-info .btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: white;
+}
+
+.order-info .btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}

@@ -15,10 +15,11 @@ return new class extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->string('customer_name');
+            $table->string('gender');
             $table->string('phone_number');
             $table->string('shipping_address');
             $table->string('payment_method');
-            $table->string('note');
+            $table->string('note')->default(null); 
             $table->integer('total_price');
             $table->enum('status', ['chờ xác nhận', 'đang giao hàng', 'chờ thanh toán', 'hoàn thành', 'đã hủy'])
             ->default('chờ xác nhận'); 
