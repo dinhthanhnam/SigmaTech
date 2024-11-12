@@ -150,6 +150,33 @@ class CartController extends Controller
 
         return response()->json(['cartItemCount' => $cartItemCount]);
     }
+    public function showOrder()
+    {
+        $userId = auth()->id(); // Lấy ID người dùng đã đăng nhập
+        $cartItems = CartItem::where('user_id', $userId)->get(); // Lấy các sản phẩm trong giỏ hàng của người dùng
+        foreach ($cartItems as $item) {
+            switch( $item->product_type) {
+                case 'laptop':
+                    $laptop = Laptop::where('id', $item->product_id)
+                    ->with('attributes')
+                    ->first();
+                $item->dealprice = $laptop->attributes->where('name', 'Deal Price')->first()->pivot->value;  // Gán giá cho cart item
+                $item->price = $laptop->attributes->where('name', 'Price')->first()->pivot->value; 
+                $item->image = $laptop->attributes->where('name', 'Image1')->first()->pivot->value; 
+                break;
+                case 'cpu':
+                    $cpu = CPU::where('id', $item->product_id)
+                    ->with('attributes')
+                    ->first();
+                $item->dealprice = $cpu->attributes->where('name', 'Deal Price')->first()->pivot->value;  // Gán giá cho cart item
+                $item->price = $cpu->attributes->where('name', 'Price')->first()->pivot->value; 
+                $item->image = $cpu->attributes->where('name', 'Image1')->first()->pivot->value; 
+                break;
 
+            }
+        }
+
+        return view('order', compact('cartItems'));
+    }
 
 }

@@ -94,6 +94,7 @@ Route::patch('/cart/{product_type}/{product_id}', [CartController::class, 'updat
 Route::delete('/cart/{product_type}/{product_id}', [CartController::class, 'remove'])->name('cart.remove');
 Route::patch('/cart/update-bulk', [CartController::class, 'updateBulkQuantity'])->name('cart.updateBulkQuantity');
 Route::get('/cart/count', [CartController::class, 'cartCount'])->name('cart.count');
+Route::get('/cart/order', [CartController::class, 'showOrder'])->name('order.show');
 
 
 //single cpu
