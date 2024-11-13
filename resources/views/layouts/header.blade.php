@@ -850,63 +850,21 @@
                                     </div>
                                     <div class="cat-child-items">
                                         <a href="/man-hinh-theo-nhu-cau_dm1692.html" class="cate-2"
-                                            title="Màn Hình Theo Nhu Cầu" id="js-menu-1692">Màn Hình Theo Nhu
-                                            Cầu</a>
+                                            title="Màn Hình Theo Nhu Cầu" id="js-menu-1692">Màn Hình Theo Nhu Cầu</a>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/man-hinh-may-tinh-chuyen-gaming_dm1694.html"
-                                                    title="Màn Hình Gaming" id="js-menu-1694">Màn Hình Gaming</a>
-                                                <div class="cat-4-list">
-                                                    <a href="/man-hinh-gaming-180hz.html"
-                                                        title="Màn Hình Gaming 180Hz" id="js-menu-2856">Màn Hình
-                                                        Gaming 180Hz</a>
-                                                    <a href="/man-hinh-gaming-240hz.html"
-                                                        title="Màn Hình Gaming 240Hz" id="js-menu-2857">Màn Hình
-                                                        Gaming 240Hz</a>
-                                                </div>
+                                                <a href="/man-hinh-may-tinh-chuyen-gaming_dm1694.html" title="Màn Hình Gaming" id="js-menu-1694">Màn Hình Gaming</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/man-hinh-may-tinh-ultrawide-sieu-rong_dm1698.html"
-                                                    title="Màn Hình Ultrawide" id="js-menu-1698">Màn Hình
-                                                    Ultrawide</a>
+                                                    title="Màn Hình Ultrawide" id="js-menu-1698">Màn Hình Ultrawide</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/man-hinh-may-tinh-oled.html" title="Màn Hình OLED"
-                                                    id="js-menu-2831">Màn Hình
-                                                    OLED</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/man-hinh-may-tinh-van-phong_dm1716.html"
-                                                    title="Màn Hình Văn Phòng" id="js-menu-1716">Màn Hình Văn
-                                                    Phòng</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/man-hinh-may-tinh-chuyen-thiet-ke_dm1695.html"
-                                                    title="Màn Hình Đồ Họa" id="js-menu-1695">Màn Hình Đồ Họa</a>
-                                                <div class="cat-4-list">
-                                                    <a href="/man-hinh-do-hoa-60hz.html"
-                                                        title="Màn Hình Đồ Họa 60Hz" id="js-menu-2858">Màn
-                                                        Hình Đồ
-                                                        Họa 60Hz</a>
-                                                    <a href="/man-hinh-do-hoa-120hz.html"
-                                                        title="Màn Hình Đồ Họa 120Hz" id="js-menu-2859">Màn Hình Đồ
-                                                        Họa 120Hz</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/man-hinh-thong-minh_dm2197.html"
-                                                    title="Màn Hình Thông Minh" id="js-menu-2197">Màn Hình Thông
-                                                    Minh</a>
+                                                <a href="/man-hinh-may-tinh-oled.html" title="Màn Hình OLED"id="js-menu-2831">Màn Hình OLED</a>
                                             </div>
                                         </div>
                                         <div>
@@ -916,50 +874,14 @@
                                                     Động</a>
                                             </div>
                                         </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/man-hinh-may-tinh-cong-curved_dm1696.html"
-                                                    title="Màn Hình Cong" id="js-menu-1696">Màn Hình Cong</a>
-                                                <div class="cat-4-list">
-                                                    <a href="/man-hinh-cong-ips.html" title="Màn Hình Cong IPS"
-                                                        id="js-menu-2860">Màn Hình
-                                                        Cong IPS</a>
-                                                    <a href="/man-hinh-cong-oled.html" title="Màn Hình Cong OLED"
-                                                        id="js-menu-2861">Màn Hình
-                                                        Cong OLED</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/man-hinh-usb-type-c_dm1877.html"
-                                                    title="Màn Hình USB Type C" id="js-menu-1877">Màn Hình USB Type
-                                                    C</a>
-                                            </div>
-                                        </div>
                                     </div>
                                     <div class="cat-child-items">
                                         <a href="/man-hinh-theo-kich-thuoc_dm1691.html" class="cate-2"
-                                            title="Màn Hình Theo Kích Thước" id="js-menu-1691">Màn Hình Theo Kích
-                                            Thước</a>
+                                            title="Màn Hình Theo Kích Thước" id="js-menu-1691">Màn Hình Theo Kích Thước</a>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/man-hinh-156-inch.html" title="Màn Hình 15.6 inch"
-                                                    id="js-menu-2709">Màn Hình
-                                                    15.6 inch</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/man-hinh-may-tinh-17-inch-21-inch_dm1704.html"
-                                                    title="Màn Hình 17 inch" id="js-menu-1704">Màn Hình 17 inch</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/man-hinh-185-inch.html" title="Màn Hình 18.5 inch"
-                                                    id="js-menu-2490">Màn Hình
-                                                    18.5 inch</a>
+                                                    id="js-menu-2709">Màn Hình 15.6 inch</a>
                                             </div>
                                         </div>
                                         <div>
@@ -980,20 +902,6 @@
                                             <div class="cat-child-last">
                                                 <a href="/man-hinh-may-tinh-22-inch-24-inch_dm1705.html"
                                                     title="Màn Hình 22 inch" id="js-menu-1705">Màn Hình 22 inch</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/man-hinh-23-inch.html" title="Màn Hình 23 inch"
-                                                    id="js-menu-2424">Màn Hình 23
-                                                    inch</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/man-hinh-236-inch.html" title="Màn Hình 23.6 inch"
-                                                    id="js-menu-2466">Màn Hình
-                                                    23.6 inch</a>
                                             </div>
                                         </div>
                                         <div>
@@ -1019,19 +927,6 @@
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/man-hinh-may-tinh-25-inch-27-inch_dm1706.html"
-                                                    title="Màn Hình 25 inch" id="js-menu-1706">Màn Hình 25 inch</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/man-hinh-26-inch.html" title="Màn Hình 26 inch"
-                                                    id="js-menu-2918">Màn Hình 26
-                                                    inch</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
                                                 <a href="/man-hinh-27-inch.html" title="Màn Hình 27 inch"
                                                     id="js-menu-2427">Màn Hình 27
                                                     inch</a>
@@ -1045,63 +940,13 @@
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/man-hinh-29-inch.html" title="Màn Hình 29 inch"
-                                                    id="js-menu-2428">Màn Hình 29
-                                                    inch</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/man-hinh-30-inch.html" title="Màn Hình 30 inch"
-                                                    id="js-menu-2429">Màn Hình 30
-                                                    inch</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/man-hinh-315-inch.html" title="Màn Hình 31.5 inch"
-                                                    id="js-menu-2470">Màn Hình
-                                                    31.5 inch</a>
+                                                <a href="/man-hinh-315-inch.html" title="Màn Hình 31.5 inch" id="js-menu-2470">Màn Hình 31.5 inch</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/man-hinh-may-tinh-32-inch-49-inch_dm1708.html"
                                                     title="Màn Hình 32 inch" id="js-menu-1708">Màn Hình 32 inch</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/man-hinh-tren-32-inch.html" title="Màn Hình Trên 32 inch"
-                                                    id="js-menu-2862">Màn
-                                                    Hình Trên 32 inch</a>
-                                                <div class="cat-4-list">
-                                                    <a href="/man-hinh-34-inch.html" title="Màn Hình 34 inch"
-                                                        id="js-menu-2431">Màn Hình 34
-                                                        inch</a>
-                                                    <a href="/man-hinh-35-inch.html" title="Màn Hình 35 inch"
-                                                        id="js-menu-2491">Màn Hình 35
-                                                        inch</a>
-                                                    <a href="/man-hinh-375-inch.html" title="Màn Hình 37.5 inch"
-                                                        id="js-menu-2492">Màn Hình
-                                                        37.5 inch</a>
-                                                    <a href="/man-hinh-43-inch.html" title="Màn Hình 43 inch"
-                                                        id="js-menu-2494">Màn Hình 43
-                                                        inch</a>
-                                                    <a href="/man-hinh-48-inch.html" title="Màn Hình 48 inch"
-                                                        id="js-menu-2642">Màn Hình 48
-                                                        inch</a>
-                                                    <a href="/man-hinh-may-tinh-49-inch.html"
-                                                        title="Màn Hình 49 inch" id="js-menu-2480">Màn
-                                                        Hình 49
-                                                        inch</a>
-                                                    <a href="/man-hinh-55-inch.html" title="Màn Hình 55 inch"
-                                                        id="js-menu-2644">Màn Hình 55
-                                                        inch</a>
-                                                    <a href="/man-hinh-45-inch.html" title="Màn Hình 45 inch"
-                                                        id="js-menu-2730">Màn Hình 45
-                                                        inch</a>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -1111,15 +956,13 @@
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/man-hinh-may-tinh-60hz_dm1709.html" title="Màn Hình 60Hz"
-                                                    id="js-menu-1709">Màn
-                                                    Hình 60Hz</a>
+                                                    id="js-menu-1709">Màn Hình 60Hz</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/man-hinh-may-tinh-75hz_dm1710.html" title="Màn Hình 75Hz"
-                                                    id="js-menu-1710">Màn
-                                                    Hình 75Hz</a>
+                                                    id="js-menu-1710">Màn Hình 75Hz</a>
                                             </div>
                                         </div>
                                         <div>
@@ -1142,18 +985,6 @@
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/man-hinh-152hz.html" title="Màn Hình 152Hz"
-                                                    id="js-menu-2489">Màn Hình 152Hz</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/man-hinh-155hz.html" title="Màn Hình 155Hz"
-                                                    id="js-menu-2711">Màn Hình 155Hz</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
                                                 <a href="/man-hinh-may-tinh-165hz_dm1714.html"
                                                     title="Màn Hình 165Hz" id="js-menu-1714">Màn Hình 165Hz</a>
                                             </div>
@@ -1166,170 +997,72 @@
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/man-hinh-may-tinh-170hz.html" title="Màn Hình 170Hz"
-                                                    id="js-menu-2035">Màn Hình
-                                                    170Hz</a>
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/man-hinh-185hz.html" title="Màn Hình 185Hz"
-                                                    id="js-menu-2961">Màn Hình 185Hz</a>
-
-
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/man-hinh-180hz.html" title="Màn Hình 180Hz"
-                                                    id="js-menu-2758">Màn Hình 180Hz</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/man-hinh-200hz_dm2210.html" title="Màn Hình 200Hz"
-                                                    id="js-menu-2210">Màn Hình
-                                                    200Hz</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
                                                 <a href="/man-hinh-may-tinh-240hz_dm1715.html"
                                                     title="Màn Hình 240Hz" id="js-menu-1715">Màn Hình 240Hz</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/man-hinh-250hz.html" title="Màn Hình 250Hz"
-                                                    id="js-menu-2908">Màn Hình 250Hz</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/man-hinh-may-tinh-360hz.html" title="Màn Hình 360Hz"
-                                                    id="js-menu-2036">Màn Hình
-                                                    360Hz</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/man-hinh-380hz.html" title="Màn hình 380Hz"
-                                                    id="js-menu-2737">Màn hình 380Hz</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/man-hinh-400hz.html" title="Màn Hình 400Hz"
-                                                    id="js-menu-2863">Màn Hình 400Hz</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/man-hinh-500hz.html" title="Màn Hình 500Hz"
-                                                    id="js-menu-2864">Màn Hình 500Hz</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/man-hinh-540hz.html" title="Màn Hình 540Hz"
-                                                    id="js-menu-2865">Màn Hình 540Hz</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="cat-child-items">
                                         <a href="/man-hinh-may-tinh-theo-do-phan-giai_dm1699.html" class="cate-2"
-                                            title="Độ Phân Giải Màn Hình" id="js-menu-1699">Độ Phân Giải Màn
-                                            Hình</a>
+                                            title="Độ Phân Giải Màn Hình" id="js-menu-1699">Độ Phân Giải Màn Hình</a>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/man-hinh-may-tinh-hd_dm1700.html"
-                                                    title="Màn Hình HD (1366x768)" id="js-menu-1700">Màn Hình HD
-                                                    (1366x768)</a>
+                                                    title="Màn Hình HD (1366x768)" id="js-menu-1700">Màn Hình HD (1366x768)</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/man-hinh-hd-1600x900.html" title="Màn Hình HD+ (1600x900)"
-                                                    id="js-menu-2432">Màn
-                                                    Hình HD+ (1600x900)</a>
+                                                    id="js-menu-2432">Màn Hình HD+ (1600x900)</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/man-hinh-may-tinh-full-hd_dm1701.html"
-                                                    title="Màn Hình Full HD (1920x1080)" id="js-menu-1701">Màn Hình
-                                                    Full HD (1920x1080)</a>
+                                                    title="Màn Hình Full HD (1920x1080)" id="js-menu-1701">Màn Hình Full HD (1920x1080)</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/man-hinh-may-tinh-wuxga-1920x1200.html"
-                                                    title="Màn Hình WUXGA (1920x1200)" id="js-menu-2434">Màn Hình
-                                                    WUXGA (1920x1200)</a>
+                                                    title="Màn Hình WUXGA (1920x1200)" id="js-menu-2434">Màn Hình WUXGA (1920x1200)</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/man-hinh-may-tinh-ultra-wide-uwhd-2560x1080.html"
-                                                    title="Màn Hình UWHD (2560x1080)" id="js-menu-2433">Màn Hình
-                                                    UWHD (2560x1080)</a>
+                                                    title="Màn Hình UWHD (2560x1080)" id="js-menu-2433">Màn Hình UWHD (2560x1080)</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/man-hinh-may-tinh-2k-qhd_dm1702.html"
-                                                    title="Màn Hình 2K QHD (2560x1440)" id="js-menu-1702">Màn Hình
-                                                    2K QHD (2560x1440)</a>
+                                                    title="Màn Hình 2K QHD (2560x1440)" id="js-menu-1702">Màn Hình 2K QHD (2560x1440)</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/man-hinh-may-tinh-wqhd-3440x1440.html"
-                                                    title="Màn Hình WQHD (3440x1440)" id="js-menu-2435">Màn Hình
-                                                    WQHD (3440x1440)</a>
+                                                    title="Màn Hình WQHD (3440x1440)" id="js-menu-2435">Màn Hình WQHD (3440x1440)</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/man-hinh-uqhd-3840-x-1600.html"
-                                                    title="Màn Hình UQHD (3840x1600)" id="js-menu-2493">Màn Hình
-                                                    UQHD (3840x1600)</a>
+                                                    title="Màn Hình UQHD (3840x1600)" id="js-menu-2493">Màn Hình UQHD (3840x1600)</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/man-hinh-may-tinh-4k-uhd_dm1703.html"
-                                                    title="Màn Hình 4K UHD (3840x2160)" id="js-menu-1703">Màn Hình
-                                                    4K UHD (3840x2160)</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/man-hinh-may-tinh-dualqhd-5120x1440.html"
-                                                    title="Màn Hình DualQHD (5120x1440)" id="js-menu-2436">Màn Hình
-                                                    DualQHD (5120x1440)</a>
+                                                    title="Màn Hình 4K UHD (3840x2160)" id="js-menu-1703">Màn Hình 4K UHD (3840x2160)</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/man-hinh-wqxga-2560-x-1600.html"
-                                                    title="Màn Hình WQXGA (2560 x 1600)" id="js-menu-2646">Màn Hình
-                                                    WQXGA (2560 x 1600)</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/man-hinh-5k-5120x2880.html"
-                                                    title="Màn Hình 5K (5120x2880)" id="js-menu-2800">Màn Hình 5K
-                                                    (5120x2880)</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/man-hinh-duhd-7680-x-2160.html"
-                                                    title="Màn Hình DUHD (7680 x 2160)" id="js-menu-2895">Màn Hình
-                                                    DUHD (7680 x 2160)</a>
+                                                    title="Màn Hình WQXGA (2560 x 1600)" id="js-menu-2646">Màn Hình WQXGA (2560 x 1600)</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1342,8 +1075,7 @@
                                     <img src="{{ asset('assets/img/cat/cat_8a7100a2bf10de1685a042557ef4ee77.png') }}"
                                         alt="Bàn phím, Chuột - Gaming Gear" />
                                 </span>
-                                <span class="title" title="Bàn phím, Chuột - Gaming Gear"> Bàn phím, Chuột - Gaming
-                                    Gear </span>
+                                <span class="title" title="Bàn phím, Chuột - Gaming Gear"> Bàn phím, Chuột - Gaming Gear </span>
                             </a>
                             <div class="sub-menu  no-big-img  ">
                                 <div class="cat-child-holder" id="js-menu-container">
@@ -1353,56 +1085,35 @@
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/chuot-may-tinh_dm1291.html" title="Chuột Máy Tính"
-                                                    id="js-menu-1291">Chuột Máy
-                                                    Tính</a>
+                                                    id="js-menu-1291">Chuột Máy Tính</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/chuot-khong-day_dm2367.html" title="Chuột Không Dây"
-                                                    id="js-menu-2367">Chuột
-                                                    Không Dây</a>
+                                                    id="js-menu-2367">Chuột Không Dây</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/ban-phim-may-tinh_dm1027.html" title="Bàn phím Máy Tính"
-                                                    id="js-menu-1027">Bàn
-                                                    phím Máy Tính</a>
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/bo-ban-phim-chuot_dm1292.html" title="Bộ bàn phím - chuột"
-                                                    id="js-menu-1292">Bộ
-                                                    bàn phím - chuột</a>
+                                                    id="js-menu-1027">Bàn phím Máy Tính</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="cat-child-items">
                                         <a href="/ban-phim-co-choi-game.html" class="cate-2"
-                                            title="Bàn phím cơ chơi game" id="js-menu-1257">Bàn phím cơ chơi
-                                            game</a>
+                                            title="Bàn phím cơ chơi game" id="js-menu-1257">Bàn phím cơ chơi game</a>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/ban-phim-co-gia-re.html" title="Bàn phím cơ giá rẻ"
-                                                    id="js-menu-1494">Bàn phím
-                                                    cơ giá rẻ</a>
+                                                    id="js-menu-1494">Bàn phím cơ giá rẻ</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/ban-phim-logitech.html" title="Bàn phím Logitech"
-                                                    id="js-menu-1871">Bàn phím
-                                                    Logitech</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/ban-phim-asus_dm1368.html" title="Bàn phím Asus"
-                                                    id="js-menu-1368">Bàn phím
-                                                    Asus</a>
+                                                    id="js-menu-1871">Bàn phím Logitech</a>
                                             </div>
                                         </div>
                                         <div>
@@ -1415,8 +1126,6 @@
                                             <div class="cat-child-last">
                                                 <a href="/ban-phim-akko.html" title="Bàn phím AKKO"
                                                     id="js-menu-1755">Bàn phím AKKO</a>
-
-
                                             </div>
                                         </div>
 
@@ -1424,173 +1133,41 @@
                                             <div class="cat-child-last">
                                                 <a href="/ban-phim-aula.html" title="Bàn phím AULA"
                                                     id="js-menu-2921">Bàn phím AULA</a>
-
-
                                             </div>
                                         </div>
 
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/ban-phim-fuhlen.html" title="Bàn phím Fuhlen"
-                                                    id="js-menu-1493">Bàn phím
-                                                    Fuhlen</a>
-
-
+                                                    id="js-menu-1493">Bàn phím Fuhlen</a>
                                             </div>
                                         </div>
-
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/ban-phim-e-dra.html" title="Bàn phím E-Dra"
-                                                    id="js-menu-1801">Bàn phím E-Dra</a>
-
-
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/ban-phim-dareu.html" title="Bàn phím DareU"
-                                                    id="js-menu-1887">Bàn phím DareU</a>
-
-
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/ban-phim-fl-esports_dm2329.html"
-                                                    title="Bàn phím FL-Esports" id="js-menu-2329">Bàn phím
-                                                    FL-Esports</a>
-
-
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/ban-phim-corsair.html" title="Bàn phím Corsair"
-                                                    id="js-menu-1362">Bàn phím
-                                                    Corsair</a>
-
-
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/ban-phim-cac-hang-khac_dm1369.html"
-                                                    title="Bàn phím các hãng khác" id="js-menu-1369">Bàn phím các
-                                                    hãng khác</a>
-
-
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/ban-phim-rapoo.html" title="Bàn phím Rapoo"
-                                                    id="js-menu-2643">Bàn phím Rapoo</a>
-
-
-                                            </div>
-                                        </div>
-
                                     </div>
                                     <div class="cat-child-items">
                                         <a href="/chuot-choi-game.html" class="cate-2" title="Chuột chơi game"
                                             id="js-menu-1256">Chuột chơi game</a>
-
-
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/chuot-logitech.html" title="Chuột Logitech"
                                                     id="js-menu-1398">Chuột Logitech</a>
-
-
                                             </div>
                                         </div>
-
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/chuot-asus.html" title="Chuột Asus"
-                                                    id="js-menu-1376">Chuột Asus</a>
-
-
-                                            </div>
-                                        </div>
-
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/chuot-razer.html" title="Chuột Razer"
                                                     id="js-menu-1370">Chuột Razer</a>
-
-
                                             </div>
                                         </div>
-
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/chuot-pulsar.html" title="Chuột Pulsar"
-                                                    id="js-menu-2645">Chuột Pulsar</a>
-
-
-                                            </div>
-                                        </div>
-
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/chuot-corsair.html" title="Chuột Corsair"
                                                     id="js-menu-1373">Chuột Corsair</a>
-
-
                                             </div>
                                         </div>
-
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/chuot-cac-hang-khac_dm1377.html"
-                                                    title="Chuột các hãng khác" id="js-menu-1377">Chuột các hãng
-                                                    khác</a>
-
-
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/chuot-zowie.html" title="Chuột Zowie"
-                                                    id="js-menu-1641">Chuột Zowie</a>
-
-
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/chuot-akko.html" title="Chuột Akko"
-                                                    id="js-menu-1756">Chuột Akko</a>
-
-
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/chuot-hyperx_dm1875.html" title="Chuột HyperX"
-                                                    id="js-menu-1875">Chuột
-                                                    HyperX</a>
-
-
-                                            </div>
-                                        </div>
-
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/chuot-dareu.html" title="Chuột DareU"
                                                     id="js-menu-2894">Chuột DareU</a>
-
-
                                             </div>
                                         </div>
 
@@ -1601,8 +1178,7 @@
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/tai-nghe-gaming-gia-re.html"
-                                                    title="Tai nghe Gaming giá rẻ" id="js-menu-1776">Tai nghe Gaming
-                                                    giá rẻ</a>
+                                                    title="Tai nghe Gaming giá rẻ" id="js-menu-1776">Tai nghe Gaming giá rẻ</a>
                                             </div>
                                         </div>
                                         <div>
@@ -1613,143 +1189,14 @@
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/tai-nghe-asus_dm1383.html" title="Tai nghe Asus"
-                                                    id="js-menu-1383">Tai nghe
-                                                    Asus</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tai-nghe-kingston.html" title="Tai nghe HyperX"
-                                                    id="js-menu-1380">Tai nghe
-                                                    HyperX</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tai-nghe-corsair.html" title="Tai nghe Corsair"
-                                                    id="js-menu-1744">Tai nghe
-                                                    Corsair</a>
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <div class="cat-child-last">
                                                 <a href="/tai-nghe-logitech.html" title="Tai nghe Logitech"
-                                                    id="js-menu-1748">Tai nghe
-                                                    Logitech</a>
+                                                    id="js-menu-1748">Tai nghe Logitech</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/tai-nghe-dareu.html" title="Tai nghe DareU"
                                                     id="js-menu-1891">Tai nghe DareU</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tai-nghe-e-dra_dm2239.html" title="Tai nghe E-Dra"
-                                                    id="js-menu-2239">Tai nghe
-                                                    E-Dra</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tai-nghe-cac-hang-khac_dm1384.html"
-                                                    title="Tai nghe các hãng khác" id="js-menu-1384">Tai nghe các
-                                                    hãng khác</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tai-nghe-astro_dm1689.html" title="Tai nghe Astro"
-                                                    id="js-menu-1689">Tai nghe
-                                                    Astro</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/ghe-speed.html" title="Ghế SPEED" id="js-menu-2525">Ghế
-                                                    SPEED</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="cat-child-items">
-                                        <a href="/ghe-choi-game.html" class="cate-2" title="Ghế chơi game"
-                                            id="js-menu-1434">Ghế
-                                            chơi game</a>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/ghe-choi-game-gia-re.html" title="Ghế chơi game giá rẻ"
-                                                    id="js-menu-1451">Ghế
-                                                    chơi game giá rẻ</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/ghe-noblechairs.html" title="Ghế NOBLECHAIRS"
-                                                    id="js-menu-1491">Ghế
-                                                    NOBLECHAIRS</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/ghe-dxracer.html" title="Ghế DXRACER"
-                                                    id="js-menu-1436">Ghế DXRACER</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/ghe-akracing.html" title="Ghế AKRACING"
-                                                    id="js-menu-1435">Ghế AKRACING</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/ghe-warrior.html" title="Ghế WARRIOR"
-                                                    id="js-menu-1802">Ghế WARRIOR</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/ghe-e-dra.html" title="Ghế E-DRA" id="js-menu-1761">Ghế
-                                                    E-DRA</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/ghe-anda-seat.html" title="Ghế ANDA SEAT"
-                                                    id="js-menu-1548">Ghế ANDA SEAT</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/ghe-corsair.html" title="Ghế CORSAIR"
-                                                    id="js-menu-1518">Ghế CORSAIR</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/ghe-soleseat.html" title="Ghế SOLESEAT"
-                                                    id="js-menu-1636">Ghế SOLESEAT</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/ghe-cougar_dm2276.html" title="Ghế COUGAR"
-                                                    id="js-menu-2276">Ghế COUGAR</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/ghe-msi_dm1847.html" title="Ghế MSI"
-                                                    id="js-menu-1847">Ghế MSI</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/ghe-asus_dm1874.html" title="Ghế Asus"
-                                                    id="js-menu-1874">Ghế Asus</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1762,8 +1209,7 @@
                                     <img src="{{ asset('assets/img/cat/cat_f9fc468337e44b7e6b994b32dc8b8d44.png') }}"
                                         alt="Loa, Tai Nghe, Webcam, Tivi" />
                                 </span>
-                                <span class="title" title="Loa, Tai Nghe, Webcam, Tivi"> Loa, Tai Nghe, Webcam,
-                                    Tivi</span>
+                                <span class="title" title="Loa, Tai Nghe, Webcam, Tivi"> Loa, Tai Nghe, Webcam</span>
                             </a>
                             <div class="sub-menu  no-big-img  ">
                                 <div class="cat-child-holder" id="js-menu-container">
@@ -1786,15 +1232,13 @@
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/loa-di-dong-bluetooth.html" title="Loa di động bluetooth"
-                                                    id="js-menu-2531">Loa
-                                                    di động bluetooth</a>
+                                                    id="js-menu-2531">Loa di động bluetooth</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/loa-hoi-nghi_dm2273.html" title="Loa hội nghị"
-                                                    id="js-menu-2273">Loa hội
-                                                    nghị</a>
+                                                    id="js-menu-2273">Loa hội nghị</a>
                                             </div>
                                         </div>
                                         <div>
@@ -1806,8 +1250,7 @@
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/loa-keo-karaoke.html" title="Loa kéo Karaoke"
-                                                    id="js-menu-2533">Loa kéo
-                                                    Karaoke</a>
+                                                    id="js-menu-2533">Loa kéo Karaoke</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1816,115 +1259,42 @@
                                             id="js-menu-2536">Kiểu Loa</a>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/loa-20.html" title="Loa 2.0" id="js-menu-2537">Loa
-                                                    2.0</a>
+                                                <a href="/loa-20.html" title="Loa 2.0" id="js-menu-2537">Loa 2.0</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/loa-21.html" title="Loa 2.1" id="js-menu-2545">Loa
-                                                    2.1</a>
+                                                <a href="/loa-21.html" title="Loa 2.1" id="js-menu-2545">Loa 2.1</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/loa-41.html" title="Loa 4.1" id="js-menu-2539">Loa
-                                                    4.1</a>
+                                                <a href="/loa-41.html" title="Loa 4.1" id="js-menu-2539">Loa 4.1</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/loa-51.html" title="Loa 5.1" id="js-menu-2540">Loa
-                                                    5.1</a>
+                                                <a href="/loa-51.html" title="Loa 5.1" id="js-menu-2540">Loa 5.1</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/loa-71.html" title="Loa 7.1" id="js-menu-2541">Loa
-                                                    7.1</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/soundbar.html" title="Soundbar"
-                                                    id="js-menu-2543">Soundbar</a>
+                                                <a href="/loa-71.html" title="Loa 7.1" id="js-menu-2541">Loa 7.1</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="cat-child-items">
-                                        <a href="/kieu-theo-hang.html" class="cate-2" title="Loa theo hãng"
-                                            id="js-menu-2534">Loa
-                                            theo hãng</a>
+                                        <a href="/kieu-theo-hang.html" class="cate-2" title="Loa theo hãng" id="js-menu-2534">Loa theo hãng</a>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/loa-logitech_dm1803.html" title="Loa LOGITECH"
-                                                    id="js-menu-1803">Loa
-                                                    LOGITECH</a>
+                                                    id="js-menu-1803">Loa LOGITECH</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/loa-microlab_dm1805.html" title="Loa MICROLAB"
-                                                    id="js-menu-1805">Loa
-                                                    MICROLAB</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/loa-edifier.html" title="Loa EDIFIER"
-                                                    id="js-menu-2546">Loa EDIFIER</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/loa-creative_dm1806.html" title="Loa CREATIVE"
-                                                    id="js-menu-1806">Loa
-                                                    CREATIVE</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/loa-klipsch.html" title="loa KLIPSCH"
-                                                    id="js-menu-2547">loa KLIPSCH</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/loa-marshall.html" title="Loa Marshall"
-                                                    id="js-menu-2548">Loa Marshall</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/loa-jbl.html" title="Loa JBL" id="js-menu-2549">Loa
-                                                    JBL</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/loa-audioengine.html" title="Loa Audioengine"
-                                                    id="js-menu-2550">Loa
-                                                    Audioengine</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/loa-soundmax_dm1804.html" title="Loa SoundMax"
-                                                    id="js-menu-1804">Loa
-                                                    SoundMax</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/loa-hang-khac_dm1807.html" title="Loa hãng khác"
-                                                    id="js-menu-1807">Loa hãng
-                                                    khác</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/loa-soundmax.html" title="Loa SOUNDMAX"
-                                                    id="js-menu-2916">Loa SOUNDMAX</a>
+                                                    id="js-menu-1805">Loa MICROLAB</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1934,98 +1304,9 @@
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/webcam-logitech_dm2226.html" title="Webcam Logitech"
-                                                    id="js-menu-2226">Webcam
-                                                    Logitech</a>
+                                                    id="js-menu-2226">Webcam Logitech</a>
                                             </div>
                                         </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/webcam-asus_dm2221.html" title="Webcam Asus"
-                                                    id="js-menu-2221">Webcam Asus</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/webcam-thronmax_dm2228.html" title="Webcam Thronmax"
-                                                    id="js-menu-2228">Webcam
-                                                    Thronmax</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/webcam-hikvsion_dm2225.html" title="Webcam Hikvsion"
-                                                    id="js-menu-2225">Webcam
-                                                    Hikvsion</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/webcam-rapoo_dm2238.html" title="Webcam Rapoo"
-                                                    id="js-menu-2238">Webcam
-                                                    Rapoo</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/webcam-dahua_dm2222.html" title="Webcam Dahua"
-                                                    id="js-menu-2222">Webcam
-                                                    Dahua</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/webcam-genius_dm2223.html" title="Webcam Genius"
-                                                    id="js-menu-2223">Webcam
-                                                    Genius</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/webcam-e-dra_dm2224.html" title="Webcam E-Dra"
-                                                    id="js-menu-2224">Webcam
-                                                    E-Dra</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/webcam-razer_dm2227.html" title="Webcam Razer"
-                                                    id="js-menu-2227">Webcam
-                                                    Razer</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="cat-child-items">
-                                        <a href="/Tivi_dm1264.html" class="cate-2"
-                                            title="Tivi Led - Smart Tivi - Tivi LCD" id="js-menu-1264">Tivi Led -
-                                            Smart Tivi - Tivi LCD</a>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/sony_dm1299.html" title="Sony"
-                                                    id="js-menu-1299">Sony</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/samsung_dm1300.html" title="Samsung"
-                                                    id="js-menu-1300">Samsung</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/lg_dm1301.html" title="LG" id="js-menu-1301">LG</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/panasonic_dm1302.html" title="Panasonic"
-                                                    id="js-menu-1302">Panasonic</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="cat-child-items">
-                                        <a href="/tai-nghe_dm1180.html" class="cate-2" title="Tai nghe"
-                                            id="js-menu-1180">Tai
-                                            nghe</a>
                                     </div>
                                 </div>
                             </div>
@@ -2038,413 +1319,6 @@
                                 </span>
                                 <span class="title" title="Cooling, Tản nhiệt"> Cooling, Tản nhiệt</span>
                             </a>
-                            <div class="sub-menu  no-big-img  ">
-                                <div class="cat-child-holder" id="js-menu-container">
-                                    <div class="cat-child-items">
-                                        <a href="/tan-nhiet-nuoc-watercooling_dm1388.html" class="cate-2"
-                                            title="Tản nước - Watercooling" id="js-menu-1388">Tản nước -
-                                            Watercooling</a>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/bo-tan-nhiet-nuoc-custom_dm1389.html"
-                                                    title="Bộ tản nước Custom" id="js-menu-1389">Bộ tản nước
-                                                    Custom</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tan-nhiet-nuoc-ekwb-made-in-eu_dm1520.html"
-                                                    title="Tản nhiệt nước EKWB" id="js-menu-1520">Tản nhiệt nước
-                                                    EKWB</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tan-nhiet-nuoc-barrow_dm1521.html"
-                                                    title="Tản nhiệt nước Barrow" id="js-menu-1521">Tản nhiệt nước
-                                                    Barrow</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tan-nhiet-nuoc-bykski_dm1522.html"
-                                                    title="Tản nhiệt nước Bykski" id="js-menu-1522">Tản nhiệt nước
-                                                    Bykski</a>
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tan-nhiet-nuoc-cac-hang_dm1540.html"
-                                                    title="Tản nhiệt nước các hãng" id="js-menu-1540">Tản nhiệt nước
-                                                    các hãng</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="cat-child-items">
-                                        <a href="/bo-tan-nhiet-nuoc-all-in-one_dm1390.html" class="cate-2"
-                                            title="Tản nhiệt nước All in One" id="js-menu-1390">Tản nhiệt nước All
-                                            in One</a>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tan-nhiet-nuoc-asus_dm1878.html"
-                                                    title="Tản nhiệt nước Asus" id="js-menu-1878">Tản nhiệt nước
-                                                    Asus</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tan-nhiet-nuoc-gigabyte_dm1911.html"
-                                                    title="Tản nước Gigabyte" id="js-menu-1911">Tản nước
-                                                    Gigabyte</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tan-nhiet-nuoc-msi_dm1912.html" title="Tản nhiệt nước MSI"
-                                                    id="js-menu-1912">Tản
-                                                    nhiệt nước MSI</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tan-nhiet-nuoc-corsair_dm1523.html"
-                                                    title="Tản nước Corsair" id="js-menu-1523">Tản nước Corsair</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tan-nhiet-nuoc-nzxt_dm1524.html"
-                                                    title="Tản nhiệt nước NZXT" id="js-menu-1524">Tản nhiệt nước
-                                                    NZXT</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tan-nhiet-nuoc-deepcool_dm1525.html"
-                                                    title="Tản nhiệt nước DeepCool" id="js-menu-1525">Tản nhiệt nước
-                                                    DeepCool</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tan-nhiet-nuoc-id-cooling_dm1526.html"
-                                                    title="Tản nhiệt nước ID-Cooling" id="js-menu-1526">Tản nhiệt
-                                                    nước ID-Cooling</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tan-nhiet-nuoc-coolermaster_dm1527.html"
-                                                    title="Tản nước CoolerMaster" id="js-menu-1527">Tản nước
-                                                    CoolerMaster</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tan-nhiet-nuoc-xigmatek_dm1601.html"
-                                                    title="Tản nhiệt nước Xigmatek" id="js-menu-1601">Tản nhiệt nước
-                                                    Xigmatek</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tan-nhiet-nuoc-thermaltake_dm1729.html"
-                                                    title="Tản nước Thermaltake" id="js-menu-1729">Tản nước
-                                                    Thermaltake</a>
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tan-nhiet-nuoc-sama.html" title="Tản nhiệt nước SAMA"
-                                                    id="js-menu-2743">Tản
-                                                    nhiệt nước SAMA</a>
-
-
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tan-nhiet-nuoc-lian-li.html"
-                                                    title="Tản nhiệt nước Lian Li" id="js-menu-2735">Tản nhiệt nước
-                                                    Lian Li</a>
-
-
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tan-nhiet-nuoc-thermalright_dm2350.html"
-                                                    title="Tản nước Thermalright" id="js-menu-2350">Tản nước
-                                                    Thermalright</a>
-
-
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tan-nhiet-nuoc-jonsbo.html" title="Tản nhiệt nước JONSBO"
-                                                    id="js-menu-2760">Tản
-                                                    nhiệt nước JONSBO</a>
-
-
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tan-nhiet-nuoc-segotep.html"
-                                                    title="Tản nhiệt nước Segotep" id="js-menu-2802">Tản nhiệt nước
-                                                    Segotep</a>
-
-
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tan-nhiet-nuoc-cac-hang_dm1528.html"
-                                                    title="Tản nhiệt nước các hãng" id="js-menu-1528">Tản nhiệt nước
-                                                    các hãng</a>
-
-
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="cat-child-items">
-                                        <a href="/tan-nhiet-khi-aircooling_dm1392.html" class="cate-2"
-                                            title="Tản nhiệt khí - Aircooling" id="js-menu-1392">Tản nhiệt khí -
-                                            Aircooling</a>
-
-
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tan-nhiet-khi-id-cooling_dm1530.html"
-                                                    title="Tản nhiệt khí ID-Cooling" id="js-menu-1530">Tản nhiệt khí
-                                                    ID-Cooling</a>
-
-
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tan-nhiet-khi-coolermaster_dm1531.html"
-                                                    title="Tản khí CoolerMaster" id="js-menu-1531">Tản khí
-                                                    CoolerMaster</a>
-
-
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tan-nhiet-khi-deepcool_dm1529.html"
-                                                    title="Tản nhiệt khí DeepCool" id="js-menu-1529">Tản nhiệt khí
-                                                    DeepCool</a>
-
-
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tan-nhiet-khi-gamemax_dm1766.html"
-                                                    title="Tản nhiệt khí Gamemax" id="js-menu-1766">Tản nhiệt khí
-                                                    Gamemax</a>
-
-
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tan-nhiet-khi-noctua_dm1881.html"
-                                                    title="Tản nhiệt khí Noctua" id="js-menu-1881">Tản nhiệt khí
-                                                    Noctua</a>
-
-
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tan-khi-thermalright_dm1882.html"
-                                                    title="Tản khí Thermalright" id="js-menu-1882">Tản khí
-                                                    Thermalright</a>
-
-
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tan-nhiet-khi-jonsbo.html" title="Tản nhiệt khí JONSBO"
-                                                    id="js-menu-2761">Tản
-                                                    nhiệt khí JONSBO</a>
-
-
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tan-nhiet-khi-segotep.html" title="Tản nhiệt khí Segotep"
-                                                    id="js-menu-2803">Tản
-                                                    nhiệt khí Segotep</a>
-
-
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tan-nhiet-khi-xigmatek.html"
-                                                    title="Tản nhiệt khí Xigmatek" id="js-menu-2817">Tản nhiệt khí
-                                                    Xigmatek</a>
-
-
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tan-nhiet-khi-cac-hang_dm1532.html"
-                                                    title="Tản nhiệt khí các hãng" id="js-menu-1532">Tản nhiệt khí
-                                                    các hãng</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="cat-child-items">
-                                        <a href="/quat-tan-nhiet_dm1519.html" class="cate-2"
-                                            title="Quạt tản nhiệt" id="js-menu-1519">Quạt tản nhiệt</a>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/quat-asus_dm1870.html" title="Quạt Asus"
-                                                    id="js-menu-1870">Quạt Asus</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/quat-tan-nhiet-nzxt_dm1534.html" title="Quạt NZXT"
-                                                    id="js-menu-1534">Quạt
-                                                    NZXT</a>
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/quat-tan-nhiet-corsair_dm1533.html" title="Quạt Corsair"
-                                                    id="js-menu-1533">Quạt
-                                                    Corsair</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/quat-tan-nhiet-thermaltake_dm1730.html"
-                                                    title="Quạt Thermaltake" id="js-menu-1730">Quạt Thermaltake</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/quat-tan-nhiet-cooler-master_dm1746.html"
-                                                    title="Quạt Cooler Master" id="js-menu-1746">Quạt Cooler
-                                                    Master</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/quat-tan-nhiet-deepcool_dm1764.html"
-                                                    title="Quạt tản nhiệt Deepcool" id="js-menu-1764">Quạt tản nhiệt
-                                                    Deepcool</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/quat-xigmatek_dm1765.html" title="Quạt Xigmatek"
-                                                    id="js-menu-1765">Quạt
-                                                    Xigmatek</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/quat-jonsbo.html" title="Quạt JONSBO"
-                                                    id="js-menu-2762">Quạt JONSBO</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/quat-lian-li.html" title="Quạt Lian Li"
-                                                    id="js-menu-2964">Quạt Lian Li</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/quat-id-cooling.html" title="Quạt ID Cooling"
-                                                    id="js-menu-2965">Quạt ID
-                                                    Cooling</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/quat-tan-nhiet-cac-hang_dm1535.html" title="Quạt các hãng"
-                                                    id="js-menu-1535">Quạt các hãng</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="cat-child-items">
-                                        <a href="/keo-tan-nhiet.html" class="cate-2" title="Keo Tản Nhiệt"
-                                            id="js-menu-2819">Keo Tản
-                                            Nhiệt</a>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/keo-coolermaster.html" title="Keo CoolerMaster"
-                                                    id="js-menu-2820">Keo
-                                                    CoolerMaster</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/keo-noctua.html" title="Keo Noctua"
-                                                    id="js-menu-2821">Keo Noctua</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/keo-arctic.html" title="Keo Arctic"
-                                                    id="js-menu-2822">Keo Arctic</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/keo-corsair.html" title="Keo Corsair"
-                                                    id="js-menu-2823">Keo Corsair</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/keo-thermal-grizzly.html" title="Keo Thermal Grizzly"
-                                                    id="js-menu-2824">Keo
-                                                    Thermal Grizzly</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/keo-thermalright.html" title="Keo Thermalright"
-                                                    id="js-menu-2825">Keo
-                                                    Thermalright</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                         <div class="item bg-white" data-id="2112">
                             <a href="{{ route('accessories.show') }}" class="pro-cate-1">
@@ -2452,181 +1326,9 @@
                                     <img src="{{ asset('assets/img/cat/cat_5804bb2ce092a894cf86a82c17affb54.png') }}"
                                         alt="Phụ Kiện Laptop, PC, Khác" />
                                 </span>
-
                                 <span class="title" title="Phụ Kiện Laptop, PC, Khác"> Phụ Kiện Laptop, PC, Khác
                                 </span>
                             </a>
-                            <div class="sub-menu  no-big-img  ">
-                                <div class="cat-child-holder" id="js-menu-container">
-                                    <div class="cat-child-items">
-                                        <a href="/linh-kien-mtxt_dm1022.html" class="cate-2"
-                                            title="Linh kiện Laptop" id="js-menu-1022">Linh kiện Laptop</a>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/hdd-laptop_dm1135.html" title="HDD Laptop"
-                                                    id="js-menu-1135">HDD Laptop</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/ram-laptop.html" title="Ram Laptop"
-                                                    id="js-menu-1136">Ram Laptop</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/sac-pin-laptop-adapter_dm1174.html" title="Sạc Laptop"
-                                                    id="js-menu-1174">Sạc
-                                                    Laptop</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/ssd-laptop_dm1909.html" title="SSD Laptop"
-                                                    id="js-menu-1909">SSD Laptop</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="cat-child-items">
-                                        <a href="/thiet-bi-chuyen-doi.html" class="cate-2"
-                                            title="Thiết bị chuyển đổi" id="js-menu-2123">Thiết bị chuyển đổi</a>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tu-usb-sang-cac-loai.html" title="Từ USB Sang Các Loại"
-                                                    id="js-menu-2135">Từ USB
-                                                    Sang Các Loại</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tu-hdmi-sang-cac-loai.html" title="Từ HDMI Sang Các Loại"
-                                                    id="js-menu-2136">Từ
-                                                    HDMI Sang Các Loại</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tu-mini-displayport-sang-cac-loai.html"
-                                                    title="Từ Mini Displayport Sang Các Loại" id="js-menu-2137">Từ
-                                                    Mini Displayport Sang Các Loại</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tu-type-c-sang-cac-loai.html"
-                                                    title="Từ Type C Sang Các Loại" id="js-menu-2138">Từ Type C Sang
-                                                    Các Loại</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tu-dvi-sang-cac-loai.html" title="Từ DVI Sang Các Loại"
-                                                    id="js-menu-2140">Từ DVI
-                                                    Sang Các Loại</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tu-displayport-sang-cac-loai.html"
-                                                    title="Từ Displayport Sang Các Loại" id="js-menu-2141">Từ
-                                                    Displayport Sang Các Loại</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/tu-vga-sang-cac-loai.html" title="Từ VGA Sang Các Loại"
-                                                    id="js-menu-2139">Từ VGA
-                                                    Sang Các Loại</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/thiet-bi-chuyen-doi-khac.html"
-                                                    title="Thiết Bị Chuyển Đổi Khác" id="js-menu-2142">Thiết Bị
-                                                    Chuyển Đổi Khác</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="cat-child-items">
-                                        <a href="/sac-du-phong_dm1289.html" class="cate-2" title="Sạc dự phòng"
-                                            id="js-menu-1289">Sạc dự phòng</a>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/sac-du-phong-xiaomi.html" title="Sạc Dự Phòng Xiaomi"
-                                                    id="js-menu-2502">Sạc Dự
-                                                    Phòng Xiaomi</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="cat-child-items">
-                                        <a href="/day-cap-cac-loai.html" class="cate-2" title="Dây Cáp Các Loại"
-                                            id="js-menu-2113">Dây Cáp Các Loại</a>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/cap-hdmi.html" title="Cáp HDMI" id="js-menu-2122">Cáp
-                                                    HDMI</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/cap-vga.html" title="Cáp VGA" id="js-menu-2125">Cáp
-                                                    VGA</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/cap-dvi.html" title="Cáp DVI" id="js-menu-2126">Cáp
-                                                    DVI</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/cap-displayport.html" title="Cáp Displayport"
-                                                    id="js-menu-2127">Cáp
-                                                    Displayport</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/cap-chuyen-doi-cac-loai.html"
-                                                    title="Cáp Chuyển Đổi Các Loại" id="js-menu-2129">Cáp Chuyển Đổi
-                                                    Các Loại</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/cap-usb.html" title="Cáp USB" id="js-menu-2130">Cáp
-                                                    USB</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/cap-khac.html" title="Cáp Khác" id="js-menu-2131">Cáp
-                                                    Khác</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/cap-nguon-cac-loai.html" title="Cáp nguồn các loại"
-                                                    id="js-menu-2133">Cáp nguồn
-                                                    các loại</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/cap-am-thanh.html" title="Cáp Âm Thanh"
-                                                    id="js-menu-2132">Cáp Âm Thanh</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/cap-mang.html" title="Cáp mạng" id="js-menu-2134">Cáp
-                                                    mạng</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -2656,81 +1358,26 @@
                                         <div class="support-box">
                                             <p class="box-title">◆ 49 Thái Hà</p>
                                             <a href="https://zalo.me/0918.557.006" target="_blank"
-                                                rel="nofollow">Hotline -
-                                                0918.557.006</a>
+                                                rel="nofollow">Hotline - 0918.557.006</a>
                                         </div>
                                     </div>
                                     <div class="item-right">
                                         <div class="support-box">
                                             <p class="box-title">◆ 63 Trần Thái Tông</p>
                                             <a href="https://zalo.me/0862.136.488" target="_blank"
-                                                rel="nofollow">Hotline -
-                                                0862.136.488</a>
+                                                rel="nofollow">Hotline - 0862.136.488</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-                            {{-- <div class="col-item">
-                                <p class="title">Khách hàng Showroom TP.HCM</p>
-                                <div class="support-list">
-                                    <div class="item-left">
-                                        <div class="support-box">
-                                            <p class="box-title">◆158-160 Lý Thường Kiệt</p>
-                                            <a href="https://zalo.me/0917.948.081" target="_blank"
-                                                rel="nofollow">Hotline -
-                                                0917.948.081</a>
-                                        </div>
-                                    </div>
-                                    <div class="item-right">
-                                        <div class="support-box">
-                                            <p class="box-title">◆ 330-332 Võ Văn Tần</p>
-                                            <a href="https://zalo.me/0931.105.498" target="_blank"
-                                                rel="nofollow">Hotline -
-                                                0931.105.498</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> --}}
-
-                            {{-- <div class="col-item">
-                                <p class="title">Khách hàng Doanh nghiệp - Dự án</p>
-
-                                <div class="support-list">
-                                    <div class="support-box">
-                                        <p class="box-title">◆ Hà Nội</p>
-
-                                        <a href="https://zalo.me/0919.917.001" target="_blank"
-                                            rel="nofollow">Hotline -
-                                            0919.917.001</a>
-                                        <a href="https://zalo.me/0904.155.568" target="_blank"
-                                            rel="nofollow">Hotline -
-                                            0904.155.568</a>
-                                    </div>
-
-                                    <div class="support-box">
-                                        <p class="box-title">◆ TP. HCM</p>
-
-                                        <a href="https://zalo.me/0901.118.414" target="_blank"
-                                            rel="nofollow">Hotline -
-                                            0901.118.414</a>
-                                        <a href="https://zalo.me/0909.143.970" target="_blank"
-                                            rel="nofollow">Hotline -
-                                            0909.143.970</a>
-                                    </div>
-                                </div>
-                            </div> --}}
                         </div>
                     </div>
                     <a href="{{ route('pages.laptop-outlet') }}"> <img
-                            src="{{ asset('assets/img/header-menu-icon/medal.png') }}" class="mr-1" /> Laptop Xả
-                        Kho </a>
+                            src="{{ asset('assets/img/header-menu-icon/medal.png') }}" class="mr-1" /> Laptop Xả Kho </a>
                     <a href="{{ route('pages.warranty-policy') }}"> <img
-                            src="{{ asset('assets/img/header-menu-icon/package.png') }}" class="mr-1" /> Đổi trả
-                        miễn phí </a>
+                            src="{{ asset('assets/img/header-menu-icon/package.png') }}" class="mr-1" /> Đổi trả miễn phí </a>
                     <a href="{{ route('pages.shipping-policy') }}"> <img
-                            src="{{ asset('assets/img/header-menu-icon/delivery.png') }}" class="mr-1" /> Miễn
-                        phí vận chuyển </a>
+                            src="{{ asset('assets/img/header-menu-icon/delivery.png') }}" class="mr-1" /> Miễn phí vận chuyển </a>
                 </div>
             </div>
         </div>
