@@ -168,7 +168,7 @@ class LaptopController extends Controller
         // Phân trang kết quả và trả về view
         $laptops = $laptops->with('attributes')->paginate(12);
 
-        return view('categories.filtered-laptops', compact('laptops'));
+        return view('categories.filtered-laptops', compact('laptops', 'filters'));
     }
 
 }
