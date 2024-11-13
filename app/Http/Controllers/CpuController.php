@@ -25,12 +25,23 @@ class CpuController extends Controller
     }
     public function showCpus()
     {
+        $topCpus = Cpu::whereHas('attributes', function ($query) {
+            $query->where('name', 'Loại linh kiện')
+                  ->where('value', 'CPU');
+        })
+        ->whereHas('attributes', function ($query) {
+            $query->where('name', 'On Top')
+                  ->where('value', '1');
+        })
+        ->with('attributes')
+        ->limit(10)->get();
+
         $cpus = Cpu::whereHas('attributes', function ($query) {
             $query->where('name', 'Loại linh kiện')
                   ->where('value', 'CPU');
-        })->with('attributes')->get();
-        return view('categories.cpus', compact('cpus'));
-    }
+        })->paginate(12);
 
+        return view('categories.cpus', compact('cpus', 'topCpus'));
+    }
 }
 

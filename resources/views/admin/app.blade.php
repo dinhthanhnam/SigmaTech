@@ -28,7 +28,7 @@
             <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
             <div class="d-flex align-items-center justify-content-between w-100 header-main">
                 <a href="/" class="logo mx-auto">
-                    <img src="{{ asset('assets/img/sigmatech-yellow.png') }}" alt="SigmaTech Logo" class="logo-img"
+                    <img src="{{ asset('assets/img/sigmatech-cms.png') }}" alt="SigmaTech Logo" class="logo-img"
                         style = "width: auto; height: 50px;" />
                 </a>
                 <div class="header-right d-flex align-items-center">
@@ -62,7 +62,7 @@
                 </div>
                 <hr style="background-color: white">
                 <ul class="app-menu">
-                    <li><a class="app-menu__item" href="{{ route('admin.dashboard') }}"><i
+                    <li><a class="app-menu__item" href="{{ route('admin.index') }}"><i
                                 class='app-menu__icon fa-solid fa-square-poll-vertical'></i><span
                                 class="app-menu__label">Dashboard</span></a></li>
                     <li><a class="app-menu__item" href="{{ route('admin.show-product') }}"><i
@@ -74,7 +74,7 @@
                     <li><a class="app-menu__item" href="table-data-banned.html"><i
                                 class='app-menu__icon fa-solid fa-network-wired'></i><span class="app-menu__label">Quản
                                 lý danh mục</span></a></li>
-                    <li><a class="app-menu__item" href="table-data-money.html"><i
+                    <li><a class="app-menu__item" href="{{ route('admin.show-sale') }}"><i
                                 class='app-menu__icon fa-solid fa-tags'></i><span class="app-menu__label">Flash Sale &
                                 Khuyến mãi</span></a></li>
                     <li><a class="app-menu__item" href="#"><i class='app-menu__icon fa-solid fa-user'></i><span

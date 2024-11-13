@@ -1,15 +1,16 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Laptop;
 use App\Models\Cpu;
 use Carbon\Carbon;
+
 class SaleController extends Controller
 {
-    public function showFlashSale()
-    {
+    public function index() {
         $laptops = Laptop::whereHas('attributes', function ($query) {
             $query->where('name', 'Sale End Date')
                   ->whereRaw("STR_TO_DATE(laptop_attribute.value, '%Y-%m-%d %H:%i:%s') > ?", [Carbon::now()->format('Y-m-d H:i:s')]);
@@ -21,7 +22,6 @@ class SaleController extends Controller
         })->with('attributes')->get();
         
         $flashSaleItems = collect()->concat($laptops)->concat($cpus);
-
-        return view('pages.flash-sale', compact('flashSaleItems'));
+        return view('admin.sale-management', compact('flashSaleItems'));
     }
 }

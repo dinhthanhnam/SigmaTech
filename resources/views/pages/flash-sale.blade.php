@@ -54,12 +54,10 @@
     document.querySelectorAll('.js-deal-time-holder').forEach((element) => {
       // Lấy thời gian kết thúc từ thuộc tính sale-end-time và chuyển đổi thành mili giây
       const endTime = element.getAttribute('sale-end-time') * 1000;
-
       // Thiết lập bộ đếm ngược cho từng thẻ
       const countdown = setInterval(function() {
         const now = new Date().getTime();
-        const timeLeft = endTime - (now - 25200000);
-
+        const timeLeft = endTime - now;
         // Tính giờ, phút và giây từ timeLeft
         const totalHours = Math.floor(timeLeft / (1000 * 60 * 60));
         const totalMinutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));

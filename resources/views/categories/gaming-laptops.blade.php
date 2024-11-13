@@ -231,22 +231,18 @@
         <div class="p-container bg-white">
           <div class="sort-container d-flex align-items-center justify-content-between flex-wrap">
             <div class="d-flex align-items-center">
-              <b style="font-size:16px;margin-right: 20px"> ? Laptop Gaming - Đồ Họa </b>
+              <b id="product-count-display" style="font-size:16px;margin-right: 20px"> Laptop Gaming - Đồ Họa </b>
               <div class="sort-by-group">
-                <a href="javascript:void(0)">
-                  <i class="mb-icons icon-in-stock"></i>
-                  <span> Còn hàng </span>
-                </a>
-                <a href="javascript:void(0)">
-                  <i class="mb-icons icon-new"></i>
+                <a href="/laptops/filter?sort=newest">
+                  <i class="mb-icons icon-new" data-filter_code = "sort" data-value="newest"></i>
                   <span> Mới nhất </span>
                 </a>
-                <a href="javascript:void(0)">
-                  <i class="mb-icons icon-increase"></i>
+                <a href="/laptops/filter?sort=asc">
+                  <i class="mb-icons icon-increase" data-filter_code = "sort" data-value="asc"></i>
                   <span> Giá tăng dần </span>
                 </a>
-                <a href="javascript:void(0)" class="current">
-                  <i class="mb-icons icon-decrease"></i>
+                <a href="/laptops/filter?sort=desc">
+                  <i class="mb-icons icon-decrease" data-filter_code = "sort" data-value="desc"></i>
                   <span> Giá giảm dần </span>
                 </a>
               </div>
@@ -421,9 +417,8 @@
               );
             window.location.href =
               `/laptops/filter?min=${encodeURIComponent(selectedMin)}&max=${encodeURIComponent(selectedMax)}`;
-
-
-          } else {
+          } 
+          else {
             window.location.href =
               `/laptops/filter?${selectedFilterType}=${encodeURIComponent(selectedValue)}`;
           }
@@ -431,4 +426,21 @@
       });
     });
   </script>
+
+{{-- Count --}}
+<script>
+ 
+  document.addEventListener('DOMContentLoaded', function() {
+    // Tìm container chứa danh sách sản phẩm
+    const productListContainer = document.querySelector('.p-list-container');
+
+    // Đếm số lượng sản phẩm bên trong
+    const productCount = productListContainer.children.length;
+
+    // Cập nhật nội dung của phần tử <b> với id là 'product-count-display'
+    const productCountDisplay = document.getElementById('product-count-display');
+    productCountDisplay.textContent = `${productCount} Laptop Gaming - Đồ Họa`;
+  });
+</script>
+
 @endpush

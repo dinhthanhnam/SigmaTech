@@ -40,6 +40,7 @@ class LaptopController extends Controller
                   ->where('value', '1');
         })
         ->with('attributes')
+        ->limit(10)
         ->get();
         
         return view('categories.gaming-laptops', compact('gamingLaptops', 'topGamingLaptops'));
@@ -61,6 +62,7 @@ class LaptopController extends Controller
                   ->where('value', '1');
         })
         ->with('attributes')
+        ->limit(10)
         ->get();
         return view('categories.office-laptops', compact('officeLaptops', 'topOfficeLaptops'));
     }
@@ -79,6 +81,7 @@ class LaptopController extends Controller
             'os' => $request->input('os'),
             'weight' => $request->input('weight'),
             'color' => $request->input('color'),
+            'sort' => $request->input('sort'),
         ];
 
         $laptops = Laptop::query();
@@ -155,11 +158,17 @@ class LaptopController extends Controller
                       ->where('value', 'like', '%' . $filters['color'] . '%'); 
             });
         }
+        if (!empty($filters['sort'])) {
+            $laptops->whereHas('attributes', function ($query) use ($filters) {
+                $query->where('name', 'Price')
+                    ->orderBy('value', $filters['sort']);
+            });
+        }
 
         // Phân trang kết quả và trả về view
         $laptops = $laptops->with('attributes')->paginate(12);
 
-        return view('categories.filtered-laptops', compact('laptops'));
+        return view('categories.filtered-laptops', compact('laptops', 'filters'));
     }
 
 }

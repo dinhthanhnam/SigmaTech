@@ -15,17 +15,56 @@ class HomeController extends Controller
         $gamingLaptops = Laptop::whereHas('attributes', function ($query) {
             $query->where('name', '[Laptop] Loại laptop')
                   ->where('value', 'Gaming');
-        })->with('attributes')->get();
+        })
+        ->whereHas('attributes', function ($query) {
+            $query->where('name', 'On Top')
+                  ->where('value', '1');
+        })
+        ->with('attributes')
+        ->limit(10)->get();
+
+        foreach($gamingLaptops as $item)
+        {
+            $brand = $item->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
+            $type = $item->attributes->firstWhere('name', '[Laptop] Loại laptop')->pivot->value ?? 'N/A';
+            $item->link = 'laptops/'.$type.'/'.$brand.'/'.$item->id;
+        };
 
         $officeLaptops = Laptop::whereHas('attributes', function ($query) {
             $query->where('name', '[Laptop] Loại laptop')
                   ->where('value', 'Office');
-        })->with('attributes')->get();
+        })
+        ->whereHas('attributes', function ($query) {
+            $query->where('name', 'On Top')
+                  ->where('value', '1');
+        })
+        ->with('attributes')
+        ->limit(10)->get();
+
+        foreach($officeLaptops as $item)
+        {
+            $brand = $item->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
+            $type = $item->attributes->firstWhere('name', '[Laptop] Loại laptop')->pivot->value ?? 'N/A';
+            $item->link = 'laptops/'.$type.'/'.$brand.'/'.$item->id;
+        };
 
         $cpus = Cpu::whereHas('attributes', function ($query) {
             $query->where('name', 'Loại linh kiện')
                   ->where('value', 'CPU');
-        })->with('attributes')->get();
+        })
+        ->whereHas('attributes', function ($query) {
+            $query->where('name', 'On Top')
+                  ->where('value', '1');
+        })
+        ->with('attributes')
+        ->limit(10)->get();
+
+        foreach($cpus as $item)
+        {
+            $brand = $item->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
+            $type = $item->attributes->firstWhere('name', 'Loại linh kiện')->pivot->value ?? 'N/A';
+            $item->link = 'pc-parts/'.$type.'/'.$brand.'/'.$item->id;
+        };
 
         $laptopsSale = Laptop::whereHas('attributes', function ($query) {
             $query->where('name', 'Sale End Date')
@@ -38,7 +77,17 @@ class HomeController extends Controller
         })->with('attributes')->get();
         
         $flashSaleItems = collect()->concat($laptopsSale)->concat($cpusSale);
-
+        foreach($flashSaleItems as $item)
+        {
+            $brand = $item->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
+            if($item->attributes->firstWhere('name', '[Laptop] Loại laptop')) {
+                $type = $item->attributes->firstWhere('name', '[Laptop] Loại laptop')->pivot->value;
+                $item->link = 'laptops/'.$type.'/'.$brand.'/'.$item->id;
+            }elseif ($item->attributes->firstWhere('name', 'Loại linh kiện')) {
+                $type = $item->attributes->firstWhere('name', 'Loại linh kiện')->pivot->value;
+                $item->link = 'pc-parts/'.$type.'/'.$brand.'/'.$item->id;
+            }
+        };
 
         return view('index', compact( 'flashSaleItems', 'gamingLaptops', 'officeLaptops', 'cpus'));
     }
