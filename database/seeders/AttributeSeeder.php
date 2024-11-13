@@ -103,7 +103,22 @@ class AttributeSeeder extends Seeder
             ['name' => '[RAM] Kích thước', 'data_type' => 'string'],
             
             //monitor attribute
-            
+            ['name' => '[MON] Kiểu dáng màn hình', 'data_type' => 'string'],
+            ['name' => '[MON] Tỉ lệ khung hình', 'data_type' => 'string'],
+            ['name' => '[MON] Kích thước mặc định', 'data_type' => 'string'],
+            ['name' => '[MON] Công nghệ tấm nền', 'data_type' => 'string'],
+            ['name' => '[MON] Phân giải điểm ảnh', 'data_type' => 'string'],
+            ['name' => '[MON] Độ sáng hiển thị', 'data_type' => 'string'],
+            ['name' => '[MON] Tần số quét', 'data_type' => 'string'],
+            ['name' => '[MON] Thời gian đáp ứng', 'data_type' => 'string'],
+            ['name' => '[MON] Chỉ số màu sắc', 'data_type' => 'string'],
+            ['name' => '[MON] Hỗ trợ tiêu chuẩn', 'data_type' => 'string'],
+            ['name' => '[MON] Cổng cắm kết nối', 'data_type' => 'string'],
+            ['name' => '[MON] Phụ kiện trọng hộp', 'data_type' => 'string'],
+            ['name' => '[MON] Điện năng tiêu thụ', 'data_type' => 'string'],
+            ['name' => '[MON] Tính năng âm thanh', 'data_type' => 'string'],
+            ['name' => '[MON] Thiết kế cơ học', 'data_type' => 'string'],
+            ['name' => '[MON] Trọng lượng', 'data_type' => 'string'],
         ]);
     }
 }

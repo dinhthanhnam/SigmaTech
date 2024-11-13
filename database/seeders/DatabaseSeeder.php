@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
+use App\Models\Monitor;
 use Illuminate\Database\Seeder;
 use Database\Seeders\CpuTableSeeder;
 use Database\Seeders\AttributeSeeder;
@@ -41,5 +43,7 @@ class DatabaseSeeder extends Seeder
         $this->call(LaptopSeeder::class);
 
         $this->call(GpuSeeder::class);
+
+        $this->call(MonitorSeeder::class);
     }
 }

@@ -567,7 +567,7 @@
                                 <div class="cat-child-holder" id="js-menu-container">
 
                                     <div class="cat-child-items">
-                                        <a href="/cpu-bo-vi-xu-ly.html" class="cate-2" title="CPU - Bộ Vi Xử Lý"
+                                        <a href="/cpu" class="cate-2" title="CPU - Bộ Vi Xử Lý"
                                             id="js-menu-1025">CPU - Bộ Vi Xử Lý</a>
                                         <div>
                                             <div class="cat-child-last">
@@ -601,13 +601,12 @@
                                         </div>
                                     </div>
                                     <div class="cat-child-items">
-                                        <a href="/bo-mach-chu.html" class="cate-2" title="Mainboard - Bo Mạch Chủ"
+                                        <a href="/mainboards" class="cate-2" title="Mainboard - Bo Mạch Chủ"
                                             id="js-menu-1024">Mainboard - Bo Mạch Chủ</a>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/mainboard-intel.html" title="Mainboard cho CPU INTEL"
-                                                    id="js-menu-1316">Mainboard
-                                                    cho CPU INTEL</a>
+                                                <a href="/mainboards/Intel.html" title="Mainboard cho CPU INTEL"
+                                                    id="js-menu-1316">Mainboard cho CPU INTEL</a>
                                                 <div class="cat-4-list">
                                                     <a href="/mainboard-x299.html" title="MAINBOARD X299"
                                                         id="js-menu-1998">MAINBOARD X299</a>
@@ -634,49 +633,46 @@
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/mainboard-amd.html" title="Mainboard cho CPU AMD"
+                                                <a href="/mainboards/AMD" title="Mainboard cho CPU AMD"
                                                     id="js-menu-1315">Mainboard cho
                                                     CPU AMD</a>
                                                 <div class="cat-4-list">
-                                                    <a href="/mainboard-trx40.html" title="MAINBOARD TRX40"
-                                                        id="js-menu-2006">MAINBOARD
-                                                        TRX40</a>
-                                                    <a href="/mainboard-x570.html" title="MAINBOARD X570"
+                                                    <a href="/mainboards/AMD/X570" title="MAINBOARD X570"
                                                         id="js-menu-2007">MAINBOARD X570</a>
-                                                    <a href="/mainboard-b550.html" title="MAINBOARD B550"
+                                                    <a href="/mainboards/AMD/B550" title="MAINBOARD B550"
                                                         id="js-menu-2008">MAINBOARD B550</a>
-                                                    <a href="/mainboard-b450.html" title="MAINBOARD B450"
+                                                    <a href="/mainboards/AMD/B450" title="MAINBOARD B450"
                                                         id="js-menu-2009">MAINBOARD B450</a>
-                                                    <a href="/mainboard-a520.html" title="MAINBOARD A520"
+                                                    <a href="/mainboards/AMD/A520" title="MAINBOARD A520"
                                                         id="js-menu-2010">MAINBOARD A520</a>
-                                                    <a href="/mainboard-a320.html" title="MAINBOARD A320"
+                                                    <a href="/mainboards/AMD/A320" title="MAINBOARD A320"
                                                         id="js-menu-2011">MAINBOARD A320</a>
-                                                    <a href="/mainboard-x670.html" title="MAINBOARD X670"
+                                                    <a href="/mainboards/AMD/X670" title="MAINBOARD X670"
                                                         id="js-menu-2620">MAINBOARD X670</a>
-                                                    <a href="/mainboard-x670e.html" title="MAINBOARD X670E"
+                                                    <a href="/mainboards/AMD/X670S" title="MAINBOARD X670E"
                                                         id="js-menu-2621">MAINBOARD X670E</a>
-                                                    <a href="/mainboard-b650.html" title="MAINBOARD B650"
+                                                    <a href="/mainboards/AMD/B650" title="MAINBOARD B650"
                                                         id="js-menu-2638">MAINBOARD B650</a>
-                                                    <a href="/mainboard-b650e.html" title="MAINBOARD B650E"
+                                                    <a href="/mainboards/AMD/B650E" title="MAINBOARD B650E"
                                                         id="js-menu-2639">MAINBOARD B650E</a>
-                                                    <a href="/mainboard-a620.html" title="MAINBOARD A620"
+                                                    <a href="/mainboards/AMD/A620" title="MAINBOARD A620"
                                                         id="js-menu-2764">MAINBOARD A620</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="cat-child-items">
-                                        <a href="/pc-parts/vga" class="cate-2" title="VGA - Card Màn Hình"
+                                        <a href="/pc-parts/gpu/" class="cate-2" title="VGA - Card Màn Hình"
                                             id="js-menu-1155">VGA - Card Màn Hình</a>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/card-man-hinh-nvidia.html" title="VGA NVIDIA"
+                                                <a href="/pc-parts/gpu/NVIDIA" title="VGA NVIDIA"
                                                     id="js-menu-1963">VGA NVIDIA</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/card-man-hinh-amd.html" title="VGA AMD"
+                                                <a href="/pc-parts/gpu/AMD" title="VGA AMD"
                                                     id="js-menu-1965">VGA AMD</a>
                                             </div>
                                         </div>
@@ -686,7 +682,7 @@
                                             id="js-menu-1234">Ram - Bộ Nhớ Trong</a>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#" title="Ram PC"
+                                                <a href="/pc-parts/ram" title="Ram PC"
                                                     id="js-menu-2015">RAM - PC</a>
                                                 <div class="cat-4-list">
                                                     <a href="/ram-bus-1600.html" title=""
@@ -702,7 +698,7 @@
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#" title="Ram Laptop"
+                                                <a href="/pc-parts/ram" title="Ram Laptop"
                                                     id="js-menu-2012">Ram Laptop</a>
                                                 <div class="cat-4-list">
                                                     <a href="/ram-corsair.html" title=""
