@@ -72,7 +72,7 @@
             <a href="#" target='_blank' rel='nofollow'><img
               src="{{ asset('assets/img/banner/01_Jul89646a1bf29bc2857060630315ce42da.png') }}" alt=""
               width="385" height="251" /></a>
-            <a href="#" target='_blank' rel='nofollow'><img
+            <a href="{{route('gaming-laptops.show')}}" target='_blank' rel='nofollow'><img
               src="{{ asset('assets/img/banner/18_Sepd0e3021672aa5eab9ac35addb573e511.png') }}" alt=""
               width="385" height="252" /></a>
           </div>
