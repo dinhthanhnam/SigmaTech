@@ -35,20 +35,24 @@
                   <tr>
                     <th width="10"><input type="checkbox" id="all"></th>
                     <th width="10">ID</th>
-                    <th width="250">Name</th>
-                    <th width="300">Image</th>
-                    <th width="250">Category</th>
+                    <th width="200">Name</th>
+                    <th width="200">Image</th>
+                    <th width="200">Category</th>
                     <th width="50">Brand</th>
                     <th width="50">Model</th>
-                    <th width="150">Price</th>
-                    <th width="150">Deal Price</th>
                     <th width="150">Sale Price</th>
+                    <th width="150">Thời điểm kết thúc</th>
+                    <th width="100">Đếm ngược</th>
                     <th>Chức năng</th>
                     <!-- Thêm các cột khác nếu cần -->
                   </tr>
                 </thead>
                 <tbody id="product-list">
                   @foreach ($flashSaleItems as $product)
+                    @php
+                      $endDate = Carbon\Carbon::parse($product->attributes->firstWhere('name', 'Sale End Date')->pivot->value)->setTime(0, 0, 0);
+                      $remainingTime = $endDate->timestamp - now()->timestamp;
+                    @endphp
                     <tr>
                       <td><input type="checkbox"></td>
                       <td>{{ $product->id }}</td>
@@ -62,13 +66,18 @@
                       <td>{{ $product->attributes->firstWhere('name', 'Model')->pivot->value ?? 'N/A' }}
                       </td>
                       <td>
-                        {{ number_format($product->attributes->firstWhere('name', 'Price')->pivot->value ?? 'N/A', 0, ',', '.') }} đ
-                      </td>
-                      <td>
-                        {{ number_format($product->attributes->firstWhere('name', 'Deal Price')->pivot->value ?? 'N/A', 0, ',', '.') }} đ
-                      </td>
-                      <td>
                         {{ number_format($product->attributes->firstWhere('name', 'Sale Price')->pivot->value ?? 'N/A', 0, ',', '.') }} đ
+                        <br>
+                        giảm <b style="color: red;"> 
+                          {{number_format($product->attributes->firstWhere('name', 'Deal Price')->pivot->value - $product->attributes->firstWhere('name', 'Sale Price')->pivot->value, 0, ',', '.')}} đ
+                          </b>
+                      </td>
+                      <td>{{ Carbon\Carbon::parse($product->attributes->firstWhere('name', 'Sale End Date')->pivot->value)->setTime(0, 0, 0)}}
+                      </td>
+                      <td>
+                        <span id="countdown-{{ $product->id }}" data-remaining-time="{{ $remainingTime }}">
+                            <!-- Đặt giá trị thời gian còn lại ở đây, ví dụ "00:00:00" -->
+                        </span>
                       </td>
                       <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa"
                           onclick="myFunction(this)"><i class="fas fa-trash-alt"></i>
@@ -87,3 +96,31 @@
     </div>
   </main>
 @endsection
+@push('scripts')
+  <script>
+    // Hàm khởi tạo bộ đếm ngược cho tất cả các sản phẩm
+    document.querySelectorAll('[id^="countdown-"]').forEach(element => {
+        let remainingTime = parseInt(element.getAttribute('data-remaining-time'), 10);
+
+        // Thiết lập bộ đếm ngược, mỗi giây cập nhật một lần
+        const countdown = setInterval(() => {
+            // Tính số giờ, phút và giây còn lại
+            const hours = Math.floor(remainingTime / 3600);
+            const minutes = Math.floor((remainingTime % 3600) / 60);
+            const seconds = remainingTime % 60;
+
+            // Cập nhật nội dung của thẻ <span>
+            element.innerText = `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+
+            // Giảm thời gian còn lại
+            remainingTime--;
+
+            // Kiểm tra khi hết thời gian
+            if (remainingTime < 0) {
+                clearInterval(countdown);
+                element.innerText = "Đã kết thúc"; // Hiển thị khi hết thời gian
+            }
+        }, 1000);
+    });
+  </script>
+@endpush
