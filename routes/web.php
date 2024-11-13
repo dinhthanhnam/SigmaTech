@@ -14,7 +14,7 @@ use App\Http\Controllers\LaptopController;
 use App\Http\Controllers\SaleController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\ProductController;
-use App\Http\Controllers\Admin\OrderController;
+use App\Http\Controllers\OrderController;
 
 
 
@@ -95,7 +95,9 @@ Route::patch('/cart/{product_type}/{product_id}', [CartController::class, 'updat
 Route::delete('/cart/{product_type}/{product_id}', [CartController::class, 'remove'])->name('cart.remove');
 Route::patch('/cart/update-bulk', [CartController::class, 'updateBulkQuantity'])->name('cart.updateBulkQuantity');
 Route::get('/cart/count', [CartController::class, 'cartCount'])->name('cart.count');
-Route::get('/cart/order', [CartController::class, 'showOrder'])->name('order.show');
+//order
+Route::get('/cart/order', [OrderController::class, 'orderInfo'])->name('order.info');
+Route::post('/cart/order/place', [OrderController::class, 'placeOrder'])->name('order.place');
 
 
 //single cpu

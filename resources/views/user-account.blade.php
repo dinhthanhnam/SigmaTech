@@ -18,16 +18,17 @@
             <ul class="account-menu">
                 <li>
                     <span class="menu-icon">
-                        <i class="fas fa-user"></i>
-                    </span>
-                    <a href="#profile">Thông tin tài khoản</a>
-                </li>
-                <li>
-                    <span class="menu-icon">
                         <i class="fas fa-box"></i>
                     </span>
                     <a href="#orders">Quản lý đơn hàng</a>
                 </li>
+                <li>
+                    <span class="menu-icon">
+                        <i class="fas fa-user"></i>
+                    </span>
+                    <a href="#profile">Thông tin tài khoản</a>
+                </li>
+
                 <li>
                     <span class="menu-icon">
                         <i class="fas fa-heart"></i>
@@ -51,7 +52,11 @@
         </div>
 
         <div class="account-content">
-            <section id="profile">
+            <section id="orders">
+                <h2>Quản lý đơn hàng</h2>
+                <p>Không có đơn hàng nào.</p>
+            </section>
+            <section id="profile" style="display: none;">
                 <h2>Thông tin tài khoản</h2>
                 <form id="profile-form">
                     <div class="form-group">
@@ -64,9 +69,12 @@
                         <div class="form-row">
                             <label>Giới tính</label>
                             <div class="gender-options">
-                                <input type="radio" id="male" name="gender" value="male" checked>
+                                <input type="radio" id="male" name="gender" value="male"
+                                    @if (Auth::user()->gender == 1) checked @endif>
                                 <label for="male">Nam</label>
-                                <input type="radio" id="female" name="gender" value="female">
+
+                                <input type="radio" id="female" name="gender" value="female"
+                                    @if (Auth::user()->gender == 0) checked @endif>
                                 <label for="female">Nữ</label>
                             </div>
                         </div>
@@ -97,19 +105,59 @@
             </section>
 
 
-            <section id="orders" style="display: none;">
-                <h2>Quản lý đơn hàng</h2>
-                <p>Không có đơn hàng nào.</p>
-            </section>
+
             <section id="saved-products" style="display: none;">
                 <h2>Sản phẩm đang lưu</h2>
                 <p>Không có sản phẩm nào đang lưu.</p>
             </section>
         </div>
-
+        @if (session('orderSuccess'))
+            @push('scripts')
+                <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+                <script>
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Đặt hàng thành công!',
+                        text: 'Cảm ơn bạn đã mua sắm tại SigmaTech.',
+                        confirmButtonText: 'Đóng',
+                        timer: 5000
+                    });
+                </script>
+            @endpush
+        @endif
     </div>
 @endsection
 
 @push('scripts')
-    <script src="{{ asset('assets/js/UserAccount.js') }}"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuItems = document.querySelectorAll('.account-menu li a');
+            const sections = document.querySelectorAll('.account-content section');
+
+            sections[0].style.display = 'block';
+            menuItems[0].parentElement.classList.add('active');
+
+            menuItems.forEach(item => {
+                item.addEventListener('click', function(e) {
+                    e.preventDefault();
+
+                    sections.forEach(section => {
+                        section.style.display = 'none';
+                    });
+
+                    const targetId = item.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        targetSection.style.display = 'block';
+                    }
+
+                    menuItems.forEach(menuItem => {
+                        menuItem.parentElement.classList.remove('active');
+                    });
+
+                    item.parentElement.classList.add('active');
+                });
+            });
+        });
+    </script>
 @endpush
