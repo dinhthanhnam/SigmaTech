@@ -40,6 +40,7 @@ class LaptopController extends Controller
                   ->where('value', '1');
         })
         ->with('attributes')
+        ->limit(10)
         ->get();
         
         return view('categories.gaming-laptops', compact('gamingLaptops', 'topGamingLaptops'));
@@ -61,6 +62,7 @@ class LaptopController extends Controller
                   ->where('value', '1');
         })
         ->with('attributes')
+        ->limit(10)
         ->get();
         return view('categories.office-laptops', compact('officeLaptops', 'topOfficeLaptops'));
     }

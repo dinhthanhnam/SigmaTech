@@ -15,7 +15,13 @@ class HomeController extends Controller
         $gamingLaptops = Laptop::whereHas('attributes', function ($query) {
             $query->where('name', '[Laptop] Loại laptop')
                   ->where('value', 'Gaming');
-        })->with('attributes')->limit(10)->get();
+        })
+        ->whereHas('attributes', function ($query) {
+            $query->where('name', 'On Top')
+                  ->where('value', '1');
+        })
+        ->with('attributes')
+        ->limit(10)->get();
 
         foreach($gamingLaptops as $item)
         {
@@ -27,7 +33,13 @@ class HomeController extends Controller
         $officeLaptops = Laptop::whereHas('attributes', function ($query) {
             $query->where('name', '[Laptop] Loại laptop')
                   ->where('value', 'Office');
-        })->with('attributes')->limit(10)->get();
+        })
+        ->whereHas('attributes', function ($query) {
+            $query->where('name', 'On Top')
+                  ->where('value', '1');
+        })
+        ->with('attributes')
+        ->limit(10)->get();
 
         foreach($officeLaptops as $item)
         {
@@ -39,7 +51,13 @@ class HomeController extends Controller
         $cpus = Cpu::whereHas('attributes', function ($query) {
             $query->where('name', 'Loại linh kiện')
                   ->where('value', 'CPU');
-        })->with('attributes')->limit(10)->get();
+        })
+        ->whereHas('attributes', function ($query) {
+            $query->where('name', 'On Top')
+                  ->where('value', '1');
+        })
+        ->with('attributes')
+        ->limit(10)->get();
 
         foreach($cpus as $item)
         {

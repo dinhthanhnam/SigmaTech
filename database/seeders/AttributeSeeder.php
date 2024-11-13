@@ -24,6 +24,7 @@ class AttributeSeeder extends Seeder
             ['name' => 'Sale Start Date', 'data_type' => 'datetime'],
             ['name' => 'Sale End Date', 'data_type' => 'datetime'],
             ['name' => 'Rating', 'data_type' => 'float'],
+            ['name' => 'Tồn kho', 'data_type' => 'integer'],
             //Linh kiện
             ['name' => 'Loại linh kiện', 'data_type' => 'string'],
             //Ảnh sản phẩm
