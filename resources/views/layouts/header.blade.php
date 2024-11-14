@@ -1472,7 +1472,7 @@
                             name.textContent = item.name;
 
                             const priceAttribute = item.attributes.find(attr => attr.name === 'Price');
-                            const price = priceAttribute ? `${priceAttribute.pivot.value} VNĐ` : 'N/A';
+                            const price = priceAttribute ? `${new Intl.NumberFormat('vi-VN').format(priceAttribute.pivot.value)} VNĐ`: 'N/A';
 
                             const priceSpan = document.createElement('span');
                             priceSpan.classList.add('price');
