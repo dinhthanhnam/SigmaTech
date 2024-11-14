@@ -11,6 +11,8 @@ use Illuminate\Support\Facades\DB;
 
 use App\Models\Laptop;
 use App\Models\CPU;
+use App\Models\Monitor;
+use App\Models\GPU;
 use App\Models\CartItem;
 
 class OrderController extends Controller
@@ -45,6 +47,24 @@ class OrderController extends Controller
                     $item->price = $cpu->attributes->where('name', 'Price')->first()->pivot->value;
                     $item->image = $cpu->attributes->where('name', 'Image1')->first()->pivot->value;
              
+                    break;
+                case 'gpu':
+                    $gpu = GPU::where('id', $item->product_id)
+                            ->with('attributes') 
+                            ->first();
+                    $item->dealprice = $gpu->attributes->where('name', 'Deal Price')->first()->pivot->value;
+                    $item->price = $gpu->attributes->where('name', 'Price')->first()->pivot->value;
+                    $item->image = $gpu->attributes->where('name', 'Image1')->first()->pivot->value;
+                
+                    break;
+                case 'monitor':
+                    $monitor = Monitor::where('id', $item->product_id)
+                            ->with('attributes') 
+                            ->first();
+                    $item->dealprice = $monitor->attributes->where('name', 'Deal Price')->first()->pivot->value;
+                    $item->price = $monitor->attributes->where('name', 'Price')->first()->pivot->value;
+                    $item->image = $monitor->attributes->where('name', 'Image1')->first()->pivot->value;
+                
                     break;
             }
         }
@@ -89,8 +109,8 @@ class OrderController extends Controller
             DB::commit();
     
             return redirect()->route('user-account')->with('orderSuccess', true);
-
     }
+
     
     
 }

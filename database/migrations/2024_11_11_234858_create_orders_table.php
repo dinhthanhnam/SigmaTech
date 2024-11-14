@@ -21,8 +21,8 @@ return new class extends Migration
             $table->string('payment_method');
             $table->string('note')->nullable(); 
             $table->integer('total_price');
-            $table->enum('status', ['chờ xác nhận', 'đang giao hàng', 'chờ thanh toán', 'hoàn thành', 'đã hủy'])
-            ->default('chờ xác nhận'); 
+            $table->enum('status', ['0', '1', '2', '3', '4'])
+            ->default('0'); 
             $table->timestamps();        
         });
     }

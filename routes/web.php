@@ -17,6 +17,8 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\SaleController as AdminSaleController;
 use App\Http\Controllers\OrderController;
+use App\Http\Controllers\Admin\OrderController as AdminOrderController;
+
 
 
 
@@ -64,9 +66,7 @@ Route::get('warranty-policy', function () {
 Route::get('laptop-outlet', function () {
   return view('pages.laptop-outlet');
 })->name('pages.laptop-outlet');
-Route::get('account', function () {
-  return view('user-account');
-})->name('user-account');
+Route::get('account', [UserController::class, 'index'])->name('user-account');
 
 //admin view
 
@@ -75,7 +75,7 @@ Route::middleware(['auth', AuthAdmin::class])->prefix('admin')->group(function (
     Route::get('/product', [ProductController::class, 'showAllProducts'])->name('admin.show-product');
     Route::get('/new-product', [ProductController::class, 'showAddProduct'])->name('admin.new-product');
     Route::post('/new-product', [ProductController::class, 'saveProduct'])->name('admin.save-product');
-    Route::get('/order', [OrderController::class, 'showAllOrders'])->name('admin.show-order');
+    Route::get('/order', [AdminOrderController::class, 'showAllOrders'])->name('admin.show-order');
     Route::get('/sale', [AdminSaleController::class, 'index'])->name('admin.show-sale');
 });
 
@@ -89,6 +89,7 @@ Route::get('/cart/count', [CartController::class, 'cartCount'])->name('cart.coun
 //order
 Route::get('/cart/order', [OrderController::class, 'orderInfo'])->name('order.info');
 Route::post('/cart/order/place', [OrderController::class, 'placeOrder'])->name('order.place');
+
 
 //single laptop
 Route::get('laptops/{type}/{brand}/{id}', [LaptopController::class, 'show'])->name('laptop.show');

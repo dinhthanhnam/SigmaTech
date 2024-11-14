@@ -10,8 +10,6 @@
     $brand = $monitor->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
     $model = $monitor->attributes->firstWhere('name', 'Model')->pivot->value ?? 'N/A';
 
-
-
     $saleprice = $monitor->attributes->firstWhere('name', 'Sale Price')->pivot->value ?? 'N/A';
     $sale_start_date = $monitor->attributes->firstWhere('name', 'Sale Start Date')->pivot->value ?? 'N/A';
     $sale_end_date = $monitor->attributes->firstWhere('name', 'Sale End Date')->pivot->value ?? 'N/A';
@@ -1088,7 +1086,20 @@
                 </tbody>
             </table>
         </div>
-
+        @if (session('addToCartSuccess'))
+            @push('scripts')
+                <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+                <script>
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Thêm sản phẩm vào giỏ hàng thành công!',
+                        text: 'Cảm ơn bạn đã mua sắm tại SigmaTech.',
+                        confirmButtonText: 'Đóng',
+                        timer: 5000
+                    });
+                </script>
+            @endpush
+        @endif
     </section>
 @endsection
 @php

@@ -54,7 +54,60 @@
         <div class="account-content">
             <section id="orders">
                 <h2>Quản lý đơn hàng</h2>
-                <p>Không có đơn hàng nào.</p>
+                @if ($orders)
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Thời gian đặt hàng</th>
+                                <th>Người nhận</th>
+                                <th>Số điện thoại</th>
+                                <th>Địa chỉ giao hàng</th>
+                                <th>Phương thức thanh toán</th>
+                                <th>Lưu ý</th>
+                                <th>Tổng tiền</th>
+                                <th>Trạng thái</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($orders as $order)
+                                <tr>
+                                    <td>{{ $order->created_at }}</td>
+                                    <td>{{ $order->customer_name }}</td>
+                                    <td>{{ $order->phone_number }}</td>
+                                    <td> {{ $order->shipping_address }} </td>
+                                    @if ($order->payment_method === 'cod')
+                                        <td>Thanh toán khi nhận hàng</td>
+                                    @else
+                                        <td>{{ $order->payment_method }}</td>
+                                    @endif
+
+                                    @if ($order->note === null)
+                                        <td>Trống</td>
+                                    @else
+                                        <td>{{ $order->note }}</td>
+                                    @endif
+                                    <td>{{ number_format($order->total_price, 0, ',', '.') }}
+                                        đ</td>
+                                    @if ($order->status === '0')
+                                        <td><span class="badge bg-secondary">Chờ xác nhận</span></td>
+                                    @elseif ($order->status === '1')
+                                        <td><span class="badge bg-info">Đang vận chuyển</span></td>
+                                    @elseif ($order->status === '2')
+                                        <td><span class="badge bg-warning">Chờ thanh toán</span></td>
+                                    @elseif ($order->status === '3')
+                                        <td><span class="badge bg-success">Hoàn thành</span></td>
+                                    @elseif ($order->status === '4')
+                                        <td><span class="badge bg-danger">Đã hủy</span></td>
+                                    @endif
+                                </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                @else
+                    <p>Bạn chưa có đơn hàng nào.</p>
+                @endif
+
             </section>
             <section id="profile" style="display: none;">
                 <h2>Thông tin tài khoản</h2>

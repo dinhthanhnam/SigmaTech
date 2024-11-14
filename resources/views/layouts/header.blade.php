@@ -111,166 +111,184 @@
                                             id="">Laptop Theo Hãng</a>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#" title="Laptop Asus"
-                                                class="js-menu" data-filter_code="brand" data-value="asus">Laptop Asus</a>
+                                                <a href="#" title="Laptop Asus" class="js-menu"
+                                                    data-filter_code="brand" data-value="asus">Laptop Asus</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#" title="Laptop Lenovo"
-                                                    class="js-menu" data-filter_code="brand" data-value="lenovo">Laptop
+                                                <a href="#" title="Laptop Lenovo" class="js-menu"
+                                                    data-filter_code="brand" data-value="lenovo">Laptop
                                                     Lenovo</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#" title="Laptop Dell"
-                                                class="js-menu" data-filter_code="brand" data-value="dell">Laptop Dell</a>
+                                                <a href="#" title="Laptop Dell" class="js-menu"
+                                                    data-filter_code="brand" data-value="dell">Laptop Dell</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#" title="Laptop Acer"
-                                                class="js-menu" data-filter_code="brand" data-value="acer">Laptop Acer</a>
+                                                <a href="#" title="Laptop Acer" class="js-menu"
+                                                    data-filter_code="brand" data-value="acer">Laptop Acer</a>
                                             </div>
                                         </div>
-                                        
+
                                     </div>
                                     <div class="cat-child-items">
                                         <a href="#" class="cate-2" title="Laptop Theo Khoảng Giá"
                                             id="js-menu-2386">Laptop Theo Khoảng Giá</a>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#"
-                                                    title="Laptop Từ 10 - 15 Triệu" class="js-menu" data-filter_code="price"
+                                                <a href="#" title="Laptop Từ 10 - 15 Triệu" class="js-menu"
+                                                    data-filter_code="price"
                                                     data-value="min=10000000&max=15000000">Laptop Từ 10 - 15 Triệu</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#"
-                                                    title="Laptop Từ 15 - 20 Triệu" class="js-menu" data-filter_code="price"
+                                                <a href="#" title="Laptop Từ 15 - 20 Triệu" class="js-menu"
+                                                    data-filter_code="price"
                                                     data-value="min=15000000&max=20000000">Laptop Từ 15 - 20 Triệu</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#"
-                                                    title="Laptop Từ 20 - 25 Triệu" class="js-menu" data-filter_code="price"
+                                                <a href="#" title="Laptop Từ 20 - 25 Triệu" class="js-menu"
+                                                    data-filter_code="price"
                                                     data-value="min=20000000&max=25000000">Laptop Từ 20 - 25 Triệu</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#"
-                                                    title="Laptop Từ 25 - 30 Triệu" class="js-menu" data-filter_code="price"
+                                                <a href="#" title="Laptop Từ 25 - 30 Triệu" class="js-menu"
+                                                    data-filter_code="price"
                                                     data-value="min=25000000&max=30000000">Laptop Từ 25 - 30 Triệu</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#"
-                                                    title="Laptop Từ 30 - 35 Triệu" class="js-menu" data-filter_code="price"
+                                                <a href="#" title="Laptop Từ 30 - 35 Triệu" class="js-menu"
+                                                    data-filter_code="price"
                                                     data-value="min=30000000&max=35000000">Laptop Từ 30 - 35 Triệu</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#"
-                                                    title="Laptop Từ 35 - 40 Triệu" class="js-menu" data-filter_code="price"
+                                                <a href="#" title="Laptop Từ 35 - 40 Triệu" class="js-menu"
+                                                    data-filter_code="price"
                                                     data-value="min=35000000&max=40000000">Laptop Từ 35 - 40 Triệu</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#" title="Laptop Từ 40 - 60 Triệu" class="js-menu" data-filter_code="price" data-value="min=40000000&max=60000000">Laptop Từ 40 - 60 Triệu</a>
+                                                <a href="#" title="Laptop Từ 40 - 60 Triệu" class="js-menu"
+                                                    data-filter_code="price"
+                                                    data-value="min=40000000&max=60000000">Laptop Từ 40 - 60 Triệu</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#" title="Laptop Trên 60 Triệu" class="js-menu" data-filter_code="price" data-value="min=60000000&max=150000000">Laptop Trên 60 Triệu</a>
+                                                <a href="#" title="Laptop Trên 60 Triệu" class="js-menu"
+                                                    data-filter_code="price"
+                                                    data-value="min=60000000&max=150000000">Laptop Trên 60 Triệu</a>
                                             </div>
                                         </div>
 
                                     </div>
 
                                     <div class="cat-child-items">
-                                        <a href="#" class="cate-2" title="Laptop Theo Cấu Hình CPU" id="js-menu-2377">Laptop Theo Cấu Hình CPU</a>
+                                        <a href="#" class="cate-2" title="Laptop Theo Cấu Hình CPU"
+                                            id="js-menu-2377">Laptop Theo Cấu Hình CPU</a>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#" class="js-menu" data-filter_code="cpu" data-value="Intel Core i3">Intel Core i3</a>
+                                                <a href="#" class="js-menu" data-filter_code="cpu"
+                                                    data-value="Intel Core i3">Intel Core i3</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#" class="js-menu" data-filter_code="cpu" data-value="Intel Core i5">Intel Core i5</a>
+                                                <a href="#" class="js-menu" data-filter_code="cpu"
+                                                    data-value="Intel Core i5">Intel Core i5</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#" class="js-menu" data-filter_code="cpu" data-value="Intel Core i7">Intel Core i7</a>
+                                                <a href="#" class="js-menu" data-filter_code="cpu"
+                                                    data-value="Intel Core i7">Intel Core i7</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#" class="js-menu" data-filter_code="cpu" data-value="Intel Core i9">Intel Core i9</a>
+                                                <a href="#" class="js-menu" data-filter_code="cpu"
+                                                    data-value="Intel Core i9">Intel Core i9</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#" class="js-menu" data-filter_code="cpu" data-value="Ryzen 3">Ryzen 3</a>
+                                                <a href="#" class="js-menu" data-filter_code="cpu"
+                                                    data-value="Ryzen 3">Ryzen 3</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#" class="js-menu" data-filter_code="cpu" data-value="Ryzen 5">Ryzen 5</a>
+                                                <a href="#" class="js-menu" data-filter_code="cpu"
+                                                    data-value="Ryzen 5">Ryzen 5</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#" class="js-menu" data-filter_code="cpu" data-value="Ryzen 7">Ryzen 7</a>
+                                                <a href="#" class="js-menu" data-filter_code="cpu"
+                                                    data-value="Ryzen 7">Ryzen 7</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#" class="js-menu" data-filter_code="cpu" data-value="Ryzen 9">Ryzen 9</a>
+                                                <a href="#" class="js-menu" data-filter_code="cpu"
+                                                    data-value="Ryzen 9">Ryzen 9</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="cat-child-items">
-                                        <a href="#" class="cate-2"
-                                            title="Laptop Theo Kích Thước Màn" id="js-menu-2398">Laptop Theo Kích Thước Màn</a>
+                                        <a href="#" class="cate-2" title="Laptop Theo Kích Thước Màn"
+                                            id="js-menu-2398">Laptop Theo Kích Thước Màn</a>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#"
-                                                    title="Laptop Khoảng 17 inch" class="js-menu" data-filter_code="screensize" data-value="17">Laptop Khoảng 17 inch</a>
+                                                <a href="#" title="Laptop Khoảng 17 inch" class="js-menu"
+                                                    data-filter_code="screensize" data-value="17">Laptop Khoảng 17
+                                                    inch</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#"
-                                                    title="Laptop Khoảng 16 inch" class="js-menu" data-filter_code="screensize" data-value="16">Laptop Khoảng 16 inch</a>
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="#"
-                                                    title="Laptop Khoảng 15 inch" class="js-menu" data-filter_code="screensize" data-value="15">Laptop Khoảng 15 inch</a>
+                                                <a href="#" title="Laptop Khoảng 16 inch" class="js-menu"
+                                                    data-filter_code="screensize" data-value="16">Laptop Khoảng 16
+                                                    inch</a>
                                             </div>
                                         </div>
 
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#"
-                                                    title="Laptop Khoảng 14 inch" class="js-menu" data-filter_code="screensize" data-value="14">Laptop Khoảng 14 inch</a>
+                                                <a href="#" title="Laptop Khoảng 15 inch" class="js-menu"
+                                                    data-filter_code="screensize" data-value="15">Laptop Khoảng 15
+                                                    inch</a>
                                             </div>
                                         </div>
 
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#"
-                                                    title="Laptop Khoảng 13 inch" class="js-menu" data-filter_code="screensize" data-value="13">Laptop Khoảng 13 inch</a>
+                                                <a href="#" title="Laptop Khoảng 14 inch" class="js-menu"
+                                                    data-filter_code="screensize" data-value="14">Laptop Khoảng 14
+                                                    inch</a>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div class="cat-child-last">
+                                                <a href="#" title="Laptop Khoảng 13 inch" class="js-menu"
+                                                    data-filter_code="screensize" data-value="13">Laptop Khoảng 13
+                                                    inch</a>
                                             </div>
                                         </div>
 
@@ -280,42 +298,48 @@
                                         <a href="#" class="cate-2" id="js-menu-2378">Laptop Theo VGA</a>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#" class="js-menu" data-filter_code="vga" data-value="RTX 2050" id="js-menu-1613">
+                                                <a href="#" class="js-menu" data-filter_code="vga"
+                                                    data-value="RTX 2050" id="js-menu-1613">
                                                     NVIDIA GeForce RTX 2050
                                                 </a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#" class="js-menu" data-filter_code="vga" data-value="RTX 3050" id="js-menu-1905">
+                                                <a href="#" class="js-menu" data-filter_code="vga"
+                                                    data-value="RTX 3050" id="js-menu-1905">
                                                     NVIDIA GeForce RTX 3050
                                                 </a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#" class="js-menu" data-filter_code="vga" data-value="RTX 4050" id="js-menu-1905">
+                                                <a href="#" class="js-menu" data-filter_code="vga"
+                                                    data-value="RTX 4050" id="js-menu-1905">
                                                     NVIDIA GeForce RTX 4050
                                                 </a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#" class="js-menu" data-filter_code="vga" data-value="RTX 4060" id="js-menu-1905">
+                                                <a href="#" class="js-menu" data-filter_code="vga"
+                                                    data-value="RTX 4060" id="js-menu-1905">
                                                     NVIDIA GeForce RTX 4060
                                                 </a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#" class="js-menu" data-filter_code="vga" data-value="RTX 4070" id="js-menu-1905">
+                                                <a href="#" class="js-menu" data-filter_code="vga"
+                                                    data-value="RTX 4070" id="js-menu-1905">
                                                     NVIDIA GeForce RTX 4070
                                                 </a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#" class="js-menu" data-filter_code="vga" data-value="RTX 4080" id="js-menu-1907">
+                                                <a href="#" class="js-menu" data-filter_code="vga"
+                                                    data-value="RTX 4080" id="js-menu-1907">
                                                     NVIDIA GeForce RTX 4080
                                                 </a>
                                             </div>
@@ -339,26 +363,26 @@
                                             id="">Laptop Theo Hãng</a>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#" title="Laptop Asus"
-                                                    id="js-menu-1058">Laptop Asus</a>
+                                                <a href="#" title="Laptop Asus" id="js-menu-1058">Laptop
+                                                    Asus</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#" title="Laptop Lenovo"
-                                                    id="js-menu-1059">Laptop Lenovo</a>
+                                                <a href="#" title="Laptop Lenovo" id="js-menu-1059">Laptop
+                                                    Lenovo</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#" title="Laptop Dell"
-                                                    id="js-menu-1012">Laptop Dell</a>
+                                                <a href="#" title="Laptop Dell" id="js-menu-1012">Laptop
+                                                    Dell</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#" title="Laptop Acer"
-                                                    id="js-menu-1060">Laptop Acer</a>
+                                                <a href="#" title="Laptop Acer" id="js-menu-1060">Laptop
+                                                    Acer</a>
                                             </div>
                                         </div>
                                     </div>
@@ -368,47 +392,54 @@
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/laptop-tu-10-15-trieu_dm2388.html"
-                                                    title="Laptop Từ 10 - 15 Triệu" id="js-menu-2388">Laptop Từ 10 - 15 Triệu</a>
+                                                    title="Laptop Từ 10 - 15 Triệu" id="js-menu-2388">Laptop Từ 10 -
+                                                    15 Triệu</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/laptop-tu-15-20-trieu_dm2389.html"
-                                                    title="Laptop Từ 15 - 20 Triệu" id="js-menu-2389">Laptop Từ 15 - 20 Triệu</a>
+                                                    title="Laptop Từ 15 - 20 Triệu" id="js-menu-2389">Laptop Từ 15 -
+                                                    20 Triệu</a>
                                             </div>
                                         </div>
 
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/laptop-tu-20-25-trieu_dm2390.html"
-                                                    title="Laptop Từ 20 - 25 Triệu" id="js-menu-2390">Laptop Từ 20 - 25 Triệu</a>
+                                                    title="Laptop Từ 20 - 25 Triệu" id="js-menu-2390">Laptop Từ 20 -
+                                                    25 Triệu</a>
                                             </div>
                                         </div>
 
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/laptop-tu-25-30-trieu_dm2391.html"
-                                                    title="Laptop Từ 25 - 30 Triệu" id="js-menu-2391">Laptop Từ 25 - 30 Triệu</a>
+                                                    title="Laptop Từ 25 - 30 Triệu" id="js-menu-2391">Laptop Từ 25 -
+                                                    30 Triệu</a>
                                             </div>
                                         </div>
 
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/laptop-tu-30-35-trieu_dm2392.html"
-                                                    title="Laptop Từ 30 - 35 Triệu" id="js-menu-2392">Laptop Từ 30 - 35 Triệu</a>
+                                                    title="Laptop Từ 30 - 35 Triệu" id="js-menu-2392">Laptop Từ 30 -
+                                                    35 Triệu</a>
                                             </div>
                                         </div>
 
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/laptop-tu-35-40-trieu_dm2393.html"
-                                                    title="Laptop Từ 35 - 40 Triệu" id="js-menu-2393">Laptop Từ 35 - 40 Triệu</a>
+                                                    title="Laptop Từ 35 - 40 Triệu" id="js-menu-2393">Laptop Từ 35 -
+                                                    40 Triệu</a>
                                             </div>
                                         </div>
 
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptop-tu-40-60-trieu.html" title="Laptop Từ 40 - 60 Triệu" id="js-menu-2452">Laptop Từ 40 - 60 Triệu</a>
+                                                <a href="/laptop-tu-40-60-trieu.html" title="Laptop Từ 40 - 60 Triệu"
+                                                    id="js-menu-2452">Laptop Từ 40 - 60 Triệu</a>
                                             </div>
                                         </div>
                                         <div>
@@ -422,7 +453,8 @@
 
                                     <div class="cat-child-items">
                                         <a href="/laptop-theo-cau-hinh-cpu_dm2377.html" class="cate-2"
-                                            title="Laptop Theo Cấu Hình CPU" id="js-menu-2377">Laptop Theo Cấu Hình CPU</a>
+                                            title="Laptop Theo Cấu Hình CPU" id="js-menu-2377">Laptop Theo Cấu Hình
+                                            CPU</a>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/laptop-core-i3_dm2286.html" title="Laptop Core i3"
@@ -479,76 +511,88 @@
                                     </div>
                                     <div class="cat-child-items">
                                         <a href="/laptop-theo-kich-thuoc-man-hinh_dm2398.html" class="cate-2"
-                                            title="Laptop Theo Kích Thước Màn" id="js-menu-2398">Laptop Theo Kích Thước Màn</a>
+                                            title="Laptop Theo Kích Thước Màn" id="js-menu-2398">Laptop Theo Kích
+                                            Thước Màn</a>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/laptop-khoang-17-inch_dm2405.html"
-                                                    title="Laptop Khoảng 17 inch" id="js-menu-2405">Laptop Khoảng 17 inch</a>
+                                                    title="Laptop Khoảng 17 inch" id="js-menu-2405">Laptop Khoảng 17
+                                                    inch</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/laptop-khoang-16-inch_dm2404.html"
-                                                    title="Laptop Khoảng 16 inch" id="js-menu-2404">Laptop Khoảng 16 inch</a>
+                                                    title="Laptop Khoảng 16 inch" id="js-menu-2404">Laptop Khoảng 16
+                                                    inch</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/laptop-khoang-15-inch_dm2403.html"
-                                                    title="Laptop Khoảng 15 inch" id="js-menu-2403">Laptop Khoảng 15 inch</a>
+                                                    title="Laptop Khoảng 15 inch" id="js-menu-2403">Laptop Khoảng 15
+                                                    inch</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/laptop-khoang-14-inch_dm2402.html"
-                                                    title="Laptop Khoảng 14 inch" id="js-menu-2402">Laptop Khoảng 14 inch</a>
+                                                    title="Laptop Khoảng 14 inch" id="js-menu-2402">Laptop Khoảng 14
+                                                    inch</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/laptop-khoang-13-inch_dm2401.html"
-                                                    title="Laptop Khoảng 13 inch" id="js-menu-2401">Laptop Khoảng 13 inch</a>
+                                                    title="Laptop Khoảng 13 inch" id="js-menu-2401">Laptop Khoảng 13
+                                                    inch</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="cat-child-items">
-                                        <a href="#" class="cate-2"
-                                            title="Laptop Theo Ngành Nghề" id="js-menu-2378">Laptop Theo Ngành Nghề</a>
+                                        <a href="#" class="cate-2" title="Laptop Theo Ngành Nghề"
+                                            id="js-menu-2378">Laptop Theo Ngành Nghề</a>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#"
-                                                    title="Laptop Văn Phòng" id="js-menu-1613">Laptop Văn Phòng</a>
+                                                <a href="#" title="Laptop Văn Phòng" id="js-menu-1613">Laptop
+                                                    Văn Phòng</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#"
-                                                    title="Laptop Sinh Viên" id="js-menu-1612">Laptop Sinh Viên</a>
+                                                <a href="#" title="Laptop Sinh Viên" id="js-menu-1612">Laptop
+                                                    Sinh Viên</a>
                                                 <div class="cat-4-list">
-                                                    <a href="#" title="Laptop Cho Sinh Viên Thiết Kế Đồ Họa" id="js-menu-1903">Laptop Cho Sinh Viên Thiết Kế Đồ Họa</a>
-                                                    <a href="#" title="Laptop Cho Sinh Viên Kinh Tế" id="js-menu-1904">Laptop Cho Sinh Viên Kinh Tế</a>
+                                                    <a href="#" title="Laptop Cho Sinh Viên Thiết Kế Đồ Họa"
+                                                        id="js-menu-1903">Laptop Cho Sinh Viên Thiết Kế Đồ Họa</a>
+                                                    <a href="#" title="Laptop Cho Sinh Viên Kinh Tế"
+                                                        id="js-menu-1904">Laptop Cho Sinh Viên Kinh Tế</a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="#"
-                                                    title="Laptop Cho Lập Trình Viên" id="js-menu-1905">Laptop Cho Lập Trình Viên</a>
+                                                <a href="#" title="Laptop Cho Lập Trình Viên"
+                                                    id="js-menu-1905">Laptop Cho Lập Trình Viên</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptop-cho-ke-toan.html" title="Laptop Cho Kế Toán" id="js-menu-1907">Laptop Cho Kế Toán</a>
+                                                <a href="/laptop-cho-ke-toan.html" title="Laptop Cho Kế Toán"
+                                                    id="js-menu-1907">Laptop Cho Kế Toán</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptop-doanh-nhan.html" title="Laptop Doanh Nhân" id="js-menu-1908">Laptop Doanh Nhân</a>
+                                                <a href="/laptop-doanh-nhan.html" title="Laptop Doanh Nhân"
+                                                    id="js-menu-1908">Laptop Doanh Nhân</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptop-cho-data-analystic.html" title="Laptop Cho Data Analystic" id="js-menu-2958">Laptop Cho Data Analystic</a>
+                                                <a href="/laptop-cho-data-analystic.html"
+                                                    title="Laptop Cho Data Analystic" id="js-menu-2958">Laptop Cho
+                                                    Data Analystic</a>
                                             </div>
                                         </div>
                                     </div>
@@ -571,7 +615,8 @@
                                             id="js-menu-1025">CPU - Bộ Vi Xử Lý</a>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/cpu/Intel" title="Cpu Intel" id="js-menu-1307">CPU INTEL</a>
+                                                <a href="/cpu/Intel" title="Cpu Intel" id="js-menu-1307">CPU
+                                                    INTEL</a>
                                                 <div class="cat-4-list">
                                                     <a href="/cpu-intel-core-i9_dm1688.html" title="CPU Intel Core i9"
                                                         id="js-menu-1688">CPU Intel Core i9</a>
@@ -672,8 +717,8 @@
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/pc-parts/gpu/AMD" title="VGA AMD"
-                                                    id="js-menu-1965">VGA AMD</a>
+                                                <a href="/pc-parts/gpu/AMD" title="VGA AMD" id="js-menu-1965">VGA
+                                                    AMD</a>
                                             </div>
                                         </div>
                                     </div>
@@ -682,8 +727,7 @@
                                             id="js-menu-1234">Ram - Bộ Nhớ Trong</a>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/pc-parts/ram" title="Ram PC"
-                                                    id="js-menu-2015">RAM - PC</a>
+                                                <a href="/pc-parts/ram" title="Ram PC" id="js-menu-2015">RAM - PC</a>
                                                 <div class="cat-4-list">
                                                     <a href="/ram-bus-1600.html" title=""
                                                         id="js-menu-2028">DDR3</a>
@@ -698,8 +742,8 @@
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/pc-parts/ram" title="Ram Laptop"
-                                                    id="js-menu-2012">Ram Laptop</a>
+                                                <a href="/pc-parts/ram" title="Ram Laptop" id="js-menu-2012">Ram
+                                                    Laptop</a>
                                                 <div class="cat-4-list">
                                                     <a href="/ram-corsair.html" title=""
                                                         id="js-menu-1420">DDR3L</a>
@@ -717,20 +761,27 @@
                                                 <a href="/ram-theo-dung-luong.html" title="RAM theo Dung Lượng"
                                                     id="js-menu-2014">RAM theo Dung Lượng</a>
                                                 <div class="cat-4-list">
-                                                    <a href="/ram-4gb.html" title="RAM 4GB" id="js-menu-2023">RAM 4GB</a>
-                                                    <a href="/ram-8gb.html" title="RAM 8GB" id="js-menu-2024">RAM 8GB</a>
-                                                    <a href="/ram-16gb.html" title="RAM 16GB" id="js-menu-2025">RAM 16GB</a>
-                                                    <a href="/ram-32gb.html" title="RAM 32GB" id="js-menu-2026">RAM 32GB</a>
-                                                    <a href="/ram-64gb.html" title="RAM 64GB" id="js-menu-2027">RAM 64GB</a>
-                                                    <a href="/ram-96gb.html" title="RAM 96GB" id="js-menu-2754">RAM 96GB</a>
-                                                    <a href="/ram-48gb.html" title="RAM 48GB" id="js-menu-2757">RAM 48GB</a>
+                                                    <a href="/ram-4gb.html" title="RAM 4GB" id="js-menu-2023">RAM
+                                                        4GB</a>
+                                                    <a href="/ram-8gb.html" title="RAM 8GB" id="js-menu-2024">RAM
+                                                        8GB</a>
+                                                    <a href="/ram-16gb.html" title="RAM 16GB" id="js-menu-2025">RAM
+                                                        16GB</a>
+                                                    <a href="/ram-32gb.html" title="RAM 32GB" id="js-menu-2026">RAM
+                                                        32GB</a>
+                                                    <a href="/ram-64gb.html" title="RAM 64GB" id="js-menu-2027">RAM
+                                                        64GB</a>
+                                                    <a href="/ram-96gb.html" title="RAM 96GB" id="js-menu-2754">RAM
+                                                        96GB</a>
+                                                    <a href="/ram-48gb.html" title="RAM 48GB" id="js-menu-2757">RAM
+                                                        48GB</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="cat-child-items">
-                                        <a href="/pc-parts/psu" class="cate-2"
-                                            title="PSU - Nguồn Máy Tính" id="js-menu-1051">PSU - Nguồn Máy Tính</a>
+                                        <a href="/pc-parts/psu" class="cate-2" title="PSU - Nguồn Máy Tính"
+                                            id="js-menu-1051">PSU - Nguồn Máy Tính</a>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/nguon-may-tinh-cac-hang.html" title="Nguồn theo hãng"
@@ -752,12 +803,18 @@
                                                 <a href="/cong-suat-nguon.html" title="Công Suất Nguồn"
                                                     id="js-menu-2084">Công Suất Nguồn</a>
                                                 <div class="cat-4-list">
-                                                    <a href="/nguon-duoi-400w.html" title="Dưới 400W" id="js-menu-1650">Dưới 400W</a>
-                                                    <a href="/nguon-may-tinh-tu-400w-550w.html" title="400W - 550W" id="js-menu-1651">400W - 550W</a>
-                                                    <a href="/nguon-may-tinh-tu-550w-650w.html" title="550W - 650W" id="js-menu-1652">550W - 650W</a>
-                                                    <a href="/nguon-may-tinh-tu-650w-800w.html" title="650W - 800W" id="js-menu-1654">650W - 800W</a>
-                                                    <a href="/nguon-tu-800w-den-1000w.html" title="800W - 1000W" id="js-menu-1738">800W - 1000W</a>
-                                                    <a href="/nguon-tren-1000w.html" title="Trên 1000W" id="js-menu-1739">Trên 1000W</a>
+                                                    <a href="/nguon-duoi-400w.html" title="Dưới 400W"
+                                                        id="js-menu-1650">Dưới 400W</a>
+                                                    <a href="/nguon-may-tinh-tu-400w-550w.html" title="400W - 550W"
+                                                        id="js-menu-1651">400W - 550W</a>
+                                                    <a href="/nguon-may-tinh-tu-550w-650w.html" title="550W - 650W"
+                                                        id="js-menu-1652">550W - 650W</a>
+                                                    <a href="/nguon-may-tinh-tu-650w-800w.html" title="650W - 800W"
+                                                        id="js-menu-1654">650W - 800W</a>
+                                                    <a href="/nguon-tu-800w-den-1000w.html" title="800W - 1000W"
+                                                        id="js-menu-1738">800W - 1000W</a>
+                                                    <a href="/nguon-tren-1000w.html" title="Trên 1000W"
+                                                        id="js-menu-1739">Trên 1000W</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -766,11 +823,16 @@
                                                 <a href="/chuan-nguon.html" title="Chuẩn Nguồn"
                                                     id="js-menu-2085">Chuẩn Nguồn</a>
                                                 <div class="cat-4-list">
-                                                    <a href="/80-plus.html" title="80 plus" id="js-menu-2088">80 plus</a>
-                                                    <a href="/80-plus-bronze.html" title="80 Plus Bronze" id="js-menu-2089">80 Plus Bronze</a>
-                                                    <a href="/80-plus-gold.html" title="80 Plus Gold" id="js-menu-2090">80 Plus Gold</a>
-                                                    <a href="/80-plus-platinum.html" title="80 Plus Platinum" id="js-menu-2091">80 Plus Platinum</a>
-                                                    <a href="/80-plus-titaninum.html" title="80 Plus Titaninum" id="js-menu-2093">80 Plus Titaninum</a>
+                                                    <a href="/80-plus.html" title="80 plus" id="js-menu-2088">80
+                                                        plus</a>
+                                                    <a href="/80-plus-bronze.html" title="80 Plus Bronze"
+                                                        id="js-menu-2089">80 Plus Bronze</a>
+                                                    <a href="/80-plus-gold.html" title="80 Plus Gold"
+                                                        id="js-menu-2090">80 Plus Gold</a>
+                                                    <a href="/80-plus-platinum.html" title="80 Plus Platinum"
+                                                        id="js-menu-2091">80 Plus Platinum</a>
+                                                    <a href="/80-plus-titaninum.html" title="80 Plus Titaninum"
+                                                        id="js-menu-2093">80 Plus Titaninum</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -797,8 +859,8 @@
                                                         id="js-menu-2097">ATX</a>
                                                     <a href="/nguon-sfx.html" title="SFX"
                                                         id="js-menu-2098">SFX</a>
-                                                    <a href="/flex-atx.html" title="Flex ATX"
-                                                        id="js-menu-2099">Flex ATX</a>
+                                                    <a href="/flex-atx.html" title="Flex ATX" id="js-menu-2099">Flex
+                                                        ATX</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -821,20 +883,20 @@
                                             title="Màn Hình Theo Hãng" id="js-menu-1690">Màn Hình Theo Hãng</a>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/monitors/Asus" title="Màn Hình Asus"
-                                                    id="js-menu-1319">Màn Hình Asus</a>
+                                                <a href="/monitors/Asus" title="Màn Hình Asus" id="js-menu-1319">Màn
+                                                    Hình Asus</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/monitors/LG" title="Màn Hình LG"
-                                                    id="js-menu-1354">Màn Hình LG</a>
+                                                <a href="/monitors/LG" title="Màn Hình LG" id="js-menu-1354">Màn Hình
+                                                    LG</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/monitors/Dell" title="Màn Hình Dell"
-                                                    id="js-menu-1317">Màn Hình Dell</a>
+                                                <a href="/monitors/Dell" title="Màn Hình Dell" id="js-menu-1317">Màn
+                                                    Hình Dell</a>
                                             </div>
                                         </div>
                                         <div>
@@ -849,18 +911,21 @@
                                             title="Màn Hình Theo Nhu Cầu" id="js-menu-1692">Màn Hình Theo Nhu Cầu</a>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/man-hinh-may-tinh-chuyen-gaming_dm1694.html" title="Màn Hình Gaming" id="js-menu-1694">Màn Hình Gaming</a>
+                                                <a href="/man-hinh-may-tinh-chuyen-gaming_dm1694.html"
+                                                    title="Màn Hình Gaming" id="js-menu-1694">Màn Hình Gaming</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/man-hinh-may-tinh-ultrawide-sieu-rong_dm1698.html"
-                                                    title="Màn Hình Ultrawide" id="js-menu-1698">Màn Hình Ultrawide</a>
+                                                    title="Màn Hình Ultrawide" id="js-menu-1698">Màn Hình
+                                                    Ultrawide</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/man-hinh-may-tinh-oled.html" title="Màn Hình OLED"id="js-menu-2831">Màn Hình OLED</a>
+                                                <a href="/man-hinh-may-tinh-oled.html"
+                                                    title="Màn Hình OLED"id="js-menu-2831">Màn Hình OLED</a>
                                             </div>
                                         </div>
                                         <div>
@@ -873,7 +938,8 @@
                                     </div>
                                     <div class="cat-child-items">
                                         <a href="/man-hinh-theo-kich-thuoc_dm1691.html" class="cate-2"
-                                            title="Màn Hình Theo Kích Thước" id="js-menu-1691">Màn Hình Theo Kích Thước</a>
+                                            title="Màn Hình Theo Kích Thước" id="js-menu-1691">Màn Hình Theo Kích
+                                            Thước</a>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/man-hinh-156-inch.html" title="Màn Hình 15.6 inch"
@@ -916,8 +982,8 @@
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/man-hinh-may-tinh-245-inch.html"
-                                                    title="Màn Hình 24.5 inch" id="js-menu-2481">Màn Hình 24.5
+                                                <a href="/man-hinh-may-tinh-245-inch.html" title="Màn Hình 24.5 inch"
+                                                    id="js-menu-2481">Màn Hình 24.5
                                                     inch</a>
                                             </div>
                                         </div>
@@ -936,7 +1002,8 @@
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/man-hinh-315-inch.html" title="Màn Hình 31.5 inch" id="js-menu-2470">Màn Hình 31.5 inch</a>
+                                                <a href="/man-hinh-315-inch.html" title="Màn Hình 31.5 inch"
+                                                    id="js-menu-2470">Màn Hình 31.5 inch</a>
                                             </div>
                                         </div>
                                         <div>
@@ -963,26 +1030,26 @@
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/man-hinh-may-tinh-100hz_dm1711.html"
-                                                    title="Màn Hình 100Hz" id="js-menu-1711">Màn Hình 100Hz</a>
+                                                <a href="/man-hinh-may-tinh-100hz_dm1711.html" title="Màn Hình 100Hz"
+                                                    id="js-menu-1711">Màn Hình 100Hz</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/man-hinh-may-tinh-120hz_dm1712.html"
-                                                    title="Màn Hình 120Hz" id="js-menu-1712">Màn Hình 120Hz</a>
+                                                <a href="/man-hinh-may-tinh-120hz_dm1712.html" title="Màn Hình 120Hz"
+                                                    id="js-menu-1712">Màn Hình 120Hz</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/man-hinh-may-tinh-144hz_dm1713.html"
-                                                    title="Màn Hình 144Hz" id="js-menu-1713">Màn Hình 144Hz</a>
+                                                <a href="/man-hinh-may-tinh-144hz_dm1713.html" title="Màn Hình 144Hz"
+                                                    id="js-menu-1713">Màn Hình 144Hz</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/man-hinh-may-tinh-165hz_dm1714.html"
-                                                    title="Màn Hình 165Hz" id="js-menu-1714">Màn Hình 165Hz</a>
+                                                <a href="/man-hinh-may-tinh-165hz_dm1714.html" title="Màn Hình 165Hz"
+                                                    id="js-menu-1714">Màn Hình 165Hz</a>
                                             </div>
                                         </div>
                                         <div>
@@ -993,8 +1060,8 @@
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/man-hinh-may-tinh-240hz_dm1715.html"
-                                                    title="Màn Hình 240Hz" id="js-menu-1715">Màn Hình 240Hz</a>
+                                                <a href="/man-hinh-may-tinh-240hz_dm1715.html" title="Màn Hình 240Hz"
+                                                    id="js-menu-1715">Màn Hình 240Hz</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1004,7 +1071,8 @@
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/man-hinh-may-tinh-hd_dm1700.html"
-                                                    title="Màn Hình HD (1366x768)" id="js-menu-1700">Màn Hình HD (1366x768)</a>
+                                                    title="Màn Hình HD (1366x768)" id="js-menu-1700">Màn Hình HD
+                                                    (1366x768)</a>
                                             </div>
                                         </div>
                                         <div>
@@ -1016,49 +1084,57 @@
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/man-hinh-may-tinh-full-hd_dm1701.html"
-                                                    title="Màn Hình Full HD (1920x1080)" id="js-menu-1701">Màn Hình Full HD (1920x1080)</a>
+                                                    title="Màn Hình Full HD (1920x1080)" id="js-menu-1701">Màn Hình
+                                                    Full HD (1920x1080)</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/man-hinh-may-tinh-wuxga-1920x1200.html"
-                                                    title="Màn Hình WUXGA (1920x1200)" id="js-menu-2434">Màn Hình WUXGA (1920x1200)</a>
+                                                    title="Màn Hình WUXGA (1920x1200)" id="js-menu-2434">Màn Hình
+                                                    WUXGA (1920x1200)</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/man-hinh-may-tinh-ultra-wide-uwhd-2560x1080.html"
-                                                    title="Màn Hình UWHD (2560x1080)" id="js-menu-2433">Màn Hình UWHD (2560x1080)</a>
+                                                    title="Màn Hình UWHD (2560x1080)" id="js-menu-2433">Màn Hình UWHD
+                                                    (2560x1080)</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/man-hinh-may-tinh-2k-qhd_dm1702.html"
-                                                    title="Màn Hình 2K QHD (2560x1440)" id="js-menu-1702">Màn Hình 2K QHD (2560x1440)</a>
+                                                    title="Màn Hình 2K QHD (2560x1440)" id="js-menu-1702">Màn Hình 2K
+                                                    QHD (2560x1440)</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/man-hinh-may-tinh-wqhd-3440x1440.html"
-                                                    title="Màn Hình WQHD (3440x1440)" id="js-menu-2435">Màn Hình WQHD (3440x1440)</a>
+                                                    title="Màn Hình WQHD (3440x1440)" id="js-menu-2435">Màn Hình WQHD
+                                                    (3440x1440)</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/man-hinh-uqhd-3840-x-1600.html"
-                                                    title="Màn Hình UQHD (3840x1600)" id="js-menu-2493">Màn Hình UQHD (3840x1600)</a>
+                                                    title="Màn Hình UQHD (3840x1600)" id="js-menu-2493">Màn Hình UQHD
+                                                    (3840x1600)</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/man-hinh-may-tinh-4k-uhd_dm1703.html"
-                                                    title="Màn Hình 4K UHD (3840x2160)" id="js-menu-1703">Màn Hình 4K UHD (3840x2160)</a>
+                                                    title="Màn Hình 4K UHD (3840x2160)" id="js-menu-1703">Màn Hình 4K
+                                                    UHD (3840x2160)</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/man-hinh-wqxga-2560-x-1600.html"
-                                                    title="Màn Hình WQXGA (2560 x 1600)" id="js-menu-2646">Màn Hình WQXGA (2560 x 1600)</a>
+                                                    title="Màn Hình WQXGA (2560 x 1600)" id="js-menu-2646">Màn Hình
+                                                    WQXGA (2560 x 1600)</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1071,13 +1147,14 @@
                                     <img src="{{ asset('assets/img/cat/cat_8a7100a2bf10de1685a042557ef4ee77.png') }}"
                                         alt="Bàn phím, Chuột - Gaming Gear" />
                                 </span>
-                                <span class="title" title="Bàn phím, Chuột - Gaming Gear"> Bàn phím, Chuột - Gaming Gear </span>
+                                <span class="title" title="Bàn phím, Chuột - Gaming Gear"> Bàn phím, Chuột - Gaming
+                                    Gear </span>
                             </a>
                             <div class="sub-menu  no-big-img  ">
                                 <div class="cat-child-holder" id="js-menu-container">
                                     <div class="cat-child-items">
-                                        <a href="/ban-phim-chuot_dm1293.html" class="cate-2"
-                                            title="Bàn Phím - Chuột" id="js-menu-1293">Bàn Phím - Chuột</a>
+                                        <a href="/ban-phim-chuot_dm1293.html" class="cate-2" title="Bàn Phím - Chuột"
+                                            id="js-menu-1293">Bàn Phím - Chuột</a>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/chuot-may-tinh_dm1291.html" title="Chuột Máy Tính"
@@ -1174,7 +1251,8 @@
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/tai-nghe-gaming-gia-re.html"
-                                                    title="Tai nghe Gaming giá rẻ" id="js-menu-1776">Tai nghe Gaming giá rẻ</a>
+                                                    title="Tai nghe Gaming giá rẻ" id="js-menu-1776">Tai nghe Gaming
+                                                    giá rẻ</a>
                                             </div>
                                         </div>
                                         <div>
@@ -1205,7 +1283,8 @@
                                     <img src="{{ asset('assets/img/cat/cat_f9fc468337e44b7e6b994b32dc8b8d44.png') }}"
                                         alt="Loa, Tai Nghe, Webcam, Tivi" />
                                 </span>
-                                <span class="title" title="Loa, Tai Nghe, Webcam, Tivi"> Loa, Tai Nghe, Webcam</span>
+                                <span class="title" title="Loa, Tai Nghe, Webcam, Tivi"> Loa, Tai Nghe,
+                                    Webcam</span>
                             </a>
                             <div class="sub-menu  no-big-img  ">
                                 <div class="cat-child-holder" id="js-menu-container">
@@ -1255,32 +1334,38 @@
                                             id="js-menu-2536">Kiểu Loa</a>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/loa-20.html" title="Loa 2.0" id="js-menu-2537">Loa 2.0</a>
+                                                <a href="/loa-20.html" title="Loa 2.0" id="js-menu-2537">Loa
+                                                    2.0</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/loa-21.html" title="Loa 2.1" id="js-menu-2545">Loa 2.1</a>
+                                                <a href="/loa-21.html" title="Loa 2.1" id="js-menu-2545">Loa
+                                                    2.1</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/loa-41.html" title="Loa 4.1" id="js-menu-2539">Loa 4.1</a>
+                                                <a href="/loa-41.html" title="Loa 4.1" id="js-menu-2539">Loa
+                                                    4.1</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/loa-51.html" title="Loa 5.1" id="js-menu-2540">Loa 5.1</a>
+                                                <a href="/loa-51.html" title="Loa 5.1" id="js-menu-2540">Loa
+                                                    5.1</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/loa-71.html" title="Loa 7.1" id="js-menu-2541">Loa 7.1</a>
+                                                <a href="/loa-71.html" title="Loa 7.1" id="js-menu-2541">Loa
+                                                    7.1</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="cat-child-items">
-                                        <a href="/kieu-theo-hang.html" class="cate-2" title="Loa theo hãng" id="js-menu-2534">Loa theo hãng</a>
+                                        <a href="/kieu-theo-hang.html" class="cate-2" title="Loa theo hãng"
+                                            id="js-menu-2534">Loa theo hãng</a>
                                         <div>
                                             <div class="cat-child-last">
                                                 <a href="/loa-logitech_dm1803.html" title="Loa LOGITECH"
@@ -1369,11 +1454,14 @@
                         </div>
                     </div>
                     <a href="{{ route('pages.laptop-outlet') }}"> <img
-                            src="{{ asset('assets/img/header-menu-icon/medal.png') }}" class="mr-1" /> Laptop Xả Kho </a>
+                            src="{{ asset('assets/img/header-menu-icon/medal.png') }}" class="mr-1" /> Laptop Xả
+                        Kho </a>
                     <a href="{{ route('pages.warranty-policy') }}"> <img
-                            src="{{ asset('assets/img/header-menu-icon/package.png') }}" class="mr-1" /> Đổi trả miễn phí </a>
+                            src="{{ asset('assets/img/header-menu-icon/package.png') }}" class="mr-1" /> Đổi trả
+                        miễn phí </a>
                     <a href="{{ route('pages.shipping-policy') }}"> <img
-                            src="{{ asset('assets/img/header-menu-icon/delivery.png') }}" class="mr-1" /> Miễn phí vận chuyển </a>
+                            src="{{ asset('assets/img/header-menu-icon/delivery.png') }}" class="mr-1" /> Miễn
+                        phí vận chuyển </a>
                 </div>
             </div>
         </div>
@@ -1395,36 +1483,40 @@
     </script>
     {{-- filter --}}
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-        let selectedValue = '';
-        let selectedMin = null;
-        let selectedMax = null;
-        let selectedFilterType = ''; 
-        
-        document.querySelectorAll('.js-menu').forEach(function (element) {
-            element.addEventListener('click', function (e) {
-                e.preventDefault();
+        document.addEventListener('DOMContentLoaded', function() {
+            let selectedValue = '';
+            let selectedMin = null;
+            let selectedMax = null;
+            let selectedFilterType = '';
 
-                selectedFilterType = element.getAttribute('data-filter_code');
-                const dataValue = element.getAttribute('data-value');
+            document.querySelectorAll('.js-menu').forEach(function(element) {
+                element.addEventListener('click', function(e) {
+                    e.preventDefault();
 
-                if (selectedFilterType === 'price') {
-                    const params = new URLSearchParams(dataValue);
-                    selectedMin = parseInt(params.get('min'), 10);
-                    selectedMax = parseInt(params.get('max'), 10);
-                    console.log("Selected Min:", selectedMin);
-                    console.log("Selected Max:", selectedMax);
-                    console.log("Selected:", selectedFilterType);
-                    console.log(`/laptops/filter?min=${encodeURIComponent(selectedMin)}&max=${encodeURIComponent(selectedMax)}`);
-                    window.location.href = `/laptops/filter?min=${encodeURIComponent(selectedMin)}&max=${encodeURIComponent(selectedMax)}`;
-                } else {
-                    selectedValue = dataValue;
-                    window.location.href = `/laptops/filter?${selectedFilterType}=${encodeURIComponent(selectedValue)}`;
-                }
+                    selectedFilterType = element.getAttribute('data-filter_code');
+                    const dataValue = element.getAttribute('data-value');
 
+                    if (selectedFilterType === 'price') {
+                        const params = new URLSearchParams(dataValue);
+                        selectedMin = parseInt(params.get('min'), 10);
+                        selectedMax = parseInt(params.get('max'), 10);
+                        console.log("Selected Min:", selectedMin);
+                        console.log("Selected Max:", selectedMax);
+                        console.log("Selected:", selectedFilterType);
+                        console.log(
+                            `/laptops/filter?min=${encodeURIComponent(selectedMin)}&max=${encodeURIComponent(selectedMax)}`
+                            );
+                        window.location.href =
+                            `/laptops/filter?min=${encodeURIComponent(selectedMin)}&max=${encodeURIComponent(selectedMax)}`;
+                    } else {
+                        selectedValue = dataValue;
+                        window.location.href =
+                            `/laptops/filter?${selectedFilterType}=${encodeURIComponent(selectedValue)}`;
+                    }
+
+                });
             });
         });
-    });
     </script>
 
     {{-- Thanh tim kiem --}}
@@ -1452,7 +1544,7 @@
                             suggestionsContainer.style.display = 'none';
                             return;
                         }
-                        
+
                         // Hiển thị gợi ý
                         data.forEach(item => {
                             const suggestion = document.createElement('div');
@@ -1462,7 +1554,8 @@
                             link.href = item.link;
 
                             const image = document.createElement('img');
-                            image.src = item.image; // đảm bảo item chứa thuộc tính `image` với URL hình ảnh
+                            image.src = item
+                            .image; // đảm bảo item chứa thuộc tính `image` với URL hình ảnh
 
                             const info = document.createElement('span');
                             info.classList.add('info');
@@ -1471,8 +1564,10 @@
                             name.classList.add('name');
                             name.textContent = item.name;
 
-                            const priceAttribute = item.attributes.find(attr => attr.name === 'Price');
-                            const price = priceAttribute ? `${priceAttribute.pivot.value} VNĐ` : 'N/A';
+                            const priceAttribute = item.attributes.find(attr => attr.name ===
+                                'Price');
+                            const price = priceAttribute ? `${priceAttribute.pivot.value} VNĐ` :
+                                'N/A';
 
                             const priceSpan = document.createElement('span');
                             priceSpan.classList.add('price');
@@ -1488,7 +1583,7 @@
                             suggestionsContainer.appendChild(suggestion);
                         });
                         console.log(data);
-                        
+
                         suggestionsContainer.style.display = 'block';
                     })
                     .catch(error => {
@@ -1510,7 +1605,5 @@
                 }
             });
         });
-
-
     </script>
 @endpush
