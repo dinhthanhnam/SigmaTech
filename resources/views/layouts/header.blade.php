@@ -1505,7 +1505,7 @@
                         console.log("Selected:", selectedFilterType);
                         console.log(
                             `/laptops/filter?min=${encodeURIComponent(selectedMin)}&max=${encodeURIComponent(selectedMax)}`
-                            );
+                        );
                         window.location.href =
                             `/laptops/filter?min=${encodeURIComponent(selectedMin)}&max=${encodeURIComponent(selectedMax)}`;
                     } else {
@@ -1536,7 +1536,7 @@
                 }
 
                 // Gửi yêu cầu tới endpoint `/search-suggestions`
-                fetch(`/search-suggestions?query=${query}`)
+                fetch(window.location.origin + `/search-suggestions?query=${query}`)
                     .then(response => response.json())
                     .then(data => {
                         suggestionsContainer.innerHTML = ''; // Xóa nội dung cũ
@@ -1554,8 +1554,7 @@
                             link.href = item.link;
 
                             const image = document.createElement('img');
-                            image.src = item
-                            .image; // đảm bảo item chứa thuộc tính `image` với URL hình ảnh
+                            image.src = item.image;
 
                             const info = document.createElement('span');
                             info.classList.add('info');
@@ -1566,7 +1565,8 @@
 
                             const priceAttribute = item.attributes.find(attr => attr.name ===
                                 'Price');
-                            const price = priceAttribute ? `${priceAttribute.pivot.value} VNĐ` :
+                            const price = priceAttribute ?
+                                `${new Intl.NumberFormat('vi-VN').format(priceAttribute.pivot.value)} VNĐ` :
                                 'N/A';
 
                             const priceSpan = document.createElement('span');
@@ -1585,6 +1585,7 @@
                         console.log(data);
 
                         suggestionsContainer.style.display = 'block';
+                        item.link = '';
                     })
                     .catch(error => {
                         console.error('Lỗi:', error);
