@@ -13,19 +13,19 @@
             <a href="{{ url('/pc-parts') }}">Linh kiện máy tính </a>
           </li>
           <li class="breadcrumb-item active" aria-current="page">
-            <a href="{{ url('/pc-parts/cpu') }}">CPU</a>
+            <a href="{{ url('/pc-parts/gpu') }}">VGA</a>
           </li>
         </ol>
       </div>
       <div class="product-collection-related-container">
         <div class="group-title">
-          <h2 class="title">CPU Được Mua Nhiều Nhất 2024</h2>
+          <h2 class="title">VGA Được Mua Nhiều Nhất 2024</h2>
         </div>
       </div>
       <div class="p-container bg-white js-box-container" style="min-height: 400px" data-id="395-850">
         <div class="container custom-nav owl-carousel owl-theme">
-          @foreach ($topCpus as $cpu)
-            @include('partials.simple-p-item', ['product' => $cpu])
+          @foreach ($topGpus as $gpu)
+            @include('partials.simple-p-item', ['product' => $gpu])
           @endforeach
         </div>
       </div>
@@ -39,13 +39,13 @@
               <a href="#" class="filter-name"> Hãng </a>
               <div class="filter-content-group">
                 <div class="filter-group-middle">
-                  <a href="#" class="image filter-title js-filter-title" title="AMD" data-check="0"
+                  <a href="#" class="image filter-title js-filter-title" title="NVIDIA" data-check="0"
                     data-filter_code="brand" data-value="amd">
-                    <span style="background-image: url('{{ asset('assets/img/brand/amd.jpg') }}');"></span>
+                    <span style="background-image: url('{{ asset('assets/img/brand/nvidia.jpg') }}');"></span>
                   </a>
-                  <a href="#" class="image filter-title js-filter-title" title="Intel" data-check="0"
+                  <a href="#" class="image filter-title js-filter-title" title="AMD" data-check="0"
                     data-filter_code="brand" data-value="intel">
-                    <span style="background-image: url('{{ asset('assets/img/brand/intel.jpg') }}');"></span>
+                    <span style="background-image: url('{{ asset('assets/img/brand/amd.jpg') }}');"></span>
                   </a>
                 </div>
                 <div class="filter-group-bottom">
@@ -66,6 +66,12 @@
                     data-value="min=10000000&max=15000000"> 10 triệu - 15 triệu </a>
                   <a href="#" class="filter-title js-filter-title" data-filter_code="price"
                     data-value="min=15000000&max=20000000"> 15 triệu - 20 triệu </a>
+                  <a href="#" class="filter-title js-filter-title" data-filter_code="price"
+                    data-value="min=20000000&max=25000000"> 20 triệu - 25 triệu </a>
+                  <a href="#" class="filter-title js-filter-title" data-filter_code="price"
+                    data-value="min=25000000&max=30000000"> 25 triệu - 30 triệu </a>
+                  <a href="#" class="filter-title js-filter-title" data-filter_code="price"
+                    data-value="min=30000000&max=35000000"> 30 triệu - 35 triệu </a>
                 </div>
                 <div class="filter-group-bottom">
                   <a href="#" onclick=""> Bỏ chọn </a>
@@ -73,17 +79,17 @@
                 </div>
               </div>
             </div>
-            <div class="filter-item js-filter-item" data-type="cpu">
-              <a href="#" class="filter-name "> Dòng CPU </a>
+            <div class="filter-item js-filter-item" data-type="gpu">
+              <a href="#" class="filter-name "> Dòng VGA </a>
               <div class="filter-content-group">
                 <div class="filter-group-middle ">
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="cpu" data-value="Intel Core i3">Intel Core i3 </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="cpu" data-value="Intel Core i5">Intel Core i5 </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="cpu" data-value="Intel Core i7">Intel Core i7 </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="cpu" data-value="Intel Core i9">Intel Core i9 </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="cpu" data-value="AMD Ryzen 5">AMD Ryzen 5 </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="cpu" data-value="AMD Ryzen 7">AMD Ryzen 7 </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="cpu" data-value="AMD Ryzen 9">AMD Ryzen 9 </a>
+                  <a href="#" class="filter-title js-filter-title" data-filter_code="gpu" data-value="Intel Core i3">Intel Core i3 </a>
+                  <a href="#" class="filter-title js-filter-title" data-filter_code="gpu" data-value="Intel Core i5">Intel Core i5 </a>
+                  <a href="#" class="filter-title js-filter-title" data-filter_code="gpu" data-value="Intel Core i7">Intel Core i7 </a>
+                  <a href="#" class="filter-title js-filter-title" data-filter_code="gpu" data-value="Intel Core i9">Intel Core i9 </a>
+                  <a href="#" class="filter-title js-filter-title" data-filter_code="gpu" data-value="AMD Ryzen 5">AMD Ryzen 5 </a>
+                  <a href="#" class="filter-title js-filter-title" data-filter_code="gpu" data-value="AMD Ryzen 7">AMD Ryzen 7 </a>
+                  <a href="#" class="filter-title js-filter-title" data-filter_code="gpu" data-value="AMD Ryzen 9">AMD Ryzen 9 </a>
                 </div>
                 <div class="filter-group-bottom">
                   <a href="#" onclick="BuildFilterUrl.clearFilter.call(this, '')"> Bỏ chọn </a>
@@ -98,7 +104,7 @@
         <div class="p-container bg-white">
           <div class="sort-container d-flex align-items-center justify-content-between flex-wrap">
             <div class="d-flex align-items-center">
-              <b style="font-size:16px;margin-right: 20px"> ? CPU - Vi xử lý </b>
+              <b style="font-size:16px;margin-right: 20px"> ? VGA - Card đồ hoạ </b>
               <div class="sort-by-group">
                 <a href="javascript:void(0)">
                   <i class="mb-icons icon-in-stock"></i>
@@ -120,24 +126,24 @@
             </div>
           </div>
           <div class="p-list-container d-flex flex-wrap">
-            @foreach ($cpus as $cpu)
-              @include('partials.simple-p-item', ['product' => $cpu])
+            @foreach ($gpus as $gpu)
+              @include('partials.simple-p-item', ['product' => $gpu])
             @endforeach
           </div>
         </div>
         <!-- paging -->
         <div class="paging bg-white mx-auto">
-          <a href="{{ $cpus->url(1) }}" class="{{ $cpus->onFirstPage() ? 'current' : '' }}">
+          <a href="{{ $gpus->url(1) }}" class="{{ $gpus->onFirstPage() ? 'current' : '' }}">
             1
           </a>
-          @for ($page = 2; $page <= $cpus->lastPage(); $page++)
-            <a href="{{ $cpus->url($page) }}"
-              class="{{ $page == $cpus->currentPage() ? 'current' : '' }}">
+          @for ($page = 2; $page <= $gpus->lastPage(); $page++)
+            <a href="{{ $gpus->url($page) }}"
+              class="{{ $page == $gpus->currentPage() ? 'current' : '' }}">
               {{ $page }}
             </a>
           @endfor
-          @if ($cpus->hasMorePages())
-            <a href="{{ $cpus->nextPageUrl() }}">
+          @if ($gpus->hasMorePages())
+            <a href="{{ $gpus->nextPageUrl() }}">
               <i class="fa fa-angle-right"></i>
             </a>
           @endif

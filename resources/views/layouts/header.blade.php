@@ -567,7 +567,7 @@
                                 <div class="cat-child-holder" id="js-menu-container">
 
                                     <div class="cat-child-items">
-                                        <a href="/cpu" class="cate-2" title="CPU - Bộ Vi Xử Lý"
+                                        <a href="{{ url('pc-parts/cpu') }}" class="cate-2" title="CPU - Bộ Vi Xử Lý"
                                             id="js-menu-1025">CPU - Bộ Vi Xử Lý</a>
                                         <div>
                                             <div class="cat-child-last">
@@ -601,7 +601,7 @@
                                         </div>
                                     </div>
                                     <div class="cat-child-items">
-                                        <a href="/mainboards" class="cate-2" title="Mainboard - Bo Mạch Chủ"
+                                        <a href="{{ url('pc-parts/mainboard/') }}" class="cate-2" title="Mainboard - Bo Mạch Chủ"
                                             id="js-menu-1024">Mainboard - Bo Mạch Chủ</a>
                                         <div>
                                             <div class="cat-child-last">
@@ -662,7 +662,7 @@
                                         </div>
                                     </div>
                                     <div class="cat-child-items">
-                                        <a href="/pc-parts/gpu/" class="cate-2" title="VGA - Card Màn Hình"
+                                        <a href="{{ url('pc-parts/gpu/') }}" class="cate-2" title="VGA - Card Màn Hình"
                                             id="js-menu-1155">VGA - Card Màn Hình</a>
                                         <div>
                                             <div class="cat-child-last">

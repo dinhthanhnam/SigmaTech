@@ -30,7 +30,7 @@
   }
 @endphp
 <div class="p-item js-p-item summary-loaded">
-  <a href="{{$product->link}}" class="p-img">
+  <a href="{{ url($product->link) }}" class="p-img">
     <img src="{{ $product->attributes->firstWhere('name', 'Thumbnail')?->pivot->value ?? 'N/A' }}"
       alt="{{ $name }} "
       class="fit-img">
@@ -38,7 +38,7 @@
   </a>
   <div class="p-text">
     <span class="p-sku" style="font-size: 12px;">Mã SP: {{ $model }}</span>
-    <a href="{{$product->link}}" class="p-name">
+    <a href="{{ url($product->link) }}" class="p-name">
       <h3>{{ $name }}</h3>
     </a>
     

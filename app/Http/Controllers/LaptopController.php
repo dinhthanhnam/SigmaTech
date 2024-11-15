@@ -31,6 +31,13 @@ class LaptopController extends Controller
                   ->where('value', 'Gaming');
         })->with('attributes')->paginate(12);
         
+        foreach($gamingLaptops as $item)
+        {
+            $brand = $item->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
+            $type = $item->attributes->firstWhere('name', '[Laptop] Loại laptop')->pivot->value ?? 'N/A';
+            $item->link = 'laptops/'.$type.'/'.$brand.'/'.$item->id;
+        };
+
         $topGamingLaptops = Laptop::whereHas('attributes', function ($query) {
             $query->where('name', '[Laptop] Loại laptop')
                   ->where('value', 'Gaming');
@@ -42,6 +49,13 @@ class LaptopController extends Controller
         ->with('attributes')
         ->limit(10)
         ->get();
+
+        foreach($topGamingLaptops as $item)
+        {
+            $brand = $item->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
+            $type = $item->attributes->firstWhere('name', '[Laptop] Loại laptop')->pivot->value ?? 'N/A';
+            $item->link = 'laptops/'.$type.'/'.$brand.'/'.$item->id;
+        };
         
         return view('categories.gaming-laptops', compact('gamingLaptops', 'topGamingLaptops'));
     }
@@ -53,6 +67,13 @@ class LaptopController extends Controller
                   ->where('value', 'Office');
         })->with('attributes')->paginate(12);
         
+        foreach($officeLaptops as $item)
+        {
+            $brand = $item->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
+            $type = $item->attributes->firstWhere('name', '[Laptop] Loại laptop')->pivot->value ?? 'N/A';
+            $item->link = 'laptops/'.$type.'/'.$brand.'/'.$item->id;
+        };
+
         $topOfficeLaptops = Laptop::whereHas('attributes', function ($query) {
             $query->where('name', '[Laptop] Loại laptop')
                   ->where('value', 'Office');
@@ -64,6 +85,14 @@ class LaptopController extends Controller
         ->with('attributes')
         ->limit(10)
         ->get();
+
+        foreach($topOfficeLaptops as $item)
+        {
+            $brand = $item->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
+            $type = $item->attributes->firstWhere('name', '[Laptop] Loại laptop')->pivot->value ?? 'N/A';
+            $item->link = 'laptops/'.$type.'/'.$brand.'/'.$item->id;
+        };
+
         return view('categories.office-laptops', compact('officeLaptops', 'topOfficeLaptops'));
     }
 

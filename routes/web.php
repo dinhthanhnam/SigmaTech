@@ -30,12 +30,24 @@ Route::post('logout', [LoginController::class, 'logout'])->name('logout');
 
 Route::get('/', [HomeController::class, 'index'])->name('home.index');
 
-//Trang chuyen muc
-Route::get('laptops/Gaming', [LaptopController::class, 'showGamingLaptops'])->name('gaming-laptops.show');
-Route::get('laptops/Office', [LaptopController::class, 'showOfficeLaptops'])->name('office-laptops.show');
-Route::get('flash-sale', [SaleController::class, 'showFlashSale'])->name('flash-sale');
+//Trang chuyen muc laptop
+Route::prefix('laptops')->group(function () {
+  Route::get('Gaming', [LaptopController::class, 'showGamingLaptops'])->name('gaming-laptops.show');
+  Route::get('Office', [LaptopController::class, 'showOfficeLaptops'])->name('office-laptops.show');
+});
+//Trang chuyen muc man hinh
 Route::get('monitors', [MonitorController::class, 'showMonitors'])->name('monitors.show');
-Route::get('pc-parts/cpu', [CpuController::class, 'showCpus'])->name('cpus.show');
+
+Route::prefix('pc-parts')->group(function() {
+  Route::get('cpu', [CpuController::class, 'showCpus'])->name('cpus.show');
+  Route::get('gpu', [GpuController::class, 'showGpus'])->name('cpus.show');
+});
+
+
+
+Route::get('flash-sale', [SaleController::class, 'showFlashSale'])->name('flash-sale');
+
+
 
 
 Route::get('gaming-gears', function () {
