@@ -89,7 +89,7 @@
                     </h5>
                 </div>
                 <div class = "custom-order-btn">
-                    <a href="#" class="btn w-100">ĐẶT HÀNG NGAY</a>
+                    <a onclick="placeOrder()" class="btn w-100">ĐẶT HÀNG NGAY</a>
                 </div>
             @endif
         </div>
@@ -197,6 +197,28 @@
                     })
                     .catch(error => console.error('Lỗi:', error));
             }
+        }
+
+        function placeOrder() {
+            const selectedItems = [];
+            document.querySelectorAll('.select-item:checked').forEach(checkbox => {
+                const cartItem = checkbox.closest('.cart-item');
+                const productType = cartItem.querySelector('.quantity-input').dataset.type;
+                const productId = cartItem.querySelector('.quantity-input').dataset.id;
+                selectedItems.push({
+                    productType,
+                    productId
+                });
+            });
+
+            if (selectedItems.length === 0) {
+                alert('Vui lòng chọn ít nhất một sản phẩm để đặt hàng');
+                return;
+            }
+
+            // Encode selectedItems để gửi qua URL
+            const queryString = encodeURIComponent(JSON.stringify(selectedItems));
+            window.location.href = `/cart/order?items=${queryString}`;
         }
     </script>
 @endpush
