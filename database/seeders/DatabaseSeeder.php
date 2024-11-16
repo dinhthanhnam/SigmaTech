@@ -45,5 +45,7 @@ class DatabaseSeeder extends Seeder
         $this->call(GpuSeeder::class);
 
         $this->call(MonitorSeeder::class);
+
+        $this->call(GaminggearSeeder::class);
     }
 }

@@ -120,41 +120,15 @@ class AttributeSeeder extends Seeder
             ['name' => '[MON] Thiết kế cơ học', 'data_type' => 'string'],
             ['name' => '[MON] Trọng lượng', 'data_type' => 'string'],
 
-            //mouse attribute
-            ['name' => '[MOU] Loại chuột', 'data_type' => 'string'],
-            ['name' => '[MOU] Kết nối', 'data_type' => 'string'],
-            ['name' => '[MOU] Độ nhạy DPI', 'data_type' => 'string'],
-            ['name' => '[MOU] Số nút bấm', 'data_type' => 'string'],
-            ['name' => '[MOU] Đèn LED', 'data_type' => 'string'],
-            ['name' => '[MOU] Thời gian pin', 'data_type' => 'string'],
-            ['name' => '[MOU] Trọng lượng', 'data_type' => 'string'],
-            ['name' => '[MOU] Phụ kiện đi kèm', 'data_type' => 'string'],
-            ['name' => '[MOU] Tính năng đặc biệt', 'data_type' => 'string'],
-
-            //key board attribute
-            ['name' => '[KB] Loại bàn phím', 'data_type' => 'string'],
-            ['name' => '[KB] Kết nối', 'data_type' => 'string'],
-            ['name' => '[KB] Loại switch', 'data_type' => 'string'],
-            ['name' => '[KB] Đèn nền', 'data_type' => 'string'],
-            ['name' => '[KB] Anti-ghosting', 'data_type' => 'string'],
-            ['name' => '[KB] Layout', 'data_type' => 'string'],
-            ['name' => '[KB] Kích thước', 'data_type' => 'string'],
-            ['name' => '[KB] Trọng lượng', 'data_type' => 'string'],
-            ['name' => '[KB] Phụ kiện đi kèm', 'data_type' => 'string'],
-            ['name' => '[KB] Tính năng đặc biệt', 'data_type' => 'string'],
-
-            //head phone attributes
-            ['name' => '[HP] Loại tai nghe', 'data_type' => 'string'],
-            ['name' => '[HP] Kiểu kết nối', 'data_type' => 'string'],
-            ['name' => '[HP] Độ nhạy', 'data_type' => 'string'],
-            ['name' => '[HP] Dải tần số', 'data_type' => 'string'],
-            ['name' => '[HP] Độ trở kháng', 'data_type' => 'string'],
-            ['name' => '[HP] Độ dài dây', 'data_type' => 'string'],
-            ['name' => '[HP] Pin và thời gian sạc', 'data_type' => 'string'],
-            ['name' => '[HP] Tính năng chống ồn', 'data_type' => 'string'],
-            ['name' => '[HP] Trọng lượng', 'data_type' => 'string'],
-            ['name' => '[HP] Phụ kiện đi kèm', 'data_type' => 'string'],
-            ['name' => '[HP] Tính năng đặc biệt', 'data_type' => 'string'],
+            //gaming-gear
+            ['name' => '[GG] Loại thiết bị', 'data_type' => 'string'],
+            ['name' => '[GG] Kết nối', 'data_type' => 'string'],
+            ['name' => '[GG] Hệ thống đèn RGB', 'data_type' => 'string'],
+            ['name' => '[GG] Chất liệu', 'data_type' => 'string'],
+            ['name' => '[GG] Trọng lượng', 'data_type' => 'string'],
+            ['name' => '[GG] Tính năng đặc biệt', 'data_type' => 'string'],
+            ['name' => '[GG] Cổng kết nối', 'data_type' => 'string'],
+            ['name' => '[GG] Phụ kiện đi kèm', 'data_type' => 'string'],
 
             //Cooling  
             ['name' => '[TN] Loại tản nhiệt', 'data_type' => 'string'],
