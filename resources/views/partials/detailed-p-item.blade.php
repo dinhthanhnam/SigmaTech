@@ -1,5 +1,4 @@
 @php
-  use Carbon\Carbon;
   //biến chung
   $product_id = $product->id;
   $category_id = $product->category_id;
@@ -26,7 +25,7 @@
 @php
     $discountPercentage = 0;
 
-    if ($saleprice != 'N/A' && strtotime($sale_end_date) < Carbon\Carbon::now()->timestamp) {
+    if ($saleprice != 'N/A' && strtotime($sale_end_date) > Carbon\Carbon::now()->timestamp) {
       $discountPercentage = round((1 - $saleprice / $price) * 100);
     } else {
       $discountPercentage = round((1 - $dealprice / $price) * 100);
@@ -52,7 +51,7 @@
     <div class="price-container">
       <del class="p-old-price"> {{ number_format($price, 0, ',', '.') }} đ </del>
       <span class="p-discount"> {{ $discountPercentage }} % </span>
-      @if ($saleprice != 'N/A' && Carbon::parse($sale_end_date)->lt(Carbon::now()))
+      @if ($saleprice != 'N/A' && strtotime($sale_end_date) > Carbon\Carbon::now()->timestamp)
         <span class="p-price"> {{ number_format($saleprice, 0, ',', '.') }} đ </span>
       @else
         <span class="p-price"> {{ number_format($dealprice, 0, ',', '.') }} đ </span>
