@@ -3334,12 +3334,12 @@ header .header-banner .close-banner {
     }
 
     .header-main-container .header-search {
-        width: 790px;
+        width: 950px;
         margin-right: 20px;
     }
 
     .header-main-container .header-icon-right {
-        width: calc(100% - 1080px);
+        width: calc(100% - 1280px);
         padding: 0 0 0 20px;
     }
 
@@ -3386,7 +3386,7 @@ header .header-banner .close-banner {
     }
 
     .header-fixed .header-search {
-        width: 870px;
+        width: 1070px;
     }
 
     .header-fixed .header-icon-right {

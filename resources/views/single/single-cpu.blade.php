@@ -33,12 +33,11 @@
                         </a>
                     </li>
                     <li class="breadcrumb-item" aria-current="page">
-                        <a
-                            href="/pc-parts">Linh kiện máy tính</a>
+                        <a href="/pc-parts">Linh kiện máy tính</a>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
-                        <a
-                            href="/pc-parts/cpu/{{$brand}}">CPU {{ $cpu->attributes->firstWhere('id', '1')->pivot->value }}</a>
+                        <a href="/pc-parts/cpu/{{ $brand }}">CPU
+                            {{ $cpu->attributes->firstWhere('id', '1')->pivot->value }}</a>
                     </li>
                 </ol>
             </div>
@@ -57,7 +56,7 @@
                         <a href="javascript:void(0)" onclick="openBoxGallery(this);" data-id="anh_sp"
                             data-name="Hình sản phẩm" class="js-img-type current">
                             <span class="img">
-                                <img src="{{$cpu->attributes->firstWhere('name', 'Thumbnail Small')->pivot->value ?? 'N/A'}}"
+                                <img src="{{ $cpu->attributes->firstWhere('name', 'Thumbnail Small')->pivot->value ?? 'N/A' }}"
                                     alt="Hình sản phẩm" class="fit-img">
                             </span>
                             <span class="name"> Hình sản phẩm </span>
@@ -68,7 +67,6 @@
                             <span style="font-weight: bold;color: #000">Thông số kỹ thuật</span>
                         </a>
                     </div>
-
                     <div class="product-spec-group mb-4 font-300">
                         <h2 class="title" style="font-size: 20px;text-align: center;font-weight: 700;margin-bottom: 10px;">
                             THÔNG SỐ KỸ THUẬT</h2>
@@ -77,11 +75,10 @@
                                 <tbody>
                                     <tr>
                                         <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
-                                            <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
+                                            <p>
+                                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
                                                     <strong>
-                                                        <span style="line-height: 115%; color: black;">
-                                                            Hãng sản xuất
-                                                        </span>
+                                                        <span style="line-height: 115%; color: black;">Hãng sản xuất</span>
                                                     </strong>
                                                 </span>
                                             </p>
@@ -90,9 +87,8 @@
                                             <p style="text-align: center;">
                                                 <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
                                                     <strong>
-                                                        <a href="https://www.anphatpc.com.vn/laptop-asus_dm1058.html">
-                                                            {{ $brand }}
-                                                        </a>
+                                                        <a
+                                                            href="https://www.anphatpc.com.vn/laptop-asus_dm1058.html">{{ $brand }}</a>
                                                     </strong>
                                                 </span>
                                             </p>
@@ -111,12 +107,12 @@
                                             </p>
                                         </td>
                                         <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
-                                            <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a
-                                                    href="https://www.anphatpc.com.vn/laptop-asus-rog-strix-g16-g614ji-n4125w.html"
-                                                    target="_blank">{{ $name }}</a></span>
+                                            <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
+                                                <a href="https://www.anphatpc.com.vn/laptop-asus-rog-strix-g16-g614ji-n4125w.html"
+                                                    target="_blank">{{ $name }}</a>
+                                            </span>
                                         </td>
                                     </tr>
-
                                     <tr>
                                         <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
                                             <p>
@@ -341,8 +337,6 @@
                                                 style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $lithography }}</span>
                                         </td>
                                     </tr>
-
-
                                 </tbody>
                             </table>
                         </div>
@@ -418,11 +412,9 @@
                                     <td width="160px" class="font-500">Giá khuyến mại:</td>
                                     <td>
                                         <b style="color: #ce0707" class="text-18 js-pro-total-price"
-                                            data-price="42990000">
-                                            {{ $dealprice }} đ
+                                            data-price="42990000"> {{ $dealprice }} đ
                                         </b>
-                                        <span style="color: #888888;" class="text-12">
-                                            [Giá đã có VAT]
+                                        <span style="color: #888888;" class="text-12"> [Giá đã có VAT]
                                         </span>
                                     </td>
                                 </tr>
@@ -466,10 +458,6 @@
                             <input type="hidden" name="quantity" value="1" min="1">
                         </form>
                     </div>
-                    <p class="blue icon-payment-container">
-                        <b>Chấp nhận thanh toán:</b>
-                        <i class="icon icon-payment"></i>
-                    </p>
                 </div>
                 <div class="product-detail-info-right">
                     <!-- kho hàng -->
@@ -477,62 +465,46 @@
                         <p style="display: flex;">
                             <i class="fa fa-map-marker" style="margin: 4px 10px 0 0;"></i>
                             <b style="color:red;display: inline-block;">Mua hàng Online toàn quốc: <br> (Hotline: 1900.0323
-                                - Phím 1
-                                hoặc
-                                0913.367.005)</b>
+                                - Phím 1 hoặc 0913.367.005)</b>
                         </p>
                     </div>
                     {{-- Nếu có thể thì nên làm phần này Dynamic --}}
                     <div class="pd-static-item">
                         <p class="title"> Hiện đang có tại showroom:</p>
-
                         <div class="static-info">
                             <div class="store-address font-500" id="js-in-stock">
                                 <b class="d-block" style="color: #000">* Showroom miền Bắc:</b>
                                 <div class="mb-2" id="js-mien-bac">
                                     <a href="#" target="_blank" class="blue">
-                                        <span>
-                                            12 Chùa Bộc - Q.Đống Đa - Hà Nội<br>
-                                            (Hotline: 0918.557.006)
-                                        </span>
+                                        <span>12 Chùa Bộc - Q.Đống Đa - Hà Nội<br>(Hotline: 0918.557.006)</span>
                                     </a>
                                     <a href="#" target="_blank" class="blue">
-                                        <span>
-                                            331 Ngô Gia Tự - P. Tiền An - Bắc Ninh <br>
-                                            (Hotline: 0862.136.488)
-                                        </span>
+                                        <span>331 Ngô Gia Tự - P. Tiền An - Bắc Ninh <br>(Hotline: 0862.136.488)</span>
                                     </a>
                                 </div>
                             </div>
-                            <div id="js-out-stock" style="display: none;font-weight: bold;">
-                                Kho hàng: <span class="red">Liên hệ</span>
-                            </div>
+                            <div id="js-out-stock" style="display: none;font-weight: bold;">Kho hàng: <span
+                                    class="red">Liên hệ</span></div>
                         </div>
                     </div>
                     <div class="pd-static-item">
                         <p class="title">Trợ giúp</p>
                         <div class="static-info">
                             <ul class="ul" style="line-height:25px;">
-                                <li> <i class="fa fa-check"></i> <a
-                                        href="https://www.anphatpc.com.vn/tin-khuyen-mai/huong-dan-dat-hang-flash-sale_idtin5339.html"
-                                        target="blank">Hướng dẫn đặt hàng Flash Sale</a> </li>
-                                <li> <i class="fa fa-check"></i> <a
-                                        href="https://www.anphatpc.com.vn/huong-dan-dat-hang.html" target="blank">Hướng
-                                        dẫn mua hàng</a> </li>
-                                <li> <i class="fa fa-check"></i> <a
-                                        href="https://www.anphatpc.com.vn/trung-tam-bao-hanh.html" target="blank">Chính
-                                        sách bảo hành đổi trả</a> </li>
-                                <li> <i class="fa fa-check"></i> <a href="https://www.anphatpc.com.vn/mua-tra-gop.html"
-                                        target="blank">Chính sách mua trả góp</a> </li>
-                                <li> <i class="fa fa-check"></i> <a href="https://www.anphatpc.com.vn/giao-hang.html"
+                                <li> <i class="fa fa-check"></i> <a href="javascript:void(0)" target="blank">Hướng dẫn
+                                        đặt hàng Flash Sale</a> </li>
+                                <li> <i class="fa fa-check"></i> <a href="javascript:void(0)" target="blank">Hướng dẫn
+                                        mua hàng</a> </li>
+                                <li> <i class="fa fa-check"></i> <a href="{{ route('pages.warranty-policy') }}"
+                                        target="blank">Chính sách bảo hành đổi trả</a> </li>
+                                <li> <i class="fa fa-check"></i> <a href="javascript:void(0)" target="blank">Chính sách
+                                        mua trả góp</a> </li>
+                                <li> <i class="fa fa-check"></i> <a href="{{ route('pages.shipping-policy') }}"
                                         target="blank">Chính sách giao hàng</a> </li>
-                                <li> <i class="fa fa-check"></i> <a
-                                        href="https://www.anphatpc.com.vn/chinh-sach-bao-hanh-tan-nha.html"
-                                        target="blank">Chính sách bảo hành tận nhà</a> </li>
-                                <li> <i class="fa fa-check"></i> <a
-                                        href="https://www.anphatpc.com.vn/phong-du-an-va-khach-hang-doanh-nghiep.html"
-                                        target="blank">Hỗ trợ
-                                        khách hàng dự án, doanh nghiệp </a> </li>
+                                <li> <i class="fa fa-check"></i> <a href="javascript:void(0)" target="blank">Chính sách
+                                        bảo hành tận nhà</a> </li>
+                                <li> <i class="fa fa-check"></i> <a href="javascript:void(0)" target="blank">Hỗ trợ khách
+                                        hàng dự án, doanh nghiệp </a> </li>
                             </ul>
                         </div>
                     </div>
@@ -565,7 +537,8 @@
                         <tbody>
                             <tr>
                                 <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
-                                    <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
+                                    <p>
+                                        <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
                                             <strong>
                                                 <span style="line-height: 115%; color: black;">
                                                     Hãng sản xuất
@@ -830,6 +803,20 @@
                 </div>
             </div>
         </div>
+        @if (session('addToCartSuccess'))
+            @push('scripts')
+                <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+                <script>
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Thêm sản phẩm vào giỏ hàng thành công!',
+                        text: 'Cảm ơn bạn đã mua sắm tại SigmaTech.',
+                        confirmButtonText: 'Đóng',
+                        timer: 5000
+                    });
+                </script>
+            @endpush
+        @endif
     </section>
 @endsection
 
@@ -850,13 +837,14 @@
 @push('scripts')
     <script>
         const listImage = {
-            anh_sp: 
-            [
+            anh_sp: [
                 @foreach ($images as $image)
-                    { image: `{{ $image }}` },
+                    {
+                        image: `{{ $image }}`
+                    },
                 @endforeach
             ]
-                
+
         };
 
         $(document).ready(function() {
@@ -923,25 +911,25 @@
         });
 
         function openBoxGallery(element) {
-        var imageId = element.getAttribute("data-id");
-        var images = listImage[imageId];
+            var imageId = element.getAttribute("data-id");
+            var images = listImage[imageId];
 
-        if (images && images.length > 0) {
-            var fancyboxImages = images.map(function(image) {
-                return {
-                    src: image.image,
-                    type: "image",
-                    opts: {
-                        caption: "Hình ảnh sản phẩm",
-                        thumb: image.image
-                    }
-                };
-            });
+            if (images && images.length > 0) {
+                var fancyboxImages = images.map(function(image) {
+                    return {
+                        src: image.image,
+                        type: "image",
+                        opts: {
+                            caption: "Hình ảnh sản phẩm",
+                            thumb: image.image
+                        }
+                    };
+                });
 
-            Fancybox.show(fancyboxImages);
-        } else {
-            console.warn("Không tìm thấy hình ảnh cho ID: " + imageId);
-        }
+                Fancybox.show(fancyboxImages);
+            } else {
+                console.warn("Không tìm thấy hình ảnh cho ID: " + imageId);
+            }
         }
     </script>
     <script>
@@ -1015,22 +1003,22 @@
     <script>
         // Xác định thời gian kết thúc (thời gian đích) - ví dụ là 1 giờ từ thời gian hiện tại
         const endTime = new Date().getTime() + 3600000; // 1 giờ = 3600000 milliseconds
-    
+
         // Cập nhật đồng hồ đếm ngược mỗi giây
         const countdown = setInterval(function() {
             const now = new Date().getTime();
             const timeLeft = endTime - now;
-    
+
             // Tính giờ, phút và giây từ timeLeft
             const hours = Math.floor((timeLeft / (1000 * 60 * 60)) % 24);
             const minutes = Math.floor((timeLeft / (1000 * 60)) % 60);
             const seconds = Math.floor((timeLeft / 1000) % 60);
-    
+
             // Hiển thị kết quả trong các phần tử tương ứng
             document.querySelector('.js-hour').innerText = String(hours).padStart(2, '0');
             document.querySelector('.js-minute').innerText = String(minutes).padStart(2, '0');
             document.querySelector('.js-seconds').innerText = String(seconds).padStart(2, '0');
-    
+
             // Nếu thời gian kết thúc, dừng bộ đếm ngược
             if (timeLeft < 0) {
                 clearInterval(countdown);
@@ -1038,5 +1026,4 @@
             }
         }, 1000); // Cập nhật mỗi giây (1000 milliseconds)
     </script>
-    
 @endpush

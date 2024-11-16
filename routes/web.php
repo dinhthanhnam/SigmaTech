@@ -11,9 +11,15 @@ use App\Http\Middleware\AuthAdmin;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LaptopController;
+use App\Http\Controllers\MonitorController;
 use App\Http\Controllers\SaleController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\Admin\SaleController as AdminSaleController;
+use App\Http\Controllers\OrderController;
+use App\Http\Controllers\Admin\OrderController as AdminOrderController;
+
+
 
 
 
@@ -21,33 +27,35 @@ Auth::routes();
 
 Route::post('logout', [LoginController::class, 'logout'])->name('logout');
 
-Route::middleware(['auth'])->group(function () {
-  Route::get('/', [UserController::class, 'index'])->name('home.index');
-});
-Route::middleware(['auth', AuthAdmin::class])->group(function () {
-  Route::get('admin', [AdminController::class, 'index'])->name('admin.index');
-});
+// Route::middleware(['auth'])->group(function () {
+//   Route::get('/', [UserController::class, 'index'])->name('home.index');
+// });
 
 Route::get('/', [HomeController::class, 'index'])->name('home.index');
 
-Route::get('laptops/Gaming', [LaptopController::class, 'showGamingLaptops'])
-  ->name('gaming-laptops.show');
+//Trang chuyen muc laptop
+Route::prefix('laptops')->group(function () {
+  Route::get('Gaming', [LaptopController::class, 'showGamingLaptops'])->name('gaming-laptops.show');
+  Route::get('Office', [LaptopController::class, 'showOfficeLaptops'])->name('office-laptops.show');
+});
+//Trang chuyen muc man hinh
+Route::get('monitors', [MonitorController::class, 'showMonitors'])->name('monitors.show');
 
-Route::get('laptops/Office', [LaptopController::class, 'showOfficeLaptops'])
-  ->name('office-laptops.show');
+Route::prefix('pc-parts')->group(function() {
+  Route::get('cpu', [CpuController::class, 'showCpus'])->name('cpus.show');
+  Route::get('gpu', [GpuController::class, 'showGpus'])->name('cpus.show');
+});
 
-Route::get('flash-sale', [SaleController::class, 'showFlashSale'])
-  ->name('flash-sale');
 
-Route::get('pc-parts/cpu', [CpuController::class, 'showCpus'])
-  ->name('cpus.show');
+
+Route::get('flash-sale', [SaleController::class, 'showFlashSale'])->name('flash-sale');
+
+
+
 
 Route::get('gaming-gears', function () {
   return view('categories.gaming-gears');
 })->name('gaming-gears.show');
-Route::get('monitors', function () {
-  return view('categories.monitors');
-})->name('monitors.show');
 Route::get('pc-parts', function () {
   return view('categories.pc-parts');
 })->name('pc-parts.show');
@@ -70,19 +78,18 @@ Route::get('warranty-policy', function () {
 Route::get('laptop-outlet', function () {
   return view('pages.laptop-outlet');
 })->name('pages.laptop-outlet');
-Route::get('account', function () {
-  return view('user-account');
-})->name('user-account');
+Route::get('account', [UserController::class, 'index'])->name('user-account');
 
 //admin view
-Route::get('/admin/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
-Route::get('/admin/product', [ProductController::class, 'showAllProducts'])->name('admin.show-product');
-Route::get('/admin/new-product', [ProductController::class, 'showAddProduct'])->name('admin.new-product');
-Route::post('/admin/new-product', [ProductController::class, 'saveProduct'])->name('admin.save-product');
 
-
-//single laptop
-Route::get('laptops/{type}/{brand}/{id}', [LaptopController::class, 'show'])->name('laptop.show');
+Route::middleware(['auth', AuthAdmin::class])->prefix('admin')->group(function () {
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.index');
+    Route::get('/product', [ProductController::class, 'showAllProducts'])->name('admin.show-product');
+    Route::get('/new-product', [ProductController::class, 'showAddProduct'])->name('admin.new-product');
+    Route::post('/new-product', [ProductController::class, 'saveProduct'])->name('admin.save-product');
+    Route::get('/order', [AdminOrderController::class, 'showAllOrders'])->name('admin.show-order');
+    Route::get('/sale', [AdminSaleController::class, 'index'])->name('admin.show-sale');
+});
 
 //cart
 Route::get('/cart', [CartController::class, 'show'])->name('cart');
@@ -91,13 +98,22 @@ Route::patch('/cart/{product_type}/{product_id}', [CartController::class, 'updat
 Route::delete('/cart/{product_type}/{product_id}', [CartController::class, 'remove'])->name('cart.remove');
 Route::patch('/cart/update-bulk', [CartController::class, 'updateBulkQuantity'])->name('cart.updateBulkQuantity');
 Route::get('/cart/count', [CartController::class, 'cartCount'])->name('cart.count');
+//order
+Route::get('/cart/order', [OrderController::class, 'orderInfo'])->name('order.info');
+Route::post('/cart/order/place', [OrderController::class, 'placeOrder'])->name('order.place');
 
+
+//single laptop
+Route::get('laptops/{type}/{brand}/{id}', [LaptopController::class, 'show'])->name('laptop.show');
 
 //single cpu
 Route::get('pc-parts/{pcpart_type}/{brand}/{id}', [CpuController::class, 'show'])->name('cpu.show');
 
 //single gpu
 Route::get('gpu/{brand}/{id}', [GpuController::class, 'show'])->name('gpu.show');
+
+//single monitor
+Route::get('monitors/{brand}/{id}', [MonitorController::class, 'show'])->name('monitor.show');
 
 //filter
 Route::get('/laptops/filter', [LaptopController::class, 'filterLaptops'])->name('laptop.filter');

@@ -31,13 +31,13 @@ class ProductController extends Controller
         // Gộp tất cả các sản phẩm vào một biến chung
         $products = collect()->merge($laptops)->merge($cpus)->merge($gpus)/*->merge($monitors)*/;
 
-        return view('admin.pages.product', compact('products'));
+        return view('admin.product', compact('products'));
     }
 
 
     public function showAddProduct()
     {
-        return view('admin.pages.new-product');
+        return view('admin.new-product');
     }
 
     public function saveProduct(Request $request)
@@ -51,7 +51,8 @@ class ProductController extends Controller
         $productType = $request->input('producttype');
         $laptopType = $request->input('laptoptype');
         $maxId = Laptop::max('id');
-        
+        $ontop = $request->ontop === 'yes' ? 1 : 0;
+
         if($laptopType == "laptopGaming"){
             $categoryId = 1;
             $laptopType = "Gaming";
@@ -83,6 +84,7 @@ class ProductController extends Controller
                 ['name' => 'Model', 'value' => $request->input('model')],
                 ['name' => 'Price', 'value' => $request->input(key: 'price')],
                 ['name' => 'Deal Price', 'value' => $request->input(key: 'dealprice')],
+                ['name' => 'On Top', 'value' => $ontop],
                 ['name' => '[Laptop] Loại laptop', 'value' => $laptopType],
                 ['name' => '[Laptop] Vi xử lý', 'value' => $request->input(key: 'vixuly')],
                 ['name' => '[Laptop] Số nhân', 'value' => $request->input(key: 'nhan')],

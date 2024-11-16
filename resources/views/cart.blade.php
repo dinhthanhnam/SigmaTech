@@ -27,13 +27,21 @@
                 </div>
             @else
                 <div class="cart-items">
+                    <div class="select-all mb-3">
+                        <input type="checkbox" id="select-all" onclick="toggleSelectAll(this)">
+                        <label for="select-all">Chọn tất cả</label>
+                    </div>
                     @php $totalPrice = 0; @endphp
                     @foreach ($cartItems as $item)
                         @php
                             $itemTotal = $item->dealprice * $item->quantity;
-                            $totalPrice += $itemTotal;
                         @endphp
                         <section class="cart-item d-flex p-3 border-none">
+                            <div class="align-self-center me-3">
+                                <input type="checkbox" class="select-item" data-price="{{ $itemTotal }}"
+                                    onclick="updateTotalPriceCheckbox()">
+                            </div>
+
                             <div class="item-image" style="width: 130px;">
                                 <img src="{{ asset($item->image) }}" alt="{{ $item->name }}">
                                 <button class="btn mt-2 delete-btn"
@@ -58,20 +66,16 @@
 
                                 </div>
                                 <div class="item-quantity d-flex">
-                                    <div class="item-quantity d-flex">
-                                        <button class="qtyminus qty-btn"
-                                            onclick="updateQuantity('{{ $item->product_type }}', {{ $item->product_id }}, -1)"
-                                            {{ $item->quantity <= 1 ? 'disabled' : '' }}
-                                            data-type="{{ $item->product_type }}"
-                                            data-id="{{ $item->product_id }}">-</button>
-                                        <input type="text" class="form text-center quantity-input" style="width: 50px;"
-                                            value="{{ $item->quantity }}" readonly data-type="{{ $item->product_type }}"
-                                            data-id="{{ $item->product_id }}">
-                                        <button class="qtyplus qty-btn"
-                                            onclick="updateQuantity('{{ $item->product_type }}', {{ $item->product_id }}, 1)"
-                                            data-type="{{ $item->product_type }}"
-                                            data-id="{{ $item->product_id }}">+</button>
-                                    </div>
+                                    <button class="qtyminus qty-btn"
+                                        onclick="updateQuantity('{{ $item->product_type }}', {{ $item->product_id }}, -1)"
+                                        {{ $item->quantity <= 1 ? 'disabled' : '' }} data-type="{{ $item->product_type }}"
+                                        data-id="{{ $item->product_id }}">-</button>
+                                    <input type="text" class="form text-center quantity-input" style="width: 50px;"
+                                        value="{{ $item->quantity }}" readonly data-type="{{ $item->product_type }}"
+                                        data-id="{{ $item->product_id }}">
+                                    <button class="qtyplus qty-btn"
+                                        onclick="updateQuantity('{{ $item->product_type }}', {{ $item->product_id }}, 1)"
+                                        data-type="{{ $item->product_type }}" data-id="{{ $item->product_id }}">+</button>
                                 </div>
                             </div>
                         </section>
@@ -85,7 +89,7 @@
                     </h5>
                 </div>
                 <div class = "custom-order-btn">
-                    <a href="#" class="btn w-100">ĐẶT HÀNG NGAY</a>
+                    <a onclick="placeOrder()" class="btn w-100">ĐẶT HÀNG NGAY</a>
                 </div>
             @endif
         </div>
@@ -94,6 +98,13 @@
 
 @push('scripts')
     <script>
+        function toggleSelectAll(checkbox) {
+            document.querySelectorAll('.select-item').forEach(itemCheckbox => {
+                itemCheckbox.checked = checkbox.checked;
+            });
+            updateTotalPriceCheckbox();
+        }
+
         function updateQuantity(productType, productId, adjustment) {
             // Lấy ô input số lượng dựa trên cả productType và productId
             const quantityInput = document.querySelector(
@@ -122,25 +133,21 @@
             let cartChanges = JSON.parse(localStorage.getItem('cartChanges')) || {};
             cartChanges[`${productType}_${productId}`] = newQuantity;
             localStorage.setItem('cartChanges', JSON.stringify(cartChanges));
-            updateTotalPrice();
+            updateTotalPriceCheckbox();
         }
 
-        function updateTotalPrice() {
+        function updateTotalPriceCheckbox() {
             let totalPrice = 0;
-
-            // Lặp qua tất cả các sản phẩm trong giỏ hàng
             document.querySelectorAll('.cart-item').forEach(item => {
-                const dealPrice = parseFloat(item.querySelector('.item-price .text-danger').innerText.replace(/\./g,
-                    '').replace(' đ', ''));
-                const quantity = parseInt(item.querySelector('input.quantity-input').value);
-                totalPrice += dealPrice * quantity;
+                const checkbox = item.querySelector('.select-item');
+                if (checkbox && checkbox.checked) {
+                    const dealPrice = parseFloat(item.querySelector('.item-price .text-danger').innerText.replace(
+                        /\./g, '').replace(' đ', ''));
+                    const quantity = parseInt(item.querySelector('.item-quantity input').value);
+                    totalPrice += dealPrice * quantity;
+                }
             });
-
-            // Cập nhật giá trị tổng tiền trong HTML
             document.getElementById('total-amount').innerText = numberWithCommas(totalPrice) + ' đ';
-
-            // Cập nhật giá trị data-total-price
-            document.getElementById('total-price-section').setAttribute('data-total-price', totalPrice);
         }
 
         function numberWithCommas(x) {
@@ -190,6 +197,28 @@
                     })
                     .catch(error => console.error('Lỗi:', error));
             }
+        }
+
+        function placeOrder() {
+            const selectedItems = [];
+            document.querySelectorAll('.select-item:checked').forEach(checkbox => {
+                const cartItem = checkbox.closest('.cart-item');
+                const productType = cartItem.querySelector('.quantity-input').dataset.type;
+                const productId = cartItem.querySelector('.quantity-input').dataset.id;
+                selectedItems.push({
+                    productType,
+                    productId
+                });
+            });
+
+            if (selectedItems.length === 0) {
+                alert('Vui lòng chọn ít nhất một sản phẩm để đặt hàng');
+                return;
+            }
+
+            // Encode selectedItems để gửi qua URL
+            const queryString = encodeURIComponent(JSON.stringify(selectedItems));
+            window.location.href = `/cart/order?items=${queryString}`;
         }
     </script>
 @endpush

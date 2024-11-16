@@ -42,4 +42,14 @@ class LoginController extends Controller
     {
         return view('login');
     }
+
+    protected function authenticated(Request $request, $user)
+    {
+        // Kiểm tra nếu người dùng là admin
+        if ($user->utype == 'ADM') {
+            return redirect()->route('admin.index');
+        }
+        // Nếu không phải admin, chuyển hướng đến trang chủ hoặc trang khác
+        return redirect()->route('home.index');
+    }
 }

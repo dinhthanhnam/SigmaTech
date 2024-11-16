@@ -55,6 +55,19 @@
                                         <input class="form-control" type="text" placeholder="đ" id="dealprice"
                                             name="dealprice" required>
                                     </div>
+                                    <div class="form-group col-md-9">
+                                        <label class="control-label">On top</label><br>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="ontop" id="ontop_yes"
+                                                value="yes" required>
+                                            <label class="form-check-label" for="ontop_yes">Có</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="ontop" id="ontop_no"
+                                                value="no" checked required>
+                                            <label class="form-check-label" for="ontop_no">Không</label>
+                                        </div>
+                                    </div>
 
                                 </div>
                                 <div class="col-md-6 col-lg-4">
