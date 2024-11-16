@@ -66,7 +66,6 @@
                                 <th>Lưu ý</th>
                                 <th>Tổng tiền</th>
                                 <th>Trạng thái</th>
-
                             </tr>
                         </thead>
                         <tbody>
@@ -90,7 +89,7 @@
                                     <td>{{ number_format($order->total_price, 0, ',', '.') }}
                                         đ</td>
                                     @if ($order->status === '0')
-                                        <td><span class="badge bg-secondary">Chờ xác nhận</span></td>
+                                        <td><span class="badge bg-secondary" style="color: white">Chờ xác nhận</span></td>
                                     @elseif ($order->status === '1')
                                         <td><span class="badge bg-info">Đang vận chuyển</span></td>
                                     @elseif ($order->status === '2')

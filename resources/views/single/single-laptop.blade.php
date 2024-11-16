@@ -44,7 +44,7 @@
     $saleprice = $laptop->attributes->firstWhere('name', 'Sale Price')->pivot->value ?? 'N/A';
     $sale_start_date = $laptop->attributes->firstWhere('name', 'Sale Start Date')->pivot->value ?? 'N/A';
     $sale_end_date = $laptop->attributes->firstWhere('name', 'Sale End Date')->pivot->value ?? 'N/A';
-    $sale_end_time = strtotime($sale_end_date . ' 00:00:00');
+    $sale_end_time = strtotime($sale_end_date);
 
 @endphp
 @section('content')

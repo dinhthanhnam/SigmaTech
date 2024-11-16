@@ -23,7 +23,8 @@ return new class extends Migration
             $table->integer('total_price');
             $table->enum('status', ['0', '1', '2', '3', '4'])
             ->default('0'); 
-            $table->timestamps();        
+            $table->timestamps(); 
+            $table->softDeletes();       
         });
     }
 

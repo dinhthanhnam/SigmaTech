@@ -44,6 +44,11 @@ class MonitorController extends Controller
             $item->link = 'monitors/'.$brand.'/'.$item->id;
         };
         
+        foreach($monitors as $item) {
+            $brand = $item->attributes->where('name', 'Brand')->first()->pivot->value;
+            $item->link = 'monitors/'.$brand.'/'.$item->id;
+        };
+        
         return view('categories.monitors', compact('monitors', 'topMonitors'));
     }
 

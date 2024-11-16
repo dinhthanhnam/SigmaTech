@@ -6,6 +6,7 @@
   $type = $product->attributes->firstWhere('name', '[Laptop] Loại laptop')->pivot->value ?? 'N/A';
   $price = $product->attributes->firstWhere('name', 'Price')->pivot->value ?? 'N/A';
   $saleprice = $product->attributes->firstWhere('name', 'Sale Price')->pivot->value ?? 'N/A';
+  $sale_end_date = $product->attributes->firstWhere('name', 'Sale End Date')->pivot->value ?? 'N/A';
   $dealprice = $product->attributes->firstWhere('name', 'Deal Price')->pivot->value ?? 'N/A';
   $rating = $product->attributes->firstWhere('name', 'Rating')->pivot->value ?? 'N/A';
   $brand = $product->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
@@ -24,11 +25,12 @@
 @php
     $discountPercentage = 0;
 
-    if ($saleprice != 'N/A') {
-        $discountPercentage = round((1 - $saleprice / $price) * 100);
+    if ($saleprice != 'N/A' && strtotime($sale_end_date) > Carbon\Carbon::now()->timestamp) {
+      $discountPercentage = round((1 - $saleprice / $price) * 100);
     } else {
-        $discountPercentage = round((1 - $dealprice / $price) * 100);
+      $discountPercentage = round((1 - $dealprice / $price) * 100);
     }
+
 @endphp
 
 <div class="p-item" data-id="49710">
@@ -49,7 +51,7 @@
     <div class="price-container">
       <del class="p-old-price"> {{ number_format($price, 0, ',', '.') }} đ </del>
       <span class="p-discount"> {{ $discountPercentage }} % </span>
-      @if ($saleprice != 'N/A')
+      @if ($saleprice != 'N/A' && strtotime($sale_end_date) > Carbon\Carbon::now()->timestamp)
         <span class="p-price"> {{ number_format($saleprice, 0, ',', '.') }} đ </span>
       @else
         <span class="p-price"> {{ number_format($dealprice, 0, ',', '.') }} đ </span>
@@ -121,53 +123,4 @@
       </a>
     </div>
   </div>
-  {{-- <div class="p-tooltip">
-        <p class="tooltip-title"> Laptop Asus Gaming ROG Zephyrus G16 GA605WI-QR090WS (AMD Ryzen AI 9 HX 370 | RTX 4070
-            8GB | 16 inch WQXGA OLED | 32 GB | 1 TB | Win 11) </p>
-
-        <div class="tooltip-content">
-            <div class="tooltip-specialOffer">
-                <div class="spec-title"><span class="title-text"> KHUYẾN MÃI</span></div>
-                <ul class="ul">
-                    <li> <span class="text">🎁 <font size="3pt">
-                                <font color="Crimson"><b> Bộ quà tặng bao gồm:</b></font>
-                            </font>
-                        </span></li>
-                    <li> <span class="text">✦ Túi chống sốc (TUNB0007,TUNB0001)
-                        </span></li>
-                    <li> <span class="text">🎁 <font size="3pt">
-                                <font color="Crimson"><b>Ưu đãi mua kèm giá hấp dẫn:</b></font>
-                            </font>
-                        </span></li>
-                    <li> <span class="text">✦ Ưu đãi Ram laptop Crucial 32GB DDR5 bus 4800Mhz CL40 ( RACR0006) chỉ với
-                            giá 2.590.000 đ
-                        </span></li>
-                    <li> <span class="text">✦ Ưu đãi Ram laptop Crucial 16GB DDR5 bus 4800Mhz CL40 (RACR0008) chỉ với
-                            giá 1.450.000 đ
-                        </span></li>
-                    <li> <span class="text">✦ Ưu đãi Ram laptop Crucial DDR5 8GB 4800 (CT8G48C40S5) (RACR0007) chỉ với
-                            giá 820.000 đ
-                        </span></li>
-                </ul>
-            </div>
-            <div class="tooltip-summary"><span class="item"><i class="fa fa-check-circle"></i>CPU: AMD Ryzen AI 9 HX
-                    370 (2.00GHz up to 5.10GHz, 24MB Cache)
-                </span><span class="item"><i class="fa fa-check-circle"></i>VGA: NVIDIA® GeForce RTX™ 4070 8GB GDDR6
-                    (AI TOPS: 321)
-                </span><span class="item"><i class="fa fa-check-circle"></i>Màn hình: 16-inch OLED 2.5K 16:10 (2560 x
-                    1600, WQXGA) 240Hz 0.2ms, 100% DCI-P3, màn hình bóng, G-Sync / Adaptive-Sync, đạt chuẩn Pantone, ROG
-                    Nebula Display
-                </span><span class="item"><i class="fa fa-check-circle"></i>RAM: 32GB LPDDR5X on board
-                </span><span class="item"><i class="fa fa-check-circle"></i>HDD: 1TB PCIe® 4.0 NVMe™ M.2 SSD
-                </span></div>
-
-            <div class="position-relative">
-
-                <p class="p-price" style="margin: 0;">
-                    <span style="font-size: 14px;color: #000;font-weight: normal;">Giá khuyến mãi:</span>
-                    <span class="tooltip-price-text">81.990.000 đ</span>
-                </p>
-            </div>
-        </div>
-    </div> --}}
 </div>

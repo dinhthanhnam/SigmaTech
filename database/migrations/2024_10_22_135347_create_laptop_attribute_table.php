@@ -17,6 +17,7 @@ return new class extends Migration
             $table->foreignId('attribute_id')->constrained()->onDelete('cascade'); // Khóa ngoại tới bảng attributes
             $table->string('value');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

@@ -14,8 +14,9 @@ return new class extends Migration
         Schema::create('cpus', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->unsignedBigInteger('category_id');
             $table->timestamps();
+            $table->foreignId('category_id')->constrained()->onDelete('cascade');
+            $table->softDeletes();
         });
     }
 
