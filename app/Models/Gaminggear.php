@@ -17,7 +17,7 @@ class Gaminggear extends Model
      */
     public function attributes()
     {
-        return $this->belongsToMany(Attribute::class, 'gaming_gear_attribute')
+        return $this->belongsToMany(Attribute::class, 'gaminggear_attribute')
                     ->withPivot('value'); // Lấy cả cột value từ bảng trung gian
     }
 

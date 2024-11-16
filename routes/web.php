@@ -18,10 +18,7 @@ use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\SaleController as AdminSaleController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\Admin\OrderController as AdminOrderController;
-
-
-
-
+use App\Http\Controllers\GaminggearController;
 
 Auth::routes();
 
@@ -46,16 +43,14 @@ Route::prefix('pc-parts')->group(function() {
   Route::get('cpu', [CpuController::class, 'showCpus'])->name('cpus.show');
   Route::get('gpu', [GpuController::class, 'showGpus'])->name('cpus.show');
 });
-
+//Trang chuyen muc Gaming Gear
+Route::get('gaminggears', [GaminggearController::class, 'showGaminggears'])->name('gaming-gears.show');
 //Trang flash sale chill chill
 Route::get('flash-sale', [SaleController::class, 'showFlashSale'])->name('flash-sale');
 
 
 
 
-Route::get('gaming-gears', function () {
-  return view('categories.gaming-gears');
-})->name('gaming-gears.show');
 Route::get('pc-parts', function () {
   return view('categories.pc-parts');
 })->name('pc-parts.show');
@@ -114,6 +109,7 @@ Route::prefix('pc-parts')->group( function() {
   Route::get('/gpu/{brand}/{id}', [GpuController::class, 'show'])->name('gpu.show');
 });
 Route::get('monitors/{brand}/{id}', [MonitorController::class, 'show'])->name('monitor.show');
+Route::get('gaminggears/{brand}/{id}', [GaminggearController::class, 'show'])->name('gaminggear.show');
 
 
 //filter
