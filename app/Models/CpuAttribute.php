@@ -4,10 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class CpuAttribute extends Model
 {
     use HasFactory;
+    use SoftDeletes;
 
     // Định nghĩa tên bảng nếu tên không phải là số nhiều của model
     protected $table = 'cpu_attribute';

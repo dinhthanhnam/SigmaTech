@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('name'); // Tên sản phẩm
             $table->integer('quantity')->default(1); // Số lượng sản phẩm
             $table->timestamps();
+            $table->softDeletes();
         });
         
     }
