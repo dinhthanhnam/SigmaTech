@@ -6,31 +6,30 @@ use App\Models\Cpu;
 
 class CpuController extends Controller
 {
-    public function show($pcpart_type, $brand, $id)
+    public function show($brand, $id)
 {
     // Lấy cpu theo id, chỉ nếu nó có attribute 'Loại linh kiện' là 'cpu'
     $cpu = Cpu::whereHas('attributes', function ($query) {
-        $query->where('name', 'Loại linh kiện')->where('value', 'CPU');
+        $query->where('name', 'Loại linh kiện')->where('value', 'cpu');
     })->with('attributes')->findOrFail($id);
 
-    // Tìm attribute 'Brand' và 'Type' của cpu
+    // Tìm attribute 'Brand'
     $cpuBrand = optional($cpu->attributes->where('name', 'Brand')->first())->pivot->value;
-    $pcpartType = optional($cpu->attributes->where('name', 'Loại linh kiện')->first())->pivot->value;
 
     // Kiểm tra xem các thông tin brand và type từ URL có khớp với dữ liệu của cpu không
-    if (strtolower($cpuBrand) !== strtolower($brand) || strtolower($pcpartType) !== strtolower($pcpart_type)) {
+    if (strtolower($cpuBrand) !== strtolower($brand)) {
         abort(404); // Không tìm thấy nếu thông tin không khớp
     }
 
     // Trả về view cùng với các dữ liệu cần thiết
-    return view('single.single-cpu', compact('pcpartType', 'cpuBrand', 'cpu'));
+    return view('single.single-cpu', compact( 'cpuBrand', 'cpu'));
 }
 
     public function showCpus()
     {
         $topCpus = Cpu::whereHas('attributes', function ($query) {
             $query->where('name', 'Loại linh kiện')
-                  ->where('value', 'CPU');
+                  ->where('value', 'cpu');
         })
         ->whereHas('attributes', function ($query) {
             $query->where('name', 'On Top')

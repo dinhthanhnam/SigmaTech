@@ -562,6 +562,7 @@
                     @if ($saleprice != 'N/A' && now()->lessThan(Carbon\Carbon::parse($sale_end_date)))
                         <div class="deal-count-container text-12 font-300 text-right" id="js-deal-container">Kết thúc sau
                             <span class="js-hour"> 00 </span>
+                            <span class="js-hour"> 00 </span>
                             <span class="js-minute"> 00 </span>
                             <span class="js-seconds"> 00 </span>
                         </div>
@@ -1324,6 +1325,7 @@
             const timeLeft = endTime - now;
 
             // Tính giờ, phút và giây từ timeLeft
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
             const hours = Math.floor((timeLeft / (1000 * 60 * 60)) % 24);
             const minutes = Math.floor((timeLeft / (1000 * 60)) % 60);
             const seconds = Math.floor((timeLeft / 1000) % 60);

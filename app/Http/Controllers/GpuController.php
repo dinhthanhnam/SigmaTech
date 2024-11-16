@@ -7,7 +7,7 @@ use App\Models\Gpu;
 
 class GpuController extends Controller
 {
-    public function show($pcpart_type, $brand, $id)
+    public function show($brand, $id)
     {
         // Lấy gpu theo id, chỉ nếu nó có attribute 'Loại linh kiện' là 'gpu'
         $gpu = Gpu::whereHas('attributes', function ($query) {
@@ -16,15 +16,14 @@ class GpuController extends Controller
 
         // Tìm attribute 'Brand' và 'Type' của gpu
         $gpuBrand = optional($gpu->attributes->where('name', 'Brand')->first())->pivot->value;
-        $pcpartType = optional($gpu->attributes->where('name', 'Loại linh kiện')->first())->pivot->value;
 
         // Kiểm tra xem các thông tin brand và type từ URL có khớp với dữ liệu của gpu không
-        if (strtolower($gpuBrand) !== strtolower($brand) || strtolower($pcpartType) !== strtolower($pcpart_type)) {
+        if (strtolower($gpuBrand) !== strtolower($brand)) {
             abort(404); // Không tìm thấy nếu thông tin không khớp
         }
 
         // Trả về view cùng với các dữ liệu cần thiết
-        return view('single.single-gpu', compact('pcpartType', 'gpuBrand', 'gpu'));
+        return view('single.single-gpu', compact( 'gpuBrand', 'gpu'));
     }
 
     public function showGpus()
