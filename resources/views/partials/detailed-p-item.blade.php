@@ -120,15 +120,17 @@
         <div class="d-flex justify-content-between">
             <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
             <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart"
-                onclick="document.getElementById('addCartForm-{{ $product_id }}').submit();">
+                onclick="document.getElementById('addCartForm-{{ $product_id }}-{{ $category_id }}').submit();">
             </a>
 
-            <form id="addCartForm-{{ $product_id }}" action="{{ route('cart.add') }}" method="POST"
-                style="display: none;">
+            <form id="addCartForm-{{ $product_id }}-{{ $category_id }}" action="{{ route('cart.add') }}"
+                method="POST" style="display: none;">
                 @csrf
                 <input type="hidden" name="product_id" value="{{ $product_id }}">
                 @if ($category_id == 1 || $category_id == 2)
                     {{ $product_type = 'laptop' }}
+                @elseif ($category_id == 4)
+                    {{ $product_type = 'monitor' }}
                 @endif
                 <input type="hidden" name="product_type" value="{{ $product_type }}">
                 <input type="hidden" name="product_name" value="{{ $name }}">

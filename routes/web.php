@@ -87,6 +87,8 @@ Route::get('warranty-policy', function () {
 Route::get('laptop-outlet', function () {
   return view('pages.laptop-outlet');
 })->name('pages.laptop-outlet');
+
+//user account
 Route::get('account', [UserController::class, 'index'])->name('user-account');
 Route::get('account/order/{id}', [UserController::class, 'getOrderDetails']);
 
