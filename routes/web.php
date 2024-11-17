@@ -128,6 +128,7 @@ Route::get('gaminggears/{brand}/{id}', [GaminggearController::class, 'show'])->n
 
 //filter
 Route::get('/laptops/filter', [LaptopController::class, 'filterLaptops'])->name('laptop.filter');
+Route::get('/gaminggears/filter', [GaminggearController::class, 'filterGaminggears'])->name('gaminggear.filter');
 
 //Thanh tim kiem
 Route::get('/search-suggestions', [HomeController::class, 'getSuggestions']);
