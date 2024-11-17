@@ -130,6 +130,16 @@ class AttributeSeeder extends Seeder
             ['name' => '[GG] Cổng kết nối', 'data_type' => 'string'],
             ['name' => '[GG] Phụ kiện đi kèm', 'data_type' => 'string'],
 
+            //Media
+            ['name' => '[Media] Loại thiết bị', 'data_type' => 'string'], 
+            ['name' => '[Media] Kết nối', 'data_type' => 'string'], 
+            ['name' => '[Media] Tính năng', 'data_type' => 'string'], 
+            ['name' => '[Media] Chất liệu', 'data_type' => 'string'], 
+            ['name' => '[Media] Trọng lượng', 'data_type' => 'string'], 
+            ['name' => '[Media] Nguồn cung cấp', 'data_type' => 'string'], 
+            ['name' => '[Media] Cổng kết nối', 'data_type' => 'string'], 
+            ['name' => '[Media] Phụ kiện đi kèm', 'data_type' => 'string'], 
+            
             //Cooling  
             ['name' => '[TN] Loại tản nhiệt', 'data_type' => 'string'],
             ['name' => '[TN] Kích thước Radiator', 'data_type' => 'string'],

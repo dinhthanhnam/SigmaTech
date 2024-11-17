@@ -19,6 +19,7 @@ use App\Http\Controllers\Admin\SaleController as AdminSaleController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\Admin\OrderController as AdminOrderController;
 use App\Http\Controllers\GaminggearController;
+use App\Http\Controllers\MediaController;
 
 Auth::routes();
 
@@ -45,6 +46,8 @@ Route::prefix('pc-parts')->group(function() {
 });
 //Trang chuyen muc Gaming Gear
 Route::get('gaminggears', [GaminggearController::class, 'showGaminggears'])->name('gaming-gears.show');
+//Trang chuyen muc Media
+Route::get('media', [MediaController::class, 'showMedia'])->name('media.show');
 //Trang flash sale chill chill
 Route::get('flash-sale', [SaleController::class, 'showFlashSale'])->name('flash-sale');
 
@@ -54,9 +57,9 @@ Route::get('flash-sale', [SaleController::class, 'showFlashSale'])->name('flash-
 Route::get('pc-parts', function () {
   return view('categories.pc-parts');
 })->name('pc-parts.show');
-Route::get('media-devices', function () {
-  return view('categories.media-devices');
-})->name('media-devices.show');
+// Route::get('media-devices', function () {
+//   return view('categories.media-devices');
+// })->name('media-devices.show');
 Route::get('coolings', function () {
   return view('categories.coolings');
 })->name('coolings.show');

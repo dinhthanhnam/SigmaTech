@@ -1278,7 +1278,7 @@
                             </div>
                         </div>
                         <div class="item bg-white" data-id="393">
-                            <a href="{{ route('media-devices.show') }}" class="pro-cate-1">
+                            <a href="{{ route('media.show') }}" class="pro-cate-1">
                                 <span class="cat-thumb-item" style="width: 35px;text-align: center">
                                     <img src="{{ asset('assets/img/cat/cat_f9fc468337e44b7e6b994b32dc8b8d44.png') }}"
                                         alt="Loa, Tai Nghe, Webcam, Tivi" />
