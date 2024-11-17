@@ -87,6 +87,8 @@ Route::get('warranty-policy', function () {
 Route::get('laptop-outlet', function () {
   return view('pages.laptop-outlet');
 })->name('pages.laptop-outlet');
+
+//user account
 Route::get('account', [UserController::class, 'index'])->name('user-account');
 Route::get('account/order/{id}', [UserController::class, 'getOrderDetails']);
 
@@ -117,6 +119,9 @@ Route::prefix('cart/order')->group( function() {
   Route::get('/', [OrderController::class, 'orderInfo'])->name('order.info');
   Route::post('/place', [OrderController::class, 'placeOrder'])->name('order.place');
 });
+Route::post('/order/confirm-payment', [OrderController::class, 'confirmPayment'])->name('order.confirm-payment');
+
+
 
 //route cho single
 Route::get('laptops/{type}/{brand}/{id}', [LaptopController::class, 'show'])->name('laptop.show');

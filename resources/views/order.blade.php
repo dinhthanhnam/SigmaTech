@@ -73,9 +73,9 @@
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="payment_method" value="other" id="paymentOther">
-                    <label class="form-check-label" for="paymentOther">
-                        Khác
+                    <input class="form-check-input" type="radio" name="payment_method" value="banking" id="paymentOther">
+                    <label class="form-check-label" for="paymentBanking">
+                        Chuyển khoản ngân hàng
                     </label>
                 </div>
 

@@ -82,8 +82,8 @@
                                     <td> {{ $order->shipping_address }} </td>
                                     @if ($order->payment_method === 'cod')
                                         <td>Thanh toán khi nhận hàng</td>
-                                    @else
-                                        <td>{{ $order->payment_method }}</td>
+                                    @elseif ($order->payment_method === 'banking')
+                                        <td>Chuyển khoản ngân hàng</td>
                                     @endif
 
                                     @if ($order->note === null)
@@ -98,7 +98,7 @@
                                     @elseif ($order->status === '1')
                                         <td><span class="badge bg-info">Đang vận chuyển</span></td>
                                     @elseif ($order->status === '2')
-                                        <td><span class="badge bg-warning">Chờ thanh toán</span></td>
+                                        <td><span class="badge bg-warning">Đã thanh toán, chờ xác nhận</span></td>
                                     @elseif ($order->status === '3')
                                         <td><span class="badge bg-success">Hoàn thành</span></td>
                                     @elseif ($order->status === '4')
