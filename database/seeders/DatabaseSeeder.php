@@ -49,5 +49,9 @@ class DatabaseSeeder extends Seeder
         $this->call(GaminggearSeeder::class);
 
         $this->call(MediaSeeder::class);
+        
+        $this->call(CoolingSeeder::class);
+
+        $this->call(AccessorySeeder::class);
     }
 }

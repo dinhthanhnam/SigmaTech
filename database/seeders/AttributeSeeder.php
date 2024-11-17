@@ -141,19 +141,21 @@ class AttributeSeeder extends Seeder
             ['name' => '[Media] Phụ kiện đi kèm', 'data_type' => 'string'], 
             
             //Cooling  
-            ['name' => '[TN] Loại tản nhiệt', 'data_type' => 'string'],
-            ['name' => '[TN] Kích thước Radiator', 'data_type' => 'string'],
-            ['name' => '[TN] Loại bơm', 'data_type' => 'string'],
-            ['name' => '[TN] Tốc độ bơm', 'data_type' => 'string'],
-            ['name' => '[TN] Lưu lượng nước', 'data_type' => 'string'],
-            ['name' => '[TN] Số lượng quạt', 'data_type' => 'string'],
-            ['name' => '[TN] Tốc độ quạt', 'data_type' => 'string'],
-            ['name' => '[TN] Độ ồn quạt', 'data_type' => 'string'],
-            ['name' => '[TN] Tính năng RGB', 'data_type' => 'string'],
-            ['name' => '[TN] Hỗ trợ socket', 'data_type' => 'string'],
-            ['name' => '[TN] Phụ kiện đi kèm', 'data_type' => 'string'],
-            ['name' => '[TN] Trọng lượng', 'data_type' => 'string'],
+            ['name' => '[Cooling] Loại làm mát', 'value' => 'string'],
+            ['name' => '[Cooling] Kích thước quạt', 'value' => 'string'],
+            ['name' => '[Cooling] Tốc độ quạt', 'value' => 'string'],
+            ['name' => '[Cooling] Độ ồn', 'value' => 'string'],
+            ['name' => '[Cooling] TDP hỗ trợ', 'value' => 'string'],
+            ['name' => '[Cooling] Kích thước', 'value' => 'string'],
+            ['name' => '[Cooling] Tương thích socket', 'value' => 'string'],
 
+            //Accessories
+            ['name' => '[Accessory] Loại thiết bị', 'value' => 'string'],
+            ['name' => '[Accessory] Kết nối', 'value' => 'string'],
+            ['name' => '[Accessory] Tính năng', 'value' => 'string'],
+            ['name' => '[Accessory] Chất liệu', 'value' => 'string'],
+            ['name' => '[Accessory] Tương thích', 'value' => 'string'],
+            ['name' => '[Accessory] Phụ kiện đi kèm', 'value' => 'string'],
         ]);
     }
 }
