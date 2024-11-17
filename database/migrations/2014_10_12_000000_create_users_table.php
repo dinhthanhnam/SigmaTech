@@ -23,6 +23,7 @@ return new class extends Migration
             $table->string('utype')->default('USR')->comment('ADM cho admin, USR cho user');
             $table->rememberToken();
             $table->timestamps();
+            $table->softDeletes();
         });
 
     }

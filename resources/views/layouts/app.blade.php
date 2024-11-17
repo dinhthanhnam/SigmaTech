@@ -10,8 +10,9 @@
     <meta http-equiv="content-language" content="vi" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>SigmaTech - Siêu Thị PC , Laptop giá tốt nhất Việt Nam</title>
+    <title>SigmaTech - Siêu Thị Laptop giá tốt nhất Việt Nam</title>
 
+    <link rel="icon" type="image/png" href="{{ asset('assets/img/sigmatech-yellow.png') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.css') }}" type="text/css"/>
     <link rel="stylesheet" href="{{ asset('assets/css/lib_2020.css') }}" type="text/css"/>
     <link rel="stylesheet" href="{{ asset('assets/css/web_pc_2020.css') }}" type="text/css"/> 

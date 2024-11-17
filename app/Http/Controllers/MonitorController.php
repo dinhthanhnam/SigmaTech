@@ -33,6 +33,21 @@ class MonitorController extends Controller
         ->with('attributes')
         ->limit(10)
         ->get();
+
+        foreach($monitors as $item) {
+            $brand = $item->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
+            $item->link = 'monitors/'.$brand.'/'.$item->id;
+        };
+
+        foreach($topMonitors as $item) {
+            $brand = $item->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
+            $item->link = 'monitors/'.$brand.'/'.$item->id;
+        };
+        
+        foreach($monitors as $item) {
+            $brand = $item->attributes->where('name', 'Brand')->first()->pivot->value;
+            $item->link = 'monitors/'.$brand.'/'.$item->id;
+        };
         
         return view('categories.monitors', compact('monitors', 'topMonitors'));
     }
