@@ -2,6 +2,11 @@
 
 @push('styles')
     <link rel="stylesheet" href="{{ asset('assets/css/user_account.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" href="{{ asset('assets/css/cart.css') }}">
+@endpush
+@push('scripts')
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 @endpush
 
 @section('content')
@@ -55,7 +60,7 @@
             <section id="orders">
                 <h2>Quản lý đơn hàng</h2>
                 @if ($orders)
-                    <table class="table table-bordered">
+                    <table class="table orders-table">
                         <thead>
                             <tr>
                                 <th>Thời gian đặt hàng</th>
@@ -70,7 +75,7 @@
                         </thead>
                         <tbody>
                             @foreach ($orders as $order)
-                                <tr>
+                                <tr class="order-row" data-order-id="{{ $order->id }}">
                                     <td>{{ $order->created_at }}</td>
                                     <td>{{ $order->customer_name }}</td>
                                     <td>{{ $order->phone_number }}</td>
@@ -82,7 +87,7 @@
                                     @endif
 
                                     @if ($order->note === null)
-                                        <td>Trống</td>
+                                        <td>Không có</td>
                                     @else
                                         <td>{{ $order->note }}</td>
                                     @endif
@@ -103,6 +108,9 @@
                             @endforeach
                         </tbody>
                     </table>
+                    <div class="pagination-container">
+                        {{ $orders->links('pagination::bootstrap-5') }}
+                    </div>
                 @else
                     <p>Bạn chưa có đơn hàng nào.</p>
                 @endif
@@ -179,9 +187,90 @@
         @endif
     </div>
 @endsection
+<div style="display: none;" id="orderDetailModal">
+    <div class="order-detail-content">
+        <div id="order-detail"></div>
+    </div>
+</div>
 
 @push('scripts')
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const orderRows = document.querySelectorAll('.order-row');
+
+            orderRows.forEach(row => {
+                row.addEventListener('click', function() {
+                    const orderId = row.getAttribute('data-order-id');
+
+                    // Gửi yêu cầu AJAX để lấy chi tiết đơn hàng
+                    fetch(`/account/order/${orderId}`)
+                        .then(response => response.json())
+                        .then(data => {
+                            const orderDetailContent = document.getElementById('order-detail');
+
+                            let orderDetailsHtml = `
+                            <ul class="list-group mb-3">
+                                `;
+                            data.order_details.forEach(item => {
+                                orderDetailsHtml += `
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div class="item-image" style="width: 100px;">
+                                        <img src="${item.image}" alt="${item.name}">
+                                    </div>
+                                    <div class="item-info flex-grow-1">
+                                        <strong>${item.name}</strong> x ${item.quantity}
+                                    </div>
+                                    <span class="text-danger fw-bold">
+                                        ${item.price} đ
+                                    </span>
+                                </li>                                
+                                `;
+                            });
+
+                            orderDetailsHtml += '</ul>';
+
+                            orderDetailContent.innerHTML = `
+                                <p><strong>Người nhận:</strong> ${data.customer_name}</p>
+                                <p><strong>Số điện thoại:</strong> ${data.phone_number}</p>
+                                <p><strong>Địa chỉ giao hàng:</strong> ${data.shipping_address}</p>
+                                <p><strong>Phương thức thanh toán:</strong> 
+                                    ${
+                                        data.payment_method === 'cod'
+                                            ? 'Thanh toán khi nhận hàng'
+                                            : data.payment_method
+                                    }
+                                </p>
+                                <p><strong>Lưu ý:</strong> ${data.note || 'Không có'}</p>
+                                <p><strong>Tổng tiền:</strong> ${data.total_price} đ</p>
+                                <p><strong>Trạng thái:</strong> ${
+                                    data.status === '0'
+                                        ? '<span class="badge bg-secondary" style="color: white">Chờ xác nhận</span>'
+                                        : data.status === '1'
+                                        ? '<span class="badge bg-info">Đang vận chuyển</span>'
+                                        : data.status === '2'
+                                        ? '<span class="badge bg-warning">Chờ thanh toán</span>'
+                                        : data.status === '3'
+                                        ? '<span class="badge bg-success">Hoàn thành</span>'
+                                        : data.status === '4'
+                                        ? '<span class="badge bg-danger">Đã hủy</span>'
+                                        : 'Không xác định'
+                                }</p>
+                                <h4>Chi tiết đơn hàng:</h4>
+                                ${orderDetailsHtml}
+                            `;
+
+
+                            // Mở Fancybox
+                            Fancybox.show([{
+                                src: '#orderDetailModal',
+                                type: 'inline'
+                            }]);
+                        })
+                        .catch(error => console.error('Lỗi khi lấy chi tiết đơn hàng:', error));
+                });
+            });
+        });
+
         document.addEventListener('DOMContentLoaded', function() {
             const menuItems = document.querySelectorAll('.account-menu li a');
             const sections = document.querySelectorAll('.account-content section');

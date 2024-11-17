@@ -200,3 +200,61 @@
         padding: 15px;
     }
 }
+.orders-table {
+    width: 100%;
+    margin-top: -10px;
+    border-collapse: separate; /* Ngăn chặn viền chồng lên */
+    border-spacing: 0 7px; /* Tạo khoảng cách giữa các hàng */
+}
+
+.orders-table thead th {
+    background-color: #b4b4b4;
+    color: #333;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+}
+
+.orders-table tbody tr {
+    background-color: #dcdefa; /* Màu mặc định */
+    transition: background-color 0.3s; /* Hiệu ứng hover */
+}
+
+.orders-table tbody tr:nth-child(even) {
+    background-color: #edefff; /* Màu xen kẽ */
+}
+
+.orders-table tbody tr:hover {
+    background-color: #e9ecef; /* Màu khi hover */
+}
+
+.orders-table td {
+    padding: 10px;
+    vertical-align: middle;
+    border: none; /* Xóa viền */
+}
+.pagination-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination .page-item .page-link {
+    color: #007bff;
+    padding: 8px 12px;
+    margin: 0 2px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.pagination .page-item .page-link:hover {
+    background-color: #e9ecef;
+    color: #0056b3;
+}
+

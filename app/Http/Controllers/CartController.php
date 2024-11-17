@@ -10,48 +10,69 @@ use App\Models\GPU;
 use App\Models\CartItem;
 
 
+
 class CartController extends Controller
 {
+    public function getProduct($item)
+    {
+        $yesterday = strtotime('-1 day');
+        switch ($item->product_type) {
+            case 'laptop':
+                $laptop = Laptop::where('id', $item->product_id)->with('attributes')->first();
+                $salePrice = $laptop->attributes->where('name', 'Sale Price')->first()?->pivot->value ?? null;
+                $saleEndDate = $laptop->attributes->where('name', 'Sale End Date')->first()?->pivot->value ?? null;
+                if ($salePrice !== null && $saleEndDate !== null && strtotime($saleEndDate) >=  $yesterday) {
+                    $item->dealprice = $salePrice;
+                } else {
+                    $item->dealprice = $laptop->attributes->where('name', 'Deal Price')->first()?->pivot->value ?? null;
+                }
+                $item->price = $laptop->attributes->where('name', 'Price')->first()->pivot->value; 
+                $item->image = $laptop->attributes->where('name', 'Image1')->first()->pivot->value; 
+            break;
+            case 'cpu':
+                $cpu = CPU::where('id', $item->product_id)->with('attributes')->first();
+                $salePrice = $cpu->attributes->where('name', 'Sale Price')->first()?->pivot->value ?? null;
+                $saleEndDate = $cpu->attributes->where('name', 'Sale End Date')->first()?->pivot->value ?? null;
+                if ($salePrice !== null && $saleEndDate !== null && strtotime($saleEndDate) >=  $yesterday) {
+                    $item->dealprice = $salePrice;
+                } else {
+                    $item->dealprice = $cpu->attributes->where('name', 'Deal Price')->first()?->pivot->value ?? null;
+                }
+                $item->price = $cpu->attributes->where('name', 'Price')->first()->pivot->value; 
+                $item->image = $cpu->attributes->where('name', 'Image1')->first()->pivot->value; 
+            break;
+            case 'gpu':
+                $gpu = GPU::where('id', $item->product_id)->with('attributes')->first();
+                $salePrice = $gpu->attributes->where('name', 'Sale Price')->first()?->pivot->value ?? null;
+                $saleEndDate = $gpu->attributes->where('name', 'Sale End Date')->first()?->pivot->value ?? null;
+                if ($salePrice !== null && $saleEndDate !== null && strtotime($saleEndDate) >= $yesterday) {
+                    $item->dealprice = $salePrice;
+                } else {
+                    $item->dealprice = $gpu->attributes->where('name', 'Deal Price')->first()?->pivot->value ?? null;
+                }                
+                $item->price = $gpu->attributes->where('name', 'Price')->first()->pivot->value; 
+                $item->image = $gpu->attributes->where('name', 'Image1')->first()->pivot->value; 
+            break;
+            case 'monitor':
+                $monitor = Monitor::where('id', $item->product_id)->with('attributes')->first();
+                $salePrice = $monitor->attributes->where('name', 'Sale Price')->first()?->pivot->value ?? null;
+                $saleEndDate = $monitor->attributes->where('name', 'Sale End Date')->first()?->pivot->value ?? null;
+                if ($salePrice !== null && $saleEndDate !== null && strtotime($saleEndDate) >=  $yesterday) {
+                    $item->dealprice = $salePrice;
+                } else {
+                    $item->dealprice = $monitor->attributes->where('name', 'Deal Price')->first()?->pivot->value ?? null;
+                }                
+                $item->price = $monitor->attributes->where('name', 'Price')->first()->pivot->value; 
+                $item->image = $monitor->attributes->where('name', 'Image1')->first()->pivot->value; 
+            break;
+        }
+    }
     public function show()
     {
         $userId = auth()->id(); // Lấy ID người dùng đã đăng nhập
-        $cartItems = CartItem::where('user_id', $userId)->get(); // Lấy các sản phẩm trong giỏ hàng của người dùng
+        $cartItems = CartItem::where('user_id', $userId)->get();         
         foreach ($cartItems as $item) {
-            switch( $item->product_type) {
-                case 'laptop':
-                    $laptop = Laptop::where('id', $item->product_id)
-                    ->with('attributes')
-                    ->first();
-                $item->dealprice = $laptop->attributes->where('name', 'Deal Price')->first()->pivot->value;  // Gán giá cho cart item
-                $item->price = $laptop->attributes->where('name', 'Price')->first()->pivot->value; 
-                $item->image = $laptop->attributes->where('name', 'Image1')->first()->pivot->value; 
-                break;
-                case 'cpu':
-                    $cpu = CPU::where('id', $item->product_id)
-                    ->with('attributes')
-                    ->first();
-                $item->dealprice = $cpu->attributes->where('name', 'Deal Price')->first()->pivot->value;  // Gán giá cho cart item
-                $item->price = $cpu->attributes->where('name', 'Price')->first()->pivot->value; 
-                $item->image = $cpu->attributes->where('name', 'Image1')->first()->pivot->value; 
-                break;
-                case 'gpu':
-                    $gpu = GPU::where('id', $item->product_id)
-                    ->with('attributes')
-                    ->first();
-                $item->dealprice = $gpu->attributes->where('name', 'Deal Price')->first()->pivot->value;  // Gán giá cho cart item
-                $item->price = $gpu->attributes->where('name', 'Price')->first()->pivot->value; 
-                $item->image = $gpu->attributes->where('name', 'Image1')->first()->pivot->value; 
-                break;
-                case 'monitor':
-                    $monitor = Monitor::where('id', $item->product_id)
-                    ->with('attributes')
-                    ->first();
-                $item->dealprice = $monitor->attributes->where('name', 'Deal Price')->first()->pivot->value;  // Gán giá cho cart item
-                $item->price = $monitor->attributes->where('name', 'Price')->first()->pivot->value; 
-                $item->image = $monitor->attributes->where('name', 'Image1')->first()->pivot->value; 
-                break;
-
-            }
+            $this->getProduct($item);
         }
         return view('cart', compact('cartItems')); 
     }
