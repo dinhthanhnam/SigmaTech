@@ -1,22 +1,21 @@
 @extends('layouts.app')
 @php
-    $media_id = $media->id;
-    $name = $media->name;
-    $brand = $media->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
-    $model = $media->attributes->firstWhere('name', 'Model')->pivot->value ?? 'N/A';
-    $price = $media->attributes->firstWhere('name', 'Price')->pivot->value ?? 'N/A';
-    $dealprice = $media->attributes->firstWhere('name', 'Deal Price')->pivot->value ?? 'N/A';
-    $rating = $media->attributes->firstWhere('name', 'Rating')->pivot->value ?? 'N/A';
+    $cooling_id = $cooling->id;
+    $name = $cooling->name;
+    $brand = $cooling->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
+    $model = $cooling->attributes->firstWhere('name', 'Model')->pivot->value ?? 'N/A';
+    $price = $cooling->attributes->firstWhere('name', 'Price')->pivot->value ?? 'N/A';
+    $dealprice = $cooling->attributes->firstWhere('name', 'Deal Price')->pivot->value ?? 'N/A';
+    $rating = $cooling->attributes->firstWhere('name', 'Rating')->pivot->value ?? 'N/A';
 
-    // Các thuộc tính Media
-    $device_type = $media->attributes->firstWhere('name', '[Media] Loại thiết bị')->pivot->value ?? 'N/A';
-    $connectivity = $media->attributes->firstWhere('name', '[Media] Kết nối')->pivot->value ?? 'N/A';
-    $features = $media->attributes->firstWhere('name', '[Media] Tính năng')->pivot->value ?? 'N/A';
-    $material = $media->attributes->firstWhere('name', '[Media] Chất liệu')->pivot->value ?? 'N/A';
-    $weight = $media->attributes->firstWhere('name', '[Media] Trọng lượng')->pivot->value ?? 'N/A';
-    $power_source = $media->attributes->firstWhere('name', '[Media] Nguồn cung cấp')->pivot->value ?? 'N/A';
-    $ports = $media->attributes->firstWhere('name', '[Media] Cổng kết nối')->pivot->value ?? 'N/A';
-    $accessories = $media->attributes->firstWhere('name', '[Media] Phụ kiện đi kèm')->pivot->value ?? 'N/A';
+    // Các thuộc tính Cooling
+    $cooling_type = $cooling->attributes->firstWhere('name', '[Cooling] Loại làm mát')->pivot->value ?? 'N/A';
+    $fan_size = $cooling->attributes->firstWhere('name', '[Cooling] Kích thước quạt')->pivot->value ?? 'N/A';
+    $fan_speed = $cooling->attributes->firstWhere('name', '[Cooling] Tốc độ quạt')->pivot->value ?? 'N/A';
+    $noise_level = $cooling->attributes->firstWhere('name', '[Cooling] Độ ồn')->pivot->value ?? 'N/A';
+    $tdp_support = $cooling->attributes->firstWhere('name', '[Cooling] TDP hỗ trợ')->pivot->value ?? 'N/A';
+    $dimensions = $cooling->attributes->firstWhere('name', '[Cooling] Kích thước')->pivot->value ?? 'N/A';
+    $socket_compatibility = $cooling->attributes->firstWhere('name', '[Cooling] Tương thích socket')->pivot->value ?? 'N/A';
 @endphp
 
 
@@ -32,7 +31,7 @@
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
                         <a
-                            href="{{ url('/media/' . '/' . $brand) }}">{{ $media->attributes->firstWhere('id', '1')->pivot->value }}</a>
+                            href="{{ url('/cooling/' . '/' . $brand) }}">{{ $cooling->attributes->firstWhere('id', '1')->pivot->value }}</a>
                     </li>
                 </ol>
             </div>
@@ -93,7 +92,7 @@
                                                 <p style="text-align: center;">
                                                     <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
                                                         <strong>
-                                                            <a href="https://www.anphatpc.com.vn/gaminggear-asus_dm1058.html">{{ $brand }}</a>
+                                                            <a href="https://www.anphatpc.com.vn/cooling-asus_dm1058.html">{{ $brand }}</a>
                                                         </strong>
                                                     </span>
                                                 </p>
@@ -108,98 +107,88 @@
                                             </td>
                                             <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
                                                 <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                                    <a href="https://www.anphatpc.com.vn/gaminggear-asus-rog-strix-g16-g614ji-n4125w.html" target="_blank">{{ $name }}</a>
+                                                    <a href="https://www.anphatpc.com.vn/cooling-asus-rog-strix-g16-g614ji-n4125w.html" target="_blank">{{ $name }}</a>
                                                 </span>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
                                                 <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                                        <strong><span style="line-height: 115%; color: black;">Loại thiết bị</span></strong>
+                                                        <strong><span style="line-height: 115%; color: black;">Loại làm mát</span></strong>
                                                     </span>
                                                 </p>
                                             </td>
                                             <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $device_type }}</span>
+                                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $cooling_type }}</span>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
                                                 <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                                        <strong><span style="line-height: 115%; color: black;">Kết nối</span></strong>
+                                                        <strong><span style="line-height: 115%; color: black;">Kích thước quạt</span></strong>
                                                     </span>
                                                 </p>
                                             </td>
                                             <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $connectivity }}</span>
+                                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $fan_size }}</span>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
                                                 <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                                        <strong><span style="line-height: 115%; color: black;">Tính năng</span></strong>
+                                                        <strong><span style="line-height: 115%; color: black;">Độ ồn</span></strong>
                                                     </span>
                                                 </p>
                                             </td>
                                             <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $features }}</span>
+                                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $noise_level }}</span>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
                                                 <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                                        <strong><span style="line-height: 115%; color: black;">Chất liệu</span></strong>
+                                                        <strong><span style="line-height: 115%; color: black;">Tốc độ quạt</span></strong>
                                                     </span>
                                                 </p>
                                             </td>
                                             <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $material }}</span>
+                                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{  $fan_speed }}</span>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
                                                 <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                                        <strong><span style="line-height: 115%; color: black;">Trọng lượng</span></strong>
+                                                        <strong><span style="line-height: 115%; color: black;">TDP hỗ trợ</span></strong>
                                                     </span>
                                                 </p>
                                             </td>
                                             <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $weight }}</span>
+                                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $tdp_support }}</span>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
                                                 <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                                        <strong><span style="line-height: 115%; color: black;">Nguồn cung cấp</span></strong>
+                                                        <strong><span style="line-height: 115%; color: black;">Kích thước</span></strong>
                                                     </span>
                                                 </p>
                                             </td>
                                             <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $power_source }}</span>
+                                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $dimensions }}</span>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
                                                 <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                                        <strong><span style="line-height: 115%; color: black;">Cổng kết nối</span></strong>
+                                                        <strong><span style="line-height: 115%; color: black;">Tương thích socket</span></strong>
                                                     </span>
                                                 </p>
                                             </td>
                                             <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $ports }}</span>
+                                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $socket_compatibility }}</span>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
-                                                <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                                        <strong><span style="line-height: 115%; color: black;">Phụ kiện đi kèm</span></strong>
-                                                    </span>
-                                                </p>
-                                            </td>
-                                            <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $accessories }}</span>
-                                            </td>
-                                        </tr>
+            
                                     </tbody>
                                 </table>
                             </div>
@@ -212,7 +201,7 @@
 
                 <div class="pro-info-center">
                     <h1 class="pro-name js-product-name">{{ $name }}
-                        {{ $connectivity }} | {{$ports}}
+                        |  {{ $cooling_type }} | {{$socket_compatibility}}
                     </h1>
                     <div style="border-bottom: 1px solid #edeef2;margin-bottom: 7px;padding-bottom: 3px;font-size: 13px;">
                         <span>
@@ -233,28 +222,25 @@
 
                     <div class="pro-info-summary">
                         <span class="item">
-                            <i class="fa fa-check-circle"></i>Loại thiết bị: {{ $device_type }}
+                            <i class="fa fa-check-circle"></i>Loại làm mát: {{ $cooling_type }}
                         </span>
                         <span class="item">
-                            <i class="fa fa-check-circle"></i>Kết nối: {{ $connectivity }}
+                            <i class="fa fa-check-circle"></i>Kích thước quạt: {{ $fan_size }}
                         </span>
                         <span class="item">
-                            <i class="fa fa-check-circle"></i>Tính năng: {{ $features }}
+                            <i class="fa fa-check-circle"></i>Tốc độ quạt: {{ $fan_speed }}
                         </span>
                         <span class="item">
-                            <i class="fa fa-check-circle"></i>Chất liệu: {{ $material }}
+                            <i class="fa fa-check-circle"></i>Độ ồn: {{ $noise_level }}
                         </span>
                         <span class="item hide d-block">
-                            <i class="fa fa-check-circle"></i>Trọng lượng: {{ $weight }}
+                            <i class="fa fa-check-circle"></i>TDP hỗ trợ: {{ $tdp_support }}
                         </span>
                         <span class="item hide d-block">
-                            <i class="fa fa-check-circle"></i>Nguồn cung cấp: {{ $power_source }}
+                            <i class="fa fa-check-circle"></i>Kích thước: {{ $dimensions }}
                         </span>
                         <span class="item hide d-block">
-                            <i class="fa fa-check-circle"></i>Cổng kết nối: {{ $ports }}
-                        </span>
-                        <span class="item hide d-block">
-                            <i class="fa fa-check-circle"></i>Phụ kiện đi kèm: {{ $accessories }}
+                            <i class="fa fa-check-circle"></i>Tương thích socket: {{ $socket_compatibility }}
                         </span>
                     </div>
                     
@@ -323,8 +309,8 @@
 
                         <form id="addCartForm" action="{{ route('cart.add') }}" method="POST" style="display: none;">
                             @csrf
-                            <input type="hidden" name="product_id" value="{{ $media_id }}">
-                            <input type="hidden" name="product_type" value="media">
+                            <input type="hidden" name="product_id" value="{{ $cooling_id }}">
+                            <input type="hidden" name="product_type" value="cooling">
                             <input type="hidden" name="product_name" value="{{ $name }}">
                             <input type="hidden" name="quantity" value="1" min="1">
                         </form>
@@ -442,7 +428,7 @@
                                     <p style="text-align: center;">
                                         <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
                                             <strong>
-                                                <a href="https://www.anphatpc.com.vn/gaminggear-asus_dm1058.html">{{ $brand }}</a>
+                                                <a href="https://www.anphatpc.com.vn/cooling-asus_dm1058.html">{{ $brand }}</a>
                                             </strong>
                                         </span>
                                     </p>
@@ -457,98 +443,88 @@
                                 </td>
                                 <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
                                     <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                        <a href="https://www.anphatpc.com.vn/gaminggear-asus-rog-strix-g16-g614ji-n4125w.html" target="_blank">{{ $name }}</a>
+                                        <a href="https://www.anphatpc.com.vn/cooling-asus-rog-strix-g16-g614ji-n4125w.html" target="_blank">{{ $name }}</a>
                                     </span>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
                                     <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                            <strong><span style="line-height: 115%; color: black;">Loại thiết bị</span></strong>
+                                            <strong><span style="line-height: 115%; color: black;">Loại làm mát</span></strong>
                                         </span>
                                     </p>
                                 </td>
                                 <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                    <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $device_type }}</span>
+                                    <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $cooling_type }}</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
                                     <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                            <strong><span style="line-height: 115%; color: black;">Kết nối</span></strong>
+                                            <strong><span style="line-height: 115%; color: black;">Kích thước quạt</span></strong>
                                         </span>
                                     </p>
                                 </td>
                                 <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                    <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $connectivity }}</span>
+                                    <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $fan_size }}</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
                                     <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                            <strong><span style="line-height: 115%; color: black;">Tính năng</span></strong>
+                                            <strong><span style="line-height: 115%; color: black;">Độ ồn</span></strong>
                                         </span>
                                     </p>
                                 </td>
                                 <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                    <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $features }}</span>
+                                    <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $noise_level }}</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
                                     <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                            <strong><span style="line-height: 115%; color: black;">Chất liệu</span></strong>
+                                            <strong><span style="line-height: 115%; color: black;">Tốc độ quạt</span></strong>
                                         </span>
                                     </p>
                                 </td>
                                 <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                    <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $material }}</span>
+                                    <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{  $fan_speed }}</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
                                     <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                            <strong><span style="line-height: 115%; color: black;">Trọng lượng</span></strong>
+                                            <strong><span style="line-height: 115%; color: black;">TDP hỗ trợ</span></strong>
                                         </span>
                                     </p>
                                 </td>
                                 <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                    <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $weight }}</span>
+                                    <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $tdp_support }}</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
                                     <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                            <strong><span style="line-height: 115%; color: black;">Nguồn cung cấp</span></strong>
+                                            <strong><span style="line-height: 115%; color: black;">Kích thước</span></strong>
                                         </span>
                                     </p>
                                 </td>
                                 <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                    <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $power_source }}</span>
+                                    <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $dimensions }}</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
                                     <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                            <strong><span style="line-height: 115%; color: black;">Cổng kết nối</span></strong>
+                                            <strong><span style="line-height: 115%; color: black;">Tương thích socket</span></strong>
                                         </span>
                                     </p>
                                 </td>
                                 <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                    <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $ports }}</span>
+                                    <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $socket_compatibility }}</span>
                                 </td>
                             </tr>
-                            <tr>
-                                <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
-                                    <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                            <strong><span style="line-height: 115%; color: black;">Phụ kiện đi kèm</span></strong>
-                                        </span>
-                                    </p>
-                                </td>
-                                <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                    <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $accessories }}</span>
-                                </td>
-                            </tr>
+
                         </tbody>
                     </table>
                 </div>
@@ -573,8 +549,8 @@
 
 @php
     $images = collect(['Image1', 'Image2', 'Image3', 'Image4', 'Image5'])
-        ->map(function ($name) use ($media) {
-            $attribute = $media->attributes->firstWhere('name', $name);
+        ->map(function ($name) use ($cooling) {
+            $attribute = $cooling->attributes->firstWhere('name', $name);
             return $attribute ? asset($attribute->pivot->value) : null;
         })
         ->filter()

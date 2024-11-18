@@ -51,13 +51,13 @@ Route::prefix('pc-parts')->group(function() {
 Route::get('gaminggears', [GaminggearController::class, 'showGaminggears'])->name('gaming-gears.show');
 
 //Trang chuyen muc Media
-Route::get('media', [MediaController::class, 'showMedia'])->name('media.show');
+Route::get('media', [MediaController::class, 'showMedia'])->name('media_devices.show');
 
 //Trang chuyen muc Cooling
-Route::get('cooling', [CoolingController::class, 'showCoolings'])->name('coolings.show');
+Route::get('coolings', [CoolingController::class, 'showCoolings'])->name('coolings.show');
 
 //Trang chuyen muc Accessory
-Route::get('accessory', [AccessoryController::class, 'showAccessories'])->name('accessories.show');
+Route::get('accessories', [AccessoryController::class, 'showAccessories'])->name('accessories.show');
 
 //Trang flash sale chill chill
 Route::get('flash-sale', [SaleController::class, 'showFlashSale'])->name('flash-sale');
@@ -129,11 +129,17 @@ Route::prefix('pc-parts')->group( function() {
 });
 Route::get('monitors/{brand}/{id}', [MonitorController::class, 'show'])->name('monitor.show');
 Route::get('gaminggears/{brand}/{id}', [GaminggearController::class, 'show'])->name('gaminggear.show');
+Route::get('media/{brand}/{id}', [MediaController::class, 'show'])->name('media.show');
+Route::get('cooling/{brand}/{id}', [CoolingController::class, 'show'])->name('cooling.show');
+Route::get('accessory/{brand}/{id}', [AccessoryController::class, 'show'])->name('accessory.show');
 
 
 //filter
 Route::get('/laptops/filter', [LaptopController::class, 'filterLaptops'])->name('laptop.filter');
 Route::get('/gaminggears/filter', [GaminggearController::class, 'filterGaminggears'])->name('gaminggear.filter');
+Route::get('/media/filter', [MediaController::class, 'filterMedia'])->name('media.filter');
+Route::get('/coolings/filter', [CoolingController::class, 'filterCoolings'])->name('cooling.filter');
+Route::get('/accessories/filter', [AccessoryController::class, 'filterAccessories'])->name('accessory.filter');
 
 //Thanh tim kiem
 Route::get('/search-suggestions', [HomeController::class, 'getSuggestions']);

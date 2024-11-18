@@ -151,12 +151,7 @@
           <div class="child-title">
             <!---thay số là id danh mục sản phẩm-->
             <a href="/pc-parts/cpu">CPU</a>
-            <a href="/pc-parts/mainboard">Mainboard</a>
             <a href="/pc-parts/vga">VGA</a>
-            <a href="/pc-parts/ram">RAM</a>
-            <a href="/pc-parts/ssd">SSD</a>
-            <a href="/pc-parts/case">Vỏ Case</a>
-            <a href="/pc-parts/psu">Nguồn</a>
           </div>
         </div>
         <div class="p-container custom-nav owl-carousel owl-theme">

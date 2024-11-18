@@ -1,23 +1,22 @@
 @extends('layouts.app')
 @php
-    $media_id = $media->id;
-    $name = $media->name;
-    $brand = $media->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
-    $model = $media->attributes->firstWhere('name', 'Model')->pivot->value ?? 'N/A';
-    $price = $media->attributes->firstWhere('name', 'Price')->pivot->value ?? 'N/A';
-    $dealprice = $media->attributes->firstWhere('name', 'Deal Price')->pivot->value ?? 'N/A';
-    $rating = $media->attributes->firstWhere('name', 'Rating')->pivot->value ?? 'N/A';
+    $accessory_id = $accessory->id;
+    $name = $accessory->name;
+    $brand = $accessory->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
+    $model = $accessory->attributes->firstWhere('name', 'Model')->pivot->value ?? 'N/A';
+    $price = $accessory->attributes->firstWhere('name', 'Price')->pivot->value ?? 'N/A';
+    $dealprice = $accessory->attributes->firstWhere('name', 'Deal Price')->pivot->value ?? 'N/A';
+    $rating = $accessory->attributes->firstWhere('name', 'Rating')->pivot->value ?? 'N/A';
 
-    // Các thuộc tính Media
-    $device_type = $media->attributes->firstWhere('name', '[Media] Loại thiết bị')->pivot->value ?? 'N/A';
-    $connectivity = $media->attributes->firstWhere('name', '[Media] Kết nối')->pivot->value ?? 'N/A';
-    $features = $media->attributes->firstWhere('name', '[Media] Tính năng')->pivot->value ?? 'N/A';
-    $material = $media->attributes->firstWhere('name', '[Media] Chất liệu')->pivot->value ?? 'N/A';
-    $weight = $media->attributes->firstWhere('name', '[Media] Trọng lượng')->pivot->value ?? 'N/A';
-    $power_source = $media->attributes->firstWhere('name', '[Media] Nguồn cung cấp')->pivot->value ?? 'N/A';
-    $ports = $media->attributes->firstWhere('name', '[Media] Cổng kết nối')->pivot->value ?? 'N/A';
-    $accessories = $media->attributes->firstWhere('name', '[Media] Phụ kiện đi kèm')->pivot->value ?? 'N/A';
+    // Các thuộc tính Accessory
+    $device_type = $accessory->attributes->firstWhere('name', '[Accessory] Loại thiết bị')->pivot->value ?? 'N/A';
+    $connectivity = $accessory->attributes->firstWhere('name', '[Accessory] Kết nối')->pivot->value ?? 'N/A';
+    $features = $accessory->attributes->firstWhere('name', '[Accessory] Tính năng')->pivot->value ?? 'N/A';
+    $material = $accessory->attributes->firstWhere('name', '[Accessory] Chất liệu')->pivot->value ?? 'N/A';
+    $compatibility = $accessory->attributes->firstWhere('name', '[Accessory] Tương thích')->pivot->value ?? 'N/A';
+    $included_accessories = $accessory->attributes->firstWhere('name', '[Accessory] Phụ kiện đi kèm')->pivot->value ?? 'N/A';
 @endphp
+
 
 
 @section('content')
@@ -32,7 +31,7 @@
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
                         <a
-                            href="{{ url('/media/' . '/' . $brand) }}">{{ $media->attributes->firstWhere('id', '1')->pivot->value }}</a>
+                            href="{{ url('/accessory/' . '/' . $brand) }}">{{ $accessory->attributes->firstWhere('id', '1')->pivot->value }}</a>
                     </li>
                 </ol>
             </div>
@@ -159,34 +158,12 @@
                                         <tr>
                                             <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
                                                 <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                                        <strong><span style="line-height: 115%; color: black;">Trọng lượng</span></strong>
+                                                        <strong><span style="line-height: 115%; color: black;">Tương thích</span></strong>
                                                     </span>
                                                 </p>
                                             </td>
                                             <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $weight }}</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
-                                                <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                                        <strong><span style="line-height: 115%; color: black;">Nguồn cung cấp</span></strong>
-                                                    </span>
-                                                </p>
-                                            </td>
-                                            <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $power_source }}</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
-                                                <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                                        <strong><span style="line-height: 115%; color: black;">Cổng kết nối</span></strong>
-                                                    </span>
-                                                </p>
-                                            </td>
-                                            <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $ports }}</span>
+                                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $compatibility }}</span>
                                             </td>
                                         </tr>
                                         <tr>
@@ -197,9 +174,10 @@
                                                 </p>
                                             </td>
                                             <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $accessories }}</span>
+                                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $included_accessories }}</span>
                                             </td>
                                         </tr>
+            
                                     </tbody>
                                 </table>
                             </div>
@@ -212,7 +190,7 @@
 
                 <div class="pro-info-center">
                     <h1 class="pro-name js-product-name">{{ $name }}
-                        {{ $connectivity }} | {{$ports}}
+                        {{ $connectivity }} | {{$compatibility}}
                     </h1>
                     <div style="border-bottom: 1px solid #edeef2;margin-bottom: 7px;padding-bottom: 3px;font-size: 13px;">
                         <span>
@@ -245,17 +223,12 @@
                             <i class="fa fa-check-circle"></i>Chất liệu: {{ $material }}
                         </span>
                         <span class="item hide d-block">
-                            <i class="fa fa-check-circle"></i>Trọng lượng: {{ $weight }}
+                            <i class="fa fa-check-circle"></i>Tương thích: {{ $compatibility }}
                         </span>
                         <span class="item hide d-block">
-                            <i class="fa fa-check-circle"></i>Nguồn cung cấp: {{ $power_source }}
+                            <i class="fa fa-check-circle"></i>Phụ kiện đi kèm: {{ $included_accessories }}
                         </span>
-                        <span class="item hide d-block">
-                            <i class="fa fa-check-circle"></i>Cổng kết nối: {{ $ports }}
-                        </span>
-                        <span class="item hide d-block">
-                            <i class="fa fa-check-circle"></i>Phụ kiện đi kèm: {{ $accessories }}
-                        </span>
+
                     </div>
                     
 
@@ -323,7 +296,7 @@
 
                         <form id="addCartForm" action="{{ route('cart.add') }}" method="POST" style="display: none;">
                             @csrf
-                            <input type="hidden" name="product_id" value="{{ $media_id }}">
+                            <input type="hidden" name="product_id" value="{{ $accessory_id }}">
                             <input type="hidden" name="product_type" value="media">
                             <input type="hidden" name="product_name" value="{{ $name }}">
                             <input type="hidden" name="quantity" value="1" min="1">
@@ -508,34 +481,12 @@
                             <tr>
                                 <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
                                     <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                            <strong><span style="line-height: 115%; color: black;">Trọng lượng</span></strong>
+                                            <strong><span style="line-height: 115%; color: black;">Tương thích</span></strong>
                                         </span>
                                     </p>
                                 </td>
                                 <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                    <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $weight }}</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
-                                    <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                            <strong><span style="line-height: 115%; color: black;">Nguồn cung cấp</span></strong>
-                                        </span>
-                                    </p>
-                                </td>
-                                <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                    <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $power_source }}</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
-                                    <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                            <strong><span style="line-height: 115%; color: black;">Cổng kết nối</span></strong>
-                                        </span>
-                                    </p>
-                                </td>
-                                <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                    <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $ports }}</span>
+                                    <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $compatibility }}</span>
                                 </td>
                             </tr>
                             <tr>
@@ -546,9 +497,10 @@
                                     </p>
                                 </td>
                                 <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                    <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $accessories }}</span>
+                                    <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $included_accessories }}</span>
                                 </td>
                             </tr>
+
                         </tbody>
                     </table>
                 </div>
@@ -573,8 +525,8 @@
 
 @php
     $images = collect(['Image1', 'Image2', 'Image3', 'Image4', 'Image5'])
-        ->map(function ($name) use ($media) {
-            $attribute = $media->attributes->firstWhere('name', $name);
+        ->map(function ($name) use ($accessory) {
+            $attribute = $accessory->attributes->firstWhere('name', $name);
             return $attribute ? asset($attribute->pivot->value) : null;
         })
         ->filter()

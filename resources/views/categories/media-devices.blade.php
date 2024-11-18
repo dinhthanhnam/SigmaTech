@@ -10,13 +10,13 @@
             </a>
           </li>
           <li class="breadcrumb-item active" aria-current="page">
-            <a href="{{ url('/laptops/Gaming') }}">Laptop Gaming </a>
+            <a href="{{ url('/media') }}">Laptop Loa, Webcam, Microphone </a>
           </li>
         </ol>
       </div>
       <div class="product-collection-related-container">
         <div class="group-title">
-          <h2 class="title">Laptop Gaming Được Mua Nhiều Nhất 2024</h2>
+          <h2 class="title">Laptop Loa, Webcam, Microphone Được Mua Nhiều Nhất 2024</h2>
         </div>
       </div>
       <div class="p-container bg-white js-box-container" style="min-height: 400px" data-id="395-850">
@@ -36,21 +36,33 @@
               <a href="#" class="filter-name"> Hãng </a>
               <div class="filter-content-group">
                 <div class="filter-group-middle">
-                  <a href="#" class="image filter-title js-filter-title" title="Acer" data-check="0"
-                    data-filter_code="brand" data-value="acer">
-                    <span style="background-image: url('{{ asset('assets/img/brand/acer.jpg') }}');"></span>
+                  <a href="#" class="image filter-title js-filter-title" title="Razer" data-check="0"
+                    data-filter_code="brand" data-value="Razer">
+                    <span style="background-image: url('{{ asset('assets/img/brand/razer.png') }}');"></span>
                   </a>
-                  <a href="#" class="image filter-title js-filter-title" title="Asus" data-check="0"
-                    data-filter_code="brand" data-value="asus">
-                    <span style="background-image: url('{{ asset('assets/img/brand/asus.jpg') }}');"></span>
+                  <a href="#" class="image filter-title js-filter-title" title="JBL" data-check="0"
+                    data-filter_code="brand" data-value="JBL">
+                    <span style="background-image: url('{{ asset('assets/img/brand/jbl.png') }}');"></span>
                   </a>
-                  <a href="#" class="image filter-title js-filter-title" title="Dell" data-check="0"
-                    data-filter_code="brand" data-value="lenovo">
-                    <span style="background-image: url('{{ asset('assets/img/brand/lenovo.jpg') }}');"></span>
+                  <a href="#" class="image filter-title js-filter-title" title="Blue" data-check="0"
+                    data-filter_code="brand" data-value="Blue">
+                    <span style="background-image: url('{{ asset('assets/img/brand/blue.png') }}');"></span>
                   </a>
-                  <a href="#" class="image filter-title js-filter-title" title="Lenovo" data-check="0"
-                    data-filter_code="brand" data-value="dell">
-                    <span style="background-image: url('{{ asset('assets/img/brand/dell.jpg') }}');"></span>
+                  <a href="#" class="image filter-title js-filter-title" title="Elgato" data-check="0"
+                    data-filter_code="brand" data-value="Elgato">
+                    <span style="background-image: url('{{ asset('assets/img/brand/elgato.png') }}');"></span>
+                  </a>
+                  <a href="#" class="image filter-title js-filter-title" title="HyperX" data-check="0"
+                    data-filter_code="brand" data-value="HyperX">
+                    <span style="background-image: url('{{ asset('assets/img/brand/hyperx.png') }}');"></span>
+                  </a>
+                  <a href="#" class="image filter-title js-filter-title" title="Logitech" data-check="0"
+                    data-filter_code="brand" data-value="Logitech">
+                    <span style="background-image: url('{{ asset('assets/img/brand/logitech.png') }}');"></span>
+                  </a>
+                  <a href="#" class="image filter-title js-filter-title" title="AverMedia" data-check="0"
+                    data-filter_code="brand" data-value="AverMedia">
+                    <span style="background-image: url('{{ asset('assets/img/brand/avermedia.png') }}');"></span>
                   </a>
                 </div>
                 <div class="filter-group-bottom">
@@ -64,164 +76,17 @@
               <div class="filter-content-group">
                 <div class="filter-group-middle ">
                   <a href="#" class="filter-title js-filter-title" data-filter_code="price"
-                    data-value="min=0&max=15000000"> Dưới 15 triệu </a>
+                    data-value="min=0&max=1000000"> Dưới 1 triệu </a>
                   <a href="#" class="filter-title js-filter-title" data-filter_code="price"
-                    data-value="min=15000000&max=20000000"> 15 triệu - 20 triệu </a>
+                    data-value="min=4000000&max=5000000"> 4 triệu - 5 triệu </a>
                   <a href="#" class="filter-title js-filter-title" data-filter_code="price"
-                    data-value="min=20000000&max=25000000"> 20 triệu - 25 triệu </a>
+                    data-value="min=5000000&max=6000000"> 5 triệu - 6 triệu </a>
                   <a href="#" class="filter-title js-filter-title" data-filter_code="price"
-                    data-value="min=25000000&max=30000000"> 25 triệu - 30 triệu </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="price"
-                    data-value="min=30000000&max=35000000"> 30 triệu - 35 triệu </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="price"
-                    data-value="min=35000000&max=40000000"> 35 triệu - 40 triệu </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="price"
-                    data-value="min=40000000&max=50000000"> 40 triệu - 50 triệu </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="price"
-                    data-value="min=50000000&max=60000000"> 50 triệu - 60 triệu </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="price"
-                    data-value="min=60000000&max=1000000000000"> Trên 60 triệu </a>
+                    data-value="min=6000000&max=700000000000"> Trên 6 triệu </a>
                 </div>
                 <div class="filter-group-bottom">
                   <a href="#" onclick=""> Bỏ chọn </a>
                   <a href="#" class="js-open-url"> Xem kết quả </a>
-                </div>
-              </div>
-            </div>
-            <div class="filter-item js-filter-item" data-type="cpu">
-              <a href="#" class="filter-name "> Bộ vi xử lý </a>
-              <div class="filter-content-group">
-                <div class="filter-group-middle ">
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="cpu" data-value="Intel Core i3">Intel Core i3 </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="cpu" data-value="Intel Core i5">Intel Core i5 </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="cpu" data-value="Intel Core i7">Intel Core i7 </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="cpu" data-value="Intel Core i9">Intel Core i9 </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="cpu" data-value="AMD Ryzen 5">AMD Ryzen 5 </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="cpu" data-value="AMD Ryzen 7">AMD Ryzen 7 </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="cpu" data-value="AMD Ryzen 9">AMD Ryzen 9 </a>
-                </div>
-                <div class="filter-group-bottom">
-                  <a href="#" onclick="BuildFilterUrl.clearFilter.call(this, '')"> Bỏ chọn </a>
-                  <a href="/gaming-laptop.html" class="js-open-url"> Xem kết quả
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="filter-item js-filter-item" data-type="attribute">
-              <a href="#" class="filter-name "> Kích thước màn hình </a>
-              <div class="filter-content-group">
-                <div class="filter-group-middle ">
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="screensize"data-value="14">14.0 inch </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="screensize"data-value="14.5 inch">14.5 inch </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="screensize"data-value="15.0 inch">15 inch </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="screensize"data-value="15.6 inch">15.6 inch </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="screensize"data-value="16 inch">16 inch </a>
-                </div>
-                <div class="filter-group-bottom">
-                  <a href="#" onclick="BuildFilterUrl.clearFilter.call(this, '')"> Bỏ chọn </a>
-                  <a href="/gaming-laptop.html" class="js-open-url"> Xem kết quả
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="filter-item js-filter-item" data-type="attribute">
-              <a href="#" class="filter-name "> Card đồ họa (VGA) </a>
-              <div class="filter-content-group">
-                <div class="filter-group-middle ">
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="vga" data-value="RTX 2050">NVIDIA GeForce RTX 2050 </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="vga" data-value="RTX 3050">NVIDIA GeForce RTX 3050 </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="vga" data-value="RTX 4050">NVIDIA GeForce RTX 4050 </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="vga" data-value="RTX 4060">NVIDIA GeForce RTX 4060 </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="vga" data-value="RTX 4070">NVIDIA GeForce RTX 4070 </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="vga" data-value="RTX 4080">NVIDIA GeForce RTX 4080 </a>
-                </div>
-                <div class="filter-group-bottom">
-                  <a href="#" onclick="BuildFilterUrl.clearFilter.call(this, '')"> Bỏ chọn </a>
-                  <a href="/gaming-laptop.html" class="js-open-url"> Xem kết quả
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="filter-item js-filter-item" data-type="attribute">
-              <a href="#" class="filter-name "> Bộ nhớ trong (RAM) </a>
-              <div class="filter-content-group">
-                <div class="filter-group-middle ">
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="ram" data-value="8GB">8GB </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="ram" data-value="16GB">16GB </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="ram" data-value="32GB">32GB </a>
-                </div>
-                <div class="filter-group-bottom">
-                  <a href="#" onclick="BuildFilterUrl.clearFilter.call(this, '')"> Bỏ chọn </a>
-                  <a href="/gaming-laptop.html" class="js-open-url"> Xem kết quả
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="filter-item js-filter-item" data-type="attribute">
-              <a href="#" class="filter-name "> Dung lượng ổ cứng </a>
-              <div class="filter-content-group">
-                <div class="filter-group-middle ">
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="512GB">
-                    512GB </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="1TB">
-                    1TB </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="2TB">
-                    2TB </a>
-                </div>
-                <div class="filter-group-bottom">
-                  <a href="#" onclick="BuildFilterUrl.clearFilter.call(this, '')"> Bỏ chọn </a>
-                  <a href="/gaming-laptop.html" class="js-open-url"> Xem kết quả
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="filter-item js-filter-item" data-type="attribute">
-              <a href="#" class="filter-name "> Hệ điều hành </a>
-              <div class="filter-content-group">
-                <div class="filter-group-middle ">
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="os"
-                    data-value="Windows 10">
-                    Windows 10 </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="os"
-                    data-value="Windows 11">
-                    Windows 11 </a>
-                </div>
-                <div class="filter-group-bottom">
-                  <a href="#" onclick="BuildFilterUrl.clearFilter.call(this, '')"> Bỏ chọn </a>
-                  <a href="/gaming-laptop.html" class="js-open-url"> Xem kết quả
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="filter-item js-filter-item" data-type="attribute">
-              <a href="#" class="filter-name "> Trọng lượng </a>
-              <div class="filter-content-group">
-                <div class="filter-group-middle ">
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="1272"> 1.0kg<2.0kg </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="1273"> 2.0kg<2.4kg </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="1274"> 2.4<3kg </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="1275"> >3kg </a>
-                </div>
-                <div class="filter-group-bottom">
-                  <a href="#" onclick="BuildFilterUrl.clearFilter.call(this, '')"> Bỏ chọn </a>
-                  <a href="/gaming-laptop.html" class="js-open-url"> Xem kết quả
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="filter-item js-filter-item" data-type="attribute">
-              <a href="#" class="filter-name "> Màu sắc </a>
-              <div class="filter-content-group">
-                <div class="filter-group-middle ">
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="color" data-value="Eclipse Gray">Eclipse Gray </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="color" data-value="Obsidian black">Obsidian black </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="color" data-value="Xám">Xám </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="color" data-value="Đen">Đen </a>
-                </div>
-                <div class="filter-group-bottom">
-                  <a href="#" onclick="BuildFilterUrl.clearFilter.call(this, '')"> Bỏ chọn </a>
-                  <a href="/gaming-laptop.html" class="js-open-url"> Xem kết quả
-                  </a>
                 </div>
               </div>
             </div>
@@ -413,14 +278,14 @@
 
           if (selectedFilterType === 'price' && selectedMin !== null && selectedMax !== null) {
             console.log(
-              `/laptops/filter?min=${encodeURIComponent(selectedMin)}&max=${encodeURIComponent(selectedMax)}`
+              `/media/filter?min=${encodeURIComponent(selectedMin)}&max=${encodeURIComponent(selectedMax)}`
               );
             window.location.href =
-              `/laptops/filter?min=${encodeURIComponent(selectedMin)}&max=${encodeURIComponent(selectedMax)}`;
+              `/media/filter?min=${encodeURIComponent(selectedMin)}&max=${encodeURIComponent(selectedMax)}`;
           } 
           else {
             window.location.href =
-              `/laptops/filter?${selectedFilterType}=${encodeURIComponent(selectedValue)}`;
+              `/media/filter?${selectedFilterType}=${encodeURIComponent(selectedValue)}`;
           }
         });
       });
@@ -439,7 +304,7 @@
 
     // Cập nhật nội dung của phần tử <b> với id là 'product-count-display'
     const productCountDisplay = document.getElementById('product-count-display');
-    productCountDisplay.textContent = `${productCount} Laptop Gaming - Đồ Họa`;
+    productCountDisplay.textContent = `${productCount} Loa, Webcam, Microphone`;
   });
 </script>
 

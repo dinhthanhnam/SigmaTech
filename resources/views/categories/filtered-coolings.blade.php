@@ -10,131 +10,116 @@
             </a>
           </li>
           <li class="breadcrumb-item active" aria-current="page">
-            <a href="{{ url('/gaminggears') }}">Gaming Gear </a>
+            <a href="{{ url('/coolings') }}">Thiết bị tản nhiệt </a>
           </li>
         </ol>
-      </div>
-      <div class="product-collection-related-container">
-        <div class="group-title">
-          <h2 class="title">Gaming Gear Được Mua Nhiều Nhất 2024</h2>
-        </div>
-      </div>
-      <div class="p-container bg-white js-box-container" style="min-height: 400px" data-id="395-850">
-        <div class="container custom-nav owl-carousel owl-theme">
-          @foreach ($topGaminggears as $gaminggear)
-            @include('partials.simple-p-item', ['product' => $gaminggear])
-          @endforeach
-        </div>
       </div>
 
       <div class="product-collection-related-container">
         <div class="filter-height" style="display: none;"></div>
         <div class="filter-container">
-          <p class="filter-group-title"> BỘ LỌC </p>
-          <div class="filter-list-container">
-            <div class="filter-item js-filter-item" data-type="brand">
-              <a href="#" class="filter-name"> Hãng </a>
-              <div class="filter-content-group">
-                <div class="filter-group-middle">
-                  <a href="#" class="image filter-title js-filter-title" title="Razer" data-check="0"
-                    data-filter_code="brand" data-value="Razer">
-                    <span style="background-image: url('{{ asset('assets/img/brand/razer.png') }}');"></span>
-                  </a>
-                  <a href="#" class="image filter-title js-filter-title" title="Corsair" data-check="0"
-                    data-filter_code="brand" data-value="Corsair">
-                    <span style="background-image: url('{{ asset('assets/img/brand/corsair.png') }}');"></span>
-                  </a>
-                  <a href="#" class="image filter-title js-filter-title" title="SteelSeries" data-check="0"
-                    data-filter_code="brand" data-value="SteelSeries">
-                    <span style="background-image: url('{{ asset('assets/img/brand/steelseries.png') }}');"></span>
-                  </a>
-                  <a href="#" class="image filter-title js-filter-title" title="Keychron" data-check="0"
-                    data-filter_code="brand" data-value="Keychron">
-                    <span style="background-image: url('{{ asset('assets/img/brand/keychron.png') }}');"></span>
-                  </a>
-                  <a href="#" class="image filter-title js-filter-title" title="HyperX" data-check="0"
-                    data-filter_code="brand" data-value="HyperX">
-                    <span style="background-image: url('{{ asset('assets/img/brand/hyperx.png') }}');"></span>
-                  </a>
-                  <a href="#" class="image filter-title js-filter-title" title="Logitech" data-check="0"
-                    data-filter_code="brand" data-value="Logitech">
-                    <span style="background-image: url('{{ asset('assets/img/brand/logitech.png') }}');"></span>
-                  </a>
-                </div>
-                <div class="filter-group-bottom">
-                  <a href="#" onclick=""> Bỏ chọn </a>
-                  <a href="#" class="js-open-url"> Xem kết quả </a>
+            <p class="filter-group-title"> BỘ LỌC </p>
+            <div class="filter-list-container">
+              <div class="filter-item js-filter-item" data-type="brand">
+                <a href="#" class="filter-name"> Hãng </a>
+                <div class="filter-content-group">
+                  <div class="filter-group-middle">
+                    <a href="#" class="image filter-title js-filter-title" title="Cooler Master" data-check="0"
+                      data-filter_code="brand" data-value="Cooler Master">
+                      <span style="background-image: url('{{ asset('assets/img/brand/coolermaster.png') }}');"></span>
+                    </a>
+                    <a href="#" class="image filter-title js-filter-title" title="NZXT" data-check="0"
+                      data-filter_code="brand" data-value="NZXT">
+                      <span style="background-image: url('{{ asset('assets/img/brand/nzxt.png') }}');"></span>
+                    </a>
+                    <a href="#" class="image filter-title js-filter-title" title="Noctua" data-check="0"
+                      data-filter_code="brand" data-value="Noctua">
+                      <span style="background-image: url('{{ asset('assets/img/brand/noctua.jpg') }}');"></span>
+                    </a>
+                    <a href="#" class="image filter-title js-filter-title" title="be quiet!" data-check="0"
+                      data-filter_code="brand" data-value="be quiet!">
+                      <span style="background-image: url('{{ asset('assets/img/brand/bequiet.png') }}');"></span>
+                    </a>
+                    <a href="#" class="image filter-title js-filter-title" title="Corsair" data-check="0"
+                      data-filter_code="brand" data-value="Corsair">
+                      <span style="background-image: url('{{ asset('assets/img/brand/corsair.png') }}');"></span>
+                    </a>
+                    <a href="#" class="image filter-title js-filter-title" title="Thermalright" data-check="0"
+                      data-filter_code="brand" data-value="Thermalright">
+                      <span style="background-image: url('{{ asset('assets/img/brand/thermalright.png') }}');"></span>
+                    </a>
+                  </div>
+                  <div class="filter-group-bottom">
+                    <a href="#" onclick=""> Bỏ chọn </a>
+                    <a href="#" class="js-open-url"> Xem kết quả </a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="filter-item js-filter-item" data-type="price">
-              <a href="#" class="filter-name "> Giá </a>
-              <div class="filter-content-group">
-                <div class="filter-group-middle ">
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="price"
-                    data-value="min=0&max=1000000"> Dưới 1 triệu </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="price"
-                    data-value="min=1500000&max=2000000"> 1 triệu - 2 triệu </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="price"
-                    data-value="min=2000000&max=2500000"> 2 triệu - 2,5 triệu </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="price"
-                    data-value="min=2500000&max=3000000"> 2,5 triệu - 3 triệu </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="price"
-                    data-value="min=3000000&max=5000000"> 3 triệu - 5 triệu </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="price"
-                    data-value="min=5000000&max=1000000000000"> Trên 5 triệu </a>
-                </div>
-                <div class="filter-group-bottom">
-                  <a href="#" onclick=""> Bỏ chọn </a>
-                  <a href="#" class="js-open-url"> Xem kết quả </a>
+              <div class="filter-item js-filter-item" data-type="price">
+                <a href="#" class="filter-name "> Giá </a>
+                <div class="filter-content-group">
+                  <div class="filter-group-middle ">
+                    <a href="#" class="filter-title js-filter-title" data-filter_code="price"
+                      data-value="min=0&max=1000000"> Dưới 1 triệu </a>
+                    <a href="#" class="filter-title js-filter-title" data-filter_code="price"
+                      data-value="min=4000000&max=5000000"> 4 triệu - 5 triệu </a>
+                    <a href="#" class="filter-title js-filter-title" data-filter_code="price"
+                      data-value="min=5000000&max=6000000"> 5 triệu - 6 triệu </a>
+                    <a href="#" class="filter-title js-filter-title" data-filter_code="price"
+                      data-value="min=6000000&max=700000000000"> Trên 6 triệu </a>
+                  </div>
+                  <div class="filter-group-bottom">
+                    <a href="#" onclick=""> Bỏ chọn </a>
+                    <a href="#" class="js-open-url"> Xem kết quả </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
         <div class="p-container bg-white">
           <div class="sort-container d-flex align-items-center justify-content-between flex-wrap">
             <div class="d-flex align-items-center">
-              <b id="product-count-display" style="font-size:16px;margin-right: 20px"> Gaming Gear </b>
+              <b id="product-count-display" style="font-size:16px;margin-right: 20px"> Laptop Gaming - Đồ Họa </b>
               <div class="sort-by-group">
-                <a href="/gaminggears/filter?sort=newest">
-                  <i class="mb-icons icon-new" data-filter_code = "sort" data-value="newest"></i>
+                <a href="javascript:void(0)">
+                  <i class="mb-icons icon-in-stock"></i>
+                  <span> Còn hàng </span>
+                </a>
+                <a href="javascript:void(0)">
+                  <i class="mb-icons icon-new"></i>
                   <span> Mới nhất </span>
                 </a>
-                <a href="/gaminggears/filter?sort=asc">
-                  <i class="mb-icons icon-increase" data-filter_code = "sort" data-value="asc"></i>
+                <a href="javascript:void(0)">
+                  <i class="mb-icons icon-increase"></i>
                   <span> Giá tăng dần </span>
                 </a>
-                <a href="/gaminggears/filter?sort=desc">
-                  <i class="mb-icons icon-decrease" data-filter_code = "sort" data-value="desc"></i>
+                <a href="javascript:void(0)" >
+                  <i class="mb-icons icon-decrease"></i>
                   <span> Giá giảm dần </span>
                 </a>
               </div>
             </div>
           </div>
           <div class="p-list-container d-flex flex-wrap">
-            @foreach ($gaminggears as $gaminggear)
-              @include('partials.simple-p-item', ['product' => $gaminggear])
+            @foreach ($coolings as $cooling)
+              @include('partials.simple-p-item', ['product' => $cooling])
             @endforeach
           </div>
         </div>
         <!-- paging -->
         <div class="paging bg-white mx-auto">
-          {{-- Trang đầu tiên --}}
-          <a href="{{ $gaminggears->url(1) }}" class="{{ $gaminggears->onFirstPage() ? 'current' : '' }}">
+          <a href="{{ $coolings->url(1) }}" class="{{ $coolings->onFirstPage() ? 'current' : '' }}">
             1
           </a>
-          {{-- Các trang tiếp theo --}}
-          @for ($page = 2; $page <= $gaminggears->lastPage(); $page++)
-            <a href="{{ $gaminggears->url($page) }}"
-              class="{{ $page == $gaminggears->currentPage() ? 'current' : '' }}">
+          @for ($page = 2; $page <= $coolings->lastPage(); $page++)
+            <a href="{{ $coolings->url($page) }}"
+              class="{{ $page == $coolings->currentPage() ? 'current' : '' }}">
               {{ $page }}
             </a>
           @endfor
-          {{-- Nút chuyển sang trang tiếp theo --}}
-          @if ($gaminggears->hasMorePages())
-            <a href="{{ $gaminggears->nextPageUrl() }}">
+          @if ($coolings->hasMorePages())
+            <a href="{{ $coolings->nextPageUrl() }}">
               <i class="fa fa-angle-right"></i>
             </a>
           @endif
@@ -278,34 +263,34 @@
 
           if (selectedFilterType === 'price' && selectedMin !== null && selectedMax !== null) {
             console.log(
-              `/gaminggears/filter?min=${encodeURIComponent(selectedMin)}&max=${encodeURIComponent(selectedMax)}`
+              `/coolings/filter?min=${encodeURIComponent(selectedMin)}&max=${encodeURIComponent(selectedMax)}`
               );
             window.location.href =
-              `/gaminggears/filter?min=${encodeURIComponent(selectedMin)}&max=${encodeURIComponent(selectedMax)}`;
-          } 
-          else {
+              `/coolings/filter?min=${encodeURIComponent(selectedMin)}&max=${encodeURIComponent(selectedMax)}`;
+
+
+          } else {
             window.location.href =
-              `/gaminggears/filter?${selectedFilterType}=${encodeURIComponent(selectedValue)}`;
+              `/coolings/filter?${selectedFilterType}=${encodeURIComponent(selectedValue)}`;
           }
         });
       });
     });
   </script>
 
-{{-- Count --}}
-<script>
- 
-  document.addEventListener('DOMContentLoaded', function() {
-    // Tìm container chứa danh sách sản phẩm
-    const productListContainer = document.querySelector('.p-list-container');
+  {{-- Count --}}
+  <script>
+  
+    document.addEventListener('DOMContentLoaded', function() {
+      // Tìm container chứa danh sách sản phẩm
+      const productListContainer = document.querySelector('.p-list-container');
 
-    // Đếm số lượng sản phẩm bên trong
-    const productCount = productListContainer.children.length;
+      // Đếm số lượng sản phẩm bên trong
+      const productCount = productListContainer.children.length;
 
-    // Cập nhật nội dung của phần tử <b> với id là 'product-count-display'
-    const productCountDisplay = document.getElementById('product-count-display');
-    productCountDisplay.textContent = `${productCount} Gaming Gear`;
-  });
-</script>
-
+      // Cập nhật nội dung của phần tử <b> với id là 'product-count-display'
+      const productCountDisplay = document.getElementById('product-count-display');
+      productCountDisplay.textContent = `${productCount} Thiết bị tản nhiệt`;
+    });
+  </script>
 @endpush
