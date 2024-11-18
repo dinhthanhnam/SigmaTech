@@ -2,10 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Accessory;
 use Illuminate\Http\Request;
 use App\Models\Laptop;
 use App\Models\Cpu;
+use App\Models\Gaminggear;
 use App\Models\Gpu;
+use App\Models\Media;
+use App\Models\Monitor;
 use Carbon\Carbon;
 class HomeController extends Controller
 {
@@ -94,43 +98,83 @@ class HomeController extends Controller
     
 
     public function getSuggestions(Request $request)
-    {
-        $search = $request->query('query', '');
-        $searchresults = [];
+{
+    $search = $request->query('query', '');
+    $searchresults = [];
 
-        if ($search !== '') {
-            $laptops = Laptop::where('name', 'like', '%' . $search . '%') -> with('attributes') ->get();
+    if ($search !== '') {
+        $laptops = Laptop::where('name', 'like', '%' . $search . '%')->with('attributes')->get();
+        $cpus = Cpu::where('name', 'like', '%' . $search . '%')->with('attributes')->get();
+        $gpus = Gpu::where('name', 'like', '%' . $search . '%')->with('attributes')->get();
+        $media = Media::where('name', 'like', '%' . $search . '%')->with('attributes')->get();
+        $gaminggears = Gaminggear::where('name', 'like', '%' . $search . '%')->with('attributes')->get();
+        $monitors = Monitor::where('name', 'like', '%' . $search . '%')->with('attributes')->get();
+        $accessories = Accessory::where('name', 'like', '%' . $search . '%')->with('attributes')->get();
 
-            $cpus = Cpu::where('name', 'like', '%' . $search . '%')-> with('attributes') ->get();
-
-            $gpus = Gpu::where('name', 'like', '%' . $search . '%')-> with('attributes') ->get();
-
-            // Gộp tất cả các sản phẩm vào một biến chung
-            foreach($laptops as $laptop) {
-                $type = $laptop->attributes->firstWhere('name', '[Laptop] Loại laptop')->pivot->value ?? 'N/A';
-                $brand = $laptop->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
-                $imageurl = $laptop->attributes->firstWhere('name', 'Image1')->pivot->value ?? 'N/A';
-                $laptop->image = $imageurl;
-                $laptop->link = url('laptops/'.$type.'/'.$brand.'/'.$laptop->id);
-            }
-            foreach($cpus as $cpu) {
-                $type = $cpu->attributes->firstWhere('name', 'Loại linh kiện')->pivot->value ?? 'N/A';
-                $brand = $cpu->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
-                $imageurl = $cpu->attributes->firstWhere('name', 'Image1')->pivot->value ?? 'N/A';
-                $cpu->image = $imageurl;
-                $cpu->link = url('pc-parts/'.$type.'/'.$brand.'/'.$cpu->id);
-            }
-            foreach($gpus as $gpu) {
-                $type = $gpu->attributes->firstWhere('name', 'Loại linh kiện')->pivot->value ?? 'N/A';
-                $brand = $gpu->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
-                $imageurl = $gpu->attributes->firstWhere('name', 'Image1')->pivot->value ?? 'N/A';
-                $gpu->image = $imageurl;
-                $gpu->link = url('pc-parts/'.$type.'/'.$brand.'/'.$gpu->id);
-            }
-            $searchresults = collect()->merge($laptops)->merge($cpus)->merge($gpus);
+        // Xử lý từng loại sản phẩm
+        foreach ($laptops as $laptop) {
+            $type = $laptop->attributes->firstWhere('name', '[Laptop] Loại laptop')->pivot->value ?? 'N/A';
+            $brand = $laptop->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
+            $imageurl = $laptop->attributes->firstWhere('name', 'Image1')->pivot->value ?? 'N/A';
+            $laptop->image = $imageurl;
+            $laptop->link = url('laptops/' . $type . '/' . $brand . '/' . $laptop->id);
+        }
+        foreach ($cpus as $cpu) {
+            $type = $cpu->attributes->firstWhere('name', 'Loại linh kiện')->pivot->value ?? 'N/A';
+            $brand = $cpu->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
+            $imageurl = $cpu->attributes->firstWhere('name', 'Image1')->pivot->value ?? 'N/A';
+            $cpu->image = $imageurl;
+            $cpu->link = url('pc-parts/' . $type . '/' . $brand . '/' . $cpu->id);
+        }
+        foreach ($gpus as $gpu) {
+            $type = $gpu->attributes->firstWhere('name', 'Loại linh kiện')->pivot->value ?? 'N/A';
+            $brand = $gpu->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
+            $imageurl = $gpu->attributes->firstWhere('name', 'Image1')->pivot->value ?? 'N/A';
+            $gpu->image = $imageurl;
+            $gpu->link = url('pc-parts/' . $type . '/' . $brand . '/' . $gpu->id);
+        }
+        foreach ($media as $item) {
+            $type = $item->attributes->firstWhere('name', 'Media Type')->pivot->value ?? 'N/A';
+            $brand = $item->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
+            $imageurl = $item->attributes->firstWhere('name', 'Image1')->pivot->value ?? 'N/A';
+            $item->image = $imageurl;
+            $item->link = url('media/' . $brand . '/' . $item->id);
+        }
+        foreach ($gaminggears as $item) {
+            $type = $item->attributes->firstWhere('name', 'Gear Type')->pivot->value ?? 'N/A';
+            $brand = $item->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
+            $imageurl = $item->attributes->firstWhere('name', 'Image1')->pivot->value ?? 'N/A';
+            $item->image = $imageurl;
+            $item->link = url('gaminggears/' . $brand . '/' . $item->id);
+        }
+        foreach ($monitors as $monitor) {
+            $type = $monitor->attributes->firstWhere('name', 'Monitor Type')->pivot->value ?? 'N/A';
+            $brand = $monitor->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
+            $imageurl = $monitor->attributes->firstWhere('name', 'Image1')->pivot->value ?? 'N/A';
+            $monitor->image = $imageurl;
+            $monitor->link = url('monitors/' . $brand . '/' . $monitor->id);
+        }
+        foreach ($accessories as $accessory) {
+            $type = $accessory->attributes->firstWhere('name', 'Accessory Type')->pivot->value ?? 'N/A';
+            $brand = $accessory->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
+            $imageurl = $accessory->attributes->firstWhere('name', 'Image1')->pivot->value ?? 'N/A';
+            $accessory->image = $imageurl;
+            $accessory->link = url('accessories/' . $brand . '/' . $accessory->id);
         }
 
-        // Trả về kết quả dưới dạng JSON
-        return response()->json($searchresults);
+        // Gộp tất cả các sản phẩm
+        $searchresults = collect()
+            ->merge($laptops)
+            ->merge($cpus)
+            ->merge($gpus)
+            ->merge($media)
+            ->merge($gaminggears)
+            ->merge($monitors)
+            ->merge($accessories);
     }
+
+    // Trả về kết quả dưới dạng JSON
+    return response()->json($searchresults);
+}
+
 }
