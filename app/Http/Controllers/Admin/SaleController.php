@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Laptop;
 use App\Models\Cpu;
+use App\Models\GPU;
+use App\Models\Monitor;
 use Carbon\Carbon;
 
 class SaleController extends Controller
@@ -24,4 +26,5 @@ class SaleController extends Controller
         $flashSaleItems = collect()->concat($laptops)->concat($cpus);
         return view('admin.sale-management', compact('flashSaleItems'));
     }
+
 }

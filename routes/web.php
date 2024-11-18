@@ -100,6 +100,7 @@ Route::middleware(['auth', AuthAdmin::class])->prefix('admin')->group(function (
   Route::get('/sale', [AdminSaleController::class, 'index'])->name('admin.show-sale');
 });
 
+Route::delete('/delete-product/{table}/{id}', [ProductController::class, 'deleteProduct'])->name('delete.product');
 //cart
 Route::prefix('cart')->group( function() {
   Route::get('/', [CartController::class, 'show'])->name('cart');
