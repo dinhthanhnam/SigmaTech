@@ -87,7 +87,11 @@ Route::get('warranty-policy', function () {
 Route::get('laptop-outlet', function () {
   return view('pages.laptop-outlet');
 })->name('pages.laptop-outlet');
+
+//user account
 Route::get('account', [UserController::class, 'index'])->name('user-account');
+Route::get('account/order/{id}', [UserController::class, 'getOrderDetails']);
+
 
 //admin view
 
@@ -129,6 +133,7 @@ Route::get('gaminggears/{brand}/{id}', [GaminggearController::class, 'show'])->n
 
 //filter
 Route::get('/laptops/filter', [LaptopController::class, 'filterLaptops'])->name('laptop.filter');
+Route::get('/gaminggears/filter', [GaminggearController::class, 'filterGaminggears'])->name('gaminggear.filter');
 
 //Thanh tim kiem
 Route::get('/search-suggestions', [HomeController::class, 'getSuggestions']);

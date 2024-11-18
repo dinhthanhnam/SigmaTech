@@ -19,13 +19,6 @@
           <h2 class="title">Gaming Gear Được Mua Nhiều Nhất 2024</h2>
         </div>
       </div>
-      <div class="p-container bg-white js-box-container" style="min-height: 400px" data-id="395-850">
-        <div class="container custom-nav owl-carousel owl-theme">
-          @foreach ($topGaminggears as $gaminggear)
-            @include('partials.simple-p-item', ['product' => $gaminggear])
-          @endforeach
-        </div>
-      </div>
 
       <div class="product-collection-related-container">
         <div class="filter-height" style="display: none;"></div>
@@ -68,28 +61,28 @@
               </div>
             </div>
             <div class="filter-item js-filter-item" data-type="price">
-              <a href="#" class="filter-name "> Giá </a>
-              <div class="filter-content-group">
-                <div class="filter-group-middle ">
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="price"
-                    data-value="min=0&max=1000000"> Dưới 1 triệu </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="price"
-                    data-value="min=1500000&max=2000000"> 1 triệu - 2 triệu </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="price"
-                    data-value="min=2000000&max=2500000"> 2 triệu - 2,5 triệu </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="price"
-                    data-value="min=2500000&max=3000000"> 2,5 triệu - 3 triệu </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="price"
-                    data-value="min=3000000&max=5000000"> 3 triệu - 5 triệu </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="price"
-                    data-value="min=5000000&max=1000000000000"> Trên 5 triệu </a>
-                </div>
-                <div class="filter-group-bottom">
-                  <a href="#" onclick=""> Bỏ chọn </a>
-                  <a href="#" class="js-open-url"> Xem kết quả </a>
+                <a href="#" class="filter-name "> Giá </a>
+                <div class="filter-content-group">
+                  <div class="filter-group-middle ">
+                    <a href="#" class="filter-title js-filter-title" data-filter_code="price"
+                      data-value="min=0&max=1000000"> Dưới 1 triệu </a>
+                    <a href="#" class="filter-title js-filter-title" data-filter_code="price"
+                      data-value="min=1500000&max=2000000"> 1 triệu - 2 triệu </a>
+                    <a href="#" class="filter-title js-filter-title" data-filter_code="price"
+                      data-value="min=2000000&max=2500000"> 2 triệu - 2,5 triệu </a>
+                    <a href="#" class="filter-title js-filter-title" data-filter_code="price"
+                      data-value="min=2500000&max=3000000"> 2,5 triệu - 3 triệu </a>
+                    <a href="#" class="filter-title js-filter-title" data-filter_code="price"
+                      data-value="min=3000000&max=5000000"> 3 triệu - 5 triệu </a>
+                    <a href="#" class="filter-title js-filter-title" data-filter_code="price"
+                      data-value="min=5000000&max=1000000000000"> Trên 5 triệu </a>
+                  </div>
+                  <div class="filter-group-bottom">
+                    <a href="#" onclick=""> Bỏ chọn </a>
+                    <a href="#" class="js-open-url"> Xem kết quả </a>
+                  </div>
                 </div>
               </div>
-            </div>
           </div>
         </div>
 

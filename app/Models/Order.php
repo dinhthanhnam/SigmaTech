@@ -21,4 +21,8 @@ class Order extends Model
         'total_price',
         'status'
     ];
+    public function orderDetails()
+    {
+        return $this->hasMany(OrderDetail::class, 'order_id');
+    }
 }

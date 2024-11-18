@@ -51,4 +51,36 @@ class GaminggearController extends Controller
         return view('categories.gaming-gears', compact('gaminggears', 'topGaminggears'));
     }
 
+    public function filterGaminggears(Request $request)
+    {
+        $filters = [
+            'brand' => $request->input('brand'),
+            'price_min' => $request->input('min'),
+            'price_max' => $request->input('max'),
+        ];
+
+        $gaminggears = Gaminggear::query();
+        
+        if (!empty($filters['brand'])) {
+            $gaminggears->whereHas('attributes', function ($query) use ($filters) {
+                $query->where('name', 'Brand')
+                    ->where('value', $filters['brand']);
+            });
+        }
+
+        if (!empty($filters['price_min']) || !empty($filters['price_max'])) {
+            $minPrice = $filters['price_min'] ?? 0;
+            $maxPrice = $filters['price_max'] ?? PHP_INT_MAX;
+
+            $gaminggears->whereHas('attributes', function ($query) use ($minPrice, $maxPrice) {
+                $query->where('name', 'Price')
+                    ->whereBetween('value', [$minPrice, $maxPrice]);
+            });
+        }
+
+        // Phân trang kết quả và trả về view
+        $gaminggears = $gaminggears->with('attributes')->paginate(12);
+
+        return view('categories.filtered-gaminggears', compact('gaminggears', 'filters'));
+    }
 }

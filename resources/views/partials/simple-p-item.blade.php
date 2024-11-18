@@ -70,23 +70,41 @@
         <div class="d-flex justify-content-between">
             <span class="btn-in-stock"> <i class="fa fa-check"></i> Còn hàng </span>
             <a href="javascript:void(0)" class="p-add-btn fa fa-shopping-cart"
-                onclick="document.getElementById('addCartForm-{{ $product_id }}').submit();">
+                onclick="document.getElementById('addCartForm-{{ $product_id }}-{{ $category_id }}').submit();">
             </a>
 
-            <form id="addCartForm-{{ $product_id }}" action="{{ route('cart.add') }}" method="POST"
-                style="display: none;">
+            <form id="addCartForm-{{ $product_id }}-{{ $category_id }}" action="{{ route('cart.add') }}"
+                method="POST" style="display: none;">
                 @csrf
-                <a href="{{ $product->link }}">
-                    <input type="hidden" name="product_id" value="{{ $product_id }}">
-                    @if ($category_id == 1 || $category_id == 2)
-                        {{ $product_type = 'laptop' }}
-                    @endif
-                    <input type="hidden" name="product_type" value="{{ $product_type }}">
-                    <input type="hidden" name="product_name" value="{{ $name }}">
-                    <input type="hidden" name="quantity" value="1" min="1">
-                </a>
+                <input type="hidden" name="product_id" value="{{ $product_id }}">
+                @if ($category_id == 1 || $category_id == 2)
+                    {{ $product_type = 'laptop' }}
+                @elseif ($category_id == 4)
+                    {{ $product_type = 'monitor' }}
+                @elseif ($pcpart_type == 'cpu')
+                    {{ $product_type = 'cpu' }}
+                @elseif ($pcpart_type == 'gpu')
+                    {{ $product_type = 'gpu' }}
+                @endif
+                <input type="hidden" name="product_type" value="{{ $product_type }}">
+                <input type="hidden" name="product_name" value="{{ $name }}">
+                <input type="hidden" name="quantity" value="1" min="1">
 
             </form>
         </div>
     </div>
+    @if (session('addToCartSuccess'))
+        @push('scripts')
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <script>
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Thêm sản phẩm vào giỏ hàng thành công!',
+                    text: 'Cảm ơn bạn đã mua sắm tại SigmaTech.',
+                    confirmButtonText: 'Đóng',
+                    timer: 5000
+                });
+            </script>
+        @endpush
+    @endif
 </div>
