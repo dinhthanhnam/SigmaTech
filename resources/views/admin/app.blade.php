@@ -15,7 +15,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -71,9 +70,6 @@
                     <li><a class="app-menu__item" href="{{ route('admin.show-order') }}"><i
                                 class='app-menu__icon fa-solid fa-cart-shopping'></i><span class="app-menu__label">Quản
                                 lý đơn hàng</span></a></li>
-                    <li><a class="app-menu__item" href="table-data-banned.html"><i
-                                class='app-menu__icon fa-solid fa-network-wired'></i><span class="app-menu__label">Quản
-                                lý danh mục</span></a></li>
                     <li><a class="app-menu__item" href="{{ route('admin.show-sale') }}"><i
                                 class='app-menu__icon fa-solid fa-tags'></i><span class="app-menu__label">Flash Sale &
                                 Khuyến mãi</span></a></li>

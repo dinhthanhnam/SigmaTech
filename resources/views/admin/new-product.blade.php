@@ -4,7 +4,7 @@
         <div class="app-title">
             <ul class="app-breadcrumb breadcrumb">
                 <li class="breadcrumb-item">Danh sách sản phẩm</li>
-                <li class="breadcrumb-item"><a href="#">Thêm sản phẩm</a></li>
+                <li class="breadcrumb-item"><b><a href="#">Thêm sản phẩm</a></b></li>
             </ul>
         </div>
         <div class="row">

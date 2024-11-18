@@ -8,6 +8,7 @@ use App\Models\Cpu;
 use App\Models\Gpu;
 use App\Models\Monitor;
 use App\Models\Attribute;
+use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 
@@ -40,9 +41,22 @@ class ProductController extends Controller
             });
 
         // Gộp tất cả các sản phẩm vào một biến chung
-        $products = collect()->merge($laptops)->merge($cpus)->merge($gpus)->merge($monitors);
+        $allProducts = collect()->merge($laptops)->merge($cpus)->merge($gpus)->merge($monitors);
 
-        return view('admin.product', compact('products'));
+        $currentPage = LengthAwarePaginator::resolveCurrentPage();
+        $perPage = 20;
+        $items = $allProducts->slice(($currentPage - 1) * $perPage, $perPage); // Lấy items cho trang hiện tại
+
+        // Tạo LengthAwarePaginator
+        $paginatedProducts = new LengthAwarePaginator(
+            $items,
+            $allProducts->count(),
+            $perPage,
+            $currentPage,
+            ['path' => LengthAwarePaginator::resolveCurrentPath()] // Đảm bảo đường dẫn đúng
+        );
+
+        return view('admin.product', compact('paginatedProducts'));
     }
 
 
@@ -191,7 +205,7 @@ class ProductController extends Controller
                 break;
 
             case 'monitor':
-                $product = Gpu::find($id);
+                $product = Monitor::find($id);
                 break;
     
             // Thêm các trường hợp cho các bảng khác

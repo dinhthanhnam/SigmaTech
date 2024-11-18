@@ -3,7 +3,7 @@
 @section('content')
   <main class="app-content">
     <div class="app-title">
-      <ul class="app-breadcrumb ">
+      <ul class="app-breadcrumb">
         <li class="breadcrumb-item" style = "list-style: none"><a href="#"><b>Danh sách sản phẩm</b></a></li>
       </ul>
       <div id="clock"></div>
@@ -34,7 +34,7 @@
               <table class="table table-hover table-bordered" id="sampleTable">
                 <thead>
                   <tr>
-                    <th width="10"><input type="checkbox" id="all"></th>
+                    {{-- <th width="10"><input type="checkbox" id="all"></th> --}}
                     <th width="10">Mã</th>
                     <th width="250">Tên sản phẩm</th>
                     <th width="300">Hình ảnh</th>
@@ -48,9 +48,9 @@
                   </tr>
                 </thead>
                 <tbody id="product-list">
-                  @foreach ($products as $product)
+                  @foreach ($paginatedProducts as $product)
                     <tr>
-                      <td><input type="checkbox"></td>
+                      {{-- <td><input type="checkbox"></td> --}}
                       <td>{{ $product->id }}</td>
                       <td>{{ $product->name }}</td>
                       <td><img src="{{ $product->attributes->firstWhere('name', 'Image1')->pivot->value ?? 'N/A' }}"
@@ -81,6 +81,26 @@
                   @endforeach
                 </tbody>
               </table>
+              <div class="paging bg-white mx-auto">
+                @if ($paginatedProducts->currentPage() > 1)
+                    <a href="{{ $paginatedProducts->previousPageUrl() }}">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                @endif
+                <a href="{{ $paginatedProducts->url(1) }}" class="{{ $paginatedProducts->onFirstPage() ? 'current' : '' }}">
+                    1
+                </a>
+                @for ($page = 2; $page <= $paginatedProducts->lastPage(); $page++)
+                    <a href="{{ $paginatedProducts->url($page) }}" class="{{ $page == $paginatedProducts->currentPage() ? 'current' : '' }}">
+                        {{ $page }}
+                    </a>
+                @endfor
+                @if ($paginatedProducts->hasMorePages())
+                    <a href="{{ $paginatedProducts->nextPageUrl() }}">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                @endif
+            </div>
             </div>
           </div>
         </div>

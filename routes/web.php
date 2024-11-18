@@ -22,15 +22,12 @@ use App\Http\Controllers\Admin\OrderController as AdminOrderController;
 use App\Http\Controllers\CoolingController;
 use App\Http\Controllers\GaminggearController;
 use App\Http\Controllers\MediaController;
+use App\Http\Controllers\PcpartController;
 use App\Models\Accessory;
 
 Auth::routes();
 
 Route::post('logout', [LoginController::class, 'logout'])->name('logout');
-
-// Route::middleware(['auth'])->group(function () {
-//   Route::get('/', [UserController::class, 'index'])->name('home.index');
-// });
 
 Route::get('/', [HomeController::class, 'index'])->name('home.index');
 
@@ -43,10 +40,12 @@ Route::prefix('laptops')->group(function () {
 Route::get('monitors', [MonitorController::class, 'showMonitors'])->name('monitors.show');
 
 //Trang chuyen muc pc part
+Route::get('pc-parts', [PcpartController::class, 'showPcparts'])->name('pc-parts.show');
 Route::prefix('pc-parts')->group(function() {
   Route::get('cpu', [CpuController::class, 'showCpus'])->name('cpus.show');
   Route::get('gpu', [GpuController::class, 'showGpus'])->name('cpus.show');
 });
+
 //Trang chuyen muc Gaming Gear
 Route::get('gaminggears', [GaminggearController::class, 'showGaminggears'])->name('gaming-gears.show');
 
@@ -63,11 +62,6 @@ Route::get('accessories', [AccessoryController::class, 'showAccessories'])->name
 Route::get('flash-sale', [SaleController::class, 'showFlashSale'])->name('flash-sale');
 
 
-
-
-Route::get('pc-parts', function () {
-  return view('categories.pc-parts');
-})->name('pc-parts.show');
 // Route::get('media-devices', function () {
 //   return view('categories.media-devices');
 // })->name('media-devices.show');

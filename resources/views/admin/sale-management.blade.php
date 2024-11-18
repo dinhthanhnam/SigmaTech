@@ -34,13 +34,13 @@
                 <thead>
                   <tr>
                     <th width="10"><input type="checkbox" id="all"></th>
-                    <th width="10">ID</th>
-                    <th width="200">Name</th>
-                    <th width="200">Image</th>
-                    <th width="200">Category</th>
-                    <th width="50">Brand</th>
-                    <th width="50">Model</th>
-                    <th width="150">Sale Price</th>
+                    <th width="10">Mã</th>
+                    <th width="200">Tên sản phẩm</th>
+                    <th width="200">Hình ảnh</th>
+                    <th width="200">Loại hàng</th>
+                    <th width="50">Thương hiệu</th>
+                    <th width="50">Mã model</th>
+                    <th width="150">Giá Sale</th>
                     <th width="150">Thời điểm kết thúc</th>
                     <th width="100">Đếm ngược</th>
                     <th>Chức năng</th>
