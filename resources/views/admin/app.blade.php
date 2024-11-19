@@ -75,6 +75,8 @@
                                 Khuyến mãi</span></a></li>
                     <li><a class="app-menu__item" href="#"><i class='app-menu__icon fa-solid fa-user'></i><span
                                 class="app-menu__label">Quản lý tài khoản</span></a></li>
+                    <li><a class="app-menu__item" href="#"><i class='app-menu__icon fa-solid fa-sliders'></i><span
+                        class="app-menu__label">Quản lý slider</span></a></li>
                 </ul>
             </aside>
 

@@ -6,67 +6,17 @@
         <div class="banner-slider-top">
           <div class="home-banner-left">
             <div class="custom-dots owl-carousel owl-theme" id="js-home-slider">
-              <div class="item"><a href="#" target='_blank' rel='nofollow'><img border=0
-                    src="{{ asset('assets/img/banner/03_Aug136f1213729a612ae9c2672a7bc7db15.jpg') }}" width='935'
-                    height='528' alt="" /></a></div>
-              <div class="item"><a href="#" target='_blank' rel='nofollow'><img border=0
-                    src="{{ asset('assets/img/banner/02_Augd5457816a75dfce6e4f26b79432a0e55.jpg') }}" width='935'
-                    height='528' alt="" /></a></div>
-              <div class="item"><a href="#" target='_blank' rel='nofollow'><img border=0
-                    src="{{ asset('assets/img/banner/18_Sepc7ec3400950bc8ecfb8f4a47ca6e238c.jpg') }}" width='1870'
-                    height='1056' alt="" /></a></div>
-              <div class="item"><a href="#" target='_blank' rel='nofollow'><img border=0
-                    src="{{ asset('assets/img/banner/20_Aug020dd48b48aa605c3516335de4a1d1d7.jpg') }}" width='935'
-                    height='528' alt="" /></a></div>
-              <div class="item"><a href="#" target='_blank' rel='nofollow'><img border=0
-                    src="{{ asset('assets/img/banner/14_Sep6340daf83d6e8b75e0e6a2c2b3419439.jpg') }}" width='928'
-                    height='525' alt="" /></a></div>
-              <div class="item"><a href="#" target='_blank' rel='nofollow'><img border=0
-                    src="{{ asset('assets/img/banner/17_Jul1f9262f727c16929a0ca5cc925edf873.jpg') }}" width='935'
-                    height='528' alt="" /></a></div>
-              <div class="item"><a href="#" target='_blank' rel='nofollow'><img border=0
-                    src="{{ asset('assets/img/banner/10_Apr5c21318bde8aa8bcf163f18e407b8bff.jpg') }}" width='935'
-                    height='528' alt="" /></a></div>
-              <div class="item"><a href="#" target='_blank' rel='nofollow'><img border=0
-                    src="{{ asset('assets/img/banner/05_Augee2b6ef2be21a23e31b6ae48354b0ee9.jpg') }}" width='935'
-                    height='528' alt="" /></a></div>
-              <div class="item"><a href="#" target='_blank' rel='nofollow'><img border=0
-                    src="{{ asset('assets/img/banner/27_May2e7aa4c9b4b5890cce0e175583b72df9.jpg') }}" width='935'
-                    height='528' alt="" /></a></div>
-              <div class="item"><a href="#" target='_blank' rel='nofollow'><img border=0
-                    src="{{ asset('assets/img/banner/10_Jul55c738e595f67fbaa287292626ecc688.jpg') }}" width='935'
-                    height='528' alt="" /></a></div>
-              <div class="item"><a href="#" target='_blank' rel='nofollow'><img border=0
-                    src="{{ asset('assets/img/banner/10_Jul846b89627f6477dce213d5c6e17e4b6a.jpg') }}" width='935'
-                    height='528' alt="" /></a></div>
-              <div class="item"><a href="#" target='_blank' rel='nofollow'><img border=0
-                    src="{{ asset('assets/img/banner/14_Sep338f121cc3b22e60ec014ef2c428426d.jpg') }}" width='935'
-                    height='528' alt="" /></a></div>
-              <div class="item"><a href="#" target='_blank' rel='nofollow'><img border=0
-                    src="{{ asset('assets/img/banner/04_Sep1f65b2db8fbff9e63b7a919e947a21f4.jpg') }}" width='1000'
-                    height='563' alt="" /></a></div>
-              <div class="item"><a href="#" target='_blank' rel='nofollow'><img border=0
-                    src="{{ asset('assets/img/banner/14_Sep4e18113b8e58174911d44d3c944ba65c.jpg') }}" width='1870'
-                    height='1056' alt="" /></a></div>
-              <div class="item"><a href="#" target='_blank' rel='nofollow'><img border=0
-                    src="{{ asset('assets/img/banner/07_Aug4f1bef4b48e2fd2e4304fd7e7b0068a2.jpg') }}" width='935'
-                    height='528' alt="" /></a></div>
-              <div class="item"><a href="#" target='_blank' rel='nofollow'><img border=0
-                    src="{{ asset('assets/img/banner/12_Aug181d9e03489efb058c36aab557695dd3.jpg') }}" width='935'
-                    height='528' alt="" /></a></div>
-              <div class="item"><a href="#" target='_blank' rel='nofollow'><img border=0
-                    src="{{ asset('assets/img/banner/16_Aug15b6c7825fb5b7b7fb49deeba1509b05.jpg') }}" width='935'
-                    height='528' alt="" /></a></div>
-              <div class="item"><a href="#" target='_blank' rel='nofollow'><img border=0
-                    src="{{ asset('assets/img/banner/19_Auge39859b1547c03c807aa84f73b7bd3a4.jpg') }}" width='935'
-                    height='528' alt="" /></a></div>
-              <div class="item"><a href="#" target='_blank' rel='nofollow'><img border=0
-                    src="{{ asset('assets/img/banner/21_Aug411aa0037c44159b7e96d56066f22295.jpg') }}" width='935'
-                    height='528' alt="" /></a></div>
-              <div class="item"><a href="#" target='_blank' rel='nofollow'><img border=0
-                    src="{{ asset('assets/img/banner/26_Augb115935e37ba96ea2b002a64d9093c10.jpg') }}" width='935'
-                    height='528' alt="" /></a></div>
-            </div>
+              @foreach($slides as $slide)
+                  <div class="item">
+                      <a href="#" target='_blank' rel='nofollow'>
+                          <img border="0" 
+                               src="{{ asset($slide->image) }}" 
+                               alt="{{ $slide->name }}" />
+                      </a>
+                  </div>
+              @endforeach
+          </div>
+          
           </div>
           <div class="home-banner-right">
             <a href="#" target='_blank' rel='nofollow'><img

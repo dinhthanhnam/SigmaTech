@@ -19,6 +19,7 @@ use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\SaleController as AdminSaleController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\Admin\OrderController as AdminOrderController;
+use App\Http\Controllers\Admin\SliderController;
 use App\Http\Controllers\CoolingController;
 use App\Http\Controllers\GaminggearController;
 use App\Http\Controllers\MediaController;
@@ -88,7 +89,6 @@ Route::get('account/order/{id}', [UserController::class, 'getOrderDetails']);
 
 
 //admin view
-
 Route::middleware(['auth', AuthAdmin::class])->prefix('admin')->group(function () {
   Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.index');
   Route::get('/product', [ProductController::class, 'showAllProducts'])->name('admin.show-product');
@@ -97,6 +97,7 @@ Route::middleware(['auth', AuthAdmin::class])->prefix('admin')->group(function (
   Route::get('/order', [AdminOrderController::class, 'showAllOrders'])->name('admin.show-order');
   Route::get('/sale', [AdminSaleController::class, 'index'])->name('admin.show-sale');
 });
+
 
 Route::delete('/delete-product/{table}/{id}', [ProductController::class, 'deleteProduct'])->name('delete.product');
 //cart

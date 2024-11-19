@@ -10,6 +10,7 @@ use App\Models\Gaminggear;
 use App\Models\Gpu;
 use App\Models\Media;
 use App\Models\Monitor;
+use App\Models\Slider;
 use Carbon\Carbon;
 class HomeController extends Controller
 {
@@ -93,7 +94,9 @@ class HomeController extends Controller
             }
         };
 
-        return view('index', compact( 'flashSaleItems', 'gamingLaptops', 'officeLaptops', 'cpus'));
+        $slides = Slider::all(['name', 'image']);
+
+        return view('index', compact( 'flashSaleItems', 'gamingLaptops', 'officeLaptops', 'cpus', 'slides'));
     }
     
 
