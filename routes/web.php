@@ -24,6 +24,7 @@ use App\Http\Controllers\CoolingController;
 use App\Http\Controllers\GaminggearController;
 use App\Http\Controllers\MediaController;
 use App\Http\Controllers\PcpartController;
+
 use App\Models\Accessory;
 
 Auth::routes();
@@ -96,6 +97,9 @@ Route::middleware(['auth', AuthAdmin::class])->prefix('admin')->group(function (
   Route::post('/new-product', [ProductController::class, 'saveProduct'])->name('admin.save-product');
   Route::get('/order', [AdminOrderController::class, 'showAllOrders'])->name('admin.show-order');
   Route::get('/sale', [AdminSaleController::class, 'index'])->name('admin.show-sale');
+  Route::get('/slider', [SliderController::class, 'showAllSliders'])->name('admin.show-slider');
+  Route::get('/new-slider', [SliderController::class, 'showAddSlider'])->name('admin.new-slider');
+  Route::post('/new-slider', [SliderController::class, 'saveSlider'])->name('admin.save-slider');
 });
 
 

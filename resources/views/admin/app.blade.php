@@ -7,11 +7,12 @@
     @csrf
     <meta http-equiv="content-language" content="vi" />
     <title>SigmaTech CMS</title>
+   
     <link rel="stylesheet" href="{{ asset('assets/css/admin.css') }}" type="text/css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <!-- or -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-
+    <link rel="icon" type="image/png" href="{{ asset('assets/img/sigmatech-yellow.png') }}">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
@@ -75,7 +76,7 @@
                                 Khuyến mãi</span></a></li>
                     <li><a class="app-menu__item" href="#"><i class='app-menu__icon fa-solid fa-user'></i><span
                                 class="app-menu__label">Quản lý tài khoản</span></a></li>
-                    <li><a class="app-menu__item" href="#"><i class='app-menu__icon fa-solid fa-sliders'></i><span
+                    <li><a class="app-menu__item" href="{{route('admin.show-slider')}}"><i class='app-menu__icon fa-solid fa-sliders'></i><span
                         class="app-menu__label">Quản lý slider</span></a></li>
                 </ul>
             </aside>
