@@ -25,8 +25,6 @@ use App\Http\Controllers\GaminggearController;
 use App\Http\Controllers\MediaController;
 use App\Http\Controllers\PcpartController;
 
-use App\Models\Accessory;
-use GuzzleHttp\Middleware;
 
 Auth::routes([
   'verify' => true
@@ -51,7 +49,7 @@ Route::get('monitors', [MonitorController::class, 'showMonitors'])->name('monito
 Route::get('pc-parts', [PcpartController::class, 'showPcparts'])->name('pc-parts.show');
 Route::prefix('pc-parts')->group(function() {
   Route::get('cpu', [CpuController::class, 'showCpus'])->name('cpus.show');
-  Route::get('gpu', [GpuController::class, 'showGpus'])->name('cpus.show');
+  Route::get('gpu', [GpuController::class, 'showGpus'])->name('gpus.show');
 });
 
 //Trang chuyen muc Gaming Gear
