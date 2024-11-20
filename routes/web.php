@@ -21,10 +21,12 @@ use App\Http\Controllers\OrderController;
 use App\Http\Controllers\Admin\OrderController as AdminOrderController;
 use App\Http\Controllers\Auth\ForgotPasswordController;
 use App\Http\Controllers\Auth\ResetPasswordController;
+use App\Http\Controllers\Admin\SliderController;
 use App\Http\Controllers\CoolingController;
 use App\Http\Controllers\GaminggearController;
 use App\Http\Controllers\MediaController;
 use App\Http\Controllers\PcpartController;
+
 use App\Models\Accessory;
 use GuzzleHttp\Middleware;
 
@@ -83,7 +85,6 @@ Route::get('account/order/{id}', [UserController::class, 'getOrderDetails']);
 
 
 //admin view
-
 Route::middleware(['auth', AuthAdmin::class])->prefix('admin')->group(function () {
   Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.index');
   Route::get('/product', [ProductController::class, 'showAllProducts'])->name('admin.show-product');
@@ -91,7 +92,11 @@ Route::middleware(['auth', AuthAdmin::class])->prefix('admin')->group(function (
   Route::post('/new-product', [ProductController::class, 'saveProduct'])->name('admin.save-product');
   Route::get('/order', [AdminOrderController::class, 'showAllOrders'])->name('admin.show-order');
   Route::get('/sale', [AdminSaleController::class, 'index'])->name('admin.show-sale');
+  Route::get('/slider', [SliderController::class, 'showAllSliders'])->name('admin.show-slider');
+  Route::get('/new-slider', [SliderController::class, 'showAddSlider'])->name('admin.new-slider');
+  Route::post('/new-slider', [SliderController::class, 'saveSlider'])->name('admin.save-slider');
 });
+
 
 Route::delete('/delete-product/{table}/{id}', [ProductController::class, 'deleteProduct'])->name('delete.product');
 //cart

@@ -5,6 +5,7 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 use App\Models\Monitor;
+use App\Models\Slider;
 use Illuminate\Database\Seeder;
 use Database\Seeders\CpuTableSeeder;
 use Database\Seeders\AttributeSeeder;
@@ -36,6 +37,7 @@ class DatabaseSeeder extends Seeder
         // seed attribute trước vì nó có phục vụ cho mọi loại hàng
         $this->call(AttributeSeeder::class);
 
+        $this->call(SliderSeeder::class);
         //CPU seed riêng biệt (CPU rời, lắp case)
         $this->call(CpuSeeder::class);
 
@@ -52,6 +54,6 @@ class DatabaseSeeder extends Seeder
         
         $this->call(CoolingSeeder::class);
 
-        $this->call(AccessorySeeder::class);
+        $this->call(AccessorySeeder::class);       
     }
 }
