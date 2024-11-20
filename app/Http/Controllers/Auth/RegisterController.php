@@ -51,8 +51,6 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
-        Log::info('Validator called with data:', $data);
-
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
@@ -60,7 +58,20 @@ class RegisterController extends Controller
             'phone' => ['nullable', 'string', 'max:20', 'unique:users'],
             'gender' => ['nullable', 'string', 'in:0,1'],
             'address' => ['nullable', 'string', 'max:1000'],
-        ]);
+        ],
+        [
+            // Tùy chỉnh thông báo lỗi cho các trường hợp cụ thể
+            'name.required' => 'Họ và tên là bắt buộc.',
+            'email.required' => 'Email là bắt buộc.',
+            'email.unique' => 'Email này đã được sử dụng.',
+            'email.email' => 'Email phải hợp lệ.',
+            'password.required' => 'Mật khẩu là bắt buộc.',
+            'password.min' => 'Mật khẩu phải có ít nhất 8 ký tự.',
+            'password.confirmed' => 'Mật khẩu xác nhận không khớp.',
+            'phone.unique' => 'Số điện thoại này đã được đăng ký.',
+            'phone.max' => 'Số điện thoại không được quá 20 ký tự.',
+        ]
+    );
     }
     /**
      * Create a new user instance after a valid registration.
@@ -70,9 +81,6 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        // $fulladdress = ($data['province'] ?? '') . ',' . ($data['address'] ?? '');
-        Log::info('Creating user with data:', $data);
-
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],

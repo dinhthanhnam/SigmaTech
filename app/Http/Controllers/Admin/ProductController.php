@@ -8,6 +8,8 @@ use App\Models\Cpu;
 use App\Models\Gpu;
 use App\Models\Monitor;
 use App\Models\Attribute;
+use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 
 class ProductController extends Controller
@@ -16,22 +18,45 @@ class ProductController extends Controller
     public function showAllProducts()
     {
         $laptops = Laptop::with(['attributes', 'categories'])
-            ->get();
+            ->get()
+            ->each(function ($item) {
+                $item->setAttribute('data_table', 'laptop');
+            });
 
         $cpus = CPU::with(['attributes', 'categories'])
-            ->get();
+            ->get()
+            ->each(function ($item) {
+                $item->setAttribute('data_table', 'cpu');
+            });
 
         $gpus = GPU::with(['attributes', 'categories'])
-            ->get();
-
-        // $monitors = Monitor::with(['attributes' => function ($query) {
-        //     $query->whereIn('name', ['Brand', 'Model', 'Price', 'Deal Price']);
-        // }, 'categories'])->get()->setAttribute('sub_category', 'Monitor');
+            ->get()
+            ->each(function ($item) {
+                $item->setAttribute('data_table', 'gpu');
+            });
+        $monitors = Monitor::with(['attributes', 'categories'])
+            ->get()
+            ->each(function ($item) {
+                $item->setAttribute('data_table', 'monitor');
+            });
 
         // Gộp tất cả các sản phẩm vào một biến chung
-        $products = collect()->merge($laptops)->merge($cpus)->merge($gpus)/*->merge($monitors)*/;
+        $allProducts = collect()->merge($laptops)->merge($cpus)->merge($gpus)->merge($monitors);
 
-        return view('admin.product', compact('products'));
+        $currentPage = LengthAwarePaginator::resolveCurrentPage();
+        $perPage = 12;
+        $items = $allProducts->slice(($currentPage - 1) * $perPage, $perPage); // Lấy items cho trang hiện tại
+
+        // Tạo LengthAwarePaginator
+        $paginatedProducts = new LengthAwarePaginator(
+            $items,
+            $allProducts->count(),
+            $perPage,
+            $currentPage,
+            ['path' => LengthAwarePaginator::resolveCurrentPath()] // Đảm bảo đường dẫn đúng
+        );
+
+        return view('admin.product', compact('paginatedProducts'));
     }
 
 
@@ -161,6 +186,40 @@ class ProductController extends Controller
 
         }
         return redirect()->back()->with('success', 'Sản phẩm đã được lưu thành công!');
+    }
+
+    public function deleteProduct($table, $id)
+    {
+        // Kiểm tra bảng và sử dụng model tương ứng
+        switch ($table) {
+            case 'laptop':
+                $product = Laptop::find($id);
+                break;
+    
+            case 'cpu':
+                $product = Cpu::find($id);
+                break;
+
+            case 'gpu':
+                $product = Gpu::find($id);
+                break;
+
+            case 'monitor':
+                $product = Monitor::find($id);
+                break;
+    
+            // Thêm các trường hợp cho các bảng khác
+            default:
+                return response()->json(['error' => 'Invalid table'], 400);
+        }
+    
+        if ($product) {
+            // Soft delete
+            $product->delete();
+            return response()->json(['success' => 'Xoa thanh cong san pham'], 200);
+        }
+    
+        return response()->json(['error' => 'Product not found'], 404);
     }
     
     

@@ -15669,3 +15669,28 @@ text-align:center;
   background-color: white;
   color: white;
 }
+
+.paging {
+  text-align: center;
+  padding: 25px 0;
+  border-bottom: 1px solid #edeef2;
+}
+
+.paging a {
+  display: inline-block;
+  margin-right: 3px;
+  padding: 4px 10px;
+  ;
+  border-radius: 5px;
+  border: 1px solid #edeef2;
+  color: #888;
+  font-weight: 300;
+}
+
+.paging a:hover,
+.paging a.current {
+  color: #fff;
+  background: #546ce8;
+  font-weight: 400;
+  border-color: #546ce8;
+}

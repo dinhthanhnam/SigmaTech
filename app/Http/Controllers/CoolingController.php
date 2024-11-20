@@ -41,15 +41,47 @@ class CoolingController extends Controller
 
         foreach($topCoolings as $item) {
             $brand = $item->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
-            $item->link = 'coolings/'.$brand.'/'.$item->id;
+            $item->link = 'cooling/'.$brand.'/'.$item->id;
         };
         
         foreach($coolings as $item) {
             $brand = $item->attributes->where('name', 'Brand')->first()->pivot->value;
-            $item->link = 'coolings/'.$brand.'/'.$item->id;
+            $item->link = 'cooling/'.$brand.'/'.$item->id;
         };
         
         return view('categories.coolings', compact('coolings', 'topCoolings'));
+    }
+    public function filterCoolings(Request $request)
+    {
+        $filters = [
+            'brand' => $request->input('brand'),
+            'price_min' => $request->input('min'),
+            'price_max' => $request->input('max'),
+        ];
+
+        $coolings = Cooling::query();
+        
+        if (!empty($filters['brand'])) {
+            $coolings->whereHas('attributes', function ($query) use ($filters) {
+                $query->where('name', 'Brand')
+                    ->where('value', $filters['brand']);
+            });
+        }
+
+        if (!empty($filters['price_min']) || !empty($filters['price_max'])) {
+            $minPrice = $filters['price_min'] ?? 0;
+            $maxPrice = $filters['price_max'] ?? PHP_INT_MAX;
+
+            $coolings->whereHas('attributes', function ($query) use ($minPrice, $maxPrice) {
+                $query->where('name', 'Price')
+                    ->whereBetween('value', [$minPrice, $maxPrice]);
+            });
+        }
+
+        // Phân trang kết quả và trả về view
+        $coolings = $coolings->with('attributes')->paginate(12);
+
+        return view('categories.filtered-coolings', compact('coolings', 'filters'));
     }
 
 }

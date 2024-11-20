@@ -52,4 +52,11 @@ class LoginController extends Controller
         // Nếu không phải admin, chuyển hướng đến trang chủ hoặc trang khác
         return redirect()->route('home.index');
     }
+
+    protected function sendFailedLoginResponse(Request $request)
+    {
+        return redirect()->back()
+            ->withInput($request->only('email'))
+            ->with('error', 'Thông tin đăng nhập không chính xác.');
+    }
 }

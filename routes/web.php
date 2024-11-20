@@ -19,20 +19,23 @@ use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\SaleController as AdminSaleController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\Admin\OrderController as AdminOrderController;
+use App\Http\Controllers\Admin\SliderController;
 use App\Http\Controllers\CoolingController;
 use App\Http\Controllers\GaminggearController;
 use App\Http\Controllers\MediaController;
-use App\Models\Accessory;
+use App\Http\Controllers\PcpartController;
 
-Auth::routes();
+
+Auth::routes([
+  'verify' => true
+]);
+
+Route::post('/change-password', [App\Http\Controllers\Auth\ChangePasswordController::class, 'changePassword'])->name('password.change');
+
 
 Route::post('logout', [LoginController::class, 'logout'])->name('logout');
 
-// Route::middleware(['auth'])->group(function () {
-//   Route::get('/', [UserController::class, 'index'])->name('home.index');
-// });
-
-Route::get('/', [HomeController::class, 'index'])->name('home.index');
+Route::get('/', [HomeController::class, 'index'])->name('home.index')->middleware('verified');
 
 //Trang chuyen muc laptop
 Route::prefix('laptops')->group(function () {
@@ -43,40 +46,27 @@ Route::prefix('laptops')->group(function () {
 Route::get('monitors', [MonitorController::class, 'showMonitors'])->name('monitors.show');
 
 //Trang chuyen muc pc part
+Route::get('pc-parts', [PcpartController::class, 'showPcparts'])->name('pc-parts.show');
 Route::prefix('pc-parts')->group(function() {
   Route::get('cpu', [CpuController::class, 'showCpus'])->name('cpus.show');
-  Route::get('gpu', [GpuController::class, 'showGpus'])->name('cpus.show');
+  Route::get('gpu', [GpuController::class, 'showGpus'])->name('gpus.show');
 });
+
 //Trang chuyen muc Gaming Gear
 Route::get('gaminggears', [GaminggearController::class, 'showGaminggears'])->name('gaming-gears.show');
 
 //Trang chuyen muc Media
-Route::get('media', [MediaController::class, 'showMedia'])->name('media.show');
+Route::get('media', [MediaController::class, 'showMedia'])->name('media_devices.show');
 
 //Trang chuyen muc Cooling
-Route::get('cooling', [CoolingController::class, 'showCoolings'])->name('coolings.show');
+Route::get('coolings', [CoolingController::class, 'showCoolings'])->name('coolings.show');
 
 //Trang chuyen muc Accessory
-Route::get('accessory', [AccessoryController::class, 'showAccessories'])->name('accessories.show');
+Route::get('accessories', [AccessoryController::class, 'showAccessories'])->name('accessories.show');
 
 //Trang flash sale chill chill
 Route::get('flash-sale', [SaleController::class, 'showFlashSale'])->name('flash-sale');
 
-
-
-
-Route::get('pc-parts', function () {
-  return view('categories.pc-parts');
-})->name('pc-parts.show');
-// Route::get('media-devices', function () {
-//   return view('categories.media-devices');
-// })->name('media-devices.show');
-// Route::get('coolings', function () {
-//   return view('categories.coolings');
-// })->name('coolings.show');
-// Route::get('accessories', function () {
-//   return view('categories.accessories');
-// })->name('accessories.show');
 
 Route::get('shipping-policy', function () {
   return view('pages.service-policy.shipping-policy');
@@ -94,7 +84,6 @@ Route::get('account/order/{id}', [UserController::class, 'getOrderDetails']);
 
 
 //admin view
-
 Route::middleware(['auth', AuthAdmin::class])->prefix('admin')->group(function () {
   Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.index');
   Route::get('/product', [ProductController::class, 'showAllProducts'])->name('admin.show-product');
@@ -102,8 +91,13 @@ Route::middleware(['auth', AuthAdmin::class])->prefix('admin')->group(function (
   Route::post('/new-product', [ProductController::class, 'saveProduct'])->name('admin.save-product');
   Route::get('/order', [AdminOrderController::class, 'showAllOrders'])->name('admin.show-order');
   Route::get('/sale', [AdminSaleController::class, 'index'])->name('admin.show-sale');
+  Route::get('/slider', [SliderController::class, 'showAllSliders'])->name('admin.show-slider');
+  Route::get('/new-slider', [SliderController::class, 'showAddSlider'])->name('admin.new-slider');
+  Route::post('/new-slider', [SliderController::class, 'saveSlider'])->name('admin.save-slider');
 });
 
+
+Route::delete('/delete-product/{table}/{id}', [ProductController::class, 'deleteProduct'])->name('delete.product');
 //cart
 Route::prefix('cart')->group( function() {
   Route::get('/', [CartController::class, 'show'])->name('cart');
@@ -117,7 +111,7 @@ Route::prefix('cart')->group( function() {
 //order
 Route::prefix('cart/order')->group( function() {
   Route::get('/', [OrderController::class, 'orderInfo'])->name('order.info');
-  Route::post('/place', [OrderController::class, 'placeOrder'])->name('order.place');
+  Route::post('/place', [OrderController::class, 'placeOrder'])->name('order.place')->middleware('verified');
 });
 Route::post('/order/confirm-payment', [OrderController::class, 'confirmPayment'])->name('order.confirm-payment');
 
@@ -131,11 +125,17 @@ Route::prefix('pc-parts')->group( function() {
 });
 Route::get('monitors/{brand}/{id}', [MonitorController::class, 'show'])->name('monitor.show');
 Route::get('gaminggears/{brand}/{id}', [GaminggearController::class, 'show'])->name('gaminggear.show');
+Route::get('media/{brand}/{id}', [MediaController::class, 'show'])->name('media.show');
+Route::get('cooling/{brand}/{id}', [CoolingController::class, 'show'])->name('cooling.show');
+Route::get('accessory/{brand}/{id}', [AccessoryController::class, 'show'])->name('accessory.show');
 
 
 //filter
 Route::get('/laptops/filter', [LaptopController::class, 'filterLaptops'])->name('laptop.filter');
 Route::get('/gaminggears/filter', [GaminggearController::class, 'filterGaminggears'])->name('gaminggear.filter');
+Route::get('/media/filter', [MediaController::class, 'filterMedia'])->name('media.filter');
+Route::get('/coolings/filter', [CoolingController::class, 'filterCoolings'])->name('cooling.filter');
+Route::get('/accessories/filter', [AccessoryController::class, 'filterAccessories'])->name('accessory.filter');
 
 //Thanh tim kiem
 Route::get('/search-suggestions', [HomeController::class, 'getSuggestions']);

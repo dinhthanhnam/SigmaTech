@@ -38,27 +38,27 @@
                 <div class="filter-group-middle">
                   <a href="#" class="image filter-title js-filter-title" title="Razer" data-check="0"
                     data-filter_code="brand" data-value="Razer">
-                    <span style="background-image: url('');"></span>
+                    <span style="background-image: url('{{ asset('assets/img/brand/razer.png') }}');"></span>
                   </a>
                   <a href="#" class="image filter-title js-filter-title" title="Corsair" data-check="0"
                     data-filter_code="brand" data-value="Corsair">
-                    <span style="background-image: url('{{ asset('assets/img/brand/asus.jpg') }}');"></span>
+                    <span style="background-image: url('{{ asset('assets/img/brand/corsair.png') }}');"></span>
                   </a>
                   <a href="#" class="image filter-title js-filter-title" title="SteelSeries" data-check="0"
                     data-filter_code="brand" data-value="SteelSeries">
-                    <span style="background-image: url('{{ asset('assets/img/brand/lenovo.jpg') }}');"></span>
+                    <span style="background-image: url('{{ asset('assets/img/brand/steelseries.png') }}');"></span>
                   </a>
                   <a href="#" class="image filter-title js-filter-title" title="Keychron" data-check="0"
                     data-filter_code="brand" data-value="Keychron">
-                    <span style="background-image: url('{{ asset('assets/img/brand/dell.jpg') }}');"></span>
+                    <span style="background-image: url('{{ asset('assets/img/brand/keychron.png') }}');"></span>
                   </a>
                   <a href="#" class="image filter-title js-filter-title" title="HyperX" data-check="0"
                     data-filter_code="brand" data-value="HyperX">
-                    <span style="background-image: url('{{ asset('assets/img/brand/dell.jpg') }}');"></span>
+                    <span style="background-image: url('{{ asset('assets/img/brand/hyperx.png') }}');"></span>
                   </a>
                   <a href="#" class="image filter-title js-filter-title" title="Logitech" data-check="0"
                     data-filter_code="brand" data-value="Logitech">
-                    <span style="background-image: url('{{ asset('assets/img/brand/dell.jpg') }}');"></span>
+                    <span style="background-image: url('{{ asset('assets/img/brand/logitech.png') }}');"></span>
                   </a>
                 </div>
                 <div class="filter-group-bottom">

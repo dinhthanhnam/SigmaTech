@@ -41,15 +41,47 @@ class AccessoryController extends Controller
 
         foreach($topAccessories as $item) {
             $brand = $item->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
-            $item->link = 'accessories/'.$brand.'/'.$item->id;
+            $item->link = 'accessory/'.$brand.'/'.$item->id;
         };
         
         foreach($accessories as $item) {
             $brand = $item->attributes->where('name', 'Brand')->first()->pivot->value;
-            $item->link = 'accessories/'.$brand.'/'.$item->id;
+            $item->link = 'accessory/'.$brand.'/'.$item->id;
         };
         
         return view('categories.accessories', compact('accessories', 'topAccessories'));
     }
 
+    public function filterAccessories(Request $request)
+    {
+        $filters = [
+            'brand' => $request->input('brand'),
+            'price_min' => $request->input('min'),
+            'price_max' => $request->input('max'),
+        ];
+
+        $accessories = Accessory::query();
+        
+        if (!empty($filters['brand'])) {
+            $accessories->whereHas('attributes', function ($query) use ($filters) {
+                $query->where('name', 'Brand')
+                    ->where('value', $filters['brand']);
+            });
+        }
+
+        if (!empty($filters['price_min']) || !empty($filters['price_max'])) {
+            $minPrice = $filters['price_min'] ?? 0;
+            $maxPrice = $filters['price_max'] ?? PHP_INT_MAX;
+
+            $accessories->whereHas('attributes', function ($query) use ($minPrice, $maxPrice) {
+                $query->where('name', 'Price')
+                    ->whereBetween('value', [$minPrice, $maxPrice]);
+            });
+        }
+
+        // Phân trang kết quả và trả về view
+        $accessories = $accessories->with('attributes')->paginate(12);
+
+        return view('categories.filtered-accessories', compact('accessories', 'filters'));
+    }
 }

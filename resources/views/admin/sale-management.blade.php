@@ -16,7 +16,7 @@
                 <div class="col-sm-12 col-md-6 text-left">
                   <div id="sampleTable_filter" class="dataTables_filter">
                     <label>Tìm kiếm:
-                      <input type="search" class="form-control form-control-sm" placeholder=""
+                      <input id="js-search" type="search" class="form-control form-control-sm" placeholder=""
                         aria-controls="sampleTable">
                     </label>
                   </div>
@@ -34,13 +34,13 @@
                 <thead>
                   <tr>
                     <th width="10"><input type="checkbox" id="all"></th>
-                    <th width="10">ID</th>
-                    <th width="200">Name</th>
-                    <th width="200">Image</th>
-                    <th width="200">Category</th>
-                    <th width="50">Brand</th>
-                    <th width="50">Model</th>
-                    <th width="150">Sale Price</th>
+                    <th width="10">Mã</th>
+                    <th width="200">Tên sản phẩm</th>
+                    <th width="200">Hình ảnh</th>
+                    <th width="200">Loại hàng</th>
+                    <th width="50">Thương hiệu</th>
+                    <th width="50">Mã model</th>
+                    <th width="150">Giá Sale</th>
                     <th width="150">Thời điểm kết thúc</th>
                     <th width="100">Đếm ngược</th>
                     <th>Chức năng</th>
@@ -50,7 +50,9 @@
                 <tbody id="product-list">
                   @foreach ($flashSaleItems as $product)
                     @php
-                      $endDate = Carbon\Carbon::parse($product->attributes->firstWhere('name', 'Sale End Date')->pivot->value)->setTime(0, 0, 0);
+                      $endDate = Carbon\Carbon::parse(
+                          $product->attributes->firstWhere('name', 'Sale End Date')->pivot->value,
+                      )->setTime(0, 0, 0);
                       $remainingTime = $endDate->timestamp - now()->timestamp;
                     @endphp
                     <tr>
@@ -66,17 +68,20 @@
                       <td>{{ $product->attributes->firstWhere('name', 'Model')->pivot->value ?? 'N/A' }}
                       </td>
                       <td>
-                        {{ number_format($product->attributes->firstWhere('name', 'Sale Price')->pivot->value ?? 'N/A', 0, ',', '.') }} đ
+                        {{ number_format($product->attributes->firstWhere('name', 'Sale Price')->pivot->value ?? 'N/A', 0, ',', '.') }}
+                        đ
                         <br>
-                        giảm <b style="color: red;"> 
-                          {{number_format($product->attributes->firstWhere('name', 'Deal Price')->pivot->value - $product->attributes->firstWhere('name', 'Sale Price')->pivot->value, 0, ',', '.')}} đ
-                          </b>
+                        giảm <b style="color: red;">
+                          {{ number_format($product->attributes->firstWhere('name', 'Deal Price')->pivot->value - $product->attributes->firstWhere('name', 'Sale Price')->pivot->value, 0, ',', '.') }}
+                          đ
+                        </b>
                       </td>
-                      <td>{{ Carbon\Carbon::parse($product->attributes->firstWhere('name', 'Sale End Date')->pivot->value)->setTime(0, 0, 0)}}
+                      <td>
+                        {{ Carbon\Carbon::parse($product->attributes->firstWhere('name', 'Sale End Date')->pivot->value)->setTime(0, 0, 0) }}
                       </td>
                       <td>
                         <span id="countdown-{{ $product->id }}" data-remaining-time="{{ $remainingTime }}">
-                            <!-- Đặt giá trị thời gian còn lại ở đây, ví dụ "00:00:00" -->
+                          <!-- Đặt giá trị thời gian còn lại ở đây, ví dụ "00:00:00" -->
                         </span>
                       </td>
                       <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa"
@@ -100,27 +105,115 @@
   <script>
     // Hàm khởi tạo bộ đếm ngược cho tất cả các sản phẩm
     document.querySelectorAll('[id^="countdown-"]').forEach(element => {
-        let remainingTime = parseInt(element.getAttribute('data-remaining-time'), 10);
+      let remainingTime = parseInt(element.getAttribute('data-remaining-time'), 10);
 
-        // Thiết lập bộ đếm ngược, mỗi giây cập nhật một lần
-        const countdown = setInterval(() => {
-            // Tính số giờ, phút và giây còn lại
-            const hours = Math.floor(remainingTime / 3600);
-            const minutes = Math.floor((remainingTime % 3600) / 60);
-            const seconds = remainingTime % 60;
+      // Thiết lập bộ đếm ngược, mỗi giây cập nhật một lần
+      const countdown = setInterval(() => {
+        // Tính số giờ, phút và giây còn lại
+        const hours = Math.floor(remainingTime / 3600);
+        const minutes = Math.floor((remainingTime % 3600) / 60);
+        const seconds = remainingTime % 60;
 
-            // Cập nhật nội dung của thẻ <span>
-            element.innerText = `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+        // Cập nhật nội dung của thẻ <span>
+        element.innerText =
+          `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
 
-            // Giảm thời gian còn lại
-            remainingTime--;
+        // Giảm thời gian còn lại
+        remainingTime--;
 
-            // Kiểm tra khi hết thời gian
-            if (remainingTime < 0) {
-                clearInterval(countdown);
-                element.innerText = "Đã kết thúc"; // Hiển thị khi hết thời gian
+        // Kiểm tra khi hết thời gian
+        if (remainingTime < 0) {
+          clearInterval(countdown);
+          element.innerText = "Đã kết thúc"; // Hiển thị khi hết thời gian
+        }
+      }, 1000);
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const searchInput = document.getElementById('js-search');
+      const suggestionsContainer = document.querySelector('.autocomplete-suggestions');
+
+      searchInput.addEventListener('input', function() {
+        const query = searchInput.value;
+
+        // Xóa gợi ý nếu không có từ khóa
+        if (query.length < 2) {
+          suggestionsContainer.innerHTML = '';
+          suggestionsContainer.style.display = 'none';
+          return;
+        }
+
+        // Gửi yêu cầu tới endpoint `/search-suggestions`
+        fetch(window.location.origin + `/search-suggestions?query=${query}`)
+          .then(response => response.json())
+          .then(data => {
+            suggestionsContainer.innerHTML = ''; // Xóa nội dung cũ
+            if (data.length === 0) {
+              suggestionsContainer.style.display = 'none';
+              return;
             }
-        }, 1000);
+
+            // Hiển thị gợi ý
+            data.forEach(item => {
+              const suggestion = document.createElement('div');
+              suggestion.classList.add('list');
+
+              const link = document.createElement('a');
+              link.href = item.link;
+
+              const image = document.createElement('img');
+              image.src = item.image;
+
+              const info = document.createElement('span');
+              info.classList.add('info');
+
+              const name = document.createElement('span');
+              name.classList.add('name');
+              name.textContent = item.name;
+
+              const priceAttribute = item.attributes.find(attr => attr.name ===
+                'Price');
+              const price = priceAttribute ?
+                `${new Intl.NumberFormat('vi-VN').format(priceAttribute.pivot.value)} VNĐ` :
+                'N/A';
+
+              const priceSpan = document.createElement('span');
+              priceSpan.classList.add('price');
+              priceSpan.textContent = price;
+
+              info.appendChild(name);
+              info.appendChild(priceSpan);
+
+              link.appendChild(image);
+              link.appendChild(info);
+              suggestion.appendChild(link);
+
+              suggestionsContainer.appendChild(suggestion);
+            });
+            console.log(data);
+
+            suggestionsContainer.style.display = 'block';
+            item.link = '';
+          })
+          .catch(error => {
+            console.error('Lỗi:', error);
+          });
+      });
+
+      // Ẩn container gợi ý khi người dùng nhấp ra ngoài
+      document.addEventListener('click', function(event) {
+        if (!suggestionsContainer.contains(event.target) && event.target !== searchInput) {
+          suggestionsContainer.style.display = 'none';
+        }
+      });
+
+      // Hiện lại container gợi ý khi người dùng nhấp vào ô tìm kiếm
+      searchInput.addEventListener('focus', function() {
+        if (suggestionsContainer.innerHTML !== '') {
+          suggestionsContainer.style.display = 'block';
+        }
+      });
     });
   </script>
 @endpush

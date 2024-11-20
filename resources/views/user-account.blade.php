@@ -44,13 +44,7 @@
                     <span class="menu-icon">
                         <i class="fas fa-wrench"></i>
                     </span>
-                    <a href="#orders">Cấu hình của tôi</a>
-                </li>
-                <li>
-                    <span class="menu-icon">
-                        <i class="fas fa-key"></i>
-                    </span>
-                    <a href="#orders">Đổi mật khẩu</a>
+                    <a href="#password-change">Đổi mật khẩu</a>
                 </li>
             </ul>
 
@@ -164,11 +158,13 @@
                 </form>
             </section>
 
-
-
             <section id="saved-products" style="display: none;">
                 <h2>Sản phẩm đang lưu</h2>
                 <p>Không có sản phẩm nào đang lưu.</p>
+            </section>
+
+            <section id="password-change" style="display: none;">
+                @include('auth.passwords.change')
             </section>
         </div>
         @if (session('orderSuccess'))
