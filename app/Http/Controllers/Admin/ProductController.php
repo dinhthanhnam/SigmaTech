@@ -44,7 +44,7 @@ class ProductController extends Controller
         $allProducts = collect()->merge($laptops)->merge($cpus)->merge($gpus)->merge($monitors);
 
         $currentPage = LengthAwarePaginator::resolveCurrentPage();
-        $perPage = 20;
+        $perPage = 12;
         $items = $allProducts->slice(($currentPage - 1) * $perPage, $perPage); // Lấy items cho trang hiện tại
 
         // Tạo LengthAwarePaginator

@@ -19,22 +19,34 @@
                 <fieldset style="border: none;" class="shadow cor">
                     <div class="form-group">
                         <label for="name">Họ và tên <b style="color: #ff0000;">*</b></label>
-                        <input type="text" name="name" id="name" class="form-control">
+                        <input type="text" name="name" id="name" class="form-control @error('name') is-invalid @enderror" value="{{ old('name') }}">
+                        @error('name')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
                     </div>
 
                     <div class="form-group">
                         <label for="email">Địa chỉ Email <b style="color: #ff0000;">*</b></label>
-                        <input type="email" name="email" id="email" class="form-control">
+                        <input type="email" name="email" id="email" class="form-control @error('email') is-invalid @enderror" value="{{ old('email') }}">
+                        @error('email')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
                     </div>
 
                     <div class="form-group">
                         <label for="password">Mật khẩu <b style="color: #ff0000;">*</b></label>
-                        <input type="password" name="password" id="password" class="form-control">
+                        <input type="password" name="password" id="password" class="form-control @error('password') is-invalid @enderror">
+                        @error('password')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
                     </div>
 
                     <div class="form-group">
                         <label for="password_confirmation">Xác nhận mật khẩu <b style="color: #ff0000;">*</b></label>
-                        <input type="password" name="password_confirmation" id="password_confirmation" class="form-control">
+                        <input type="password" name="password_confirmation" id="password_confirmation" class="form-control @error('password_confirmation') is-invalid @enderror">
+                        @error('password_confirmation')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
                     </div>
 
                     <div class="form-group">

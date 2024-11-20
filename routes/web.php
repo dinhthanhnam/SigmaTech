@@ -19,17 +19,22 @@ use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\SaleController as AdminSaleController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\Admin\OrderController as AdminOrderController;
+use App\Http\Controllers\Auth\ForgotPasswordController;
+use App\Http\Controllers\Auth\ResetPasswordController;
 use App\Http\Controllers\CoolingController;
 use App\Http\Controllers\GaminggearController;
 use App\Http\Controllers\MediaController;
 use App\Http\Controllers\PcpartController;
 use App\Models\Accessory;
+use GuzzleHttp\Middleware;
 
-Auth::routes();
+Auth::routes([
+  'verify' => true
+]);
 
 Route::post('logout', [LoginController::class, 'logout'])->name('logout');
 
-Route::get('/', [HomeController::class, 'index'])->name('home.index');
+Route::get('/', [HomeController::class, 'index'])->name('home.index')->middleware('verified');
 
 //Trang chuyen muc laptop
 Route::prefix('laptops')->group(function () {
@@ -61,16 +66,6 @@ Route::get('accessories', [AccessoryController::class, 'showAccessories'])->name
 //Trang flash sale chill chill
 Route::get('flash-sale', [SaleController::class, 'showFlashSale'])->name('flash-sale');
 
-
-// Route::get('media-devices', function () {
-//   return view('categories.media-devices');
-// })->name('media-devices.show');
-// Route::get('coolings', function () {
-//   return view('categories.coolings');
-// })->name('coolings.show');
-// Route::get('accessories', function () {
-//   return view('categories.accessories');
-// })->name('accessories.show');
 
 Route::get('shipping-policy', function () {
   return view('pages.service-policy.shipping-policy');
@@ -112,7 +107,7 @@ Route::prefix('cart')->group( function() {
 //order
 Route::prefix('cart/order')->group( function() {
   Route::get('/', [OrderController::class, 'orderInfo'])->name('order.info');
-  Route::post('/place', [OrderController::class, 'placeOrder'])->name('order.place');
+  Route::post('/place', [OrderController::class, 'placeOrder'])->name('order.place')->middleware('verified');
 });
 
 //route cho single
