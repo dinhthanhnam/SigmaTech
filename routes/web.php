@@ -19,8 +19,6 @@ use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\SaleController as AdminSaleController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\Admin\OrderController as AdminOrderController;
-use App\Http\Controllers\Auth\ForgotPasswordController;
-use App\Http\Controllers\Auth\ResetPasswordController;
 use App\Http\Controllers\Admin\SliderController;
 use App\Http\Controllers\CoolingController;
 use App\Http\Controllers\GaminggearController;
@@ -33,6 +31,9 @@ use GuzzleHttp\Middleware;
 Auth::routes([
   'verify' => true
 ]);
+
+Route::post('/change-password', [App\Http\Controllers\Auth\ChangePasswordController::class, 'changePassword'])->name('password.change');
+
 
 Route::post('logout', [LoginController::class, 'logout'])->name('logout');
 
