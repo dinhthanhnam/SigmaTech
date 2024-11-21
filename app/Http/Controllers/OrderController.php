@@ -14,6 +14,8 @@ use App\Models\CPU;
 use App\Models\Monitor;
 use App\Models\GPU;
 use App\Models\CartItem;
+use Illuminate\Support\Facades\Cache;
+
 
 use App\Http\Controllers\CartController;
 
@@ -105,7 +107,7 @@ class OrderController extends Controller
             $accountNumber = '0986435177'; 
             $amount = $request->totalPrice / 1000; 
             $recipientName = 'NGUYEN DUY HUNG'; 
-            $description = 'User ' . $userId . ' thanh toan don hang '. $orderId;
+            $description = 'Thanh toan QR SE' . $userId . $orderId;
             $url = 'https://img.vietqr.io/image/' . $bankCode . '-' . $accountNumber . '-compact2'.'.jpg';
             $queryParams = [
                 'amount' => $amount,
@@ -128,6 +130,9 @@ class OrderController extends Controller
                 'total_price' => $request->totalPrice,       
                 'cartItems' => session('cartItems', [])
             ]);
+            Cache::put('description' . $description, [
+                'description' => $description,
+            ], now()->addMinutes(30));
         
             return view('banking', [
                 'qrUrl' => $urlWithParams,
@@ -214,10 +219,12 @@ class OrderController extends Controller
                     'quantity' => $cartItem['quantity'],
                     'price' => $cartItem['dealprice'],
                 ]);
+                CartItem::where('user_id', $pendingOrder['user_id'])
+                ->where('product_type', $cartItem['product_type'])
+                ->where('product_id', $cartItem['product_id'])
+                ->delete();
             }
     
-            // Xóa giỏ hàng và session
-            CartItem::where('user_id', $pendingOrder['user_id'])->delete();
             session()->forget('pendingOrder');
     
             DB::commit();
