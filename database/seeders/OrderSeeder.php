@@ -28,8 +28,8 @@ class OrderSeeder extends Seeder
                 'note' => null,
                 'status' => 3,
                 'total_price'=> 100,
-                'created_at' => null,
-                'updated_at' => $baseDate->addHours(9)->format('Y-m-d H:i:s'), // Tăng dần 12 tiếng
+                'created_at' => $baseDate->addHours(9)->format('Y-m-d H:i:s'),,
+                'updated_at' => $baseDate->addHours(9)->addSeconds(2)->format('Y-m-d H:i:s'), // Tăng dần 12 tiếng
                 'deleted_at' => null,
             ];
         }
