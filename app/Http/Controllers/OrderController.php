@@ -101,7 +101,7 @@ class OrderController extends Controller
         if ($request->payment_method === 'banking') {
             $userId = auth()->id();
             $orderId = (Order::max('id') ?? 0) + 1;
-            $bankCode = 'vpbank'; 
+            $bankCode = 'mbbank'; 
             $accountNumber = '0986435177'; 
             $amount = $request->totalPrice / 1000; 
             $recipientName = 'NGUYEN DUY HUNG'; 
@@ -173,12 +173,11 @@ class OrderController extends Controller
                 'quantity' => $cartItem->quantity,
                 'price' => $cartItem->dealprice,
             ]);
+            CartItem::where('user_id', $userId)
+            ->where('product_type', $cartItem->product_type)
+            ->where('product_id', $cartItem->product_id)
+            ->delete();
         }
-
-        CartItem::where('user_id', $userId)
-        ->where('product_type', $cartItem->product_type)
-        ->where('product_id', $cartItem->product_id)
-        ->delete();
 
         return $order;
     }
