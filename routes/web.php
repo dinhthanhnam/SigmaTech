@@ -35,7 +35,7 @@ Route::post('/change-password', [App\Http\Controllers\Auth\ChangePasswordControl
 
 Route::post('logout', [LoginController::class, 'logout'])->name('logout');
 
-Route::get('/', [HomeController::class, 'index'])->name('home.index')->middleware('verified');
+Route::get('/', [HomeController::class, 'index'])->name('home.index');
 
 //Trang chuyen muc laptop
 Route::prefix('laptops')->group(function () {
