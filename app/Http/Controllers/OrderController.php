@@ -92,45 +92,145 @@ class OrderController extends Controller
     }
 
     public function placeOrder(Request $request)
-    {
-        // Bắt đầu transaction
-        DB::beginTransaction();
+{
+    // Bắt đầu transaction
+    DB::beginTransaction();
 
-            // Lấy thông tin người dùng và dữ liệu từ form
-            $userId = auth()->id(); 
-            $cartItems = session('cartItems', []);    
+    try {
+        // Kiểm tra phương thức thanh toán
+        if ($request->payment_method === 'banking') {
+            $userId = auth()->id();
+            $orderId = (Order::max('id') ?? 0) + 1;
+            $bankCode = 'mbbank'; 
+            $accountNumber = '0986435177'; 
+            $amount = $request->totalPrice / 1000; 
+            $recipientName = 'NGUYEN DUY HUNG'; 
+            $description = 'User ' . $userId . ' thanh toan don hang '. $orderId;
+            $url = 'https://img.vietqr.io/image/' . $bankCode . '-' . $accountNumber . '-compact2'.'.jpg';
+            $queryParams = [
+                'amount' => $amount,
+                'addInfo' => $description,
+                'accountName' => $recipientName,
+            ];
+         
+            $urlWithParams = $url . '?' . http_build_query($queryParams);
+            
 
-            $order = Order::create([
-                'user_id' => $userId,
+            // Lưu thông tin đơn hàng vào session thay vì database
+            session()->put('pendingOrder', [
+                'user_id' => auth()->id(),
                 'customer_name' => $request->fullname,
                 'gender' => $request->gender,
                 'phone_number' => $request->phone,
-                'shipping_address' => $request->address, 
-                'payment_method' => $request->payment_method,              
+                'shipping_address' => $request->address,
+                'payment_method' => $request->payment_method,
                 'note' => $request->note,
-                'total_price' => $request->totalPrice,            
-            ]);            
+                'total_price' => $request->totalPrice,       
+                'cartItems' => session('cartItems', [])
+            ]);
+        
+            return view('banking', [
+                'qrUrl' => $urlWithParams,
+                'amount' => $amount,
+                'description' => $description
+            ]);
+        }
+
+        // Tạo đơn hàng nếu phương thức thanh toán là COD
+        $this->saveOrder($request);
+        DB::commit();
+
+        return redirect()->route('user-account')->with('orderSuccess', true);
+    } catch (\Exception $e) {
+        DB::rollBack();
+        return back()->with('error', 'Đã xảy ra lỗi khi đặt hàng.');
+    }
+}
+
+    private function saveOrder($request)
+    {
+        $userId = auth()->id();
+        $cartItems = session('cartItems', []);
+
+        // Tạo đơn hàng
+        $order = Order::create([
+            'user_id' => $userId,
+            'customer_name' => $request->fullname,
+            'gender' => $request->gender,
+            'phone_number' => $request->phone,
+            'shipping_address' => $request->address,
+            'payment_method' => $request->payment_method,
+            'note' => $request->note,
+            'total_price' => $request->totalPrice,
+        ]);
+
+        // Lưu chi tiết đơn hàng
+        foreach ($cartItems as $cartItem) {
+            OrderDetail::create([
+                'order_id' => $order->id,
+                'product_type' => $cartItem->product_type,
+                'product_id' => $cartItem->product_id,
+                'quantity' => $cartItem->quantity,
+                'price' => $cartItem->dealprice,
+            ]);
+            CartItem::where('user_id', $userId)
+            ->where('product_type', $cartItem->product_type)
+            ->where('product_id', $cartItem->product_id)
+            ->delete();
+        }
+
+        return $order;
+    }
+    public function confirmPayment()
+    {
+        $pendingOrder = session('pendingOrder');
+    
+        if (!$pendingOrder) {
+            return redirect()->route('cart')->with('error', 'Không có đơn hàng đang chờ xử lý.');
+        }
+    
+        DB::beginTransaction();
+    
+        try {
+            // Tạo đơn hàng từ session
+            $order = Order::create([
+                'user_id' => $pendingOrder['user_id'],
+                'customer_name' => $pendingOrder['customer_name'],
+                'gender' => $pendingOrder['gender'],
+                'phone_number' => $pendingOrder['phone_number'],
+                'shipping_address' => $pendingOrder['shipping_address'],
+                'payment_method' => $pendingOrder['payment_method'],
+                'note' => $pendingOrder['note'],
+                'total_price' => $pendingOrder['total_price'],
+                'status' => '2',
+            ]);
     
             // Lưu chi tiết đơn hàng
-            foreach ($cartItems as $cartItem) {
+            foreach ($pendingOrder['cartItems'] as $cartItem) {
                 OrderDetail::create([
                     'order_id' => $order->id,
-                    'product_type' => $cartItem->product_type,
-                    'product_id' => $cartItem->product_id,                
-                    'quantity' => $cartItem->quantity,
-                    'price' => $cartItem->dealprice,
+                    'product_type' => $cartItem['product_type'],
+                    'product_id' => $cartItem['product_id'],
+                    'quantity' => $cartItem['quantity'],
+                    'price' => $cartItem['dealprice'],
                 ]);
-                CartItem::where('user_id', $userId)
-                        ->where('product_type', $cartItem->product_type)
-                        ->where('product_id', $cartItem->product_id)
-                        ->delete();
+                CartItem::where('user_id', $pendingOrder['user_id'])
+                ->where('product_type', $cartItem['product_type'])
+                ->where('product_id', $cartItem['product_id'])
+                ->delete();
             }
+    
+            session()->forget('pendingOrder');
     
             DB::commit();
     
             return redirect()->route('user-account')->with('orderSuccess', true);
+        } catch (\Exception $e) {
+            DB::rollBack();
+            return back()->with('error', 'Đã xảy ra lỗi khi xác nhận thanh toán.');
+        }
     }
-
     
+
     
 }
