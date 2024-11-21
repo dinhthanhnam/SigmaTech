@@ -214,10 +214,12 @@ class OrderController extends Controller
                     'quantity' => $cartItem['quantity'],
                     'price' => $cartItem['dealprice'],
                 ]);
+                CartItem::where('user_id', $pendingOrder['user_id'])
+                ->where('product_type', $cartItem['product_type'])
+                ->where('product_id', $cartItem['product_id'])
+                ->delete();
             }
     
-            // Xóa giỏ hàng và session
-            CartItem::where('user_id', $pendingOrder['user_id'])->delete();
             session()->forget('pendingOrder');
     
             DB::commit();
