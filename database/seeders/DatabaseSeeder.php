@@ -5,6 +5,7 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 use App\Models\Monitor;
+use App\Models\OrderDetail;
 use App\Models\Slider;
 use Illuminate\Database\Seeder;
 use Database\Seeders\CpuTableSeeder;
@@ -54,6 +55,10 @@ class DatabaseSeeder extends Seeder
         
         $this->call(CoolingSeeder::class);
 
-        $this->call(AccessorySeeder::class);       
+        $this->call(AccessorySeeder::class);  
+
+        $this->call(OrderSeeder::class);   
+
+        $this->call(OrderDetailSeeder::class);     
     }
 }
