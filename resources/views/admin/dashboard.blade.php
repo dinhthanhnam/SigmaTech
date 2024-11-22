@@ -164,7 +164,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="tile">
-                            <h3 class="tile-title">Dự đoán sản phẩm bán chạy nhất</h3>
+                            <h3 class="tile-title">Doanh số sản phẩm bán chạy nhất</h3>
                             <div class="embed-responsive embed-responsive-16by9">
                                 <img class="embed-responsive-item" src="/assets/img/AI/combined_chart_top_5.png" alt="Dự đoán doanh số">
                             </div>
@@ -172,9 +172,9 @@
                     </div>
                     <div class="col-md-12">
                         <div class="tile">
-                            <h3 class="tile-title">Thống kê 6 tháng doanh thu</h3>
+                            <h3 class="tile-title">Doanh số sản phẩm bán ra theo tuần</h3>
                             <div class="embed-responsive embed-responsive-16by9">
-                                <canvas class="embed-responsive-item" id="barChartDemo"></canvas>
+                                <img class="embed-responsive-item" src="/assets/img/AI/weekly_sales_prediction.png" alt="Dự đoán doanh số">
                             </div>
                         </div>
                     </div>
