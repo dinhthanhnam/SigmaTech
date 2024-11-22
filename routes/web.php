@@ -80,7 +80,11 @@ Route::get('laptop-outlet', function () {
 
 //user account
 Route::get('account', [UserController::class, 'index'])->name('user-account');
+
 Route::get('account/order/{id}', [UserController::class, 'getOrderDetails']);
+
+
+
 
 
 //admin view

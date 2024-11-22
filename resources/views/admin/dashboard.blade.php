@@ -166,7 +166,7 @@
                         <div class="tile">
                             <h3 class="tile-title">Dự đoán sản phẩm bán chạy nhất</h3>
                             <div class="embed-responsive embed-responsive-16by9">
-                                <img class="embed-responsive-item" src="/assets/img/AI/predicted_sales_all_in_one.png" alt="Dự đoán doanh số">
+                                <img class="embed-responsive-item" src="/assets/img/AI/combined_chart_top_5.png" alt="Dự đoán doanh số">
                             </div>
                         </div>
                     </div>
