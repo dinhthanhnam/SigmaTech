@@ -117,7 +117,7 @@ Route::prefix('cart/order')->group( function() {
   Route::get('/', [OrderController::class, 'orderInfo'])->name('order.info');
   Route::post('/place', [OrderController::class, 'placeOrder'])->name('order.place')->middleware('verified');
 });
-Route::post('/order/confirm-payment', [OrderController::class, 'confirmPayment'])->name('order.confirm-payment');
+// Route::post('/order/confirm-payment', [OrderController::class, 'confirmPayment'])->name('order.confirm-payment');
 
 
 

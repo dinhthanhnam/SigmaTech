@@ -8,6 +8,8 @@ use SePay\SePay\Notifications\SePayTopUpSuccessNotification;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\DB;
+
 
 class SePayWebhookListener
 {
@@ -29,23 +31,15 @@ class SePayWebhookListener
         $webhookDescription = "Thanh toan QR SE" . $event->info;
 
         // Lấy description từ session
-        $description = Cache::get('description' . $webhookDescription);
+        $cachedData = Cache::get('description' . $webhookDescription);
 
         
-        if ($description) {
-            Log::info('Lấy thông tin từ cache thành công', $description);
-            $response = Http::post(route('order.confirm-payment'), [
-                '_token' => csrf_token(), // Gửi CSRF token
-            ]);
-
-            // Kiểm tra trạng thái response
-            if ($response->successful()) {
-                Log::info('Đã xác nhận thanh toán đơn hàng thành công.');
-            } else {
-                Log::error('Xác nhận thanh toán đơn hàng thất bại.', [
-                    'response' => $response->body(),
-                ]);
-            }
+        if ($cachedData && isset($cachedData['order_id'])) {
+            $orderId = $cachedData['order_id'];
+            Log::info('Lấy thông tin từ cache thành công', $cachedData);
+            DB::table('orders')
+            ->where('id', $orderId)
+            ->update(['status' => '2']);
             
         } else {
             Log::warning('Không tìm thấy thông tin pendingOrder trong cache', [

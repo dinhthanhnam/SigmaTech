@@ -92,7 +92,7 @@
                                     @elseif ($order->status === '1')
                                         <td><span class="badge bg-info">Đang vận chuyển</span></td>
                                     @elseif ($order->status === '2')
-                                        <td><span class="badge bg-warning">Đã thanh toán, chờ xác nhận</span></td>
+                                        <td><span class="badge bg-warning">Đã thanh toán, chờ vận chuyển</span></td>
                                     @elseif ($order->status === '3')
                                         <td><span class="badge bg-success">Hoàn thành</span></td>
                                     @elseif ($order->status === '4')

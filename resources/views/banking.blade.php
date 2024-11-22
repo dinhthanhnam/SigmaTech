@@ -14,12 +14,12 @@
             <img src="{{ $qrUrl }}" alt="QR Code" class="img-fluid">
         </div>
 
-        <div class="custom-order-btn">
+        {{-- <div class="custom-order-btn">
             <form action="{{ route('order.confirm-payment') }}" method="POST">
                 @csrf
                 <button type="submit" class="btn w-100">Đã thanh toán cho đơn hàng</button>
             </form>
-        </div>
+        </div> --}}
 
     </div>
 @endsection
