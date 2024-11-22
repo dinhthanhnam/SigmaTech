@@ -19,12 +19,14 @@ class OrderDetailSeeder extends Seeder
         $orders = Order::all();
         $laptops = Laptop::with('attributes')->get();
         foreach ($orders as $order) {
+            $totalOrderPrice = 0;
             for($i = 0; $i < rand(1,3) ; $i++) {
                 $randomLaptop = $laptops->random();
                 $dealPriceAttribute = $randomLaptop->attributes->firstWhere('name','Deal Price');
                 $price = $dealPriceAttribute ? (int) $dealPriceAttribute->pivot->value : 42000000;
                 $quantity = rand(1, 3);
                 $totalPrice = $price * $quantity; // Tính tổng giá trị
+                $totalOrderPrice += $totalPrice;
                 DB::table('order_details')->insert([
                     'order_id' => $order->id,
                     'product_type' => 'laptops',
@@ -35,6 +37,8 @@ class OrderDetailSeeder extends Seeder
                     'updated_at' => $order->updated_at,
                     'deleted_at' => null,
                 ]);
+            $order->total_price = $totalOrderPrice;
+            $order->save();
             }
         }
     }
