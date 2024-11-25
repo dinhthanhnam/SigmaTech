@@ -28,19 +28,11 @@
                 <div class="static-page-box-left">
                     <div class="title-box">Thông tin chung</div>
                     <div class="content-box">
-                        {{-- <a href="/huong-dan-dat-hang.html">Hướng dẫn mua hàng online</a>
-                        <a href="/mua-tra-gop.html">Hướng dẫn mua trả góp</a>
-                        
-                        <a href="/chinh-sach-bao-mat.html">Chính sách bảo mật</a>
-                        <a href="/cach-thuc-thanh-toan.html">Hình thức thanh toán</a> --}}
                         <a href="{{ route('pages.shipping-policy') }}">Chính sách giao hàng</a>
                         <a href="{{ route('pages.warranty-policy') }} ">Bảo hành - đổi trả</a>
-                        <!---<a href="/chinh-sach-game-net.html">Chính sách game net</a>-->
-                        {{-- <a href="https://www.anphatpc.com.vn/phong-du-an-va-khach-hang-doanh-nghiep.html">Hỗ trợ khách hàng
-                            Dự án - Doanh nghiệp</a> --}}
                     </div>
-                </div><!--static-page-box-left-->
-            </div><!--left-side-->
+                </div>
+            </div>
 
             <div class="right-side">
                 <h1 class="title-page">Chính sách Giao hàng</h1>

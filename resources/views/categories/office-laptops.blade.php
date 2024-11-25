@@ -11,7 +11,7 @@
           </li>
           <li class="breadcrumb-item active" aria-current="page">
             <a href="{{ url('/laptops/Office') }}">Laptop văn phòng</a>
-          </li>Office
+          </li>
         </ol>
       </div>
       <div class="product-collection-related-container">

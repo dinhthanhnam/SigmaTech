@@ -74,15 +74,35 @@
         </div>
       </div>
 
+      <!-- Laptop gaming -->
+      <div class="box-pro-container bg-white js-box-container" style="min-height: 400px" data-id="395-850">
+        <div class="box-title-container">
+          <h2 class="box-title"> Laptop Gaming - Đồ hoạ </h2>
+          <div class="child-title">
+            <a href="{{ url('/laptops/filter?brand=acer')}}">ACER</a>
+            <a href="{{ url('/laptops/filter?brand=asus')}}">ASUS</a>
+            <a href="{{ url('/laptops/filter?brand=dell')}}">DELL</a>
+            <a href="{{ url('/laptops/filter?brand=lenovo')}}">LENOVO</a>
+          </div>
+        </div>
+        <div class="p-container custom-nav owl-carousel owl-theme">
+          @foreach ($gamingLaptops as $product)
+            @include('partials.simple-p-item', ['product' => $product])
+          @endforeach
+        </div>
+        <a href="{{ route('gaming-laptops.show') }}" class="view-cate"> XEM TẤT CẢ <i
+            class="fa fa-angle-double-right"></i></a>
+      </div>
+
       <!-- Laptop văn phòng -->
       <div class="box-pro-container bg-white js-box-container" style="min-height: 400px" data-id="395-850">
         <div class="box-title-container">
           <h2 class="box-title"> Laptop văn phòng </h2>
           <div class="child-title">
-            <a href="https://www.anphatpc.com.vn/pcap-gaming.html">ACER</a>
-            <a href="https://www.anphatpc.com.vn/pcap-gaming.html">ASUS</a>
-            <a href="https://www.anphatpc.com.vn/pcap-gaming.html">DELL</a>
-            <a href="https://www.anphatpc.com.vn/pcap-gaming.html">LENOVO</a>
+            <a href="{{ url('/laptops/filter?brand=acer')}}">ACER</a>
+            <a href="{{ url('/laptops/filter?brand=asus')}}">ASUS</a>
+            <a href="{{ url('/laptops/filter?brand=dell')}}">DELL</a>
+            <a href="{{ url('/laptops/filter?brand=lenovo')}}">LENOVO</a>
           </div>
         </div>
         <div class="p-container custom-nav owl-carousel owl-theme">
@@ -101,7 +121,7 @@
           <div class="child-title">
             <!---thay số là id danh mục sản phẩm-->
             <a href="/pc-parts/cpu">CPU</a>
-            <a href="/pc-parts/vga">VGA</a>
+            <a href="/pc-parts/gpu">GPU</a>
           </div>
         </div>
         <div class="p-container custom-nav owl-carousel owl-theme">
@@ -121,7 +141,9 @@
           </div>
         </div>
         <div class="p-container custom-nav owl-carousel owl-theme" id="js-collection-849" data-id="849">
-
+          @foreach ($monitors as $product)
+            @include('partials.simple-p-item', ['product' => $product])
+          @endforeach
         </div>
         <a href="{{ route('monitors.show') }}" class="view-cate"> XEM TẤT CẢ <i class="fa fa-angle-double-right"></i>
         </a>

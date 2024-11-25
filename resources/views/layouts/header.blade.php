@@ -1453,9 +1453,6 @@
                             </div>
                         </div>
                     </div>
-                    <a href="{{ route('pages.laptop-outlet') }}"> <img
-                            src="{{ asset('assets/img/header-menu-icon/medal.png') }}" class="mr-1" /> Laptop Xả
-                        Kho </a>
                     <a href="{{ route('pages.warranty-policy') }}"> <img
                             src="{{ asset('assets/img/header-menu-icon/package.png') }}" class="mr-1" /> Đổi trả
                         miễn phí </a>
