@@ -35,7 +35,7 @@
 @endphp
 
 <div class="p-item" data-id="49710">
-    <a href="/laptops/{{ $type }}/{{ $brand }}/{{ $product_id }}" class="p-img">
+    <a href="{{ url("$product->link") }}" class="p-img">
         <img src="{{ $product->attributes->firstWhere('name', 'Thumbnail')?->pivot->value ?? 'N/A' }}"
             alt="{{ $name }} ({{ $laptop_cpu }} | {{ $laptop_gpu }} | {{ $laptop_mon_size }} {{ $laptop_mon_res }} | {{ $laptop_ram }} | {{ $laptop_ssd_capacity }} | {{ $laptop_os }})"
             class="fit-img">
@@ -44,7 +44,7 @@
 
     <div class="p-text">
         <span class="p-sku" style="font-size: 12px;">Mã SP: {{ $model }}</span>
-        <a href="/laptops/{{ $type }}/{{ $brand }}/{{ $product_id }}" class="p-name">
+        <a href="{{ url("$product->link") }}" class="p-name">
             <h3>{{ $name }} ({{ $laptop_cpu }} | {{ $laptop_gpu }} | {{ $laptop_mon_size }}
                 {{ $laptop_mon_res }} | {{ $laptop_ram }} | {{ $laptop_ssd_capacity }} | {{ $laptop_os }})</h3>
         </a>

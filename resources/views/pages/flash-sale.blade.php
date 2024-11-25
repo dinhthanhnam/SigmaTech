@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@dd($flashSaleItems)
 @section('content')
   <div class="deal-page">
     <div class="container">

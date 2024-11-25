@@ -36,13 +36,21 @@
               <a href="#" class="filter-name"> Hãng </a>
               <div class="filter-content-group">
                 <div class="filter-group-middle">
-                  <a href="#" class="image filter-title js-filter-title" title="AMD" data-check="0"
-                    data-filter_code="brand" data-value="amd">
-                    <span style="background-image: url('{{ asset('assets/img/brand/amd.jpg') }}');"></span>
+                  <a href="#" class="image filter-title js-filter-title" title="Asus" data-check="0"
+                    data-filter_code="brand" data-value="asus">
+                    <span style="background-image: url('{{ asset('assets/img/brand/asus.jpg') }}');"></span>
                   </a>
-                  <a href="#" class="image filter-title js-filter-title" title="Intel" data-check="0"
-                    data-filter_code="brand" data-value="intel">
-                    <span style="background-image: url('{{ asset('assets/img/brand/intel.jpg') }}');"></span>
+                  <a href="#" class="image filter-title js-filter-title" title="Dell" data-check="0"
+                    data-filter_code="brand" data-value="dell">
+                    <span style="background-image: url('{{ asset('assets/img/brand/dell.jpg') }}');"></span>
+                  </a>
+                  <a href="#" class="image filter-title js-filter-title" title="LG" data-check="0"
+                    data-filter_code="brand" data-value="lg">
+                    <span style="background-image: url('{{ asset('assets/img/brand/lg.png') }}');"></span>
+                  </a>
+                  <a href="#" class="image filter-title js-filter-title" title="BenQ" data-check="0"
+                    data-filter_code="brand" data-value="benq">
+                    <span style="background-image: url('{{ asset('assets/img/brand/benq.png') }}');"></span>
                   </a>
                 </div>
                 <div class="filter-group-bottom">

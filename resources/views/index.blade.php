@@ -62,7 +62,7 @@
         <div class="deal-product-holder">
           <!-- // Deal nổi bật đang diễn ra -->
           <div class="product-deal-list d-flex flex-wrap justify-content-between active" id="js-active-group">
-            @foreach ($flashSaleItems as $item)
+            @foreach ($top5FlashSaleItems as $item)
               @include('partials.flash-sale-p-item', ['product' => $item])
             @endforeach
           </div>
@@ -159,7 +159,7 @@
           </div>
         </div>
         <div class="p-container custom-nav owl-carousel owl-theme" id="js-holder-1255" data-id="1255">
-          @foreach ($gaminggears as $product)
+          @foreach ($gamingGears as $product)
             @include('partials.simple-p-item', ['product' => $product])
           @endforeach
         </div>
@@ -172,8 +172,6 @@
         <div class="box-title-container">
           <h2 class="box-title"> Cooling, Tản nhiệt </h2>
           <div class="child-title">
-            <!---thay số là id danh mục sản phẩm-->
-            <!---ket thuc danh muc COOLING, TẢN NHIỆT --->
           </div>
         </div>
         <div class="p-container custom-nav owl-carousel owl-theme" id="js-holder-397" data-id="397">

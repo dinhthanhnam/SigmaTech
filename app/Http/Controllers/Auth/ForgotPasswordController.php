@@ -38,14 +38,14 @@ class ForgotPasswordController extends Controller
         // Nếu yêu cầu JSON, trả về lỗi JSON
         if ($request->wantsJson()) {
             throw ValidationException::withMessages([
-                'email' => ['Địa chỉ email không tồn tại trong hệ thống.'],
+                'email' => ['Địa chỉ không hợp lệ, hoặc nếu là bạn đang yêu cầu quá nhanh, vui lòng chờ thêm một chút trước khi gửi lại.'],
             ]);
         }
     
         // Nếu yêu cầu thông thường, hiển thị thông báo lỗi dạng flash
         return back()
             ->withInput($request->only('email'))
-            ->withErrors(['email' => 'Địa chỉ email không tồn tại trong hệ thống.']);
+            ->withErrors(['email' => 'Địa chỉ không hợp lệ, hoặc nếu là bạn đang yêu cầu quá nhanh, vui lòng chờ thêm một chút trước khi gửi lại.']);
     }
     
 }

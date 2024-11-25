@@ -25,7 +25,7 @@
   
   //flash sale
   $saleprice = $product->attributes->firstWhere('name', 'Sale Price')->pivot->value;
-  $sale_start_date = $product->attributes->firstWhere('name', 'Sale Start Date')->pivot->value;
+  $sale_start_date = $product->attributes->firstWhere('name', 'Sale Start Date')->pivot->value ?? 'N/A';
   $sale_end_date = $product->attributes->firstWhere('name', 'Sale End Date')->pivot->value;
   $sale_end_time = strtotime($sale_end_date);
 @endphp
@@ -37,19 +37,19 @@
   }
 @endphp
 <div class="deal-item">
-  <a href="{{$product->link}}" class="p-name" target="_blank">
+  <a href="{{ url("$product->link") }}" class="p-name" target="_blank">
     <img src="{{ $product->attributes->firstWhere('name', 'Thumbnail')?->pivot->value ?? 'N/A' }}" class="mx-auto" target="_blank"
       alt="{{ $name }}">
   </a>
   
   <div class="p-text">
     @if ($laptop_type != 'N/A')
-      <a href="{{$product->link}}" class="p-name" target="_blank"
+      <a href="{{ url("$product->link") }}" class="p-name" target="_blank"
         title="{{ $name }}">
         <b>{{ $name }} ({{ $laptop_cpu}} | {{ $laptop_ram }} | {{ $laptop_ssd_capacity}} | {{ $laptop_gpu }} | {{ $laptop_mon_size }} | {{ $laptop_os }} | {{$laptop_color}})</b>
       </a>
-    @elseif ($pcpart_type != 'N/A')
-      <a href="{{$product->link}}" class="p-name" target="_blank">
+    @else
+      <a href="{{ url("$product->link") }}" class="p-name" target="_blank">
         <b>{{ $name }} </b>
       </a>
     @endif
@@ -74,7 +74,7 @@
     <a href="javascript:void(0)" class="p-btn-buy"
       onclick="addProduct(49837, '')">MUA GIÁ SỐC</a>
 
-    <a href="{{$product->link}}" class="p-link" target="_blank">Xem sản phẩm</a>
+    <a href="{{ url("$product->link") }}" class="p-link" target="_blank">Xem sản phẩm</a>
   </div>
 </div>
 
