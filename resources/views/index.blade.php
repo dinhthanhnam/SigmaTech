@@ -121,7 +121,9 @@
           </div>
         </div>
         <div class="p-container custom-nav owl-carousel owl-theme" id="js-collection-849" data-id="849">
-
+          @foreach ($monitors as $product)
+            @include('partials.simple-p-item', ['product' => $product])
+          @endforeach
         </div>
         <a href="{{ route('monitors.show') }}" class="view-cate"> XEM TẤT CẢ <i class="fa fa-angle-double-right"></i>
         </a>
@@ -137,7 +139,9 @@
           </div>
         </div>
         <div class="p-container custom-nav owl-carousel owl-theme" id="js-holder-1255" data-id="1255">
-
+          @foreach ($gaminggears as $product)
+            @include('partials.simple-p-item', ['product' => $product])
+          @endforeach
         </div>
         <a href="{{ route('gaming-gears.show') }}" class="view-cate"> XEM TẤT CẢ <i
             class="fa fa-angle-double-right"></i> </a>
@@ -153,7 +157,9 @@
           </div>
         </div>
         <div class="p-container custom-nav owl-carousel owl-theme" id="js-holder-397" data-id="397">
-
+          @foreach ($coolings as $product)
+            @include('partials.simple-p-item', ['product' => $product])
+          @endforeach
         </div>
         <a href="coolings" class="view-cate"> XEM TẤT CẢ <i class="fa fa-angle-double-right"></i>
         </a>

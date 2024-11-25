@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Accessory;
+use App\Models\Cooling;
 use Illuminate\Http\Request;
 use App\Models\Laptop;
 use App\Models\Cpu;
@@ -52,7 +53,7 @@ class HomeController extends Controller
             $type = $item->attributes->firstWhere('name', '[Laptop] Loại laptop')->pivot->value ?? 'N/A';
             $item->link = 'laptops/'.$type.'/'.$brand.'/'.$item->id;
         };
-
+        // CPU
         $cpus = Cpu::whereHas('attributes', function ($query) {
             $query->where('name', 'Loại linh kiện')
                   ->where('value', 'CPU');
@@ -69,6 +70,50 @@ class HomeController extends Controller
             $brand = $item->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
             $type = $item->attributes->firstWhere('name', 'Loại linh kiện')->pivot->value ?? 'N/A';
             $item->link = 'pc-parts/'.$type.'/'.$brand.'/'.$item->id;
+        };
+
+        //Monitor
+        $monitors = Monitor::with('attributes')->paginate(12);
+        $topMonitors = Monitor::whereHas('attributes', function ($query) {
+            $query->where('name', 'On Top')
+                  ->where('value', '1');
+        })
+        ->with('attributes')
+        ->limit(10)
+        ->get();
+
+        foreach($monitors as $item) {
+            $brand = $item->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
+            $item->link = 'monitors/'.$brand.'/'.$item->id;
+        };
+        // Gaming Gear
+        $gaminggears = Gaminggear::with('attributes')->paginate(12);
+        $topGaminggears = Gaminggear::whereHas('attributes', function ($query) {
+            $query->where('name', 'On Top')
+                  ->where('value', '1');
+        })
+        ->with('attributes')
+        ->limit(10)
+        ->get();
+
+        foreach($gaminggears as $item) {
+            $brand = $item->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
+            $item->link = 'gaminggears/'.$brand.'/'.$item->id;
+        };
+
+        //Cooling
+        $coolings = Cooling::with('attributes')->paginate(12);
+        $topCoolings = Cooling::whereHas('attributes', function ($query) {
+            $query->where('name', 'On Top')
+                  ->where('value', '1');
+        })
+        ->with('attributes')
+        ->limit(10)
+        ->get();
+
+        foreach($coolings as $item) {
+            $brand = $item->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
+            $item->link = 'coolings/'.$brand.'/'.$item->id;
         };
 
         $laptopsSale = Laptop::whereHas('attributes', function ($query) {
@@ -96,7 +141,7 @@ class HomeController extends Controller
 
         $slides = Slider::all(['name', 'image']);
 
-        return view('index', compact( 'flashSaleItems', 'gamingLaptops', 'officeLaptops', 'cpus', 'slides'));
+        return view('index', compact( 'flashSaleItems', 'gamingLaptops', 'officeLaptops', 'cpus','monitors','gaminggears','coolings', 'slides'));
     }
     
 
