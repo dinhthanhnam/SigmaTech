@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Accessory;
+use App\Models\Cooling;
 use Illuminate\Http\Request;
 use App\Models\Laptop;
 use App\Models\Cpu;
@@ -52,7 +53,7 @@ class HomeController extends Controller
             $type = $item->attributes->firstWhere('name', '[Laptop] Loại laptop')->pivot->value ?? 'N/A';
             $item->link = 'laptops/'.$type.'/'.$brand.'/'.$item->id;
         };
-
+        // CPU
         $cpus = Cpu::whereHas('attributes', function ($query) {
             $query->where('name', 'Loại linh kiện')
                   ->where('value', 'CPU');

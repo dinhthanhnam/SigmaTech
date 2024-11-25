@@ -1,6 +1,7 @@
 ## 1. Tiên quyết
     Cài đặt Composer : get.composer.org
     Cài đặt xampp hoặc laragon
+    Sau khi clone, chạy composer update
 ## 2. Thực hiện (Theo xampp)
     git clone vào thư mục htdocs: https://github.com/dinhthanhnam/SigmaTech
     clone xong thì mở bằng code .
