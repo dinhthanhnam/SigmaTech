@@ -34,18 +34,13 @@ class AccessoryController extends Controller
         ->limit(10)
         ->get();
 
-        foreach($accessories as $item) {
-            $brand = $item->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
-            $item->link = 'accessories/'.$brand.'/'.$item->id;
-        };
-
         foreach($topAccessories as $item) {
             $brand = $item->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
             $item->link = 'accessory/'.$brand.'/'.$item->id;
         };
         
         foreach($accessories as $item) {
-            $brand = $item->attributes->where('name', 'Brand')->first()->pivot->value;
+            $brand = $item->attributes->where('name', 'Brand')->first()->pivot->value ?? 'N/A';
             $item->link = 'accessory/'.$brand.'/'.$item->id;
         };
         

@@ -43,7 +43,7 @@ class LoginController extends Controller
         return view('login');
     }
 
-    protected function authenticated($user)
+    protected function authenticated(Request $request, $user)
     {
         // Kiểm tra nếu người dùng là admin
         if ($user->utype == 'ADM') {

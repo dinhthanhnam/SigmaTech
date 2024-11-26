@@ -15,10 +15,10 @@
             <div id="sampleTable_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4 no-footer">
               <div class="row d-flex justify-content-between align-items-center">
                 <div class="col-sm-12 col-md-6 text-left">
-                  <div id="sampleTable_filter" class="dataTables_filter">
+                  <div class="dataTables_filter">
                     <label>Tìm kiếm:
-                      <input type="search" class="form-control form-control-sm" placeholder=""
-                        aria-controls="sampleTable">
+                      <input type="text" id="searchQuery" class="form-control form-control-sm"
+                        placeholder="Tìm kiếm sản phẩm" aria-controls="sampleTable">
                     </label>
                   </div>
                 </div>
@@ -31,7 +31,7 @@
                   </a>
                 </div>
               </div>
-              <table class="table table-hover table-bordered" id="sampleTable">
+              <table class="table table-hover table-bordered" id="resultTable">
                 <thead>
                   <tr>
                     {{-- <th width="10"><input type="checkbox" id="all"></th> --}}
@@ -50,7 +50,6 @@
                 <tbody id="product-list">
                   @foreach ($paginatedProducts as $product)
                     <tr>
-                      {{-- <td><input type="checkbox"></td> --}}
                       <td>{{ $product->id }}</td>
                       <td>{{ $product->name }}</td>
                       <td><img src="{{ $product->attributes->firstWhere('name', 'Image1')->pivot->value ?? 'N/A' }}"
@@ -81,26 +80,28 @@
                   @endforeach
                 </tbody>
               </table>
-              <div class="paging bg-white mx-auto">
+              <div class="paging bg-white mx-auto" id="paginationLinks">
                 @if ($paginatedProducts->currentPage() > 1)
-                    <a href="{{ $paginatedProducts->previousPageUrl() }}">
-                        <i class="fa fa-angle-left"></i>
-                    </a>
+                  <a href="{{ $paginatedProducts->previousPageUrl() }}">
+                    <i class="fa fa-angle-left"></i>
+                  </a>
                 @endif
-                <a href="{{ $paginatedProducts->url(1) }}" class="{{ $paginatedProducts->onFirstPage() ? 'current' : '' }}">
-                    1
+                <a href="{{ $paginatedProducts->url(1) }}"
+                  class="{{ $paginatedProducts->onFirstPage() ? 'current' : '' }}">
+                  1
                 </a>
                 @for ($page = 2; $page <= $paginatedProducts->lastPage(); $page++)
-                    <a href="{{ $paginatedProducts->url($page) }}" class="{{ $page == $paginatedProducts->currentPage() ? 'current' : '' }}">
-                        {{ $page }}
-                    </a>
+                  <a href="{{ $paginatedProducts->url($page) }}"
+                    class="{{ $page == $paginatedProducts->currentPage() ? 'current' : '' }}">
+                    {{ $page }}
+                  </a>
                 @endfor
                 @if ($paginatedProducts->hasMorePages())
-                    <a href="{{ $paginatedProducts->nextPageUrl() }}">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
+                  <a href="{{ $paginatedProducts->nextPageUrl() }}">
+                    <i class="fa fa-angle-right"></i>
+                  </a>
                 @endif
-            </div>
+              </div>
             </div>
           </div>
         </div>
@@ -204,5 +205,50 @@
         }
       });
     });
+  </script>
+  <script>
+    document.getElementById('searchQuery').addEventListener('input', function() {
+      const searchQuery = this.value.trim();
+      
+      fetchProducts(searchQuery);
+
+    });
+
+    function fetchProducts(searchQuery) {
+      fetch(`/search-products?search=${searchQuery}`)
+        .then(response => response.json())
+        .then(data => {
+          updateProductList(data.products); // Cập nhật danh sách sản phẩm
+        })
+        .catch(error => console.error('Error:', error));
+    }
+
+    function updateProductList(products) {
+      const productList = document.getElementById('product-list');
+      productList.innerHTML = ''; // Xóa danh sách sản phẩm hiện tại
+
+      if (products.length > 0) {
+        products.forEach(product => {
+          const productRow = document.createElement('tr');
+
+          // Cập nhật các thông tin sản phẩm (tùy chỉnh các thuộc tính bạn cần hiển thị)
+          productRow.innerHTML = `
+        <td>${product.id}</td>
+        <td>${product.name}</td>
+        <td><img src="${product.image || 'N/A'}" alt="${product.name}" width="150"></td>
+        <td>${product.category || 'N/A'}</td>
+        <td>${product.brand || 'N/A'}</td>
+        <td>${product.model || 'N/A'}</td>
+        <td>${product.price ? new Intl.NumberFormat().format(product.price) : 'N/A'} đ</td>
+        <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa" data-id="${product.id}"><i class="fas fa-trash-alt"></i></button></td>
+        <td><button class="btn btn-primary btn-sm edit" type="button" title="Sửa" data-toggle="modal" data-target="#ModalUP"><i class="fas fa-edit"></i></button></td>
+      `;
+
+          productList.appendChild(productRow);
+        });
+      } else {
+        productList.innerHTML = '<tr><td colspan="8">Không tìm thấy sản phẩm nào.</td></tr>';
+      }
+    }
   </script>
 @endpush

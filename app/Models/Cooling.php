@@ -24,7 +24,7 @@ class Cooling extends Model
     /**
      * Relationship with category.
      */
-    public function category()
+    public function categories()
     {
         return $this->belongsTo(Category::class, 'category_id');
     }

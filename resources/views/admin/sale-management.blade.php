@@ -12,9 +12,9 @@
         <div class="tile">
           <div class="tile-body">
             <div id="sampleTable_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4 no-footer">
-              <div class="row d-flex justify-content-between align-items-center">
+              <div class="row d-flex align-items-center">
                 <div class="col-sm-12 col-md-6 text-left">
-                  <div id="sampleTable_filter" class="dataTables_filter">
+                  <div id="sampleTable_filter" class="dataTables_filter" style="display:none;">
                     <label>Tìm kiếm:
                       <input id="js-search" type="search" class="form-control form-control-sm" placeholder=""
                         aria-controls="sampleTable">
@@ -33,13 +33,12 @@
               <table class="table table-hover table-bordered" id="sampleTable">
                 <thead>
                   <tr>
-                    <th width="10"><input type="checkbox" id="all"></th>
                     <th width="10">Mã</th>
                     <th width="200">Tên sản phẩm</th>
-                    <th width="200">Hình ảnh</th>
-                    <th width="200">Loại hàng</th>
-                    <th width="50">Thương hiệu</th>
-                    <th width="50">Mã model</th>
+                    <th width="250">Hình ảnh</th>
+                    <th width="250">Loại hàng</th>
+                    <th width="60">Thương hiệu</th>
+                    <th width="70">Mã model</th>
                     <th width="150">Giá Sale</th>
                     <th width="150">Thời điểm kết thúc</th>
                     <th width="100">Đếm ngược</th>
@@ -56,7 +55,6 @@
                       $remainingTime = $endDate->timestamp - now()->timestamp;
                     @endphp
                     <tr>
-                      <td><input type="checkbox"></td>
                       <td>{{ $product->id }}</td>
                       <td>{{ $product->name }}</td>
                       <td><img src="{{ $product->attributes->firstWhere('name', 'Image1')->pivot->value ?? 'N/A' }}"
@@ -85,7 +83,8 @@
                         </span>
                       </td>
                       <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa"
-                          onclick="myFunction(this)"><i class="fas fa-trash-alt"></i>
+                        data-id="{{ $product->id }}" data-table="{{ $product->data_table }}"><i
+                          class="fas fa-trash-alt"></i>
                         </button>
                         <button class="btn btn-primary btn-sm edit" type="button" title="Sửa" id="show-emp"
                           data-toggle="modal" data-target="#ModalUP"><i class="fas fa-edit"></i></button>
@@ -216,4 +215,34 @@
       });
     });
   </script>
+  <script>
+    // Hàm gọi AJAX để xóa sản phẩm
+    $(document).on('click', '.trash', function() {
+      var table = $(this).data('table'); // Lấy giá trị 'table' từ thuộc tính data-table
+      var id = $(this).data('id'); // Lấy giá trị 'id' từ thuộc tính data-id
+      var $row = $(this).closest('tr'); // Lưu tham chiếu đến dòng tr cần xóa
+
+      // Gửi yêu cầu xóa thông qua AJAX
+      $.ajax({
+        url: '/delete-sale-product/' + table + '/' + id,
+        type: 'DELETE',
+        data: {
+          _token: '{{ csrf_token() }}',
+        },
+        success: function(response) {
+          if (response.success) {
+            alert(response.success); // Hiển thị thông báo thành công
+            // Xóa dòng trong bảng
+            $row.remove(); // Dùng biến $row để xóa thẻ <tr>
+          } else if (response.error) {
+            alert(response.error); // Hiển thị thông báo lỗi
+          }
+        },
+        error: function(xhr, status, error) {
+          alert('An error occurred: ' + xhr.responseText); // Hiển thị lỗi từ server nếu có
+        }
+      });
+    });
+  </script>
+
 @endpush

@@ -102,6 +102,9 @@ Route::middleware(['auth', AuthAdmin::class])->prefix('admin')->group(function (
 
 
 Route::delete('/delete-product/{table}/{id}', [ProductController::class, 'deleteProduct'])->name('delete.product');
+Route::delete('/delete-sale-product/{table}/{id}', [AdminSaleController::class, 'deleteSaleProduct'])->name('delete.saleproduct');
+Route::get('/search-products', [ProductController::class, 'searchProducts']);
+
 //cart
 Route::prefix('cart')->group( function() {
   Route::get('/', [CartController::class, 'show'])->name('cart');

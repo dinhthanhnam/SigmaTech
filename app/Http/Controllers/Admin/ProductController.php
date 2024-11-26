@@ -2,21 +2,23 @@
 
 namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
+use App\Models\Accessory;
 use Illuminate\Http\Request;
 use App\Models\Laptop;
 use App\Models\Cpu;
 use App\Models\Gpu;
 use App\Models\Monitor;
 use App\Models\Attribute;
+use App\Models\Cooling;
+use App\Models\Gaminggear;
+use App\Models\Media;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 
 class ProductController extends Controller
 {
-    // Controller
-    public function showAllProducts()
-    {
+    public function AllProducts(){
         $laptops = Laptop::with(['attributes', 'categories'])
             ->get()
             ->each(function ($item) {
@@ -39,9 +41,38 @@ class ProductController extends Controller
             ->each(function ($item) {
                 $item->setAttribute('data_table', 'monitor');
             });
+        $gamingGears = Gaminggear::with(['attributes', 'categories'])
+            ->get()
+            ->each(function ($item) {
+                $item->setAttribute('data_table', 'gaminggear');
+            });
+        $coolings = Cooling::with(['attributes', 'categories'])
+            ->get()
+            ->each(function ($item) {
+                $item->setAttribute('data_table', 'cooling');
+            });
+        $medias = Media::with(['attributes', 'categories'])
+            ->get()
+            ->each(function ($item) {
+                $item->setAttribute('data_table', 'media');
+            });
+        $accessories = Accessory::with(['attributes', 'categories'])
+            ->get()
+            ->each(function ($item) {
+                $item->setAttribute('data_table', 'accessory');
+            });
+
 
         // Gộp tất cả các sản phẩm vào một biến chung
-        $allProducts = collect()->merge($laptops)->merge($cpus)->merge($gpus)->merge($monitors);
+        $allProducts = collect()->merge($laptops)->merge($cpus)->merge($gpus)->merge($monitors)
+                                ->merge($gamingGears)->merge($coolings)->merge($medias)->merge($accessories);
+        return($allProducts);
+    }
+
+    public function showAllProducts()
+    {
+        // Gộp tất cả các sản phẩm vào một biến chung
+        $allProducts = $this->AllProducts();
 
         $currentPage = LengthAwarePaginator::resolveCurrentPage();
         $perPage = 12;
@@ -207,6 +238,22 @@ class ProductController extends Controller
             case 'monitor':
                 $product = Monitor::find($id);
                 break;
+
+            case 'gaminggear':
+                $product = Gaminggear::find($id);
+                break;
+    
+            case 'cooling':
+                $product = Cooling::find($id);
+                break;
+
+            case 'media':
+                $product = Media::find($id);
+                break;
+
+            case 'accessory':
+                $product = Accessory::find($id);
+                break;
     
             // Thêm các trường hợp cho các bảng khác
             default:
@@ -219,8 +266,43 @@ class ProductController extends Controller
             return response()->json(['success' => 'Xoa thanh cong san pham'], 200);
         }
     
-        return response()->json(['error' => 'Product not found'], 404);
+        return response()->json(['error' => 'Khong tim thay san pham'], 404);
     }
+    public function searchProducts(Request $request)
+    {
+        // Lấy giá trị từ tham số 'search' và 'page'
+        $searchQuery = $request->input('search'); // Lấy giá trị tìm kiếm
+
+        // Kiểm tra xem tham số search có tồn tại và không rỗng
+        if ($searchQuery) {
+            // Giả sử AllProducts trả về một collection
+            $allProducts = $this->AllProducts()->filter(function ($product) use ($searchQuery) {
+                return str_contains(strtolower($product->name), strtolower($searchQuery));
+            });
+        } else {
+            // Nếu không có giá trị tìm kiếm, lấy tất cả sản phẩm
+            $allProducts = $this->AllProducts();
+        }
+        
+        $products = [];
+        foreach ($allProducts as $product) {
+            $products[] = [
+                'id' => $product->id,
+                'name' => $product->name,
+                'image' => $product->attributes->firstWhere('name', 'Image1')->pivot->value ?? 'N/A',
+                'category' => $product->categories->name ?? 'N/A',
+                'brand' => $product->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A',
+                'model' => $product->attributes->firstWhere('name', 'Model')->pivot->value ?? 'N/A',
+                'price' => $product->attributes->firstWhere('name', 'Price')->pivot->value ?? 0,
+                'deal_price' => $product->attributes->firstWhere('name', 'Deal Price')->pivot->value ?? 0,
+                'data_table' => $product->data_table,
+            ];
+        }
     
+        // Trả về JSON
+        return response()->json([
+            'products' => $products,
+        ]);
+    }
     
 }

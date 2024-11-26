@@ -792,7 +792,7 @@ class LaptopSeeder extends Seeder
                 'category_id' => 2,
                 'attributes' => [
                     ['name' => 'Brand', 'value' => 'Acer'],
-                    ['name' => 'Model', 'value' => '0'],
+                    ['name' => 'Model', 'value' => 'NBAC0408'],
                     ['name' => 'Price', 'value' => '44990000'],
                     ['name' => 'Deal Price', 'value' => '44890000'],
                     ['name' => 'Rating', 'value' => '0'],
