@@ -6,6 +6,8 @@
     $product_type = '';
     $price = $product->attributes->firstWhere('name', 'Price')->pivot->value ?? 'N/A';
     $dealprice = $product->attributes->firstWhere('name', 'Deal Price')->pivot->value ?? 'N/A';
+    $saleprice = $product->attributes->firstWhere('name', 'Sale Price')->pivot->value ?? 'N/A';
+    $sale_end_date = $product->attributes->firstWhere('name', 'Sale End Date')->pivot->value ?? 'N/A';
     $rating = $product->attributes->firstWhere('name', 'Rating')->pivot->value ?? 'N/A';
     $brand = $product->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
     $model = $product->attributes->firstWhere('name', 'Model')->pivot->value ?? 'N/A';
@@ -13,8 +15,7 @@
     //biến riêng, cho laptop
     $laptop_type = $product->attributes->firstWhere('name', '[Laptop] Loại laptop')->pivot->value ?? 'N/A';
     $laptop_cpu = $product->attributes->firstWhere('name', '[Laptop] Vi xử lý')?->pivot->value ?? 'N/A';
-    $laptop_ssd_capacity =
-        $product->attributes->firstWhere('name', '[Laptop] Dung lượng ổ cứng')?->pivot->value ?? 'N/A';
+    $laptop_ssd_capacity = $product->attributes->firstWhere('name', '[Laptop] Dung lượng ổ cứng')?->pivot->value ?? 'N/A';
     $laptop_gpu = $product->attributes->firstWhere('name', '[Laptop] Card đồ hoạ')?->pivot->value ?? 'N/A';
     $laptop_mon_size = $product->attributes->firstWhere('name', '[Laptop] Kích thước màn hình')?->pivot->value ?? 'N/A';
     $laptop_mon_res = $product->attributes->firstWhere('name', '[Laptop] Độ phân giải')?->pivot->value ?? 'N/A';
@@ -26,7 +27,9 @@
 @php
     $discountPercentage = 0;
 
-    if (isset($dealprice)) {
+    if ($saleprice != 'N/A' && strtotime($sale_end_date) > Carbon\Carbon::now()->timestamp) {
+        $discountPercentage = round((1 - $saleprice / $price) * 100);
+    } else {
         $discountPercentage = round((1 - $dealprice / $price) * 100);
     }
 @endphp
@@ -45,7 +48,11 @@
         <div class="price-container">
             <del class="p-old-price"> {{ number_format($price, 0, ',', '.') }} đ </del>
             <span class="p-discount"> {{ $discountPercentage }} % </span>
-            <span class="p-price"> {{ number_format($dealprice, 0, ',', '.') }} đ </span>
+            @if ($saleprice != 'N/A' && strtotime($sale_end_date) > Carbon\Carbon::now()->timestamp)
+                <span class="p-price"> {{ number_format($dealprice, 0, ',', '.') }} đ <span style="padding-left: 5px; color: rgb(255, 85, 0); font-weight:700; font-style: italic; font-size:18px; display:inline;">Sale </span></span>
+            @else
+                <span class="p-price"> {{ number_format($dealprice, 0, ',', '.') }} đ </span>
+            @endif
         </div>
 
         <div class="p-special-container">? khuyến mại</div>
