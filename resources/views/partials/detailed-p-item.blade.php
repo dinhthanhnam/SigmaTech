@@ -51,15 +51,14 @@
 
         <div class="price-container">
             <del class="p-old-price"> {{ number_format($price, 0, ',', '.') }} đ </del>
-            <span class="p-discount"> {{ $discountPercentage }} % </span>
+            <span class="p-discount" style="display: inline;"> {{ $discountPercentage }} % </span>
             @if ($saleprice != 'N/A' && strtotime($sale_end_date) > Carbon\Carbon::now()->timestamp)
-                <span class="p-price"> {{ number_format($saleprice, 0, ',', '.') }} đ </span>
+                <span class="p-price"> {{ number_format($saleprice, 0, ',', '.') }} đ <span style="padding-left: 5px; color: rgb(255, 85, 0); font-weight:700; font-style: italic; font-size:18px; display:inline;">Sale </span></span>
             @else
                 <span class="p-price"> {{ number_format($dealprice, 0, ',', '.') }} đ </span>
             @endif
         </div>
 
-        <div class="p-special-container">? khuyến mại</div>
 
         <div class="box-config">
             <div class="product-spec-group font-300">

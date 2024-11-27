@@ -64,7 +64,7 @@ class SaleController extends Controller
             }elseif ($item->attributes->firstWhere('name', 'Loại linh kiện')) {
                 $type = $item->attributes->firstWhere('name', 'Loại linh kiện')->pivot->value;
                 $item->link = 'pc-parts/'.$type.'/'.$brand.'/'.$item->id;
-            }elseif ($item->attributes->firstWhere('name','[MON] Tần số quét')) {
+            }elseif ($item->attributes->firstWhere('name','[MON] Công nghệ tấm nền')) {
                 $item->link = 'monitors/'.$brand.'/'.$item->id;
             }elseif ($item->attributes->firstWhere('name','[GG] Loại thiết bị')) {
                 $item->link = 'gaminggears/'.$brand.'/'.$item->id;

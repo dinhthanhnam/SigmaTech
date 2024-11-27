@@ -561,7 +561,7 @@
                     <p><a href="javascript:void(0)" id="js-viewmore-summary" class="red">&lt; Thu gọn</a></p>
                     @if ($saleprice != 'N/A' && now()->lessThan(Carbon\Carbon::parse($sale_end_date)))
                         <div class="deal-count-container text-12 font-300 text-right" id="js-deal-container">Kết thúc sau
-                            <span class="js-hour"> 00 </span>
+                            <span class="js-day"> 00 </span>
                             <span class="js-hour"> 00 </span>
                             <span class="js-minute"> 00 </span>
                             <span class="js-seconds"> 00 </span>
@@ -1331,6 +1331,7 @@
             const seconds = Math.floor((timeLeft / 1000) % 60);
 
             // Hiển thị kết quả trong các phần tử tương ứng
+            document.querySelector('.js-day').innerText = String(days).padStart(2, '0');
             document.querySelector('.js-hour').innerText = String(hours).padStart(2, '0');
             document.querySelector('.js-minute').innerText = String(minutes).padStart(2, '0');
             document.querySelector('.js-seconds').innerText = String(seconds).padStart(2, '0');
