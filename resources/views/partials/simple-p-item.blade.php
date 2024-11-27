@@ -15,7 +15,8 @@
     //biến riêng, cho laptop
     $laptop_type = $product->attributes->firstWhere('name', '[Laptop] Loại laptop')->pivot->value ?? 'N/A';
     $laptop_cpu = $product->attributes->firstWhere('name', '[Laptop] Vi xử lý')?->pivot->value ?? 'N/A';
-    $laptop_ssd_capacity = $product->attributes->firstWhere('name', '[Laptop] Dung lượng ổ cứng')?->pivot->value ?? 'N/A';
+    $laptop_ssd_capacity =
+        $product->attributes->firstWhere('name', '[Laptop] Dung lượng ổ cứng')?->pivot->value ?? 'N/A';
     $laptop_gpu = $product->attributes->firstWhere('name', '[Laptop] Card đồ hoạ')?->pivot->value ?? 'N/A';
     $laptop_mon_size = $product->attributes->firstWhere('name', '[Laptop] Kích thước màn hình')?->pivot->value ?? 'N/A';
     $laptop_mon_res = $product->attributes->firstWhere('name', '[Laptop] Độ phân giải')?->pivot->value ?? 'N/A';
@@ -49,7 +50,9 @@
             <del class="p-old-price"> {{ number_format($price, 0, ',', '.') }} đ </del>
             <span class="p-discount"> {{ $discountPercentage }} % </span>
             @if ($saleprice != 'N/A' && strtotime($sale_end_date) > Carbon\Carbon::now()->timestamp)
-                <span class="p-price"> {{ number_format($dealprice, 0, ',', '.') }} đ <span style="padding-left: 5px; color: rgb(255, 85, 0); font-weight:700; font-style: italic; font-size:18px; display:inline;">Sale </span></span>
+                <span class="p-price"> {{ number_format($dealprice, 0, ',', '.') }} đ <span
+                        style="padding-left: 5px; color: rgb(255, 85, 0); font-weight:700; font-style: italic; font-size:18px; display:inline;">Sale
+                    </span></span>
             @else
                 <span class="p-price"> {{ number_format($dealprice, 0, ',', '.') }} đ </span>
             @endif
@@ -92,6 +95,14 @@
                     {{ $product_type = 'cpu' }}
                 @elseif ($pcpart_type == 'gpu')
                     {{ $product_type = 'gpu' }}
+                @elseif ($category_id == 5)
+                    {{ $product_type = 'gaminggear' }}
+                @elseif ($category_id == 6)
+                    {{ $product_type = 'media' }}
+                @elseif ($category_id == 7)
+                    {{ $product_type = 'cooling' }}
+                @elseif ($category_id == 8)
+                    {{ $product_type = 'accessory' }}
                 @endif
                 <input type="hidden" name="product_type" value="{{ $product_type }}">
                 <input type="hidden" name="product_name" value="{{ $name }}">

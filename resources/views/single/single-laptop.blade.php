@@ -633,7 +633,7 @@
                     <div class="pro-button-container d-flex flex-wrap text-center justify-content-between">
                         <!-- Button Mua hàng -->
                         <a href="javascript:void(0)" class="w-49 btn-buyNow js-buy-now"
-                            onclick="addConfigToShoppingCart(49891,0,1,'/cart')">
+                            onclick="document.getElementById('buyNowForm').submit();">
                             <b class="d-block text-18 font-500"> ĐẶT MUA NGAY </b>
                             <span class="text-12 d-block"> Nhanh chóng, thuận tiện </span>
                         </a>
@@ -644,6 +644,13 @@
                         </a>
 
                         <form id="addCartForm" action="{{ route('cart.add') }}" method="POST" style="display: none;">
+                            @csrf
+                            <input type="hidden" name="product_id" value="{{ $laptop_id }}">
+                            <input type="hidden" name="product_type" value="laptop">
+                            <input type="hidden" name="product_name" value="{{ $name }}">
+                            <input type="hidden" name="quantity" value="1" min="1">
+                        </form>
+                        <form id="buyNowForm" action="{{ route('buynow') }}" method="POST" style="display: none;">
                             @csrf
                             <input type="hidden" name="product_id" value="{{ $laptop_id }}">
                             <input type="hidden" name="product_type" value="laptop">

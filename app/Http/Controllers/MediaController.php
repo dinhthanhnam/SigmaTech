@@ -38,12 +38,12 @@ class MediaController extends Controller
 
         foreach($media_devices as $item) {
             $brand = $item->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
-            $item->link = 'media_devices/'.$brand.'/'.$item->id;
+            $item->link = 'media/'.$brand.'/'.$item->id;
         };
 
         foreach($topMedia as $item) {
             $brand = $item->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
-            $item->link = 'media_devices/'.$brand.'/'.$item->id;
+            $item->link = 'media/'.$brand.'/'.$item->id;
         };
         
         foreach($media_devices as $item) {

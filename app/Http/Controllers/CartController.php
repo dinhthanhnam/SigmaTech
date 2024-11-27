@@ -8,7 +8,10 @@ use App\Models\CPU;
 use App\Models\Monitor;
 use App\Models\GPU;
 use App\Models\CartItem;
-
+use App\Models\Accessory;
+use App\Models\Cooling;
+use App\Models\Media;
+use App\Models\Gaminggear;
 
 
 class CartController extends Controller
@@ -65,6 +68,54 @@ class CartController extends Controller
                 $item->price = $monitor->attributes->where('name', 'Price')->first()->pivot->value; 
                 $item->image = $monitor->attributes->where('name', 'Image1')->first()->pivot->value; 
             break;
+            case 'gaminggear':
+                $gaminggear = Gaminggear::where('id', $item->product_id)->with('attributes')->first();
+                $salePrice = $gaminggear->attributes->where('name', 'Sale Price')->first()?->pivot->value ?? null;
+                $saleEndDate = $gaminggear->attributes->where('name', 'Sale End Date')->first()?->pivot->value ?? null;
+                if ($salePrice !== null && $saleEndDate !== null && strtotime($saleEndDate) >=  $yesterday) {
+                    $item->dealprice = $salePrice;
+                } else {
+                    $item->dealprice = $gaminggear->attributes->where('name', 'Deal Price')->first()?->pivot->value ?? null;
+                }                
+                $item->price = $gaminggear->attributes->where('name', 'Price')->first()->pivot->value; 
+                $item->image = $gaminggear->attributes->where('name', 'Image1')->first()->pivot->value; 
+            break;
+            case 'media':
+                $media = Media::where('id', $item->product_id)->with('attributes')->first();
+                $salePrice = $media->attributes->where('name', 'Sale Price')->first()?->pivot->value ?? null;
+                $saleEndDate = $media->attributes->where('name', 'Sale End Date')->first()?->pivot->value ?? null;
+                if ($salePrice !== null && $saleEndDate !== null && strtotime($saleEndDate) >=  $yesterday) {
+                    $item->dealprice = $salePrice;
+                } else {
+                    $item->dealprice = $media->attributes->where('name', 'Deal Price')->first()?->pivot->value ?? null;
+                }                
+                $item->price = $media->attributes->where('name', 'Price')->first()->pivot->value; 
+                $item->image = $media->attributes->where('name', 'Image1')->first()->pivot->value; 
+            break;
+            case 'cooling':
+                $cooling = Cooling::where('id', $item->product_id)->with('attributes')->first();
+                $salePrice = $cooling->attributes->where('name', 'Sale Price')->first()?->pivot->value ?? null;
+                $saleEndDate = $cooling->attributes->where('name', 'Sale End Date')->first()?->pivot->value ?? null;
+                if ($salePrice !== null && $saleEndDate !== null && strtotime($saleEndDate) >=  $yesterday) {
+                    $item->dealprice = $salePrice;
+                } else {
+                    $item->dealprice = $cooling->attributes->where('name', 'Deal Price')->first()?->pivot->value ?? null;
+                }                
+                $item->price = $cooling->attributes->where('name', 'Price')->first()->pivot->value; 
+                $item->image = $cooling->attributes->where('name', 'Image1')->first()->pivot->value; 
+            break;
+            case 'accessory':
+                $accessory = Accessory::where('id', $item->product_id)->with('attributes')->first();
+                $salePrice = $accessory->attributes->where('name', 'Sale Price')->first()?->pivot->value ?? null;
+                $saleEndDate = $accessory->attributes->where('name', 'Sale End Date')->first()?->pivot->value ?? null;
+                if ($salePrice !== null && $saleEndDate !== null && strtotime($saleEndDate) >=  $yesterday) {
+                    $item->dealprice = $salePrice;
+                } else {
+                    $item->dealprice = $accessory->attributes->where('name', 'Deal Price')->first()?->pivot->value ?? null;
+                }                
+                $item->price = $accessory->attributes->where('name', 'Price')->first()->pivot->value; 
+                $item->image = $accessory->attributes->where('name', 'Image1')->first()->pivot->value; 
+            break;
         }
     }
     public function show()
@@ -105,8 +156,18 @@ class CartController extends Controller
             case 'monitor':
                 $product = Monitor::findOrFail($productId);
                 break;
-            default:
-                abort(404); // Nếu loại sản phẩm không hợp lệ
+            case 'gaminggear':
+                $product = Gaminggear::findOrFail($productId);
+                break;
+            case 'media':
+                $product = Media::findOrFail($productId);
+                break;
+            case 'cooling':
+                $product = Cooling::findOrFail($productId);
+                break;
+            case 'accessory':
+                $product = Accessory::findOrFail($productId);
+                break;
         }
 
         // Kiểm tra xem sản phẩm đã có trong giỏ hàng chưa
@@ -187,5 +248,72 @@ class CartController extends Controller
         $cartItemCount = CartItem::where('user_id', auth()->id())->distinct('id')->count();
 
         return response()->json(['cartItemCount' => $cartItemCount]);
+    }
+
+    public function buynow(Request $request)
+    {
+        if (!auth()->check()) {
+            return redirect()->route('login')->with('message', 'Vui lòng đăng nhập để thêm sản phẩm vào giỏ hàng.');
+        }
+        // Lấy thông tin từ request
+        $productId = $request->product_id;
+        $productType = $request->product_type; // Loại sản phẩm (cpu, gpu, laptop, monitor)
+        $userId = auth()->id(); // ID người dùng đã đăng nhập
+        $quantity = $request->quantity; // Số lượng mặc định là 1
+        $productName = $request->product_name; // Lấy tên sản phẩm từ request
+        // Khai báo biến sản phẩm
+        $product = null;
+
+        // Tìm sản phẩm tương ứng từ bảng tương ứng
+        switch ($productType) {
+            case 'cpu':
+                $product = Cpu::findOrFail($productId);
+                break;
+            case 'gpu':
+                $product = Gpu::findOrFail($productId);
+                break;
+            case 'laptop':
+                $product = Laptop::findOrFail($productId);
+                break;
+            case 'monitor':
+                $product = Monitor::findOrFail($productId);
+                break;
+            case 'gaminggear':
+                $product = Gaminggear::findOrFail($productId);
+                break;
+            case 'media':
+                $product = Media::findOrFail($productId);
+                break;
+            case 'cooling':
+                $product = Cooling::findOrFail($productId);
+                break;
+            case 'accessory':
+                $product = Accessory::findOrFail($productId);
+                break;
+        }
+
+        // Kiểm tra xem sản phẩm đã có trong giỏ hàng chưa
+        $cartItem = CartItem::where('user_id', $userId)
+            ->where('product_id', $productId)
+            ->where('product_type', $productType)
+            ->first();
+
+        if ($cartItem) {
+            // Nếu sản phẩm đã có trong giỏ hàng, tăng số lượng
+            $cartItem->quantity += $quantity;
+            $cartItem->save();
+        } 
+        else {
+            // Nếu chưa có, thêm sản phẩm mới vào giỏ hàng
+            CartItem::create([
+                'user_id' => $userId,
+                'product_id' => $productId,
+                'product_type' => $productType,
+                'quantity' => $quantity,
+                'name' => $productName, // Lưu tên sản phẩm
+            ]);
+        }
+
+        return redirect()->route('cart');
     }
 }

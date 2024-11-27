@@ -118,8 +118,7 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
                                             <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a
-                                                    href="#"
-                                                    target="_blank">{{ $name }}</a></span>
+                                                    href="#" target="_blank">{{ $name }}</a></span>
                                         </td>
                                     </tr>
                                     <tr>
@@ -135,8 +134,7 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
                                             <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a
-                                                    href="#"
-                                                    target="_blank">{{ $model }}</a></span>
+                                                    href="#" target="_blank">{{ $model }}</a></span>
                                         </td>
                                     </tr>
                                     <tr>
@@ -152,8 +150,7 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
                                             <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a
-                                                    href="#"
-                                                    target="_blank">{{ $mon_size }}</a></span>
+                                                    href="#" target="_blank">{{ $mon_size }}</a></span>
                                         </td>
                                     </tr>
                                     <tr>
@@ -169,8 +166,7 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
                                             <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a
-                                                    href="#"
-                                                    target="_blank">{{ $mon_resolution }}</a></span>
+                                                    href="#" target="_blank">{{ $mon_resolution }}</a></span>
                                         </td>
                                     </tr>
                                     <tr>
@@ -186,8 +182,7 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
                                             <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a
-                                                    href="#"
-                                                    target="_blank">{{ $mon_ratio }}</a></span>
+                                                    href="#" target="_blank">{{ $mon_ratio }}</a></span>
                                         </td>
                                     </tr>
                                     <tr>
@@ -203,8 +198,7 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
                                             <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a
-                                                    href="#"
-                                                    target="_blank">{{ $mon_panel }}</a></span>
+                                                    href="#" target="_blank">{{ $mon_panel }}</a></span>
                                         </td>
                                     </tr>
                                     <tr>
@@ -220,8 +214,7 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
                                             <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a
-                                                    href="#"
-                                                    target="_blank">{{ $mon_brightness }}</a></span>
+                                                    href="#" target="_blank">{{ $mon_brightness }}</a></span>
                                         </td>
                                     </tr>
                                     <tr>
@@ -237,8 +230,7 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
                                             <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a
-                                                    href="#"
-                                                    target="_blank">{{ $mon_color }}</a></span>
+                                                    href="#" target="_blank">{{ $mon_color }}</a></span>
                                         </td>
                                     </tr>
                                     <tr>
@@ -254,8 +246,7 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
                                             <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a
-                                                    href="#"
-                                                    target="_blank">{{ $mon_refreshrate }}</a></span>
+                                                    href="#" target="_blank">{{ $mon_refreshrate }}</a></span>
                                         </td>
                                     </tr>
                                     <tr>
@@ -271,8 +262,7 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
                                             <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a
-                                                    href="#"
-                                                    target="_blank">{{ $mon_ports }}</a></span>
+                                                    href="#" target="_blank">{{ $mon_ports }}</a></span>
                                         </td>
                                     </tr>
                                     <tr>
@@ -288,8 +278,7 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
                                             <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a
-                                                    href="#"
-                                                    target="_blank">{{ $mon_respond }}</a></span>
+                                                    href="#" target="_blank">{{ $mon_respond }}</a></span>
                                         </td>
                                     </tr>
                                     <tr>
@@ -305,8 +294,7 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
                                             <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a
-                                                    href="#"
-                                                    target="_blank">{{ $mon_audiofeature }}</a></span>
+                                                    href="#" target="_blank">{{ $mon_audiofeature }}</a></span>
                                         </td>
                                     </tr>
                                     <tr>
@@ -322,8 +310,7 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
                                             <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a
-                                                    href="#"
-                                                    target="_blank">{{ $mon_powerconsumption }}</a></span>
+                                                    href="#" target="_blank">{{ $mon_powerconsumption }}</a></span>
                                         </td>
                                     </tr>
                                     <tr>
@@ -339,8 +326,7 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
                                             <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a
-                                                    href="#"
-                                                    target="_blank">{{ $mon_accessories }}</a></span>
+                                                    href="#" target="_blank">{{ $mon_accessories }}</a></span>
                                         </td>
                                     </tr>
                                     <tr>
@@ -356,8 +342,7 @@
                                         </td>
                                         <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
                                             <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a
-                                                    href="#"
-                                                    target="_blank">{{ $mon_weight }}</a></span>
+                                                    href="#" target="_blank">{{ $mon_weight }}</a></span>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -493,9 +478,7 @@
                                         <span style="color: #0030f2;" class="font-500">👉Quét ZALOPAY - Giảm liền tay ưu
                                             đãi lên tới 150.000
                                             VNĐ (Không áp dụng các sản phẩm của Apple-CPU). Áp dụng từ 01/10/2024 đến
-                                            30/11/2024. <a
-                                                href="#"
-                                                target="_blank">Xem chi
+                                            30/11/2024. <a href="#" target="_blank">Xem chi
                                                 tiết</a></span>
                                     </td>
                                 </tr>
@@ -514,7 +497,7 @@
                     <div class="pro-button-container d-flex flex-wrap text-center justify-content-between">
                         <!-- Button Mua hàng -->
                         <a href="javascript:void(0)" class="w-49 btn-buyNow js-buy-now"
-                            onclick="addConfigToShoppingCart(49891,0,1,'/cart')">
+                            onclick="document.getElementById('buyNowForm').submit();">
                             <b class="d-block text-18 font-500"> ĐẶT MUA NGAY </b>
                             <span class="text-12 d-block"> Nhanh chóng, thuận tiện </span>
                         </a>
@@ -531,7 +514,13 @@
                             <input type="hidden" name="product_name" value="{{ $name }}">
                             <input type="hidden" name="quantity" value="1" min="1">
                         </form>
-
+                        <form id="buyNowForm" action="{{ route('buynow') }}" method="POST" style="display: none;">
+                            @csrf
+                            <input type="hidden" name="product_id" value="{{ $monitor_id }}">
+                            <input type="hidden" name="product_type" value="monitor">
+                            <input type="hidden" name="product_name" value="{{ $name }}">
+                            <input type="hidden" name="quantity" value="1" min="1">
+                        </form>
                     </div>
                 </div>
                 <div class="product-detail-info-right">
@@ -654,8 +643,7 @@
                             </p>
                         </td>
                         <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
-                            <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a
-                                    href="#"
+                            <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a href="#"
                                     target="_blank">{{ $name }}</a></span>
                         </td>
                     </tr>
@@ -671,8 +659,7 @@
                             </p>
                         </td>
                         <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
-                            <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a
-                                    href="#"
+                            <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a href="#"
                                     target="_blank">{{ $model }}</a></span>
                         </td>
                     </tr>
@@ -688,8 +675,7 @@
                             </p>
                         </td>
                         <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
-                            <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a
-                                    href="#"
+                            <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a href="#"
                                     target="_blank">{{ $mon_size }}</a></span>
                         </td>
                     </tr>
@@ -705,8 +691,7 @@
                             </p>
                         </td>
                         <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
-                            <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a
-                                    href="#"
+                            <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a href="#"
                                     target="_blank">{{ $mon_resolution }}</a></span>
                         </td>
                     </tr>
@@ -722,8 +707,7 @@
                             </p>
                         </td>
                         <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
-                            <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a
-                                    href="#"
+                            <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a href="#"
                                     target="_blank">{{ $mon_ratio }}</a></span>
                         </td>
                     </tr>
@@ -739,8 +723,7 @@
                             </p>
                         </td>
                         <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
-                            <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a
-                                    href="#"
+                            <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a href="#"
                                     target="_blank">{{ $mon_panel }}</a></span>
                         </td>
                     </tr>
@@ -756,8 +739,7 @@
                             </p>
                         </td>
                         <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
-                            <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a
-                                    href="#"
+                            <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a href="#"
                                     target="_blank">{{ $mon_brightness }}</a></span>
                         </td>
                     </tr>
@@ -773,8 +755,7 @@
                             </p>
                         </td>
                         <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
-                            <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a
-                                    href="#"
+                            <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a href="#"
                                     target="_blank">{{ $mon_color }}</a></span>
                         </td>
                     </tr>
@@ -790,8 +771,7 @@
                             </p>
                         </td>
                         <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
-                            <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a
-                                    href="#"
+                            <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a href="#"
                                     target="_blank">{{ $mon_refreshrate }}</a></span>
                         </td>
                     </tr>
@@ -807,8 +787,7 @@
                             </p>
                         </td>
                         <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
-                            <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a
-                                    href="#"
+                            <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a href="#"
                                     target="_blank">{{ $mon_ports }}</a></span>
                         </td>
                     </tr>
@@ -824,8 +803,7 @@
                             </p>
                         </td>
                         <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
-                            <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a
-                                    href="#"
+                            <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a href="#"
                                     target="_blank">{{ $mon_respond }}</a></span>
                         </td>
                     </tr>
@@ -841,8 +819,7 @@
                             </p>
                         </td>
                         <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
-                            <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a
-                                    href="#"
+                            <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a href="#"
                                     target="_blank">{{ $mon_audiofeature }}</a></span>
                         </td>
                     </tr>
@@ -858,8 +835,7 @@
                             </p>
                         </td>
                         <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
-                            <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a
-                                    href="#"
+                            <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a href="#"
                                     target="_blank">{{ $mon_powerconsumption }}</a></span>
                         </td>
                     </tr>
@@ -875,8 +851,7 @@
                             </p>
                         </td>
                         <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
-                            <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a
-                                    href="#"
+                            <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a href="#"
                                     target="_blank">{{ $mon_accessories }}</a></span>
                         </td>
                     </tr>
@@ -892,8 +867,7 @@
                             </p>
                         </td>
                         <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
-                            <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a
-                                    href="#"
+                            <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a href="#"
                                     target="_blank">{{ $mon_weight }}</a></span>
                         </td>
                     </tr>
@@ -1099,24 +1073,24 @@
     <script>
         // Xác định thời gian kết thúc (thời gian đích)
         const endTime = {{ $sale_end_time }} * 1000;
-    
+
         // Cập nhật đồng hồ đếm ngược mỗi giây
         const countdown = setInterval(function() {
             const now = new Date().getTime();
             const timeLeft = endTime - now;
-    
+
             // Tính ngày, giờ, phút và giây từ timeLeft
             const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
             const hours = Math.floor((timeLeft / (1000 * 60 * 60)) % 24);
             const minutes = Math.floor((timeLeft / (1000 * 60)) % 60);
             const seconds = Math.floor((timeLeft / 1000) % 60);
-    
+
             // Hiển thị kết quả trong các phần tử tương ứng
             document.querySelector('.js-day').innerText = String(days).padStart(2, '0');
             document.querySelector('.js-hour').innerText = String(hours).padStart(2, '0');
             document.querySelector('.js-minute').innerText = String(minutes).padStart(2, '0');
             document.querySelector('.js-seconds').innerText = String(seconds).padStart(2, '0');
-    
+
             // Nếu thời gian kết thúc, dừng bộ đếm ngược
             if (timeLeft < 0) {
                 clearInterval(countdown);
@@ -1124,5 +1098,4 @@
             }
         }, 1000); // Cập nhật mỗi giây (1000 milliseconds)
     </script>
-    
 @endpush

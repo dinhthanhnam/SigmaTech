@@ -113,6 +113,8 @@ Route::prefix('cart')->group( function() {
   Route::delete('/{product_type}/{product_id}', [CartController::class, 'remove'])->name('cart.remove');
   Route::patch('/update-bulk', [CartController::class, 'updateBulkQuantity'])->name('cart.updateBulkQuantity');
   Route::get('/count', [CartController::class, 'cartCount'])->name('cart.count');
+  Route::post('/buynow', [CartController::class, 'buynow'])->name('buynow');
+
 });
 
 //order

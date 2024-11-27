@@ -79,131 +79,151 @@
                     <div class="product-spec-group mb-4 font-300">
                         <h2 class="title" style="font-size: 20px;text-align: center;font-weight: 700;margin-bottom: 10px;">
                             THÔNG SỐ KỸ THUẬT</h2>
-                            <div class="item-content position-relative">
-                                <table style="width: 100.0%;" border="1" width="100%">
-                                    <tbody>
-                                        <tr>
-                                            <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
-                                                <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                                        <strong><span style="line-height: 115%; color: black;">Hãng sản xuất</span></strong>
-                                                    </span>
-                                                </p>
-                                            </td>
-                                            <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
-                                                <p style="text-align: center;">
-                                                    <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                                        <strong>
-                                                            <a href="https://www.anphatpc.com.vn/gaminggear-asus_dm1058.html">{{ $brand }}</a>
-                                                        </strong>
-                                                    </span>
-                                                </p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
-                                                <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                                        <strong><span style="line-height: 115%; color: black;">Tên sản phẩm</span></strong>
-                                                    </span>
-                                                </p>
-                                            </td>
-                                            <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
-                                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                                    <a href="https://www.anphatpc.com.vn/gaminggear-asus-rog-strix-g16-g614ji-n4125w.html" target="_blank">{{ $name }}</a>
+                        <div class="item-content position-relative">
+                            <table style="width: 100.0%;" border="1" width="100%">
+                                <tbody>
+                                    <tr>
+                                        <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                                            <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
+                                                    <strong><span style="line-height: 115%; color: black;">Hãng sản
+                                                            xuất</span></strong>
                                                 </span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
-                                                <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                                        <strong><span style="line-height: 115%; color: black;">Loại thiết bị</span></strong>
-                                                    </span>
-                                                </p>
-                                            </td>
-                                            <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $device_type }}</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
-                                                <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                                        <strong><span style="line-height: 115%; color: black;">Kết nối</span></strong>
-                                                    </span>
-                                                </p>
-                                            </td>
-                                            <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $connectivity }}</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
-                                                <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                                        <strong><span style="line-height: 115%; color: black;">Tính năng</span></strong>
-                                                    </span>
-                                                </p>
-                                            </td>
-                                            <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $features }}</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
-                                                <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                                        <strong><span style="line-height: 115%; color: black;">Chất liệu</span></strong>
-                                                    </span>
-                                                </p>
-                                            </td>
-                                            <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $material }}</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
-                                                <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                                        <strong><span style="line-height: 115%; color: black;">Trọng lượng</span></strong>
-                                                    </span>
-                                                </p>
-                                            </td>
-                                            <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $weight }}</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
-                                                <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                                        <strong><span style="line-height: 115%; color: black;">Nguồn cung cấp</span></strong>
-                                                    </span>
-                                                </p>
-                                            </td>
-                                            <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $power_source }}</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
-                                                <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                                        <strong><span style="line-height: 115%; color: black;">Cổng kết nối</span></strong>
-                                                    </span>
-                                                </p>
-                                            </td>
-                                            <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $ports }}</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
-                                                <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                                        <strong><span style="line-height: 115%; color: black;">Phụ kiện đi kèm</span></strong>
-                                                    </span>
-                                                </p>
-                                            </td>
-                                            <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $accessories }}</span>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            
+                                            </p>
+                                        </td>
+                                        <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
+                                            <p style="text-align: center;">
+                                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
+                                                    <strong>
+                                                        <a
+                                                            href="https://www.anphatpc.com.vn/gaminggear-asus_dm1058.html">{{ $brand }}</a>
+                                                    </strong>
+                                                </span>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                                            <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
+                                                    <strong><span style="line-height: 115%; color: black;">Tên sản
+                                                            phẩm</span></strong>
+                                                </span>
+                                            </p>
+                                        </td>
+                                        <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
+                                            <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
+                                                <a href="https://www.anphatpc.com.vn/gaminggear-asus-rog-strix-g16-g614ji-n4125w.html"
+                                                    target="_blank">{{ $name }}</a>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                                            <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
+                                                    <strong><span style="line-height: 115%; color: black;">Loại thiết
+                                                            bị</span></strong>
+                                                </span>
+                                            </p>
+                                        </td>
+                                        <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
+                                            <span
+                                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $device_type }}</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                                            <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
+                                                    <strong><span style="line-height: 115%; color: black;">Kết
+                                                            nối</span></strong>
+                                                </span>
+                                            </p>
+                                        </td>
+                                        <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
+                                            <span
+                                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $connectivity }}</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                                            <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
+                                                    <strong><span style="line-height: 115%; color: black;">Tính
+                                                            năng</span></strong>
+                                                </span>
+                                            </p>
+                                        </td>
+                                        <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
+                                            <span
+                                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $features }}</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                                            <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
+                                                    <strong><span style="line-height: 115%; color: black;">Chất
+                                                            liệu</span></strong>
+                                                </span>
+                                            </p>
+                                        </td>
+                                        <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
+                                            <span
+                                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $material }}</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                                            <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
+                                                    <strong><span style="line-height: 115%; color: black;">Trọng
+                                                            lượng</span></strong>
+                                                </span>
+                                            </p>
+                                        </td>
+                                        <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
+                                            <span
+                                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $weight }}</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                                            <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
+                                                    <strong><span style="line-height: 115%; color: black;">Nguồn cung
+                                                            cấp</span></strong>
+                                                </span>
+                                            </p>
+                                        </td>
+                                        <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
+                                            <span
+                                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $power_source }}</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                                            <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
+                                                    <strong><span style="line-height: 115%; color: black;">Cổng kết
+                                                            nối</span></strong>
+                                                </span>
+                                            </p>
+                                        </td>
+                                        <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
+                                            <span
+                                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $ports }}</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                                            <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
+                                                    <strong><span style="line-height: 115%; color: black;">Phụ kiện đi
+                                                            kèm</span></strong>
+                                                </span>
+                                            </p>
+                                        </td>
+                                        <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
+                                            <span
+                                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $accessories }}</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
 
                         <a href="javascript:void(0)" class="blue item-button" data-fancybox="" data-src="#pro-spec"> XEM
                             THÊM THÔNG SỐ <i class="fa fa-angle-double-down"></i></a>
@@ -212,7 +232,7 @@
 
                 <div class="pro-info-center">
                     <h1 class="pro-name js-product-name">{{ $name }}
-                        {{ $connectivity }} | {{$ports}}
+                        {{ $connectivity }} | {{ $ports }}
                     </h1>
                     <div style="border-bottom: 1px solid #edeef2;margin-bottom: 7px;padding-bottom: 3px;font-size: 13px;">
                         <span>
@@ -257,7 +277,7 @@
                             <i class="fa fa-check-circle"></i>Phụ kiện đi kèm: {{ $accessories }}
                         </span>
                     </div>
-                    
+
 
                     <p><a href="javascript:void(0)" id="js-viewmore-summary" class="red">&lt; Thu gọn</a></p>
                     <div class="pro_info-price-container">
@@ -301,17 +321,10 @@
                         </b>
                     </div>
 
-                    <div class="pro-variant-container">
-                        <div class="variant-item" id="new-config-holder">
-                            <div class="list items-variant items-variant-noSlider d-flex flex-wrap"></div>
-                        </div>
-                    </div>
-
-                    <div class="pro-special-offer-container"></div>
                     <br>
                     <div class="pro-button-container d-flex flex-wrap text-center justify-content-between">
-                        <a href="javascript:void(0)" class="w-100 btn-buyNow js-buy-now"
-                            onclick="addConfigToShoppingCart(49891,0,1,'/cart')">
+                        <a href="javascript:void(0)" class="w-49 btn-buyNow js-buy-now"
+                            onclick="document.getElementById('buyNowForm').submit();">
                             <b class="d-block text-18 font-500">ĐẶT MUA NGAY</b>
                             <span class="text-12 d-block">Nhanh chóng, thuận tiện</span>
                         </a>
@@ -328,16 +341,15 @@
                             <input type="hidden" name="product_name" value="{{ $name }}">
                             <input type="hidden" name="quantity" value="1" min="1">
                         </form>
-                        <a href="javascript:void(0)" class="btn-payinstall order-0 js-buy-tragop"
-                            onclick="addConfigToShoppingCart(49891,0,1,'payinstall');">
-                            <b class="d-block text-18 font-500">MUA TRẢ GÓP</b>
-                            <span class="text-12 d-block">Thẻ tín dụng, Visa, Master</span>
-                        </a>
+                        <form id="buyNowForm" action="{{ route('buynow') }}" method="POST" style="display: none;">
+                            @csrf
+                            <input type="hidden" name="product_id" value="{{ $media_id }}">
+                            <input type="hidden" name="product_type" value="media">
+                            <input type="hidden" name="product_name" value="{{ $name }}">
+                            <input type="hidden" name="quantity" value="1" min="1">
+                        </form>
                     </div>
-                    <p class="blue icon-payment-container">
-                        <b>Chấp nhận thanh toán:</b>
-                        <i class="icon icon-payment"></i>
-                    </p>
+
                 </div>
                 <div class="product-detail-info-right">
                     <!-- kho hàng -->
@@ -434,7 +446,8 @@
                             <tr>
                                 <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
                                     <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                            <strong><span style="line-height: 115%; color: black;">Hãng sản xuất</span></strong>
+                                            <strong><span style="line-height: 115%; color: black;">Hãng sản
+                                                    xuất</span></strong>
                                         </span>
                                     </p>
                                 </td>
@@ -442,7 +455,8 @@
                                     <p style="text-align: center;">
                                         <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
                                             <strong>
-                                                <a href="https://www.anphatpc.com.vn/gaminggear-asus_dm1058.html">{{ $brand }}</a>
+                                                <a
+                                                    href="https://www.anphatpc.com.vn/gaminggear-asus_dm1058.html">{{ $brand }}</a>
                                             </strong>
                                         </span>
                                     </p>
@@ -451,25 +465,29 @@
                             <tr>
                                 <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
                                     <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                            <strong><span style="line-height: 115%; color: black;">Tên sản phẩm</span></strong>
+                                            <strong><span style="line-height: 115%; color: black;">Tên sản
+                                                    phẩm</span></strong>
                                         </span>
                                     </p>
                                 </td>
                                 <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
                                     <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                        <a href="https://www.anphatpc.com.vn/gaminggear-asus-rog-strix-g16-g614ji-n4125w.html" target="_blank">{{ $name }}</a>
+                                        <a href="https://www.anphatpc.com.vn/gaminggear-asus-rog-strix-g16-g614ji-n4125w.html"
+                                            target="_blank">{{ $name }}</a>
                                     </span>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
                                     <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                            <strong><span style="line-height: 115%; color: black;">Loại thiết bị</span></strong>
+                                            <strong><span style="line-height: 115%; color: black;">Loại thiết
+                                                    bị</span></strong>
                                         </span>
                                     </p>
                                 </td>
                                 <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                    <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $device_type }}</span>
+                                    <span
+                                        style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $device_type }}</span>
                                 </td>
                             </tr>
                             <tr>
@@ -480,73 +498,86 @@
                                     </p>
                                 </td>
                                 <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                    <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $connectivity }}</span>
+                                    <span
+                                        style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $connectivity }}</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
                                     <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                            <strong><span style="line-height: 115%; color: black;">Tính năng</span></strong>
+                                            <strong><span style="line-height: 115%; color: black;">Tính
+                                                    năng</span></strong>
                                         </span>
                                     </p>
                                 </td>
                                 <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                    <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $features }}</span>
+                                    <span
+                                        style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $features }}</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
                                     <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                            <strong><span style="line-height: 115%; color: black;">Chất liệu</span></strong>
+                                            <strong><span style="line-height: 115%; color: black;">Chất
+                                                    liệu</span></strong>
                                         </span>
                                     </p>
                                 </td>
                                 <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                    <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $material }}</span>
+                                    <span
+                                        style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $material }}</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
                                     <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                            <strong><span style="line-height: 115%; color: black;">Trọng lượng</span></strong>
+                                            <strong><span style="line-height: 115%; color: black;">Trọng
+                                                    lượng</span></strong>
                                         </span>
                                     </p>
                                 </td>
                                 <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                    <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $weight }}</span>
+                                    <span
+                                        style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $weight }}</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
                                     <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                            <strong><span style="line-height: 115%; color: black;">Nguồn cung cấp</span></strong>
+                                            <strong><span style="line-height: 115%; color: black;">Nguồn cung
+                                                    cấp</span></strong>
                                         </span>
                                     </p>
                                 </td>
                                 <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                    <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $power_source }}</span>
+                                    <span
+                                        style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $power_source }}</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
                                     <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                            <strong><span style="line-height: 115%; color: black;">Cổng kết nối</span></strong>
+                                            <strong><span style="line-height: 115%; color: black;">Cổng kết
+                                                    nối</span></strong>
                                         </span>
                                     </p>
                                 </td>
                                 <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                    <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $ports }}</span>
+                                    <span
+                                        style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $ports }}</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
                                     <p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                            <strong><span style="line-height: 115%; color: black;">Phụ kiện đi kèm</span></strong>
+                                            <strong><span style="line-height: 115%; color: black;">Phụ kiện đi
+                                                    kèm</span></strong>
                                         </span>
                                     </p>
                                 </td>
                                 <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                    <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $accessories }}</span>
+                                    <span
+                                        style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $accessories }}</span>
                                 </td>
                             </tr>
                         </tbody>

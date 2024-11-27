@@ -358,20 +358,12 @@
                             Bảo hành: 24 tháng (Pin 12 Tháng) Quốc Tế, Đổi mới trong 15 ngày
                         </b>
                     </div>
-
-                    <div class="pro-variant-container">
-                        <div class="variant-item" id="new-config-holder">
-                            <div class="list items-variant items-variant-noSlider d-flex flex-wrap"></div>
-                        </div>
-                    </div>
-
-                    <div class="pro-special-offer-container"></div>
                     <br>
                     <div class="pro-button-container d-flex flex-wrap text-center justify-content-between">
-                        <a href="javascript:void(0)" class="w-100 btn-buyNow js-buy-now"
-                            onclick="addConfigToShoppingCart(49891,0,1,'/cart')">
-                            <b class="d-block text-18 font-500">ĐẶT MUA NGAY</b>
-                            <span class="text-12 d-block">Nhanh chóng, thuận tiện</span>
+                        <a href="javascript:void(0)" class="w-49 btn-buyNow js-buy-now"
+                            onclick="document.getElementById('buyNowForm').submit();">
+                            <b class="d-block text-18 font-500"> ĐẶT MUA NGAY </b>
+                            <span class="text-12 d-block"> Nhanh chóng, thuận tiện </span>
                         </a>
                         <a href="javascript:void(0)" class="btn-addCart blue order-1 js-addCart"
                             onclick="document.getElementById('addCartForm').submit();">
@@ -386,16 +378,14 @@
                             <input type="hidden" name="product_name" value="{{ $name }}">
                             <input type="hidden" name="quantity" value="1" min="1">
                         </form>
-                        <a href="javascript:void(0)" class="btn-payinstall order-0 js-buy-tragop"
-                            onclick="addConfigToShoppingCart(49891,0,1,'payinstall');">
-                            <b class="d-block text-18 font-500">MUA TRẢ GÓP</b>
-                            <span class="text-12 d-block">Thẻ tín dụng, Visa, Master</span>
-                        </a>
+                        <form id="buyNowForm" action="{{ route('buynow') }}" method="POST" style="display: none;">
+                            @csrf
+                            <input type="hidden" name="product_id" value="{{ $gpu_id }}">
+                            <input type="hidden" name="product_type" value="gpu">
+                            <input type="hidden" name="product_name" value="{{ $name }}">
+                            <input type="hidden" name="quantity" value="1" min="1">
+                        </form>
                     </div>
-                    <p class="blue icon-payment-container">
-                        <b>Chấp nhận thanh toán:</b>
-                        <i class="icon icon-payment"></i>
-                    </p>
                 </div>
                 <div class="product-detail-info-right">
                     <!-- kho hàng -->
