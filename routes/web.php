@@ -94,6 +94,9 @@ Route::middleware(['auth', AuthAdmin::class])->prefix('admin')->group(function (
   Route::get('/new-product', [ProductController::class, 'showAddProduct'])->name('admin.new-product');
   Route::post('/new-product', [ProductController::class, 'saveProduct'])->name('admin.save-product');
   Route::get('/order', [AdminOrderController::class, 'showAllOrders'])->name('admin.show-order');
+  Route::get('/order/{id}', [AdminOrderController::class, 'getOrderDetails']);
+  Route::post('/order/{id}', [AdminOrderController::class, 'updateOrder'])->name('admin.order-update');
+
   Route::get('/sale', [AdminSaleController::class, 'index'])->name('admin.show-sale');
   Route::get('/slider', [SliderController::class, 'showAllSliders'])->name('admin.show-slider');
   Route::get('/new-slider', [SliderController::class, 'showAddSlider'])->name('admin.new-slider');

@@ -1,4 +1,7 @@
 @extends('admin.app')
+@push('styles')
+    <link rel="stylesheet" href="{{ asset('assets/css/cart.css') }}">
+@endpush
 
 @section('content')
     <main class="app-content">
@@ -28,48 +31,63 @@
                                         href="{{ route('admin.new-product') }}" title="Thêm"
                                         style = "width: 150px; height: 50px; font-size: 14px;"
                                         onclick="handleCreateProductClick(event)">
-                                        <i class="fas fa-plus mr-2"></i> Tạo mới sản phẩm
+                                        <i class="fas fa-plus mr-2"></i> Tạo đơn hàng
                                     </a>
                                 </div>
                             </div>
                             <table class="table table-hover table-bordered" id="sampleTable">
                                 <thead>
                                     <tr>
-                                        <th width="10"><input type="checkbox" id="all"></th>
-                                        <th width="10">ID</th>
-                                        <th width="250">Khách hàng</th>
-                                        <th width="300">Địa chỉ</th>
-                                        <th width="250">Tổng tiền</th>
-                                        <th width="50">Tình trạng</th>
+                                        <th width="100">Tài khoản</th>
+                                        <th width="160">Thời gian đặt hàng</th>
+                                        <th width="160">Nguời nhận</th>
+                                        <th width="100">Số điện thoại</th>
+                                        <th width="300">Địa chỉ giao hàng</th>
+                                        <th width="230">Phương thức thanh toán</th>
+                                        <th width="150">Lưu ý</th>
+                                        <th width="130">Tổng tiền</th>
+                                        <th width="150">Trạng thái</th>
                                         <th>Chức năng</th>
                                         <!-- Thêm các cột khác nếu cần -->
                                     </tr>
                                 </thead>
-                                <tbody id="product-list">
+                                <tbody>
                                     @foreach ($orders as $order)
-                                        <tr>
-                                            <td><input type="checkbox"></td>
-                                            <td>{{ $order->id }}</td>
-                                            <td>{{ $order->name }}</td>
-                                            <td><img src="{{ $product->attributes->firstWhere('name', 'Image1')->pivot->value ?? 'N/A' }}"
-                                                    alt="{{ $product->name }}" width="150"></td>
-                                            <td>{{ $product->categories->name ?? 'N/A' }}</td>
-                                            </td>
-                                            <td>{{ $product->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A' }}
-                                            </td>
-                                            <td>{{ $product->attributes->firstWhere('name', 'Model')->pivot->value ?? 'N/A' }}
-                                            </td>
-                                            <td>{{ number_format($product->attributes->firstWhere('name', 'Price')->pivot->value ?? 'N/A', 0, ',', '.') }}
-                                                đ
-                                            </td>
-                                            <td>{{ number_format($product->attributes->firstWhere('name', 'Deal Price')->pivot->value ?? 'N/A', 0, ',', '.') }}
-                                                đ
-                                            </td>
+                                        <tr class="order-row" data-order-id="{{ $order->id }}">
+                                            <td>{{ $order->user->name }}</td>
+                                            <td>{{ $order->created_at }}</td>
+                                            <td>{{ $order->customer_name }}</td>
+                                            <td>{{ $order->phone_number }}</td>
+                                            <td> {{ $order->shipping_address }} </td>
+                                            @if ($order->payment_method === 'cod')
+                                                <td>Thanh toán khi nhận hàng</td>
+                                            @elseif ($order->payment_method === 'banking')
+                                                <td>Chuyển khoản ngân hàng</td>
+                                            @endif
+
+                                            @if ($order->note === null)
+                                                <td>Không có</td>
+                                            @else
+                                                <td>{{ $order->note }}</td>
+                                            @endif
+                                            <td>{{ number_format($order->total_price, 0, ',', '.') }}
+                                                đ</td>
+                                            @if ($order->status === '0')
+                                                <td><span class="badge bg-secondary" style="color: white">Chờ xác
+                                                        nhận</span></td>
+                                            @elseif ($order->status === '1')
+                                                <td><span class="badge bg-info">Đang vận chuyển</span></td>
+                                            @elseif ($order->status === '2')
+                                                <td><span class="badge bg-warning">Đã thanh toán, chờ vận chuyển</span></td>
+                                            @elseif ($order->status === '3')
+                                                <td><span class="badge bg-success">Hoàn thành</span></td>
+                                            @elseif ($order->status === '4')
+                                                <td><span class="badge bg-danger">Đã hủy</span></td>
+                                            @endif
                                             <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa"
                                                     onclick="myFunction(this)"><i class="fas fa-trash-alt"></i>
                                                 </button>
-                                                <button class="btn btn-primary btn-sm edit" type="button" title="Sửa"
-                                                    id="show-emp" data-toggle="modal" data-target="#ModalUP"><i
+                                                <button class="btn btn-primary btn-sm edit" type="button" title="Sửa"><i
                                                         class="fas fa-edit"></i></button>
 
                                             </td>
@@ -77,80 +95,135 @@
                                     @endforeach
                                 </tbody>
                             </table>
+                            <div class="pagination-container">
+                                {{ $orders->links('pagination::bootstrap-5') }}
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    <div class="modal fade" id="ModalUP" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static"
-        data-keyboard="false">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="form-group  col-md-12">
-                            <span class="thong-tin-thanh-toan">
-                                <h5>Chỉnh sửa thông tin sản phẩm cơ bản</h5>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-md-6">
-                            <label class="control-label">Mã sản phẩm </label>
-                            <input class="form-control" type="number" value="71309005">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label class="control-label">Tên sản phẩm</label>
-                            <input class="form-control" type="text" required value="Bàn ăn gỗ Theresa">
-                        </div>
-                        <div class="form-group  col-md-6">
-                            <label class="control-label">Số lượng</label>
-                            <input class="form-control" type="number" required value="20">
-                        </div>
-                        <div class="form-group col-md-6 ">
-                            <label for="exampleSelect1" class="control-label">Tình trạng sản phẩm</label>
-                            <select class="form-control" id="exampleSelect1">
-                                <option>Còn hàng</option>
-                                <option>Hết hàng</option>
-                                <option>Đang nhập hàng</option>
-                            </select>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label class="control-label">Giá bán</label>
-                            <input class="form-control" type="text" value="5.600.000">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="exampleSelect1" class="control-label">Danh mục</label>
-                            <select class="form-control" id="exampleSelect1">
-                                <option>Bàn ăn</option>
-                                <option>Bàn thông minh</option>
-                                <option>Tủ</option>
-                                <option>Ghế gỗ</option>
-                                <option>Ghế sắt</option>
-                                <option>Giường người lớn</option>
-                                <option>Giường trẻ em</option>
-                                <option>Bàn trang điểm</option>
-                                <option>Giá đỡ</option>
-                            </select>
-                        </div>
-                    </div>
-                    <BR>
-                    <a href="#" style="    float: right;
-    font-weight: 600;
-    color: #ea0000;">Chỉnh sửa sản
-                        phẩm
-                        nâng cao</a>
-                    <BR>
-                    <BR>
-                    <button class="btn btn-save" type="button">Lưu lại</button>
-                    <a class="btn btn-cancel" data-dismiss="modal" href="#">Hủy bỏ</a>
-                    <BR>
-                </div>
-                <div class="modal-footer">
-                </div>
-            </div>
-        </div>
-    </div>
 @endsection
+<div style="display: none;" id="orderDetailModal">
+    <div class="order-detail-content">
+        <div id="order-detail"></div>
+    </div>
+</div>
+
+@push('scripts')
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const editButtons = document.querySelectorAll('.btn.edit');
+
+            editButtons.forEach(button => {
+                button.addEventListener('click', function(event) {
+                    // Ngăn sự kiện click lan sang các phần tử cha
+
+
+                    const orderRow = button.closest('.order-row');
+                    const orderId = orderRow.getAttribute('data-order-id');
+
+                    fetch(`/admin/order/${orderId}`)
+                        .then(response => response.json())
+                        .then(data => {
+                            const orderDetailContent = document.getElementById('order-detail');
+
+                            let orderDetailsHtml = `
+                                <ul class="list-group mb-3">
+                                `;
+                            data.order_details.forEach(item => {
+                                orderDetailsHtml += `
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div class="item-image" style="width: 50px;">
+                                        <img src="${item.image}" alt="${item.name}">
+                                    </div>
+                                    <div class="item-info flex-grow-1">
+                                        <strong>${item.name}</strong> x ${item.quantity}
+
+                                    </div>
+                                    <span class="text-danger fw-bold">
+                                        ${item.price} đ
+                                    </span>
+                                </li>
+                                `;
+                            });
+
+                            orderDetailsHtml += '</ul>';
+
+                            orderDetailContent.innerHTML = `
+                                <form id="edit-order-form">
+                                    <p><strong>Người nhận:</strong> <input type="text" class="form-control" name="customer_name" value="${data.customer_name}" /></p>
+                                    <p><strong>Số điện thoại:</strong> <input type="text" class="form-control" name="phone_number" value="${data.phone_number}" /></p>
+                                    <p><strong>Địa chỉ giao hàng:</strong> <textarea class="form-control" name="shipping_address">${data.shipping_address}</textarea></p>
+                                    <p><strong>Phương thức thanh toán:</strong> 
+                                        <select class="form-control" name="payment_method">
+                                            <option value="cod" ${data.payment_method === 'cod' ? 'selected' : ''}>Thanh toán khi nhận hàng</option>
+                                            <option value="banking" ${data.payment_method === 'banking' ? 'selected' : ''}>Chuyển khoản ngân hàng</option>
+                                        </select>
+                                    </p>
+                                    <p><strong>Lưu ý:</strong> <textarea class="form-control" name="note">${data.note || ''}</textarea></p>
+                                    <p><strong>Tổng tiền:</strong> <span id="total-price">${data.total_price} đ</span></p>
+                                    <p><strong>Trạng thái:</strong>
+                                        <select class="form-control" name="status">
+                                            <option value="0" ${data.status === '0' ? 'selected' : ''}>Chờ xác nhận</option>
+                                            <option value="1" ${data.status === '1' ? 'selected' : ''}>Đang vận chuyển</option>
+                                            <option value="2" ${data.status === '2' ? 'selected' : ''}>Đã thanh toán, chờ vận chuyển</option>
+                                            <option value="3" ${data.status === '3' ? 'selected' : ''}>Hoàn thành</option>
+                                            <option value="4" ${data.status === '4' ? 'selected' : ''}>Đã hủy</option>
+                                        </select>
+                                    </p>
+                                    <h4>Chi tiết đơn hàng:</h4>
+                                    ${orderDetailsHtml}
+                                    <div class="mt-3 d-flex justify-content-between">
+                                        <button type="button" class="btn btn-secondary cancel-edit">Hủy</button>
+                                        <button type="submit" class="btn btn-primary save-edit">Lưu</button>
+                                    </div>
+                                </form>
+                            `;
+                            document.getElementById('edit-order-form').addEventListener(
+                                'submit',
+                                function(event) {
+                                    event.preventDefault(); // Ngăn reload trang
+
+                                    const formData = new FormData(event.target);
+
+                                    fetch(`/admin/order/${orderId}`, {
+                                            method: 'POST',
+                                            body: formData,
+                                            headers: {
+                                                'X-CSRF-TOKEN': document.querySelector(
+                                                        'meta[name="csrf-token"]')
+                                                    .content
+                                            }
+                                        })
+                                        .then(response => response.json())
+                                        .then(result => {
+                                            if (result.success) {
+                                                alert('Cập nhật đơn hàng thành công!');
+                                                Fancybox.close();
+                                                location.reload();
+                                            } else {
+                                                alert('Cập nhật thất bại!');
+                                            }
+                                        })
+                                        .catch(error => console.error('Lỗi khi cập nhật:',
+                                            error));
+                                });
+
+                            document.querySelector('.cancel-edit').addEventListener('click',
+                                function() {
+                                    Fancybox.close();
+                                });
+                            // Mở Fancybox
+                            Fancybox.show([{
+                                src: '#orderDetailModal',
+                                type: 'inline'
+                            }]);
+                        })
+                        .catch(error => console.error('Lỗi khi lấy chi tiết đơn hàng:', error));
+                });
+            });
+        });
+    </script>
+@endpush

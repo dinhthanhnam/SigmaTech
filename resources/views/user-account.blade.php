@@ -205,8 +205,8 @@
                             const orderDetailContent = document.getElementById('order-detail');
 
                             let orderDetailsHtml = `
-                            <ul class="list-group mb-3">
-                                `;
+                                <ul class="list-group mb-3">
+                                    `;
                             data.order_details.forEach(item => {
                                 orderDetailsHtml += `
                                 <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -244,7 +244,7 @@
                                         : data.status === '1'
                                         ? '<span class="badge bg-info">Đang vận chuyển</span>'
                                         : data.status === '2'
-                                        ? '<span class="badge bg-warning">Chờ thanh toán</span>'
+                                        ? '<span class="badge bg-warning">Đã thanh toán, chờ vận chuyển</span>'
                                         : data.status === '3'
                                         ? '<span class="badge bg-success">Hoàn thành</span>'
                                         : data.status === '4'

@@ -9,6 +9,10 @@ use App\Models\Laptop;
 use App\Models\CPU;
 use App\Models\Monitor;
 use App\Models\GPU;
+use App\Models\Accessory;
+use App\Models\Cooling;
+use App\Models\Media;
+use App\Models\Gaminggear;
 
 
 class UserController extends Controller
@@ -58,6 +62,26 @@ class UserController extends Controller
                     $monitor = Monitor::where('id', $item->product_id)->with('attributes')->first();
                     $item->image = $monitor->attributes->where('name', 'Image1')->first()->pivot->value; 
                     $item->name = $monitor->name;
+                break;
+                case 'gaminggear':
+                    $gaminggear = Gaminggear::where('id', $item->product_id)->with('attributes')->first();
+                    $item->image = $gaminggear->attributes->where('name', 'Image1')->first()->pivot->value; 
+                    $item->name = $gaminggear->name;
+                break;
+                case 'media':
+                    $media = Media::where('id', $item->product_id)->with('attributes')->first();
+                    $item->image = $media->attributes->where('name', 'Image1')->first()->pivot->value; 
+                    $item->name = $media->name;
+                break;
+                case 'cooling':
+                    $cooling = Cooling::where('id', $item->product_id)->with('attributes')->first();
+                    $item->image = $cooling->attributes->where('name', 'Image1')->first()->pivot->value; 
+                    $item->name = $cooling->name;
+                break;
+                case 'accessory':
+                    $accessory = Accessory::where('id', $item->product_id)->with('attributes')->first();
+                    $item->image = $accessory->attributes->where('name', 'Image1')->first()->pivot->value; 
+                    $item->name = $accessory->name;
                 break;
             }
             return [

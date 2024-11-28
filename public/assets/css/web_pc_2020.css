@@ -852,6 +852,7 @@ header .header-banner .close-banner {
     bottom: 0;
     border: 0;
     width: 95px;
+    height: 38px;
     border-radius: 0 4px 4px 0;
     font-weight: 300;
 }
@@ -1185,6 +1186,7 @@ header .header-banner .close-banner {
     background: #ffe401;
     font-weight: 500;
     width: 85px;
+    height: 45px;
     border: 0;
     position: absolute;
     top: 0;

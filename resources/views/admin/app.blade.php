@@ -4,13 +4,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
     @csrf
     <meta http-equiv="content-language" content="vi" />
     <title>SigmaTech CMS</title>
-   
+
     <link rel="stylesheet" href="{{ asset('assets/css/admin.css') }}" type="text/css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <!-- or -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="icon" type="image/png" href="{{ asset('assets/img/sigmatech-yellow.png') }}">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
@@ -76,8 +81,9 @@
                                 Khuyến mãi</span></a></li>
                     <li><a class="app-menu__item" href="#"><i class='app-menu__icon fa-solid fa-user'></i><span
                                 class="app-menu__label">Quản lý tài khoản</span></a></li>
-                    <li><a class="app-menu__item" href="{{route('admin.show-slider')}}"><i class='app-menu__icon fa-solid fa-sliders'></i><span
-                        class="app-menu__label">Quản lý slider</span></a></li>
+                    <li><a class="app-menu__item" href="{{ route('admin.show-slider') }}"><i
+                                class='app-menu__icon fa-solid fa-sliders'></i><span class="app-menu__label">Quản lý
+                                slider</span></a></li>
                 </ul>
             </aside>
 
@@ -87,7 +93,8 @@
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous"></script>
     @stack('scripts')
     <script>
         //Thời Gian
