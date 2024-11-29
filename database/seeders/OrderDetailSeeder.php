@@ -18,28 +18,47 @@ class OrderDetailSeeder extends Seeder
     {
         $orders = Order::all();
         $laptops = Laptop::with('attributes')->get();
+
+        if ($orders->isEmpty() || $laptops->isEmpty()) {
+            // Dừng nếu không có orders hoặc laptops
+            return;
+        }
+
         foreach ($orders as $order) {
-            $totalOrderPrice = 0;
-            for($i = 0; $i < rand(1,3) ; $i++) {
+            $totalOrderPrice = 0; // Tổng giá trị đơn hàng
+            $orderDetails = []; // Tập hợp các bản ghi chi tiết đơn hàng
+
+            for ($i = 0; $i < rand(1, 5); $i++) {
                 $randomLaptop = $laptops->random();
-                $dealPriceAttribute = $randomLaptop->attributes->firstWhere('name','Deal Price');
-                $price = $dealPriceAttribute ? (int) $dealPriceAttribute->pivot->value : 42000000;
+
+                // Lấy giá "Deal Price" nếu có
+                $dealPriceAttribute = $randomLaptop->attributes->firstWhere('name', 'Deal Price');
+                $price = $dealPriceAttribute ? (int)$dealPriceAttribute->pivot->value : 42000000;
+
                 $quantity = rand(1, 3);
-                $totalPrice = $price * $quantity; // Tính tổng giá trị
+                $totalPrice = $price * $quantity;
+
+                // Thêm vào tổng giá trị đơn hàng
                 $totalOrderPrice += $totalPrice;
-                DB::table('order_details')->insert([
+
+                // Tạo bản ghi chi tiết đơn hàng
+                $orderDetails[] = [
                     'order_id' => $order->id,
                     'product_type' => 'laptops',
-                    'product_id' => $randomLaptop->id,  // Sử dụng ID của laptop đã chọn
+                    'product_id' => $randomLaptop->id,
                     'quantity' => $quantity,
                     'price' => $totalPrice,
                     'created_at' => $order->created_at,
                     'updated_at' => $order->updated_at,
                     'deleted_at' => null,
-                ]);
-            $order->total_price = $totalOrderPrice;
-            $order->save();
+                ];
             }
+
+            // Thực hiện ghi dữ liệu chi tiết đơn hàng
+            DB::table('order_details')->insert($orderDetails);
+
+            // Cập nhật tổng giá trị đơn hàng
+            $order->update(['total_price' => $totalOrderPrice]);
         }
     }
 }

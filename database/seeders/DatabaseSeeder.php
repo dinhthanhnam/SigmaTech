@@ -55,10 +55,14 @@ class DatabaseSeeder extends Seeder
         
         $this->call(CoolingSeeder::class);
 
-        $this->call(AccessorySeeder::class);  
+        $this->call(AccessorySeeder::class);
 
-        // $this->call(OrderSeeder::class);   
+        $this->call(UserSeeder::class);
 
-        // $this->call(OrderDetailSeeder::class);     
+        $this->call(OrderSeeder::class);   
+
+        $this->call(OrderDetailSeeder::class);
+        
+        
     }
 }
