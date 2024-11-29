@@ -30,9 +30,9 @@ class OrderSeeder extends Seeder
             $gender = rand(0, 1); // Random giới tính (0: Nữ, 1: Nam)
             $phoneNumber = '03' . rand(10000000, 99999999); // Random số điện thoại 10 chữ số
             $shippingAddress = 'Địa chỉ số ' . rand(1, 100) . ', Hà Nội'; // Địa chỉ giả lập
-            $paymentMethods = ['cod', 'QR']; // Các phương thức thanh toán
+            $paymentMethods = ['cod', 'banking']; // Các phương thức thanh toán
             $paymentMethod = $paymentMethods[array_rand($paymentMethods)]; // Chọn random 1 phương thức thanh toán
-            $status = 3; // Random trạng thái từ 1 đến 5
+            $status = rand(1, 5); // Random trạng thái từ 1 đến 5
             $totalPrice = rand(50, 1000) * 1000; // Random tổng giá trị từ 50.000 đến 1.000.000
 
             $insertData[] = [

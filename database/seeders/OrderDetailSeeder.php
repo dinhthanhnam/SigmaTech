@@ -44,7 +44,7 @@ class OrderDetailSeeder extends Seeder
                 // Tạo bản ghi chi tiết đơn hàng
                 $orderDetails[] = [
                     'order_id' => $order->id,
-                    'product_type' => 'laptops',
+                    'product_type' => 'laptop',
                     'product_id' => $randomLaptop->id,
                     'quantity' => $quantity,
                     'price' => $totalPrice,
