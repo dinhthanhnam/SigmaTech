@@ -23,6 +23,7 @@
     $laptop_ssd = $product->attributes->firstWhere('name', '[Laptop] Ổ cứng')?->pivot->value ?? 'N/A';
     $laptop_os = $product->attributes->firstWhere('name', '[Laptop] OS')?->pivot->value ?? 'N/A';
     $laptop_color = $product->attributes->firstWhere('name', '[Laptop] Màu sắc')->pivot->value ?? 'N/A';
+    $thumbnail = $product->attributes->firstWhere('name', 'Thumbnail')?->pivot->value ?? 'N/A';
 
     //flash sale
     $saleprice = $product->attributes->firstWhere('name', 'Sale Price')->pivot->value;
@@ -39,7 +40,7 @@
 @endphp
 <div class="deal-item">
     <a href="{{ url("$product->link") }}" class="p-name" target="_blank">
-        <img src="{{ $product->attributes->firstWhere('name', 'Thumbnail')?->pivot->value ?? 'N/A' }}" class="mx-auto"
+        <img src="{{ url("$thumbnail") }}" class="mx-auto"
             target="_blank" alt="{{ $name }}">
     </a>
 

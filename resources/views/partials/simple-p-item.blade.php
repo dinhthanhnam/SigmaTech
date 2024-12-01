@@ -23,6 +23,7 @@
     $laptop_ram = $product->attributes->firstWhere('name', '[Laptop] Dung lượng RAM')?->pivot->value ?? 'N/A';
     $laptop_ssd = $product->attributes->firstWhere('name', '[Laptop] Ổ cứng')?->pivot->value ?? 'N/A';
     $laptop_os = $product->attributes->firstWhere('name', '[Laptop] OS')?->pivot->value ?? 'N/A';
+    $thumbnail = $product->attributes->firstWhere('name', 'Thumbnail')?->pivot->value ?? 'N/A';
     //biến riêng, cho linh kiện
 @endphp
 @php
@@ -36,7 +37,7 @@
 @endphp
 <div class="p-item js-p-item summary-loaded">
     <a href="{{ url("$product->link") }}" class="p-img">
-        <img src="{{ $product->attributes->firstWhere('name', 'Thumbnail')?->pivot->value ?? 'N/A' }}"
+        <img src="{{ url("$thumbnail") }}"
             alt="{{ $name }} " class="fit-img">
         <span class="p-icon-holder"><!-- // icon promotion --></span>
     </a>
