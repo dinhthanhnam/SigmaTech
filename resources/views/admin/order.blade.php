@@ -108,6 +108,7 @@
 <div style="display: none;" id="orderDetailModal">
     <div class="order-detail-content">
         <div id="order-detail"></div>
+
     </div>
 </div>
 
@@ -120,7 +121,7 @@
                 button.addEventListener('click', function(event) {
                     // Ngăn sự kiện click lan sang các phần tử cha
 
-
+                    event.stopPropagation();
                     const orderRow = button.closest('.order-row');
                     const orderId = orderRow.getAttribute('data-order-id');
 
@@ -176,8 +177,8 @@
                                     <h4>Chi tiết đơn hàng:</h4>
                                     ${orderDetailsHtml}
                                     <div class="mt-3 d-flex justify-content-between">
-                                        <button type="button" class="btn btn-secondary cancel-edit">Hủy</button>
-                                        <button type="submit" class="btn btn-primary save-edit">Lưu</button>
+                                        <button type="button" class="btn btn-secondary cancel-edit">Hủy bỏ</button>
+                                        <button type="submit" class="btn btn-primary save-edit">Lưu thay đổi</button>
                                     </div>
                                 </form>
                             `;
@@ -200,6 +201,7 @@
                                         .then(response => response.json())
                                         .then(result => {
                                             if (result.success) {
+                                                console.log(formData);
                                                 alert('Cập nhật đơn hàng thành công!');
                                                 Fancybox.close();
                                                 location.reload();

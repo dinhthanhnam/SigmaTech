@@ -91,11 +91,14 @@ Route::get('account/order/{id}', [UserController::class, 'getOrderDetails']);
 Route::middleware(['auth', AuthAdmin::class])->prefix('admin')->group(function () {
   Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.index');
   Route::get('/product', [ProductController::class, 'showAllProducts'])->name('admin.show-product');
+  Route::get('/product/{type}/{id}', [ProductController::class, 'getProductDetails']);
+  Route::post('/product/{type}/{id}', [ProductController::class, 'updateProduct']);
   Route::get('/new-product', [ProductController::class, 'showAddProduct'])->name('admin.new-product');
   Route::post('/new-product', [ProductController::class, 'saveProduct'])->name('admin.save-product');
+  
   Route::get('/order', [AdminOrderController::class, 'showAllOrders'])->name('admin.show-order');
   Route::get('/order/{id}', [AdminOrderController::class, 'getOrderDetails']);
-  Route::post('/order/{id}', [AdminOrderController::class, 'updateOrder'])->name('admin.order-update');
+  Route::post('/order/{id}', [AdminOrderController::class, 'updateOrder']);
 
   Route::get('/sale', [AdminSaleController::class, 'index'])->name('admin.show-sale');
   Route::get('/slider', [SliderController::class, 'showAllSliders'])->name('admin.show-slider');

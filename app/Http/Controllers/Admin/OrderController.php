@@ -23,7 +23,7 @@ class OrderController extends Controller
         return view('admin.order', compact('orders'));
     }
     public function getOrderDetails($id)
-  {
+    {
     $order = Order::with('orderDetails')->find($id);
     if (!$order) {
         return response()->json(['error' => 'Order not found'], 404);

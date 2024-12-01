@@ -35,7 +35,6 @@
                             <table class="table table-hover table-bordered" id="resultTable">
                                 <thead>
                                     <tr>
-                                        {{-- <th width="10"><input type="checkbox" id="all"></th> --}}
                                         <th width="10">Mã</th>
                                         <th width="250">Tên sản phẩm</th>
                                         <th width="300">Hình ảnh</th>
@@ -50,7 +49,38 @@
                                 </thead>
                                 <tbody id="product-list">
                                     @foreach ($paginatedProducts as $product)
-                                        <tr>
+                                        @php
+                                            $product_type = '';
+                                            $category_id = $product->category_id;
+                                            $pcpart_type =
+                                                $product->attributes->firstWhere('name', 'Loại linh kiện')->pivot
+                                                    ->value ?? 'N/A';
+                                            $deviceType =
+                                                $product->attributes->firstWhere('name', '[GG] Loại thiết bị')->pivot
+                                                    ->value ?? 'N/A';
+                                            if ($category_id == 1 || $category_id == 2) {
+                                                $product_type = 'laptops';
+                                            } elseif ($category_id == 4) {
+                                                $product_type = 'monitors';
+                                            } elseif ($pcpart_type == 'cpu') {
+                                                $product_type = 'cpu';
+                                            } elseif ($pcpart_type == 'gpu') {
+                                                $product_type = 'gpu';
+                                            } elseif ($category_id == 5) {
+                                                $product_type = 'gaming-gear';
+                                            } elseif ($category_id == 6 && $deviceType == 'headphone') {
+                                                $product_type = 'gaming-gear';
+                                            } elseif ($category_id == 6) {
+                                                $product_type = 'media';
+                                            } elseif ($category_id == 7) {
+                                                $product_type = 'cooling';
+                                            } elseif ($category_id == 8) {
+                                                $product_type = 'accessories';
+                                            }
+
+                                        @endphp
+                                        <tr class="product-row" data-product-id="{{ $product->id }}"
+                                            data-product-type="{{ $product_type }}">
                                             <td>{{ $product->id }}</td>
                                             <td>{{ $product->name }}</td>
                                             <td><img src="{{ $product->attributes->firstWhere('name', 'Image1')->pivot->value ?? 'N/A' }}"
@@ -74,8 +104,8 @@
                                                     data-table="{{ $product->data_table }}"><i
                                                         class="fas fa-trash-alt"></i>
                                                 </button>
-                                                <button class="btn btn-primary btn-sm edit" type="button" title="Sửa"
-                                                    data-toggle="modal" data-target="#ModalUP"><i class="fas fa-edit"></i>
+                                                <button class="btn btn-primary btn-sm edit" type="button" title="Sửa"><i
+                                                        class="fas fa-edit"></i>
                                                 </button>
                                             </td>
                                         </tr>
@@ -111,8 +141,191 @@
         </div>
     </main>
 @endsection
+<div style="display: none;" id="product-edit-modal">
+    <div id="product-detail" class="product-form-container">
+        <!-- Nội dung form sẽ được chèn vào đây -->
+    </div>
+</div>
+
+
 
 @push('scripts')
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const editButtons = document.querySelectorAll('.btn.edit');
+
+            editButtons.forEach(button => {
+                button.addEventListener('click', function(event) {
+                    // Ngăn sự kiện click lan sang các phần tử cha
+                    event.stopPropagation();
+
+                    const productRow = button.closest('.product-row');
+                    const productId = productRow.getAttribute('data-product-id');
+                    const productType = productRow.getAttribute('data-product-type');
+
+                    // Gọi API để lấy dữ liệu sản phẩm
+                    fetch(`/admin/product/${productType}/${productId}`)
+                        .then(response => response.json())
+                        .then(data => {
+                            const productDetailContent = document.getElementById(
+                                'product-detail');
+                            let formAttributes = `<div class="row">`;
+
+                            data.attributes.forEach(attribute => {
+                                let inputField = '';
+
+                                // Kiểm tra loại attribute và hiển thị theo kiểu tương ứng
+                                if (attribute.name === 'Brand') {
+                                    inputField =
+                                        `<select class="form-control" name="${convertString(attribute.name)}">
+                                            <option value="Asus" ${attribute.pivot.value === 'Asus' ? 'selected' : ''}>Asus</option>
+                                            <option value="Lenovo" ${attribute.pivot.value === 'Lenovo' ? 'selected' : ''}>Lenovo</option>   
+                                            <option value="Acer" ${attribute.pivot.value === 'Acer' ? 'selected' : ''}>Acer</option>    
+                                            <option value="Dell" ${attribute.pivot.value === 'Dell' ? 'selected' : ''}>Dell</option>    
+                                            <option value="NVIDIA" ${attribute.pivot.value === 'NVIDIA' ? 'selected' : ''}>NVIDIA</option>
+                                            <option value="AMD" ${attribute.pivot.value === 'AMD' ? 'selected' : ''}>AMD</option>    
+                                            <option value="Intel" ${attribute.pivot.value === 'Intel' ? 'selected' : ''}>Intel</option>    
+                                            <option value="LG" ${attribute.pivot.value === 'LG' ? 'selected' : ''}>LG</option>       
+                                            <option value="BenQ" ${attribute.pivot.value === 'BenQ' ? 'selected' : ''}>BenQ</option>    
+                                            <option value="Logitech" ${attribute.pivot.value === 'Logitech' ? 'selected' : ''}>Logitech</option>
+                                            <option value="HyperX" ${attribute.pivot.value === 'HyperX' ? 'selected' : ''}>HyperX</option>
+                                            <option value="Keychron" ${attribute.pivot.value === 'Keychron' ? 'selected' : ''}>Keychron</option>
+                                            <option value="SteelSeries" ${attribute.pivot.value === 'SteelSeries' ? 'selected' : ''}>SteelSeries</option>
+                                            <option value="Corsair" ${attribute.pivot.value === 'Corsair' ? 'selected' : ''}>Corsair</option>    
+                                            <option value="Razer" ${attribute.pivot.value === 'Razer' ? 'selected' : ''}>Razer</option>
+                                        </select>`;
+                                } else if (attribute.name === 'On Top') {
+                                    inputField =
+                                        `<select class="form-control" name="${convertString(attribute.name)}">
+                                            <option value="0" ${attribute.pivot.value == '0' ? 'selected' : ''}>Không</option>
+                                            <option value="1" ${attribute.pivot.value == '1' ? 'selected' : ''}>Có</option>   
+                                  
+                                        </select>`;
+                                } else if (attribute.name.includes('Image')) {
+                                    inputField = `<div style="display: flex; align-items: center;">
+                                              <img src="${attribute.pivot.value}" alt="Ảnh sản phẩm" style="max-width: 70px; max-height: 70px;">
+                                              <input type="file" class="form-control" name="${convertString(attribute.name)}" />                           
+                                            </div>`;
+                                } else if (attribute.name.includes('Thumbnail')) {
+                                    inputField = `<div style="display: flex; align-items: center;">
+                                              <img src="${attribute.pivot.value}" alt="Ảnh sản phẩm" style="max-width: 70px; max-height: 70px;">
+                                              <input type="file" class="form-control" name="${convertString(attribute.name)}" />                           
+                                            </div>`;
+                                } else if (attribute.name === '[Laptop] Loại laptop') {
+                                    inputField =
+                                        `<select class="form-control" name="${convertString(attribute.name)}">
+                                            <option value="Gaming" ${attribute.pivot.value == 'Gaming' ? 'selected' : ''}>Gaming</option>
+                                            <option value="Office" ${attribute.pivot.value == 'Office' ? 'selected' : ''}>Office</option>   
+                                  
+                                        </select>`;
+                                } else {
+                                    inputField =
+                                        `<input class="form-control" name="${convertString(attribute.name)}" value="${attribute.pivot.value}" />`;
+                                }
+
+                                formAttributes += `
+                            <div class="col-md-6 col-lg-4">
+                                <div class="form-group col-md-9">
+                                    <label class="control-label">${attribute.name}</label>
+                                    ${inputField}
+                                </div>
+                            </div>`;
+                            });
+
+                            formAttributes += `</div>`;
+
+                            // Chèn nội dung vào modal
+                            productDetailContent.innerHTML = `
+                        <form id="edit-product-form"method="POST" enctype="multipart/form-data">
+                            @csrf
+                            <div class="product-form">
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="form-group col-md-9">
+                                            <label class="control-label">Tên sản phẩm</label>
+                                            <input class="form-control" type="text" name="name" value="${data.name}" />
+                                        </div>
+                                    </div>                                                                     
+                                </div>
+                                ${formAttributes}  
+                            </div>
+                            
+                            <div class="mt-3 d-flex justify-content-between">
+                                <button type="button" class="btn btn-secondary cancel-edit">Hủy bỏ</button>
+                                <button type="submit" class="btn btn-primary save-edit">Lưu thay đổi</button>
+                            </div>
+                        </form>`;
+
+                            // Xử lý sự kiện khi submit form
+                            document.getElementById('edit-product-form').addEventListener(
+                                'submit',
+                                function(event) {
+                                    event.preventDefault(); // Ngăn reload trang
+
+                                    const formData = new FormData(event.target);
+
+                                    fetch(`/admin/product/${productType}/${productId}`, {
+                                            method: 'POST',
+                                            body: formData,
+                                            headers: {
+                                                'X-CSRF-TOKEN': document.querySelector(
+                                                        'meta[name="csrf-token"]')
+                                                    .content
+                                            }
+                                        })
+                                        .then(response => response.json())
+                                        .then(result => {
+                                            if (result.success) {
+                                                console.log(formData);
+                                                alert('Cập nhật sản phẩm thành công!');
+                                                Fancybox.close();
+                                                location.reload();
+                                            } else {
+                                                alert('Cập nhật thất bại!');
+                                            }
+                                        })
+                                        .catch(error => console.error('Lỗi khi cập nhật:',
+                                            error));
+                                });
+
+                            // Hủy bỏ việc chỉnh sửa
+                            document.querySelector('.cancel-edit').addEventListener('click',
+                                function() {
+                                    Fancybox.close();
+                                });
+
+                            // Kích hoạt Fancybox để mở modal
+                            Fancybox.show([{
+                                src: '#product-edit-modal',
+                                type: 'inline'
+                            }]);
+                        })
+                        .catch(error => {
+                            console.error("Lỗi khi lấy dữ liệu sản phẩm:", error);
+                        });
+                });
+            });
+        });
+
+        function removeDiacritics(str) {
+            str = str.replace(/[áàảẩẳãạăằắẵặâầấẫậ]/ug, "a");
+            str = str.replace(/[íìĩịỉ]/ug, "i");
+            str = str.replace(/[éèẽẻểẹêếềễệ]/ug, "e");
+            str = str.replace(/[óòỏõọôốồổỗộơớờỡởợỔ]/ug, "o");
+            str = str.replace(/[úùũụủưứừữựử]/ug, "u");
+            str = str.replace(/[đĐ]/ug, "d");
+            str = str.replace(/[ýỷỹỵ]/ug, "y");
+            return str;
+        }
+
+        function convertString(str) {
+            return removeDiacritics(str) // Bỏ dấu
+                .toLowerCase() // Chuyển thành chữ thường
+                .replace(/[^a-zA-Z0-9\s]/g, "")
+                .replace(/\s+/g, '_');
+
+        }
+    </script>
     <script>
         // Hàm gọi AJAX để xóa sản phẩm
         $(document).on('click', '.trash', function() {

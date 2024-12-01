@@ -12,6 +12,13 @@ use App\Models\Attribute;
 use App\Models\Cooling;
 use App\Models\Gaminggear;
 use App\Models\Media;
+use App\Models\LaptopAttribute;
+use App\Models\CpuAttribute;
+use App\Models\GpuAttribute;
+use App\Models\MonitorAttribute;
+use App\Models\CoolingAttribute;
+use App\Models\GamingGearAttribute;
+use App\Models\MediaAttribute;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
@@ -304,5 +311,274 @@ class ProductController extends Controller
             'products' => $products,
         ]);
     }
+    public function getProductDetails($type, $id)
+    {
+        switch ($type) {
+            case 'laptops':
+                $product = Laptop::with('attributes')->find($id);
+                break;
+            case 'cpu':
+                $product = CPU::with('attributes')->find($id);
+                break;
+            case 'gpu':
+                $product = GPU::with('attributes')->find($id);
+                break;
+            case 'monitors':
+                $product = Monitor::with('attributes')->find($id);
+                break;
+            case 'gaming-gear':
+                $product = Gaminggear::with('attributes')->find($id);
+                break;
+            case 'cooling':
+                $product = Cooling::with('attributes')->find($id);
+                break;
+            case 'media':
+                $product = Media::with('attributes')->find($id);
+                break;
+            case 'accessories':
+                $product = Accessory::with('attributes')->find($id);
+                break;
+    }
+        if (!$product) {
+            return response()->json(['error' => 'Product not found'], 404);
+        }
+
+        return response()->json($product);
+    }
     
+    public function updateProduct(Request $request, $productType, $productId)
+    {
+        $modelMap = [
+            'laptops' => Laptop::class,
+            'cpu' => CPU::class,
+            'gpu' => GPU::class,
+        ];
+        $modelMapAttributes = [
+            'laptops' => LaptopAttribute::class,
+            'cpu' => CpuAttribute::class,
+            'gpu' => GpuAttribute::class,
+        ];
+
+        if (!array_key_exists($productType, $modelMap)) {
+            return response()->json(['success' => false, 'message' => 'Loại sản phẩm không hợp lệ'], 400);
+        }
+        $modelAttributes = $modelMapAttributes[$productType];
+        $model = $modelMap[$productType];
+        $product = $model::findOrFail($productId);
+
+        $product->name = $request->input('name');
+        $product->save();
+        $componentType = '';
+        $brand = $request->input('brand');
+        switch($productType){
+            case 'laptops':
+                if($request->input('laptop_loai_laptop') == 'Gaming'){
+                    $componentType = 'gaming';
+                } else if($request->input('laptop_loai_laptop') == 'Office'){
+                    $componentType = 'office';
+                } 
+                break;
+            case 'gaming-gear':
+                if($request->input('[GG] Loại thiết bị') == 'keyboard'){
+                    $componentType = 'keyboard';
+                } else if($request->input('[GG] Loại thiết bị') == 'mouse'){
+                    $componentType = 'mouse';
+                } else if($request->input('[GG] Loại thiết bị') == 'headphone'){
+                    $componentType = 'headphones';
+                }
+                break;            
+            case 'cooling':
+                if($request->input('[Cooling] Loại làm mát') == 'Air Cooler'){
+                    $componentType = 'air-cooler';
+                } else if($request->input('[GG] Loại thiết bị') == 'Liquid Cooler'){
+                    $componentType = 'liquid-cooler';
+                }  
+                break;
+            case 'media':
+                if($request->input('[Media] Loại thiết bị') == 'Webcam'){
+                    $componentType = 'webcam';
+                } else if($request->input('[Media] Loại thiết bị') == 'Microphone'){
+                    $componentType = 'microphone';
+                } else if($request->input('[Media] Loại thiết bị') == 'Speaker'){
+                    $componentType = 'speaker';
+                } else if($request->input('[Media] Loại thiết bị') == 'Controller'){
+                    $componentType = 'streamdesk';
+                } 
+                break;
+            case 'accessories':
+                if($request->input('[Accessory] Loại thiết bị') == 'Cable'){
+                    $componentType = 'cables';
+                } else if($request->input('[Accessory] Loại thiết bị') == 'Memory Card'){
+                    $componentType = 'memory';
+                } else if($request->input('[Accessory] Loại thiết bị') == 'Microphone'){
+                    $componentType = 'microphones';
+                } else if($request->input('[Accessory] Loại thiết bị') == 'Bag'){
+                    $componentType = 'bags';
+                } else if($request->input('[Accessory] Loại thiết bị') == 'Mount'){
+                    $componentType = 'mount';
+                } else if($request->input('[Accessory] Loại thiết bị') == 'Controller'){
+                    $componentType = 'streamdesk';
+                } else if($request->input('[Accessory] Loại thiết bị') == 'Dock'){
+                    $componentType = 'docks';
+                } else if($request->input('[Accessory] Loại thiết bị') == 'Charger'){
+                    $componentType = 'chargers';
+                }     
+                break;
+        }
+
+        switch($productType){
+            case 'laptops':
+            case 'media':
+            case 'gaming-gear':
+            case 'accessories':
+            case 'cooling':
+                $valuePath = "assets/img/products/$productType/$componentType/$productId";
+                $folderPath = public_path($valuePath);
+                break;
+            case 'cpu':
+            case 'gpu':    
+                $valuePath = "assets/img/products/pc-parts/$productType/$brand/$productId";
+                $folderPath = public_path($valuePath);
+                break;
+            case 'monitors':
+                $valuePath = "assets/img/products/$brand/$productId";
+                $folderPath = public_path($valuePath);
+                break;
+        }
+        if (!File::exists($folderPath)) {
+            File::makeDirectory($folderPath, 0755, true);
+        }
+        $otherAttributes = [
+            'Brand', 
+            'Model', 
+            'Price', 
+            'Deal Price', 
+            'Rating', 
+            'On Top', 
+            'Sale Price', 
+            'Sale Start Date', 
+            'Sale End Date'
+        ];
+        switch($productType){
+            case 'laptops':
+                $typeAttributes = [
+                    '[Laptop] Loại laptop',
+                    '[Laptop] Vi xử lý',
+                    '[Laptop] Số nhân',
+                    '[Laptop] Số luồng',
+                    '[Laptop] Tốc độ tối đa',
+                    '[Laptop] Bộ nhớ đệm',
+                    '[Laptop] Card đồ hoạ',
+                    '[Laptop] Kích thước màn hình',
+                    '[Laptop] Độ phân giải',
+                    '[Laptop] Tần số quét',
+                    '[Laptop] Công nghệ màn hình',
+                    '[Laptop] Dung lượng RAM',
+                    '[Laptop] Loại RAM',
+                    '[Laptop] Bus RAM',
+                    '[Laptop] Số khe cắm RAM',
+                    '[Laptop] Hỗ trợ RAM tối đa',
+                    '[Laptop] Pin',
+                    '[Laptop] Ổ cứng',
+                    '[Laptop] Dung lượng ổ cứng',
+                    '[Laptop] Số khe ổ cứng',
+                    '[Laptop] Cân nặng',
+                    '[Laptop] Màu sắc',
+                    '[Laptop] Camera',
+                    '[Laptop] OS'
+                ];
+                break;
+        }
+     
+        $combinedAttributes = array_merge($otherAttributes, $typeAttributes);
+        
+        function removeDiacritics($str) {
+            $str = preg_replace("/[áàảẩẳãạăằắẵặâầấẫậ]/u", "a", $str);
+            $str = preg_replace("/[íìĩịỉ]/u", "i", $str);
+            $str = preg_replace("/[éèẽẻểẹêếềễệ]/u", "e", $str);
+            $str = preg_replace("/[óòỏõọôốồổỗộơớờỡởợỔ]/u", "o", $str);
+            $str = preg_replace("/[úùũụủưứừữựử]/u", "u", $str);
+            $str = preg_replace("/[đĐ]/u", "d", $str);
+            $str = preg_replace("/[ýỷỹỵ]/u", "y", $str);
+            return $str;
+        }
+
+        function convertString($str) {
+            $str = removeDiacritics($str); 
+            $str = strtolower($str);       // Chuyển thành chữ thường
+            $str = preg_replace('/[^a-zA-Z0-9\s]/u', '', $str);
+            $str = preg_replace('/\s+/', '_', $str);
+
+            return $str;
+        }
+
+        // Áp dụng cho từng phần tử trong mảng
+        $convertedAttributes = [];
+        foreach ($combinedAttributes as $attribute) {
+            $convertedAttributes[] = convertString($attribute); // Áp dụng hàm convert cho từng phần tử
+        }
+
+        $attributes = [];
+
+        foreach ($convertedAttributes as $key => $convertedAttribute) {
+            $value = $request->input($convertedAttribute);
+            
+            $attributes[$combinedAttributes[$key]] = $value;
+        }
+        $imageAttributes = [
+            'Thumbnail',
+            'Thumbnail Small',
+            'Image1',
+            'Image2',
+            'Image3',
+            'Image4',
+            'Image5'
+        ];
+        $convertedImageAttributes = [];
+        foreach ($imageAttributes as $imageAttribute) {
+            $convertedImageAttributes[] = convertString($imageAttribute); // Áp dụng hàm convert cho từng phần tử
+        }
+        foreach ($convertedImageAttributes as $key => $convertedImageAttribute) {
+            if ($request->hasFile($convertedImageAttribute)) {
+                $file = $request->file($convertedImageAttribute);
+      
+                if ($request->has('thumbnail')) {
+                    $fileName = 'Thumb'. "." . $file->extension();
+                } else if ($request->has('thumbnail_small')) {
+                    $fileName = 'Thumb_small'. "." . $file->extension();
+                } else {
+                    $fileName = $convertedImageAttribute. "." . $file->extension();
+                }
+                $filePath = $folderPath . '/' . $fileName;
+    
+                if (File::exists($filePath)) {
+                    File::delete($filePath);
+                }
+    
+                $file->move($folderPath, $fileName);
+    
+                $value = '/' .$valuePath . '/' . $fileName;
+                $attributes[$imageAttributes[$key]] = $value;
+            }
+        }
+
+        foreach ($attributes as $name => $value) {
+
+            $attribute = $product->attributes()->where('name', $name)->first();
+    
+            if ($attribute) {
+                // Cập nhật giá trị
+                $attribute->pivot->value = $value;
+                $attribute->pivot->save();
+            } else {
+                $newAttribute = $modelAttributes::firstOrCreate(['name' => $name]);
+                $product->attributes()->attach($newAttribute->id, ['value' => $value]);
+            }
+        }
+        
+
+        return response()->json(['success' => true, 'message' => 'Cập nhật sản phẩm thành công']);
+
+    }
+
 }
