@@ -49,38 +49,8 @@
                                 </thead>
                                 <tbody id="product-list">
                                     @foreach ($paginatedProducts as $product)
-                                        @php
-                                            $product_type = '';
-                                            $category_id = $product->category_id;
-                                            $pcpart_type =
-                                                $product->attributes->firstWhere('name', 'Loại linh kiện')->pivot
-                                                    ->value ?? 'N/A';
-                                            $deviceType =
-                                                $product->attributes->firstWhere('name', '[GG] Loại thiết bị')->pivot
-                                                    ->value ?? 'N/A';
-                                            if ($category_id == 1 || $category_id == 2) {
-                                                $product_type = 'laptops';
-                                            } elseif ($category_id == 4) {
-                                                $product_type = 'monitors';
-                                            } elseif ($pcpart_type == 'cpu') {
-                                                $product_type = 'cpu';
-                                            } elseif ($pcpart_type == 'gpu') {
-                                                $product_type = 'gpu';
-                                            } elseif ($category_id == 5) {
-                                                $product_type = 'gaming-gear';
-                                            } elseif ($category_id == 6 && $deviceType == 'headphone') {
-                                                $product_type = 'gaming-gear';
-                                            } elseif ($category_id == 6) {
-                                                $product_type = 'media';
-                                            } elseif ($category_id == 7) {
-                                                $product_type = 'cooling';
-                                            } elseif ($category_id == 8) {
-                                                $product_type = 'accessories';
-                                            }
-
-                                        @endphp
                                         <tr class="product-row" data-product-id="{{ $product->id }}"
-                                            data-product-type="{{ $product_type }}">
+                                            data-product-type="{{ $product->data_table }}">
                                             <td>{{ $product->id }}</td>
                                             <td>{{ $product->name }}</td>
                                             <td><img src="{{ $product->attributes->firstWhere('name', 'Image1')->pivot->value ?? 'N/A' }}"
@@ -224,37 +194,37 @@
                                 }
 
                                 formAttributes += `
-                            <div class="col-md-6 col-lg-4">
-                                <div class="form-group col-md-9">
-                                    <label class="control-label">${attribute.name}</label>
-                                    ${inputField}
-                                </div>
-                            </div>`;
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="form-group col-md-9">
+                                            <label class="control-label">${attribute.name}</label>
+                                            ${inputField}
+                                        </div>
+                                    </div>`;
                             });
 
                             formAttributes += `</div>`;
 
                             // Chèn nội dung vào modal
                             productDetailContent.innerHTML = `
-                        <form id="edit-product-form"method="POST" enctype="multipart/form-data">
-                            @csrf
-                            <div class="product-form">
-                                <div class="row">
-                                    <div class="col-md-6 col-lg-4">
-                                        <div class="form-group col-md-9">
-                                            <label class="control-label">Tên sản phẩm</label>
-                                            <input class="form-control" type="text" name="name" value="${data.name}" />
-                                        </div>
-                                    </div>                                                                     
+                            <form id="edit-product-form"method="POST" enctype="multipart/form-data">
+                                @csrf
+                                <div class="product-form">
+                                    <div class="row">
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="form-group col-md-9">
+                                                <label class="control-label">Tên sản phẩm</label>
+                                                <input class="form-control" type="text" name="name" value="${data.name}" />
+                                            </div>
+                                        </div>                                                                     
+                                    </div>
+                                    ${formAttributes}  
                                 </div>
-                                ${formAttributes}  
-                            </div>
-                            
-                            <div class="mt-3 d-flex justify-content-between">
-                                <button type="button" class="btn btn-secondary cancel-edit">Hủy bỏ</button>
-                                <button type="submit" class="btn btn-primary save-edit">Lưu thay đổi</button>
-                            </div>
-                        </form>`;
+                                
+                                <div class="mt-3 d-flex justify-content-between">
+                                    <button type="button" class="btn btn-secondary cancel-edit">Hủy bỏ</button>
+                                    <button type="submit" class="btn btn-primary save-edit">Lưu thay đổi</button>
+                                </div>
+                            </form>`;
 
                             // Xử lý sự kiện khi submit form
                             document.getElementById('edit-product-form').addEventListener(

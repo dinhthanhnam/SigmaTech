@@ -154,3 +154,4 @@ Route::get('/accessories/filter', [AccessoryController::class, 'filterAccessorie
 
 //Thanh tim kiem
 Route::get('/search-suggestions', [HomeController::class, 'getSuggestions']);
+

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Accessory;
+use App\Models\AccessoryAttribute;
 use Illuminate\Http\Request;
 use App\Models\Laptop;
 use App\Models\Cpu;
@@ -29,7 +30,7 @@ class ProductController extends Controller
         $laptops = Laptop::with(['attributes', 'categories'])
             ->get()
             ->each(function ($item) {
-                $item->setAttribute('data_table', 'laptop');
+                $item->setAttribute('data_table', 'laptops');
             });
 
         $cpus = CPU::with(['attributes', 'categories'])
@@ -51,7 +52,7 @@ class ProductController extends Controller
         $gamingGears = Gaminggear::with(['attributes', 'categories'])
             ->get()
             ->each(function ($item) {
-                $item->setAttribute('data_table', 'gaminggear');
+                $item->setAttribute('data_table', 'gaming-gear');
             });
         $coolings = Cooling::with(['attributes', 'categories'])
             ->get()
@@ -66,7 +67,7 @@ class ProductController extends Controller
         $accessories = Accessory::with(['attributes', 'categories'])
             ->get()
             ->each(function ($item) {
-                $item->setAttribute('data_table', 'accessory');
+                $item->setAttribute('data_table', 'accessories');
             });
 
 
@@ -105,12 +106,6 @@ class ProductController extends Controller
 
     public function saveProduct(Request $request)
     {
-        $request->validate([
-            'nhan' => 'required|integer|min:1', 
-            'luong' => 'required|integer|min:1',  
-            'price' => 'required|integer|min:1', 
-            'dealprice' => 'required|integer|min:1', 
-        ]);
         $productType = $request->input('producttype');
         $laptopType = $request->input('laptoptype');
         $maxId = Laptop::max('id');
@@ -230,7 +225,7 @@ class ProductController extends Controller
     {
         // Kiểm tra bảng và sử dụng model tương ứng
         switch ($table) {
-            case 'laptop':
+            case 'laptops':
                 $product = Laptop::find($id);
                 break;
     
@@ -246,7 +241,7 @@ class ProductController extends Controller
                 $product = Monitor::find($id);
                 break;
 
-            case 'gaminggear':
+            case 'gaming-gear':
                 $product = Gaminggear::find($id);
                 break;
     
@@ -258,7 +253,7 @@ class ProductController extends Controller
                 $product = Media::find($id);
                 break;
 
-            case 'accessory':
+            case 'accessories':
                 $product = Accessory::find($id);
                 break;
     
@@ -316,29 +311,52 @@ class ProductController extends Controller
         switch ($type) {
             case 'laptops':
                 $product = Laptop::with('attributes')->find($id);
+                $table = '[Laptop]';
                 break;
             case 'cpu':
                 $product = CPU::with('attributes')->find($id);
+                $table = '[CPU]';
                 break;
             case 'gpu':
                 $product = GPU::with('attributes')->find($id);
+                $table = '[GPU]';
                 break;
-            case 'monitors':
+            case 'monitor':
                 $product = Monitor::with('attributes')->find($id);
+                $table = '[MON]';
                 break;
             case 'gaming-gear':
                 $product = Gaminggear::with('attributes')->find($id);
+                $table = '[GG]';
                 break;
             case 'cooling':
                 $product = Cooling::with('attributes')->find($id);
+                $table = '[Cooling]';
                 break;
             case 'media':
                 $product = Media::with('attributes')->find($id);
+                $table = '[Media]';
                 break;
             case 'accessories':
                 $product = Accessory::with('attributes')->find($id);
+                $table = '[Accessory]';
                 break;
-    }
+        }
+
+        $attributes = Attribute::where('name', 'like', $table.'%')
+            ->orWhereBetween('id', [1, 18])  
+            ->pluck('name');
+        
+        $productAttributeNames = collect($product->attributes)->pluck('name');
+        
+        $missingAttributes = $attributes->diff($productAttributeNames);
+        
+        foreach ($missingAttributes as $missingAttribute) {
+            $product->attributes->push([
+                'name' => $missingAttribute,
+                'pivot' => ['value' => ''] 
+            ]);
+        }
         if (!$product) {
             return response()->json(['error' => 'Product not found'], 404);
         }
@@ -348,84 +366,57 @@ class ProductController extends Controller
     
     public function updateProduct(Request $request, $productType, $productId)
     {
+        function removeDiacritics($str) {
+            $str = preg_replace("/[áàảẩẳãạăằắẵặâầấẫậ]/u", "a", $str);
+            $str = preg_replace("/[íìĩịỉ]/u", "i", $str);
+            $str = preg_replace("/[éèẽẻểẹêếềễệ]/u", "e", $str);
+            $str = preg_replace("/[óòỏõọôốồổỗộơớờỡởợỔ]/u", "o", $str);
+            $str = preg_replace("/[úùũụủưứừữựử]/u", "u", $str);
+            $str = preg_replace("/[đĐ]/u", "d", $str);
+            $str = preg_replace("/[ýỷỹỵ]/u", "y", $str);
+            return $str;
+        }
+
+        function convertString($str) {
+            $str = removeDiacritics($str); 
+            $str = strtolower($str);      
+            $str = preg_replace('/[^a-zA-Z0-9\s]/u', '', $str);
+            $str = preg_replace('/\s+/', '_', $str);
+
+            return $str;
+        }
         $modelMap = [
             'laptops' => Laptop::class,
             'cpu' => CPU::class,
             'gpu' => GPU::class,
-        ];
-        $modelMapAttributes = [
-            'laptops' => LaptopAttribute::class,
-            'cpu' => CpuAttribute::class,
-            'gpu' => GpuAttribute::class,
+            'monitor' => Monitor::class,
+            'media' => Media::class,
+            'gaming-gear' => Gaminggear::class,
+            'accessories' => Accessory::class,
+            'cooling' => Cooling::class
         ];
 
         if (!array_key_exists($productType, $modelMap)) {
             return response()->json(['success' => false, 'message' => 'Loại sản phẩm không hợp lệ'], 400);
         }
-        $modelAttributes = $modelMapAttributes[$productType];
+
         $model = $modelMap[$productType];
         $product = $model::findOrFail($productId);
 
         $product->name = $request->input('name');
         $product->save();
-        $componentType = '';
-        $brand = $request->input('brand');
-        switch($productType){
-            case 'laptops':
-                if($request->input('laptop_loai_laptop') == 'Gaming'){
-                    $componentType = 'gaming';
-                } else if($request->input('laptop_loai_laptop') == 'Office'){
-                    $componentType = 'office';
-                } 
-                break;
-            case 'gaming-gear':
-                if($request->input('[GG] Loại thiết bị') == 'keyboard'){
-                    $componentType = 'keyboard';
-                } else if($request->input('[GG] Loại thiết bị') == 'mouse'){
-                    $componentType = 'mouse';
-                } else if($request->input('[GG] Loại thiết bị') == 'headphone'){
-                    $componentType = 'headphones';
-                }
-                break;            
-            case 'cooling':
-                if($request->input('[Cooling] Loại làm mát') == 'Air Cooler'){
-                    $componentType = 'air-cooler';
-                } else if($request->input('[GG] Loại thiết bị') == 'Liquid Cooler'){
-                    $componentType = 'liquid-cooler';
-                }  
-                break;
-            case 'media':
-                if($request->input('[Media] Loại thiết bị') == 'Webcam'){
-                    $componentType = 'webcam';
-                } else if($request->input('[Media] Loại thiết bị') == 'Microphone'){
-                    $componentType = 'microphone';
-                } else if($request->input('[Media] Loại thiết bị') == 'Speaker'){
-                    $componentType = 'speaker';
-                } else if($request->input('[Media] Loại thiết bị') == 'Controller'){
-                    $componentType = 'streamdesk';
-                } 
-                break;
-            case 'accessories':
-                if($request->input('[Accessory] Loại thiết bị') == 'Cable'){
-                    $componentType = 'cables';
-                } else if($request->input('[Accessory] Loại thiết bị') == 'Memory Card'){
-                    $componentType = 'memory';
-                } else if($request->input('[Accessory] Loại thiết bị') == 'Microphone'){
-                    $componentType = 'microphones';
-                } else if($request->input('[Accessory] Loại thiết bị') == 'Bag'){
-                    $componentType = 'bags';
-                } else if($request->input('[Accessory] Loại thiết bị') == 'Mount'){
-                    $componentType = 'mount';
-                } else if($request->input('[Accessory] Loại thiết bị') == 'Controller'){
-                    $componentType = 'streamdesk';
-                } else if($request->input('[Accessory] Loại thiết bị') == 'Dock'){
-                    $componentType = 'docks';
-                } else if($request->input('[Accessory] Loại thiết bị') == 'Charger'){
-                    $componentType = 'chargers';
-                }     
-                break;
-        }
 
+        $componentAttributes = ['laptop_loai_laptop', 'gg_loai_thiet_bi', 'cooling_loai_lam_mat', 'media_loai_thiet_bi', 'accessory_loai_thiet_bi'];
+        $componentType = null;
+
+        foreach ($componentAttributes as $componentAttribute) {
+            if ($request->has($componentAttribute)) {
+                $componentType = convertString($request->input($componentAttribute));
+                break; 
+            }
+        }
+        
+        $brand = $request->input('brand');
         switch($productType){
             case 'laptops':
             case 'media':
@@ -440,7 +431,7 @@ class ProductController extends Controller
                 $valuePath = "assets/img/products/pc-parts/$productType/$brand/$productId";
                 $folderPath = public_path($valuePath);
                 break;
-            case 'monitors':
+            case 'monitor':
                 $valuePath = "assets/img/products/$brand/$productId";
                 $folderPath = public_path($valuePath);
                 break;
@@ -457,61 +448,62 @@ class ProductController extends Controller
             'On Top', 
             'Sale Price', 
             'Sale Start Date', 
-            'Sale End Date'
+            'Sale End Date',
+            'Tồn kho', 
+            'Loại linh kiện'
         ];
         switch($productType){
             case 'laptops':
-                $typeAttributes = [
-                    '[Laptop] Loại laptop',
-                    '[Laptop] Vi xử lý',
-                    '[Laptop] Số nhân',
-                    '[Laptop] Số luồng',
-                    '[Laptop] Tốc độ tối đa',
-                    '[Laptop] Bộ nhớ đệm',
-                    '[Laptop] Card đồ hoạ',
-                    '[Laptop] Kích thước màn hình',
-                    '[Laptop] Độ phân giải',
-                    '[Laptop] Tần số quét',
-                    '[Laptop] Công nghệ màn hình',
-                    '[Laptop] Dung lượng RAM',
-                    '[Laptop] Loại RAM',
-                    '[Laptop] Bus RAM',
-                    '[Laptop] Số khe cắm RAM',
-                    '[Laptop] Hỗ trợ RAM tối đa',
-                    '[Laptop] Pin',
-                    '[Laptop] Ổ cứng',
-                    '[Laptop] Dung lượng ổ cứng',
-                    '[Laptop] Số khe ổ cứng',
-                    '[Laptop] Cân nặng',
-                    '[Laptop] Màu sắc',
-                    '[Laptop] Camera',
-                    '[Laptop] OS'
-                ];
+                $typeAttributes = DB::table('attributes')
+                    ->where('name', 'like', '[Laptop]%')
+                    ->pluck('name')
+                    ->toArray();
+                break;
+            case 'cpu':
+                $typeAttributes = DB::table('attributes')
+                    ->where('name', 'like', '[CPU]%')
+                    ->pluck('name')
+                    ->toArray();
+                break;
+            case 'gpu':
+                $typeAttributes = DB::table('attributes')
+                    ->where('name', 'like', '[GPU]%')
+                    ->pluck('name')
+                    ->toArray();
+                break;
+            case 'monitor':
+                $typeAttributes = DB::table('attributes')
+                    ->where('name', 'like', '[MON]%')
+                    ->pluck('name')
+                    ->toArray();
+                break;
+            case 'gaming-gear':
+                $typeAttributes = DB::table('attributes')
+                    ->where('name', 'like', '[GG]%')
+                    ->pluck('name')
+                    ->toArray();
+                break;
+            case 'cooling':
+                $typeAttributes = DB::table('attributes')
+                    ->where('name', 'like', '[Cooling]%')
+                    ->pluck('name')
+                    ->toArray();
+                break;
+            case 'media':
+                $typeAttributes = DB::table('attributes')
+                    ->where('name', 'like', '[Media]%')
+                    ->pluck('name')
+                    ->toArray();
+                break;
+            case 'accessories':
+                $typeAttributes = DB::table('attributes')
+                    ->where('name', 'like', '[Accessory]%')
+                    ->pluck('name')
+                    ->toArray();
                 break;
         }
-     
         $combinedAttributes = array_merge($otherAttributes, $typeAttributes);
         
-        function removeDiacritics($str) {
-            $str = preg_replace("/[áàảẩẳãạăằắẵặâầấẫậ]/u", "a", $str);
-            $str = preg_replace("/[íìĩịỉ]/u", "i", $str);
-            $str = preg_replace("/[éèẽẻểẹêếềễệ]/u", "e", $str);
-            $str = preg_replace("/[óòỏõọôốồổỗộơớờỡởợỔ]/u", "o", $str);
-            $str = preg_replace("/[úùũụủưứừữựử]/u", "u", $str);
-            $str = preg_replace("/[đĐ]/u", "d", $str);
-            $str = preg_replace("/[ýỷỹỵ]/u", "y", $str);
-            return $str;
-        }
-
-        function convertString($str) {
-            $str = removeDiacritics($str); 
-            $str = strtolower($str);       // Chuyển thành chữ thường
-            $str = preg_replace('/[^a-zA-Z0-9\s]/u', '', $str);
-            $str = preg_replace('/\s+/', '_', $str);
-
-            return $str;
-        }
-
         // Áp dụng cho từng phần tử trong mảng
         $convertedAttributes = [];
         foreach ($combinedAttributes as $attribute) {
@@ -563,7 +555,16 @@ class ProductController extends Controller
         }
 
         foreach ($attributes as $name => $value) {
-
+            if ($value == '') {
+                $attribute = $product->attributes()->where('name', $name)->first();
+        
+                // Nếu attribute tồn tại, xóa khỏi product
+                if ($attribute) {
+                    $product->attributes()->detach($attribute->id); // Xóa attribute
+                }
+        
+                continue; // Bỏ qua vòng lặp này
+            }
             $attribute = $product->attributes()->where('name', $name)->first();
     
             if ($attribute) {
@@ -571,7 +572,7 @@ class ProductController extends Controller
                 $attribute->pivot->value = $value;
                 $attribute->pivot->save();
             } else {
-                $newAttribute = $modelAttributes::firstOrCreate(['name' => $name]);
+                $newAttribute = Attribute::firstOrCreate(['name' => $name]);
                 $product->attributes()->attach($newAttribute->id, ['value' => $value]);
             }
         }
