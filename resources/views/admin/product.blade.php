@@ -188,6 +188,44 @@
                                             <option value="Office" ${attribute.pivot.value == 'Office' ? 'selected' : ''}>Office</option>   
                                   
                                         </select>`;
+                                } else if (attribute.name === '[GG] Loại thiết bị') {
+                                    inputField =
+                                        `<select class="form-control" name="${convertString(attribute.name)}">
+                                            <option value="headphone" ${attribute.pivot.value == 'headphone' ? 'selected' : ''}>Headphone</option>
+                                            <option value="keyboard" ${attribute.pivot.value == 'keyboard' ? 'selected' : ''}>Keyboard</option>   
+                                            <option value="mouse" ${attribute.pivot.value == 'mouse' ? 'selected' : ''}>Mouse</option>                                     
+                                        </select>`;
+                                } else if (attribute.name ===
+                                    '[Cooling] Loại làm mát') {
+                                    inputField =
+                                        `<select class="form-control" name="${convertString(attribute.name)}">
+                                            <option value="Liquid Cooler" ${attribute.pivot.value == 'Liquid Cooler' ? 'selected' : ''}>Liquid Cooler</option>
+                                            <option value="Air Cooler" ${attribute.pivot.value == 'Air Cooler' ? 'selected' : ''}>Air Cooler</option>   
+                                        </select>`;
+                                } else if (attribute.name === '[Media] Loại thiết bị') {
+                                    inputField =
+                                        `<select class="form-control" name="${convertString(attribute.name)}">
+                                            <option value="Webcam" ${attribute.pivot.value == 'Webcam' ? 'selected' : ''}>Webcam</option>
+                                            <option value="Microphone" ${attribute.pivot.value == 'Microphone' ? 'selected' : ''}>Microphone</option>   
+                                            <option value="Speaker" ${attribute.pivot.value == 'Speaker' ? 'selected' : ''}>Speaker</option>   
+                                            <option value="Controller" ${attribute.pivot.value == 'Controller' ? 'selected' : ''}>Controller</option>   
+
+                                            
+                                        </select>`;
+                                } else if (attribute.name ===
+                                    '[Accessory] Loại thiết bị') {
+                                    inputField =
+                                        `<select class="form-control" name="${convertString(attribute.name)}">
+                                            <option value="Cable" ${attribute.pivot.value == 'Cable' ? 'selected' : ''}>Cable</option>
+                                            <option value="Microphone" ${attribute.pivot.value == 'Microphone' ? 'selected' : ''}>Microphone</option>   
+                                            <option value="Bag" ${attribute.pivot.value == 'Bag' ? 'selected' : ''}>Bag</option>   
+                                            <option value="Mount" ${attribute.pivot.value == 'Mount' ? 'selected' : ''}>Mount</option>   
+                                            <option value="Controller" ${attribute.pivot.value == 'Controller' ? 'selected' : ''}>Controller</option>   
+                                            <option value="Dock" ${attribute.pivot.value == 'Dock' ? 'selected' : ''}>Dock</option>   
+                                            <option value="Charger" ${attribute.pivot.value == 'Charger' ? 'selected' : ''}>Charger</option>   
+                                            <option value="Memory" ${attribute.pivot.value == 'Memory' ? 'selected' : ''}>Memory</option>   
+
+                                        </select>`;
                                 } else {
                                     inputField =
                                         `<input class="form-control" name="${convertString(attribute.name)}" value="${attribute.pivot.value}" />`;

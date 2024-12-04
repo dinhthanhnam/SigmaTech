@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Accessory;
-use App\Models\AccessoryAttribute;
 use Illuminate\Http\Request;
 use App\Models\Laptop;
 use App\Models\Cpu;
@@ -13,13 +12,6 @@ use App\Models\Attribute;
 use App\Models\Cooling;
 use App\Models\Gaminggear;
 use App\Models\Media;
-use App\Models\LaptopAttribute;
-use App\Models\CpuAttribute;
-use App\Models\GpuAttribute;
-use App\Models\MonitorAttribute;
-use App\Models\CoolingAttribute;
-use App\Models\GamingGearAttribute;
-use App\Models\MediaAttribute;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
@@ -47,7 +39,7 @@ class ProductController extends Controller
         $monitors = Monitor::with(['attributes', 'categories'])
             ->get()
             ->each(function ($item) {
-                $item->setAttribute('data_table', 'monitor');
+                $item->setAttribute('data_table', 'monitors');
             });
         $gamingGears = Gaminggear::with(['attributes', 'categories'])
             ->get()
@@ -104,121 +96,73 @@ class ProductController extends Controller
         return view('admin.new-product');
     }
 
-    public function saveProduct(Request $request)
+    public function showAttributes($dataTable)
     {
-        $productType = $request->input('producttype');
-        $laptopType = $request->input('laptoptype');
-        $maxId = Laptop::max('id');
-        $ontop = $request->ontop === 'yes' ? 1 : 0;
+        $table = $this->getAttributes($dataTable);
+        $attributes = Attribute::where('name', 'like', $table.'%')
+            ->orWhereBetween('id', [1, 18])  
+            ->where('id', '!=', 11)
+            ->pluck('name');
 
-        if($laptopType == "laptopGaming"){
-            $categoryId = 1;
-            $laptopType = "Gaming";
+        return response()->json($attributes);
+    }
+    public function addProduct(Request $request, $table)
+    {
+        $modelMap = [
+            'laptops' => Laptop::class,
+            'cpu' => CPU::class,
+            'gpu' => GPU::class,
+            'monitors' => Monitor::class,
+            'media' => Media::class,
+            'gaming-gear' => Gaminggear::class,
+            'accessories' => Accessory::class,
+            'cooling' => Cooling::class
+        ]; 
+        if ($request->has('laptop_loai_laptop')) {
+            if($request->input('laptop_loai_laptop') == 'Gaming'){
+                $category = 'gaming';
+            } else if($request->input('laptop_loai_laptop') == 'Office'){
+                $category = 'office';
+            }                
+        }else {
+            $category = $table;
         }
-        else if($laptopType == "laptopOffice"){
-            $categoryId = 2;
-            $laptopType = "Office";
-        }
-        if ($productType == 'laptop') {
-            // Lưu sản phẩm vào bảng laptops
-            $laptop = Laptop::create([
-                'name' => $request->input('name'),
-                'category_id' => $categoryId
-            ]);
-            if ($productType == "laptop" && $laptopType == "Gaming"){
-                $valuePath = "assets/img/products/laptops/gaming/" . ($maxId + 1);
-                $folderPath = public_path($valuePath);
-            }
-            else if ($productType == "laptop" && $laptopType == "Office"){
-                $valuePath = "assets/img/products/laptops/office/" . ($maxId + 1);
-                $folderPath = public_path($valuePath);
-            }
-            if (!File::exists($folderPath)) {
-                File::makeDirectory($folderPath, 0755, true);
-            }
-
-            $attributes = [
-                ['name' => 'Brand', 'value' => $request->input('brand')],
-                ['name' => 'Model', 'value' => $request->input('model')],
-                ['name' => 'Price', 'value' => $request->input(key: 'price')],
-                ['name' => 'Deal Price', 'value' => $request->input(key: 'dealprice')],
-                ['name' => 'On Top', 'value' => $ontop],
-                ['name' => '[Laptop] Loại laptop', 'value' => $laptopType],
-                ['name' => '[Laptop] Vi xử lý', 'value' => $request->input(key: 'vixuly')],
-                ['name' => '[Laptop] Số nhân', 'value' => $request->input(key: 'nhan')],
-                ['name' => '[Laptop] Số luồng', 'value' => $request->input(key: 'luong')],
-                ['name' => '[Laptop] Tốc độ tối đa', 'value' => $request->input(key: 'tocdo')],
-                ['name' => '[Laptop] Bộ nhớ đệm', 'value' => $request->input(key: 'dem')],
-                ['name' => '[Laptop] Card đồ họa', 'value' => $request->input(key: 'card')],
-                ['name' => '[Laptop] Kích thước màn hình', 'value' => $request->input(key: 'sizeman')],
-                ['name' => '[Laptop] Độ phân giải', 'value' => $request->input(key: 'dophangiai')],
-                ['name' => '[Laptop] Tần số quét', 'value' => $request->input(key: 'hz')],
-                ['name' => '[Laptop] Công nghệ màn hình', 'value' => $request->input(key: 'cnman')],
-                ['name' => '[Laptop] Dung lượng RAM', 'value' => $request->input(key: 'ram')],
-                ['name' => '[Laptop] Loại RAM', 'value' => $request->input(key: 'ramtype')],
-                ['name' => '[Laptop] Bus RAM', 'value' => $request->input(key: 'busram')],
-                ['name' => '[Laptop] Số khe cắm RAM', 'value' => $request->input(key: 'kheram')],
-                ['name' => '[Laptop] Hỗ trợ RAM tối đa', 'value' => $request->input(key: 'maxram')],
-                ['name' => '[Laptop] Pin', 'value' => $request->input(key: 'pin')],
-                ['name' => '[Laptop] Ổ cứng', 'value' => $request->input(key: 'ssd')],
-                ['name' => '[Laptop] Dung lượng ổ cứng', 'value' => $request->input(key: 'gb')],
-                ['name' => '[Laptop] Số khe ổ cứng', 'value' => $request->input(key: 'khessd')],
-                ['name' => '[Laptop] Cân nặng', 'value' => $request->input(key: 'kg')],
-                ['name' => '[Laptop] Màu sắc', 'value' => $request->input(key: 'color')],
-                ['name' => '[Laptop] Camera', 'value' => $request->input(key: 'cam')],
-                ['name' => '[Laptop] OS', 'value' => $request->input(key: 'os')],
-            ];
-            if ($request->hasFile('productThumbnail')) {
-                $thumb = $request->file('productThumbnail');
-                $thumbName = "Thumb" . "." . $thumb->extension(); 
-                $thumb->move($folderPath, $thumbName);
-                $attributes[] = [
-                    'name' => 'Thumbnail',
-                    'value' => "/{$valuePath}/{$thumbName}",
-                ];
-            }
-            if ($request->hasFile('productThumbnailSmall')) {
-                $thumbSmall = $request->file('productThumbnailSmall');
-                $thumbSmallName = "Thumb_small" . "." . $thumbSmall->extension(); 
-                $thumbSmall->move($folderPath, $thumbSmallName);
-                $attributes[] = [
-                    'name' => 'Thumbnail Small',
-                    'value' => "/{$valuePath}/{$thumbSmallName}",
-                ];
-            }
-            if ($request->hasFile('productImages')) {
-                $images = $request->file('productImages');
-                
-                foreach ($images as $index => $image) {
-                    if ($index > 5) break; // Chỉ lưu tối đa 5 ảnh
-                    
-                    // Tạo đường dẫn lưu ảnh, với tên thư mục là `id` của sản phẩm
-                    $imageName = "Image" . ($index + 1) . "." . $image->extension(); // Tạo tên ảnh
-
-                    // Lưu ảnh vào thư mục với tên được xác định
-                    $image->move($folderPath, $imageName);
-
-                    // Thêm đường dẫn ảnh vào mảng attributes
-                    $attributes[] = [
-                        'name' => 'Image' . ($index + 1),
-                        'value' => "/{$valuePath}/{$imageName}",
-                    ];
-                }
-            }
+        $categoryMap = [
+            'gaming' => '1',
+            'office' => '2',
+            'cpu' => '3',
+            'gpu' => '3',
+            'monitors' => '4',
+            'media' => '5',
+            'gaming-gear' => '6',
+            'accessories' => '7',
+            'cooling' => '8'
+        ];
+        
+        $model = $modelMap[$table];
+        $categoryId = $categoryMap[$category];
+        
+        $product = $model::create([
+            'name' => $request->input('name'),
+            'category_id' => $categoryId
+        ]);
             
-            foreach ($attributes as $attribute) {
-                // Tìm kiếm attribute trong bảng 'attributes' theo tên
-                $attributeRecord = Attribute::where('name', $attribute['name'])->first();
-                
-                // Nếu tìm thấy attribute, gắn nó vào laptop
-                if ($attributeRecord) {
-                    $laptop->attributes()->attach($attributeRecord->id, ['value' => $attribute['value']]);
-                }
-            }
-            
-
+        $attributes = $this->buildAttribute($request, $table,$product->id);
+        if($categoryId == '3'){
+            $attributes['Loại linh kiện'] = $table;
         }
-        return redirect()->back()->with('success', 'Sản phẩm đã được lưu thành công!');
+        
+        foreach ($attributes as $name => $value) {
+            if ($value == '') {
+                continue; 
+            }
+            $attributeRecord = Attribute::where('name', $name)->first();            
+            if ($attributeRecord) {
+                $product->attributes()->attach($attributeRecord->id, ['value' => $value]);
+            }
+        }
+            
+        return response()->json(['success' => true, 'message' => 'Thêm sản phẩm thành công']);
     }
 
     public function deleteProduct($table, $id)
@@ -237,7 +181,7 @@ class ProductController extends Controller
                 $product = Gpu::find($id);
                 break;
 
-            case 'monitor':
+            case 'monitors':
                 $product = Monitor::find($id);
                 break;
 
@@ -308,43 +252,25 @@ class ProductController extends Controller
     }
     public function getProductDetails($type, $id)
     {
-        switch ($type) {
-            case 'laptops':
-                $product = Laptop::with('attributes')->find($id);
-                $table = '[Laptop]';
-                break;
-            case 'cpu':
-                $product = CPU::with('attributes')->find($id);
-                $table = '[CPU]';
-                break;
-            case 'gpu':
-                $product = GPU::with('attributes')->find($id);
-                $table = '[GPU]';
-                break;
-            case 'monitor':
-                $product = Monitor::with('attributes')->find($id);
-                $table = '[MON]';
-                break;
-            case 'gaming-gear':
-                $product = Gaminggear::with('attributes')->find($id);
-                $table = '[GG]';
-                break;
-            case 'cooling':
-                $product = Cooling::with('attributes')->find($id);
-                $table = '[Cooling]';
-                break;
-            case 'media':
-                $product = Media::with('attributes')->find($id);
-                $table = '[Media]';
-                break;
-            case 'accessories':
-                $product = Accessory::with('attributes')->find($id);
-                $table = '[Accessory]';
-                break;
-        }
+        $modelMap = [
+            'laptops' => Laptop::class,
+            'cpu' => CPU::class,
+            'gpu' => GPU::class,
+            'monitors' => Monitor::class,
+            'media' => Media::class,
+            'gaming-gear' => Gaminggear::class,
+            'accessories' => Accessory::class,
+            'cooling' => Cooling::class
+        ];
+
+        $model = $modelMap[$type];
+        $product = $model::with('attributes')->find($id);
+              
+        $table = $this->getAttributes($type);
 
         $attributes = Attribute::where('name', 'like', $table.'%')
             ->orWhereBetween('id', [1, 18])  
+            ->where('id', '!=', 11)
             ->pluck('name');
         
         $productAttributeNames = collect($product->attributes)->pluck('name');
@@ -366,30 +292,12 @@ class ProductController extends Controller
     
     public function updateProduct(Request $request, $productType, $productId)
     {
-        function removeDiacritics($str) {
-            $str = preg_replace("/[áàảẩẳãạăằắẵặâầấẫậ]/u", "a", $str);
-            $str = preg_replace("/[íìĩịỉ]/u", "i", $str);
-            $str = preg_replace("/[éèẽẻểẹêếềễệ]/u", "e", $str);
-            $str = preg_replace("/[óòỏõọôốồổỗộơớờỡởợỔ]/u", "o", $str);
-            $str = preg_replace("/[úùũụủưứừữựử]/u", "u", $str);
-            $str = preg_replace("/[đĐ]/u", "d", $str);
-            $str = preg_replace("/[ýỷỹỵ]/u", "y", $str);
-            return $str;
-        }
-
-        function convertString($str) {
-            $str = removeDiacritics($str); 
-            $str = strtolower($str);      
-            $str = preg_replace('/[^a-zA-Z0-9\s]/u', '', $str);
-            $str = preg_replace('/\s+/', '_', $str);
-
-            return $str;
-        }
+        
         $modelMap = [
             'laptops' => Laptop::class,
             'cpu' => CPU::class,
             'gpu' => GPU::class,
-            'monitor' => Monitor::class,
+            'monitors' => Monitor::class,
             'media' => Media::class,
             'gaming-gear' => Gaminggear::class,
             'accessories' => Accessory::class,
@@ -406,153 +314,7 @@ class ProductController extends Controller
         $product->name = $request->input('name');
         $product->save();
 
-        $componentAttributes = ['laptop_loai_laptop', 'gg_loai_thiet_bi', 'cooling_loai_lam_mat', 'media_loai_thiet_bi', 'accessory_loai_thiet_bi'];
-        $componentType = null;
-
-        foreach ($componentAttributes as $componentAttribute) {
-            if ($request->has($componentAttribute)) {
-                $componentType = convertString($request->input($componentAttribute));
-                break; 
-            }
-        }
-        
-        $brand = $request->input('brand');
-        switch($productType){
-            case 'laptops':
-            case 'media':
-            case 'gaming-gear':
-            case 'accessories':
-            case 'cooling':
-                $valuePath = "assets/img/products/$productType/$componentType/$productId";
-                $folderPath = public_path($valuePath);
-                break;
-            case 'cpu':
-            case 'gpu':    
-                $valuePath = "assets/img/products/pc-parts/$productType/$brand/$productId";
-                $folderPath = public_path($valuePath);
-                break;
-            case 'monitor':
-                $valuePath = "assets/img/products/$brand/$productId";
-                $folderPath = public_path($valuePath);
-                break;
-        }
-        if (!File::exists($folderPath)) {
-            File::makeDirectory($folderPath, 0755, true);
-        }
-        $otherAttributes = [
-            'Brand', 
-            'Model', 
-            'Price', 
-            'Deal Price', 
-            'Rating', 
-            'On Top', 
-            'Sale Price', 
-            'Sale Start Date', 
-            'Sale End Date',
-            'Tồn kho', 
-            'Loại linh kiện'
-        ];
-        switch($productType){
-            case 'laptops':
-                $typeAttributes = DB::table('attributes')
-                    ->where('name', 'like', '[Laptop]%')
-                    ->pluck('name')
-                    ->toArray();
-                break;
-            case 'cpu':
-                $typeAttributes = DB::table('attributes')
-                    ->where('name', 'like', '[CPU]%')
-                    ->pluck('name')
-                    ->toArray();
-                break;
-            case 'gpu':
-                $typeAttributes = DB::table('attributes')
-                    ->where('name', 'like', '[GPU]%')
-                    ->pluck('name')
-                    ->toArray();
-                break;
-            case 'monitor':
-                $typeAttributes = DB::table('attributes')
-                    ->where('name', 'like', '[MON]%')
-                    ->pluck('name')
-                    ->toArray();
-                break;
-            case 'gaming-gear':
-                $typeAttributes = DB::table('attributes')
-                    ->where('name', 'like', '[GG]%')
-                    ->pluck('name')
-                    ->toArray();
-                break;
-            case 'cooling':
-                $typeAttributes = DB::table('attributes')
-                    ->where('name', 'like', '[Cooling]%')
-                    ->pluck('name')
-                    ->toArray();
-                break;
-            case 'media':
-                $typeAttributes = DB::table('attributes')
-                    ->where('name', 'like', '[Media]%')
-                    ->pluck('name')
-                    ->toArray();
-                break;
-            case 'accessories':
-                $typeAttributes = DB::table('attributes')
-                    ->where('name', 'like', '[Accessory]%')
-                    ->pluck('name')
-                    ->toArray();
-                break;
-        }
-        $combinedAttributes = array_merge($otherAttributes, $typeAttributes);
-        
-        // Áp dụng cho từng phần tử trong mảng
-        $convertedAttributes = [];
-        foreach ($combinedAttributes as $attribute) {
-            $convertedAttributes[] = convertString($attribute); // Áp dụng hàm convert cho từng phần tử
-        }
-
-        $attributes = [];
-
-        foreach ($convertedAttributes as $key => $convertedAttribute) {
-            $value = $request->input($convertedAttribute);
-            
-            $attributes[$combinedAttributes[$key]] = $value;
-        }
-        $imageAttributes = [
-            'Thumbnail',
-            'Thumbnail Small',
-            'Image1',
-            'Image2',
-            'Image3',
-            'Image4',
-            'Image5'
-        ];
-        $convertedImageAttributes = [];
-        foreach ($imageAttributes as $imageAttribute) {
-            $convertedImageAttributes[] = convertString($imageAttribute); // Áp dụng hàm convert cho từng phần tử
-        }
-        foreach ($convertedImageAttributes as $key => $convertedImageAttribute) {
-            if ($request->hasFile($convertedImageAttribute)) {
-                $file = $request->file($convertedImageAttribute);
-      
-                if ($request->has('thumbnail')) {
-                    $fileName = 'Thumb'. "." . $file->extension();
-                } else if ($request->has('thumbnail_small')) {
-                    $fileName = 'Thumb_small'. "." . $file->extension();
-                } else {
-                    $fileName = $convertedImageAttribute. "." . $file->extension();
-                }
-                $filePath = $folderPath . '/' . $fileName;
-    
-                if (File::exists($filePath)) {
-                    File::delete($filePath);
-                }
-    
-                $file->move($folderPath, $fileName);
-    
-                $value = '/' .$valuePath . '/' . $fileName;
-                $attributes[$imageAttributes[$key]] = $value;
-            }
-        }
+        $attributes = $this->buildAttribute($request, $productType,$productId);
 
         foreach ($attributes as $name => $value) {
             if ($value == '') {
@@ -581,5 +343,164 @@ class ProductController extends Controller
         return response()->json(['success' => true, 'message' => 'Cập nhật sản phẩm thành công']);
 
     }
+    public function buildAttribute($request, $table, $productId){
+        $componentAttributes = ['laptop_loai_laptop', 'gg_loai_thiet_bi', 'cooling_loai_lam_mat', 'media_loai_thiet_bi', 'accessory_loai_thiet_bi'];
+        $componentType = null;
 
+        foreach ($componentAttributes as $componentAttribute) {
+            if ($request->has($componentAttribute)) {
+                $componentType = $this->convertString($request->input($componentAttribute));
+                break; 
+            }
+        }
+        
+        $brand = $request->input('brand');
+        $valuePath = $this->getPath($table, $brand, $componentType, $productId);
+        $folderPath = public_path($valuePath);
+        
+        if (!File::exists($folderPath)) {
+            File::makeDirectory($folderPath, 0755, true);
+        }
+        $otherAttributes = [
+            'Brand', 
+            'Model', 
+            'Price', 
+            'Deal Price', 
+            'Rating', 
+            'On Top', 
+            'Sale Price', 
+            'Sale Start Date', 
+            'Sale End Date',
+            'Tồn kho'
+        ];
+        $dataTable = $this->getAttributes($table);
+     
+        $typeAttributes = DB::table('attributes')
+            ->where('name', 'like', $dataTable.'%')
+            ->pluck('name')
+            ->toArray();
+        
+        $combinedAttributes = array_merge($otherAttributes, $typeAttributes);
+        
+        // Áp dụng cho từng phần tử trong mảng
+        $convertedAttributes = [];
+        foreach ($combinedAttributes as $attribute) {
+            $convertedAttributes[] = $this->convertString($attribute); // Áp dụng hàm convert cho từng phần tử
+        }
+
+        $attributes = [];
+
+        foreach ($convertedAttributes as $key => $convertedAttribute) {
+            $value = $request->input($convertedAttribute);
+            
+            $attributes[$combinedAttributes[$key]] = $value;
+        }
+        $imageAttributes = [
+            'Thumbnail',
+            'Thumbnail Small',
+            'Image1',
+            'Image2',
+            'Image3',
+            'Image4',
+            'Image5'
+        ];
+        $convertedImageAttributes = [];
+        foreach ($imageAttributes as $imageAttribute) {
+            $convertedImageAttributes[] = $this->convertString($imageAttribute); // Áp dụng hàm convert cho từng phần tử
+        }
+        foreach ($convertedImageAttributes as $key => $convertedImageAttribute) {
+            if ($request->hasFile($convertedImageAttribute)) {
+                $file = $request->file($convertedImageAttribute);
+      
+                if ($request->has('thumbnail')) {
+                    $fileName = 'Thumb'. "." . $file->extension();
+                } else if ($request->has('thumbnail_small')) {
+                    $fileName = 'Thumb_small'. "." . $file->extension();
+                } else {
+                    $fileName = $convertedImageAttribute. "." . $file->extension();
+                }
+                $filePath = $folderPath . '/' . $fileName;
+    
+                if (File::exists($filePath)) {
+                    File::delete($filePath);
+                }
+    
+                $file->move($folderPath, $fileName);
+    
+                $value = '/' .$valuePath . '/' . $fileName;
+                $attributes[$imageAttributes[$key]] = $value;
+            }
+        }
+        return $attributes;
+    }
+    public function getPath($dataTable, $brand, $componentType, $productId){
+        switch($dataTable){
+            case 'laptops':
+            case 'media':
+            case 'gaming-gear':
+            case 'accessories':
+            case 'cooling':
+                $valuePath = "assets/img/products/$dataTable/$componentType/$productId";
+                break;
+            case 'cpu':
+            case 'gpu':    
+                $valuePath = "assets/img/products/pc-parts/$dataTable/$brand/$productId";
+                break;
+            case 'monitors':
+                $valuePath = "assets/img/products/$dataTable/$brand/$productId";
+                break;
+        }
+        return $valuePath;
+    }
+    public function getAttributes($dataTable)
+    {
+        switch ($dataTable) {
+            case 'laptops':
+                $table = '[Laptop]';
+                break;
+            case 'cpu':
+                $table = '[CPU]';
+                break;
+            case 'gpu':
+                $table = '[GPU]';
+                break;
+            case 'monitors':
+                $table = '[MON]';
+                break;
+            case 'gaming-gear':
+                $table = '[GG]';
+                break;
+            case 'cooling':
+                $table = '[Cooling]';
+                break;
+            case 'media':
+                $table = '[Media]';
+                break;
+            case 'accessories':
+                $table = '[Accessory]';
+                break;
+        }
+        return $table;
+    }
+    public function removeDiacritics($str) 
+    {
+        $str = preg_replace("/[áàảẩẳãạăằắẵặâầấẫậ]/u", "a", $str);
+        $str = preg_replace("/[íìĩịỉ]/u", "i", $str);
+        $str = preg_replace("/[éèẽẻểẹêếềễệ]/u", "e", $str);
+        $str = preg_replace("/[óòỏõọôốồổỗộơớờỡởợỔ]/u", "o", $str);
+        $str = preg_replace("/[úùũụủưứừữựử]/u", "u", $str);
+        $str = preg_replace("/[đĐ]/u", "d", $str);
+        $str = preg_replace("/[ýỷỹỵ]/u", "y", $str);
+        return $str;
+    }
+
+    public function convertString($str) 
+    {
+        $str = $this->removeDiacritics($str); 
+        $str = strtolower($str);      
+        $str = preg_replace('/[^a-zA-Z0-9\s]/u', '', $str);
+        $str = preg_replace('/\s+/', '_', $str);
+
+        return $str;
+    }
 }

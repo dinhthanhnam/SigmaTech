@@ -94,7 +94,9 @@ Route::middleware(['auth', AuthAdmin::class])->prefix('admin')->group(function (
   Route::get('/product/{type}/{id}', [ProductController::class, 'getProductDetails']);
   Route::post('/product/{type}/{id}', [ProductController::class, 'updateProduct']);
   Route::get('/new-product', [ProductController::class, 'showAddProduct'])->name('admin.new-product');
-  Route::post('/new-product', [ProductController::class, 'saveProduct'])->name('admin.save-product');
+  Route::get('/new-product/{table}', [ProductController::class, 'showAttributes']);
+
+  Route::post('/new-product/{table}', [ProductController::class, 'addProduct']);
   
   Route::get('/order', [AdminOrderController::class, 'showAllOrders'])->name('admin.show-order');
   Route::get('/order/{id}', [AdminOrderController::class, 'getOrderDetails']);
