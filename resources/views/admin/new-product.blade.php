@@ -75,7 +75,7 @@
                                 `<select class="form-control" name="${convertString(attribute)}">
                                             <option value="Gaming">Gaming</option>
                                             <option value="Office">Office</option>   
-                                  
+                                
                                         </select>`;
                         } else if (attribute === '[GG] Loại thiết bị') {
                             inputField =
@@ -176,7 +176,7 @@
                                 </div>
                                 
                                 <div class="mt-3 d-flex justify-content-between">
-                                     <button class="btn btn-save" type="submit">Lưu lại</button>
+                                    <button class="btn btn-save" type="submit">Lưu lại</button>
                                     <a class="btn btn-cancel" href="table-data-product.html">Hủy bỏ</a>
                                 </div>
                             `;

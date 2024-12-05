@@ -168,25 +168,25 @@
                                     inputField =
                                         `<select class="form-control" name="${convertString(attribute.name)}">
                                             <option value="0" ${attribute.pivot.value == '0' ? 'selected' : ''}>Không</option>
-                                            <option value="1" ${attribute.pivot.value == '1' ? 'selected' : ''}>Có</option>   
-                                  
+                                            <option value="1" ${attribute.pivot.value == '1' ? 'selected' : ''}>Có</option>  
+
                                         </select>`;
                                 } else if (attribute.name.includes('Image')) {
                                     inputField = `<div style="display: flex; align-items: center;">
-                                              <img src="${attribute.pivot.value}" alt="Ảnh sản phẩm" style="max-width: 70px; max-height: 70px;">
-                                              <input type="file" class="form-control" name="${convertString(attribute.name)}" />                           
+                                        <img src="${attribute.pivot.value}" alt="Ảnh sản phẩm" style="max-width: 70px; max-height: 70px;">
+                                        <input type="file" class="form-control" name="${convertString(attribute.name)}" />                           
                                             </div>`;
                                 } else if (attribute.name.includes('Thumbnail')) {
                                     inputField = `<div style="display: flex; align-items: center;">
-                                              <img src="${attribute.pivot.value}" alt="Ảnh sản phẩm" style="max-width: 70px; max-height: 70px;">
-                                              <input type="file" class="form-control" name="${convertString(attribute.name)}" />                           
+                                        <img src="${attribute.pivot.value}" alt="Ảnh sản phẩm" style="max-width: 70px; max-height: 70px;">
+                                        <input type="file" class="form-control" name="${convertString(attribute.name)}" />                           
                                             </div>`;
                                 } else if (attribute.name === '[Laptop] Loại laptop') {
                                     inputField =
                                         `<select class="form-control" name="${convertString(attribute.name)}">
                                             <option value="Gaming" ${attribute.pivot.value == 'Gaming' ? 'selected' : ''}>Gaming</option>
                                             <option value="Office" ${attribute.pivot.value == 'Office' ? 'selected' : ''}>Office</option>   
-                                  
+                                
                                         </select>`;
                                 } else if (attribute.name === '[GG] Loại thiết bị') {
                                     inputField =
@@ -399,7 +399,7 @@
         <td>${product.price ? new Intl.NumberFormat().format(product.price) : 'N/A'} đ</td>
         <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa" data-id="${product.id}"><i class="fas fa-trash-alt"></i></button></td>
         <td><button class="btn btn-primary btn-sm edit" type="button" title="Sửa" data-toggle="modal" data-target="#ModalUP"><i class="fas fa-edit"></i></button></td>
-      `;
+    `;
 
                     productList.appendChild(productRow);
                 });

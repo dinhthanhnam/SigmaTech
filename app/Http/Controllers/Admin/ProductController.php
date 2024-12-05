@@ -265,7 +265,7 @@ class ProductController extends Controller
 
         $model = $modelMap[$type];
         $product = $model::with('attributes')->find($id);
-              
+
         $table = $this->getAttributes($type);
 
         $attributes = Attribute::where('name', 'like', $table.'%')
@@ -273,20 +273,24 @@ class ProductController extends Controller
             ->where('id', '!=', 11)
             ->pluck('name');
         
-        $productAttributeNames = collect($product->attributes)->pluck('name');
+        $productAttributeNames = collect($product->attributes)->keyBy('name');
+
+        $orderedAttributes = $attributes->map(function ($attributeName) use ($productAttributeNames) {
         
-        $missingAttributes = $attributes->diff($productAttributeNames);
-        
-        foreach ($missingAttributes as $missingAttribute) {
-            $product->attributes->push([
-                'name' => $missingAttribute,
-                'pivot' => ['value' => ''] 
-            ]);
-        }
+            if ($productAttributeNames->has($attributeName)) {
+                return $productAttributeNames[$attributeName]; 
+            }
+            
+            return [
+                'name' => $attributeName,
+                'pivot' => ['value' => '']
+            ];
+        });
+
+        $product->setRelation('attributes', collect($orderedAttributes));
         if (!$product) {
             return response()->json(['error' => 'Product not found'], 404);
         }
-
         return response()->json($product);
     }
     
@@ -374,7 +378,7 @@ class ProductController extends Controller
             'Tồn kho'
         ];
         $dataTable = $this->getAttributes($table);
-     
+    
         $typeAttributes = DB::table('attributes')
             ->where('name', 'like', $dataTable.'%')
             ->pluck('name')
@@ -411,7 +415,7 @@ class ProductController extends Controller
         foreach ($convertedImageAttributes as $key => $convertedImageAttribute) {
             if ($request->hasFile($convertedImageAttribute)) {
                 $file = $request->file($convertedImageAttribute);
-      
+    
                 if ($request->has('thumbnail')) {
                     $fileName = 'Thumb'. "." . $file->extension();
                 } else if ($request->has('thumbnail_small')) {
