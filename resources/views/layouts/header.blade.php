@@ -727,7 +727,7 @@
                             src="{{ asset('assets/img/header-menu-icon/flash.png') }}" class="mr-1" /> Flash sale
                     </a>
                     <div class="header-support-container" style="line-height: 38px;">
-                        <a href="#"> <img src="{{ asset('assets/img/header-menu-icon/support.png') }}"
+                        <a href="{{ route('pages.botman') }}"> <img src="{{ asset('assets/img/header-menu-icon/support.png') }}"
                                 class="mr-1" /> Tư vấn bán hàng </a>
                         <div class="global-support-container" style="display: none">
                             <div class="col-item">

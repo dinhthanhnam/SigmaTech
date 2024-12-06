@@ -24,6 +24,7 @@ use App\Http\Controllers\CoolingController;
 use App\Http\Controllers\GaminggearController;
 use App\Http\Controllers\MediaController;
 use App\Http\Controllers\PcpartController;
+use App\Http\Controllers\BotManController;
 
 
 Auth::routes([
@@ -77,6 +78,9 @@ Route::get('warranty-policy', function () {
 Route::get('laptop-outlet', function () {
   return view('pages.laptop-outlet');
 })->name('pages.laptop-outlet');
+Route::get('chatbot', function () {
+  return view('pages.botman');
+})->name('pages.botman');
 
 //user account
 Route::get('account', [UserController::class, 'index'])->name('user-account');
@@ -156,4 +160,8 @@ Route::get('/accessories/filter', [AccessoryController::class, 'filterAccessorie
 
 //Thanh tim kiem
 Route::get('/search-suggestions', [HomeController::class, 'getSuggestions']);
+
+
+
+Route::match(['get', 'post'], '/botman', 'App\Http\Controllers\BotManController@handle');
 
