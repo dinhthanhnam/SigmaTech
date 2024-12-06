@@ -20,14 +20,14 @@
     <link rel="stylesheet" href="{{ asset('assets/css/icon_marketing.css') }}" type="text/css"/> 
     <link rel="stylesheet" href="{{ asset('assets/css/iconthongso.css') }}" type="text/css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet"> 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
     crossorigin="anonymous" 
     referrerpolicy="no-referrer">
     @stack('styles')
-
 </head>
 <body>
     <header>
@@ -76,4 +76,13 @@
 
     @stack('scripts')
 </body>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/assets/css/chat.min.css">
+<script>
+    var botmanWidget = {
+        title: 'Trợ lý Chat', // Thay đổi chữ thành bất kỳ nội dung nào bạn muốn
+        aboutText: 'Bắt đầu trò chuyện với "Hi"',
+        introMessage: "Xin chào! Tôi là Trợ lý Chat của bạn."
+    };
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/js/widget.js"></script>
 </html>
