@@ -16,7 +16,7 @@
                         <div class="row">
                             <div class="form-group col-md-3">
                                 <label for="productType" class="control-label">Chọn loại sản phẩm</label>
-                                <select class="form-control" data-table = '' required>
+                                <select class="form-control" data-table = ''>
                                     <option value="">-- Chọn loại sản phẩm --</option>
                                     <option value="laptops">Laptop</option>
                                     <option value="cpu">Cpu</option>
@@ -121,7 +121,7 @@
                                 </select>`;
                         } else if (attribute === 'Brand') {
                             inputField =
-                                `<select class="form-control" name="${convertString(attribute)}">
+                                `<select class="form-control" name="${convertString(attribute)}" required>
                                             <option value="">-- Chọn hãng --</option>
                                             <option value="Asus">Asus</option>
                                             <option value="Lenovo">Lenovo</option>   
@@ -145,6 +145,42 @@
                                 <img src="" alt="Ảnh sản phẩm" style="max-width: 70px; max-height: 70px;">
                                 <input type="file" class="form-control" name="${convertString(attribute)}" />                           
                             </div>`;
+                        } else if (attribute === 'Sale Price' || attribute === 'Tồn kho') {
+                            inputField = `
+                                <input 
+                                    class="form-control" 
+                                    name="${convertString(attribute)}" 
+                                    type="number" 
+                                    min="0" 
+                                    step="1" 
+                                />`;
+                        } else if (attribute === 'Price' || attribute === 'Deal Price') {
+                            inputField = `
+                                <input 
+                                    class="form-control" 
+                                    name="${convertString(attribute)}" 
+                                    type="number" 
+                                    min="0" 
+                                    step="1" 
+                                    required
+                                />`;
+                        } else if (attribute === 'Rating') {
+                            inputField = `
+                                <input 
+                                    class="form-control" 
+                                    name="${convertString(attribute)}" 
+                                    type="number" 
+                                    min="0" 
+                                    step="any" 
+                                    required
+                                />`;
+                        } else if (attribute.includes('Date')) {
+                            inputField = `
+                            <input 
+                                class="form-control" 
+                                name="${convertString(attribute)}" 
+                                type="date" 
+                            />`;
                         } else {
                             inputField = `
                         <input class="form-control" name="${convertString(attribute)}" value="" />`;
@@ -168,7 +204,7 @@
                                         <div class="col-md-6 col-lg-4">
                                             <div class="form-group col-md-9">
                                                 <label class="control-label">Tên sản phẩm</label>
-                                                <input class="form-control" type="text" name="name" value="" />
+                                                <input class="form-control" type="text" name="name" value="" required/>
                                             </div>
                                         </div>                                                                     
                                     </div>
@@ -210,6 +246,17 @@
                                 .catch(error => console.error('Lỗi khi cập nhật:',
                                     error));
                         });
+                    document.querySelectorAll('input[required], select[required]').forEach(input => {
+                        const parentDiv = input.closest('div'); // Tìm thẻ cha gần nhất
+                        const label = parentDiv.querySelector('label'); // Tìm label trong div đó
+
+                        if (label) {
+                            const redAsterisk = document.createElement('span');
+                            redAsterisk.textContent = ' *'; // Thêm dấu *
+                            redAsterisk.style.color = 'red'; // Đặt màu đỏ
+                            label.appendChild(redAsterisk); // Gắn vào cuối label
+                        }
+                    });
                 })
                 .catch(error => console.error('Error fetching attributes:', error));
         });

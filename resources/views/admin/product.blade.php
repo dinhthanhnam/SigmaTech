@@ -147,7 +147,7 @@
                                 // Kiểm tra loại attribute và hiển thị theo kiểu tương ứng
                                 if (attribute.name === 'Brand') {
                                     inputField =
-                                        `<select class="form-control" name="${convertString(attribute.name)}">
+                                        `<select class="form-control" name="${convertString(attribute.name)}" required>
                                             <option value="Asus" ${attribute.pivot.value === 'Asus' ? 'selected' : ''}>Asus</option>
                                             <option value="Lenovo" ${attribute.pivot.value === 'Lenovo' ? 'selected' : ''}>Lenovo</option>   
                                             <option value="Acer" ${attribute.pivot.value === 'Acer' ? 'selected' : ''}>Acer</option>    
@@ -164,6 +164,49 @@
                                             <option value="Corsair" ${attribute.pivot.value === 'Corsair' ? 'selected' : ''}>Corsair</option>    
                                             <option value="Razer" ${attribute.pivot.value === 'Razer' ? 'selected' : ''}>Razer</option>
                                         </select>`;
+                                } else if (attribute.name === 'Sale Price' || attribute
+                                    .name === 'Tồn kho'
+                                ) {
+                                    inputField = `
+                                        <input 
+                                            class="form-control" 
+                                            name="${convertString(attribute.name)}" 
+                                            value="${attribute.pivot.value}"
+                                            type="number" 
+                                            min="0" 
+                                            step="1" 
+                                        />`;
+                                } else if (attribute.name === 'Price' || attribute
+                                    .name === 'Deal Price') {
+                                    inputField = `
+                                        <input 
+                                            class="form-control" 
+                                            name="${convertString(attribute.name)}" 
+                                            value="${attribute.pivot.value}"
+                                            type="number" 
+                                            min="0" 
+                                            step="1" 
+                                            required
+                                        />`;
+                                } else if (attribute.name === 'Rating') {
+                                    inputField = `
+                                        <input 
+                                            class="form-control" 
+                                            name="${convertString(attribute.name)}" 
+                                            value="${attribute.pivot.value}"
+                                            type="number" 
+                                            min="0" 
+                                            step="any" 
+                                            required
+                                        />`;
+                                } else if (attribute.name.includes('Date')) {
+                                    inputField = `
+                                        <input 
+                                            class="form-control" 
+                                            name="${convertString(attribute.name)}" 
+                                            value="${attribute.pivot.value}"
+                                            type="date" 
+                                        />`;
                                 } else if (attribute.name === 'On Top') {
                                     inputField =
                                         `<select class="form-control" name="${convertString(attribute.name)}">
@@ -251,7 +294,7 @@
                                         <div class="col-md-6 col-lg-4">
                                             <div class="form-group col-md-9">
                                                 <label class="control-label">Tên sản phẩm</label>
-                                                <input class="form-control" type="text" name="name" value="${data.name}" />
+                                                <input class="form-control" type="text" name="name" value="${data.name}" required/>
                                             </div>
                                         </div>                                                                     
                                     </div>
@@ -307,6 +350,21 @@
                                 src: '#product-edit-modal',
                                 type: 'inline'
                             }]);
+                            document.querySelectorAll('input[required], select[required]')
+                                .forEach(input => {
+                                    const parentDiv = input.closest(
+                                    'div'); // Tìm thẻ cha gần nhất
+                                    const label = parentDiv.querySelector(
+                                    'label'); // Tìm label trong div đó
+
+                                    if (label) {
+                                        const redAsterisk = document.createElement('span');
+                                        redAsterisk.textContent = ' *'; // Thêm dấu *
+                                        redAsterisk.style.color = 'red'; // Đặt màu đỏ
+                                        label.appendChild(
+                                        redAsterisk); // Gắn vào cuối label
+                                    }
+                                });
                         })
                         .catch(error => {
                             console.error("Lỗi khi lấy dữ liệu sản phẩm:", error);
