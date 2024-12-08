@@ -84,29 +84,38 @@ Route::get('chatbot', function () {
 
 //user account
 Route::get('account', [UserController::class, 'index'])->name('user-account');
-
 Route::get('account/order/{id}', [UserController::class, 'getOrderDetails']);
 
 
 
 
 
-//admin view
+//admin route
 Route::middleware(['auth', AuthAdmin::class])->prefix('admin')->group(function () {
+  //admin dashboard
   Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.index');
+
+  //admin product
   Route::get('/product', [ProductController::class, 'showAllProducts'])->name('admin.show-product');
   Route::get('/product/{type}/{id}', [ProductController::class, 'getProductDetails']);
   Route::post('/product/{type}/{id}', [ProductController::class, 'updateProduct']);
   Route::get('/new-product', [ProductController::class, 'showAddProduct'])->name('admin.new-product');
   Route::get('/new-product/{table}', [ProductController::class, 'showAttributes']);
-
   Route::post('/new-product/{table}', [ProductController::class, 'addProduct']);
   
+  //admin order
   Route::get('/order', [AdminOrderController::class, 'showAllOrders'])->name('admin.show-order');
   Route::get('/order/{id}', [AdminOrderController::class, 'getOrderDetails']);
   Route::post('/order/{id}', [AdminOrderController::class, 'updateOrder']);
 
+  //admin sale
   Route::get('/sale', [AdminSaleController::class, 'index'])->name('admin.show-sale');
+  Route::get('/new-flashsale', [AdminSaleController::class, 'showAllProducts'])->name('admin.new-flashsale');
+  Route::get('/new-flashsale/{table}/{id}', [AdminSaleController::class, 'getSaleDetails']);
+  Route::post('/new-flashsale/{table}/{id}', [AdminSaleController::class, 'updateSale']);
+
+
+  //admin slider
   Route::get('/slider', [SliderController::class, 'showAllSliders'])->name('admin.show-slider');
   Route::get('/new-slider', [SliderController::class, 'showAddSlider'])->name('admin.new-slider');
   Route::post('/new-slider', [SliderController::class, 'saveSlider'])->name('admin.save-slider');
@@ -126,7 +135,6 @@ Route::prefix('cart')->group( function() {
   Route::patch('/update-bulk', [CartController::class, 'updateBulkQuantity'])->name('cart.updateBulkQuantity');
   Route::get('/count', [CartController::class, 'cartCount'])->name('cart.count');
   Route::post('/buynow', [CartController::class, 'buynow'])->name('buynow');
-
 });
 
 //order
@@ -135,7 +143,6 @@ Route::prefix('cart/order')->group( function() {
   Route::post('/place', [OrderController::class, 'placeOrder'])->name('order.place')->middleware('verified');
 });
 // Route::post('/order/confirm-payment', [OrderController::class, 'confirmPayment'])->name('order.confirm-payment');
-
 
 
 //route cho single

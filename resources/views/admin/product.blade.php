@@ -36,11 +36,10 @@
                                 <thead>
                                     <tr>
                                         <th width="10">Mã</th>
-                                        <th width="250">Tên sản phẩm</th>
-                                        <th width="300">Hình ảnh</th>
+                                        <th width="400">Tên sản phẩm</th>
+                                        <th width="250">Hình ảnh</th>
                                         <th width="250">Loại hàng</th>
-                                        <th width="50">Thương hiệu</th>
-                                        <th width="50">Mã Model</th>
+                                        <th width="150">Thương hiệu</th>
                                         <th width="150">Giá</th>
                                         <th width="150">Giá niêm yết</th>
                                         <th>Chức năng</th>
@@ -54,12 +53,10 @@
                                             <td>{{ $product->id }}</td>
                                             <td>{{ $product->name }}</td>
                                             <td><img src="{{ $product->attributes->firstWhere('name', 'Image1')->pivot->value ?? 'N/A' }}"
-                                                    alt="{{ $product->name }}" width="150"></td>
+                                                    alt="{{ $product->name }}" width="100"></td>
                                             <td>{{ $product->categories->name ?? 'N/A' }}</td>
                                             </td>
                                             <td>{{ $product->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A' }}
-                                            </td>
-                                            <td>{{ $product->attributes->firstWhere('name', 'Model')->pivot->value ?? 'N/A' }}
                                             </td>
                                             <td>
                                                 {{ number_format($product->attributes->firstWhere('name', 'Price')->pivot->value ?? 'N/A', 0, ',', '.') }}
@@ -200,12 +197,17 @@
                                             required
                                         />`;
                                 } else if (attribute.name.includes('Date')) {
+                                    if (attribute.pivot.value && attribute.pivot.value
+                                        .length === 10) {
+                                        attribute.pivot.value += ' 00:00';
+                                    }
                                     inputField = `
                                         <input 
                                             class="form-control" 
                                             name="${convertString(attribute.name)}" 
                                             value="${attribute.pivot.value}"
-                                            type="date" 
+                                            type="datetime-local" 
+s 
                                         />`;
                                 } else if (attribute.name === 'On Top') {
                                     inputField =
@@ -353,16 +355,16 @@
                             document.querySelectorAll('input[required], select[required]')
                                 .forEach(input => {
                                     const parentDiv = input.closest(
-                                    'div'); // Tìm thẻ cha gần nhất
+                                        'div'); // Tìm thẻ cha gần nhất
                                     const label = parentDiv.querySelector(
-                                    'label'); // Tìm label trong div đó
+                                        'label'); // Tìm label trong div đó
 
                                     if (label) {
                                         const redAsterisk = document.createElement('span');
                                         redAsterisk.textContent = ' *'; // Thêm dấu *
                                         redAsterisk.style.color = 'red'; // Đặt màu đỏ
                                         label.appendChild(
-                                        redAsterisk); // Gắn vào cuối label
+                                            redAsterisk); // Gắn vào cuối label
                                     }
                                 });
                         })

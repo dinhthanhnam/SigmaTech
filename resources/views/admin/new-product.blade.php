@@ -179,7 +179,7 @@
                             <input 
                                 class="form-control" 
                                 name="${convertString(attribute)}" 
-                                type="date" 
+                                type="datetime-local" 
                             />`;
                         } else {
                             inputField = `
@@ -213,7 +213,6 @@
                                 
                                 <div class="mt-3 d-flex justify-content-between">
                                     <button class="btn btn-save" type="submit">Lưu lại</button>
-                                    <a class="btn btn-cancel" href="table-data-product.html">Hủy bỏ</a>
                                 </div>
                             `;
                     document.getElementById('product-add-modal').style.display = 'block';
