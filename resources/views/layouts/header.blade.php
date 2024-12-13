@@ -909,6 +909,14 @@
                     suggestionsContainer.style.display = 'block';
                 }
             });
+            document.querySelectorAll('.js-search').forEach(function(element) {
+                element.addEventListener('click', function(e) {
+
+                    const query = searchInput.value;
+                    window.location.href = `/filter?=${encodeURIComponent(query)}`;
+        
+                });
+            });
         });
     </script>
 @endpush

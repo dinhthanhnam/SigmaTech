@@ -168,7 +168,9 @@ Route::get('/accessories/filter', [AccessoryController::class, 'filterAccessorie
 //Thanh tim kiem
 Route::get('/search-suggestions', [HomeController::class, 'getSuggestions']);
 
-
-
+//Chatbot
 Route::match(['get', 'post'], '/botman', 'App\Http\Controllers\BotManController@handle');
+
+Route::get('/tim', [HomeController::class, 'getSearch']);
+
 
