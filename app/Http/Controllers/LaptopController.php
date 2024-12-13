@@ -188,10 +188,14 @@ class LaptopController extends Controller
             });
         }
         if (!empty($filters['sort'])) {
-            $laptops->whereHas('attributes', function ($query) use ($filters) {
-                $query->where('name', 'Price')
-                    ->orderBy('value', $filters['sort']);
-            });
+            if($filters['sort'] == 'newest') {
+                $laptops = $laptops->orderBy('created_at', 'desc');
+            } else {
+                $laptops->whereHas('attributes', function ($query) use ($filters) {
+                    $query->where('name', 'Price')
+                        ->orderBy('value', $filters['sort']);
+                });
+            }
         }
 
         // Phân trang kết quả và trả về view
