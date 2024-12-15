@@ -76,7 +76,7 @@
 
     @stack('scripts')
 </body>
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/assets/css/chat.min.css">
+
 <script>
     var botmanWidget = {
         title: 'Trợ lý Chat', // Thay đổi chữ thành bất kỳ nội dung nào bạn muốn
