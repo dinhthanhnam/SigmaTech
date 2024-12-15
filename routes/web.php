@@ -83,8 +83,8 @@ Route::get('chatbot', function () {
 })->name('pages.botman');
 
 //user account
-Route::get('account', [UserController::class, 'index'])->name('user-account');
-Route::get('account/order/{id}', [UserController::class, 'getOrderDetails']);
+Route::get('account', [UserController::class, 'index'])->name('user-account')->middleware('auth');
+Route::get('account/order/{id}', [UserController::class, 'getOrderDetails'])->middleware('auth');
 
 
 
