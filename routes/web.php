@@ -95,7 +95,7 @@ Route::post('account/update', [UserController::class, 'updateAccount'])->middlew
 Route::middleware(['auth', AuthAdmin::class])->prefix('admin')->group(function () {
   //admin dashboard
   Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.index');
-
+  Route::get('/', [DashboardController::class, 'index']);
   //admin product
   Route::get('/product', [ProductController::class, 'showAllProducts'])->name('admin.show-product');
   Route::get('/product/{type}/{id}', [ProductController::class, 'getProductDetails']);

@@ -23,8 +23,7 @@ class AuthAdmin
                 return $next($request);
             }
             else {
-                Session::flush();
-                return redirect()->route('login');
+                abort(403, 'Từ chối request.');
             }
         }
         return $next($request);
