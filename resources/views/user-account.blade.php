@@ -7,6 +7,7 @@
 @endpush
 @push('scripts')
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 @endpush
 
 @section('content')
@@ -142,7 +143,8 @@
                     <div class="form-group">
                         <div class="form-row">
                             <label for="email">Email</label>
-                            <input type="email" id="email" value="{{ Auth::user()->email }}" class="form-control">
+                            <input type="email" id="email" value="{{ Auth::user()->email }}" class="form-control"
+                                readonly>
                         </div>
                     </div>
                     <div class="form-group">
@@ -153,7 +155,7 @@
                     </div>
                     <div class="form-row">
                         <label> </label>
-                        <button type="submit" class="btn-save">Lưu thay đổi</button>
+                        <button type="submit" id="save-btn" class="btn-save">Lưu thay đổi</button>
                     </div>
                 </form>
             </section>
@@ -293,6 +295,45 @@
                     });
 
                     item.parentElement.classList.add('active');
+                });
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#save-btn').on('click', function(e) {
+                e.preventDefault();
+                let formData = {
+                    name: $('#full-name').val(),
+                    gender: $('input[name="gender"]:checked').val(),
+                    phone: $('#phone').val(),
+                    address: $('#address').val(),
+                };
+
+                $.ajax({
+                    url: "{{ url('account/update') }}", // URL của route
+                    type: 'POST',
+                    data: formData,
+                    headers: {
+                        'X-CSRF-TOKEN': '{{ csrf_token() }}', // Token CSRF
+                    },
+                    success: function(response) {
+                        alert(response.message);
+                        location.reload();
+                    },
+                    error: function(xhr) {
+                        // Xử lý lỗi nếu có
+                        if (xhr.status === 422) {
+                            let errors = xhr.responseJSON.errors;
+                            let errorMessages = '';
+                            for (let field in errors) {
+                                errorMessages += errors[field][0] + '\n';
+                            }
+                            alert('Lỗi: \n' + errorMessages);
+                        } else {
+                            alert('Đã xảy ra lỗi! Vui lòng thử lại.');
+                        }
+                    }
                 });
             });
         });

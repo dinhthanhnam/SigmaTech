@@ -8,7 +8,6 @@ use Tests\TestCase;
 use App\Models\User;
 use App\Models\CartItem;
 use App\Models\Laptop;
-use App\Models\LaptopAttribute;
 
 class CartTest extends TestCase
 {
