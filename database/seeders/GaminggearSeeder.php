@@ -4,8 +4,8 @@ use Illuminate\Database\Seeder;
 
 
 use App\Models\Attribute;
-use App\Models\GamingGear;
-use App\Models\GamingGearAttribute;
+use App\Models\Gaminggear;
+use App\Models\GaminggearAttribute;
 
 class GaminggearSeeder extends Seeder{
 
@@ -411,7 +411,7 @@ class GaminggearSeeder extends Seeder{
         ];
 
         foreach ($gaminggears as $gaminggearData) {
-            $gaminggear = GamingGear::create([
+            $gaminggear = Gaminggear::create([
                 'name' => $gaminggearData['name'],
                 'category_id' => $gaminggearData['category_id'],
             ]);
