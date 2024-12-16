@@ -10,7 +10,7 @@ use App\Models\Cooling;
 use App\Models\Laptop;
 use App\Models\Cpu;
 use App\Models\Gaminggear;
-use App\Models\GPU;
+use App\Models\Gpu;
 use App\Models\Media;
 use App\Models\Monitor;
 use Carbon\Carbon;

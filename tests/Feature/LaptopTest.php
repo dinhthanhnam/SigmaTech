@@ -14,11 +14,16 @@ class LaptopTest extends TestCase
      */
     public function test_paginated_laptops_shouldnt_have_13th_record(): void
     {
+        $laptop13 = Laptop::where('name', 'Laptop Lenovo V14 G4 IRU 83A000BGVN')->first();
         $response = $this->get('/laptops/Gaming');
 
         $response->assertStatus(200);
         
-        $response->assertViewHas('gamingLaptops');
+        $gamingLaptops = $response->original->getData()['gamingLaptops'];
+
+        $this->assertCount(12, $gamingLaptops);
+
+        $this->assertFalse($gamingLaptops->contains('name', $laptop13->name));
     }
 
     public function test_laptops_should_have_27_records(): void
