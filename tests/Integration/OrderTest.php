@@ -6,16 +6,15 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
-class CartTest extends TestCase
+class OrderTest extends TestCase
 {
     /**
      * A basic feature test example.
      */
-    public function test_cart_contains_empty_prooduct(): void
+    public function test_example(): void
     {
-        $response = $this->get('/cart');
+        $response = $this->get('/');
 
         $response->assertStatus(200);
-        $response->assertSee(__('Giỏ hàng trống'));
     }
 }
