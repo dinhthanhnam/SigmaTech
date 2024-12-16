@@ -85,6 +85,7 @@ Route::get('chatbot', function () {
 //user account
 Route::get('account', [UserController::class, 'index'])->name('user-account')->middleware('auth');
 Route::get('account/order/{id}', [UserController::class, 'getOrderDetails'])->middleware('auth');
+Route::post('account/update', [UserController::class, 'updateAccount'])->middleware('auth');
 
 
 
