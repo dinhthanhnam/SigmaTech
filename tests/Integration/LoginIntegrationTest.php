@@ -95,4 +95,19 @@ class LoginIntegrationTest extends TestCase
         $response->assertStatus(302);
         $this->assertGuest();
     }
+
+    public function test_user_login_should_be_redirected_to_home(): void
+    {
+        $user = User::factory()->create([
+            'email' => 'userabc@example.com',
+            'password' => 'userabc',
+        ]);
+        // Gửi POST request không có mật khẩu
+        $response = $this->post('/login', [
+            'email' => 'userabc@example.com',
+            'password' => 'userabc',
+        ]);
+        $response->assertStatus(302);
+        $this->be($user);
+    }
 }

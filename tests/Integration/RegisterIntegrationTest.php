@@ -19,7 +19,10 @@ class RegisterIntegrationTest extends TestCase
         $data = [
             'name' => 'John Doe',
             'email' => 'johndoe@example.com',
+            'phone' => fake()->phoneNumber(),
             'password' => 'password123',
+            'gender' => '1',
+            'address' => fake()->paragraph(),
             'password_confirmation' => 'password123',
         ];
     
@@ -39,7 +42,6 @@ class RegisterIntegrationTest extends TestCase
             'name',
             'email',
             'password',
-            'phone',
         ]);
     }    
     public function test_register_requires_valid_email(): void

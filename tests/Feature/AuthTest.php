@@ -36,14 +36,6 @@ class AuthTest extends TestCase
         $response->assertSee('Đặt lại mật khẩu');
         $response->assertSee('Địa chỉ Email cần đặt lại');
     }
-    public function test_user_login_should_be_redirected_to_home(): void
-    {
-        $response = $this->get('/login');
-        $user = User::factory()->create();
-        $this->actingAs($user);
-        $response->assertRedirect('/');
-        $response->assertStatus(200);
-    }
     public function test_unauthenticated_user_shouldnt_see_account_dashboard(): void
     {
         $response = $this->get('/account');
