@@ -3,10 +3,10 @@
     $laptop_id = $laptop->id;
     $name = $laptop->name;
     $type = $laptop->attributes->firstWhere('name', '[Laptop] Loại laptop')->pivot->value ?? 'N/A';
-    $price = $laptop->attributes->firstWhere('name', 'Price')->pivot->value ?? 'N/A';
+    $price = $laptop->attributes->firstWhere('name', 'Price')->pivot->value ?? 0;
 
-    $dealprice = $laptop->attributes->firstWhere('name', 'Deal Price')->pivot->value ?? 'N/A';
-    $rating = $laptop->attributes->firstWhere('name', 'Rating')->pivot->value ?? 'N/A';
+    $dealprice = $laptop->attributes->firstWhere('name', 'Deal Price')->pivot->value ?? 0;
+    $rating = $laptop->attributes->firstWhere('name', 'Rating')->pivot->value ?? 0;
     $brand = $laptop->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
     $model = $laptop->attributes->firstWhere('name', 'Model')->pivot->value ?? 'N/A';
     $cpu = $laptop->attributes->firstWhere('name', '[Laptop] Vi xử lý')?->pivot->value ?? 'N/A';
@@ -41,9 +41,9 @@
 
     $camera = $laptop->attributes->firstWhere('name', '[Laptop] Camera')?->pivot->value ?? 'N/A';
 
-    $saleprice = $laptop->attributes->firstWhere('name', 'Sale Price')->pivot->value ?? 'N/A';
-    $sale_start_date = $laptop->attributes->firstWhere('name', 'Sale Start Date')->pivot->value ?? 'N/A';
-    $sale_end_date = $laptop->attributes->firstWhere('name', 'Sale End Date')->pivot->value ?? 'N/A';
+    $saleprice = $laptop->attributes->firstWhere('name', 'Sale Price')->pivot->value ?? 0;
+    $sale_start_date = $laptop->attributes->firstWhere('name', 'Sale Start Date')->pivot->value ?? null;
+    $sale_end_date = $laptop->attributes->firstWhere('name', 'Sale End Date')->pivot->value ?? null;
     $sale_end_time = strtotime($sale_end_date);
 
 @endphp

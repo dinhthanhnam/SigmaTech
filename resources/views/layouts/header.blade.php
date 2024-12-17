@@ -7,7 +7,7 @@
             </a>
             <!-- search -->
             <div class="header-search">
-                <form method="get" action="/tim" enctype="multipart/form-data" class="clearfix search-form bg-white">
+                <form method="get" action="/search" enctype="multipart/form-data" class="clearfix search-form bg-white">
                     <select name="scat_id">
                         <option value="">Tất cả danh mục</option>
                         <option value="1614">Laptop Gaming - Đồ Họa</option>
