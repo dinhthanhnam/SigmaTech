@@ -48,10 +48,19 @@
                                 <tbody id="product-list">
                                     @foreach ($flashSaleItems as $product)
                                         @php
-                                            $endDate = Carbon\Carbon::parse(
-                                                $product->attributes->firstWhere('name', 'Sale End Date')->pivot->value,
-                                            )->setTime(0, 0, 0);
-                                            $remainingTime = $endDate->timestamp - now()->timestamp;
+                                            // Lấy giá trị ngày từ Sale End Date
+                                            $endDate = $product->attributes->firstWhere('name', 'Sale End Date')->pivot->value ?? null;
+                        
+                                            // Xử lý định dạng ngày giờ
+                                            if ($endDate) {
+                                                $formattedDate =
+                                                    strpos($endDate, 'T') !== false
+                                                        ? date('Y-m-d H:i:s', strtotime(str_replace('T', ' ', $endDate)))
+                                                        : date('Y-m-d H:i:s', strtotime($endDate));
+                                            } else {
+                                                $formattedDate = '';
+                                            }
+                                            $remainingTime = Carbon\Carbon::parse($formattedDate)->timestamp - Carbon\Carbon::now()->timestamp;
                                         @endphp
                                         <tr>
                                             <td>{{ $product->id }}</td>
@@ -70,7 +79,7 @@
                                                 </b>
                                             </td>
                                             <td>
-                                                {{ Carbon\Carbon::parse($product->attributes->firstWhere('name', 'Sale End Date')->pivot->value)->setTime(0, 0, 0) }}
+                                                {{ $formattedDate }}
                                             </td>
                                             <td>
                                                 <span id="countdown-{{ $product->id }}"
@@ -103,7 +112,6 @@
         // Hàm khởi tạo bộ đếm ngược cho tất cả các sản phẩm
         document.querySelectorAll('[id^="countdown-"]').forEach(element => {
             let remainingTime = parseInt(element.getAttribute('data-remaining-time'), 10);
-
             // Thiết lập bộ đếm ngược, mỗi giây cập nhật một lần
             const countdown = setInterval(() => {
                 // Tính số giờ, phút và giây còn lại

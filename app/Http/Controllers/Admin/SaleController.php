@@ -20,10 +20,17 @@ use Illuminate\Pagination\LengthAwarePaginator;
 
 class SaleController extends Controller
 {
+    private function sale_query($table) {
+        return "STR_TO_DATE(REPLACE(".$table."_attribute.value, 'T', ' '), '%Y-%m-%d %H:%i:%s') > ?";
+    }
+
+    private function now(){
+        return Carbon::now()->format('Y-m-d H:i:s');
+    }
     public function index() {
         $laptopsSale = Laptop::whereHas('attributes', function ($query) {
             $query->where('name', 'Sale End Date')
-                  ->whereRaw("STR_TO_DATE(laptop_attribute.value, '%Y-%m-%d') > ?", [Carbon::now()->format('Y-m-d')]);
+                  ->whereRaw($this->sale_query('laptop'), $this->now());
         })
         ->with('attributes')->get()
         ->each(function ($item) {
@@ -31,49 +38,49 @@ class SaleController extends Controller
         });
         $cpusSale = Cpu::whereHas('attributes', function ($query) {
             $query->where('name', 'Sale End Date')
-                  ->whereRaw("STR_TO_DATE(cpu_attribute.value, '%Y-%m-%d') > ?", [Carbon::now()->format('Y-m-d')]);
+                  ->whereRaw($this->sale_query('cpu'), $this->now());
         })->with('attributes')->get()
         ->each(function ($item) {
             $item->setAttribute('data_table', 'cpu');
         });
         $gpusSale = Gpu::whereHas('attributes', function ($query) {
             $query->where('name', 'Sale End Date')
-                  ->whereRaw("STR_TO_DATE(gpu_attribute.value, '%Y-%m-%d') > ?", [Carbon::now()->format('Y-m-d')]);
+                  ->whereRaw($this->sale_query('gpu'), $this->now());
         })->with('attributes')->get()
         ->each(function ($item) {
             $item->setAttribute('data_table', 'gpu');
         });
         $monitorsSale = Monitor::whereHas('attributes', function ($query) {
             $query->where('name', 'Sale End Date')
-                  ->whereRaw("STR_TO_DATE(monitor_attribute.value, '%Y-%m-%d') > ?", [Carbon::now()->format('Y-m-d')]);
+                  ->whereRaw($this->sale_query('monitor'), $this->now());
         })->with('attributes')->get()
         ->each(function ($item) {
             $item->setAttribute('data_table', 'monitor');
         });
         $gamingGearsSale = Gaminggear::whereHas('attributes', function ($query) {
             $query->where('name', 'Sale End Date')
-                  ->whereRaw("STR_TO_DATE(gaminggear_attribute.value, '%Y-%m-%d') > ?", [Carbon::now()->format('Y-m-d')]);
+                  ->whereRaw($this->sale_query('gaminggear'), $this->now());
         })->with('attributes')->get()
         ->each(function ($item) {
             $item->setAttribute('data_table', 'gaminggear');
         });
         $mediasSale = Media::whereHas('attributes', function ($query) {
             $query->where('name', 'Sale End Date')
-                  ->whereRaw("STR_TO_DATE(media_attribute.value, '%Y-%m-%d') > ?", [Carbon::now()->format('Y-m-d')]);
+                  ->whereRaw($this->sale_query('media'), $this->now());
         })->with('attributes')->get()
         ->each(function ($item) {
             $item->setAttribute('data_table', 'media');
         });
         $coolingsSale = Cooling::whereHas('attributes', function ($query) {
             $query->where('name', 'Sale End Date')
-                  ->whereRaw("STR_TO_DATE(cooling_attribute.value, '%Y-%m-%d') > ?", [Carbon::now()->format('Y-m-d')]);
+                  ->whereRaw($this->sale_query('cooling'), $this->now());
         })->with('attributes')->get()
         ->each(function ($item) {
             $item->setAttribute('data_table', 'cooling');
         });
         $accessoriesSale = Accessory::whereHas('attributes', function ($query) {
             $query->where('name', 'Sale End Date')
-                  ->whereRaw("STR_TO_DATE(accessory_attribute.value, '%Y-%m-%d') > ?", [Carbon::now()->format('Y-m-d')]);
+                  ->whereRaw($this->sale_query('accessory'), $this->now());
         })->with('attributes')->get()
         ->each(function ($item) {
             $item->setAttribute('data_table', 'accessory');

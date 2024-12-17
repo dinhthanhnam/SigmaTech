@@ -17,7 +17,6 @@ class LaptopTest extends TestCase
     {
         $this->assertDatabaseCount('laptops', 27);
     }
-
     public function test_on_top_laptops_should_show(): void
     {
         $response = $this->get('/laptops/Gaming');
@@ -30,7 +29,6 @@ class LaptopTest extends TestCase
 
         $this->assertLessThanOrEqual(10, $topGamingLaptops->count());
     }
-
     public function test_paginated_laptops_shouldnt_have_13th_record(): void
     {
         $laptop13 = Laptop::where('name', 'Laptop Acer Predator Helios 16 PH16-72-95ZM')->first();
@@ -44,6 +42,4 @@ class LaptopTest extends TestCase
 
         $this->assertFalse($gamingLaptops->contains('name', $laptop13->name));
     }
-
-
 }

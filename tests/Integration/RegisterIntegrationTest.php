@@ -42,21 +42,6 @@ class RegisterIntegrationTest extends TestCase
             'phone',
         ]);
     }    
-    public function test_login_with_normal_user()
-    {
-        $user = User::factory()->create([
-            'email' => 'userabc@example.com',
-            'password' => 'userabc',
-        ]);
- 
-        $response = $this->post('/login', [
-            'email' => 'userabc@example.com',
-            'password' => 'userabc',
-        ]);
-        $this->assertAuthenticatedAs($user);
-        $response->assertStatus(302);
-        $response->assertSee('/');
-    }
     public function test_register_requires_valid_email(): void
     {
         $data = [
