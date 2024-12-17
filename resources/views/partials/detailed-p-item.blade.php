@@ -4,17 +4,16 @@
     $category_id = $product->category_id;
     $name = $product->name;
     $type = $product->attributes->firstWhere('name', '[Laptop] Loại laptop')->pivot->value ?? 'N/A';
-    $price = $product->attributes->firstWhere('name', 'Price')->pivot->value ?? 'N/A';
-    $saleprice = $product->attributes->firstWhere('name', 'Sale Price')->pivot->value ?? 'N/A';
-    $sale_end_date = $product->attributes->firstWhere('name', 'Sale End Date')->pivot->value ?? 'N/A';
-    $dealprice = $product->attributes->firstWhere('name', 'Deal Price')->pivot->value ?? 'N/A';
-    $rating = $product->attributes->firstWhere('name', 'Rating')->pivot->value ?? 'N/A';
+    $price = $product->attributes->firstWhere('name', 'Price')->pivot->value ?? 0;
+    $saleprice = $product->attributes->firstWhere('name', 'Sale Price')->pivot->value ?? 0;
+    $sale_end_date = $product->attributes->firstWhere('name', 'Sale End Date')->pivot->value ?? null;
+    $dealprice = $product->attributes->firstWhere('name', 'Deal Price')->pivot->value ?? 0;
+    $rating = $product->attributes->firstWhere('name', 'Rating')->pivot->value ?? 0;
     $brand = $product->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
     $model = $product->attributes->firstWhere('name', 'Model')->pivot->value ?? 'N/A';
     //biến riêng, cho laptop
     $laptop_cpu = $product->attributes->firstWhere('name', '[Laptop] Vi xử lý')?->pivot->value ?? 'N/A';
-    $laptop_ssd_capacity =
-        $product->attributes->firstWhere('name', '[Laptop] Dung lượng ổ cứng')?->pivot->value ?? 'N/A';
+    $laptop_ssd_capacity = $product->attributes->firstWhere('name', '[Laptop] Dung lượng ổ cứng')?->pivot->value ?? 'N/A';
     $laptop_ssd = $product->attributes->firstWhere('name', '[Laptop] Ổ cứng')?->pivot->value ?? 'N/A';
     $laptop_gpu = $product->attributes->firstWhere('name', '[Laptop] Card đồ hoạ')?->pivot->value ?? 'N/A';
     $laptop_mon_size = $product->attributes->firstWhere('name', '[Laptop] Kích thước màn hình')?->pivot->value ?? 'N/A';

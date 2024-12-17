@@ -172,6 +172,6 @@ Route::get('/search-suggestions', [HomeController::class, 'getSuggestions']);
 //Chatbot
 Route::match(['get', 'post'], '/botman', 'App\Http\Controllers\BotManController@handle');
 
-Route::get('/tim', [HomeController::class, 'getSearch']);
+Route::get('/search', [HomeController::class, 'getSearch']);
 
 
