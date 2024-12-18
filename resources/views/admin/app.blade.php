@@ -42,14 +42,14 @@
                         </a>
                     </div>
                     <li style = "list-style: none;">
-                        <a class="app-nav__item d-flex align-items-center"
+                        <a class="app-nav__item d-flex align-items-center" id="logout-btn"
                             onclick="document.getElementById('logOut').submit();">
                             <i class="fa-solid fa-right-from-bracket "></i>
                         </a>
                     </li>
                 </div>
             </div>
-            <form id="logOut" action="{{ route('logout') }}" method="POST" style="display: none;">
+            <form id="logOut" name="logout" action="{{ route('logout') }}" method="POST" style="display: none;">
                 @csrf
             </form>
         </header>
