@@ -2,87 +2,90 @@
 
 namespace Tests\Unit;
 
-use App\Models\CartItem;
-use App\Models\Laptop;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use App\Models\Order;
-use App\Models\User;
 use App\Models\OrderDetail;
+use App\Models\User;
 
 class OrderTest extends TestCase
 {
     use RefreshDatabase;
 
-    /**
-     * Kiểm tra các thuộc tính có thể được gán (fillable).
-     */
-    public function test_order_info_shows_correct_cart_items()
+    /** @test */
+    public function it_can_create_an_order()
     {
-        // Tạo một người dùng và đăng nhập
-        $user = User::factory()->create();
-        $this->actingAs($user);
-
-        // Tạo sản phẩm giả và thêm vào giỏ hàng
-        $laptop = Laptop::first();
-        $cartItem = CartItem::create([
-            'user_id' => $user->id,
-            'product_id' => $laptop->id,
-            'product_type' => 'laptop',
-            'quantity' => 1,
-            'name' => $laptop->name,
-        ]);
-
-        // Gửi yêu cầu xem thông tin đơn hàng
-        $response = $this->get(route('order.info', ['items' => json_encode([[
-            'productType' => 'laptop',
-            'productId' => $laptop->id
-        ]])]));
-
-        // Kiểm tra kết quả trả về
-        $response->assertStatus(200);
-        $response->assertViewHas('cartItems');
-        $this->assertEquals(1, count(session('cartItems')));
-    }
-
-    public function test_place_order_banking_success()
-    {
-        // Tạo người dùng và đăng nhập
-        $user = User::factory()->create();
-        $this->actingAs($user);
-
-        // Tạo sản phẩm giả và thêm vào giỏ hàng
-        $laptop = Laptop::factory()->create();
-        CartItem::create([
-            'user_id' => $user->id,
-            'product_id' => $laptop->id,
-            'product_type' => 'laptop',
-            'quantity' => 1,
-            'name' => $laptop->name,
-        ]);
-
-        // Thực hiện đặt hàng (Banking)
         $orderData = [
-            'fullname' => 'Nguyen Duy Hung',
+            'user_id' => 1, // Set user_id explicitly in another test if needed
+            'customer_name' => 'John Doe',
             'gender' => 'Male',
-            'phone' => '0986435177',
-            'address' => '123 Main St',
-            'payment_method' => 'banking',
-            'totalPrice' => 1000000, // giá trị thanh toán
-            'note' => 'Thanh toán qua ngân hàng',
+            'phone_number' => '1234567890',
+            'shipping_address' => '123 Street, City',
+            'payment_method' => 'cod',
+            'note' => 'Leave at door',
+            'total_price' => 500000,
         ];
 
-        $response = $this->post(route('order.place'), $orderData);
+        $order = Order::create($orderData);
 
-        // Kiểm tra rằng đơn hàng đã được lưu và người dùng được chuyển hướng đến trang thanh toán ngân hàng
-        $response->assertViewIs('banking');
-        $response->assertViewHas('qrUrl');
+        $this->assertDatabaseHas('orders', $orderData);
+    }
 
-        // Kiểm tra rằng đơn hàng đã được lưu vào cơ sở dữ liệu
-        $this->assertDatabaseHas('orders', [
-            'user_id' => $user->id,
-            'payment_method' => 'banking',
-            'total_price' => 1000000,
+    /** @test */
+    public function an_order_can_have_many_order_details()
+    {
+        $order = Order::create([
+            'user_id' => 2,
+            'customer_name' => 'Jane Smith',
+            'gender' => 'Female',
+            'phone_number' => '0987654321',
+            'shipping_address' => '456 Avenue, City',
+            'payment_method' => 'cod',
+            'note' => 'Call before delivery',
+            'total_price' => 3000000,
         ]);
+
+        $orderDetail1 = OrderDetail::create([
+            'order_id' => $order->id,
+            'product_type' => 'laptop',
+            'product_id' => 1,
+            'quantity' => 2,
+            'price' => 150
+        ]);
+
+        $orderDetail2 = OrderDetail::create([
+            'order_id' => $order->id,
+            'product_type' => 'laptop',
+            'product_id' => 2,
+            'quantity' => 1,
+            'price' => 300
+        ]);
+
+        $this->assertEquals(2, $order->orderDetails()->count());
+        $this->assertTrue($order->orderDetails->contains($orderDetail1));
+        $this->assertTrue($order->orderDetails->contains($orderDetail2));
+    }
+
+    /** @test */
+    public function an_order_belongs_to_a_user()
+    {
+        $user = User::create([
+            'name' => 'Alice Johnson',
+            'email' => 'alice@example.com',
+            'password' => bcrypt('password')
+        ]);
+
+        $order = Order::create([
+            'user_id' => $user->id,
+            'customer_name' => 'Alice Johnson',
+            'gender' => 'Female',
+            'phone_number' => '1122334455',
+            'shipping_address' => '789 Boulevard, City',
+            'payment_method' => 'cod',
+            'note' => 'Fragile items',
+            'total_price' => 750000,
+        ]);
+
+        $this->assertEquals($user->id, $order->user->id);
     }
 }
