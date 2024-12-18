@@ -44,7 +44,7 @@ class RegisterDuskTest extends DuskTestCase
                     ->type('password_confirmation', 'password123')
                     ->pause(1000)
                     ->press('TẠO TÀI KHOẢN')
-                    ->assertSee('Họ và tên là bắt buộc.') // Kiểm tra thông báo lỗi khi thiếu số điện thoại
+                    ->assertSee('Họ và tên là bắt buộc.') 
                     ->pause(1000);
         });
     }
@@ -60,7 +60,7 @@ class RegisterDuskTest extends DuskTestCase
                     ->type('password_confirmation', 'password123')
                     ->pause(1000)
                     ->press('TẠO TÀI KHOẢN')
-                    ->assertSee('Email là bắt buộc.') // Kiểm tra thông báo lỗi khi thiếu số điện thoại
+                    ->assertSee('Email là bắt buộc.') 
                     ->pause(1000);
         });
     }
@@ -78,7 +78,7 @@ class RegisterDuskTest extends DuskTestCase
                     ->type('password_confirmation', 'password123213')
                     ->pause(1000)
                     ->press('TẠO TÀI KHOẢN')
-                    ->assertSee('Mật khẩu xác nhận không khớp.') // Kiểm tra thông báo lỗi khi thiếu số điện thoại
+                    ->assertSee('Mật khẩu xác nhận không khớp.')
                     ->pause(1000);
         });
     }
@@ -95,7 +95,7 @@ class RegisterDuskTest extends DuskTestCase
                     ->type('password_confirmation', 'password123')
                     ->pause(1000)
                     ->press('TẠO TÀI KHOẢN')
-                    ->assertSee('Email này đã được sử dụng.') // Kiểm tra thông báo lỗi khi thiếu số điện thoại
+                    ->assertSee('Email này đã được sử dụng.') 
                     ->pause(1000);
         });
     }
