@@ -6,22 +6,21 @@ use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Laravel\Dusk\Browser;
 use Tests\DuskTestCase;
 use App\Models\User;
-class CartDuskTest extends DuskTestCase
+class OrderDuskTest extends DuskTestCase
 {
     /**
      * A Dusk test example.
      */
-    public function test_add_single_product_to_cart(): void
+    public function test_order_product(): void
     {
         $this->browse(function (Browser $browser) {
             $user = User::find(4);
             $browser->loginAs($user->id)
-                    ->visit('/laptops/Gaming/Asus/1')
-                    ->pause(1000) // Chờ 1 giây để trang 
                     ->click('.btn-addCart')
                     ->pause(2000)
-                    ->click('button.swal2-confirm.swal2-styled')
-                    ->click('#cart-icon')
+                    ->click('#select-all')
+                    ->pause(1000)
+                    ->clickLink('ĐẶT HÀNG NGAY')
                     ->pause(2000)
                     ->assertSee('Laptop Asus ROG Strix G16 G614JI');
         });
