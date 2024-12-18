@@ -104,7 +104,7 @@
                                 </span>
                                 <span class="title" title="Laptop Gaming - Đồ Họa"> Laptop Gaming - Đồ Họa</span>
                             </a>
-                            <div class="sub-menu  no-big-img">
+                            <div class="sub-menu no-big-img">
                                 <div class="cat-child-holder" id="js-menu-container">
                                     <div class="cat-child-items">
                                         <a href="#" class="cate-2" title="Laptop Theo Hãng"

@@ -12,7 +12,7 @@ class RegisterDuskTest extends DuskTestCase
     /**
      * A Dusk test example.
      */
-    public function test_register_with_all_field_required_successfully(): void
+    public function test_simulation_register_with_all_field_required_successfully(): void
     {
         $this->browse(function (Browser $browser) {
             $browser->visit('/register')
@@ -33,7 +33,7 @@ class RegisterDuskTest extends DuskTestCase
         });
         DB::table('users')->where('email', 'johndoe@example.com')->delete();
     }
-    public function test_register_with_missing_name_field(): void
+    public function test_simulation_register_with_missing_name_field(): void
     {
         $this->browse(function (Browser $browser) {
             $browser->visit('/register')
@@ -49,7 +49,7 @@ class RegisterDuskTest extends DuskTestCase
         });
     }
 
-    public function test_register_with_missing_email_field(): void
+    public function test_simulation_register_with_missing_email_field(): void
     {
         $this->browse(function (Browser $browser) {
             $browser->visit('/register')
@@ -65,7 +65,7 @@ class RegisterDuskTest extends DuskTestCase
         });
     }
 
-    public function test_register_with_not_matched_password(): void
+    public function test_simulation_register_with_not_matched_password(): void
     {
         $this->browse(function (Browser $browser) {
             $browser->visit('/register')
@@ -82,7 +82,7 @@ class RegisterDuskTest extends DuskTestCase
                     ->pause(1000);
         });
     }
-    public function test_register_with_existing_email(): void
+    public function test_simulation_register_with_existing_email(): void
     {
         $this->browse(function (Browser $browser) {
             $browser->visit('/register')
