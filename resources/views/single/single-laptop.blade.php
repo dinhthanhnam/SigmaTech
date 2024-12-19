@@ -740,6 +740,13 @@
                     </div>
                 </div>
             </div>
+            <div class="p-container bg-white js-box-container" style="min-height: 400px">
+                <div class="container custom-nav owl-carousel owl-theme">
+                    @foreach ($recommendedItems as $item)
+                        @include('partials.recommended-p-item', ['recommendeditem' => $item])
+                    @endforeach
+                </div>
+            </div>
         </div>
         <div style="display: none;" id="pro-spec">
             <table style="width: 100.0%;" border="1" width="100%">
@@ -1140,6 +1147,7 @@
                 </script>
             @endpush
         @endif
+            
     </section>
 @endsection
 @php
@@ -1349,5 +1357,29 @@
                 document.querySelector('#js-deal-container').innerText = "Đã kết thúc";
             }
         }, 1000); // Cập nhật mỗi giây (1000 milliseconds)
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: true,
+            responsive: {
+            0: {
+                items: 4
+            },
+            600: {
+                items: 5
+            },
+            1000: {
+                items: 6
+            }
+    
+            }
+        });
+        });
     </script>
 @endpush
