@@ -27,7 +27,7 @@ class LaptopSeeder extends Seeder
                     ['name' => 'On Top', 'value' => '0'],
                     ['name' => 'Sale Price', 'value' => '40990000'],
                     ['name' => 'Sale Start Date', 'value' => '2024-11-04'],
-                    ['name' => 'Sale End Date', 'value' => '2024-12-22'],
+                    ['name' => 'Sale End Date', 'value' => '2024-12-25'],
                     ['name' => 'Thumbnail', 'value' => '/assets/img/products/laptops/gaming/1/Thumb.jpg'],
                     ['name' => 'Thumbnail Small', 'value' => '/assets/img/products/laptops/gaming/1/Thumb_small.jpg'],
                     ['name' => 'Image1', 'value' => '/assets/img/products/laptops/gaming/1/Image1.jpg'],
