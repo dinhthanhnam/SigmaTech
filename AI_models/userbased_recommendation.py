@@ -4,17 +4,25 @@ from surprise.model_selection import cross_validate
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import requests
-
+from fastapi.middleware.cors import CORSMiddleware
 # Tạo ứng dụng FastAPI
 app = FastAPI()
+
+# Cấu hình CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://127.0.0.1:8000"],
+    allow_credentials=True,
+    allow_methods=["*"],  
+    allow_headers=["*"], 
+)
 
 # Schema cho request
 class UserRequest(BaseModel):
     user_id: int
 
-# Hàm lấy dữ liệu từ Laravel API
 def fetch_data_from_laravel():
-    url = "http://localhost:8000/get-dataset?limit=20"  # Thay bằng URL đúng
+    url = "http://127.0.0.1:8000/get-dataset?limit=20" 
     response = requests.get(url)
     if response.status_code != 200:
         raise HTTPException(status_code=500, detail="Failed to fetch data from Laravel API")
@@ -22,8 +30,6 @@ def fetch_data_from_laravel():
 
 # Hàm huấn luyện model SVD
 def train_svd_model(data):
-    # Chuẩn bị dữ liệu cho Surprise
-
     reader = Reader()
     data = Dataset.load_from_df(data[['user_id', 'product_identifier', 'interaction_score']], reader)
 
@@ -36,7 +42,12 @@ def train_svd_model(data):
     return model
 
 # Hàm gợi ý sản phẩm cho một user cụ thể
-def get_recommendations_for_user(model, data, user_id, top_n=6):
+def get_recommendations_for_user(model, data, user_id=None, top_n=6):
+    if user_id is None or user_id not in data['user_id'].unique():
+        product_counts = data['product_identifier'].value_counts()
+        top_products = product_counts.head(top_n).index.tolist()
+        return top_products
+
     # Lấy tất cả các sản phẩm
     all_products = data['product_identifier'].unique()
 
@@ -58,12 +69,11 @@ def get_recommendations_for_user(model, data, user_id, top_n=6):
     # Trả về top N sản phẩm
     return [product for product, _ in predictions[:top_n]]
 
-# Endpoint để nhận user_id và trả về gợi ý
-@app.post("/recommend")
-def recommend(user_request: UserRequest):
-    user_id = user_request.user_id
 
-    # Lấy dataset từ Laravel
+# Endpoint để nhận user_id và trả về gợi ý
+@app.get("/recommend")
+def recommend(user_id: int):
+    # Lấy dataset từ Laravel (bạn cần triển khai hàm này)
     data = fetch_data_from_laravel()
 
     # Huấn luyện model SVD

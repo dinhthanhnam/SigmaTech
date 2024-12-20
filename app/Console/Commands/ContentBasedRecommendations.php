@@ -17,15 +17,10 @@ class ContentBasedRecommendations extends Command
     public function handle()
     {
         $this->info('Bắt đầu refresh gợi ý sản phẩm...');
-
         $dataset = $this->generateRecommendations();
-
         $keywords = $this->getUniqueKeywords($dataset);
-
         $vectors = $this->generateFeatureVectors($dataset, $keywords);
-
         $this->saveRecommendations($vectors, $dataset);
-
         $this->info('Đã refresh gợi ý sản phẩm thành công!');
     }
 

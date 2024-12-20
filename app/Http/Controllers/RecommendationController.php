@@ -1,6 +1,11 @@
 <?php
 namespace App\Http\Controllers;
 
+use App\Models\Cooling;
+use App\Models\Cpu;
+use App\Models\Gaminggear;
+use App\Models\Laptop;
+use App\Models\Monitor;
 use App\Services\RecommendationService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
@@ -24,22 +29,24 @@ class RecommendationController extends Controller
 
         return response()->json($data);
     }
+
     public function getRecommendations(Request $request)
     {
         $userId = $request->input('user_id');
-        if (!$userId) {
-            return response()->json(['error' => 'user_id is required'], 400);
+        $data = $this->recommendationService->fetchRecommendationsFromAPI($userId);
+
+        if ($data) {
+            return response()->json($data);
+        } else {
+            return response()->json(['error' => 'Request failed'], 500);
         }
+    }
 
-        // Gửi request đến FastAPI
-        $response = Http::post('http://localhost:9100/recommend', [
-            'user_id' => $userId,
-        ]);
+    public function mapRecommendationsToModels(array $recommendations)
+    {
+        $products = $this->recommendationService->mapRecommendationsToProducts($recommendations);
 
-        if ($response->failed()) {
-            return response()->json(['error' => 'Failed to get recommendations from FastAPI'], 500);
-        }
-
-        return response()->json(json_decode($response->body()));
+        return response()->json($products);
     }
 }
+

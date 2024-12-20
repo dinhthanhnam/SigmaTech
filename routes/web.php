@@ -177,4 +177,4 @@ Route::get('/search', [HomeController::class, 'getSearch']);
 //Recommendation
 
 Route::get('/get-dataset', [RecommendationController::class, 'getDatasetForSVD']);
-
+Route::get('/get-recommendations', [RecommendationController::class, 'getRecommendations']);

@@ -73,7 +73,15 @@
           <a href="{{ route('flash-sale') }}">Xem thêm</a>
         </div>
       </div>
-
+      <!-- Gợi ý cá nhân hoá-->
+      <div class="box-pro-container bg-white js-box-container" style="min-height: 400px" data-id="395-850">
+        <div class="box-title-container">
+          <h2 class="box-title"> Gợi ý cho bạn</h2>
+        </div>
+        <div class="p-container custom-nav owl-carousel owl-theme" id="recommendations">
+        </div>
+        {{-- @include('partials.userbased-recommendation', ['recommendedItems' => $recommendedItems]) --}}
+      </div>
       <!-- Laptop gaming -->
       <div class="box-pro-container bg-white js-box-container" style="min-height: 400px" data-id="395-850">
         <div class="box-title-container">
@@ -187,6 +195,15 @@
 @endsection
 @push('scripts')
   <script>
+    fetch(`http:/127.0.0.1:9100?user_id={{ Auth::user()->id }}`)
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+    })
+    .catch(error => console.error(error));
+
+  </script>
+  <script>
     $(document).ready(function() {
       $("#js-home-slider").owlCarousel({
         items: 1,
@@ -254,4 +271,5 @@
       }, 1000);
     });
   </script>
+
 @endpush
