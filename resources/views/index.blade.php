@@ -201,7 +201,7 @@
 @endsection
 @push('scripts')
   <script>
-    fetch(`http:/127.0.0.1:9100?user_id={{ Auth::user()->id }}`)
+    fetch(`http:/127.0.0.1:9100?user_id={{ Auth::user()->id ?? null }}`)
     .then(response => response.json())
     .then(data => {
         console.log(data);
