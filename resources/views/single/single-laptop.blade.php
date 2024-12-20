@@ -42,10 +42,9 @@
     $camera = $laptop->attributes->firstWhere('name', '[Laptop] Camera')?->pivot->value ?? 'N/A';
 
     $saleprice = $laptop->attributes->firstWhere('name', 'Sale Price')->pivot->value ?? 0;
-    $sale_start_date = $laptop->attributes->firstWhere('name', 'Sale Start Date')->pivot->value ?? null;
-    $sale_end_date = $laptop->attributes->firstWhere('name', 'Sale End Date')->pivot->value ?? null;
+    $sale_start_date = $laptop->attributes->firstWhere('name', 'Sale Start Date')->pivot->value ?? 'N/A';
+    $sale_end_date = $laptop->attributes->firstWhere('name', 'Sale End Date')->pivot->value ?? 'N/A';
     $sale_end_time = strtotime($sale_end_date);
-
 @endphp
 @section('content')
     <section class="product-detail-page">
@@ -559,7 +558,7 @@
                         </span>
                     </div>
                     <p><a href="javascript:void(0)" id="js-viewmore-summary" class="red">&lt; Thu gọn</a></p>
-                    @if ($saleprice != 'N/A' && now()->lessThan(Carbon\Carbon::parse($sale_end_date)))
+                    @if ($sale_end_date =!'N/A' && $saleprice != 'N/A' && now()->lessThan(Carbon\Carbon::parse($sale_end_date)))
                         <div class="deal-count-container text-12 font-300 text-right" id="js-deal-container">Kết thúc sau
                             <span class="js-day"> 00 </span>
                             <span class="js-hour"> 00 </span>
@@ -592,7 +591,7 @@
                                     </td>
                                 </tr>
 
-                                @if ($saleprice != 'N/A' && now()->lessThan(Carbon\Carbon::parse($sale_end_date)))
+                                @if ($sale_end_date =!'N/A' && $saleprice != 'N/A' && now()->lessThan(Carbon\Carbon::parse($sale_end_date)))
                                     <tr>
                                         <td width="160px" class="font-500"> GIÁ SỐC: </td>
                                         <td>

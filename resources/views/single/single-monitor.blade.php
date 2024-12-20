@@ -425,7 +425,7 @@
                         </span>
                     </div>
                     <p><a href="javascript:void(0)" id="js-viewmore-summary" class="red">&lt; Thu gọn</a></p>
-                    @if ($saleprice != 'N/A' && now()->lessThan(Carbon\Carbon::parse($sale_end_date)))
+                    @if ($sale_end_date =!'N/A' && $saleprice != 'N/A' && now()->lessThan(Carbon\Carbon::parse($sale_end_date)))
                         <div class="deal-count-container text-12 font-300 text-right" id="js-deal-container">Kết thúc sau
                             <span class="js-day"> 00 </span>
                             <span class="js-hour"> 00 </span>
@@ -458,7 +458,7 @@
                                     </td>
                                 </tr>
 
-                                @if ($saleprice != 'N/A' && now()->lessThan(Carbon\Carbon::parse($sale_end_date)))
+                                @if ($sale_end_date =!'N/A'  && $saleprice != 'N/A' && now()->lessThan(Carbon\Carbon::parse($sale_end_date)))
                                     <tr>
                                         <td width="160px" class="font-500"> GIÁ SỐC: </td>
                                         <td>

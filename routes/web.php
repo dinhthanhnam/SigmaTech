@@ -25,7 +25,7 @@ use App\Http\Controllers\GaminggearController;
 use App\Http\Controllers\MediaController;
 use App\Http\Controllers\PcpartController;
 use App\Http\Controllers\BotManController;
-
+use App\Http\Controllers\RecommendationController;
 
 Auth::routes([
   'verify' => true
@@ -174,4 +174,7 @@ Route::match(['get', 'post'], '/botman', 'App\Http\Controllers\BotManController@
 
 Route::get('/search', [HomeController::class, 'getSearch']);
 
+//Recommendation
+
+Route::get('/get-dataset', [RecommendationController::class, 'getDatasetForSVD']);
 
