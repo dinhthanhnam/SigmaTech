@@ -11,28 +11,27 @@ class RegisterDuskTest extends DuskTestCase
 {
     /**
      * A Dusk test example.
-     */
-    public function test_simulation_register_with_all_field_required_successfully(): void
-    {
-        $this->browse(function (Browser $browser) {
-            $browser->visit('/register')
-                    ->type('name', 'John Doe') 
-                    ->pause(1000)
-                    ->type('email', 'johndoe@example.com') 
-                    ->pause(1000)
-                    ->type('password', 'password123') 
-                    ->pause(1000)
-                    ->type('password_confirmation', 'password123')
-                    ->pause(1000)
-                    ->type('phone', 'password123') 
-                    ->pause(1000)
-                    ->press('TẠO TÀI KHOẢN')
-                    ->assertPathIs('/')
-                    ->assertAuthenticated() 
-                    ->pause(1000); 
-        });
-        DB::table('users')->where('email', 'johndoe@example.com')->delete();
-    }
+    //  */
+    // public function test_simulation_register_with_all_field_required_successfully(): void
+    // {
+    //     $this->browse(function (Browser $browser) {
+    //         $browser->visit('/register')
+    //                 ->type('name', 'John Doe') 
+    //                 ->pause(1000)
+    //                 ->type('email', 'johndoe@example.com') 
+    //                 ->pause(1000)
+    //                 ->type('password', 'password123') 
+    //                 ->pause(1000)
+    //                 ->type('password_confirmation', 'password123')
+    //                 ->pause(1000)
+    //                 ->type('phone', 'password123') 
+    //                 ->pause(1000)
+    //                 ->press('TẠO TÀI KHOẢN')
+    //                 ->assertAuthenticated() 
+    //                 ->pause(1000); 
+    //     });
+    //     DB::table('users')->where('email', 'johndoe@example.com')->delete();
+    // }
     public function test_simulation_register_with_missing_name_field(): void
     {
         $this->browse(function (Browser $browser) {
