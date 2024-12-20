@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use BotMan\BotMan\BotMan;
+use BotMan\BotMan\Messages\Incoming\IncomingMessage;
+use BotMan\BotMan\Messages\Outgoing\OutgoingMessage;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 use App\Models\Laptop;
 use App\Models\Cpu;
 use App\Models\Gpu;
@@ -12,28 +15,16 @@ use App\Models\Gaminggear;
 use App\Models\Monitor;
 use App\Models\Accessory;
 
+
 class BotManController extends Controller
 {
-    public function handle()
+    /**
+     * Xử lý tin nhắn đầu vào từ người dùng.
+     */
+    public function handle(Request $request)
     {
         $botman = app('botman');
-
-        $botman->hears('{message}', function ($botman, $message) {
-            $message = strtolower($message);
-
-            // Phản hồi khi người dùng gửi lời chào
-            if (in_array($message, ['hello', 'hi', 'xin chào', 'chào'])) {
-                $botman->reply("Xin chào! Tôi có thể giúp gì cho bạn hôm nay? Hãy thử gõ 'mua laptop' hoặc 'hỗ trợ'.");
-                return;
-            }
-
-            // Phản hồi khi người dùng yêu cầu hỗ trợ
-            if (strpos($message, 'hỗ trợ') !== false) {
-                $botman->reply("Tôi có thể hỗ trợ bạn tìm sản phẩm, tư vấn mua hàng hoặc cung cấp thông tin. Hãy thử gõ 'mua laptop', 'mua cpu' cùng khoảng giá, hoặc 'tư vấn'.");
-                return;
-            }
-
-            // Nhận diện nhu cầu mua sản phẩm
+        $botman->hears('{message}', function (BotMan $botman, $message) {
             if (strpos($message, 'mua') !== false) {
                 $keywords = $this->extractKeywords($message);
             
@@ -77,17 +68,35 @@ class BotManController extends Controller
                         $botman->reply("Vui lòng cung cấp thêm thông tin sản phẩm cụ thể để tôi hỗ trợ tìm kiếm.");
                     }
                 }
-            
-                return;
             }
-
-            // Phản hồi mặc định khi không hiểu yêu cầu
-            $botman->reply("Xin lỗi, tôi không hiểu yêu cầu của bạn. Hãy thử gõ 'hỗ trợ' hoặc 'mua laptop'.");
-        });
+            else {
+                $response = $this->getChatbotResponse($message);
+                $botman->reply($response);
+            }
+            return;
+    });
 
         $botman->listen();
     }
 
+    /**
+     * Gửi yêu cầu tới FastAPI để lấy câu trả lời.
+     */
+    private function getChatbotResponse($userMessage)
+    {
+        try {
+            $apiUrl = 'http://127.0.0.1:9000/chatbot/'; // Địa chỉ FastAPI
+            $response = Http::post($apiUrl, ['question' => $userMessage]);
+
+            if ($response->successful()) {
+                return $response->json()['message'];
+            }
+
+            return 'Xin lỗi, hiện tại tôi không thể trả lời câu hỏi của bạn.';
+        } catch (\Exception $e) {
+            return 'Có lỗi xảy ra khi kết nối đến chatbot API.';
+        }
+    }
     private function extractKeywords($message)
     {
         $keywords = [];
@@ -309,6 +318,5 @@ class BotManController extends Controller
 
     return $searchResults->toArray();
 }
-
 
 }
