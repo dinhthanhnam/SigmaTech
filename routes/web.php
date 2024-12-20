@@ -27,7 +27,7 @@ use App\Http\Controllers\PcpartController;
 use App\Http\Controllers\BotManController;
 use App\Http\Controllers\RecommendationController;
 use App\Http\Controllers\Admin\AccountController;
-
+use Illuminate\Support\Facades\Http;
 
 Auth::routes([
   'verify' => true
@@ -183,6 +183,9 @@ Route::get('/search', [HomeController::class, 'getSearch']);
 
 Route::get('/get-dataset', [RecommendationController::class, 'getDatasetForSVD']);
 Route::get('/get-recommendations', [RecommendationController::class, 'getRecommendations']);
+Route::get('/userbased-recommendations', [RecommendationController::class, 'index']);
+
+
 Route::get('/export-churn-data', function () {
   // Lấy dữ liệu khách hàng từ bảng User
   $users = \App\Models\User::select('recency_days', 'frequency', 'monetary', 'cart_abandon_rate', 'churn_probability')->get();

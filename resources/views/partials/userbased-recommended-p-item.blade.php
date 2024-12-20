@@ -1,5 +1,5 @@
 @php
-    $name = $recommendeditem->name;
+    $name = $recommendeditem->product_name;
     $thumbnail = $recommendeditem->thumbnail;
     $price = $recommendeditem->price;
     $deal_price = $recommendeditem->deal_price;

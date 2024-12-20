@@ -8,6 +8,7 @@ use App\Models\Gaminggear;
 use App\Models\Laptop;
 use App\Models\Monitor;
 use App\Models\Order;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Http;
 
 class RecommendationService
@@ -33,16 +34,18 @@ class RecommendationService
       ->flatten(1);
     return $data->values();
   }
-  public function fetchRecommendationsFromAPI($userId = null)
+  public function fetchRecommendationsFromAPI($userId)
   {
-    $response = Http::get("http://127.0.0.1:9100/recommend", [
-      'user_id' => $userId
-    ]);
-    if ($response->successful()) {
-      return $response->json();
-    }
-    return null;
-  }
+      $response = Http::post("http://127.0.0.1:9000/recommend", [
+          'user_id' => $userId
+      ]);
+  
+      if ($response->successful()) {
+          return $response->json();
+      }
+  
+      return null;
+  }  
 
   public function mapRecommendationsToProducts(array $recommendations)
   {

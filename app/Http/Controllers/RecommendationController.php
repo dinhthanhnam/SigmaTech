@@ -6,14 +6,27 @@ use App\Models\Cpu;
 use App\Models\Gaminggear;
 use App\Models\Laptop;
 use App\Models\Monitor;
+use App\Models\UserRecommendation;
 use App\Services\RecommendationService;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Http;
 
 class RecommendationController extends Controller
 {
     protected $recommendationService;
 
+    public function index() {
+        if(!Auth::check()) {
+            $recommendedItems = [];
+            return view('partials.userbased-recommendation', compact('recommendedItems'));
+        } else {
+            $user_id = Auth::user()->id;
+            $recommendedItems = UserRecommendation::where('user_id', $user_id)->get();
+            
+            return view('partials.userbased-recommendation', compact('recommendedItems'));
+        };
+    }
     public function __construct(RecommendationService $recommendationService)
     {
         $this->recommendationService = $recommendationService;
