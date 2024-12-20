@@ -3,8 +3,6 @@
 namespace App\Http\Controllers;
 
 use BotMan\BotMan\BotMan;
-use BotMan\BotMan\Messages\Incoming\IncomingMessage;
-use BotMan\BotMan\Messages\Outgoing\OutgoingMessage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use App\Models\Laptop;
