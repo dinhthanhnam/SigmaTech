@@ -21,7 +21,7 @@
                         <div class="widget-small primary coloured-icon"><i class='icon bx bxs-user-account fa-3x'></i>
                             <div class="info">
                                 <h4>Tổng khách hàng</h4>
-                                <p><b>56 khách hàng</b></p>
+                                <p><b>132 khách hàng</b></p>
                                 <p class="info-tong">Tổng số khách hàng được quản lý.</p>
                             </div>
                         </div>
@@ -31,7 +31,7 @@
                         <div class="widget-small info coloured-icon"><i class='icon bx bxs-data fa-3x'></i>
                             <div class="info">
                                 <h4>Tổng sản phẩm</h4>
-                                <p><b>1850 sản phẩm</b></p>
+                                <p><b>198 sản phẩm</b></p>
                                 <p class="info-tong">Tổng số sản phẩm được quản lý.</p>
                             </div>
                         </div>
@@ -61,7 +61,8 @@
                         <div class="tile">
                             <h3 class="tile-title">Tình trạng đơn hàng</h3>
                             <div>
-                                <img src="/assets/img/AI/ty_le_trang_thai_don_hang.png" alt="Dự đoán doanh số">
+                                <img src="/assets/img/AI/ty_le_trang_thai_don_hang.png" alt="Dự đoán doanh số"
+                                    style="max-width: 100%; height: auto; display: inline-block;" />
                             </div>
                             <!-- / div trống-->
                         </div>
@@ -72,7 +73,8 @@
                         <div class="tile">
                             <h3 class="tile-title">Khách hàng mới</h3>
                             <div>
-                                <img src="/assets/img/AI/ty_le_khach_hang.png" alt="Dự đoán doanh số">
+                                <img src="/assets/img/AI/ty_le_khach_hang.png" alt="Dự đoán doanh số"
+                                    style="max-width: 100%; height: auto; display: inline-block;" />
                             </div>
 
                         </div>
@@ -88,7 +90,8 @@
                         <div class="tile">
                             <h3 class="tile-title">Doanh số sản phẩm bán chạy nhất</h3>
                             <div class="embed-responsive embed-responsive-16by9">
-                                <img class="embed-responsive-item" src="/assets/img/AI/san_pham_ban_chay_nhat.png" alt="Dự đoán doanh số">
+                                <img class="embed-responsive-item" src="/assets/img/AI/san_pham_ban_chay_nhat.png"
+                                    alt="Dự đoán doanh số">
                             </div>
                         </div>
                     </div>
@@ -96,7 +99,8 @@
                         <div class="tile">
                             <h3 class="tile-title">Doanh số sản phẩm bán ra theo tuần</h3>
                             <div class="embed-responsive embed-responsive-16by9">
-                                <img class="embed-responsive-item" src="/assets/img/AI/doanh_thu_theo_tuan.png" alt="Dự đoán doanh số">
+                                <img class="embed-responsive-item" src="/assets/img/AI/doanh_thu_theo_tuan.png"
+                                    alt="Dự đoán doanh số">
                             </div>
                         </div>
                     </div>

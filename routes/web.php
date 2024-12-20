@@ -26,6 +26,8 @@ use App\Http\Controllers\MediaController;
 use App\Http\Controllers\PcpartController;
 use App\Http\Controllers\BotManController;
 use App\Http\Controllers\RecommendationController;
+use App\Http\Controllers\Admin\AccountController;
+
 
 Auth::routes([
   'verify' => true
@@ -120,6 +122,9 @@ Route::middleware(['auth', AuthAdmin::class])->prefix('admin')->group(function (
   Route::get('/slider', [SliderController::class, 'showAllSliders'])->name('admin.show-slider');
   Route::get('/new-slider', [SliderController::class, 'showAddSlider'])->name('admin.new-slider');
   Route::post('/new-slider', [SliderController::class, 'saveSlider'])->name('admin.save-slider');
+
+  //account
+  Route::get('/users', [AccountController::class, 'index'])->name('admin.show-users');
 });
 
 
@@ -178,3 +183,20 @@ Route::get('/search', [HomeController::class, 'getSearch']);
 
 Route::get('/get-dataset', [RecommendationController::class, 'getDatasetForSVD']);
 Route::get('/get-recommendations', [RecommendationController::class, 'getRecommendations']);
+Route::get('/export-churn-data', function () {
+  // Lấy dữ liệu khách hàng từ bảng User
+  $users = \App\Models\User::select('recency_days', 'frequency', 'monetary', 'cart_abandon_rate', 'churn_probability')->get();
+  
+  // Tạo file CSV và viết dữ liệu vào
+  $csvFile = fopen('churn_data.csv', 'w');
+  fputcsv($csvFile, array_keys($users->first()->toArray()));
+
+  foreach ($users as $user) {
+      fputcsv($csvFile, $user->toArray());
+  }
+
+  fclose($csvFile);
+
+  // Trả về file CSV cho người dùng tải về
+  return response()->download('churn_data.csv');
+});

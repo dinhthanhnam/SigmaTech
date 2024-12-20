@@ -63,6 +63,6 @@ class DatabaseSeeder extends Seeder
 
         $this->call(OrderDetailSeeder::class);
         
-        
+        $this->call(CartItemSeeder::class);
     }
 }
