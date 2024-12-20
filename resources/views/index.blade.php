@@ -79,6 +79,12 @@
           <h2 class="box-title"> Gợi ý cho bạn</h2>
         </div>
         <div class="p-container custom-nav owl-carousel owl-theme" id="recommendations">
+          @foreach ($gamingLaptops as $product)
+            @include('partials.simple-p-item', ['product' => $product])
+          @endforeach
+          @foreach ($officeLaptops as $product)
+            @include('partials.simple-p-item', ['product' => $product])
+          @endforeach
         </div>
         {{-- @include('partials.userbased-recommendation', ['recommendedItems' => $recommendedItems]) --}}
       </div>
