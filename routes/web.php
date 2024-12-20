@@ -25,6 +25,7 @@ use App\Http\Controllers\GaminggearController;
 use App\Http\Controllers\MediaController;
 use App\Http\Controllers\PcpartController;
 use App\Http\Controllers\BotManController;
+use App\Http\Controllers\RecommendationController;
 use App\Http\Controllers\Admin\AccountController;
 
 
@@ -178,7 +179,10 @@ Route::match(['get', 'post'], '/botman', 'App\Http\Controllers\BotManController@
 
 Route::get('/search', [HomeController::class, 'getSearch']);
 
+//Recommendation
 
+Route::get('/get-dataset', [RecommendationController::class, 'getDatasetForSVD']);
+Route::get('/get-recommendations', [RecommendationController::class, 'getRecommendations']);
 Route::get('/export-churn-data', function () {
   // Lấy dữ liệu khách hàng từ bảng User
   $users = \App\Models\User::select('recency_days', 'frequency', 'monetary', 'cart_abandon_rate', 'churn_probability')->get();

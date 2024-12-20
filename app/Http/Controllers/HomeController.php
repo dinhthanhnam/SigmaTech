@@ -12,7 +12,10 @@ use App\Models\Gpu;
 use App\Models\Media;
 use App\Models\Monitor;
 use App\Models\Slider;
+use App\Services\RecommendationService;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Auth;
+
 class HomeController extends Controller
 {
     public function index()
@@ -201,7 +204,6 @@ class HomeController extends Controller
             }
         }
         $slides = Slider::all(['name', 'image']);
-
         return view('index', 
         compact( 'top5FlashSaleItems', 'gamingLaptops', 'officeLaptops', 'cpus', 'slides', 'monitors', 'gamingGears', 'coolings', 'accessories', 'medias'));
     }

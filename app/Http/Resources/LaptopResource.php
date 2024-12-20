@@ -18,6 +18,7 @@ class LaptopResource extends JsonResource
             'id' => $this->id,
             'name' => $this->name,
             'category_id' => $this->category_id,
+            'category_name' => 'laptops',
             'brand' => $this->attributes->firstWhere('name', 'Brand')?->pivot->value,
             'model' => $this->attributes->firstWhere('name', 'Model')?->pivot->value,
             'laptop_type' => $this->attributes->firstWhere('name', '[Laptop] Loại laptop')?->pivot->value ?? 'N/A',

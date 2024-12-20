@@ -41,7 +41,6 @@
                     </li>
                 </ol>
             </div>
-
             <div class="bg-white product-info-container">
                 <!-- pro images-left -->
                 <div class="pro-image-gallery">
@@ -539,276 +538,283 @@
                         <a href="#" target="new"><img src="{{ asset('assets/img/deal/nbac0386.jpg') }}"></a>
                     </div>
                 </div>
-                <div style="display: none;" id="pro-spec">
-                    <table style="width: 100.0%;" border="1" width="100%">
-                        <tbody>
-                            <tr>
-                                <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
-                                    <p>
-                                        <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                            <strong>
-                                                <span style="line-height: 115%; color: black;">
-                                                    Hãng sản xuất
-                                                </span>
-                                            </strong>
-                                        </span>
-                                    </p>
-                                </td>
-                                <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
-                                    <p style="text-align: center;">
-                                        <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                            <strong>
-                                                <a href="https://www.anphatpc.com.vn/laptop-asus_dm1058.html">
-                                                    {{ $brand }}
-                                                </a>
-                                            </strong>
-                                        </span>
-                                    </p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
-                                    <p>
-                                        <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                            <strong>
-                                                <span style="line-height: 115%; color: black;">Tên sản phẩm&nbsp;
-                                                    &nbsp;
-                                                </span>
-                                            </strong>
-                                        </span>
-                                    </p>
-                                </td>
-                                <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
-                                    <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a
-                                            href="https://www.anphatpc.com.vn/laptop-asus-rog-strix-g16-g614ji-n4125w.html"
-                                            target="_blank">{{ $name }}</a></span>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
-                                    <p>
-                                        <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                            <strong>
-                                                <span style="line-height: 115%; color: black;">Socket&nbsp;&nbsp;</span>
-                                            </strong>
-                                        </span>
-                                    </p>
-                                </td>
-                                <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                    <span
-                                        style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $socket }}</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
-                                    <p>
-                                        <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                            <strong>
-                                                <span style="line-height: 115%; color: black;">Tốc độ cơ
-                                                    bản&nbsp;&nbsp;</span>
-                                            </strong>
-                                        </span>
-                                    </p>
-                                </td>
-                                <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                    <span
-                                        style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $base_clock }}</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
-                                    <p>
-                                        <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                            <strong>
-                                                <span style="line-height: 115%; color: black;">Tốc độ tối
-                                                    đa&nbsp;&nbsp;</span>
-                                            </strong>
-                                        </span>
-                                    </p>
-                                </td>
-                                <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                    <span
-                                        style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $max_clock }}</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
-                                    <p>
-                                        <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                            <strong>
-                                                <span style="line-height: 115%; color: black;">Số nhân
-                                                    CPU&nbsp;&nbsp;</span>
-                                            </strong>
-                                        </span>
-                                    </p>
-                                </td>
-                                <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                    <span
-                                        style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $core_count }}</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
-                                    <p>
-                                        <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                            <strong>
-                                                <span style="line-height: 115%; color: black;">Số luồng
-                                                    CPU&nbsp;&nbsp;</span>
-                                            </strong>
-                                        </span>
-                                    </p>
-                                </td>
-                                <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                    <span
-                                        style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $thread_count }}</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
-                                    <p>
-                                        <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                            <strong>
-                                                <span style="line-height: 115%; color: black;">Số P-core&nbsp;&nbsp;</span>
-                                            </strong>
-                                        </span>
-                                    </p>
-                                </td>
-                                <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                    <span
-                                        style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $p_core_count }}</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
-                                    <p>
-                                        <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                            <strong>
-                                                <span style="line-height: 115%; color: black;">Số E-core&nbsp;&nbsp;</span>
-                                            </strong>
-                                        </span>
-                                    </p>
-                                </td>
-                                <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                    <span
-                                        style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $e_core_count }}</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
-                                    <p>
-                                        <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                            <strong>
-                                                <span style="line-height: 115%; color: black;">Bộ nhớ hỗ
-                                                    trợ&nbsp;&nbsp;</span>
-                                            </strong>
-                                        </span>
-                                    </p>
-                                </td>
-                                <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                    <span
-                                        style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $supported_memory }}</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
-                                    <p>
-                                        <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                            <strong>
-                                                <span style="line-height: 115%; color: black;">Kích thước bộ nhớ tối
-                                                    đa&nbsp;&nbsp;</span>
-                                            </strong>
-                                        </span>
-                                    </p>
-                                </td>
-                                <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                    <span
-                                        style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $max_memory_size }}</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
-                                    <p>
-                                        <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                            <strong>
-                                                <span style="line-height: 115%; color: black;">Số kênh bộ nhớ tối
-                                                    đa&nbsp;&nbsp;</span>
-                                            </strong>
-                                        </span>
-                                    </p>
-                                </td>
-                                <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                    <span
-                                        style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $max_memory_channels }}</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
-                                    <p>
-                                        <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                            <strong>
-                                                <span style="line-height: 115%; color: black;">Điện áp tiêu thụ tối
-                                                    đa&nbsp;&nbsp;</span>
-                                            </strong>
-                                        </span>
-                                    </p>
-                                </td>
-                                <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                    <span
-                                        style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $max_power_draw }}</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
-                                    <p>
-                                        <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                            <strong>
-                                                <span style="line-height: 115%; color: black;">Công suất cơ
-                                                    bản&nbsp;&nbsp;</span>
-                                            </strong>
-                                        </span>
-                                    </p>
-                                </td>
-                                <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                    <span
-                                        style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $base_power }}</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
-                                    <p>
-                                        <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                            <strong>
-                                                <span style="line-height: 115%; color: black;">Tính năng&nbsp;&nbsp;</span>
-                                            </strong>
-                                        </span>
-                                    </p>
-                                </td>
-                                <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                    <span
-                                        style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $features }}</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
-                                    <p>
-                                        <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
-                                            <strong>
-                                                <span style="line-height: 115%; color: black;">Thuật in thạch
-                                                    bản&nbsp;&nbsp;</span>
-                                            </strong>
-                                        </span>
-                                    </p>
-                                </td>
-                                <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
-                                    <span
-                                        style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $lithography }}</span>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+            </div>
+            <div class="p-container bg-white js-box-container" style="min-height: 400px">
+                <div class="container custom-nav owl-carousel owl-theme">
+                    @foreach ($recommendedItems as $item)
+                        @include('partials.recommended-p-item', ['recommendeditem' => $item])
+                    @endforeach
                 </div>
             </div>
+        </div>
+        <div style="display: none;" id="pro-spec">
+            <table style="width: 100.0%;" border="1" width="100%">
+                <tbody>
+                    <tr>
+                        <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                            <p>
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
+                                    <strong>
+                                        <span style="line-height: 115%; color: black;">
+                                            Hãng sản xuất
+                                        </span>
+                                    </strong>
+                                </span>
+                            </p>
+                        </td>
+                        <td style="width: 578.2pt; padding: .75pt .75pt .75pt .75pt;" width="771">
+                            <p style="text-align: center;">
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
+                                    <strong>
+                                        <a href="https://www.anphatpc.com.vn/laptop-asus_dm1058.html">
+                                            {{ $brand }}
+                                        </a>
+                                    </strong>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                            <p>
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
+                                    <strong>
+                                        <span style="line-height: 115%; color: black;">Tên sản phẩm&nbsp;
+                                            &nbsp;
+                                        </span>
+                                    </strong>
+                                </span>
+                            </p>
+                        </td>
+                        <td style="width: 578.2pt; padding: 0.75pt; text-align: center;" width="771">
+                            <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a
+                                    href="https://www.anphatpc.com.vn/laptop-asus-rog-strix-g16-g614ji-n4125w.html"
+                                    target="_blank">{{ $name }}</a></span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                            <p>
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
+                                    <strong>
+                                        <span style="line-height: 115%; color: black;">Socket&nbsp;&nbsp;</span>
+                                    </strong>
+                                </span>
+                            </p>
+                        </td>
+                        <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
+                            <span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $socket }}</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                            <p>
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
+                                    <strong>
+                                        <span style="line-height: 115%; color: black;">Tốc độ cơ
+                                            bản&nbsp;&nbsp;</span>
+                                    </strong>
+                                </span>
+                            </p>
+                        </td>
+                        <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
+                            <span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $base_clock }}</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                            <p>
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
+                                    <strong>
+                                        <span style="line-height: 115%; color: black;">Tốc độ tối
+                                            đa&nbsp;&nbsp;</span>
+                                    </strong>
+                                </span>
+                            </p>
+                        </td>
+                        <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
+                            <span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $max_clock }}</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                            <p>
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
+                                    <strong>
+                                        <span style="line-height: 115%; color: black;">Số nhân
+                                            CPU&nbsp;&nbsp;</span>
+                                    </strong>
+                                </span>
+                            </p>
+                        </td>
+                        <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
+                            <span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $core_count }}</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                            <p>
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
+                                    <strong>
+                                        <span style="line-height: 115%; color: black;">Số luồng
+                                            CPU&nbsp;&nbsp;</span>
+                                    </strong>
+                                </span>
+                            </p>
+                        </td>
+                        <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
+                            <span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $thread_count }}</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                            <p>
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
+                                    <strong>
+                                        <span style="line-height: 115%; color: black;">Số P-core&nbsp;&nbsp;</span>
+                                    </strong>
+                                </span>
+                            </p>
+                        </td>
+                        <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
+                            <span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $p_core_count }}</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                            <p>
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
+                                    <strong>
+                                        <span style="line-height: 115%; color: black;">Số E-core&nbsp;&nbsp;</span>
+                                    </strong>
+                                </span>
+                            </p>
+                        </td>
+                        <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
+                            <span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $e_core_count }}</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                            <p>
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
+                                    <strong>
+                                        <span style="line-height: 115%; color: black;">Bộ nhớ hỗ
+                                            trợ&nbsp;&nbsp;</span>
+                                    </strong>
+                                </span>
+                            </p>
+                        </td>
+                        <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
+                            <span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $supported_memory }}</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                            <p>
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
+                                    <strong>
+                                        <span style="line-height: 115%; color: black;">Kích thước bộ nhớ tối
+                                            đa&nbsp;&nbsp;</span>
+                                    </strong>
+                                </span>
+                            </p>
+                        </td>
+                        <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
+                            <span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $max_memory_size }}</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                            <p>
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
+                                    <strong>
+                                        <span style="line-height: 115%; color: black;">Số kênh bộ nhớ tối
+                                            đa&nbsp;&nbsp;</span>
+                                    </strong>
+                                </span>
+                            </p>
+                        </td>
+                        <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
+                            <span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $max_memory_channels }}</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                            <p>
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
+                                    <strong>
+                                        <span style="line-height: 115%; color: black;">Điện áp tiêu thụ tối
+                                            đa&nbsp;&nbsp;</span>
+                                    </strong>
+                                </span>
+                            </p>
+                        </td>
+                        <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
+                            <span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $max_power_draw }}</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                            <p>
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
+                                    <strong>
+                                        <span style="line-height: 115%; color: black;">Công suất cơ
+                                            bản&nbsp;&nbsp;</span>
+                                    </strong>
+                                </span>
+                            </p>
+                        </td>
+                        <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
+                            <span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $base_power }}</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                            <p>
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
+                                    <strong>
+                                        <span style="line-height: 115%; color: black;">Tính năng&nbsp;&nbsp;</span>
+                                    </strong>
+                                </span>
+                            </p>
+                        </td>
+                        <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
+                            <span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $features }}</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 226.95pt; padding: .75pt .75pt .75pt .75pt;" width="303">
+                            <p>
+                                <span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">
+                                    <strong>
+                                        <span style="line-height: 115%; color: black;">Thuật in thạch
+                                            bản&nbsp;&nbsp;</span>
+                                    </strong>
+                                </span>
+                            </p>
+                        </td>
+                        <td style="width: 578.2pt; padding: .75pt; text-align: center;" width="771">
+                            <span
+                                style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">{{ $lithography }}</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
         @if (session('addToCartSuccess'))
             @push('scripts')
@@ -1032,5 +1038,29 @@
                 document.querySelector('#js-deal-container').innerText = "Đã kết thúc";
             }
         }, 1000); // Cập nhật mỗi giây (1000 milliseconds)
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: true,
+            responsive: {
+            0: {
+                items: 4
+            },
+            600: {
+                items: 5
+            },
+            1000: {
+                items: 6
+            }
+    
+            }
+        });
+        });
     </script>
 @endpush

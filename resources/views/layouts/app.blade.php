@@ -75,14 +75,14 @@
     </script>
 
     @stack('scripts')
+    <script>
+        var botmanWidget = {
+            title: 'Trợ lý Chat', // Thay đổi chữ thành bất kỳ nội dung nào bạn muốn
+            aboutText: 'Bắt đầu trò chuyện với "Hi"',
+            introMessage: "Xin chào! Tôi là Trợ lý Chat của bạn."
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/js/widget.js"></script>
 </body>
 
-<script>
-    var botmanWidget = {
-        title: 'Trợ lý Chat', // Thay đổi chữ thành bất kỳ nội dung nào bạn muốn
-        aboutText: 'Bắt đầu trò chuyện với "Hi"',
-        introMessage: "Xin chào! Tôi là Trợ lý Chat của bạn."
-    };
-</script>
-    <script src="https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/js/widget.js"></script>
 </html>

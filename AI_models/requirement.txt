@@ -1,0 +1,7 @@
+pip install surprise
+pip install numpy==1.26.4
+pip install requests
+pip install pandas
+pydantic
+fastapi
+pybind11
