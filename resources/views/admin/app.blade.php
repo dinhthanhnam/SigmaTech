@@ -78,8 +78,9 @@
                     <li><a class="app-menu__item" href="{{ route('admin.show-sale') }}"><i
                                 class='app-menu__icon fa-solid fa-tags'></i><span class="app-menu__label">Flash Sale &
                                 Khuyến mãi</span></a></li>
-                    <li><a class="app-menu__item" href="#"><i class='app-menu__icon fa-solid fa-user'></i><span
-                                class="app-menu__label">Quản lý tài khoản</span></a></li>
+                    <li><a class="app-menu__item" href="{{ route('admin.show-users') }}"><i
+                                class='app-menu__icon fa-solid fa-user'></i><span class="app-menu__label">Quản lý tài
+                                khoản</span></a></li>
                     <li><a class="app-menu__item" href="{{ route('admin.show-slider') }}"><i
                                 class='app-menu__icon fa-solid fa-sliders'></i><span class="app-menu__label">Quản lý
                                 slider</span></a></li>

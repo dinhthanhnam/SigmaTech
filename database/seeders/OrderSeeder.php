@@ -15,7 +15,7 @@ class OrderSeeder extends Seeder
     public function run(): void
     {
         $insertData = [];
-        $baseDate = Carbon::parse('2024-10-20 13:42:36'); // Ngày bắt đầu
+        $baseDate = Carbon::parse('2024-07-20 13:42:36'); // Ngày bắt đầu
 
         // Danh sách tên mẫu để random
         $names = [

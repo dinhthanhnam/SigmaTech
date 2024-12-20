@@ -10,6 +10,15 @@ class Kernel extends ConsoleKernel
     /**
      * Define the application's command schedule.
      */
+        /**
+     * The Artisan commands provided by your application.
+     *
+     * @var array
+     */
+    protected $commands = [
+        \App\Console\Commands\CalculateChurnFeatures::class, // Đăng ký command tại đây
+    ];
+    
     protected function schedule(Schedule $schedule): void
     {
         // $schedule->command('inspire')->hourly();
@@ -24,4 +33,6 @@ class Kernel extends ConsoleKernel
 
         require base_path('routes/console.php');
     }
+    
+    
 }

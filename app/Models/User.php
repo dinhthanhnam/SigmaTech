@@ -29,7 +29,12 @@ class User extends Authenticatable implements MustVerifyEmail
         'phone',
         'gender',
         'address',
-        'utype'
+        'utype',
+        'recency_days',          // Thêm vào đây
+        'frequency',             // Thêm vào đây
+        'monetary',              // Thêm vào đây
+        'cart_abandon_rate',
+        'churn_probability'
     ];
 
     /**
