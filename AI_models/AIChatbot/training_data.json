@@ -1,0 +1,125 @@
+{
+  "intents": [
+      {
+          "tag": "chào_hỏi",
+          "patterns": ["Xin chào", "Hello", "Hi", "Chào bạn"],
+          "responses": ["Chào bạn!", "Xin chào, mình có thể giúp gì?", "Hi, mình có thể hỗ trợ bạn!"]
+      },
+      {
+          "tag": "tạm_biệt",
+          "patterns": ["Tạm biệt", "Hẹn gặp lại", "Bye", "Tôi phải đi đây"],
+          "responses": ["Chào tạm biệt!", "Hẹn gặp lại nhé!", "Bye, chúc bạn vui vẻ!", "Tạm biệt, hẹn gặp lại bạn sau!"]
+      },
+      {
+        "tag": "chính_sách_giao_hàng",
+        "patterns": [
+          "Chính sách giao hàng là gì?",
+          "Chi phí vận chuyển thế nào?",
+          "Giao hàng mất bao lâu?",
+          "Có miễn phí vận chuyển không?",
+          "Chính sách giao hàng của bạn"
+        ],
+        "responses": [
+          "Chính sách giao hàng của chúng tôi: \n- Đơn hàng từ 200.000đ đến 500.000đ giao trong ngày, miễn phí trong vòng 10km, ngoài 10km thu 6.000đ/km.\n- Đơn hàng trên 500.000đ giao trong 4 giờ, miễn phí trong vòng 10km, ngoài 10km thu 6.000đ/km.\n- Đơn hàng lớn hơn 10 triệu có ưu đãi vận chuyển xa hơn. Xem chi tiết tại website hoặc liên hệ 1900 0323 để biết thêm.",
+          "Chúng tôi có chính sách giao hàng dựa trên giá trị đơn hàng. Đơn hàng nhỏ dưới 500.000đ sẽ có phí 30.000đ trong vòng 10km, và tính thêm 6.000đ/km từ km thứ 11. Đơn hàng lớn hơn có nhiều ưu đãi. Bạn cần thêm thông tin gì cụ thể?",
+          "Chính sách giao hàng của chúng tôi bao gồm miễn phí vận chuyển trong một số phạm vi cho các đơn hàng lớn. Vui lòng cho biết giá trị đơn hàng của bạn để tôi hỗ trợ chi tiết!"
+        ]
+      },
+      {
+        "tag": "vận_chuyển",
+        "patterns": [
+          "Vận chuyển đơn hàng trên 500.000 thế nào?",
+          "Giao hàng trên 10 triệu có phí không?",
+          "Đơn hàng lớn có miễn phí vận chuyển không?",
+          "Phí vận chuyển cho đơn hàng 20 triệu là bao nhiêu?"
+        ],
+        "responses": [
+          "Đơn hàng trên 500.000đ được miễn phí 10km đầu tiên, ngoài 10km sẽ tính phí 6.000đ/km.\nĐơn hàng từ 10 triệu đồng được miễn phí 20km đầu tiên, sau đó phí vận chuyển là 6.000đ/km hoặc 10.000đ/km nếu dùng ô tô.",
+          "Đơn hàng lớn có ưu đãi vận chuyển. Ví dụ: đơn hàng trên 10 triệu miễn phí 20km đầu, đơn hàng trên 50 triệu miễn phí 40km đầu.\nLiên hệ 1900 0323 để được hỗ trợ chi tiết hơn."
+        ]
+      },
+      {
+        "tag": "thời_gian_giao_hàng",
+        "patterns": [
+          "Giao hàng mất bao lâu?",
+          "Thời gian giao hàng như thế nào?",
+          "Bao lâu thì nhận được hàng?",
+          "Đơn hàng của tôi có được giao nhanh không?"
+        ],
+        "responses": [
+          "Thời gian giao hàng phụ thuộc vào giá trị đơn hàng:\n- Đơn hàng từ 200.000đ đến 500.000đ: giao trong ngày.\n- Đơn hàng trên 500.000đ: giao trong vòng 4 giờ (phạm vi 10km).\n- Đơn hàng lớn hơn sẽ được thỏa thuận về thời gian.",
+          "Chúng tôi đảm bảo giao hàng nhanh nhất có thể. Thời gian thường từ 4 giờ đến trong ngày, tùy giá trị đơn hàng và khoảng cách."
+        ]
+      },
+      {
+        "tag": "liên_hệ_hỗ_trợ",
+        "patterns": [
+          "Tôi cần hỗ trợ về giao hàng",
+          "Số điện thoại hỗ trợ giao hàng?",
+          "Liên hệ hỗ trợ giao hàng",
+          "Có sự cố khi giao hàng, tôi phải làm sao?"
+        ],
+        "responses": [
+          "Vui lòng liên hệ tổng đài 1900 0323 (Nhấn phím 0) để được hỗ trợ trực tiếp về các vấn đề giao hàng.",
+          "Nếu có sự cố với đơn hàng, hãy gọi ngay đến 1900 0323 để được hỗ trợ nhanh nhất!"
+        ]
+      },
+      {
+        "tag": "chính_sách_đổi_trả",
+        "patterns": [
+          "Chính sách đổi trả là gì?",
+          "Tôi muốn đổi trả sản phẩm, làm sao?",
+          "Điều kiện để đổi trả hàng?",
+          "Thời gian đổi trả sản phẩm là bao lâu?",
+          "Hàng bị lỗi có được đổi không?"
+        ],
+        "responses": [
+          "Chính sách đổi trả của chúng tôi như sau: \n- Đổi trả trong 15 ngày với sản phẩm bị lỗi kỹ thuật do nhà sản xuất (không áp dụng cho một số sản phẩm như máy in, máy chiếu, hoặc các sản phẩm Apple).\n- Đổi trả linh kiện trong 30 ngày nếu lỗi kỹ thuật từ nhà sản xuất.\nĐể đổi trả, sản phẩm cần còn đầy đủ vỏ hộp, phụ kiện và không bị trầy xước hay hư hỏng hình thức. Vui lòng liên hệ trung tâm bảo hành để được hỗ trợ thêm.",
+          "Sản phẩm của bạn có thể được đổi trả trong vòng 15 ngày (với lỗi kỹ thuật), nhưng cần đảm bảo còn nguyên vẹn và đầy đủ phụ kiện. Bạn cần thêm thông tin cụ thể nào không?",
+          "Để đổi trả sản phẩm, vui lòng kiểm tra điều kiện đổi trả: không trầy xước, móp méo, còn đầy đủ hộp và hóa đơn. Bạn có thể đổi trả trong 15 ngày với lỗi kỹ thuật từ nhà sản xuất. Liên hệ trung tâm bảo hành để biết thêm chi tiết!"
+        ]
+      },
+      {
+        "tag": "chính_sách_bảo_hành",
+        "patterns": [
+          "Chính sách bảo hành thế nào?",
+          "Sản phẩm của tôi có được bảo hành không?",
+          "Thời gian bảo hành là bao lâu?",
+          "Có dịch vụ bảo hành tại nhà không?",
+          "Làm sao để bảo hành sản phẩm?"
+        ],
+        "responses": [
+          "Chính sách bảo hành của chúng tôi:\n- Thời gian bảo hành trung bình: 7 ngày làm việc (không tính Thứ 7, Chủ Nhật và ngày lễ).\n- Bảo hành miễn phí tại nơi sử dụng trong vòng 20km đầu tiên cho doanh nghiệp và khách hàng Game Net trong năm đầu tiên.\n- Các sản phẩm được mượn thiết bị tương tự trong thời gian bảo hành nếu có.\nBạn vui lòng cung cấp thêm thông tin về sản phẩm để được hỗ trợ chi tiết.",
+          "Thời gian bảo hành thường mất từ 7 - 15 ngày làm việc, tùy sản phẩm. Với khách hàng ở tỉnh, bạn có thể gửi sản phẩm qua xe khách hoặc bưu điện, phí vận chuyển lượt đi khách hàng chịu, lượt về chúng tôi chịu. Bạn cần hỗ trợ thêm không?",
+          "Chính sách bảo hành tại nhà miễn phí trong vòng 20km đầu tiên (đối với doanh nghiệp). Ngoài ra, bạn có thể lựa chọn bảo hành tại trung tâm. Thời gian bảo hành sẽ được thông báo cụ thể khi tiếp nhận sản phẩm."
+        ]
+      },
+      {
+        "tag": "điều_kiện_bảo_hành",
+        "patterns": [
+          "Điều kiện bảo hành là gì?",
+          "Sản phẩm nào không được bảo hành?",
+          "Làm sao để đủ điều kiện bảo hành?",
+          "Bảo hành bị từ chối khi nào?"
+        ],
+        "responses": [
+          "Điều kiện bảo hành chung:\n1. Sản phẩm phải còn trong thời gian bảo hành và có tem bảo hành hợp lệ.\n2. Không bảo hành sản phẩm bị lỗi do người dùng (rơi vỡ, va đập, biến dạng, hư hỏng do côn trùng, chất lỏng xâm nhập).\n3. Không bảo hành phần mềm và dữ liệu bên trong sản phẩm.\n4. Sản phẩm không được tháo dỡ hoặc sửa chữa bởi bên không được ủy quyền.\nBạn cần kiểm tra thêm điều kiện cụ thể nào không?",
+          "Các sản phẩm vi phạm các lỗi hình thức như móp méo, xước, vỡ, hoặc bị can thiệp bởi kỹ thuật viên không được ủy quyền sẽ không được bảo hành. Bạn vui lòng kiểm tra sản phẩm và liên hệ trung tâm bảo hành để được hỗ trợ chi tiết.",
+          "Để đủ điều kiện bảo hành, sản phẩm phải có tem bảo hành hợp lệ, còn trong thời gian bảo hành, không bị lỗi do người sử dụng hoặc các yếu tố bên ngoài như thiên tai, chất lỏng. Bạn cần thêm thông tin nào không?"
+        ]
+      },
+      {
+        "tag": "hỗ_trợ_bảo_hành_tại_nhà",
+        "patterns": [
+          "Bảo hành tại nhà thế nào?",
+          "Chi phí bảo hành tại nhà bao nhiêu?",
+          "Có bảo hành tại chỗ không?",
+          "Bảo hành tại nơi sử dụng thế nào?"
+        ],
+        "responses": [
+          "Dịch vụ bảo hành tại nhà:\n- Miễn phí trong bán kính 20km đối với doanh nghiệp trong năm đầu tiên.\n- Ngoài 20km hoặc khách hàng cá nhân, phí sẽ được thỏa thuận hoặc tính theo bảng giá (150.000đ/lần).\n- Hợp đồng bảo hành tại nhà: 290.000đ/năm sử dụng hoặc tính phí riêng cho từng lần.\nVui lòng liên hệ để biết thêm thông tin chi tiết.",
+          "Chúng tôi có hỗ trợ bảo hành tại nhà cho doanh nghiệp và khách hàng Game Net. Ngoài ra, bạn cũng có thể sử dụng dịch vụ bảo hành tại nơi sử dụng với phí linh hoạt. Bạn cần thêm thông tin cụ thể nào?"
+        ]
+      }      
+  ]
+}
