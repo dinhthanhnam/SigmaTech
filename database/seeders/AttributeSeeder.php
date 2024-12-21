@@ -35,9 +35,7 @@ class AttributeSeeder extends Seeder
             ['name' => 'Image3', 'data_type' => 'string'],
             ['name' => 'Image4', 'data_type' => 'string'],
             ['name' => 'Image5', 'data_type' => 'string'],
-
             //laptop_attribute
-            
             ['name' => '[Laptop] Loại laptop', 'data_type' => 'string'],
             ['name' => '[Laptop] Vi xử lý', 'data_type' => 'string'],
             ['name' => '[Laptop] Số nhân', 'data_type' => 'integer'],
@@ -62,7 +60,6 @@ class AttributeSeeder extends Seeder
             ['name' => '[Laptop] Màu sắc', 'data_type' => 'string'],
             ['name' => '[Laptop] OS', 'data_type' => 'string'],
             ['name' => '[Laptop] Camera', 'data_type' => 'string'],
-
             //CPU_attribute
             ['name' => '[CPU] Socket', 'data_type' => 'integer'],
             ['name' => '[CPU] Tốc độ cơ bản', 'data_type' => 'integer'],
