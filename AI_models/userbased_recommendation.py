@@ -1,21 +1,12 @@
 import pandas as pd
 from surprise import Reader, Dataset, SVD
 from surprise.model_selection import cross_validate
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request
 from pydantic import BaseModel
 import requests
-from fastapi.middleware.cors import CORSMiddleware
+
 # Tạo ứng dụng FastAPI
 app = FastAPI()
-
-# Cấu hình CORS
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["http://127.0.0.1:8000"],
-    allow_credentials=True,
-    allow_methods=["*"],  
-    allow_headers=["*"], 
-)
 
 # Schema cho request
 class UserRequest(BaseModel):
@@ -71,8 +62,12 @@ def get_recommendations_for_user(model, data, user_id=None, top_n=6):
 
 
 # Endpoint để nhận user_id và trả về gợi ý
-@app.get("/recommend")
-def recommend(user_id: int):
+@app.post("/recommend")
+async def recommend(request: Request):
+    # Lấy dữ liệu từ request body
+    body = await request.json()
+    user_id = body.get("user_id")
+
     # Lấy dataset từ Laravel (bạn cần triển khai hàm này)
     data = fetch_data_from_laravel()
 

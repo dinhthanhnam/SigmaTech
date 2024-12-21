@@ -15,7 +15,7 @@ return new class extends Migration
             $table->integer('recency_days')->default(0);
         $table->integer('frequency')->default(0);
         $table->integer('monetary')->default(0);
-        $table->decimal('cart_abandon_rate', 5, 2)->default(0); 
+        $table->integer('cart_abandon_rate')->default(0); 
             $table->decimal('churn_probability', 5, 2)->nullable()->after('utype');
         });
     }

@@ -6,7 +6,10 @@ use Illuminate\Support\Facades\DB;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Log;
-
+use App\Models\Order;
+use App\Observers\OrderObserver;
+use App\Models\CartItem;
+use App\Observers\CartItemObserver;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -30,5 +33,7 @@ class AppServiceProvider extends ServiceProvider
                 'time' => $query->time,
             ]);
         });
+        Order::observe(OrderObserver::class);
+        CartItem::observe(CartItemObserver::class);
     }
 }

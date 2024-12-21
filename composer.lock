@@ -4,25 +4,25 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f28eaad8cdeb9aa390328d95026ac55b",
+    "content-hash": "8505073fe87d1d18ba18b8e05363cdad",
     "packages": [
         {
             "name": "botman/botman",
-            "version": "v2.8.7",
+            "version": "v2.8.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/botman/botman.git",
-                "reference": "80fdd645d2ce081ad4a9cb4410e17886cfc722d5"
+                "reference": "a971e6bbdf2e7b491557471f6339fe541ba31898"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/botman/botman/zipball/80fdd645d2ce081ad4a9cb4410e17886cfc722d5",
-                "reference": "80fdd645d2ce081ad4a9cb4410e17886cfc722d5",
+                "url": "https://api.github.com/repos/botman/botman/zipball/a971e6bbdf2e7b491557471f6339fe541ba31898",
+                "reference": "a971e6bbdf2e7b491557471f6339fe541ba31898",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0 || ^11.0",
-                "laravel/serializable-closure": "^1.0",
+                "laravel/serializable-closure": "^1.0 || ^2.0",
                 "mpociot/pipeline": "^1.0.2",
                 "php": ">=7.1",
                 "psr/container": "^1.0 || ^2.0",
@@ -82,9 +82,9 @@
             ],
             "support": {
                 "issues": "https://github.com/botman/botman/issues",
-                "source": "https://github.com/botman/botman/tree/v2.8.7"
+                "source": "https://github.com/botman/botman/tree/v2.8.8"
             },
-            "time": "2024-10-21T09:59:11+00:00"
+            "time": "2024-12-20T12:50:32+00:00"
         },
         {
             "name": "botman/driver-web",
@@ -2692,59 +2692,6 @@
                 }
             ],
             "time": "2024-11-21T10:36:35+00:00"
-        },
-        {
-            "name": "php-ai/php-ml",
-            "version": "0.10.0",
-            "source": {
-                "type": "git",
-                "url": "git@gitlab.com:php-ai/php-ml.git",
-                "reference": "543f11158c57bf64ef8ddecd5bab51d396d39f50"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/php-ai%2Fphp-ml/repository/archive.zip?sha=543f11158c57bf64ef8ddecd5bab51d396d39f50",
-                "reference": "543f11158c57bf64ef8ddecd5bab51d396d39f50",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^8.0"
-            },
-            "require-dev": {
-                "phpbench/phpbench": "^1.2",
-                "phpstan/phpstan": "^0.12",
-                "phpstan/phpstan-phpunit": "^0.12",
-                "phpstan/phpstan-strict-rules": "^0.12",
-                "phpunit/phpunit": "^8.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Phpml\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Arkadiusz Kondas",
-                    "email": "arkadiusz.kondas@gmail.com"
-                }
-            ],
-            "description": "PHP-ML - Machine Learning library for PHP",
-            "homepage": "https://gitlab.com/php-ai/php-ml",
-            "keywords": [
-                "Neural network",
-                "artificial intelligence",
-                "computational learning theory",
-                "data science",
-                "feature extraction",
-                "machine learning",
-                "pattern recognition"
-            ],
-            "time": "2022-11-09T09:25:29+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -9252,12 +9199,12 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.1"
     },
-    "platform-dev": [],
+    "platform-dev": {},
     "plugin-api-version": "2.6.0"
 }
