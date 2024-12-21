@@ -8,6 +8,8 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Log;
 use App\Models\Order;
 use App\Observers\OrderObserver;
+use App\Models\CartItem;
+use App\Observers\CartItemObserver;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -32,5 +34,6 @@ class AppServiceProvider extends ServiceProvider
             ]);
         });
         Order::observe(OrderObserver::class);
+        CartItem::observe(CartItemObserver::class);
     }
 }
