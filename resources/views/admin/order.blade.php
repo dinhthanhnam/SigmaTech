@@ -16,25 +16,7 @@
                 <div class="tile">
                     <div class="tile-body">
                         <div id="sampleTable_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4 no-footer">
-                            <div class="row d-flex justify-content-between align-items-center">
-                                <div class="col-sm-12 col-md-6 text-left">
-                                    <div id="sampleTable_filter" class="dataTables_filter">
-                                        <label>Tìm kiếm:
-                                            <input type="search" class="form-control form-control-sm" placeholder=""
-                                                aria-controls="sampleTable">
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-md-6 d-flex text-right justify-content-end">
-                                    <!-- Thêm text-right để căn phải -->
-                                    <a class="btn btn-info btn-sm d-flex align-items-center justify-content-center"
-                                        href="{{ route('admin.new-product') }}" title="Thêm"
-                                        style = "width: 150px; height: 50px; font-size: 14px;"
-                                        onclick="handleCreateProductClick(event)">
-                                        <i class="fas fa-plus mr-2"></i> Tạo đơn hàng
-                                    </a>
-                                </div>
-                            </div>
+
                             <table class="table table-hover table-bordered" id="sampleTable">
                                 <thead>
                                     <tr>
@@ -84,9 +66,7 @@
                                             @elseif ($order->status === '4')
                                                 <td><span class="badge bg-danger">Đã hủy</span></td>
                                             @endif
-                                            <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa"
-                                                    onclick="myFunction(this)"><i class="fas fa-trash-alt"></i>
-                                                </button>
+                                            <td>
                                                 <button class="btn btn-primary btn-sm edit" type="button" title="Sửa"><i
                                                         class="fas fa-edit"></i></button>
 
