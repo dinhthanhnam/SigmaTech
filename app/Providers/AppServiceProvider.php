@@ -6,7 +6,8 @@ use Illuminate\Support\Facades\DB;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Log;
-
+use App\Models\Order;
+use App\Observers\OrderObserver;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -30,5 +31,6 @@ class AppServiceProvider extends ServiceProvider
                 'time' => $query->time,
             ]);
         });
+        Order::observe(OrderObserver::class);
     }
 }

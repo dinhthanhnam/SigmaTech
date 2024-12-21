@@ -21,13 +21,11 @@
                                         <th width="150">Tên tài khoản</th>
                                         <th width="200">Địa chỉ email</th>
                                         <th width="150">Số điện thoại</th>
-                                        <th width="150">Địa chỉ mặc định</th>
+                                        <th width="350">Địa chỉ mặc định</th>
                                         <th width="150">Lần cuối mua hàng</th>
                                         <th width="200">Sản phẩm trong giỏ</th>
                                         <th width="200">Tổng tiền mua sắm</th>
                                         <th width="150">Tổng số đơn hàng</th>
-                                        <th width="100">Tỉ lệ rời bỏ</th>
-                                        <th>Gửi email</th>
                                         <!-- Thêm các cột khác nếu cần -->
                                     </tr>
                                 </thead>
@@ -38,7 +36,7 @@
                                             <td>{{ $user->email }}</td>
                                             <td>{{ $user->phone }}</td>
                                             <td>{{ $user->address }}</td>
-                                            @if ($user->recency_days == 0)
+                                            @if ($user->recency_days == 0 && $user->frequency == 0)
                                                 <td>Chưa mua hàng</td>
                                             @else
                                                 <td>{{ $user->recency_days }} ngày trước</td>
@@ -46,16 +44,7 @@
                                             <td>{{ $user->cart_abandon_rate }}</td>
                                             <td>{{ number_format($user->monetary, 0, ',', '.') }}đ</td>
                                             <td>{{ $user->frequency }}</td>
-                                            @if ($user->frequency == 0 && $user->churn_probability == 0)
-                                                <td> Chưa mua hàng </td>
-                                            @else
-                                                <td>{{ number_format($user->churn_probability * 100, 2) }}%</td>
-                                            @endif
-                                            <td>
-                                                <button class="btn btn-primary btn-sm edit" type="button" title="Sửa"><i
-                                                        class="fas fa-edit"></i>
-                                                </button>
-                                            </td>
+
                                         </tr>
                                     @endforeach
                                 </tbody>

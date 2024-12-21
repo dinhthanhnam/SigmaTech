@@ -8,21 +8,21 @@
     "packages": [
         {
             "name": "botman/botman",
-            "version": "v2.8.7",
+            "version": "v2.8.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/botman/botman.git",
-                "reference": "80fdd645d2ce081ad4a9cb4410e17886cfc722d5"
+                "reference": "a971e6bbdf2e7b491557471f6339fe541ba31898"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/botman/botman/zipball/80fdd645d2ce081ad4a9cb4410e17886cfc722d5",
-                "reference": "80fdd645d2ce081ad4a9cb4410e17886cfc722d5",
+                "url": "https://api.github.com/repos/botman/botman/zipball/a971e6bbdf2e7b491557471f6339fe541ba31898",
+                "reference": "a971e6bbdf2e7b491557471f6339fe541ba31898",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0 || ^11.0",
-                "laravel/serializable-closure": "^1.0",
+                "laravel/serializable-closure": "^1.0 || ^2.0",
                 "mpociot/pipeline": "^1.0.2",
                 "php": ">=7.1",
                 "psr/container": "^1.0 || ^2.0",
@@ -82,9 +82,9 @@
             ],
             "support": {
                 "issues": "https://github.com/botman/botman/issues",
-                "source": "https://github.com/botman/botman/tree/v2.8.7"
+                "source": "https://github.com/botman/botman/tree/v2.8.8"
             },
-            "time": "2024-10-21T09:59:11+00:00"
+            "time": "2024-12-20T12:50:32+00:00"
         },
         {
             "name": "botman/driver-web",
