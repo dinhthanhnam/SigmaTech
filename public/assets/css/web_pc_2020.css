@@ -10139,5 +10139,14 @@ span.ping {
     height: 100%;
 }
 
+.no-products {
+    padding-top: 30px;
+    border: none;
+    font-size: 1.5rem; /* Kích thước chữ lớn */
+    font-weight: bold; /* Chữ đậm */
+    color: gray; /* Màu xám */
+    text-align: center; /* Căn giữa */
+    width: 100%; /* Chiếm toàn bộ chiều ngang */
+}
 
 
