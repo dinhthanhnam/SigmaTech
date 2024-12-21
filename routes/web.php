@@ -165,7 +165,8 @@ Route::get('accessory/{brand}/{id}', [AccessoryController::class, 'show'])->name
 
 
 //filter
-Route::get('/laptops/filter', [LaptopController::class, 'filterLaptops'])->name('laptop.filter');
+Route::get('/laptops/Gaming/filter', [LaptopController::class, 'filterLaptops'])->name('laptop.filter');
+Route::get('/laptops/Office/filter', [LaptopController::class, 'filterLaptops'])->name('laptop.filter');
 Route::get('/gaminggears/filter', [GaminggearController::class, 'filterGaminggears'])->name('gaminggear.filter');
 Route::get('/media/filter', [MediaController::class, 'filterMedia'])->name('media.filter');
 Route::get('/coolings/filter', [CoolingController::class, 'filterCoolings'])->name('cooling.filter');
