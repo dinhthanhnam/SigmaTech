@@ -47,10 +47,11 @@ class LoginController extends Controller
     {
         // Kiểm tra nếu người dùng là admin
         if ($user->utype == 'ADM') {
-            return redirect()->route('admin.index');
+            // return redirect()->route('admin.index');
+            $this->redirectTo = '/admin';
         }
         // Nếu không phải admin, chuyển hướng đến trang chủ hoặc trang khác
-        return redirect()->route('home.index');
+        // return redirect()->route('home.index');
     }
 
     protected function sendFailedLoginResponse(Request $request)

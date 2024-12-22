@@ -74,7 +74,7 @@
         </div>
       </div>
       <!-- Gợi ý cá nhân hoá-->
-      <div class="box-pro-container bg-white js-box-container" style="min-height: 400px" data-id="395-850">
+      {{-- <div class="box-pro-container bg-white js-box-container" style="min-height: 400px" data-id="395-850">
         <div class="box-title-container">
           <h2 class="box-title"> Gợi ý cho bạn</h2>
         </div>
@@ -86,8 +86,8 @@
             @include('partials.simple-p-item', ['product' => $product])
           @endforeach
         </div>
-        {{-- @include('partials.userbased-recommendation', ['recommendedItems' => $recommendedItems]) --}}
-      </div>
+        
+      </div> --}}
       <!-- Laptop gaming -->
       <div class="box-pro-container bg-white js-box-container" style="min-height: 400px" data-id="395-850">
         <div class="box-title-container">

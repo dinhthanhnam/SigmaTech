@@ -104,7 +104,7 @@ class FetchRecommendations extends Command
         
 
         // Gửi HTTP request đến Python API
-        $response = Http::post("http://127.0.0.1:9000/recommend", [
+        $response = Http::post("http://127.0.0.1:9001/recommend", [
             'user_id' => $userId,
         ]);
 
