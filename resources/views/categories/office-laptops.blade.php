@@ -191,15 +191,11 @@
             <div class="d-flex align-items-center">
               <b id="product-count-display" style="font-size:16px;margin-right: 20px"> Laptop Gaming - Đồ Họa </b>
               <div class="sort-by-group">
-                <a href="/laptops/filter?sort=newest">
-                  <i class="mb-icons icon-new" data-filter_code = "sort" data-value="newest"></i>
-                  <span> Mới nhất </span>
-                </a>
-                <a href="/laptops/filter?sort=asc">
+                <a href="/laptops/Office/sort?sort=asc">
                   <i class="mb-icons icon-increase" data-filter_code = "sort" data-value="asc"></i>
                   <span> Giá tăng dần </span>
                 </a>
-                <a href="/laptops/filter?sort=desc">
+                <a href="/laptops/Office/sort?sort=desc">
                   <i class="mb-icons icon-decrease" data-filter_code = "sort" data-value="desc"></i>
                   <span> Giá giảm dần </span>
                 </a>

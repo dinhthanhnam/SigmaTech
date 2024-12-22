@@ -149,25 +149,7 @@ class LaptopController extends Controller
             'os' => $request->input('os'),
             'weight' => $request->input('weight'),
             'color' => $request->input('color'),
-            'sort' => $request->input('sort'),
         ];
-
-        if (!empty($filters['sort'])) {
-            if ($filters['sort'] == 'newest') {
-                $laptops = Laptop::with('attributes')->orderBy('id', 'desc')->paginate(12);
-            } else {
-                $laptops = Laptop::with('attributes')
-                    ->orderBy(
-                    LaptopAttribute::select('value')
-                            ->whereColumn('laptop_attribute.laptop_id', 'laptops.id') 
-                            ->where('attribute_id', 5), 
-                    $filters['sort']
-                    )
-                    ->paginate(12);
-            }
-            return view('categories.filtered-laptops', compact('laptops', 'filters'));
-        }
-
         $laptops = Laptop::query();
 
         if (!empty($filters['brand'])) {
@@ -298,5 +280,63 @@ class LaptopController extends Controller
 
 
         return view('categories.filtered-laptops', compact('laptops', 'filters', 'cat'));
+    }
+    public function sortGaminglaptop(Request $request){
+        $sort = $request -> input('sort');
+        if (!empty($sort)) {
+            if ($sort == 'newest') {
+                $gamingLaptops = Laptop::with('attributes')->orderBy('id', 'desc')->paginate(12);
+            } else {
+                $gamingLaptops = Laptop::with('attributes')
+                    ->orderBy(
+                    LaptopAttribute::select('value')
+                            ->whereColumn('laptop_attribute.laptop_id', 'laptops.id') 
+                            ->where('attribute_id', 5), 
+                    $sort
+                    )
+                    ->paginate(12);
+            }
+            $topGamingLaptops = Laptop::whereHas('attributes', function ($query) {
+                $query->where('name', '[Laptop] Loại laptop')
+                    ->where('value', 'Gaming');
+            })
+                ->whereHas('attributes', function ($query) {
+                    $query->where('name', 'On Top')
+                        ->where('value', '1');
+                })
+                ->with('attributes')
+                ->limit(10)
+                ->get();
+            return view('categories.gaming-laptops', compact('gamingLaptops', 'topGamingLaptops'));
+        }
+    }
+    public function sortOfficelaptop(Request $request){
+        $sort = $request -> input('sort');
+        if (!empty($sort)) {
+            if ($sort == 'newest') {
+                $officeLaptops = Laptop::with('attributes')->orderBy('id', 'desc')->paginate(12);
+            } else {
+                $officeLaptops = Laptop::with('attributes')
+                    ->orderBy(
+                    LaptopAttribute::select('value')
+                            ->whereColumn('laptop_attribute.laptop_id', 'laptops.id') 
+                            ->where('attribute_id', 5), 
+                    $sort
+                    )
+                    ->paginate(12);
+            }
+            $topOfficeLaptops = Laptop::whereHas('attributes', function ($query) {
+                $query->where('name', '[Laptop] Loại laptop')
+                    ->where('value', 'Office');
+            })
+                ->whereHas('attributes', function ($query) {
+                    $query->where('name', 'On Top')
+                        ->where('value', '1');
+                })
+                ->with('attributes')
+                ->limit(10)
+                ->get();
+            return view('categories.office-laptops', compact('officeLaptops', 'topOfficeLaptops'));
+        }
     }
 }
