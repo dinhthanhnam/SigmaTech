@@ -30,7 +30,14 @@ class OrderSeeder extends Seeder
         $shippingAddress = 'Địa chỉ số ' . rand(1, 100) . ', Hà Nội'; // Địa chỉ giả lập
         $paymentMethods = ['cod', 'banking']; // Các phương thức thanh toán
         $paymentMethod = $paymentMethods[array_rand($paymentMethods)]; // Chọn random 1 phương thức thanh toán
-        $status = rand(1, 5); // Random trạng thái từ 1 đến 5
+
+        // Random trạng thái dựa trên phương thức thanh toán
+        if ($paymentMethod === 'cod') {
+            $statusOptions = [1, 2, 4, 5]; // Loại bỏ trạng thái 3
+        } else {
+            $statusOptions = [1, 2, 3, 4, 5]; // Bao gồm tất cả trạng thái
+        }
+        $status = $statusOptions[array_rand($statusOptions)];
         $totalPrice = rand(50, 1000) * 1000; // Random tổng giá trị từ 50.000 đến 1.000.000
 
         $insertData[] = [
@@ -53,8 +60,16 @@ class OrderSeeder extends Seeder
             $phoneNumber = '03' . rand(10000000, 99999999); // Random số điện thoại 10 chữ số
             $shippingAddress = 'Địa chỉ số ' . rand(1, 100) . ', Hà Nội'; // Địa chỉ giả lập
             $paymentMethods = ['cod', 'banking']; // Các phương thức thanh toán
+            $paymentMethods = ['cod', 'banking']; // Các phương thức thanh toán
             $paymentMethod = $paymentMethods[array_rand($paymentMethods)]; // Chọn random 1 phương thức thanh toán
-            $status = rand(1, 5); // Random trạng thái từ 1 đến 5
+
+            // Random trạng thái dựa trên phương thức thanh toán
+            if ($paymentMethod === 'cod') {
+                $statusOptions = [1, 2, 4, 5]; // Loại bỏ trạng thái 3
+            } else {
+                $statusOptions = [1, 2, 3, 4, 5]; // Bao gồm tất cả trạng thái
+            }
+            $status = $statusOptions[array_rand($statusOptions)];
             $totalPrice = rand(50, 1000) * 1000; // Random tổng giá trị từ 50.000 đến 1.000.000
 
             $insertData[] = [

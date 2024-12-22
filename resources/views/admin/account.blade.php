@@ -4,7 +4,7 @@
     <main class="app-content">
         <div class="app-title">
             <ul class="app-breadcrumb">
-                <li class="breadcrumb-item" style = "list-style: none"><a href="#"><b>Danh sách người dùngdùng</b></a>
+                <li class="breadcrumb-item" style = "list-style: none"><a href="#"><b>Danh sách người dùng</b></a>
                 </li>
             </ul>
             <div id="clock"></div>
