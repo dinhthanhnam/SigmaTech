@@ -10,13 +10,13 @@
             </a>
           </li>
           <li class="breadcrumb-item active" aria-current="page">
-            <a href="{{ url('/laptops/Gaming') }}">Laptop Gaming </a>
+            <a href="#">KẾT QUẢ TÌM KIẾM</a>
           </li>
         </ol>
       </div>
       <div class="product-collection-related-container">
         <div class="group-title">
-          <h2 class="title">Laptop Gaming Được Mua Nhiều Nhất 2024</h2>
+          <h2 class="title">KẾT QUẢ TÌM KIẾM LAPTOP</h2>
         </div>
       </div>
 
@@ -47,7 +47,6 @@
                   </a>
                 </div>
                 <div class="filter-group-bottom">
-                  <a href="#" onclick=""> Bỏ chọn </a>
                   <a href="#" class="js-open-url"> Xem kết quả </a>
                 </div>
               </div>
@@ -76,7 +75,6 @@
                     data-value="min=60000000&max=1000000000000"> Trên 60 triệu </a>
                 </div>
                 <div class="filter-group-bottom">
-                  <a href="#" onclick=""> Bỏ chọn </a>
                   <a href="#" class="js-open-url"> Xem kết quả </a>
                 </div>
               </div>
@@ -94,7 +92,6 @@
                   <a href="#" class="filter-title js-filter-title" data-filter_code="cpu" data-value="AMD Ryzen 9">AMD Ryzen 9 </a>
                 </div>
                 <div class="filter-group-bottom">
-                  <a href="#" onclick="BuildFilterUrl.clearFilter.call(this, '')"> Bỏ chọn </a>
                   <a href="/gaming-laptop.html" class="js-open-url"> Xem kết quả
                   </a>
                 </div>
@@ -111,7 +108,6 @@
                   <a href="#" class="filter-title js-filter-title" data-filter_code="screensize"data-value="16 inch">16 inch </a>
                 </div>
                 <div class="filter-group-bottom">
-                  <a href="#" onclick="BuildFilterUrl.clearFilter.call(this, '')"> Bỏ chọn </a>
                   <a href="/gaming-laptop.html" class="js-open-url"> Xem kết quả
                   </a>
                 </div>
@@ -129,7 +125,6 @@
                   <a href="#" class="filter-title js-filter-title" data-filter_code="vga" data-value="RTX 4080">NVIDIA GeForce RTX 4080 </a>
                 </div>
                 <div class="filter-group-bottom">
-                  <a href="#" onclick="BuildFilterUrl.clearFilter.call(this, '')"> Bỏ chọn </a>
                   <a href="/gaming-laptop.html" class="js-open-url"> Xem kết quả
                   </a>
                 </div>
@@ -144,25 +139,6 @@
                   <a href="#" class="filter-title js-filter-title" data-filter_code="ram" data-value="32GB">32GB </a>
                 </div>
                 <div class="filter-group-bottom">
-                  <a href="#" onclick="BuildFilterUrl.clearFilter.call(this, '')"> Bỏ chọn </a>
-                  <a href="/gaming-laptop.html" class="js-open-url"> Xem kết quả
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="filter-item js-filter-item" data-type="attribute">
-              <a href="#" class="filter-name "> Dung lượng ổ cứng </a>
-              <div class="filter-content-group">
-                <div class="filter-group-middle ">
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="512GB">
-                    512GB </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="1TB">
-                    1TB </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="2TB">
-                    2TB </a>
-                </div>
-                <div class="filter-group-bottom">
-                  <a href="#" onclick="BuildFilterUrl.clearFilter.call(this, '')"> Bỏ chọn </a>
                   <a href="/gaming-laptop.html" class="js-open-url"> Xem kết quả
                   </a>
                 </div>
@@ -180,23 +156,6 @@
                     Windows 11 </a>
                 </div>
                 <div class="filter-group-bottom">
-                  <a href="#" onclick="BuildFilterUrl.clearFilter.call(this, '')"> Bỏ chọn </a>
-                  <a href="/gaming-laptop.html" class="js-open-url"> Xem kết quả
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="filter-item js-filter-item" data-type="attribute">
-              <a href="#" class="filter-name "> Trọng lượng </a>
-              <div class="filter-content-group">
-                <div class="filter-group-middle ">
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="1272"> 1.0kg<2.0kg </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="1273"> 2.0kg<2.4kg </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="1274"> 2.4<3kg </a>
-                  <a href="#" class="filter-title js-filter-title" data-filter_code="filter" data-value="1275"> >3kg </a>
-                </div>
-                <div class="filter-group-bottom">
-                  <a href="#" onclick="BuildFilterUrl.clearFilter.call(this, '')"> Bỏ chọn </a>
                   <a href="/gaming-laptop.html" class="js-open-url"> Xem kết quả
                   </a>
                 </div>
@@ -212,7 +171,6 @@
                   <a href="#" class="filter-title js-filter-title" data-filter_code="color" data-value="Đen">Đen </a>
                 </div>
                 <div class="filter-group-bottom">
-                  <a href="#" onclick="BuildFilterUrl.clearFilter.call(this, '')"> Bỏ chọn </a>
                   <a href="/gaming-laptop.html" class="js-open-url"> Xem kết quả
                   </a>
                 </div>
@@ -226,7 +184,6 @@
                     @if (!empty($filterValue))
                         <a href="#" class="selected-filter">
                             {{ ucfirst($filterValue) }}
-                            <i class="fas fa-times" data-href="{{ route('gaming-laptops.show') }}"></i>
                         </a>
                     @endif
                  @endforeach
@@ -238,7 +195,7 @@
         <div class="p-container bg-white">
           <div class="sort-container d-flex align-items-center justify-content-between flex-wrap">
             <div class="d-flex align-items-center">
-              <b id="product-count-display" style="font-size:16px;margin-right: 20px"> Laptop Gaming - Đồ Họa </b>
+              <b id="product-count-display" style="font-size:16px;margin-right: 20px"> Laptop</b>
               <div class="sort-by-group">
                 <a href="/laptops/filter?sort=newest">
                   <i class="mb-icons icon-new" data-filter_code = "sort" data-value="newest"></i>
@@ -255,11 +212,16 @@
               </div>
             </div>
           </div>
+
           <div class="p-list-container d-flex flex-wrap">
-            @foreach ($laptops as $laptop)
-              @include('partials.detailed-p-item', ['product' => $laptop])
-            @endforeach
-          </div>
+            @if ($laptops->isEmpty())
+                <p class="no-products">Không có sản phẩm cần tìm.</p>
+            @else
+                @foreach ($laptops as $laptop)
+                    @include('partials.detailed-p-item', ['product' => $laptop])
+                @endforeach
+            @endif
+        </div>
         </div>
         <!-- paging -->
         <div class="paging bg-white mx-auto">
@@ -287,79 +249,6 @@
 
 @push('scripts')
   <script>
-    // Đóng filter-item hiện tại khi click ra ngoài và giữ trạng thái của filter-title
-    document.addEventListener('click', function(e) {
-      const currentFilterItem = document.querySelector('.js-filter-item.current');
-
-      // Nếu click không nằm trong một filter item
-      if (!e.target.closest('.js-filter-item') && currentFilterItem) {
-        currentFilterItem.classList.remove('current'); // Xóa class 'current'
-      }
-    });
-
-    // Xử lý click vào các filter item
-    document.querySelectorAll('.js-filter-item').forEach(filterItem => {
-      filterItem.addEventListener('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation(); // Ngăn sự kiện truyền lên body
-
-        // Toggle class 'current' cho filter-item hiện tại
-        const isCurrent = this.classList.toggle('current');
-
-        // Nếu có filter khác đang là 'current', bỏ class 'current' của filter đó
-        document.querySelectorAll('.js-filter-item').forEach(item => {
-          if (item !== this && item.classList.contains('current')) {
-            item.classList.remove('current');
-          }
-        });
-
-        // Kiểm tra nếu có ít nhất một js-filter-title được chọn
-        const selectedTitles = this.querySelectorAll('.js-filter-title.selected');
-        if (selectedTitles.length > 0) {
-          this.classList.add(
-            'selected'); // Thêm class 'selected' nếu có ít nhất một title được chọn
-        } else {
-          this.classList.remove(
-            'selected'); // Xóa class 'selected' nếu không có title nào được chọn
-        }
-      });
-    });
-
-    // Xử lý click vào các filter title
-    document.querySelectorAll('.js-filter-title').forEach(filterTitle => {
-      filterTitle.addEventListener('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation(); // Ngăn sự kiện truyền lên filter item
-
-        const parentFilterItem = this.closest('.js-filter-item');
-        const dataType = parentFilterItem.getAttribute('data-type');
-
-        if (dataType === 'price') {
-          // Nếu là loại price, chỉ cho phép chọn một
-          parentFilterItem.querySelectorAll('.js-filter-title.selected').forEach(title => {
-            title.classList.remove('selected'); // Bỏ chọn tất cả
-          });
-          this.classList.add('selected'); // Chọn item hiện tại
-        } else {
-          // Cho phép chọn nhiều item
-          this.classList.toggle('selected'); // Toggle class 'selected'
-        }
-
-        // Kiểm tra nếu có ít nhất một js-filter-title được chọn
-        const selectedTitles = parentFilterItem.querySelectorAll('.js-filter-title.selected');
-        if (selectedTitles.length > 0) {
-          parentFilterItem.classList.add(
-            'selected'); // Thêm class 'selected' nếu có ít nhất một title được chọn
-        } else {
-          parentFilterItem.classList.remove(
-            'selected'); // Xóa class 'selected' nếu không có title nào được chọn
-        }
-      });
-  });
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <script>
     $(document).ready(function() {
       $('.owl-carousel').owlCarousel({
         loop: false,
@@ -380,63 +269,51 @@
         }
       });
     });
-  </script>
-
-  {{-- filter --}}
-  <script>
     document.addEventListener('DOMContentLoaded', function() {
-      let selectedValue = '';
-      let selectedMin = null;
-      let selectedMax = null;
-      let selectedFilterType = '';
+    let selectedValue = '';
+    let selectedMin = null;
+    let selectedMax = null;
+    let selectedFilterType = '';
 
-      document.querySelectorAll('.js-filter-title').forEach(function(element) {
-        element.addEventListener('click', function(e) {
-          e.preventDefault();
+    document.querySelectorAll('.js-filter-title').forEach(function(element) {
+      element.addEventListener('click', function(e) {
+        e.preventDefault();
 
-          selectedFilterType = element.getAttribute('data-filter_code');
-          const dataValue = element.getAttribute('data-value');
+        selectedFilterType = element.getAttribute('data-filter_code');
+        const dataValue = element.getAttribute('data-value');
 
-          if (selectedFilterType === 'price') {
-            const params = new URLSearchParams(dataValue);
-            selectedMin = parseInt(params.get('min'), 10);
-            selectedMax = parseInt(params.get('max'), 10);
-            console.log("Selected Min:", selectedMin);
-            console.log("Selected Max:", selectedMax);
-            console.log("Selected:", selectedFilterType);
-          } else {
-            selectedValue = dataValue;
-          }
-          element.closest('.filter-content-group').querySelectorAll('.js-filter-title').forEach(el => el
-            .classList.remove('selected'));
-          element.classList.add('selected');
-        });
-      });
-
-      // Xử lý khi click vào "Xem kết quả" cho bộ lọc
-      document.querySelectorAll('.js-open-url').forEach(function(element) {
-        element.addEventListener('click', function(e) {
-          e.preventDefault();
-
-          if (selectedFilterType === 'price' && selectedMin !== null && selectedMax !== null) {
-            console.log(
-              `/laptops/filter?min=${encodeURIComponent(selectedMin)}&max=${encodeURIComponent(selectedMax)}`
-              );
-            window.location.href =
-              `/laptops/filter?min=${encodeURIComponent(selectedMin)}&max=${encodeURIComponent(selectedMax)}`;
-          } 
-          else {
-            window.location.href =
-              `/laptops/filter?${selectedFilterType}=${encodeURIComponent(selectedValue)}`;
-          }
-        });
+        if (selectedFilterType === 'price') {
+          const params = new URLSearchParams(dataValue);
+          selectedMin = parseInt(params.get('min'), 10);
+          selectedMax = parseInt(params.get('max'), 10);
+          console.log("Selected Min:", selectedMin);
+          console.log("Selected Max:", selectedMax);
+          console.log("Selected:", selectedFilterType);
+        } else {
+          selectedValue = dataValue;
+        }
+        element.closest('.filter-content-group').querySelectorAll('.js-filter-title').forEach(el => el
+          .classList.remove('selected'));
+        element.classList.add('selected');
       });
     });
-  </script>
 
-{{-- Count --}}
-<script>
- 
+    // Xử lý khi click vào "Xem kết quả" cho bộ lọc
+    document.querySelectorAll('.js-open-url').forEach(function(element) {
+      element.addEventListener('click', function(e) {
+        e.preventDefault();
+        const cat = @json($cat);
+        if (selectedFilterType === 'price' && selectedMin !== null && selectedMax !== null) {
+          window.location.href =
+            `/laptops/${cat}/filter?cat=${cat}&min=${encodeURIComponent(selectedMin)}&max=${encodeURIComponent(selectedMax)}`;
+        } 
+        else {
+          window.location.href =
+            `/laptops/${cat}/filter?cat=${cat}&${selectedFilterType}=${encodeURIComponent(selectedValue)}`;
+        }
+      });
+    });
+});
   document.addEventListener('DOMContentLoaded', function() {
     // Tìm container chứa danh sách sản phẩm
     const productListContainer = document.querySelector('.p-list-container');
@@ -446,18 +323,7 @@
 
     // Cập nhật nội dung của phần tử <b> với id là 'product-count-display'
     const productCountDisplay = document.getElementById('product-count-display');
-    productCountDisplay.textContent = `${productCount} Laptop Gaming - Đồ Họa`;
+    productCountDisplay.textContent = `${productCount} Laptop`;
   });
-</script>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-      document.querySelectorAll('.selected-filter i').forEach(function (element) {
-          element.addEventListener('click', function (e) {
-              e.preventDefault();
-              const route = element.getAttribute('data-href');
-              window.location.href = route; // Điều hướng về route gaming-laptops.show
-          });
-      });
-  });
-</script>
+  </script>
 @endpush

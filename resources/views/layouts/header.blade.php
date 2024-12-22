@@ -614,54 +614,12 @@
                                     <div class="cat-child-items">
                                         <a href="{{ url('pc-parts/cpu') }}" class="cate-2" title="CPU - Bộ Vi Xử Lý"
                                             id="js-menu-1025">CPU - Bộ Vi Xử Lý</a>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/cpu/Intel" title="Cpu Intel" id="js-menu-1307">CPU
-                                                    INTEL</a>
-                                                <div class="cat-4-list">
-                                                    <a href="/cpu-intel-core-i9_dm1688.html" title="CPU Intel Core i9"
-                                                        id="js-menu-1688">CPU Intel Core i9</a>
-                                                    <a href="/cpu-intel-core-i7_dm1661.html" title="CPU Intel Core i7"
-                                                        id="js-menu-1661">CPU Intel Core i7</a>
-                                                    <a href="/cpu-intel-core-i5_dm1660.html" title="CPU Intel Core i5"
-                                                        id="js-menu-1660">CPU Intel Core i5</a>
-                                                    <a href="/cpu-intel-core-i3_dm1659.html" title="CPU Intel Core i3"
-                                                        id="js-menu-1659">CPU Intel Core i3</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/cpu/AMD" title="CPU AMD" id="js-menu-1308">CPU AMD</a>
-                                                <div class="cat-4-list">
-                                                    <a href="/cpu-amd-ryzen-9_dm1743.html" title="AMD Ryzen 9"
-                                                        id="js-menu-1743">AMD Ryzen 9</a>
-                                                    <a href="/amd-ryzen-7_dm1644.html" title="AMD Ryzen 7"
-                                                        id="js-menu-1644">AMD Ryzen 7</a>
-                                                    <a href="/amd-ryzen-5_dm1642.html" title="AMD Ryzen 5"
-                                                        id="js-menu-1642">AMD Ryzen 5</a>
-                                                    <a href="/amd-ryzen-3_dm1643.html" title="AMD Ryzen 3"
-                                                        id="js-menu-1643">AMD Ryzen 3</a>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        
                                     </div>
                                     
                                     <div class="cat-child-items">
                                         <a href="{{ url('pc-parts/gpu/') }}" class="cate-2" title="VGA - Card Màn Hình"
                                             id="js-menu-1155">VGA - Card Màn Hình</a>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/pc-parts/gpu/NVIDIA" title="VGA NVIDIA"
-                                                    id="js-menu-1963">VGA NVIDIA</a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="cat-child-last">
-                                                <a href="/pc-parts/gpu/AMD" title="VGA AMD" id="js-menu-1965">VGA
-                                                    AMD</a>
-                                            </div>
-                                        </div>
                                     </div>
                                     
                                 </div>

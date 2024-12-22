@@ -136,6 +136,7 @@ class LaptopController extends Controller
 
     public function filterLaptops(Request $request)
     {
+        $cat = $request->input('cat');
         $filters = [
             'brand' => $request->input('brand'),
             'price_min' => $request->input('min'),
@@ -148,103 +149,194 @@ class LaptopController extends Controller
             'os' => $request->input('os'),
             'weight' => $request->input('weight'),
             'color' => $request->input('color'),
-            'sort' => $request->input('sort'),
         ];
-
-        if (!empty($filters['sort'])) {
-            if ($filters['sort'] == 'newest') {
-                $laptops = Laptop::with('attributes')->orderBy('id', 'desc')->paginate(12);
-            } else {
-                $laptops = Laptop::with('attributes')
-                    ->orderBy(
-                    LaptopAttribute::select('value')
-                            ->whereColumn('laptop_attribute.laptop_id', 'laptops.id') 
-                            ->where('attribute_id', 5), 
-                    $filters['sort']
-                    )
-                    ->paginate(12);
-            }
-            return view('categories.filtered-laptops', compact('laptops', 'filters'));
-        }
-
         $laptops = Laptop::query();
 
         if (!empty($filters['brand'])) {
-            $laptops->whereHas('attributes', function ($query) use ($filters) {
-                $query->where('name', 'Brand')
-                    ->where('value', $filters['brand']);
-            });
+            $laptops ->whereHas('attributes', function ($query) use ($cat) {
+                $query->where('name', '[Laptop] Loại laptop')
+                    ->where('value', $cat);
+            }) ->whereHas('attributes', function ($query) use ($filters) {
+                    $query->where('name', 'Brand')
+                        ->where('value', $filters['brand']);
+                })
+                ->with('attributes')
+                ->get();
         }
 
         if (!empty($filters['price_min']) || !empty($filters['price_max'])) {
             $minPrice = $filters['price_min'] ?? 0;
             $maxPrice = $filters['price_max'] ?? PHP_INT_MAX;
 
-            $laptops->whereHas('attributes', function ($query) use ($minPrice, $maxPrice) {
+            $laptops ->whereHas('attributes', function ($query) use ($cat) {
+                $query->where('name', '[Laptop] Loại laptop')
+                    ->where('value', $cat);
+            }) ->whereHas('attributes', function ($query) use ($minPrice, $maxPrice) {
                 $query->where('name', 'Price')
                     ->whereBetween('value', [$minPrice, $maxPrice]);
-            });
+                })
+                ->with('attributes')
+                ->get();
+
         }
 
         if (!empty($filters['cpu'])) {
-            $laptops->whereHas('attributes', function ($query) use ($filters) {
+            $laptops ->whereHas('attributes', function ($query) use ($cat) {
+                $query->where('name', '[Laptop] Loại laptop')
+                    ->where('value', $cat);
+            }) ->whereHas('attributes', function ($query) use ($filters) {
                 $query->where('name', '[Laptop] Vi xử lý')
                     ->where('value', 'like', '%' . $filters['cpu'] . '%');
-            });
+                })
+                ->with('attributes')
+                ->get();
         }
 
         if (!empty($filters['screensize'])) {
-            $laptops->whereHas('attributes', function ($query) use ($filters) {
+            $laptops ->whereHas('attributes', function ($query) use ($cat) {
+                $query->where('name', '[Laptop] Loại laptop')
+                    ->where('value', $cat);
+            }) ->whereHas('attributes', function ($query) use ($filters) {
                 $query->where('name', '[Laptop] Kích thước màn hình')
                     ->where('value', 'like', '%' . $filters['screensize'] . '%');
-            });
+                })
+                ->with('attributes')
+                ->get();
         }
 
         if (!empty($filters['vga'])) {
-            $laptops->whereHas('attributes', function ($query) use ($filters) {
+            $laptops ->whereHas('attributes', function ($query) use ($cat) {
+                $query->where('name', '[Laptop] Loại laptop')
+                    ->where('value', $cat);
+            }) ->whereHas('attributes', function ($query) use ($filters) {
                 $query->where('name', '[Laptop] Card đồ hoạ')
                     ->where('value', 'like', '%' . $filters['vga'] . '%');
-            });
+                })
+                ->with('attributes')
+                ->get();
         }
 
         if (!empty($filters['ram'])) {
-            $laptops->whereHas('attributes', function ($query) use ($filters) {
+            $laptops ->whereHas('attributes', function ($query) use ($cat) {
+                $query->where('name', '[Laptop] Loại laptop')
+                    ->where('value', $cat);
+            }) ->whereHas('attributes', function ($query) use ($filters) {
                 $query->where('name', '[Laptop] Dung lượng RAM')
                     ->where('value', 'like', '%' . $filters['ram'] . '%');
-            });
+                })
+                ->with('attributes')
+                ->get();
         }
 
         if (!empty($filters['ssd'])) {
-            $laptops->whereHas('attributes', function ($query) use ($filters) {
+            $laptops ->whereHas('attributes', function ($query) use ($cat) {
+                $query->where('name', '[Laptop] Loại laptop')
+                    ->where('value', $cat);
+            }) ->whereHas('attributes', function ($query) use ($filters) {
                 $query->where('name', '[Laptop] SSD')
                     ->where('value', 'like', '%' . $filters['ssd'] . '%');
-            });
+                })
+                ->with('attributes')
+                ->get();
         }
 
         if (!empty($filters['os'])) {
-            $laptops->whereHas('attributes', function ($query) use ($filters) {
+            $laptops ->whereHas('attributes', function ($query) use ($cat) {
+                $query->where('name', '[Laptop] Loại laptop')
+                    ->where('value', $cat);
+            }) ->whereHas('attributes', function ($query) use ($filters) {
                 $query->where('name', '[Laptop] OS')
                     ->where('value', 'like', '%' . $filters['os'] . '%');
-            });
+                })
+                ->with('attributes')
+                ->get();
         }
 
         if (!empty($filters['weight'])) {
-            $laptops->whereHas('attributes', function ($query) use ($filters) {
+            $laptops ->whereHas('attributes', function ($query) use ($cat) {
+                $query->where('name', '[Laptop] Loại laptop')
+                    ->where('value', $cat);
+            }) ->whereHas('attributes', function ($query) use ($filters) {
                 $query->where('name', '[Laptop] Trọng lượng')
                     ->where('value', 'like', '%' . $filters['weight'] . '%');
-            });
+                })
+                ->with('attributes')
+                ->get();
         }
 
         if (!empty($filters['color'])) {
-            $laptops->whereHas('attributes', function ($query) use ($filters) {
+            $laptops ->whereHas('attributes', function ($query) use ($cat) {
+                $query->where('name', '[Laptop] Loại laptop')
+                    ->where('value', $cat);
+            }) ->whereHas('attributes', function ($query) use ($filters) {
                 $query->where('name', '[Laptop] Màu sắc')
                     ->where('value', 'like', '%' . $filters['color'] . '%');
-            });
+                })
+                ->with('attributes')
+                ->get();
         }
 
         $laptops = $laptops->with('attributes')->paginate(12);
 
 
-        return view('categories.filtered-laptops', compact('laptops', 'filters'));
+        return view('categories.filtered-laptops', compact('laptops', 'filters', 'cat'));
+    }
+    public function sortGaminglaptop(Request $request){
+        $sort = $request -> input('sort');
+        if (!empty($sort)) {
+            if ($sort == 'newest') {
+                $gamingLaptops = Laptop::with('attributes')->orderBy('id', 'desc')->paginate(12);
+            } else {
+                $gamingLaptops = Laptop::with('attributes')
+                    ->orderBy(
+                    LaptopAttribute::select('value')
+                            ->whereColumn('laptop_attribute.laptop_id', 'laptops.id') 
+                            ->where('attribute_id', 5), 
+                    $sort
+                    )
+                    ->paginate(12);
+            }
+            $topGamingLaptops = Laptop::whereHas('attributes', function ($query) {
+                $query->where('name', '[Laptop] Loại laptop')
+                    ->where('value', 'Gaming');
+            })
+                ->whereHas('attributes', function ($query) {
+                    $query->where('name', 'On Top')
+                        ->where('value', '1');
+                })
+                ->with('attributes')
+                ->limit(10)
+                ->get();
+            return view('categories.gaming-laptops', compact('gamingLaptops', 'topGamingLaptops'));
+        }
+    }
+    public function sortOfficelaptop(Request $request){
+        $sort = $request -> input('sort');
+        if (!empty($sort)) {
+            if ($sort == 'newest') {
+                $officeLaptops = Laptop::with('attributes')->orderBy('id', 'desc')->paginate(12);
+            } else {
+                $officeLaptops = Laptop::with('attributes')
+                    ->orderBy(
+                    LaptopAttribute::select('value')
+                            ->whereColumn('laptop_attribute.laptop_id', 'laptops.id') 
+                            ->where('attribute_id', 5), 
+                    $sort
+                    )
+                    ->paginate(12);
+            }
+            $topOfficeLaptops = Laptop::whereHas('attributes', function ($query) {
+                $query->where('name', '[Laptop] Loại laptop')
+                    ->where('value', 'Office');
+            })
+                ->whereHas('attributes', function ($query) {
+                    $query->where('name', 'On Top')
+                        ->where('value', '1');
+                })
+                ->with('attributes')
+                ->limit(10)
+                ->get();
+            return view('categories.office-laptops', compact('officeLaptops', 'topOfficeLaptops'));
+        }
     }
 }

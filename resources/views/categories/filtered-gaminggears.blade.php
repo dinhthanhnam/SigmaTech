@@ -16,7 +16,7 @@
       </div>
       <div class="product-collection-related-container">
         <div class="group-title">
-          <h2 class="title">Gaming Gear Được Mua Nhiều Nhất 2024</h2>
+          <h2 class="title">Gaming Gear</h2>
         </div>
       </div>
 
