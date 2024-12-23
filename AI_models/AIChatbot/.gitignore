@@ -1,1 +1,12 @@
+# Virtual environment
+venv/
+.env
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Data and model files
 *.h5
+*.csv
+*.sqlite3
