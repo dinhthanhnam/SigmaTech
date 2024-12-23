@@ -9,7 +9,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 @endpush
-
 @section('content')
     <div class="account-container">
         <div class="account-sidebar">
@@ -339,3 +338,17 @@
         });
     </script>
 @endpush
+@if(session('changePasswordSuccess') || (session('errors') && (session('errors')->has('current_password') || session('errors')->has('new_password'))))
+    @push('scripts')
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const passwordLink = document.querySelector('a[href="#password-change"]'); // Tìm thẻ a có href #password-change
+
+                // Kiểm tra xem có session('changePasswordSuccess') hay không
+                if (passwordLink) {
+                    passwordLink.click(); // Tự động click vào link #password-change
+                }
+            });
+        </script>
+    @endpush
+@endif

@@ -16,6 +16,13 @@ class ChangePasswordController extends Controller
 
     public function changePassword(Request $request)
     {
+        /** @var User $user */
+        $user = Auth::user();
+
+        // Kiểm tra mật khẩu hiện tại
+        if (!Hash::check($request->current_password, $user->password)) {
+            return back()->withErrors(['current_password' => 'Mật khẩu hiện tại không chính xác.']);
+        }
         // Xác thực dữ liệu đầu vào
         $request->validate([
             'current_password' => ['required'],
@@ -23,23 +30,19 @@ class ChangePasswordController extends Controller
         ],
         [
             // Ghi đè thông báo lỗi khi mật khẩu xác nhận không khớp
+            'new_password.min' => 'Mật khẩu ít nhất 8 ký tự.',
             'new_password.confirmed' => 'Mật khẩu mới và xác nhận mật khẩu không khớp. Vui lòng kiểm tra lại.',
         ]
     );
-    
-        /** @var User $user */
-        $user = Auth::user();
-    
-        // Kiểm tra mật khẩu hiện tại
-        if (!Hash::check($request->current_password, $user->password)) {
-            return back()->withErrors(['current_password' => 'Mật khẩu hiện tại không chính xác.']);
-        }
-    
         // Cập nhật mật khẩu mới và lưu lại
         $user->password = Hash::make($request->new_password);
         $user->save();
     
         // Chuyển hướng kèm thông báo thành công
-        return redirect()->route('user-account')->with('status', 'Mật khẩu đã được thay đổi thành công.');
+        return redirect()->route('user-account')
+            ->with([
+                'status' => 'Mật khẩu đã được thay đổi thành công.',
+                'changePasswordSuccess' => true
+            ]);
     }
 }
