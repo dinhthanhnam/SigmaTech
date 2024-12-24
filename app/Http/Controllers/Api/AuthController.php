@@ -25,9 +25,9 @@ class AuthController extends Controller
 
         $token = $user->createToken($user->name.'Auth-Token')->plainTextToken;
         return response()->json([
-           'message' =>'Đăng nhập thành công',
-           'token_type' => 'Bearer',
-           'token' => $token,
+            'message' =>'Đăng nhập thành công',
+            'token_type' => 'Bearer',
+            'token' => $token,
         ], 200);
     }
 
@@ -56,9 +56,9 @@ class AuthController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
-            'phone' => $request->phone,
-            'gender' => $request->gender,
-            'address' => $request->address,
+            'phone' => $request->phone ?? null,
+            'gender' => $request->gender ?? null,
+            'address' => $request->address ?? null,
             'utype' => 'USR',
         ]);
         if($user) {
@@ -72,6 +72,33 @@ class AuthController extends Controller
             return response()->json([
                 'message' =>'Đăng ký không thành công',
             ], 500);
+        }
+    }
+    public function logout(Request $request){
+        $user = User::where('id', $request->user()->id)->first();
+        if($user) {
+            $user->tokens()->delete();
+            return response()->json([
+                'message' =>'Logged out.',
+            ],200);
+        } else {
+            return response()->json([
+                'message' =>'User Not Found.',
+            ], 404);
+        }
+    }
+    public function profile(Request $request){
+        if($request->user()) {
+            return response()->json([
+                'message' =>'Profile Fetched.',
+                'data' =>$request->user()
+            ], 200);
+        }
+        else {
+            return response()->json([
+                'message' =>'Not Authenticated.',
+                'data' =>$request->user()
+            ], 401);
         }
     }
 }

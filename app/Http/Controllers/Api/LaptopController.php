@@ -16,7 +16,7 @@ class LaptopController extends Controller
         } else {
             return response()->json([
                 'message' => 'Không có bản ghi nào', 
-             ], 200);
+            ], 200);
         }
         
     }
