@@ -4,9 +4,9 @@
     $category_id = $product->category_id;
     $name = $product->name;
     $product_type = '';
-    $price = $product->attributes->firstWhere('name', 'Price')->pivot->value ?? 0;
-    $dealprice = $product->attributes->firstWhere('name', 'Deal Price')->pivot->value ?? 0;
-    $saleprice = $product->attributes->firstWhere('name', 'Sale Price')->pivot->value ?? 0;
+    $price = $product->attributes->firstWhere('name', 'Price')->pivot->value ?? 1;
+    $dealprice = $product->attributes->firstWhere('name', 'Deal Price')->pivot->value ?? 1;
+    $saleprice = $product->attributes->firstWhere('name', 'Sale Price')->pivot->value ?? 1;
     $sale_end_date = $product->attributes->firstWhere('name', 'Sale End Date')->pivot->value ?? null;
     $rating = $product->attributes->firstWhere('name', 'Rating')->pivot->value ?? 0;
     $brand = $product->attributes->firstWhere('name', 'Brand')->pivot->value ?? 'N/A';
