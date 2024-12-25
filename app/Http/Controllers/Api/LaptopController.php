@@ -9,26 +9,66 @@ use App\Http\Resources\LaptopResource;
 
 class LaptopController extends Controller
 {
+    /**
+     * Lấy danh sách tất cả laptop
+     */
     public function index(Request $request) {
         $laptops = Laptop::all();
-        if($laptops) {
-            return LaptopResource::collection($laptops);
-        } else {
+
+        if ($laptops->isEmpty()) {
             return response()->json([
-                'message' => 'Không có bản ghi nào', 
-            ], 200);
+                'success' => false,
+                'message' => 'Không có bản ghi nào.',
+                'data' => []
+            ], 404); // Trả về mã 404 nếu không có dữ liệu
         }
+
+        return response()->json([
+            'success' => true,
+            'message' => 'Danh sách laptop được lấy thành công.',
+            'data' => LaptopResource::collection($laptops)
+        ], 200);
     }
-    public function store() {
-        
+
+    /**
+     * Tạo mới một laptop
+     */
+    public function store(Request $request) {
+        // Xử lý logic thêm laptop ở đây
     }
-    public function show() {
-        
+
+    /**
+     * Lấy chi tiết một laptop theo id
+     */
+    public function show($id) {
+        $laptop = Laptop::find($id);
+
+        if (!$laptop) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Không tìm thấy laptop.',
+                'data' => null
+            ], 404);
+        }
+
+        return response()->json([
+            'success' => true,
+            'message' => 'Thông tin laptop được lấy thành công.',
+            'data' => new LaptopResource($laptop)
+        ], 200);
     }
-    public function update() {
-        
+
+    /**
+     * Cập nhật một laptop
+     */
+    public function update(Request $request, $id) {
+        // Xử lý logic cập nhật laptop ở đây
     }
-    public function destroy() {
-        
+
+    /**
+     * Xóa một laptop
+     */
+    public function destroy($id) {
+        // Xử lý logic xóa laptop ở đây
     }
 }
