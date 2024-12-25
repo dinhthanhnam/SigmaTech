@@ -25,9 +25,9 @@ Route::post('/register', [AuthController::class, 'register']);
 Route::middleware('auth:sanctum')->group( function() {
     Route::post('/logout', [AuthController::class, 'logout']);
     Route::get('/profile', [AuthController::class, 'profile']);
-    Route::apiResource('/laptops', LaptopController::class);
-    //Route::apiResource('/laptops/{id}', LaptopController::class);
-    Route::apiResource('/gaminggears', GaminggearController::class);
+    Route::get('/laptops', [LaptopController::class, 'index']);
+    Route::get('/laptops/{id}', [LaptopController::class, 'show']);
+    Route::get('/gaminggears', [GaminggearController::class, 'index']);
 });
 
 Route::middleware('auth:sanctum')->group(function () {

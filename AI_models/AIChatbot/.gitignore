@@ -7,6 +7,5 @@ __pycache__/
 *.py[cod]
 
 # Data and model files
-*.h5
 *.csv
 *.sqlite3
