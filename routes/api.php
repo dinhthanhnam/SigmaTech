@@ -24,6 +24,7 @@ Route::middleware('auth:sanctum')->group( function() {
     Route::post('/logout', [AuthController::class, 'logout']);
     Route::get('/profile', [AuthController::class, 'profile']);
     Route::apiResource('/laptops', LaptopController::class);
+    Route::apiResource('/laptops/{id}', LaptopController::class);
     Route::apiResource('/gaminggears', GaminggearController::class);
 });
 
