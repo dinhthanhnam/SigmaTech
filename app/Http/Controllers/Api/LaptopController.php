@@ -9,16 +9,15 @@ use App\Http\Resources\LaptopResource;
 
 class LaptopController extends Controller
 {
-    public function index() {
-        $laptops = Laptop::with('attributes')->get();
+    public function index(Request $request) {
+        $laptops = Laptop::all();
         if($laptops) {
             return LaptopResource::collection($laptops);
         } else {
             return response()->json([
                 'message' => 'Không có bản ghi nào', 
-             ], 200);
+            ], 200);
         }
-        
     }
     public function store() {
         

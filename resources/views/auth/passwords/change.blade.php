@@ -3,7 +3,9 @@
   <form method="POST" action="{{ route('password.change') }}">
     @csrf
     @if (session('status'))
-      <div class="alert alert-success"> {{ session('status') }} </div>
+      <div class="form-group">  
+        <div class="alert alert-success text-center"> {{ session('status') }} </div>
+      </div>
     @endif
     <div class="form-group">
       <div class="form-row">
@@ -11,7 +13,7 @@
         <input type="password" name="current_password" id="current_password"
           class="form-control @error('current_password') is-invalid @enderror" required>
         @error('current_password')
-          <span class="invalid-feedback" role="alert">
+          <span class="invalid-feedback text-center" role="alert">
             <strong>{{ $message }}</strong>
           </span>
         @enderror
@@ -23,7 +25,7 @@
         <input type="password" name="new_password" id="new_password"
           class="form-control @error('new_password') is-invalid @enderror" required>
         @error('new_password')
-          <span class="invalid-feedback" role="alert">
+          <span class="invalid-feedback text-center" role="alert">
             <strong>{{ $message }}</strong>
           </span>
         @enderror
@@ -35,7 +37,7 @@
         <input type="password" name="new_password_confirmation" id="new_password_confirmation"
           class="form-control @error('new_password_confirmation') is-invalid @enderror" required>
         @error('new_password_confirmation')
-          <span class="invalid-feedback" role="alert">
+          <span class="invalid-feedback text-center" role="alert">
             <strong>{{ $message }}</strong>
           </span>
         @enderror
