@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\DB;
-
+use Illuminate\Support\Facades\Crypt;
 
 class SePayWebhookListener
 {
@@ -33,14 +33,12 @@ class SePayWebhookListener
         // Lấy description từ session
         $cachedData = Cache::get('description' . $webhookDescription);
 
-        
-        if ($cachedData && isset($cachedData['order_id'])) {
+        if ($cachedData && $event->sePayWebhookData->transferAmount == $cachedData['amount'] ) {
             $orderId = $cachedData['order_id'];
             Log::info('Lấy thông tin từ cache thành công', $cachedData);
             DB::table('orders')
             ->where('id', $orderId)
             ->update(['status' => '2']);
-            
         } else {
             Log::warning('Không tìm thấy thông tin pendingOrder trong cache', [
                 'description' => $webhookDescription,

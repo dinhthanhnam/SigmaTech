@@ -1,36 +1,26 @@
 <?php
+namespace App\Http\Controllers\Api;
 
-namespace App\Http\Controllers;
-use Illuminate\Http\Request;
-
-use App\Models\Order;
-use App\Models\OrderDetail;
-
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\DB;
-
-use App\Models\Laptop;
-use App\Models\CPU;
-use App\Models\Monitor;
-use App\Models\GPU;
 use App\Models\CartItem;
-use App\Models\Accessory;
-use App\Models\Cooling;
-use App\Models\Media;
+use App\Models\Cpu;
+use App\Models\Gpu;
+use App\Models\Laptop;
+use App\Models\Monitor;
 use App\Models\Gaminggear;
-use Illuminate\Support\Facades\Cache;
-use Illuminate\Support\Facades\Crypt;
+use App\Models\Media;
+use App\Models\Cooling;
+use App\Models\Accessory;
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 
-use App\Http\Controllers\CartController;
-
-
-class OrderController extends Controller
+class CartController extends Controller
 {
     public function getProduct($item)
     {
         $yesterday = strtotime('-1 day');
         switch ($item->product_type) {
-            case 'laptop':
+            case 'laptops':
                 $laptop = Laptop::where('id', $item->product_id)->with('attributes')->first();
                 $salePrice = $laptop->attributes->where('name', 'Sale Price')->first()?->pivot->value ?? null;
                 $saleEndDate = $laptop->attributes->where('name', 'Sale End Date')->first()?->pivot->value ?? null;
@@ -128,160 +118,108 @@ class OrderController extends Controller
             break;
         }
     }
-    public function orderInfo(Request $request)
-    {
-        $selectItems = json_decode($request->query('items'), false);
 
-        $userId = auth()->id(); 
-        $cartItems = CartItem::where('user_id', $userId)
-                            ->whereIn('product_type', collect($selectItems)->pluck('productType')) 
-                            ->whereIn('product_id', collect($selectItems)->pluck('productId')) 
-                            ->get();
-        foreach ($cartItems as $item) {
-            $this->getProduct($item);
-
-        }
-        session(['cartItems' => $cartItems]);
-        return view('order', compact('cartItems'));
-    }
-
-    public function placeOrder(Request $request)
-    {
-        DB::beginTransaction();
-
-        try {
-            // Kiểm tra phương thức thanh toán
-            if ($request->payment_method === 'banking') {
-                $userId = auth()->id();
-                $orderId = (Order::max('id') ?? 0) + 1;
-                $bankCode = 'mbbank'; 
-                $accountNumber = '0986435177'; 
-                $amount = $request->totalPrice / 1000; 
-                $recipientName = 'NGUYEN DUY HUNG'; 
-                $description = 'Thanh toan QR SE' . $userId . $orderId;
-                $url = 'https://img.vietqr.io/image/' . $bankCode . '-' . $accountNumber . '-compact2' . '.jpg';
-                $queryParams = [
-                    'amount' => $amount,
-                    'addInfo' => $description,
-                    'accountName' => $recipientName,
-                ];
-                $urlWithParams = $url . '?' . http_build_query($queryParams);
-
-                // Lưu đơn hàng vào cơ sở dữ liệu
-                $order = $this->saveOrder($request);
-
-                // Tạo mã QR và hiển thị giao diện thanh toán ngân hàng
-                Cache::put('description' . $description, [
-                    'description' => $description,
-                    'amount' => $amount,
-                    'order_id' => $order->id, 
-                ], now()->addMinutes(30));
-
-                DB::commit();
-
-                return view('banking', [
-                    'qrUrl' => $urlWithParams,
-                    'amount' => $amount,
-                    'description' => $description
-                ]);
-            }
-
-            // Thanh toán COD
-            $this->saveOrder($request);
-            DB::commit();
-
-            return redirect()->route('user-account')->with('orderSuccess', true);
-        } catch (\Exception $e) {
-            DB::rollBack();
-            return back()->with('error', 'Đã xảy ra lỗi khi đặt hàng.');
-        }
-    }
-
-
-    private function saveOrder($request)
+    public function show()
     {
         $userId = auth()->id();
-        $cartItems = session('cartItems', []);
-
-        // Tạo đơn hàng
-        $order = Order::create([
-            'user_id' => $userId,
-            'customer_name' => $request->fullname,
-            'gender' => $request->gender,
-            'phone_number' => $request->phone,
-            'shipping_address' => $request->address,
-            'payment_method' => $request->payment_method,
-            'note' => $request->note,
-            'total_price' => $request->totalPrice,
-        ]);
-
-        // Lưu chi tiết đơn hàng
-        foreach ($cartItems as $cartItem) {
-            OrderDetail::create([
-                'order_id' => $order->id,
-                'product_type' => $cartItem->product_type,
-                'product_id' => $cartItem->product_id,
-                'quantity' => $cartItem->quantity,
-                'price' => $cartItem->dealprice,
-            ]);
-            CartItem::where('user_id', $userId)
-            ->where('product_type', $cartItem->product_type)
-            ->where('product_id', $cartItem->product_id)
-            ->delete();
+        $cartItems = CartItem::where('user_id', $userId)->get();         
+        foreach ($cartItems as $item) {
+            $this->getProduct($item);
         }
 
-        return $order;
+        return response()->json([
+            'cart' => $cartItems
+        ]);
     }
-    // public function confirmPayment()
-    // {
-    //     $pendingOrder = session('pendingOrder');
-    
-    //     if (!$pendingOrder) {
-    //         return redirect()->route('cart')->with('error', 'Không có đơn hàng đang chờ xử lý.');
-    //     }
-    
-    //     DB::beginTransaction();
-    
-    //     try {
-    //         // Tạo đơn hàng từ session
-    //         $order = Order::create([
-    //             'user_id' => $pendingOrder['user_id'],
-    //             'customer_name' => $pendingOrder['customer_name'],
-    //             'gender' => $pendingOrder['gender'],
-    //             'phone_number' => $pendingOrder['phone_number'],
-    //             'shipping_address' => $pendingOrder['shipping_address'],
-    //             'payment_method' => $pendingOrder['payment_method'],
-    //             'note' => $pendingOrder['note'],
-    //             'total_price' => $pendingOrder['total_price'],
-    //             'status' => '2',
-    //         ]);
-    
-    //         // Lưu chi tiết đơn hàng
-    //         foreach ($pendingOrder['cartItems'] as $cartItem) {
-    //             OrderDetail::create([
-    //                 'order_id' => $order->id,
-    //                 'product_type' => $cartItem['product_type'],
-    //                 'product_id' => $cartItem['product_id'],
-    //                 'quantity' => $cartItem['quantity'],
-    //                 'price' => $cartItem['dealprice'],
-    //             ]);
-    //             CartItem::where('user_id', $pendingOrder['user_id'])
-    //             ->where('product_type', $cartItem['product_type'])
-    //             ->where('product_id', $cartItem['product_id'])
-    //             ->delete();
-    //         }
-    
-    //         session()->forget('pendingOrder');
-    
-    //         DB::commit();
-    
-    //         return redirect()->route('user-account')->with('orderSuccess', true);
-    //     } catch (\Exception $e) {
-    //         DB::rollBack();
-    //         return back()->with('error', 'Đã xảy ra lỗi khi xác nhận thanh toán.');
-    //     }
-    // }
-    
+    public function addToCart(Request $request)
+    {
+        $cartItem = CartItem::where('user_id', auth()->id())
+            ->where('product_id', $request->product_id)
+            ->where('product_type', $request->product_type)
+            ->first();
 
+        if ($cartItem) {
+            // Nếu sản phẩm đã có trong giỏ hàng, tăng số lượng
+            $cartItem->quantity += $request->quantity;
+            $cartItem->save();
+        } 
+        else {
+            // Nếu chưa có, thêm sản phẩm mới vào giỏ hàng
+            $cartItem = CartItem::create([
+                'user_id' => auth()->id(),
+                'product_id' => $request->product_id,
+                'product_type' => $request->product_type,
+                'quantity' => $request->quantity,
+                'name' => $request->name, // Lưu tên sản phẩm
+            ]);
+        }
+
+        return response()->json([
+            'message' => 'Product added to cart successfully',
+            'cart_item' => $cartItem
+        ], 201);
+    }
+    public function update(Request $request, $product_type, $product_id)
+    {
+        // Tìm sản phẩm dựa trên product_type, product_id và user_id
+        $cartItem = CartItem::where('product_type', $product_type)
+                            ->where('product_id', $product_id)
+                            ->where('user_id', auth()->id())
+                            ->first();
     
+        if ($cartItem) {
+            // Cập nhật số lượng
+            $cartItem->quantity = $request->quantity;
+            $cartItem->save();
+    
+            return response()->json(['success' => 'Số lượng đã được cập nhật']);
+        }
+    
+        return response()->json(['error' => 'Không tìm thấy sản phẩm trong giỏ hàng'], 404);
+    }
+
+    // Cập nhật số lượng nhiều sản phẩm trong giỏ hàng
+    public function updateBulkQuantity(Request $request)
+    {
+        $items = $request->items; // Expected: ["product_type_product_id" => quantity]
+
+        foreach ($items as $key => $quantity) {
+            list($product_type, $product_id) = explode('_', $key);
+
+            // Cập nhật số lượng từng sản phẩm
+            CartItem::where('product_type', $product_type)
+                    ->where('product_id', $product_id)
+                    ->where('user_id', auth()->id())
+                    ->update(['quantity' => $quantity]);
+        }
+
+        return response()->json(['success' => 'Số lượng đã được cập nhật']);
+    }
+
+    // Xóa sản phẩm khỏi giỏ hàng
+    public function remove($product_type, $product_id)
+    {
+        // Tìm sản phẩm trong giỏ hàng dựa trên product_type, product_id và user_id
+        $cartItem = CartItem::where('product_type', $product_type)
+                            ->where('product_id', $product_id)
+                            ->where('user_id', auth()->id())
+                            ->first();
+
+        if ($cartItem) {
+            $cartItem->delete();
+            return response()->json(['success' => 'Sản phẩm đã được xóa khỏi giỏ hàng']);
+        }
+
+        return response()->json(['error' => 'Không tìm thấy sản phẩm trong giỏ hàng'], 404);
+    }
+
+    // Lấy số lượng sản phẩm trong giỏ hàng
+    public function cartCount()
+    {
+        $cartItemCount = CartItem::where('user_id', auth()->id())->distinct('id')->count();
+
+        return response()->json(['cartItemCount' => $cartItemCount]);
+    }
+
 }
+
