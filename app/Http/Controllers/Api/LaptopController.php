@@ -14,7 +14,7 @@ class LaptopController extends Controller
      */
     public function index(Request $request) {
         $laptops = Laptop::all();
-
+        
         if ($laptops->isEmpty()) {
             return response()->json([
                 'success' => false,
@@ -42,7 +42,7 @@ class LaptopController extends Controller
      */
     public function show($id) {
         $laptop = Laptop::find($id);
-
+        
         if (!$laptop) {
             return response()->json([
                 'success' => false,
