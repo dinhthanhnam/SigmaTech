@@ -7,6 +7,8 @@ use App\Models\Gaminggear;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\CartController;
+use App\Http\Controllers\Api\OrderController;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -24,7 +26,7 @@ Route::middleware('auth:sanctum')->group( function() {
     Route::post('/logout', [AuthController::class, 'logout']);
     Route::get('/profile', [AuthController::class, 'profile']);
     Route::apiResource('/laptops', LaptopController::class);
-    Route::apiResource('/laptops/{id}', LaptopController::class);
+    //Route::apiResource('/laptops/{id}', LaptopController::class);
     Route::apiResource('/gaminggears', GaminggearController::class);
 });
 
@@ -36,7 +38,10 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::delete('cart/{product_type}/{product_id}', [CartController::class, 'remove']);
     Route::get('cart/count', [CartController::class, 'cartCount']);
 });
-
+Route::middleware('auth:sanctum')->prefix('cart/order')->group(function () {
+    Route::get('/', [OrderController::class, 'orderInfo']);
+    Route::post('/place', [OrderController::class, 'placeOrder']);
+});
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });

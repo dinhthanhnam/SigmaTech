@@ -2,14 +2,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Models\CartItem;
-use App\Models\Cpu;
-use App\Models\Gpu;
 use App\Models\Laptop;
-use App\Models\Monitor;
-use App\Models\Gaminggear;
-use App\Models\Media;
-use App\Models\Cooling;
-use App\Models\Accessory;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
@@ -31,90 +24,6 @@ class CartController extends Controller
                 }
                 $item->price = $laptop->attributes->where('name', 'Price')->first()->pivot->value; 
                 $item->image = $laptop->attributes->where('name', 'Image1')->first()->pivot->value; 
-            break;
-            case 'cpu':
-                $cpu = CPU::where('id', $item->product_id)->with('attributes')->first();
-                $salePrice = $cpu->attributes->where('name', 'Sale Price')->first()?->pivot->value ?? null;
-                $saleEndDate = $cpu->attributes->where('name', 'Sale End Date')->first()?->pivot->value ?? null;
-                if ($salePrice !== null && $saleEndDate !== null && strtotime($saleEndDate) >=  $yesterday) {
-                    $item->dealprice = $salePrice;
-                } else {
-                    $item->dealprice = $cpu->attributes->where('name', 'Deal Price')->first()?->pivot->value ?? null;
-                }
-                $item->price = $cpu->attributes->where('name', 'Price')->first()->pivot->value; 
-                $item->image = $cpu->attributes->where('name', 'Image1')->first()->pivot->value; 
-            break;
-            case 'gpu':
-                $gpu = GPU::where('id', $item->product_id)->with('attributes')->first();
-                $salePrice = $gpu->attributes->where('name', 'Sale Price')->first()?->pivot->value ?? null;
-                $saleEndDate = $gpu->attributes->where('name', 'Sale End Date')->first()?->pivot->value ?? null;
-                if ($salePrice !== null && $saleEndDate !== null && strtotime($saleEndDate) >= $yesterday) {
-                    $item->dealprice = $salePrice;
-                } else {
-                    $item->dealprice = $gpu->attributes->where('name', 'Deal Price')->first()?->pivot->value ?? null;
-                }                
-                $item->price = $gpu->attributes->where('name', 'Price')->first()->pivot->value; 
-                $item->image = $gpu->attributes->where('name', 'Image1')->first()->pivot->value; 
-            break;
-            case 'monitor':
-                $monitor = Monitor::where('id', $item->product_id)->with('attributes')->first();
-                $salePrice = $monitor->attributes->where('name', 'Sale Price')->first()?->pivot->value ?? null;
-                $saleEndDate = $monitor->attributes->where('name', 'Sale End Date')->first()?->pivot->value ?? null;
-                if ($salePrice !== null && $saleEndDate !== null && strtotime($saleEndDate) >=  $yesterday) {
-                    $item->dealprice = $salePrice;
-                } else {
-                    $item->dealprice = $monitor->attributes->where('name', 'Deal Price')->first()?->pivot->value ?? null;
-                }                
-                $item->price = $monitor->attributes->where('name', 'Price')->first()->pivot->value; 
-                $item->image = $monitor->attributes->where('name', 'Image1')->first()->pivot->value; 
-            break;
-            case 'gaminggear':
-                $gaminggear = Gaminggear::where('id', $item->product_id)->with('attributes')->first();
-                $salePrice = $gaminggear->attributes->where('name', 'Sale Price')->first()?->pivot->value ?? null;
-                $saleEndDate = $gaminggear->attributes->where('name', 'Sale End Date')->first()?->pivot->value ?? null;
-                if ($salePrice !== null && $saleEndDate !== null && strtotime($saleEndDate) >=  $yesterday) {
-                    $item->dealprice = $salePrice;
-                } else {
-                    $item->dealprice = $gaminggear->attributes->where('name', 'Deal Price')->first()?->pivot->value ?? null;
-                }                
-                $item->price = $gaminggear->attributes->where('name', 'Price')->first()->pivot->value; 
-                $item->image = $gaminggear->attributes->where('name', 'Image1')->first()->pivot->value; 
-            break;
-            case 'media':
-                $media = Media::where('id', $item->product_id)->with('attributes')->first();
-                $salePrice = $media->attributes->where('name', 'Sale Price')->first()?->pivot->value ?? null;
-                $saleEndDate = $media->attributes->where('name', 'Sale End Date')->first()?->pivot->value ?? null;
-                if ($salePrice !== null && $saleEndDate !== null && strtotime($saleEndDate) >=  $yesterday) {
-                    $item->dealprice = $salePrice;
-                } else {
-                    $item->dealprice = $media->attributes->where('name', 'Deal Price')->first()?->pivot->value ?? null;
-                }                
-                $item->price = $media->attributes->where('name', 'Price')->first()->pivot->value; 
-                $item->image = $media->attributes->where('name', 'Image1')->first()->pivot->value; 
-            break;
-            case 'cooling':
-                $cooling = Cooling::where('id', $item->product_id)->with('attributes')->first();
-                $salePrice = $cooling->attributes->where('name', 'Sale Price')->first()?->pivot->value ?? null;
-                $saleEndDate = $cooling->attributes->where('name', 'Sale End Date')->first()?->pivot->value ?? null;
-                if ($salePrice !== null && $saleEndDate !== null && strtotime($saleEndDate) >=  $yesterday) {
-                    $item->dealprice = $salePrice;
-                } else {
-                    $item->dealprice = $cooling->attributes->where('name', 'Deal Price')->first()?->pivot->value ?? null;
-                }                
-                $item->price = $cooling->attributes->where('name', 'Price')->first()->pivot->value; 
-                $item->image = $cooling->attributes->where('name', 'Image1')->first()->pivot->value; 
-            break;
-            case 'accessory':
-                $accessory = Accessory::where('id', $item->product_id)->with('attributes')->first();
-                $salePrice = $accessory->attributes->where('name', 'Sale Price')->first()?->pivot->value ?? null;
-                $saleEndDate = $accessory->attributes->where('name', 'Sale End Date')->first()?->pivot->value ?? null;
-                if ($salePrice !== null && $saleEndDate !== null && strtotime($saleEndDate) >=  $yesterday) {
-                    $item->dealprice = $salePrice;
-                } else {
-                    $item->dealprice = $accessory->attributes->where('name', 'Deal Price')->first()?->pivot->value ?? null;
-                }                
-                $item->price = $accessory->attributes->where('name', 'Price')->first()->pivot->value; 
-                $item->image = $accessory->attributes->where('name', 'Image1')->first()->pivot->value; 
             break;
         }
     }
