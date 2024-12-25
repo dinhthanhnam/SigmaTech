@@ -153,7 +153,7 @@ class OrderController extends Controller
     public function index()
     {
         $userId = auth()->id();
-        $orders = Order::where('user_id', $userId)->paginate(4);
+        $orders = Order::where('user_id', $userId)->get();
 
         return response()->json([
             'orders' => $orders
