@@ -42,6 +42,10 @@ Route::middleware('auth:sanctum')->prefix('cart/order')->group(function () {
     Route::post('/', [OrderController::class, 'orderInfo']);
     Route::post('/place', [OrderController::class, 'placeOrder']);
 });
+
+Route::middleware('auth:sanctum')->get('account', [OrderController::class, 'index']);  // API lấy danh sách đơn hàng
+Route::middleware('auth:sanctum')->get('account/order/{id}', [OrderController::class, 'getOrderDetails']);  // API lấy chi tiết đơn hàng
+
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });

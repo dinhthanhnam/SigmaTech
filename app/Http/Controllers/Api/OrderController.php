@@ -119,7 +119,7 @@ class OrderController extends Controller
     public function saveOrder($request)
     {
         $userId = auth()->id();
-        $cartItems = session('cartItems', []);
+        $cartItems = $request->input('items', []); 
 
         // Tạo đơn hàng
         $order = Order::create([
@@ -137,17 +137,63 @@ class OrderController extends Controller
         foreach ($cartItems as $cartItem) {
             OrderDetail::create([
                 'order_id' => $order->id,
-                'product_type' => $cartItem->product_type,
-                'product_id' => $cartItem->product_id,
-                'quantity' => $cartItem->quantity,
-                'price' => $cartItem->dealprice,
+                'product_type' => $cartItem['productType'],
+                'product_id' => $cartItem['productId'],
+                'quantity' => $cartItem['quantity'],
+                'price' => $cartItem['price'],
             ]);
             CartItem::where('user_id', $userId)
-            ->where('product_type', $cartItem->product_type)
-            ->where('product_id', $cartItem->product_id)
+            ->where('product_type', $cartItem['productType'])
+            ->where('product_id', $cartItem['productId'])
             ->delete();
         }
 
         return $order;
+    }
+    public function index()
+    {
+        $userId = auth()->id();
+        $orders = Order::where('user_id', $userId)->paginate(4);
+
+        return response()->json([
+            'orders' => $orders
+        ]);
+    }
+
+    // Lấy chi tiết đơn hàng
+    public function getOrderDetails($id)
+    {
+        $order = Order::with('orderDetails')->find($id);
+        if (!$order) {
+            return response()->json(['error' => 'Order not found'], 404);
+        }
+
+        $orderDetails = $order->orderDetails->map(function ($item) {
+            switch ($item->product_type) {
+                case 'laptops':
+                    $laptop = Laptop::where('id', $item->product_id)->with('attributes')->first();
+                    $item->image = $laptop->attributes->where('name', 'Image1')->first()->pivot->value; 
+                    $item->name = $laptop->name;
+                    break;
+            }
+            return [
+                'image' => $item->image,
+                'name' => $item->name,
+                'quantity' => $item->quantity,
+                'price' => number_format($item->price, 0, ',', '.'),
+            ];
+        });
+
+        return response()->json([
+            'id' => $order->id,
+            'customer_name' => $order->customer_name,
+            'phone_number' => $order->phone_number,
+            'shipping_address' => $order->shipping_address,
+            'payment_method' => $order->payment_method,
+            'note' => $order->note,
+            'total_price' => number_format($order->total_price, 0, ',', '.'),
+            'status' => $order->status,
+            'order_details' => $orderDetails
+        ]);
     }
 }
