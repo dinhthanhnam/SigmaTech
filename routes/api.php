@@ -49,3 +49,18 @@ Route::middleware('auth:sanctum')->get('account/order/{id}', [OrderController::c
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::middleware('auth:sanctum')->put('/user/address', function (Request $request) {
+    $request->validate([
+        'address' => 'required|string|max:255',
+    ]);
+
+    $user = $request->user();
+    $user->address = $request->address;
+    $user->save();
+
+    return response()->json([
+        'message' => 'Địa chỉ đã được cập nhật thành công.',
+        'address' => $user->address,
+    ]);
+});
