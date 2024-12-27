@@ -109,8 +109,8 @@ class OrderController extends Controller
     public function index()
     {
         $userId = auth()->id();
-        $orders = Order::where('user_id', $userId)->get();
-        $orders = $orders -> reverse();
+        $orders = Order::where('user_id', $userId)->orderBy('id', 'desc') ->get();
+
         return response()->json([
             'orders' => $orders
         ]);
