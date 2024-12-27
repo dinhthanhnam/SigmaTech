@@ -34,6 +34,3 @@
 ## 4. Đăng nhập
     Đăng nhập bằng user thì khi click vào biểu tượng user sẽ vào giao diện quản lý tài khoản
     Đăng nhập bằng admin thì click vào biểu tượng user vào trang admin CMS
-## 5. Chức năng
-    Chức năng cho user cơ bản hoạt động (trang chủ, flash sale, trang chi tiết, trang chuyên mục, filter, tìm kiếm, thêm giỏ hàng, xem thông tin tài khoản, (còn thiếu đổi mật khẩu, verify email))
-    Chức năng cho admin mới chỉ có thêm sản phẩm
