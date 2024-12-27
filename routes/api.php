@@ -6,7 +6,6 @@ use App\Http\Controllers\Api\LaptopController;
 use App\Models\Gaminggear;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Api\CartController;
 use App\Http\Controllers\Api\OrderController;
 
 /*
@@ -30,16 +29,8 @@ Route::middleware('auth:sanctum')->group( function() {
     Route::get('/gaminggears', [GaminggearController::class, 'index']);
 });
 
-Route::middleware('auth:sanctum')->group(function () {
-    Route::get('/cart', [CartController::class, 'show']);
-    Route::post('/cart', [CartController::class, 'addToCart']);
-    Route::put('cart/{product_type}/{product_id}', [CartController::class, 'update']);
-    Route::put('cart/bulk-update', [CartController::class, 'updateBulkQuantity']);
-    Route::delete('cart/{product_type}/{product_id}', [CartController::class, 'remove']);
-    Route::get('cart/count', [CartController::class, 'cartCount']);
-});
+
 Route::middleware('auth:sanctum')->prefix('cart/order')->group(function () {
-    Route::post('/', [OrderController::class, 'orderInfo']);
     Route::post('/place', [OrderController::class, 'placeOrder']);
 });
 

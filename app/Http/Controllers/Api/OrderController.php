@@ -11,50 +11,6 @@ use Illuminate\Support\Facades\Cache;
 use App\Models\Laptop;
 class OrderController extends Controller
 {
-    public function getProduct($item)
-    {
-        $yesterday = strtotime('-1 day');
-        switch ($item->product_type) {
-            case 'laptops':
-                $laptop = Laptop::where('id', $item->product_id)->with('attributes')->first();
-                $salePrice = $laptop->attributes->where('name', 'Sale Price')->first()?->pivot->value ?? null;
-                $saleEndDate = $laptop->attributes->where('name', 'Sale End Date')->first()?->pivot->value ?? null;
-                if ($salePrice !== null && $saleEndDate !== null && strtotime($saleEndDate) >=  $yesterday) {
-                    $item->dealprice = $salePrice;
-                } else {
-                    $item->dealprice = $laptop->attributes->where('name', 'Deal Price')->first()?->pivot->value ?? null;
-                }
-                $item->price = $laptop->attributes->where('name', 'Price')->first()->pivot->value; 
-                $item->image = $laptop->attributes->where('name', 'Image1')->first()->pivot->value; 
-            break;
-            
-        }
-    }
-
-    public function orderInfo(Request $request)
-    {
-        // Giải mã các sản phẩm được chọn từ request
-        $selectItems = $request->input('items');
-        
-        // Lấy id của người dùng hiện tại
-        $userId = auth()->id();
-
-        // Lọc các sản phẩm trong giỏ hàng theo product type và product id từ request
-        $cartItems = CartItem::where('user_id', $userId)
-            ->whereIn('product_type', collect($selectItems)->pluck('productType'))
-            ->whereIn('product_id', collect($selectItems)->pluck('productId'))
-            ->get();
-
-        // Lấy thông tin chi tiết sản phẩm cho từng item trong giỏ hàng
-        foreach ($cartItems as $item) {
-            $this->getProduct($item);
-        }
-
-        // Trả về kết quả dạng JSON
-        return response()->json([
-            'cartItems' => $cartItems
-        ]);
-    }
     public function placeOrder(Request $request)
     {
         DB::beginTransaction();
@@ -154,7 +110,7 @@ class OrderController extends Controller
     {
         $userId = auth()->id();
         $orders = Order::where('user_id', $userId)->get();
-
+        $orders = $orders -> reverse();
         return response()->json([
             'orders' => $orders
         ]);
