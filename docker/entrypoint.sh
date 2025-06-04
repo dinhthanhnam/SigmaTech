@@ -6,6 +6,7 @@ if [ ! -d "vendor" ]; then
 fi
 
 php artisan migrate:fresh --seed
+php artisan recommendations:generate
 
 php-fpm -D
 nginx -g "daemon off;"
