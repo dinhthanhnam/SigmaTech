@@ -22,6 +22,7 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 # RUN php artisan config:clear
 # RUN php artisan route:clear
 
+RUN chown -R www-data:www-data storage bootstrap/cache
 RUN chmod -R 755 /var/www/storage
 RUN chmod -R 755 /var/www/bootstrap/cache
 
