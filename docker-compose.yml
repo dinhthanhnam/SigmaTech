@@ -5,8 +5,6 @@ services:
       context: .
       target: php
     working_dir: /var/www
-    ports:
-     - 8080:8080
     restart: unless-stopped
     volumes:
       - ./:/var/www
