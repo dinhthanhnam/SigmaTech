@@ -155,9 +155,9 @@ class OrderController extends Controller
                 $userId = auth()->id();
                 $orderId = (Order::max('id') ?? 0) + 1;
                 $bankCode = 'mbbank'; 
-                $accountNumber = '0986435177'; 
+                $accountNumber = '0123456789';
                 $amount = $request->totalPrice / 1000; 
-                $recipientName = 'NGUYEN DUY HUNG'; 
+                $recipientName = 'MANH TUAN';
                 $description = 'Thanh toan QR SE' . $userId . $orderId;
                 $url = 'https://img.vietqr.io/image/' . $bankCode . '-' . $accountNumber . '-compact2' . '.jpg';
                 $queryParams = [

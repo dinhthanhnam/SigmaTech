@@ -75,7 +75,7 @@ class AttributeSeeder extends Seeder
             ['name' => '[CPU] Công suất cơ bản', 'data_type' => 'string'],
             ['name' => '[CPU] Tính năng', 'data_type' => 'string'],
             ['name' => '[CPU] Thuật in thạch bản', 'data_type' => 'string'],
-            
+
             // GPU_attribute
             ['name' => '[GPU] Bộ nhớ', 'data_type' => 'string'],
             ['name' => '[GPU] Core Clock', 'data_type' => 'string'],
@@ -98,7 +98,7 @@ class AttributeSeeder extends Seeder
             ['name' => '[RAM] Tản nhiệt', 'data_type' => 'string'],
             ['name' => '[RAM] Công nghệ RAM', 'data_type' => 'string'],
             ['name' => '[RAM] Kích thước', 'data_type' => 'string'],
-            
+
             //monitor attribute
             ['name' => '[MON] Kiểu dáng màn hình', 'data_type' => 'string'],
             ['name' => '[MON] Tỉ lệ khung hình', 'data_type' => 'string'],
@@ -128,31 +128,31 @@ class AttributeSeeder extends Seeder
             ['name' => '[GG] Phụ kiện đi kèm', 'data_type' => 'string'],
 
             //Media
-            ['name' => '[Media] Loại thiết bị', 'data_type' => 'string'], 
-            ['name' => '[Media] Kết nối', 'data_type' => 'string'], 
-            ['name' => '[Media] Tính năng', 'data_type' => 'string'], 
-            ['name' => '[Media] Chất liệu', 'data_type' => 'string'], 
-            ['name' => '[Media] Trọng lượng', 'data_type' => 'string'], 
-            ['name' => '[Media] Nguồn cung cấp', 'data_type' => 'string'], 
-            ['name' => '[Media] Cổng kết nối', 'data_type' => 'string'], 
-            ['name' => '[Media] Phụ kiện đi kèm', 'data_type' => 'string'], 
-            
-            //Cooling  
-            ['name' => '[Cooling] Loại làm mát', 'value' => 'string'],
-            ['name' => '[Cooling] Kích thước quạt', 'value' => 'string'],
-            ['name' => '[Cooling] Tốc độ quạt', 'value' => 'string'],
-            ['name' => '[Cooling] Độ ồn', 'value' => 'string'],
-            ['name' => '[Cooling] TDP hỗ trợ', 'value' => 'string'],
-            ['name' => '[Cooling] Kích thước', 'value' => 'string'],
-            ['name' => '[Cooling] Tương thích socket', 'value' => 'string'],
+            ['name' => '[Media] Loại thiết bị', 'data_type' => 'string'],
+            ['name' => '[Media] Kết nối', 'data_type' => 'string'],
+            ['name' => '[Media] Tính năng', 'data_type' => 'string'],
+            ['name' => '[Media] Chất liệu', 'data_type' => 'string'],
+            ['name' => '[Media] Trọng lượng', 'data_type' => 'string'],
+            ['name' => '[Media] Nguồn cung cấp', 'data_type' => 'string'],
+            ['name' => '[Media] Cổng kết nối', 'data_type' => 'string'],
+            ['name' => '[Media] Phụ kiện đi kèm', 'data_type' => 'string'],
+
+            //Cooling
+            ['name' => '[Cooling] Loại làm mát', 'data_type' => 'string'],
+            ['name' => '[Cooling] Kích thước quạt', 'data_type' => 'string'],
+            ['name' => '[Cooling] Tốc độ quạt', 'data_type' => 'string'],
+            ['name' => '[Cooling] Độ ồn', 'data_type' => 'string'],
+            ['name' => '[Cooling] TDP hỗ trợ', 'data_type' => 'string'],
+            ['name' => '[Cooling] Kích thước', 'data_type' => 'string'],
+            ['name' => '[Cooling] Tương thích socket', 'data_type' => 'string'],
 
             //Accessories
-            ['name' => '[Accessory] Loại thiết bị', 'value' => 'string'],
-            ['name' => '[Accessory] Kết nối', 'value' => 'string'],
-            ['name' => '[Accessory] Tính năng', 'value' => 'string'],
-            ['name' => '[Accessory] Chất liệu', 'value' => 'string'],
-            ['name' => '[Accessory] Tương thích', 'value' => 'string'],
-            ['name' => '[Accessory] Phụ kiện đi kèm', 'value' => 'string'],
+            ['name' => '[Accessory] Loại thiết bị', 'data_type' => 'string'],
+            ['name' => '[Accessory] Kết nối', 'data_type' => 'string'],
+            ['name' => '[Accessory] Tính năng', 'data_type' => 'string'],
+            ['name' => '[Accessory] Chất liệu', 'data_type' => 'string'],
+            ['name' => '[Accessory] Tương thích', 'data_type' => 'string'],
+            ['name' => '[Accessory] Phụ kiện đi kèm', 'data_type' => 'string'],
         ]);
     }
 }

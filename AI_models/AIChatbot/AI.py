@@ -9,6 +9,7 @@ import random
 
 # Tải dữ liệu NLTK
 nltk.download("punkt")
+nltk.download("punkt_tab")
 nltk.download("wordnet")
 lemmatizer = WordNetLemmatizer()
 
@@ -74,7 +75,7 @@ try:
     model.fit(np.array(train_x), np.array(train_y), epochs=200, batch_size=8, verbose=1)
 
     # Lưu mô hình và dữ liệu
-    model.save("chatbot_model.h5")
+    model.save("chatbot_model.keras")
 
     with open("chatbot_words.json", "w", encoding="utf-8") as file:
         json.dump(words, file)
@@ -86,7 +87,7 @@ except Exception as e:
     print(f"Error in training: {e}")
 
 # Nạp mô hình và dữ liệu đã lưu
-model = tf.keras.models.load_model("chatbot_model.h5")
+model = tf.keras.models.load_model("chatbot_model.keras")
 
 with open("chatbot_words.json", "r", encoding="utf-8") as file:
     words = json.load(file)
