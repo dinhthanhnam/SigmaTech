@@ -18,7 +18,7 @@ class OrderController extends Controller
     
     public function showAllOrders()
     {
-        $orders = Order::paginate(12);
+        $orders = Order::orderBy('created_at', 'desc')->paginate(12);
 
         return view('admin.order', compact('orders'));
     }
