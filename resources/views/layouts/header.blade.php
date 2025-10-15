@@ -352,26 +352,26 @@
                                             id="">Laptop Theo Hãng</a>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptops/Gaming/filter?cat=Gaming&brand=asus" title="Laptop Asus" class="js-menu"
+                                                <a href="/laptops/Office/filter?cat=Office&brand=asus" title="Laptop Asus" class="js-menu"
                                                     data-filter_code="brand" data-value="asus">Laptop Asus</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptops/Gaming/filter?cat=Gaming&brand=lenovo" title="Laptop Lenovo" class="js-menu"
+                                                <a href="/laptops/Office/filter?cat=Office&brand=lenovo" title="Laptop Lenovo" class="js-menu"
                                                     data-filter_code="brand" data-value="lenovo">Laptop
                                                     Lenovo</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptops/Gaming/filter?cat=Gaming&brand=dell" title="Laptop Dell" class="js-menu"
+                                                <a href="/laptops/Office/filter?cat=Office&brand=dell" title="Laptop Dell" class="js-menu"
                                                     data-filter_code="brand" data-value="dell">Laptop Dell</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptops/Gaming/filter?cat=Gaming&brand=acer" title="Laptop Acer" class="js-menu"
+                                                <a href="/laptops/Office/filter?cat=Office&brand=acer" title="Laptop Acer" class="js-menu"
                                                     data-filter_code="brand" data-value="acer">Laptop Acer</a>
                                             </div>
                                         </div>
@@ -382,56 +382,56 @@
                                             id="js-menu-2386">Laptop Theo Khoảng Giá</a>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptops/Gaming/filter?cat=Gaming&min=0&max=15000000" title="Laptop Từ 10 - 15 Triệu" class="js-menu"
+                                                <a href="/laptops/Office/filter?cat=Office&min=0&max=15000000" title="Laptop Từ 10 - 15 Triệu" class="js-menu"
                                                     data-filter_code="price"
                                                     data-value="min=10000000&max=15000000">Laptop Từ 10 - 15 Triệu</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptops/Gaming/filter?cat=Gaming&min=15000000&max=20000000" title="Laptop Từ 15 - 20 Triệu" class="js-menu"
+                                                <a href="/laptops/Office/filter?cat=Office&min=15000000&max=20000000" title="Laptop Từ 15 - 20 Triệu" class="js-menu"
                                                     data-filter_code="price"
                                                     data-value="min=15000000&max=20000000">Laptop Từ 15 - 20 Triệu</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptops/Gaming/filter?cat=Gaming&min=20000000&max=25000000" title="Laptop Từ 20 - 25 Triệu" class="js-menu"
+                                                <a href="/laptops/Office/filter?cat=Office&min=20000000&max=25000000" title="Laptop Từ 20 - 25 Triệu" class="js-menu"
                                                     data-filter_code="price"
                                                     data-value="min=20000000&max=25000000">Laptop Từ 20 - 25 Triệu</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptops/Gaming/filter?cat=Gaming&min=25000000&max=30000000" title="Laptop Từ 25 - 30 Triệu" class="js-menu"
+                                                <a href="/laptops/Office/filter?cat=Office&min=25000000&max=30000000" title="Laptop Từ 25 - 30 Triệu" class="js-menu"
                                                     data-filter_code="price"
                                                     data-value="min=25000000&max=30000000">Laptop Từ 25 - 30 Triệu</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptops/Gaming/filter?cat=Gaming&min=30000000&max=35000000" title="Laptop Từ 30 - 35 Triệu" class="js-menu"
+                                                <a href="/laptops/Office/filter?cat=Office&min=30000000&max=35000000" title="Laptop Từ 30 - 35 Triệu" class="js-menu"
                                                     data-filter_code="price"
                                                     data-value="min=30000000&max=35000000">Laptop Từ 30 - 35 Triệu</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptops/Gaming/filter?cat=Gaming&min=35000000&max=40000000" title="Laptop Từ 35 - 40 Triệu" class="js-menu"
+                                                <a href="/laptops/Office/filter?cat=Office&min=35000000&max=40000000" title="Laptop Từ 35 - 40 Triệu" class="js-menu"
                                                     data-filter_code="price"
                                                     data-value="min=35000000&max=40000000">Laptop Từ 35 - 40 Triệu</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptops/Gaming/filter?cat=Gaming&min=40000000&max=60000000" title="Laptop Từ 40 - 60 Triệu" class="js-menu"
+                                                <a href="/laptops/Office/filter?cat=Office&min=40000000&max=60000000" title="Laptop Từ 40 - 60 Triệu" class="js-menu"
                                                     data-filter_code="price"
                                                     data-value="min=40000000&max=60000000">Laptop Từ 40 - 60 Triệu</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptops/Gaming/filter?cat=Gaming&min=60000000&max=150000000" title="Laptop Trên 60 Triệu" class="js-menu"
+                                                <a href="/laptops/Office/filter?cat=Office&min=60000000&max=150000000" title="Laptop Trên 60 Triệu" class="js-menu"
                                                     data-filter_code="price"
                                                     data-value="min=60000000&max=150000000">Laptop Trên 60 Triệu</a>
                                             </div>
@@ -444,49 +444,49 @@
                                             id="js-menu-2377">Laptop Theo Cấu Hình CPU</a>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptops/Gaming/filter?cat=Gaming&cpu=Intel%20Core%20i3" class="js-menu" data-filter_code="cpu"
+                                                <a href="/laptops/Office/filter?cat=Office&cpu=Intel%20Core%20i3" class="js-menu" data-filter_code="cpu"
                                                     data-value="Intel Core i3">Intel Core i3</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptops/Gaming/filter?cat=Gaming&cpu=Intel%20Core%20i5" class="js-menu" data-filter_code="cpu"
+                                                <a href="/laptops/Office/filter?cat=Office&cpu=Intel%20Core%20i5" class="js-menu" data-filter_code="cpu"
                                                     data-value="Intel Core i5">Intel Core i5</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptops/Gaming/filter?cat=Gaming&cpu=Intel%20Core%20i7" class="js-menu" data-filter_code="cpu"
+                                                <a href="/laptops/Office/filter?cat=Office&cpu=Intel%20Core%20i7" class="js-menu" data-filter_code="cpu"
                                                     data-value="Intel Core i7">Intel Core i7</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptops/Gaming/filter?cat=Gaming&cpu=Intel%20Core%20i9" class="js-menu" data-filter_code="cpu"
+                                                <a href="/laptops/Office/filter?cat=Office&cpu=Intel%20Core%20i9" class="js-menu" data-filter_code="cpu"
                                                     data-value="Intel Core i9">Intel Core i9</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptops/Gaming/filter?cat=Gaming&cpu=Ryzen%203" class="js-menu" data-filter_code="cpu"
+                                                <a href="/laptops/Office/filter?cat=Office&cpu=Ryzen%203" class="js-menu" data-filter_code="cpu"
                                                     data-value="Ryzen 3">Ryzen 3</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptops/Gaming/filter?cat=Gaming&cpu=Ryzen%205" class="js-menu" data-filter_code="cpu"
+                                                <a href="/laptops/Office/filter?cat=Office&cpu=Ryzen%205" class="js-menu" data-filter_code="cpu"
                                                     data-value="Ryzen 5">Ryzen 5</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptops/Gaming/filter?cat=Gaming&cpu=Ryzen%207" class="js-menu" data-filter_code="cpu"
+                                                <a href="/laptops/Office/filter?cat=Office&cpu=Ryzen%207" class="js-menu" data-filter_code="cpu"
                                                     data-value="Ryzen 7">Ryzen 7</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptops/Gaming/filter?cat=Gaming&cpu=Ryzen%209" class="js-menu" data-filter_code="cpu"
+                                                <a href="/laptops/Office/filter?cat=Office&cpu=Ryzen%209" class="js-menu" data-filter_code="cpu"
                                                     data-value="Ryzen 9">Ryzen 9</a>
                                             </div>
                                         </div>
@@ -496,14 +496,14 @@
                                             id="js-menu-2398">Laptop Theo Kích Thước Màn</a>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptops/Gaming/filter?cat=Gaming&screensize=17" title="Laptop Khoảng 17 inch" class="js-menu"
+                                                <a href="/laptops/Office/filter?cat=Office&screensize=17" title="Laptop Khoảng 17 inch" class="js-menu"
                                                     data-filter_code="screensize" data-value="17">Laptop Khoảng 17
                                                     inch</a>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptops/Gaming/filter?cat=Gaming&screensize=16" title="Laptop Khoảng 16 inch" class="js-menu"
+                                                <a href="/laptops/Office/filter?cat=Office&screensize=16" title="Laptop Khoảng 16 inch" class="js-menu"
                                                     data-filter_code="screensize" data-value="16">Laptop Khoảng 16
                                                     inch</a>
                                             </div>
@@ -511,7 +511,7 @@
 
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptops/Gaming/filter?cat=Gaming&screensize=15" title="Laptop Khoảng 15 inch" class="js-menu"
+                                                <a href="/laptops/Office/filter?cat=Office&screensize=15" title="Laptop Khoảng 15 inch" class="js-menu"
                                                     data-filter_code="screensize" data-value="15">Laptop Khoảng 15
                                                     inch</a>
                                             </div>
@@ -519,7 +519,7 @@
 
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptops/Gaming/filter?cat=Gaming&screensize=14" title="Laptop Khoảng 14 inch" class="js-menu"
+                                                <a href="/laptops/Office/filter?cat=Office&screensize=14" title="Laptop Khoảng 14 inch" class="js-menu"
                                                     data-filter_code="screensize" data-value="14">Laptop Khoảng 14
                                                     inch</a>
                                             </div>
@@ -527,7 +527,7 @@
 
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptops/Gaming/filter?cat=Gaming&screensize=13" title="Laptop Khoảng 13 inch" class="js-menu"
+                                                <a href="/laptops/Office/filter?cat=Office&screensize=13" title="Laptop Khoảng 13 inch" class="js-menu"
                                                     data-filter_code="screensize" data-value="13">Laptop Khoảng 13
                                                     inch</a>
                                             </div>
@@ -539,7 +539,7 @@
                                         <a href="#" class="cate-2" id="js-menu-2378">Laptop Theo VGA</a>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptops/Gaming/filter?cat=Gaming&vga=RTX%202050" class="js-menu" data-filter_code="vga"
+                                                <a href="/laptops/Office/filter?cat=Office&vga=RTX%202050" class="js-menu" data-filter_code="vga"
                                                     data-value="RTX 2050" id="js-menu-1613">
                                                     NVIDIA GeForce RTX 2050
                                                 </a>
@@ -547,7 +547,7 @@
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptops/Gaming/filter?cat=Gaming&vga=RTX%203050" class="js-menu" data-filter_code="vga"
+                                                <a href="/laptops/Office/filter?cat=Office&vga=RTX%203050" class="js-menu" data-filter_code="vga"
                                                     data-value="RTX 3050" id="js-menu-1905">
                                                     NVIDIA GeForce RTX 3050
                                                 </a>
@@ -555,7 +555,7 @@
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptops/Gaming/filter?cat=Gaming&vga=RTX%204050" class="js-menu" data-filter_code="vga"
+                                                <a href="/laptops/Office/filter?cat=Office&vga=RTX%204050" class="js-menu" data-filter_code="vga"
                                                     data-value="RTX 4050" id="js-menu-1905">
                                                     NVIDIA GeForce RTX 4050
                                                 </a>
@@ -563,7 +563,7 @@
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptops/Gaming/filter?cat=Gaming&vga=RTX%204060" class="js-menu" data-filter_code="vga"
+                                                <a href="/laptops/Office/filter?cat=Office&vga=RTX%204060" class="js-menu" data-filter_code="vga"
                                                     data-value="RTX 4060" id="js-menu-1905">
                                                     NVIDIA GeForce RTX 4060
                                                 </a>
@@ -571,7 +571,7 @@
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptops/Gaming/filter?cat=Gaming&vga=RTX%204070" class="js-menu" data-filter_code="vga"
+                                                <a href="/laptops/Office/filter?cat=Office&vga=RTX%204070" class="js-menu" data-filter_code="vga"
                                                     data-value="RTX 4070" id="js-menu-1905">
                                                     NVIDIA GeForce RTX 4070
                                                 </a>
@@ -579,7 +579,7 @@
                                         </div>
                                         <div>
                                             <div class="cat-child-last">
-                                                <a href="/laptops/Gaming/filter?cat=Gaming&vga=RTX%204080" class="js-menu" data-filter_code="vga"
+                                                <a href="/laptops/Office/filter?cat=Office&vga=RTX%204080" class="js-menu" data-filter_code="vga"
                                                     data-value="RTX 4080" id="js-menu-1907">
                                                     NVIDIA GeForce RTX 4080
                                                 </a>

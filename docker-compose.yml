@@ -8,9 +8,9 @@ services:
     restart: unless-stopped
     volumes:
       - ./:/var/www
-    networks:
-      - shared-net
+    # networks:
+    #   - shared-net
       
-networks:
-  shared-net:
-    external: true
+# networks:
+#   shared-net:
+#     external: true
