@@ -93,10 +93,10 @@
         <div class="box-title-container">
           <h2 class="box-title"> Laptop Gaming - Đồ hoạ </h2>
           <div class="child-title">
-            <a href="{{ url('/laptops/filter?brand=acer')}}">ACER</a>
-            <a href="{{ url('/laptops/filter?brand=asus')}}">ASUS</a>
-            <a href="{{ url('/laptops/filter?brand=dell')}}">DELL</a>
-            <a href="{{ url('/laptops/filter?brand=lenovo')}}">LENOVO</a>
+            <a href="{{ url('/laptops/Gaming/filter?cat=Gaming&brand=acer')}}">ACER</a>
+            <a href="{{ url('/laptops/Gaming/filter?cat=Gaming&brand=asus')}}">ASUS</a>
+            <a href="{{ url('/laptops/Gaming/filter?cat=Gaming&brand=dell')}}">DELL</a>
+            <a href="{{ url('/laptops/Gaming/filter?cat=Gaming&brand=lenovo')}}">LENOVO</a>
           </div>
         </div>
         <div class="p-container custom-nav owl-carousel owl-theme">
@@ -113,10 +113,10 @@
         <div class="box-title-container">
           <h2 class="box-title"> Laptop văn phòng </h2>
           <div class="child-title">
-            <a href="{{ url('/laptops/filter?brand=acer')}}">ACER</a>
-            <a href="{{ url('/laptops/filter?brand=asus')}}">ASUS</a>
-            <a href="{{ url('/laptops/filter?brand=dell')}}">DELL</a>
-            <a href="{{ url('/laptops/filter?brand=lenovo')}}">LENOVO</a>
+            <a href="{{ url('/laptops/Office/filter?cat=Office&brand=acer')}}">ACER</a>
+            <a href="{{ url('/laptops/Office/filter?cat=Office&brand=asus')}}">ASUS</a>
+            <a href="{{ url('/laptops/Office/filter?cat=Office&brand=dell')}}">DELL</a>
+            <a href="{{ url('/laptops/Office/filter?cat=Office&brand=lenovo')}}">LENOVO</a>
           </div>
         </div>
         <div class="p-container custom-nav owl-carousel owl-theme">
