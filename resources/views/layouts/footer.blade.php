@@ -200,11 +200,4 @@
   </div>
 </div>
 <div style="background: #edeef2;padding: 10px 0;">
-  <div class="container text-12 font-weight-light">
-    Đinh thành Nam, nhớ sửa cái này sau
-    <br>
-    NghiaThe, sửa r nha
-    <br>
-    Oke the nghia
-  </div>
 </div>

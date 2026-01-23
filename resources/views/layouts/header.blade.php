@@ -739,33 +739,33 @@
             let selectedMax = null;
             let selectedFilterType = '';
 
-            document.querySelectorAll('.js-menu').forEach(function(element) {
-                element.addEventListener('click', function(e) {
-                    e.preventDefault();
+            // document.querySelectorAll('.js-menu').forEach(function(element) {
+            //     element.addEventListener('click', function(e) {
+            //         e.preventDefault();
 
-                    selectedFilterType = element.getAttribute('data-filter_code');
-                    const dataValue = element.getAttribute('data-value');
+            //         selectedFilterType = element.getAttribute('data-filter_code');
+            //         const dataValue = element.getAttribute('data-value');
 
-                    if (selectedFilterType === 'price') {
-                        const params = new URLSearchParams(dataValue);
-                        selectedMin = parseInt(params.get('min'), 10);
-                        selectedMax = parseInt(params.get('max'), 10);
-                        console.log("Selected Min:", selectedMin);
-                        console.log("Selected Max:", selectedMax);
-                        console.log("Selected:", selectedFilterType);
-                        console.log(
-                            `/laptops/filter?min=${encodeURIComponent(selectedMin)}&max=${encodeURIComponent(selectedMax)}`
-                        );
-                        window.location.href =
-                            `/laptops/filter?min=${encodeURIComponent(selectedMin)}&max=${encodeURIComponent(selectedMax)}`;
-                    } else {
-                        selectedValue = dataValue;
-                        window.location.href =
-                            `/laptops/filter?${selectedFilterType}=${encodeURIComponent(selectedValue)}`;
-                    }
+            //         if (selectedFilterType === 'price') {
+            //             const params = new URLSearchParams(dataValue);
+            //             selectedMin = parseInt(params.get('min'), 10);
+            //             selectedMax = parseInt(params.get('max'), 10);
+            //             console.log("Selected Min:", selectedMin);
+            //             console.log("Selected Max:", selectedMax);
+            //             console.log("Selected:", selectedFilterType);
+            //             console.log(
+            //                 `/laptops/filter?min=${encodeURIComponent(selectedMin)}&max=${encodeURIComponent(selectedMax)}`
+            //             );
+            //             window.location.href =
+            //                 `/laptops/filter?min=${encodeURIComponent(selectedMin)}&max=${encodeURIComponent(selectedMax)}`;
+            //         } else {
+            //             selectedValue = dataValue;
+            //             window.location.href =
+            //                 `/laptops/filter?${selectedFilterType}=${encodeURIComponent(selectedValue)}`;
+            //         }
 
-                });
-            });
+            //     });
+            // });
         });
     </script>
 
@@ -855,14 +855,14 @@
                     suggestionsContainer.style.display = 'block';
                 }
             });
-            document.querySelectorAll('.js-search').forEach(function(element) {
-                element.addEventListener('click', function(e) {
+            // document.querySelectorAll('.js-search').forEach(function(element) {
+            //     element.addEventListener('click', function(e) {
 
-                    const query = searchInput.value;
-                    window.location.href = `/filter?=${encodeURIComponent(query)}`;
+            //         const query = searchInput.value;
+            //         window.location.href = `/filter?=${encodeURIComponent(query)}`;
         
-                });
-            });
+            //     });
+            // });
         });
     </script>
 @endpush
